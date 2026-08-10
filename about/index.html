@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About &mdash; The Empire of Hrossagri&#240;</title>
+<meta name="description" content="What Hrossagrith is, what this portal is for, its method, and the frameworks it borrows.">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <img class="masthead__mark" src="../assets/flag-mark.jpg"
+         alt="Flag of the Empire of Hrossagri&#240;" width="96" height="64">
+    <div class="masthead__text">
+      <p class="masthead__state">State Portal</p>
+      <p class="masthead__name">The Empire of Hrossagri&#240;</p>
+      <p class="masthead__latin">Hrossagrith &middot; horses&rsquo; sanctuary, and the peace that is enforced</p>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="../">Home</a>
+    <a href="../symbols/">Name &amp; Symbols</a>
+    <a href="../history/">History</a>
+    <a href="../gov/">Government</a>
+    <a href="../gov/law/">Law</a>
+    <a href="../about/" aria-current="page">About</a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+  <div class="prose">
+    <p class="eyebrow">About</p>
+    <h1 class="page-title">About this portal</h1>
+    <p class="page-standfirst">Hrossagrith is a fictional country, and this site is the reference portal for it.</p>
+
+    <h2>This is a worldbuilding project</h2>
+    <p><strong>Hrossagrith does not exist.</strong> It is an invented country. This site is a worldbuilding project and has no connection to any real state, government, ministry, agency, or official body, and it does not represent or claim to represent any such organisation. Nothing published here is a real law, a real regulation, or a real government notice, and none of it should be relied upon as one.</p>
+
+    <h2>What the portal contains</h2>
+    <ul>
+      <li><a href="../symbols/">Name &amp; Symbols</a> &mdash; the canonical forms of the state name, its Old Norse etymology, correct usage of the demonym, the flag, and the national animal.</li>
+      <li><a href="../history/">History</a> &mdash; the reconstructed early history of the Hrossagrith people, with the limits of that reconstruction stated openly.</li>
+      <li><a href="../gov/">Government</a> &mdash; the constitutional order and the political doctrine behind it.</li>
+      <li><a href="../gov/law/">Law</a> &mdash; the register of the imperial legal corpus.</li>
+    </ul>
+
+    <h2>Method</h2>
+    <p>Two habits run through the whole project, and they shape how the material reads.</p>
+    <p>The first is that <strong>uncertainty is preserved rather than resolved</strong>. Where the invented tradition cannot distinguish among several explanations, the text says so instead of choosing one and presenting it as settled. Where the deeper prehistory of a word is genuinely disputed, it is marked as disputed rather than converted into fact.</p>
+    <p>The second is that <strong>real constraints are respected where they apply</strong>. The linguistic analysis uses attested Old Norse morphology; the historical reconstruction works within what is plausible for Iron Age Ireland rather than against it. The invented parts are the feuds, decisions and institutions &mdash; not the grammar or the archaeology.</p>
+
+    <h2>Borrowed frameworks</h2>
+    <p>The Empire&rsquo;s political doctrine uses the <strong>Eight Dynamics</strong>, a concept belonging to Scientology, as its ethical framework. That borrowing is stated openly on the <a href="../gov/">government page</a> rather than disguised. It is not an endorsement, an affiliation, or a claim to represent Scientology, and no text from Scientology&rsquo;s own materials is reproduced here &mdash; the Dynamics are summarised in this project&rsquo;s own words. Every political conclusion drawn from them is fictional and Hrossagrithic. The classical concept of <em>eudaimonia</em> is likewise drawn from Aristotelian ethics and adapted rather than reproduced.</p>
+
+    <h2>Status</h2>
+    <p>The portal is under construction. Sections are published as they are written, and full texts of the imperial instruments will be added one at a time. Structure and wording are subject to change without notice.</p>
+
+    <div class="notice">
+      <p><strong>Reuse.</strong> The setting, names, texts and flag of Hrossagrith are the work of their author. Please do not republish them as your own.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__disclaimer">Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; State Portal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+</body>
+</html>
