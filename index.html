@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Empire of Hrossagri&#240; &mdash; State Portal</title>
+<meta name="description" content="Official portal of the Empire of Hrossagrith: government and doctrine, imperial law, history, name and symbols. A worldbuilding project.">
+<link rel="icon" href="assets/flag-mark.jpg">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <img class="masthead__mark" src="assets/flag-mark.jpg"
+         alt="Flag of the Empire of Hrossagri&#240;" width="96" height="64">
+    <div class="masthead__text">
+      <p class="masthead__state">State Portal</p>
+      <h1 class="masthead__name">The Empire of Hrossagri&#240;</h1>
+      <p class="masthead__latin">Hrossagrith &middot; horses&rsquo; sanctuary, and the peace that is enforced</p>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="./" aria-current="page">Home</a>
+    <a href="symbols/">Name &amp; Symbols</a>
+    <a href="history/">History</a>
+    <a href="gov/">Government</a>
+    <a href="gov/law/">Law</a>
+    <a href="about/">About</a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+  <div class="prose">
+    <p class="eyebrow">The founding meaning</p>
+    <p class="lede">Hrossagri&#240; is not named for its horses. It is named for its <span class="native">gri&#240;</span> &mdash; guaranteed peace, safe conduct, quarter, sanctuary &mdash; and for the horses that define whom the sanctuary is owed to.</p>
+
+    <p>The name began as an exonym. Merchants, messengers, refugees and riders crossing the border found that pursuit had to stop: the traveller, their companions and their equids all entered protection. Horses could not be seized for war, stolen, requisitioned, traded away, or used as leverage against the people who depended on them. Outsiders called that condition <span class="native">hrossagri&#240;</span>, and in time the word travelled outward from the border to the roads, the settlements, the recognised territory, and finally to the country itself.</p>
+
+    <div class="pullquote">
+      <p>Protection of a person is incomplete where the person&rsquo;s horse, means of movement, livelihood, or route home may still be seized, abused, exhausted, or used as leverage.</p>
+    </div>
+
+    <h2>What the Empire is</h2>
+
+    <p>Modern Hrossagri&#240; is a <strong>human nation</strong>, and a highly diverse one: its population descends from numerous peoples integrated over centuries through migration and refuge. Horses and other equids are protected living beings, companions and working partners, and the foundation of the Empire&rsquo;s road-transport culture. They are not the population, and they hold no human political office.</p>
+
+    <p>Constitutionally, the Empire is a <a href="gov/">eudaimonocratic diarchic monarchy</a>: two co-equal Crowns, the Guiding and the Guarding, governing under a philosophy that measures a policy by what it builds and what it destroys across the whole breadth of life rather than by what a majority happens to want. The equid law the Empire is known for abroad is not a curiosity attached to that system. It follows from it, and from the name.</p>
+  </div>
+
+  <ul class="cards">
+    <li class="card">
+      <h2>Name &amp; Symbols</h2>
+      <p>Canonical forms, the Old Norse etymology of <span class="native">hrossa-</span> and <span class="native">gri&#240;</span>, correct usage of the demonym, the flag, and the national animal.</p>
+      <a class="card__link" href="symbols/">Read the record</a>
+    </li>
+    <li class="card">
+      <h2>History</h2>
+      <p>The reconstruction from c.&nbsp;1200 BC: the Crossing Crisis, the Sanctuary Compact, the Three-Routes Agreement, and the long road from protected places to a jurisdiction.</p>
+      <a class="card__link" href="history/">Enter the timeline</a>
+    </li>
+    <li class="card">
+      <h2>Government</h2>
+      <p>Eudaimonocracy, the Eight Dynamics, the two Crowns, Parliament and the courts, succession, and the Empire&rsquo;s foundational values.</p>
+      <a class="card__link" href="gov/">Understand the state</a>
+    </li>
+    <li class="card">
+      <h2>Law</h2>
+      <p>The imperial legal corpus: codes in force, technical standards, official templates, and the register of law still to be written.</p>
+      <a class="card__link" href="gov/law/">Open the register</a>
+    </li>
+  </ul>
+
+  <div class="prose">
+    <h2>Canonical forms</h2>
+    <ul>
+      <li>Official native name: <strong class="native">Hrossagri&#240;</strong></li>
+      <li>International spelling: <strong>Hrossagrith</strong></li>
+      <li>Formal state name: <strong class="native">The Empire of Hrossagri&#240;</strong></li>
+      <li>Citizen / demonym: <strong>Hrossagrith</strong> (invariant &mdash; no singular or plural suffix)</li>
+      <li>Adjective and cultural term: <strong>Hrossagrithic</strong></li>
+      <li>Practical English pronunciation: <strong>HROSS-a-grith</strong></li>
+    </ul>
+    <p>Use the international <em>th</em>-based forms wherever the letter <span class="native">&#240;</span> is unavailable, unfamiliar, or difficult to type.</p>
+
+    <div class="notice">
+      <p><strong>Historical truth.</strong> The Empire does not rewrite, erase, or sanitise its history for political purposes. Its record of its own successes, failures, injustices and controversial decisions is meant to be accurate, and the <a href="history/">history section</a> states the limits of its own reconstruction rather than hiding them.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__disclaimer">Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; State Portal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="assets/theme.js"></script>
+</body>
+</html>
