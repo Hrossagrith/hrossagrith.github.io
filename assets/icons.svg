@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-health" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-education" viewBox="0 0 24 24"><path d="M3 5.5C6 4 9 4 12 5.5 15 4 18 4 21 5.5v13c-3-1.5-6-1.5-9 0-3-1.5-6-1.5-9 0v-13Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 5.5v13" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="9" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 20c0-3 2.2-5.5 5-5.5S13 17 13 20M14 20c0-2.2 1.4-4 3-4s3 1.8 3 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-transport" viewBox="0 0 24 24"><circle cx="8" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="17" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11V21M3 16h10M4.5 12.5l7 7M11.5 12.5l-7 7" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <symbol id="i-justice" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 8h14M5 8l-3 6h6L5 8Zm14 0-3 6h6l-3-6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="i-money" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v10M9.5 9.5h5M9.5 14.5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-citizenship" viewBox="0 0 24 24"><path d="M4 21V10c0-3.9 3.6-7 8-7s8 3.1 8 7v11" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 21v-6c0-1.7 1.3-3 3-3s3 1.3 3 3v6M2 21h20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-government" viewBox="0 0 24 24"><path d="M3 9l4 3 5-7 5 7 4-3-2 10H5L3 9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 21h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-law" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="14" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 17v3" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 6.5V12l4 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-symbols" viewBox="0 0 24 24"><path d="M5 3v18M5 4h14l-3 4.5L19 13H5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="i-horse" viewBox="0 0 140 150"><g fill="currentColor"><path fill-rule="evenodd" d="
+      M 70 32
+      C 64 40, 56 52, 49 65
+      C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112
+      C 41 115, 46 116, 50 114
+      L 54 118
+      C 58 121, 64 120, 68 116
+      C 72 112, 75 107, 77 102
+      C 80 106, 83 112, 86 120
+      L 92 140
+      L 116 140
+      C 114 124, 110 108, 104 93
+      C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32
+      Z
+      M 72 64
+      a 4 2.8 0 1 0 8 0
+      a 4 2.8 0 1 0 -8 0
+      Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/></g></symbol>
+  <symbol id="i-emblem" viewBox="0 0 160 160">
+    <circle cx="80" cy="80" r="76" fill="none" stroke="currentColor" stroke-width="3"/>
+    <circle cx="80" cy="80" r="66" fill="none" stroke="currentColor" stroke-width="1"/>
+    <g fill="currentColor" transform="translate(37,16) scale(0.62)"><path fill-rule="evenodd" d="
+      M 70 32
+      C 64 40, 56 52, 49 65
+      C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112
+      C 41 115, 46 116, 50 114
+      L 54 118
+      C 58 121, 64 120, 68 116
+      C 72 112, 75 107, 77 102
+      C 80 106, 83 112, 86 120
+      L 92 140
+      L 116 140
+      C 114 124, 110 108, 104 93
+      C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32
+      Z
+      M 72 64
+      a 4 2.8 0 1 0 8 0
+      a 4 2.8 0 1 0 -8 0
+      Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/></g>
+  </symbol>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" role="presentation">
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M2 58 V16 C2 8 8 2 16 2 H58"/>
+    <path d="M9 58 V19 C9 13 13 9 19 9 H58"/>
+  </g>
+  <circle cx="16" cy="16" r="3" fill="currentColor"/>
+</svg>

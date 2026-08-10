@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 24" role="presentation">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <path d="M4 12 H150"/>
+    <path d="M250 12 H396"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M200 3 L209 12 L200 21 L191 12 Z"/>
+    <path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/>
+    <path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/>
+    <circle cx="152" cy="12" r="2"/>
+    <circle cx="248" cy="12" r="2"/>
+  </g>
+</svg>
