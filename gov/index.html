@@ -24,155 +24,229 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">A worldbuilding project &mdash; Hrossagri&#240; is a fictional country</p>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</div>
+
 <header class="masthead">
-  <div class="masthead__inner">
-    <img class="masthead__mark" src="../assets/flag-mark.jpg"
-         alt="Flag of the Empire of Hrossagri&#240;" width="96" height="64">
-    <div class="masthead__text">
-      <p class="masthead__state">State Portal</p>
-      <p class="masthead__name">The Empire of Hrossagri&#240;</p>
-      <p class="masthead__latin">Hrossagrith &middot; horses&rsquo; sanctuary, and the peace that is enforced</p>
-    </div>
+  <div class="shell masthead__inner">
+    <img class="masthead__flag" src="../assets/flag.jpg"
+         alt="Flag of the Empire of Hrossagri&#240;" width="84" height="56">
+    <svg class="masthead__emblem" aria-hidden="true"><use href="../assets/icons.svg#i-emblem"></use></svg>
+    <p class="masthead__state">Imperial State Portal</p>
+    <p class="masthead__name"><a href="../">The Empire of Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
   </div>
 </header>
 
 <nav class="nav" aria-label="Primary">
-  <div class="nav__inner">
+  <div class="shell nav__inner">
     <a href="../">Home</a>
-    <a href="../symbols/">Name &amp; Symbols</a>
-    <a href="../history/">History</a>
+    <a href="../horses/">Horses</a>
+    <a href="../living/">Living</a>
     <a href="../gov/" aria-current="page">Government</a>
     <a href="../gov/law/">Law</a>
+    <a href="../history/">History</a>
+    <a href="../symbols/">Symbols</a>
     <a href="../about/">About</a>
-    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
   </div>
 </nav>
 
-<main id="main" class="wrap">
-  <div class="prose">
-    <p class="eyebrow">Government of the Empire</p>
-    <h1 class="page-title">The State and Its Doctrine</h1>
-    <p class="page-standfirst">The full constitutional description of Hrossagri&#240; is a <strong>eudaimonocratic diarchic monarchy</strong>. Eudaimonocracy answers why state power exists and what it is for. The diarchy answers who holds it.</p>
+<div class="shell crumb"><a href="../">Home</a><span>&rsaquo;</span><strong>Government</strong></div>
 
-    <div class="notice">
-      <p><strong>A human state.</strong> Hrossagri&#240; is governed by and for humans. Its citizens, monarchs, officials, voters, workers, patients and passengers are people. Horses and other equids are protected living beings and working partners; they are not the population and hold no human political office.</p>
+<main id="main" class="shell wrap">
+  <p class="entry">Book I</p>
+  <h1 class="page-title">The state and its doctrine</h1>
+  <p class="page-standfirst">The full constitutional description of Hrossagri&#240; is a eudaimonocratic diarchic monarchy. Eudaimonocracy answers why state power exists. The diarchy answers who holds it.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>A human state.</strong> Hrossagri&#240; is governed by and for humans. Its citizens, monarchs, officials, voters, workers, patients and passengers are people. Horses and other equids are protected living beings and working partners; they are not the population and hold no human political office.</p></div>
+
+      <h2>Eudaimonocracy</h2>
+      <p class="h2-num">Article I &middot; The purpose of state power</p>
+      <p class="dropcap">The name comes from <em>eudaimonia</em>, the classical Greek idea usually mistranslated as happiness. It is closer to <strong>flourishing</strong>: a life going well as a whole, rather than a moment that feels good. A person can enjoy something while destroying their own life, and something unpleasant today can be necessary for a genuinely good life overall.</p>
+      <p>From that comes the Hrossagrithic term: government oriented toward flourishing. But the Empire does not simply copy Aristotle. Classical eudaimonia is primarily about human flourishing, and Hrossagri&#240; deliberately widens the frame using an existing eight-part ethical scheme.</p>
+
+      <div class="pullquote">
+        <p>The legitimate purpose of state power is to maximise constructive survival and flourishing and minimise serious destruction across the Eight Dynamics, using the best available evidence to determine the real consequences of policy.</p>
+      </div>
+
+      <h2 id="dynamics">The Eight Dynamics</h2>
+      <p class="h2-num">Article II &middot; The ethical frame, and where it comes from</p>
+      <p>The Eight Dynamics are not a Hrossagrithic invention. They are a concept from Scientology, which describes the basic principle of existence as a drive toward survival divided into eight interconnected urges. The Empire borrows that framework as its ethical scheme; the political conclusions drawn from it are its own.</p>
+
+      <ol class="dynamics">
+        <li><strong>Self</strong> &mdash; the urge to survive as an individual and to be oneself.</li>
+        <li><strong>Creativity</strong> &mdash; making things for the future: sex, family, children, raising them, creation directed forward.</li>
+        <li><strong>Groups</strong> &mdash; survival through or as a group of any scale, from a school class to a state.</li>
+        <li><strong>Mankind</strong> &mdash; the human species as a whole, distinct from any one nation.</li>
+        <li><strong>Life Forms</strong> &mdash; animals, birds, insects, fish and vegetation; life itself.</li>
+        <li><strong>Physical Universe</strong> &mdash; matter, energy, space and time.</li>
+        <li><strong>Spiritual Dynamic</strong> &mdash; spiritual beings, spiritual existence, and the spiritual source of life.</li>
+        <li><strong>Infinity</strong> &mdash; existence as infinity, associated with God, the Supreme Being or the Creator.</li>
+      </ol>
+
+      <p>In the source framework, actions that increase survival across the majority of the Dynamics are regarded as constructive, and actions that destroy or deny them as destructive. That is the part Hrossagri&#240; turns into a political method &mdash; and the Fifth Dynamic is why <a href="../horses/">a horse is not counted merely as somebody&rsquo;s property</a>.</p>
+
+      <h2>What eudaimonocracy is not</h2>
+      <p class="h2-num">Article III &middot; Four standing misreadings</p>
+      <ul>
+        <li><strong>Not a happiness machine.</strong> Immediate pleasure is not eudaimonia. A policy is judged by its effect on a life over time, and on families, groups and others.</li>
+        <li><strong>Not ordinary democracy.</strong> There is a Parliament, elections, public opinion and the right to criticise government &mdash; but the majority is not the absolute sovereign. If the evidence strongly indicates a course will cause enormous harm, the answer can be no. Fifty-one per cent of votes does not turn a destructive act into a constructive one.</li>
+        <li><strong>Not technocracy.</strong> Experts establish and test facts. Whether an outcome is wanted, and at what cost, is a political and ethical question; a scientist does not become monarch by being a scientist.</li>
+        <li><strong>Not simple utilitarianism.</strong> The question is not which total of benefit is larger, but what exactly is being created and destroyed, where, how seriously, and whether the same result can be reached with less destruction.</li>
+      </ul>
+
+      <h2 id="diarchy">The Imperial Diarchy</h2>
+      <p class="h2-num">Article IV &middot; Two Crowns, equal in authority</p>
+      <p>Hrossagri&#240; is governed through two permanent and separate offices, <strong>equal in governing authority</strong>. Neither monarch commands, outranks, or may unilaterally dismiss the other. The holder of either Crown may use the title Empress or Emperor; the diarchy may consist of two Empresses, two Emperors, or one of each.</p>
     </div>
+    <aside class="marg">
+      <strong>Herd archetypes</strong>
+      The two Crowns are understood culturally through the guiding lead mare, who determines direction, and the protective stallion, who scouts and guards. These are symbols of function &mdash; not constitutional rules about sex or gender, and no restriction on any citizen.
+    </aside>
+  </div>
 
-    <h2>Eudaimonocracy</h2>
+  <ul class="split">
+    <li>
+      <h3>The Guiding Crown</h3>
+      <p>Domestic government, diplomacy, civil administration, economic and social direction, infrastructure, and the Empire&rsquo;s long-term course.</p>
+    </li>
+    <li>
+      <h3>The Guarding Crown</h3>
+      <p>Defence, borders, national security, military readiness, protective intelligence, emergency protection and response, scouting, and protective strategy.</p>
+    </li>
+  </ul>
 
-    <p>The name comes from <em>eudaimonia</em>, the classical Greek idea usually mistranslated as &ldquo;happiness&rdquo;. It is closer to <strong>flourishing</strong>: a life going well as a whole, rather than a moment that feels good. A person can enjoy something while destroying their own life, and something unpleasant today can be necessary for a genuinely good life overall.</p>
+  <div class="two">
+    <div class="col">
+      <p>The Guiding Crown has seniority only in ceremonial precedence, and where the same person would simultaneously become next entitled to a lawful offer from both succession lines. That seniority grants no greater governing power.</p>
+      <p>There is one state, one government, one cabinet, one national budget, one military structure and one civil service. Neither Crown may create a rival government, treasury, military, intelligence service or administration, issue orders through the other&rsquo;s chain of command, or dismiss the other&rsquo;s officials.</p>
 
-    <p>From that comes the Hrossagrithic term: government oriented toward flourishing. But the Empire does not simply copy Aristotle. Classical eudaimonia is primarily about human flourishing, and Hrossagri&#240; deliberately widens the frame using an existing eight-part ethical scheme.</p>
+      <h3>What requires both Crowns</h3>
+      <p>Each Crown decides ordinary matters whose predominant purpose and direct legal effect lie in its own field. A decision becomes joint when it directly alters the other Crown&rsquo;s legal authority or chain of command; commits or removes a substantial share of shared money, personnel, infrastructure or core operational capacity; creates a binding national obligation in both fields; or creates a concrete, substantial and reasonably probable effect on the other Crown&rsquo;s safety or ability to perform its duties.</p>
+      <p><strong>Actual effect controls.</strong> A decision cannot escape joint approval by being divided into smaller acts, or relabelled temporary, experimental, administrative, secret, military or emergency-adjacent. Disputes over classification &mdash; not over policy &mdash; go to three senior judges drawn by public audited lot.</p>
 
-    <div class="pullquote">
-      <p>Eudaimonocracy is the Hrossagrithic political doctrine according to which the legitimate purpose of state power is to maximise constructive survival and flourishing and minimise serious destruction across the Eight Dynamics, using the best available evidence to determine the real consequences of policy.</p>
+      <h3 id="deadlock">Deadlock</h3>
+      <p>When the Crowns disagree on a joint matter, neither may impose the disputed proposal. An ordinary joint proposal must be resolved within thirty days, an urgent one within seventy-two hours; if agreement is not reached, <strong>the proposal fails</strong>. Silence, refusal to attend or delay never counts as approval.</p>
+      <p>The previous lawful position then continues &mdash; public services, defensive readiness, necessary temporary appointments, and an essential budget adjusted only by published objective formula. This exists so that neither a Crown nor Parliament can manufacture a collapse by running out the clock.</p>
+
+      <h3>Emergency action</h3>
+      <p>During an active or imminent attack, disaster or other time-critical threat, the Guarding Crown may issue immediate operational orders within its field without waiting for joint approval. An urgent threat inside the Guiding field &mdash; epidemic, failure of food, water or infrastructure, seizure of the financial system &mdash; permits the Guiding Crown the same minimum temporary orders. Neither may amend the Constitution, succession or the basic distribution of power, and neither may disguise an ordinary policy preference as an emergency. Every emergency order is recorded with its evidence and reviewed at least every seventy-two hours.</p>
+
+      <h2>Parliament and the courts</h2>
+      <p class="h2-num">Article V &middot; Crown supremacy inside the constitution</p>
+      <p>Hrossagri&#240; is Crown-dominant, but <strong>Crown supremacy exists within the Constitution rather than outside it</strong>. Parliament represents the public, debates and drafts laws, investigates misconduct, scrutinises administration and administers delegated powers. It cannot enact law over the refusal of the Crown or Crowns whose assent is required, and it has no override.</p>
+
+      <h2>Succession, regency and removal</h2>
+      <p class="h2-num">Article VI &middot; Two lines, kept separate</p>
+      <p>The two Crowns have separate succession lines. Beyond hereditary succession, a Crown may be filled by appointment or exclusion by will, and a vacant Crown may go to national election in which candidates make public promises. Acceptance and refusal are real: no one is bound to accept. A minor monarch governs through a regency council with authority released progressively by age, and temporary incapacity, disappearance, medical retirement, abdication and removal each have their own defined procedure.</p>
+
+      <h2>Foundational values</h2>
+      <p class="h2-num">Article VII &middot; Eight, in the order recorded</p>
+      <ul>
+        <li>Historical honesty</li>
+        <li>Meritocracy</li>
+        <li>Animal welfare</li>
+        <li>Scientific progress</li>
+        <li>Environmental stewardship</li>
+        <li>Refugee integration</li>
+        <li>Social equality</li>
+        <li>Ethical governance</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>The corresponding body of binding instruments &mdash; codes, technical standards and official templates &mdash; is catalogued in the <a href="law/">register of imperial law</a>. What the state provides for the people who live here is set out in <a href="../living/">Living in Hrossagri&#240;</a>.</p></div>
     </div>
-
-    <h2>The Eight Dynamics</h2>
-
-    <p>The Eight Dynamics are not a Hrossagrithic invention. They are a concept from Scientology, which describes the basic principle of existence as a drive toward survival divided into eight interconnected urges. The Empire borrows that framework as its ethical scheme; the political conclusions drawn from it are its own.</p>
-
-    <ol class="dynamics">
-      <li><strong>Self</strong> &mdash; the urge to survive as an individual and to be oneself.</li>
-      <li><strong>Creativity</strong> &mdash; making things for the future: sex, family, children, raising them, and creation directed forward.</li>
-      <li><strong>Groups</strong> &mdash; survival through or as a group of any scale, from a school class to a state.</li>
-      <li><strong>Mankind</strong> &mdash; the human species as a whole, distinct from any one nation.</li>
-      <li><strong>Life Forms</strong> &mdash; animals, birds, insects, fish and vegetation; life itself.</li>
-      <li><strong>Physical Universe</strong> &mdash; matter, energy, space and time.</li>
-      <li><strong>Spiritual Dynamic</strong> &mdash; spiritual beings, spiritual existence, and the spiritual source of life.</li>
-      <li><strong>Infinity</strong> &mdash; existence as infinity, associated with God, the Supreme Being or the Creator.</li>
-    </ol>
-
-    <p>In the source framework, actions that increase survival across the majority of the Dynamics are regarded as constructive, and actions that destroy or deny those areas of life as destructive. That is the part Hrossagri&#240; turns into a political method.</p>
-
-    <div class="notice">
-      <p><strong>What the framework does not decide.</strong> Scientology does not say &ldquo;create two Crowns&rdquo;, &ldquo;ban ordinary motor roads&rdquo;, or &ldquo;ban horse bits&rdquo;. Those are Hrossagrithic decisions, reached by applying the Dynamics to evidence. The Empire takes the ethical scheme and nothing else.</p>
-    </div>
-
-    <h3>Where science comes in</h3>
-    <p>The Dynamics can say which kinds of consequence matter ethically. They cannot establish whether a medicine works, whether a piece of equipment causes pain, or what a tax will actually raise. Those are empirical questions. So the Empire separates the two: <strong>ethics decides what counts as constructive or destructive; science establishes what is actually happening.</strong> Good intentions do not license an ineffective policy.</p>
-
-    <p>This is also why the Empire re-tests old science rather than treating age as authority. New research is not automatically better, and an excellent old study that survives modern testing stays. But an old claim receives no permanent immunity for having sat in textbooks. Old medical dogmas, psychological theories, veterinary practices, engineering standards and child-rearing methods are all asked the same question: was this ever properly tested? Because much of the literature was produced in societies with severe sexism and very different attitudes to children, research into women&rsquo;s health and into children as developing rather than miniature adults is deliberately funded.</p>
-
-    <h3>What eudaimonocracy is not</h3>
-    <ul>
-      <li><strong>Not a happiness machine.</strong> Immediate pleasure is not eudaimonia. A policy is judged by its effect on a life over time, and on families, groups and others, not by what someone wants at this exact moment.</li>
-      <li><strong>Not ordinary democracy.</strong> Hrossagri&#240; has a Parliament, elections, public opinion and the right to criticise government &mdash; but the majority is not the absolute sovereign. If the evidence strongly indicates a course will cause enormous harm, the answer can be no. Public opinion remains vital information about what is happening to the population; it does not turn a destructive act into a constructive one.</li>
-      <li><strong>Not technocracy.</strong> Experts establish and test facts. Whether an outcome is wanted, and at what cost, is a political and ethical question, and a scientist does not become monarch by being a scientist.</li>
-      <li><strong>Not simple utilitarianism.</strong> The question is not which total of benefit is larger. It is what exactly is being created and destroyed, where, how seriously, and whether the same result can be reached with less destruction. Horrific harm to one person is not purchased by mild convenience for a million.</li>
-    </ul>
-
-    <h2>The Imperial Diarchy</h2>
-
-    <p>Hrossagri&#240; is governed through two permanent and separate offices, <strong>equal in governing authority</strong>. Neither monarch commands, outranks, or may unilaterally dismiss the other. The holder of either Crown may use the title Empress or Emperor; the diarchy may consist of two Empresses, two Emperors, or one of each.</p>
-
-    <ul class="split">
-      <li>
-        <h3>The Guiding Crown</h3>
-        <p>Domestic government, diplomacy, civil administration, economic and social direction, infrastructure, and the Empire&rsquo;s long-term course.</p>
-      </li>
-      <li>
-        <h3>The Guarding Crown</h3>
-        <p>Defence, borders, national security, military readiness, protective intelligence, emergency protection and response, scouting, and protective strategy.</p>
-      </li>
-    </ul>
-
-    <p>The Guiding Crown has seniority only in ceremonial precedence, and where the same person would simultaneously become next entitled to a lawful offer from both succession lines. That seniority grants no greater governing power.</p>
-
-    <p>There is one state, one government, one cabinet, one national budget, one military structure and one civil service. Neither Crown may create a rival government, treasury, military, intelligence service or administration, issue orders through the other&rsquo;s chain of command, or dismiss the other&rsquo;s officials.</p>
-
-    <h3>What requires both Crowns</h3>
-    <p>Each Crown decides ordinary matters whose predominant purpose and direct legal effect lie in its own field. A decision becomes joint when it directly alters the other Crown&rsquo;s legal authority or chain of command; commits or removes a substantial share of shared money, personnel, infrastructure or core operational capacity; creates a binding national obligation in both fields; or creates a concrete, substantial and reasonably probable effect on the other Crown&rsquo;s safety or ability to perform its duties. Incidental, remote, speculative or symbolic effects are not enough.</p>
-
-    <p><strong>Actual effect controls.</strong> A decision cannot escape joint approval by being divided into smaller acts, or relabelled temporary, experimental, administrative, secret, military or emergency-adjacent. A Crown proposing something that plausibly meets a joint test must deliver the complete text, evidence, cost, duration and operational effect to the other Crown seventy-two hours in advance, or twelve when formally urgent. Disputes over classification &mdash; not over policy &mdash; go to three senior judges drawn by public audited lot.</p>
-
-    <h3>Deadlock</h3>
-    <p>When the Crowns disagree on a joint matter, neither may impose the disputed proposal. Both must state their objections in writing, exchange evidence, and genuinely consider alternatives. Silence, refusal to attend, or delay never counts as approval. An ordinary joint proposal must be resolved within thirty days, an urgent one within seventy-two hours; if agreement is not reached, <strong>the proposal fails</strong>.</p>
-    <p>The previous lawful position then continues &mdash; public services, defensive readiness, necessary temporary appointments, and an essential budget adjusted only by published objective formula for inflation, population, binding wages and debt, and necessary maintenance. This exists so that neither a Crown nor Parliament can manufacture a collapse by running out the clock. A failed proposal cannot be renewed, divided or renamed to obtain its substance by another route.</p>
-
-    <h3>Emergency action</h3>
-    <p>During an active or imminent attack, disaster, sabotage or other time-critical threat, the Guarding Crown may issue immediate operational orders within its field without waiting for joint approval where delay would risk life, territory, essential systems or the continuity of the Crowns. An urgent threat inside the Guiding field &mdash; epidemic, failure of food, water or infrastructure, seizure of the financial system &mdash; permits the Guiding Crown the same minimum temporary orders.</p>
-    <p>Neither authority may amend the Constitution, succession, permanent civil law or the basic distribution of power, or create a permanent settlement, and neither may be used to disguise an ordinary policy preference as an emergency. Every emergency order is recorded with its evidence, sent to the other Crown as soon as communication allows, and reviewed at least every seventy-two hours.</p>
-
-    <h2>Parliament and the courts</h2>
-    <p>Hrossagri&#240; is Crown-dominant, but <strong>Crown supremacy exists within the Constitution rather than outside it</strong>. Parliament represents the public, debates and drafts laws, investigates misconduct, scrutinises administration, supplies public evidence, and administers powers delegated by the Crowns. It cannot enact law over the refusal of the Crown or Crowns whose assent is required, and it has no override.</p>
-    <p>A law confined to one field requires the assent of that Crown. A joint, serious, constitutional or cross-field law requires both. Where the Constitution sets a parliamentary threshold, it is measured against full statutory membership &mdash; vacancies, absences and abstentions do not lower the denominator.</p>
-
-    <h2>Succession, regency, and removal</h2>
-    <p>The two Crowns have <strong>separate succession lines</strong>. Beyond hereditary succession, a Crown may be filled by appointment or exclusion by will, and a vacant Crown may go to national election, in which candidates make public promises they can be held to. No one is bound to accept: acceptance and refusal are real.</p>
-    <p>A minor monarch governs through a regency council with authority released progressively by age. Temporary incapacity, disappearance, retirement on medical grounds, abdication and removal each have their own defined procedure, as do distinct emergencies requiring temporary parliamentary government. Constitutional amendment is itself a defined procedure rather than an ordinary act of will.</p>
-
-    <h2>Foundational values</h2>
-    <ul>
-      <li>Historical honesty</li>
-      <li>Meritocracy</li>
-      <li>Animal welfare</li>
-      <li>Scientific progress</li>
-      <li>Environmental stewardship</li>
-      <li>Refugee integration</li>
-      <li>Social equality</li>
-      <li>Ethical governance</li>
-    </ul>
-
-    <h2>Public welfare and enforcement</h2>
-    <p>Some consequences of the doctrine, stated plainly:</p>
-    <ul>
-      <li><strong>Healthcare</strong> is free at the point of use and designed to prevent waiting lists, staff shortages and regional inequality. <strong>Education</strong> is free and genuinely accessible at every level. <strong>Childcare</strong> is free or effectively free and available regardless of parental employment.</li>
-      <li><strong>Children</strong> receive exceptionally strong protection from violence, exploitation, neglect and coercive control, and must be heard in decisions affecting them. Free public programmes teach parenting, emotional regulation and how to recognise and break generational cycles of abuse &mdash; presented as ordinary public education, not as punishment.</li>
-      <li><strong>Policing</strong> is recruited and trained on an aviation model: strict selection, long practical training, simulations, recurring examination, psychological assessment and mandatory recertification. De-escalation is the default, and abuse of authority is penalised more harshly than the same abuse by an ordinary citizen.</li>
-      <li><strong>The death penalty is absolutely prohibited</strong>, including for treason, corruption, animal cruelty or horse slaughter. Horse slaughter remains one of the gravest equid-welfare crimes, but the human offender receives the highest available non-lethal penalties.</li>
-      <li><strong>Privacy offences and cybercrime</strong> carry exceptionally severe penalties. Public infrastructure is extensively monitored, but footage is encrypted, access-logged, time-limited and usable only for legally defined purposes; misuse by an official is a serious offence.</li>
-      <li><strong>Taxation</strong> of income, wealth, capital gains and large inheritances is progressive, and hiding wealth abroad is a serious offence. <strong>AI data centres are prohibited</strong> within the Empire.</li>
-    </ul>
-
-    <div class="notice">
-      <p>The corresponding body of binding instruments &mdash; codes, technical standards and official templates &mdash; is catalogued in the <a href="law/">register of imperial law</a>.</p>
-    </div>
+    <aside class="marg">
+      <strong>Thresholds</strong>
+      Where the Constitution sets a parliamentary threshold, it is measured against full statutory membership. Vacancies, absences and abstentions do not lower the denominator.
+      <br><br>
+      <strong>Lots</strong>
+      Judges and auditors for constitutional disputes are drawn by public audited lot from frozen professional rosters maintained by permanent civil servants.
+    </aside>
   </div>
 </main>
 
 <footer class="footer">
-  <div class="footer__inner">
+  <div class="shell footer__top">
+    <div>
+      <h2>The Empire</h2>
+      <ul>
+        <li><a href="../gov/">Government and doctrine</a></li>
+        <li><a href="../gov/law/">Imperial law</a></li>
+        <li><a href="../history/">History</a></li>
+        <li><a href="../symbols/">Name, flag and symbols</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Living here</h2>
+      <ul>
+        <li><a href="../living/health/">Health</a></li>
+        <li><a href="../living/education/">Education and children</a></li>
+        <li><a href="../living/justice/">Justice and policing</a></li>
+        <li><a href="../living/money/">Work and money</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Roads and equids</h2>
+      <ul>
+        <li><a href="../horses/">Horses</a></li>
+        <li><a href="../horses/road-status/">Road-status markers</a></li>
+        <li><a href="../living/transport/">Transport and roads</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>This portal</h2>
+      <ul>
+        <li><a href="../about/">About this project</a></li>
+        <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
     <p class="footer__disclaimer">Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
     <p class="footer__meta">The Empire of Hrossagri&#240; &middot; State Portal &middot; hrossagrith.github.io</p>
   </div>
