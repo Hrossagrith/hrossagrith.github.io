@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Service Equid Selection and Breed Standard &mdash; フロッサグリーズ帝国</title>
+<meta name="description" content="Selection, individual certification, disqualifying types, review and retirement of equids used in imperial service work.">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../../../../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../../../../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../../../ja/gov/">政府と教義</a></li>
+            <li><a href="../../../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../../../../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../../../../ja/gov/law/">帝国法</a></li>
+            <li><a href="../../../../ja/history/">歴史</a></li>
+            <li><a href="../../../../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../../../../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../../../../ja/living/health/">保健医療</a></li>
+            <li><a href="../../../../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../../../../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../../../../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../../../../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../../../../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../../../../ja/horses/">馬</a></li>
+            <li><a href="../../../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../../../../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../../../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../../../../ja/about/">この企画について</a></li>
+            <li><a href="../../../../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../../ja/">ホーム</a>
+    <a href="../../../../ja/horses/">馬</a>
+    <a href="../../../../ja/living/">暮らし</a>
+    <a href="../../../../ja/gov/">政府</a>
+    <a href="../../../../ja/gov/law/" aria-current="page">法</a>
+    <a href="../../../../ja/history/">歴史</a>
+    <a href="../../../../ja/symbols/">象徴</a>
+    <a href="../../../../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../ja/">ホーム</a><span>&rsaquo;</span><a href="../../../../ja/gov/">政府</a><span>&rsaquo;</span><a href="../../../../ja/gov/law/">法</a><span>&rsaquo;</span><strong>Imperial Service Equid Selection and Breed Standard</strong></div>
+
+<main id="main" class="shell wrap">
+  <div class="notice notice--lang"><p>この法令はこの言語ではまだ公布されていない。以下は英語の本文である。</p></div>
+
+
+  <p class="entry">Book III &middot; Standard</p>
+  <h1 class="page-title">Imperial Service Equid Selection and Breed Standard</h1>
+  <p class="page-standfirst">The technical standard by which equids are selected, individually certified, reviewed, and retired from imperial service work.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">This Standard shall regulate the permitted breed types, functional crosses, disqualifying exaggerated types, individual certification, and welfare requirements for service equids.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      This is the final and binding technical standard for service-equid selection, functional type, individual certification, disqualifying exaggeration, and welfare suitability. It is cross-referenced by carriage, mounted-service, road, and emergency-service law. Chapters I to X are reserved for later drafting.
+    </aside>
+  </div>
+
+  <h2 id="art-1">Article 1. General principle</h2>
+  <p>A service equid shall be selected for function, welfare, soundness, temperament, recovery, route suitability, and service safety. Breed may be hard-coded for service classes where the Empire wants a strict functional type, but breed name alone shall never override individual certification.</p>
+
+  <h2 id="art-2">Article 2. Emergency medical carriage equids</h2>
+  <p>Emergency medical carriage equids shall be selected to support the fastest safe medical transport and lowest practicable patient jostle.</p>
+  <h3>Required traits</h3>
+  <ul>
+    <li>sustainable speed;</li>
+    <li>smooth gait;</li>
+    <li>rapid recovery;</li>
+    <li>cardiovascular fitness;</li>
+    <li>respiratory fitness;</li>
+    <li>hoof durability;</li>
+    <li>traffic courage;</li>
+    <li>noise tolerance;</li>
+    <li>calmness around panic;</li>
+    <li>ability to stand during emergency loading;</li>
+    <li>ability to work in relay systems;</li>
+    <li>compatibility as leader or wheeler;</li>
+    <li>ability to remain safe without harsh restraint.</li>
+  </ul>
+  <h3>Reserved ambulance team model</h3>
+  <ul>
+    <li>Four-equid teams may be standard for high-speed ambulance service where route and vehicle design require it.</li>
+    <li>Leaders should be selected for speed, line confidence, route focus, road courage, and endurance.</li>
+    <li>Wheelers should be selected for strength, braking stability, turn stability, calmness near the carriage, and smooth power.</li>
+    <li>Possible leaders: Standardbred, Orlov Trotter, Russian Trotter, French Trotter, fast endurance carriage lines, or approved high-speed trotter-type crosses.</li>
+    <li>Possible wheelers: light Percheron &times; Standardbred, Percheron &times; Orlov Trotter, Cleveland Bay &times; Standardbred, Norman Cob &times; Trotter, lighter Morgan &times; Percheron, or other approved light draft/trotter cross.</li>
+    <li>Wheelers shall provide stability and braking power without excessive body mass, slow recovery, inefficient movement, or loss of speed, smoothness, and welfare.</li>
+  </ul>
+
+  <h2 id="art-3">Article 3. Commercial taxi and public transport equids</h2>
+  <p>Taxi and public transport equids should be efficient, sane, smooth, durable, traffic-reliable, and easy to recover.</p>
+  <h3>Possible types</h3>
+  <ul>
+    <li>Standardbred;</li>
+    <li>Orlov Trotter;</li>
+    <li>Russian Trotter;</li>
+    <li>French Trotter;</li>
+    <li>moderate Hackney, not wasteful extreme high-action show type;</li>
+    <li>Morgan;</li>
+    <li>Cleveland Bay;</li>
+    <li>Gelderlander or carriage warmblood type;</li>
+    <li>light Percheron crosses for heavier taxi routes.</li>
+  </ul>
+  <p>Flashy high-knee action shall not be treated as better where it wastes energy, increases fatigue, or reduces welfare.</p>
+
+  <h2 id="art-4">Article 4. Mounted police and Road Guard equids</h2>
+  <p>Mounted police and Road Guard equids should be endurance-bred, functional-headed, temperament-tested, road-sane, crowd-safe, and capable of fast recovery.</p>
+  <h3>Possible types</h3>
+  <ul>
+    <li>endurance-bred Arabian;</li>
+    <li>Anglo-Arabian;</li>
+    <li>functional Akhal-Teke;</li>
+    <li>Standardbred or Trotter;</li>
+    <li>Arabian &times; Standardbred;</li>
+    <li>Arabian &times; Trotter;</li>
+    <li>Kabardin;</li>
+    <li>Karachai;</li>
+    <li>approved functional mountain/endurance/road-patrol crosses.</li>
+  </ul>
+  <p>Extreme dished show-Arabian faces shall not be selected for service merely for appearance. Moderate or slightly dished heads may be acceptable where breathing, airway, teeth, tack fit, and temperament are sound.</p>
+
+  <h2 id="art-5">Article 5. Reserved chapters for later drafting</h2>
+  <p>The Standard reserves the following chapters for later drafting; no text is set out under them here.</p>
+  <ul>
+    <li>Chapter I &mdash; Application and Definitions</li>
+    <li>Chapter II &mdash; General Individual Certification</li>
+    <li>Chapter III &mdash; Service Breed Classes</li>
+    <li>Chapter IV &mdash; Emergency Medical Carriage Equids</li>
+    <li>Chapter V &mdash; Taxi and Public Transport Equids</li>
+    <li>Chapter VI &mdash; Mounted Police and Road Guard Equids</li>
+    <li>Chapter VII &mdash; Postal, Courier, Veterinary, Fire, Rescue, Military, Sovereign, and Government Equids</li>
+    <li>Chapter VIII &mdash; Disqualifying Exaggerated Types</li>
+    <li>Chapter IX &mdash; Health, Soundness, Temperament, and Recovery Testing</li>
+    <li>Chapter X &mdash; Records, Passports, Inspections, Appeals, and Offences</li>
+  </ul>
+
+  <p class="entry">Binding certification provisions</p>
+
+  <h2 id="art-6">Article 6. Individual certification</h2>
+  <p>No equid is approved for service by breed, pedigree, registry, colour, sex, size, price, tradition, or appearance alone. Every equid shall pass individual veterinary, soundness, respiratory, cardiovascular, hoof, conformation, temperament, recovery, equipment-fit, route, climate, and role testing.</p>
+  <p>Certification shall identify the exact service class, route class, speed class, workload, climate limits, equipment, vehicle where applicable, team role, rider or driver skill requirement, review date, and disqualifying conditions.</p>
+
+  <h2 id="art-7">Article 7. Functional assessment</h2>
+  <p>Assessment shall include:</p>
+  <ul>
+    <li>walk and trot soundness on straight lines and turns;</li>
+    <li>recovery after representative lawful effort;</li>
+    <li>breathing and cardiovascular response;</li>
+    <li>hoof durability and route traction;</li>
+    <li>ability to stand, start, stop, turn, back, yield, and wait;</li>
+    <li>traffic, crowd, noise, lighting, marker, and emergency-equipment acceptance;</li>
+    <li>ordinary startle and recovery;</li>
+    <li>separation and team compatibility where relevant;</li>
+    <li>safe handling without pain, flooding, harsh restraint, or exhaustion;</li>
+    <li>fit of lawful bitless headgear, tack, harness, and service equipment.</li>
+  </ul>
+
+  <h2 id="art-8">Article 8. Temperament testing</h2>
+  <p>Testing shall reproduce only lawful and reasonably foreseeable service conditions. It shall not use flooding, trapped exposure, deliberate terror, pain, repeated startle to exhaustion, deprivation, or learned helplessness. An equid shall not be certified merely because shutdown, freezing, or exhaustion resembles calmness.</p>
+
+  <h2 id="art-9">Article 9. Disqualifying conditions</h2>
+  <p>An equid shall be refused or removed from service where it has:</p>
+  <ul>
+    <li>current lameness, pain, respiratory compromise, unsafe recovery, or relevant medication masking;</li>
+    <li>extreme fear, panic, defensive aggression, shutdown, repeated escape behaviour, or inability to stand or recover safely;</li>
+    <li>conformation or exaggerated type materially impairing breathing, vision, dental health, soundness, thermoregulation, tack fit, balance, or efficient movement;</li>
+    <li>chronic hoof fragility incompatible with the route;</li>
+    <li>inability to work safely in lawful bitless equipment;</li>
+    <li>a workload, vehicle, route, or climate demand exceeding individual capacity.</li>
+  </ul>
+
+  <h2 id="art-10">Article 10. Breed and type references</h2>
+  <p>Breed lists in this Standard are examples of potentially suitable functional populations, not automatic approvals and not exclusions of other suitable equids. Crosses may be approved where the individual meets all requirements. A breed standard or registry preference shall not override welfare evidence.</p>
+
+  <h2 id="art-11">Article 11. Emergency medical carriage selection</h2>
+  <p>Emergency medical carriage leaders shall be selected for sustainable speed, smooth gait, line confidence, route focus, road courage, endurance, and rapid recovery. Wheelers shall be selected for smooth power, braking and turn stability, calmness near the vehicle, and compatible speed.</p>
+  <p>No emergency-service equid shall be selected for extreme show action, exaggerated mass, inefficient movement, or appearance that increases fatigue, jostle, respiratory burden, joint strain, or slow recovery.</p>
+
+  <h2 id="art-12">Article 12. Taxi and public transport selection</h2>
+  <p>Taxi and public transport equids shall be efficient, smooth, traffic-reliable, socially stable, easy to recover, and suitable for repeated lawful stop-and-start work. Flashy movement, excessive knee action, extreme animation, or unusually heavy type shall not be rewarded where it wastes energy or worsens recovery.</p>
+
+  <h2 id="art-13">Article 13. Mounted police and Road Guard selection</h2>
+  <p>Mounted police and Road Guard equids shall be capable of safe ridden road control, crowd navigation, standing, lateral movement, retreat, emergency separation, and rapid recovery. They shall not be used as physical barriers where crushing, striking, deliberate collision, or crowd panic is reasonably foreseeable.</p>
+
+  <h2 id="art-14">Article 14. Review and retirement</h2>
+  <p>Ordinary service certification shall be reviewed at least annually and immediately after illness, injury, lameness, collapse, serious incident, unsafe recovery, behavioural change, route change, equipment change, vehicle change, or material workload change.</p>
+  <p>An equid shall be retired or reassigned before service becomes dependent upon pain relief, intimidation, excessive rider or driver force, abnormal recovery, repeated refusal, or declining confidence.</p>
+
+  <h2 id="art-15">Article 15. Records and appeals</h2>
+  <p>All testing, raw findings, refusals, restrictions, incidents, reviews, and retirement decisions shall be retained for at least ten years and linked to the Working Equid Passport. A refusal or restriction may be appealed to an independent panel, but an appeal does not stay an immediate welfare suspension.</p>
+
+  <h2 id="art-16">Article 16. Offences</h2>
+  <p>It is an offence to falsify testing, conceal medication or history, substitute another equid, certify through a conflict of interest, use breed as a substitute for individual assessment, force an equid through a failed temperament test, or continue service after a stop or removal condition.</p>
+
+  <h2 id="art-17">Article 17. Finality</h2>
+  <p>These provisions are binding. Later service manuals may add role-specific tests or stricter requirements but shall not weaken individual certification or welfare protections.</p>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../../../ja/gov/">政府と教義</a></li>
+        <li><a href="../../../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../../../../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../../../../ja/gov/law/">帝国法</a></li>
+        <li><a href="../../../../ja/history/">歴史</a></li>
+        <li><a href="../../../../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../../../../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../../../../ja/living/health/">保健医療</a></li>
+        <li><a href="../../../../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../../../../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../../../../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../../../../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../../../../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../../../../ja/horses/">馬</a></li>
+        <li><a href="../../../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../../../../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../../../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../../../../ja/about/">この企画について</a></li>
+        <li><a href="../../../../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。 :(</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+</body>
+</html>

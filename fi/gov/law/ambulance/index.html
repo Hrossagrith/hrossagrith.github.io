@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Emergency Medical Carriage Technical Standard &mdash; Hrossagri&#240;in keisarikunta</title>
+<meta name="description" content="Design, testing, certification, teams, routes and crews for imperial emergency medical carriages, engineered for fastest safe transport and lowest patient jostle.">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../fi/" data-i18n="{&quot;light&quot;: &quot;Vaalea&quot;, &quot;dark&quot;: &quot;Tumma&quot;, &quot;theme_to_light&quot;: &quot;Vaihda vaaleaan teemaan&quot;, &quot;theme_to_dark&quot;: &quot;Vaihda tummaan teemaan&quot;, &quot;search_prompt&quot;: &quot;Kirjoita yllä olevaan kenttään sana tai lause, niin haku kohdistuu portaalin kaikkiin sivuihin.&quot;, &quot;search_running&quot;: &quot;Haetaan…&quot;, &quot;search_none&quot;: &quot;Mikään rekisterin merkintä ei sisällä kaikkia sanoja. Kokeile vähemmillä tai eri sanoilla.&quot;, &quot;search_error&quot;: &quot;Hakuindeksin lataaminen epäonnistui. Yritä uudelleen.&quot;, &quot;results_one&quot;: &quot;{n} tulos haulla ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} tulosta haulla ”{q}”&quot;, &quot;results_none&quot;: &quot;Ei tuloksia haulla ”{q}”&quot;, &quot;expand_all&quot;: &quot;Avaa kaikki osat&quot;, &quot;collapse_all&quot;: &quot;Sulje kaikki osat&quot;}">
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Maailmanrakennusprojekti</p>
+    <form class="search" role="search" action="../../../../search/" method="get">
+      <label class="visually-hidden" for="q">Hae portaalista</label>
+      <input type="search" id="q" name="q" placeholder="Hae portaalista" autocomplete="off">
+      <button type="submit">Hae</button>
+    </form>
+    <label class="visually-hidden" for="locale">Kieli</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi" selected>Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Tumma</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="Hrossagri&#240;in keisarikunnan vaakuna: takajaloilleen nouseva hippogriifi pyöreässä kentässä" width="360" height="360">
+    <p class="masthead__state">Keisarillinen valtionportaali</p>
+    <p class="masthead__name"><a href="../../../../fi/">Hrossagri&#240;in keisarikunta</a></p>
+    <p class="masthead__motto">Hevosten turvapaikka ja rauha, joka pannaan täytäntöön</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Kaikki osastot">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Valikko
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keisarikunta</h2>
+            <ul>
+            <li><a href="../../../../fi/gov/">Hallinto ja oppi</a></li>
+            <li><a href="../../../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+            <li><a href="../../../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+            <li><a href="../../../../fi/gov/law/">Keisarillinen oikeus</a></li>
+            <li><a href="../../../../fi/history/">Historia</a></li>
+            <li><a href="../../../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Elämä täällä</h2>
+            <ul>
+            <li><a href="../../../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+            <li><a href="../../../../fi/living/health/">Terveydenhuolto</a></li>
+            <li><a href="../../../../fi/living/education/">Koulutus ja lapset</a></li>
+            <li><a href="../../../../fi/living/transport/">Liikenne ja tiet</a></li>
+            <li><a href="../../../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+            <li><a href="../../../../fi/living/money/">Työ ja raha</a></li>
+            <li><a href="../../../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hevoset ja tiet</h2>
+            <ul>
+            <li><a href="../../../../fi/horses/">Hevoset</a></li>
+            <li><a href="../../../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+            <li><a href="../../../../fi/horses/#service">Palvelushevoseläimet</a></li>
+            <li><a href="../../../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Tämä portaali</h2>
+            <ul>
+            <li><a href="../../../../fi/about/">Tietoa tästä projektista</a></li>
+            <li><a href="../../../../fi/search/">Hae portaalista</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../../fi/">Etusivu</a>
+    <a href="../../../../fi/horses/">Hevoset</a>
+    <a href="../../../../fi/living/">Elämä</a>
+    <a href="../../../../fi/gov/">Hallinto</a>
+    <a href="../../../../fi/gov/law/" aria-current="page">Oikeus</a>
+    <a href="../../../../fi/history/">Historia</a>
+    <a href="../../../../fi/symbols/">Symbolit</a>
+    <a href="../../../../fi/about/">Tietoa</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../fi/">Etusivu</a><span>&rsaquo;</span><a href="../../../../fi/gov/">Hallinto</a><span>&rsaquo;</span><a href="../../../../fi/gov/law/">Oikeus</a><span>&rsaquo;</span><strong>Imperial Emergency Medical Carriage Technical Standard</strong></div>
+
+<main id="main" class="shell wrap">
+  <div class="notice notice--lang"><p>Tätä säädöstä ei ole vielä julkaistu tällä kielellä. Alla on englanninkielinen teksti.</p></div>
+
+
+  <p class="entry">Book III &middot; Standard</p>
+  <h1 class="page-title">Imperial Emergency Medical Carriage Technical Standard</h1>
+  <p class="page-standfirst">The design, testing and certification of emergency medical carriages, their teams, their routes and their crews.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">This Standard shall regulate the technical design, testing, and certification of emergency medical carriages, ambulance teams, emergency lanes, glideways, sleigh-compatible routes, suspension, braking, patient restraint, and equid recovery.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      This is the final and binding technical standard for emergency medical carriages. It implements the carriage-law duty to provide the fastest safe medical transport and the lowest practicable patient jostle. Cite as the Imperial Emergency Medical Carriage Technical Standard. Three of its sections are headed as reserved; each carries text in the archive and is transcribed below.
+    </aside>
+  </div>
+
+  <h2 id="art-1">Article 1. Core legal duty</h2>
+  <p>Every emergency medical carriage shall be engineered, tested, authorised, and maintained to provide the fastest safe medical transport and the lowest practicable patient jostle consistent with equid welfare, hoof safety, braking safety, route suitability, and patient protection.</p>
+  <p>A slower or more jostling design shall not be approved where a feasible faster and lower-jostle design exists without greater equid welfare burden.</p>
+
+  <h2 id="art-2">Article 2. Reserved technical tests</h2>
+  <ul>
+    <li>route testing;</li>
+    <li>loaded testing;</li>
+    <li>suspension testing;</li>
+    <li>braking testing;</li>
+    <li>patient-jostle testing;</li>
+    <li>stretcher-lock testing;</li>
+    <li>wheel, runner, and glide element testing;</li>
+    <li>hoof-traction testing;</li>
+    <li>relay-system testing;</li>
+    <li>equid recovery testing.</li>
+  </ul>
+
+  <h2 id="art-3">Article 3. Reserved design requirements</h2>
+  <ul>
+    <li>high-quality suspension;</li>
+    <li>low centre of gravity;</li>
+    <li>secure stretcher locking;</li>
+    <li>patient restraint;</li>
+    <li>medical-equipment restraint;</li>
+    <li>brakes not dependent on equid body strain;</li>
+    <li>route-compatible wheels, runners, or glide elements;</li>
+    <li>hoof-safe emergency lanes;</li>
+    <li>runner or wheel guidance where used;</li>
+    <li>non-slip surfaces;</li>
+    <li>safe crossing design;</li>
+    <li>emergency pull-offs;</li>
+    <li>relay access where necessary;</li>
+    <li>service lighting and markers that do not frighten or blind equids.</li>
+  </ul>
+
+  <h2 id="art-4">Article 4. Reserved ambulance team model</h2>
+  <ul>
+    <li>Four-equid teams may be used where required by speed, stability, route, or vehicle design.</li>
+    <li>Leaders selected for speed, line confidence, route focus, road courage, and endurance.</li>
+    <li>Wheelers selected for strength, braking stability, turn stability, calmness near the carriage, and smooth power.</li>
+    <li>All emergency equids must be individually certified and recover safely from service demand.</li>
+  </ul>
+
+  <p class="entry">Binding certification standard</p>
+
+  <h2 id="art-5">Article 5. Vehicle certification</h2>
+  <p>Every emergency medical carriage shall be certified for the actual patient platform, suspension, brakes, wheels or runners, route class, surface, load, team formation, lighting, switchable marker illumination, marker power reserve, and medical equipment carried. Certification of a visually similar vehicle is insufficient.</p>
+  <p>The vehicle shall have:</p>
+  <ul>
+    <li>independent service and parking brakes capable of holding the fully loaded vehicle on the steepest approved gradient without relying on the equids;</li>
+    <li>a low, stable centre of gravity;</li>
+    <li>guarded wheels, runners, doors, and moving parts;</li>
+    <li>secure patient access and egress;</li>
+    <li>a stretcher locking system with at least two independent retention points;</li>
+    <li>restraint for the patient and every loose medical item;</li>
+    <li>suspension and tyres or runners selected for the route;</li>
+    <li>emergency release accessible from both sides;</li>
+    <li>communication with emergency control;</li>
+    <li>lawful lighting, markers, and hazard systems.</li>
+  </ul>
+
+  <h2 id="art-6">Article 6. Braking and stability tests</h2>
+  <p>The fully loaded vehicle shall stop repeatedly from its certified maximum route speed without wheel lock, jack-knifing, shaft impact, uncontrolled runner slide, excessive pitch, or avoidable equid braking strain. The parking brake shall hold for not less than ten minutes on the steepest approved gradient in both travel directions.</p>
+  <p>The vehicle shall pass loaded turning, camber, obstacle, rut, wet-surface, emergency-lane, and crosswind tests without wheel lift, rollover tendency, dangerous sway, patient-platform instability, or harness impact.</p>
+
+  <h2 id="art-7">Article 7. Patient-jostle test</h2>
+  <p>Patient-platform vibration and shock shall be measured on every approved route class under full representative load. The vehicle shall not be approved where a feasible suspension, wheel, tyre, runner, route, speed, or loading change would materially reduce patient jostle without increasing equid welfare burden or delaying care.</p>
+  <p>A technical report shall record root-mean-square vertical acceleration, peak shocks, lateral movement, pitch, roll, test speed, route surface, load, tyre pressure or runner condition, and comparison with alternative configurations. The lowest-jostle lawful configuration shall be used.</p>
+
+  <h2 id="art-8">Article 8. Speed and routing</h2>
+  <p>Certified maximum speed shall be route-specific and shall account for stopping distance, visibility, surface, gradient, team recovery, patient condition, and vehicle stability. Emergency status does not authorise galloping, unsafe cornering, close passing, or speed beyond the tested configuration.</p>
+  <p>Emergency control shall select the fastest safe route, not merely the shortest route. Dedicated hoof-safe emergency lanes, glideways, sleigh routes, relay points, and pull-offs shall be used where they reduce time or jostle without increasing equid risk.</p>
+
+  <h2 id="art-9">Article 9. Team certification</h2>
+  <p>Every equid shall be individually certified for emergency service, the specific hitch role, route class, speed class, vehicle, bitless driving cues, traffic conditions, standing during loading, emergency release, team separation, and post-service recovery.</p>
+  <p>A four-equid team may be used where needed for speed, stability, braking distribution, or route demand. Team size shall not be increased to disguise an overweight or poorly designed vehicle.</p>
+  <p>Leaders shall be certified for line confidence, route focus, traffic courage, sustainable speed, and recovery. Wheelers shall be certified for smooth power, braking stability, turn stability, and calmness near the vehicle. Breed does not replace individual certification.</p>
+
+  <h2 id="art-10">Article 10. Relay system</h2>
+  <p>A relay plan is mandatory where the likely incident route, weather, workload, or return journey may exceed the certified ordinary capacity of one team. Relay equids shall be rested, inspected, immediately available, and not simultaneously assigned elsewhere.</p>
+  <p>No team shall continue because a relay was unavailable where continuing would exceed lawful capacity. Emergency control shall reroute, transfer the patient to another certified emergency carriage, call a rested relay team, or stabilise and treat the patient at the nearest safe medical point. Motor road transport is not a lawful alternative in Hrossagri&#240;.</p>
+
+  <h2 id="art-11">Article 11. Crew</h2>
+  <p>The driver shall hold an emergency-medical carriage licence for the team, vehicle, route, speed, and service class. A second competent crew member shall attend the patient compartment unless the service design provides an equally safe alternative.</p>
+  <p>The crew shall be trained in equid first aid, human first aid appropriate to role, emergency unhitching, vehicle fire, collision response, runaway prevention, scene protection, stretcher handling, communications, and transfer to other transport.</p>
+
+  <h2 id="art-12">Article 12. Pre-service inspection</h2>
+  <p>Before every duty period, the service shall inspect the equids, harness, headgear, vehicle, brakes, wheels or runners, suspension, stretcher locks, restraints, road lighting, emergency warning systems, markers, marker-illumination switching, brightness, battery reserve and backup, communications, emergency tools, water, and relay readiness. A failed safety item removes the unit from service until corrected.</p>
+
+  <h2 id="art-13">Article 13. Post-service recovery</h2>
+  <p>After each emergency response, every equid shall receive an immediate recorded welfare check. Any response exceeding ordinary limits, involving high climate burden, collision, slipping, entanglement, abnormal recovery, or distress requires veterinary or competent-authority review and not less than forty-eight hours of recovery leave, with longer leave where ordered.</p>
+  <p>The vehicle, harness, and equipment shall be inspected after every serious response and before reuse.</p>
+
+  <h2 id="art-14">Article 14. Incident records</h2>
+  <p>The service shall preserve dispatch time, authorisation, patient-loading time, route, speed, stops, team, relay use, climate, load, vehicle data, welfare observations, arrival time, patient transfer, post-service findings, and any equipment or road failure for at least ten years.</p>
+
+  <h2 id="art-15">Article 15. Offences</h2>
+  <p>It is an offence to claim emergency status for ordinary transport, use an uncertified team or vehicle, exceed certified speed or route limits, omit a required relay, rely on equids instead of brakes, carry unsecured equipment, falsify response times or welfare records, or continue after an equid or vehicle stop condition.</p>
+
+  <h2 id="art-16">Article 16. Finality</h2>
+  <p>This Standard is binding emergency-medical carriage law. Later engineering manuals may add detail or stricter requirements but shall not weaken it.</p>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keisarikunta</h2>
+      <ul>
+        <li><a href="../../../../fi/gov/">Hallinto ja oppi</a></li>
+        <li><a href="../../../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+        <li><a href="../../../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+        <li><a href="../../../../fi/gov/law/">Keisarillinen oikeus</a></li>
+        <li><a href="../../../../fi/history/">Historia</a></li>
+        <li><a href="../../../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elämä täällä</h2>
+      <ul>
+        <li><a href="../../../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+        <li><a href="../../../../fi/living/health/">Terveydenhuolto</a></li>
+        <li><a href="../../../../fi/living/education/">Koulutus ja lapset</a></li>
+        <li><a href="../../../../fi/living/transport/">Liikenne ja tiet</a></li>
+        <li><a href="../../../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+        <li><a href="../../../../fi/living/money/">Työ ja raha</a></li>
+        <li><a href="../../../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hevoset ja tiet</h2>
+      <ul>
+        <li><a href="../../../../fi/horses/">Hevoset</a></li>
+        <li><a href="../../../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+        <li><a href="../../../../fi/horses/#service">Palvelushevoseläimet</a></li>
+        <li><a href="../../../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tämä portaali</h2>
+      <ul>
+        <li><a href="../../../../fi/about/">Tietoa tästä projektista</a></li>
+        <li><a href="../../../../fi/search/">Hae portaalista</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="Hrossagri&#240;in keisarikunnan lippu" width="120" height="80">
+    <p class="footer__disclaimer">Valitettavasti Hrossagrith on kuvitteellinen maa. Tämä sivusto on maailmanrakennusprojekti, eikä sillä ole mitään yhteyttä mihinkään todelliseen valtioon, hallitukseen tai viralliseen elimeen. :(</p>
+    <p class="footer__meta">Hrossagri&#240;in keisarikunta &middot; Keisarillinen valtionportaali &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+</body>
+</html>

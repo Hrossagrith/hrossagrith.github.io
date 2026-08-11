@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Tack, Restraint, and Welfare Code &mdash; Hrossagri&#240;in keisarikunta</title>
+<meta name="description" content="Governs every item of tack, restraint, harness, and training equipment used on equids in the Empire, and prohibits bits and mouthpieces outright.">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../fi/" data-i18n="{&quot;light&quot;: &quot;Vaalea&quot;, &quot;dark&quot;: &quot;Tumma&quot;, &quot;theme_to_light&quot;: &quot;Vaihda vaaleaan teemaan&quot;, &quot;theme_to_dark&quot;: &quot;Vaihda tummaan teemaan&quot;, &quot;search_prompt&quot;: &quot;Kirjoita yllä olevaan kenttään sana tai lause, niin haku kohdistuu portaalin kaikkiin sivuihin.&quot;, &quot;search_running&quot;: &quot;Haetaan…&quot;, &quot;search_none&quot;: &quot;Mikään rekisterin merkintä ei sisällä kaikkia sanoja. Kokeile vähemmillä tai eri sanoilla.&quot;, &quot;search_error&quot;: &quot;Hakuindeksin lataaminen epäonnistui. Yritä uudelleen.&quot;, &quot;results_one&quot;: &quot;{n} tulos haulla ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} tulosta haulla ”{q}”&quot;, &quot;results_none&quot;: &quot;Ei tuloksia haulla ”{q}”&quot;, &quot;expand_all&quot;: &quot;Avaa kaikki osat&quot;, &quot;collapse_all&quot;: &quot;Sulje kaikki osat&quot;}">
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Maailmanrakennusprojekti</p>
+    <form class="search" role="search" action="../../../../search/" method="get">
+      <label class="visually-hidden" for="q">Hae portaalista</label>
+      <input type="search" id="q" name="q" placeholder="Hae portaalista" autocomplete="off">
+      <button type="submit">Hae</button>
+    </form>
+    <label class="visually-hidden" for="locale">Kieli</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi" selected>Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Tumma</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="Hrossagri&#240;in keisarikunnan vaakuna: takajaloilleen nouseva hippogriifi pyöreässä kentässä" width="360" height="360">
+    <p class="masthead__state">Keisarillinen valtionportaali</p>
+    <p class="masthead__name"><a href="../../../../fi/">Hrossagri&#240;in keisarikunta</a></p>
+    <p class="masthead__motto">Hevosten turvapaikka ja rauha, joka pannaan täytäntöön</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Kaikki osastot">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Valikko
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keisarikunta</h2>
+            <ul>
+            <li><a href="../../../../fi/gov/">Hallinto ja oppi</a></li>
+            <li><a href="../../../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+            <li><a href="../../../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+            <li><a href="../../../../fi/gov/law/">Keisarillinen oikeus</a></li>
+            <li><a href="../../../../fi/history/">Historia</a></li>
+            <li><a href="../../../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Elämä täällä</h2>
+            <ul>
+            <li><a href="../../../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+            <li><a href="../../../../fi/living/health/">Terveydenhuolto</a></li>
+            <li><a href="../../../../fi/living/education/">Koulutus ja lapset</a></li>
+            <li><a href="../../../../fi/living/transport/">Liikenne ja tiet</a></li>
+            <li><a href="../../../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+            <li><a href="../../../../fi/living/money/">Työ ja raha</a></li>
+            <li><a href="../../../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hevoset ja tiet</h2>
+            <ul>
+            <li><a href="../../../../fi/horses/">Hevoset</a></li>
+            <li><a href="../../../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+            <li><a href="../../../../fi/horses/#service">Palvelushevoseläimet</a></li>
+            <li><a href="../../../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Tämä portaali</h2>
+            <ul>
+            <li><a href="../../../../fi/about/">Tietoa tästä projektista</a></li>
+            <li><a href="../../../../fi/search/">Hae portaalista</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../../fi/">Etusivu</a>
+    <a href="../../../../fi/horses/">Hevoset</a>
+    <a href="../../../../fi/living/">Elämä</a>
+    <a href="../../../../fi/gov/">Hallinto</a>
+    <a href="../../../../fi/gov/law/" aria-current="page">Oikeus</a>
+    <a href="../../../../fi/history/">Historia</a>
+    <a href="../../../../fi/symbols/">Symbolit</a>
+    <a href="../../../../fi/about/">Tietoa</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../fi/">Etusivu</a><span>&rsaquo;</span><a href="../../../../fi/gov/">Hallinto</a><span>&rsaquo;</span><a href="../../../../fi/gov/law/">Oikeus</a><span>&rsaquo;</span><strong>Imperial Tack, Restraint, and Welfare Code</strong></div>
+
+<main id="main" class="shell wrap">
+  <div class="notice notice--lang"><p>Tätä säädöstä ei ole vielä julkaistu tällä kielellä. Alla on englanninkielinen teksti.</p></div>
+
+
+  <p class="entry">Imperial law &middot; Instrument</p>
+  <h1 class="page-title">Imperial Tack, Restraint, and Welfare Code</h1>
+  <p class="page-standfirst">This Code governs all tack, restraint, training, handling, cosmetic, therapeutic, harness, and driving equipment used on any equid within the Empire, and the persons who fit, use, sell, hire, manufacture, or possess it.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">The purpose of this Code is to prevent the use of tack, restraints, or equipment that causes or risks avoidable pain, injury, fear, respiratory restriction, movement restriction, forced posture, suppressed communication, artificial movement, learned helplessness, or cosmetic alteration at the expense of welfare. The welfare of the equid shall prevail over appearance, tradition, competition practice, rider preference, handler convenience, speed, prestige, profit, public entertainment, and training fashion.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      In force. Cite as the Imperial Tack, Restraint, and Welfare Code. Fourteen chapters and sixty-seven articles, none reserved. Appendix I is in force as to its written text, but the fitting illustrations it requires are described only: working copies carry reference figures until official Imperial drawings replace them.
+    </aside>
+  </div>
+
+  <p class="entry">Contents</p>
+  <ul class="jump">
+    <li><a href="#ch-1">I. Application, Purpose, and Interpretation</a></li>
+    <li><a href="#ch-2">II. General Tack Duties, Measurement, and Certification</a></li>
+    <li><a href="#ch-3">III. Bits, Functional Bits, and Mouthpieces</a></li>
+    <li><a href="#ch-4">IV. Mouth, Tongue, Head, and Posture Restraints</a></li>
+    <li><a href="#ch-5">V. Bitless Equipment, Hackamores, Bosals, and Nose Pressure</a></li>
+    <li><a href="#ch-6">VI. Tying, Sensory Restriction, and Muzzles</a></li>
+    <li><a href="#ch-7">VII. Driving Harness and Vehicle-Attached Tack</a></li>
+    <li><a href="#ch-8">VIII. Artificial Movement, Saddles, and Cosmetic Carriage</a></li>
+    <li><a href="#ch-9">IX. Punitive and Behaviour-Suppression Equipment</a></li>
+    <li><a href="#ch-10">X. Restricted Equipment and Aids</a></li>
+    <li><a href="#ch-11">XI. Surgical and Physical Alteration</a></li>
+    <li><a href="#ch-12">XII. Lawful and Therapeutic Equipment</a></li>
+    <li><a href="#ch-13">XIII. Enforcement, Records, and Offences</a></li>
+    <li><a href="#ch-14">XIV. Anti-Loophole Rule</a></li>
+    <li><a href="#ch-15">Appendix I. Nose-Pressure Placement Fitting Guide</a></li>
+  </ul>
+
+  <details class="part" id="ch-1" open>
+    <summary><span class="part__no">Chapter I</span><span class="part__title">Application, Purpose, and Interpretation</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-1">Article 1. Application</h3>
+      <p>This Code applies to all tack, restraint equipment, training equipment, handling equipment, cosmetic equipment, therapeutic equipment, harness, driving equipment, and related devices used on any horse, pony, mule, donkey, or other equid within the Empire.</p>
+      <p>This Code applies to:</p>
+      <ul>
+        <li>riding;</li>
+        <li>driving;</li>
+        <li>groundwork;</li>
+        <li>lunging;</li>
+        <li>long-lining;</li>
+        <li>training;</li>
+        <li>competition;</li>
+        <li>public display;</li>
+        <li>breeding presentation;</li>
+        <li>sale presentation;</li>
+        <li>rental work;</li>
+        <li>transport work;</li>
+        <li>veterinary handling, except where a lawful medical exception applies;</li>
+        <li>government, ceremonial, military, police, public-service, and private use.</li>
+      </ul>
+      <p>No person may avoid this Code by describing equipment as traditional, cultural, anatomical, gentle, natural, corrective, therapeutic, professional, humane, decorative, historical, educational, temporary, or customary.</p>
+
+      <h3 id="art-2">Article 2. Purpose</h3>
+      <p>The purpose of this Code is to prevent the use of tack, restraints, or equipment that causes or risks avoidable pain, injury, fear, respiratory restriction, movement restriction, forced posture, suppressed communication, artificial movement, learned helplessness, or cosmetic alteration at the expense of welfare.</p>
+      <p>The welfare of the equid shall prevail over appearance, tradition, competition practice, rider preference, handler convenience, speed, prestige, profit, public entertainment, and training fashion.</p>
+
+      <h3 id="art-3">Article 3. General welfare standard</h3>
+      <p>No person shall use, fit, tighten, alter, sell for use, hire, loan, import for use, manufacture for use, or possess for use any equipment that:</p>
+      <ul>
+        <li>causes avoidable pain;</li>
+        <li>causes injury or material risk of injury;</li>
+        <li>restricts breathing;</li>
+        <li>restricts normal vision without lawful justification;</li>
+        <li>restricts normal jaw, tongue, lip, head, neck, back, limb, or tail movement;</li>
+        <li>forces posture;</li>
+        <li>manufactures or exaggerates movement;</li>
+        <li>suppresses communication of pain, fear, fatigue, confusion, or resistance;</li>
+        <li>conceals distress;</li>
+        <li>makes an equid appear compliant when it is frightened, confused, exhausted, injured, or shut down;</li>
+        <li>relies on pain, panic, or intimidation for control;</li>
+        <li>prevents the equid from performing necessary balance, recovery, or protective movements.</li>
+      </ul>
+      <p>The absence of visible injury shall not by itself establish that equipment is lawful.</p>
+
+      <h3 id="art-4">Article 4. Definitions</h3>
+      <p>For the purposes of this Code:</p>
+      <ul>
+        <li><strong>Animal-contact control chain</strong> means any chain used as tack, lead equipment, pressure equipment, correction equipment, punishment equipment, restraint equipment, or communication equipment in contact with, attached to, or acting upon the equid.</li>
+        <li><strong>Approved bitless equipment</strong> means equipment that controls, guides, or communicates with an equid without any mouthpiece and that complies with this Code.</li>
+        <li><strong>Combination bitless bridle</strong> means a bitless bridle containing two or more rein systems, pressure systems, or control mechanisms, including a sidepull combined with a bosal, hackamore, leverage system, tightening system, or other second pressure system.</li>
+        <li><strong>Cross-under bitless bridle</strong> means a bitless bridle in which rein-connected straps cross beneath or around the jaw, cheeks, chin, nose, or poll and tighten, wrap, slide, or distribute pressure around the head when rein tension is applied.</li>
+        <li><strong>Direct-action sidepull</strong> means a bitless bridle in which each rein or driving line attaches directly to the corresponding lateral side of a broad noseband and acts substantially upon that side without leverage, shanks, a central under-jaw pivot, crossing straps, sliding straps, tightening action, wraparound action, rotation, pulley action, force multiplication, or reliance upon the opposite rein. Pressure shall release immediately and completely when rein or line tension is released.</li>
+        <li><strong>Direct independent lateral rein action</strong> means mechanical action in which tension on the left rein or line acts directly and substantially upon the left lateral attachment of the noseband, and tension on the right rein or line acts directly and substantially upon the right lateral attachment, without reliance on a central pivot, leverage, rotation, crossing, sliding, tightening, force transmitted through the opposite rein, or another pressure system.</li>
+        <li><strong>Facial Marker</strong> means an approved, non-restraining, marker-bearing facial tack component used to display an interchangeable road-status insert clearly from the front. Facial Markers are either marker-bearing frenteras or marker-bearing muserolas. A Facial Marker may be integrated into headgear or fitted as a separate non-control component.</li>
+        <li><strong>Frentera</strong> means, for the purposes of Imperial law, a frontal tack component extending vertically along the centre of the equid&rsquo;s face from the upper bridle, headstall, browband, crown area, or equivalent upper attachment toward the forehead or nasal bridge. It may be a narrow strap, an X-shaped or branched arrangement, or a broad ornamental panel, and may terminate above, attach to, overlap, or continue onto a noseband. A marker-bearing frentera may carry its official insert upon the forehead or upon the stable upper nasal bridge. A component confined to crossing or encircling the nose, without an upper vertical facial connection, is not a frentera.</li>
+        <li><strong>Muserola</strong> means, for the purposes of Imperial law, a noseband or nosepiece crossing and ordinarily encircling the equid&rsquo;s nose. A marker-bearing muserola may be broad, decorative, separately mounted, incorporated into a lawful bridle or headstall, or integrated into a lawful control noseband. It need not attach to the browband, crownpiece, or any vertical frontal component. The term includes an approved broad marker-bearing noseband or nosepiece performing the same function, regardless of commercial or regional name.</li>
+      </ul>
+      <p>A frentera or muserola qualifies as a Facial Marker only where it provides a dedicated, clearly visible insert field of sufficient size and contrast for road use. A small ornament, medallion, stud, badge, or decorative plate that cannot carry the required insert visibly does not qualify.</p>
+      <ul>
+        <li><strong>Mechanical hackamore</strong> means a bitless leverage device using shanks, rotating cheeks, wheels, flowers, multi-ring attachments, curb action, chin action, poll action, or another mechanism that alters or multiplies rein force beyond direct lateral noseband action.</li>
+        <li><strong>Rope-halter bridle</strong> means a rope halter, rope sidepull, or related rope headgear used with reins or driving lines for riding, driving, steering, stopping, flexion, control, or communication.</li>
+        <li><strong>Bit</strong> means any device, mouthpiece, bar, chain, plate, cable, wire, strap, or other object placed in, through, across, or against the mouth of an equid for steering, stopping, restraint, flexion, collection, leverage, braking, control, or communication.</li>
+        <li><strong>Bitless Transition Trainer</strong> means a person who has completed an approved university bit-to-bitless transition course as a supplementary professional qualification alongside a broader practical equine-training, horsemanship, riding, driving, or related applied-equine programme, and who is certified by the competent Imperial authority to retrain foreign, imported, visiting, or newly arrived equids from bitted cues to approved bitless cues under Article 15. The transition qualification shall not be issued as a standalone qualification or through a principally laboratory-based or purely theoretical programme.</li>
+        <li><strong>Bosal</strong> means a bitless nose-pressure device formed around the nose and jaw in which reins, mecate, or lines act from a common central attachment, heel knot, ring, or equivalent point below the nose or jaw rather than from independent lateral noseband attachments.</li>
+        <li><strong>Choke-action neck device</strong> means any neck rope, collar, cord, chain, strap, ring, or loop that tightens around the neck, throat, windpipe, or cervical structures when pressure is applied.</li>
+        <li><strong>Competent authority</strong> means the Imperial animal-welfare authority, Road and Equine Guard, veterinary authority, court, or other body legally authorised to enforce this Code.</li>
+        <li><strong>Competition</strong> means any organised class, test, contest, trial, race, show, or comparative equid event at which equids are entered, judged, placed, timed, scored, or otherwise presented, whether or not a prize is awarded. Competition includes every warm-up, schooling, collecting-ring, practice, familiarisation, and preparation phase, and every warm-up, schooling, collecting-ring, or practice area, connected with that event. An activity is not removed from this definition by being described as a demonstration, exhibition, clinic, display, or training day where it functions as a competition.</li>
+        <li><strong>Cordeo</strong> means a loose neck rope, neck ring, or neck strap used for communication, balance, emergency guidance, or bridleless riding, and not designed to tighten, choke, spike, cut, pinch, or punish.</li>
+        <li><strong>Delayed-release control equipment</strong> means any tack, restraint, or control device that delays, traps, sustains, or fails to release pressure immediately and completely when the rider, driver, handler, or equipment releases contact. It includes equipment that tightens progressively without clear release, maintains pressure through friction, crossed straps, pulleys, rings, knots, or binding construction, or requires the equid to resist, brace, shake, or open the jaw to obtain release.</li>
+        <li><strong>Direct-action bit</strong> means a bit that transfers rein pressure directly to the mouthpiece without leverage, shank action, gag action, curb action, or multi-ring force amplification.</li>
+        <li><strong>Draw-rein system</strong> means any rein, rope, strap, cord, or pulley arrangement that runs through or from the headgear to the rider&rsquo;s hand, girth, saddle, roller, breastplate, harness, or vehicle in order to mechanically alter head, neck, or body posture.</li>
+        <li><strong>Functional bit</strong> means any device that is not called a bit but is placed in, through, across, or against the mouth of an equid for steering, stopping, restraint, flexion, collection, leverage, braking, control, or communication.</li>
+        <li><strong>Gag-action bit</strong> means any bit that slides, lifts, elevates, rotates, or otherwise intensifies pressure through the mouth, lips, poll, jaw, or cheekpieces beyond ordinary direct action.</li>
+        <li><strong>Hackamore</strong> means a bitless device that acts through the nose, chin, jaw, poll, or a combination of those areas. For the purposes of this Code, a mechanical hackamore is a leverage or rotating hackamore, while a bosal remains a separate central-attachment headgear family.</li>
+        <li><strong>Imperial Tack Measurement Schedule</strong> means the official technical schedule created under Article 9 for measurable tack standards, including pressure distribution, release, leverage, rotation, width, materials, padding, and fit.</li>
+        <li><strong>Jerking</strong> means one or more sharp yanks, forceful snaps, shock-loading pulls, repeated hard tugs, sawing motions, or abrupt pressure escalations that cause or are likely to cause pain, panic, injury, respiratory restriction, loss of balance, fear compliance, or defensive desperation.</li>
+        <li><strong>Lawful correction</strong> means a brief, proportionate, immediately releasable intervention used to interrupt, redirect, or discourage an unsafe, unwanted, or incorrect behaviour, where the intervention is understandable to the equid and does not cause pain, injury, panic, fear compliance, respiratory restriction, loss of balance, or defensive desperation.</li>
+        <li><strong>Lawful pressure area</strong> means an anatomical area on which pressure may be applied by lawful equipment, lawful handling, lawful body positioning, or another lawful cueing method under this Code. A lawful pressure area shall not include the mouth, lower nasal cartilage, soft muzzle, throat, windpipe, exposed or pressure-concentrated facial nerve points, injured tissue, swollen tissue, open wounds, or any area where pressure causes pain, respiratory restriction, panic, loss of balance, or defensive desperation.</li>
+        <li><strong>Lawful pressure cue</strong> means a brief, proportionate, immediately releasable application or increase of pressure used for communication, training, steering, stopping, yielding, positioning, boundary-setting, or immediate safety.</li>
+        <li><strong>Mouthpiece</strong> means any part of tack, equipment, rope, chain, bar, plate, wire, cable, strap, or device that is placed in, through, across, or against the mouth of an equid, whether or not the device is marketed or named as a bit.</li>
+        <li><strong>Mouthpiece severity grade</strong> means the enforcement grade assigned under Article 19 to the construction, shape, thickness, surface, port height, pressure concentration, and injury risk of a mouthpiece.</li>
+        <li><strong>Newly arrived equid</strong> means, for the purposes of Article 15, an equid that has entered Imperial jurisdiction from outside the Empire and has not previously been certified within the Empire as cleared for approved bitless equipment. An equid that has once been certified as cleared for approved bitless equipment within the Empire is not a newly arrived equid, and does not requalify for the Article 15 exception by reason of later export and re-import.</li>
+        <li><strong>Nose-pressure device</strong> means any sidepull, bosal, hackamore, cavesson, halter, bitless bridle, or other equipment that applies control, steering, stopping, flexion, or positioning pressure to the nasal area.</li>
+        <li><strong>Prohibited equipment</strong> means equipment banned under this Code whether or not it is used gently, briefly, traditionally, or by an experienced person.</li>
+        <li><strong>Restricted equipment</strong> means equipment that may be lawful only under specific conditions stated in this Code.</li>
+        <li><strong>Sharp yank</strong> means a sudden, forceful, snapping, wrenching, shock-loading, or pain-producing pull on tack, headgear, rope, reins, lead, lunge line, harness, or other equipment.</li>
+        <li><strong>Shock-loading</strong> means a sudden transfer of force caused by slack equipment being snapped tight, or by pressure being applied abruptly enough to strike, jolt, wrench, or overload the equid&rsquo;s head, neck, mouth, nose, poll, jaw, throat, body, or limbs.</li>
+        <li><strong>Therapeutic equipment</strong> means equipment prescribed for a documented medical need by a licensed veterinarian and used only for that medical purpose.</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-2">
+    <summary><span class="part__no">Chapter II</span><span class="part__title">General Tack Duties, Measurement, and Certification</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-5">Article 5. Duty of correct fit and use</h3>
+      <p>All lawful tack shall be fitted to the individual equid.</p>
+      <p>A person using tack shall ensure that it:</p>
+      <ul>
+        <li>is clean, safe, and structurally sound;</li>
+        <li>is appropriate to the equid&rsquo;s species, size, age, health, training, body shape, and intended work;</li>
+        <li>does not rub, pinch, cut, bruise, press on nerves, or restrict circulation;</li>
+        <li>does not interfere with breathing, swallowing, vision, balance, or ordinary movement;</li>
+        <li>is not tightened beyond what is necessary for safety and function;</li>
+        <li>is removed, adjusted, or replaced where signs of pain, fear, rubbing, swelling, injury, or avoidance occur.</li>
+      </ul>
+      <p>Continued use after visible discomfort, injury, swelling, rubs, hair loss, breathing difficulty, panic, head-shaking, defensive behaviour, or abnormal gait shall constitute a welfare offence unless immediate removal would create greater danger.</p>
+
+      <h3 id="art-6">Article 6. Duty to reassess</h3>
+      <p>Tack fit shall be reassessed after:</p>
+      <ul>
+        <li>material change in bodyweight;</li>
+        <li>muscle gain or loss;</li>
+        <li>illness;</li>
+        <li>injury;</li>
+        <li>lameness;</li>
+        <li>facial, jaw, nasal, poll, or neck pain;</li>
+        <li>veterinary treatment affecting the face, jaw, nose, poll, neck, back, shoulders, girth area, or harness-contact area;</li>
+        <li>behavioural change;</li>
+        <li>change of work type;</li>
+        <li>change of rider, driver, handler, vehicle, harness, or route;</li>
+        <li>recurring rubs, swelling, resistance, fear, head-shaking, breathing restriction, poor performance, or defensive behaviour;</li>
+        <li>any welfare order requiring reassessment.</li>
+      </ul>
+      <p>No item placed in, through, across, or against the mouth for control, restraint, communication, steering, stopping, braking, flexion, or collection shall become lawful because of reassessment. Such equipment remains governed by the bit, functional-bit, and mouthpiece prohibitions in this Code.</p>
+
+      <h3 id="art-7">Article 7. Pressure release requirement</h3>
+      <p>Any lawful tack that applies pressure for communication, steering, stopping, restraint, flexion, or positioning shall release pressure immediately when the handler, rider, driver, or equipment releases contact.</p>
+      <p>Equipment is prohibited where it:</p>
+      <ul>
+        <li>delays release;</li>
+        <li>traps pressure after contact stops;</li>
+        <li>tightens progressively without clear release;</li>
+        <li>requires the equid to resist, panic, shake, brace, or open the jaw to obtain release;</li>
+        <li>releases only after slack is manually restored by the human;</li>
+        <li>maintains pressure through friction, crossed straps, pulleys, rings, knots, or binding construction.</li>
+      </ul>
+      <p>Delayed release shall be treated as an aggravating factor where the equipment is used for control, training, public work, rental work, competition, driving, or sale presentation.</p>
+
+      <h3 id="art-8">Article 8. Lawful correction and unlawful jerking</h3>
+      <p>Imperial law distinguishes lawful correction from unlawful jerking.</p>
+      <p>The distinction shall be determined by the mechanical action, intensity, timing, release or cessation, equipment, anatomical location, training context, and welfare effect of the act.</p>
+      <p>A lawful correction or lawful pressure cue shall meet all of the following requirements:</p>
+      <ul>
+        <li>it is brief;</li>
+        <li>it is proportionate to the situation;</li>
+        <li>it is understandable to the equid;</li>
+        <li>it is applied through lawful equipment, lawful handling, lawful body positioning, or another lawful cueing method;</li>
+        <li>where physical pressure is applied, it is applied only to a lawful pressure area;</li>
+        <li>where physical pressure is applied, it is not delivered through the mouth, lower nasal cartilage, soft muzzle, throat, exposed facial nerves, sharp knots, chain, wire, cable, spikes, serration, or other pressure-concentrating structures;</li>
+        <li>it is released or ceased immediately when the equid responds correctly or the safety need ends;</li>
+        <li>it is not stronger than necessary for communication, interruption, redirection, or immediate safety;</li>
+        <li>it is adjusted to the equid&rsquo;s age, training, health, fear level, physical condition, and environment;</li>
+        <li>it does not cause pain, injury, panic, respiratory restriction, collapse, loss of balance, fear compliance, learned helplessness, or defensive desperation.</li>
+      </ul>
+      <p>A correction or pressure cue may be delivered without equipment only where the handling method itself does not cause pain, panic, injury, fear compliance, respiratory restriction, loss of balance, or defensive desperation.</p>
+      <p>A lawful correction may include a brief increase of pressure, a brief interruption, a brief directional cue, a brief pressure-and-release signal, lawful body positioning, or another lawful cueing method.</p>
+      <p>A lawful correction shall not be unlawful merely because it uses negative reinforcement, negative punishment, a non-painful interruption, or proportionate boundary-setting. Positive punishment is not an ordinary training entitlement and is lawful only as the least harmful immediate intervention necessary to prevent imminent injury, collision, escape into danger, or another comparable emergency. It shall cease immediately when the danger ends and shall not involve striking, pain, intimidation, flooding, retaliation, or suppression of fear, pain, confusion, or fatigue.</p>
+      <p>For the purposes of this Article, positive and negative refer to the addition or removal of a stimulus in behavioural terminology. They do not authorise pain, fear, panic, intimidation, prohibited equipment, or unlawful pressure concentration.</p>
+      <p>Imperial law does not require training to be purely reward-based. Positive reinforcement, negative reinforcement, and negative punishment may be lawful only where the method, equipment, intensity, timing, anatomical location, release or cessation, and welfare effect comply with this Code and all other Imperial welfare law. Positive punishment is prohibited as a routine training, correction, performance, handling, or behaviour-suppression method. It may occur only as the least harmful immediate act necessary to prevent imminent serious harm, and only for the shortest time required to end that danger.</p>
+      <p>Yielding, backing, stopping, turning, lowering the head, moving the shoulder, moving the hindquarters, or giving space may be taught through lawful pressure-and-release. Such training becomes unlawful only where the response is obtained through pain, panic, fear compliance, prohibited equipment, unlawful pressure areas, pressure concentration, unreleased pressure, or defensive desperation.</p>
+      <p>Discomfort may be used as a lawful signal only where it is mild, brief, understandable, proportionate, and immediately releasable or immediately ceased.</p>
+      <p>Lawful discomfort shall not include distress, fear, panic, pain, respiratory restriction, confusion without release, or pressure applied to vulnerable structures.</p>
+      <p>Pain shall not be used as ordinary communication, correction, punishment, collection, restraint, braking, speed-making, compliance, or training.</p>
+      <p>A correction that would otherwise be lawful by timing or intensity becomes unlawful where it is delivered through prohibited equipment, pressure-concentrating equipment, or an unlawful pressure area.</p>
+      <p>A correction, cue, interruption, or pressure increase shall not be used to punish or suppress behaviour that is caused, likely caused, or reasonably suspected to be caused by pain, injury, fear, panic, confusion, exhaustion, unsuitable tack, poor fit, excessive work, poor handling, environmental overwhelm, or inability to understand the requested response.</p>
+      <p>Where behaviour may indicate pain, fear, confusion, unsuitable tack, or physical inability, the handler shall reassess the equid, equipment, environment, and request before escalating pressure.</p>
+      <p>A lawful correction shall not be used to make the equid stop expressing pain, fear, confusion, fatigue, or distress.</p>
+      <p>A correction shall not rely on learned fear from previous pain, previous punishment, previous restraint, or previous equipment abuse.</p>
+      <p>Repeated need for correction shall require reassessment of training, tack, environment, health, handler skill, and the clarity of the requested behaviour.</p>
+      <p>Correction shall not be used as a substitute for teaching the equid the desired response.</p>
+      <p>The label used by the handler shall not determine legality. An act described as a correction, cue, boundary, reminder, aid, half-halt, check, or release shall be unlawful where its actual mechanical effect is jerking, pain, panic, injury, fear compliance, or prohibited pressure concentration.</p>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>sharp yanking;</li>
+        <li>jerking;</li>
+        <li>shock-loading;</li>
+        <li>sawing;</li>
+        <li>wrenching;</li>
+        <li>snatching;</li>
+        <li>repeated hard tugging;</li>
+        <li>snapping a slack rope, rein, line, or lead tight;</li>
+        <li>using bodyweight, running force, vehicle force, or rotational force to jolt the equid;</li>
+        <li>pressure escalation after the equid has yielded or attempted to comply;</li>
+        <li>pressure that continues after the correct response;</li>
+        <li>pressure applied through prohibited equipment;</li>
+        <li>pressure applied over exposed facial nerves, nasal cartilage, soft muzzle, mouth tissue, throat, windpipe, or other vulnerable structures;</li>
+        <li>correction intended to cause pain, panic, fear, collapse, helplessness, or submission.</li>
+      </ul>
+      <p>A brief pressure-and-release correction is not jerking merely because it is firm, non-reward-based, or corrective.</p>
+      <p>A correction becomes unlawful jerking where it is sharp, snapping, shock-loading, repeated, disproportionate, poorly timed, unreleased, delivered through unlawful equipment, delivered to a vulnerable structure, or likely to cause pain, panic, injury, respiratory restriction, fear compliance, loss of balance, or defensive desperation.</p>
+      <p>Where doubt exists, the competent authority shall consider:</p>
+      <ul>
+        <li>whether the equipment was lawful;</li>
+        <li>where physical pressure was applied, whether it was applied to a lawful pressure area;</li>
+        <li>whether the pressure was released or ceased immediately;</li>
+        <li>whether the equid had a clear opportunity to respond correctly;</li>
+        <li>whether the act was proportionate to the safety or training need;</li>
+        <li>whether the act was repeated after compliance;</li>
+        <li>whether the act caused pain, panic, fear, injury, collapse, loss of balance, or defensive behaviour;</li>
+        <li>whether a less harmful lawful cue was available.</li>
+      </ul>
+      <p>A person shall not defend unlawful jerking by claiming that correction, discomfort, negative reinforcement, positive punishment, or training quadrants are permitted in principle.</p>
+
+      <h3 id="art-9">Article 9. Imperial Tack Measurement Schedule and certification</h3>
+      <p>The Empire shall maintain an Imperial Tack Measurement Schedule for equipment whose legality depends on measurable pressure, leverage, release, width, rotation, material, or fit.</p>
+      <p>The Schedule shall be issued and revised by the competent Imperial authority in consultation with independent veterinarians, equine anatomists, welfare inspectors, harness specialists, bitless tack specialists, driving specialists, and equid behaviour specialists.</p>
+      <p>The Schedule shall prescribe measurable standards for:</p>
+      <ul>
+        <li>bitless leverage devices;</li>
+        <li>hackamores;</li>
+        <li>bosal-type devices;</li>
+        <li>sidepulls;</li>
+        <li>cavessons;</li>
+        <li>cross-under and tightening bitless bridles;</li>
+        <li>cordeos and neck ropes;</li>
+        <li>driving harness;</li>
+        <li>collars and breastcollars;</li>
+        <li>breeching and holdback equipment;</li>
+        <li>cruppers;</li>
+        <li>blinkers and blinders;</li>
+        <li>sensory-restricting equipment;</li>
+        <li>muzzles and feed-restricting equipment;</li>
+        <li>any other tack category requiring measurable welfare limits.</li>
+      </ul>
+      <p>The Schedule may prescribe:</p>
+      <ul>
+        <li>maximum shank length;</li>
+        <li>permitted leverage ratios;</li>
+        <li>permitted rotation angle;</li>
+        <li>required rotation stops;</li>
+        <li>required pressure-release behaviour;</li>
+        <li>minimum pressure-bearing width;</li>
+        <li>prohibited materials;</li>
+        <li>required padding;</li>
+        <li>material flexibility;</li>
+        <li>edge radius;</li>
+        <li>inspection method;</li>
+        <li>certification method;</li>
+        <li>species-specific and size-specific limits;</li>
+        <li>restrictions for young, injured, small-headed, delicate, rehabilitating, or medically vulnerable equids.</li>
+      </ul>
+      <p>No bitless leverage device shall be lawful for riding, driving, training, public work, rental work, sale presentation, or competition unless it is certified under and compliant with the Imperial Tack Measurement Schedule.</p>
+      <p>No person shall claim that a device complies with Imperial tack standards unless it has been measured, inspected, and certified under the Schedule.</p>
+      <p>Until a device category has been certified under the Schedule, the competent authority may prohibit, restrict, or suspend that device category where its pressure, leverage, rotation, release, material, or fit presents material welfare risk.</p>
+      <p>A device that relies on the equid&rsquo;s pain response, nasal cartilage, chin groove, jaw, poll, lips, soft tissue compression, or anatomical resistance as the effective stop to its movement is prohibited regardless of any measurement.</p>
+
+      <h3 id="art-10">Article 10. Tack certification and model approval</h3>
+      <p>The competent Imperial authority may establish tack certification and model approval requirements for any equipment category that presents measurable welfare risk.</p>
+      <p>Tack certification and model approval under this Article are administered through the Imperial Tack Measurement Schedule established under Article 9, and together form a single Imperial tack-certification regime. A reference to certification under the Schedule includes model approval under this Article, and a reference to model approval includes the applicable measurable standards of the Schedule.</p>
+      <p>Certification may be required for:</p>
+      <ul>
+        <li>bitless leverage devices;</li>
+        <li>hackamores;</li>
+        <li>bosal-type devices;</li>
+        <li>sidepulls;</li>
+        <li>cavessons;</li>
+        <li>cross-under or tightening bitless bridles;</li>
+        <li>rope halters used for training;</li>
+        <li>cordeos and neck ropes;</li>
+        <li>driving harness;</li>
+        <li>collars;</li>
+        <li>breastcollars;</li>
+        <li>breeching;</li>
+        <li>cruppers;</li>
+        <li>blinders and blinkers;</li>
+        <li>sensory-restricting equipment;</li>
+        <li>muzzles;</li>
+        <li>public-work, rental-work, competition, and commercial tack.</li>
+      </ul>
+      <p>Certification may address:</p>
+      <ul>
+        <li>design;</li>
+        <li>material;</li>
+        <li>width;</li>
+        <li>pressure distribution;</li>
+        <li>release;</li>
+        <li>leverage;</li>
+        <li>rotation;</li>
+        <li>padding;</li>
+        <li>edge safety;</li>
+        <li>fitting method;</li>
+        <li>inspection method;</li>
+        <li>prohibited modifications;</li>
+        <li>species-specific and size-specific use.</li>
+      </ul>
+      <p>Certification of a tack model shall not certify every individual use of that model.</p>
+      <p>A certified model remains unlawful where it is incorrectly fitted, used on an unsuitable equid, used for an unsuitable discipline or work type, modified, damaged, hardened, sharpened, narrowed, stretched, degraded, or used contrary to its certification.</p>
+      <p>The competent authority may suspend or revoke certification of a model where field use, inspection, injury reports, veterinary evidence, or welfare science shows material welfare risk.</p>
+
+      <h3 id="art-11">Article 11. No welfare defence by tradition or skill</h3>
+      <p>A person shall not defend prohibited equipment by claiming that:</p>
+      <ul>
+        <li>the equipment is traditional;</li>
+        <li>the equipment is common in sport;</li>
+        <li>the equipment is used by professionals;</li>
+        <li>the equipment is acceptable when used by skilled hands;</li>
+        <li>the equid is strong, stubborn, difficult, hot, dominant, resistant, or disrespectful;</li>
+        <li>the equipment is needed to win, display, sell, control, or correct the equid.</li>
+      </ul>
+      <p>Skill may reduce the risk of lawful equipment. It does not legalise prohibited equipment.</p>
+
+    </div>
+  </details>
+  <details class="part" id="ch-3">
+    <summary><span class="part__no">Chapter III</span><span class="part__title">Bits, Functional Bits, and Mouthpieces</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-12">Article 12. Imperial position on bits and mouthpieces</h3>
+      <p>The Empire is deliberately bitless as a matter of law.</p>
+      <p>This Code does not require a finding that every bitted rider is abusive or that every use of a bit causes immediate injury. The legal position is that bits and functional mouthpieces are unnecessary for ordinary equine control and impose avoidable risk by placing a foreign object inside a sensitive mouth and directing pressure through the lips, tongue, bars, mouth corners, jaw, and related oral structures.</p>
+      <p>Because equids may be trained and managed through approved bitless equipment, mouth pressure shall not be used for ordinary riding, driving, training, transport, rental work, public work, competition, or sale presentation.</p>
+      <p>Scientific evidence cited for this Article:</p>
+      <ul>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/35647095/">[Anttila et al. 2022]</a> &mdash; Oral Dimensions Related to Bit Size in Adult Horses and Ponies. The study states that bits apply pressure to sensitive structures of the equine mouth and found that poor size or anatomical fit was common in the examined population.</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/31355213/">[Tuomola et al. 2019]</a> &mdash; Oral Lesions in the Bit Area in Finnish Trotters After a Race: Lesion Evaluation, Scoring, and Occurrence. Of 261 trotters examined after racing, 84% had acute lesions in the bit area; 43% had moderate lesions and 20% severe lesions. Blood was found on the removed bit in some horses despite no blood being visible outside the mouth.</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29502345/">[Uldahl &amp; Clayton 2019]</a> &mdash; Lesions associated with the use of bits, nosebands, spurs and whips in Danish competition horses. In 3,143 horse-rider combinations examined after competition, oral lesions or blood at the lip commissures were recorded in 9.2%; a looser upper noseband category was associated with reduced risk of oral lesions.</li>
+      </ul>
+
+      <h3 id="art-13">Article 13. Universal bit and mouthpiece prohibition</h3>
+      <p>All bits, functional bits, and control mouthpieces are prohibited for:</p>
+      <ul>
+        <li>riding;</li>
+        <li>driving;</li>
+        <li>training;</li>
+        <li>groundwork;</li>
+        <li>lunging;</li>
+        <li>competition;</li>
+        <li>rental use;</li>
+        <li>sale presentation;</li>
+        <li>public display;</li>
+        <li>manufacture;</li>
+        <li>import;</li>
+        <li>export;</li>
+        <li>hire;</li>
+        <li>loan;</li>
+        <li>ordinary possession for use.</li>
+      </ul>
+      <p>This prohibition includes any device placed in, through, across, or against the mouth for steering, stopping, restraint, flexion, collection, leverage, braking, control, or communication.</p>
+      <p>A device shall not become lawful because it is not called a bit.</p>
+      <p>A rope, chain, cable, strap, plate, mouth bar, or other device placed in or through the mouth for control shall be treated as a functional bit.</p>
+      <p>Veterinary instruments used by a licensed veterinarian for diagnosis or treatment are not mouthpieces for the purposes of this Article, provided they are not used for training, riding, driving, handling control, or punishment.</p>
+      <p>The manufacture, possession, sale, supply, import, export, hire, loan, advertising, and distribution of any bit, functional bit, or control mouthpiece is prohibited, whether or not for use within the Empire, except as follows:</p>
+      <ul>
+        <li>a certified government bit-maker, or a private bit-maker individually licensed by the competent authority, may manufacture only direct-action Bit Class I bits fitted with Mouthpiece Grade 1 mouthpieces, and may supply them only to a certified Bitless Transition Trainer;</li>
+        <li>a certified Bitless Transition Trainer may acquire and possess such bits solely for use under Article 15;</li>
+        <li>a licensed veterinarian may possess and use veterinary instruments for diagnosis or treatment as provided elsewhere in this Article.</li>
+      </ul>
+      <p>No Bit Class II, Bit Class III, Mouthpiece Grade 2, or Mouthpiece Grade 3 equipment may be manufactured, supplied, or possessed under this exception. The export of any bit, functional bit, or control mouthpiece is prohibited in every case.</p>
+
+      <h3 id="art-14">Article 14. Classification of bits and mouthpieces</h3>
+      <p>Bits and functional bits are classified by mechanical action.</p>
+      <p>Mouthpieces are classified separately by severity grade.</p>
+      <p>Classification is used for enforcement, penalty assessment, welfare investigation, registry decisions, court orders, and aggravating-factor analysis. Classification does not make any bit, functional bit, or mouthpiece lawful.</p>
+      <p>Mechanical bit classes are:</p>
+      <ul>
+        <li>Bit Class I: direct-action bit;</li>
+        <li>Bit Class II: leverage bit;</li>
+        <li>Bit Class III: gag-action, sliding, elevator, multi-ring, universal, or force-amplifying bit.</li>
+      </ul>
+      <p>Mouthpiece severity grades are:</p>
+      <ul>
+        <li>Mouthpiece Grade 1: smooth low-severity mouthpiece;</li>
+        <li>Mouthpiece Grade 2: pressure-altering or moderate-risk mouthpiece;</li>
+        <li>Mouthpiece Grade 3: severe pressure-concentrating, cutting, crushing, sharp, or injury-likely mouthpiece.</li>
+      </ul>
+      <p>Where a bit or functional bit falls into more than one mechanical class, each applicable class shall be recorded, and the most serious class shall determine the minimum bit-class penalty.</p>
+      <p>Where a mouthpiece falls into more than one mouthpiece grade, each applicable feature shall be recorded, and the most serious grade shall determine the minimum mouthpiece-grade penalty.</p>
+      <p>Where equipment is not named as a bit but functions as a bit, it shall be treated as a functional bit.</p>
+
+      <h3 id="art-15">Article 15. Foreign-equid transition exception</h3>
+      <p>A foreign, visiting, imported, or newly arrived equid that is trained, controlled, or customarily managed with a bit, or that is not yet reliably trained for approved bitless equipment, may enter the Empire.</p>
+      <p>It shall not be ridden, driven, competed, rented, sold for work, used for transport, used for labour, or used in public until it has been cleared for approved bitless equipment.</p>
+      <p>The keeper shall choose one of the following lawful options:</p>
+      <ul>
+        <li>place the equid with an approved transition stable or certified Bitless Transition Trainer for bitless retraining;</li>
+        <li>keep the equid out of work until bitless retraining is completed;</li>
+        <li>use an approved Empire-trained rental equid while the foreign equid remains in transition care.</li>
+      </ul>
+      <p>A keeper shall not evade this Article by claiming that the equid does not understand bitless cues, has always been ridden in a bit, is too strong for bitless equipment, or is safe only in bitted equipment.</p>
+      <p>Only a certified Bitless Transition Trainer may use a bit during transition training. University course administration, assessment, certification, referrals, transition records, and professional practice are subject to Imperial anti-corruption, conflict-of-interest, examination-integrity, and professional-discipline law.</p>
+      <p>The exception may be used only to transfer the equid safely from former bitted cues to lawful bitless cues. It shall not be used to maintain bitted work, delay retraining for convenience, or continue foreign handling practices.</p>
+      <p>Only a certified Bitless Transition Trainer may ride, drive, long-line, or otherwise work a foreign or newly arrived equid in a bit, and only as part of approved transition training under this Article. The owner or keeper shall not ride, drive, or work the equid in a bit at any stage.</p>
+      <p>Once the equid has been certified as cleared for approved bitless equipment, the owner or keeper may ride or work it only in approved bitless equipment, including for the purpose of learning the equid's bitless cues.</p>
+      <p>A certified Bitless Transition Trainer shall:</p>
+      <ul>
+        <li>create a written individual transition plan with recorded review intervals, whose duration is determined by the equid&rsquo;s welfare, understanding, safety, and progress rather than by a universal deadline;</li>
+        <li>record the equid&rsquo;s prior equipment, handling history, and starting condition;</li>
+        <li>use primarily reward-based and low-pressure training;</li>
+        <li>teach bitless cues actively and progressively;</li>
+        <li>move the equid into approved bitless equipment as soon as it can respond safely;</li>
+        <li>keep records available for welfare inspection;</li>
+        <li>stop and reassess if the equid shows pain, panic, confusion, shutdown, escalating fear, or worsening behaviour.</li>
+      </ul>
+      <p>Only a direct-action Bit Class I bit with a Mouthpiece Grade 1 mouthpiece may be used under this exception.</p>
+      <p>Bit Class II, Bit Class III, Mouthpiece Grade 2, and Mouthpiece Grade 3 equipment are never permitted under the transition exception.</p>
+
+      <h3 id="art-16">Article 16. Bit Class I: direct-action bits</h3>
+      <p>A Bit Class I bit is a direct-action mouthpiece through which rein pressure transfers to the mouth without leverage, curb action, sliding gag action, shank multiplication, or multi-ring force amplification.</p>
+      <p>Bit Class I examples include:</p>
+      <ul>
+        <li>loose-ring snaffles;</li>
+        <li>eggbutt snaffles;</li>
+        <li>D-ring snaffles;</li>
+        <li>full-cheek snaffles;</li>
+        <li>similar direct-action mouthpieces.</li>
+      </ul>
+      <p>Outside the transition exception, use or possession for use of a Bit Class I bit is an offence.</p>
+      <p>The competent authority may impose:</p>
+      <ul>
+        <li>citation;</li>
+        <li>fine;</li>
+        <li>immediate removal of the bit;</li>
+        <li>prohibition from riding or driving the equid until approved bitless equipment is fitted;</li>
+        <li>mandatory education or retraining order;</li>
+        <li>inspection of the equid where welfare concern exists.</li>
+      </ul>
+      <p>For a foreign visitor&rsquo;s first Bit Class I offence, the competent authority may reduce the penalty where there is no injury, harsh handling, concealment, prior offence, or welfare concern. The bit shall still be removed before further use.</p>
+
+      <h3 id="art-17">Article 17. Bit Class II: leverage bits</h3>
+      <p>A Bit Class II bit is any bit that multiplies or alters rein force through shanks, curb action, cheekpiece leverage, poll pressure, chin-groove pressure, or another mechanical leverage system.</p>
+      <p>Bit Class II examples include:</p>
+      <ul>
+        <li>curb bits;</li>
+        <li>Weymouths;</li>
+        <li>Pelhams;</li>
+        <li>Kimberwicks;</li>
+        <li>Liverpool bits;</li>
+        <li>butterfly bits;</li>
+        <li>similar shanked or curb-action mouthpieces.</li>
+      </ul>
+      <p>Use or possession for use of a Bit Class II bit is a welfare offence.</p>
+      <p>The competent authority shall impose, where appropriate:</p>
+      <ul>
+        <li>all measures available for a Bit Class I offence;</li>
+        <li>mandatory welfare investigation;</li>
+        <li>examination of the equid&rsquo;s mouth, lips, face, chin groove, poll, jaw, and handling history;</li>
+        <li>review of tack, training, and veterinary records;</li>
+        <li>inspection of other equids under the person&rsquo;s care where relevant;</li>
+        <li>temporary restriction from riding, driving, training, breeding, rental work, animal purchase, or restricted-tack purchase;</li>
+        <li>entry in the Imperial Animal Welfare Registry where evidence supports it.</li>
+      </ul>
+
+      <h3 id="art-18">Article 18. Bit Class III: gag-action and force-amplifying bits</h3>
+      <p>A Bit Class III bit is any gag-action, sliding, elevator, multi-ring, universal, or similar force-amplifying bit.</p>
+      <p>Bit Class III examples include:</p>
+      <ul>
+        <li>running gags;</li>
+        <li>Cheltenham gags;</li>
+        <li>Balding gags;</li>
+        <li>elevator gags;</li>
+        <li>Dutch gags;</li>
+        <li>three-ring gags;</li>
+        <li>continental gags;</li>
+        <li>four-ring gags;</li>
+        <li>universal gags;</li>
+        <li>American gags;</li>
+        <li>similar designs sold or used as gags, elevators, universals, strong-control bits, or force-amplifying mouthpieces.</li>
+      </ul>
+      <p>A true sliding gag uses cheekpieces, cords, or related structures threaded through or connected to the bit rings so that rein pressure draws the mouthpiece upward into the lip commissures while also affecting the poll or cheekpieces.</p>
+      <p>A device whose upward travel is limited in practice by the equid&rsquo;s lips, mouth corners, soft tissues, teeth, or mouth anatomy is prohibited.</p>
+      <p>A curb strap, back strap, second rein, careful hand, or training claim shall not make a true sliding gag lawful.</p>
+      <p>Multi-ring and elevator designs that do not slide like true running gags remain Bit Class III where they intensify mouth, lip, poll, jaw, or cheekpiece pressure beyond ordinary direct action.</p>
+      <p>Bit Class III equipment is presumed to present a serious welfare risk.</p>
+      <p>Use or possession for use of a Bit Class III bit shall result in:</p>
+      <ul>
+        <li>immediate opening of an animal-welfare investigation;</li>
+        <li>immediate inspection of the equid involved;</li>
+        <li>inspection of other equids under the person&rsquo;s care where relevant;</li>
+        <li>review of oral injury, lip damage, facial marks, poll sensitivity, tack records, training records, veterinary records, purchase records, staff reports, and prior complaints;</li>
+        <li>immediate suspension from relevant equid work where necessary;</li>
+        <li>possible seizure of the equipment;</li>
+        <li>possible registry entry;</li>
+        <li>possible criminal animal-abuse investigation where injury, concealment, repeated use, or aggravating conduct is present.</li>
+      </ul>
+      <p>Opening an animal-welfare investigation under this Article shall not by itself establish guilt.</p>
+
+      <h3 id="art-19">Article 19. Mouthpiece severity grades</h3>
+      <p>A mouthpiece is unlawful if it is placed in, through, across, or against the mouth of an equid for steering, stopping, restraint, flexion, collection, leverage, braking, control, or communication.</p>
+      <p>Mouthpiece grading determines the seriousness of the mouthpiece element of the offence. It does not make any mouthpiece lawful.</p>
+      <h4>Grade 1 &mdash; Smooth low-severity mouthpieces</h4>
+      <p>A Mouthpiece Grade 1 mouthpiece is a smooth, rounded, non-serrated mouthpiece that does not use twisting, chain construction, sharp edges, wire, cable, cutting surfaces, crushing surfaces, high ports, pressure-concentrating construction, or severe tongue or palate action.</p>
+      <p>Mouthpiece Grade 1 examples include:</p>
+      <ul>
+        <li>smooth straight mouthpieces;</li>
+        <li>smooth mullen mouthpieces;</li>
+        <li>smooth rounded low-port mouthpieces that do not contact the palate, compress the tongue harshly, or create concentrated pressure;</li>
+        <li>smooth free-moving rollers where the rollers are not sharp, serrated, ridged, pinching, trapping, or used with harsh mechanical action;</li>
+        <li>smooth sweet-iron mouthpieces where the surface is not sharp, jagged, flaking, contaminated, structurally degraded, pitted to an abrasive degree, toxic, or pressure-concentrating.</li>
+      </ul>
+      <p>Use or possession for use remains unlawful, but Mouthpiece Grade 1 is the lowest mouthpiece severity grade.</p>
+      <p>A material or feature shall not be treated as more severe merely because it is sweet iron, copper, or a smooth roller. It becomes more severe only where its construction, wear, surface, thickness, geometry, combination, or mechanical action increases pressure, injury risk, or distress.</p>
+      <p>A smooth single-jointed mouthpiece shall not automatically be Mouthpiece Grade 1. It shall be assessed under Grade 2 where its joint action creates nutcracker pressure, squeezing, palate pressure, or concentrated tongue or bar pressure.</p>
+      <h4>Grade 2 &mdash; Pressure-altering or moderate-risk mouthpieces</h4>
+      <p>A Mouthpiece Grade 2 mouthpiece is a mouthpiece that materially alters, concentrates, elevates, squeezes, or complicates pressure beyond Grade 1, but does not reach Grade 3 severity.</p>
+      <p>Mouthpiece Grade 2 examples include:</p>
+      <ul>
+        <li>smooth single-jointed mouthpieces with nutcracker or squeezing action;</li>
+        <li>medium ports;</li>
+        <li>ports capable of material tongue compression;</li>
+        <li>ports approaching palate contact;</li>
+        <li>pressure-altering tongue shapes;</li>
+        <li>multiple-jointed mouthpieces that create concentrated tongue, bar, or palate pressure;</li>
+        <li>textured mouthpieces;</li>
+        <li>mouthpieces with rollers that pinch, trap, scrape, concentrate pressure, or are combined with pressure-altering geometry;</li>
+        <li>mouthpieces designed to increase oral manipulation, constant mouthing, or complex oral pressure.</li>
+      </ul>
+      <p>A low, smooth port shall not automatically be treated as Mouthpiece Grade 2 where it functions like a smooth low-severity mouthpiece and does not create material tongue compression, palate risk, or pressure concentration.</p>
+      <p>A port shall be assessed by:</p>
+      <ul>
+        <li>actual height;</li>
+        <li>shape;</li>
+        <li>width;</li>
+        <li>rotation;</li>
+        <li>tongue clearance;</li>
+        <li>palate-contact risk;</li>
+        <li>leverage combination;</li>
+        <li>gag-action combination;</li>
+        <li>mouthpiece thickness;</li>
+        <li>the mouth anatomy of the individual equid.</li>
+      </ul>
+      <h4>Grade 3 &mdash; Severe mouthpieces</h4>
+      <p>A Mouthpiece Grade 3 mouthpiece is a mouthpiece that is severe by construction, surface, thinness, twisting, chain structure, cutting action, crushing action, sharpness, port height, or injury likelihood.</p>
+      <p>Mouthpiece Grade 3 examples include:</p>
+      <ul>
+        <li>twisted wire mouthpieces;</li>
+        <li>slow-twist mouthpieces;</li>
+        <li>corkscrew mouthpieces;</li>
+        <li>double-twisted mouthpieces;</li>
+        <li>chain mouthpieces;</li>
+        <li>double-chain mouthpieces;</li>
+        <li>cable mouthpieces;</li>
+        <li>wire mouthpieces;</li>
+        <li>thin metal pressure-concentrating mouthpieces;</li>
+        <li>square, angular, or edged mouthpieces;</li>
+        <li>serrated mouthpieces;</li>
+        <li>barbed mouthpieces;</li>
+        <li>spiked mouthpieces;</li>
+        <li>sharp-edged mouthpieces;</li>
+        <li>cutting plates;</li>
+        <li>crushing mouthpieces;</li>
+        <li>high ports capable of palate contact or severe tongue compression;</li>
+        <li>spoon ports or cathedral ports capable of severe palate, tongue, or bar pressure;</li>
+        <li>mouthpieces materially likely to wound, cut, crush, bruise, abrade, or injure the tongue, bars, lips, gums, palate, or mouth corners.</li>
+      </ul>
+      <p>Use or possession for use of a Mouthpiece Grade 3 mouthpiece shall be treated as a serious welfare offence and shall trigger an animal-abuse investigation.</p>
+      <p>A chain mouthpiece shall be presumed Mouthpiece Grade 3.</p>
+      <p>A twisted, double-twisted, barbed, serrated, spiked, cutting, crushing, or severe high-port mouthpiece shall be Mouthpiece Grade 3 regardless of whether visible injury is present.</p>
+
+      <h3 id="art-20">Article 20. Combined bit and mouthpiece severity</h3>
+      <p>Where prohibited equipment has both a bit mechanical class and a mouthpiece severity grade, enforcement shall consider both separately and cumulatively.</p>
+      <p>The final offence shall not be reduced to the higher of the two classifications alone. The bit class and mouthpiece grade shall each be recorded, and the combination shall be treated as an aggravating factor.</p>
+      <p>The competent authority shall apply the following minimum treatment:</p>
+      <ul>
+        <li>Bit Class I with Mouthpiece Grade 1: ordinary bit offence;</li>
+        <li>Bit Class I with Mouthpiece Grade 2: aggravated bit offence requiring welfare inspection;</li>
+        <li>Bit Class I with Mouthpiece Grade 3: serious welfare offence requiring animal-abuse investigation;</li>
+        <li>Bit Class II with Mouthpiece Grade 1: leverage-bit welfare offence;</li>
+        <li>Bit Class II with Mouthpiece Grade 2: aggravated leverage-bit welfare offence;</li>
+        <li>Bit Class II with Mouthpiece Grade 3: serious welfare offence requiring animal-abuse investigation;</li>
+        <li>Bit Class III with Mouthpiece Grade 1: serious force-amplifying bit offence;</li>
+        <li>Bit Class III with Mouthpiece Grade 2: aggravated serious force-amplifying bit offence;</li>
+        <li>Bit Class III with Mouthpiece Grade 3: highest-severity tack offence.</li>
+      </ul>
+      <p>A Bit Class III device combined with a Mouthpiece Grade 3 mouthpiece shall trigger:</p>
+      <ul>
+        <li>animal-abuse investigation;</li>
+        <li>full tack audit;</li>
+        <li>inspection of all equids under the person&rsquo;s care where relevant;</li>
+        <li>review of ownership, training, sale, rental, competition, and public-work permissions;</li>
+        <li>review for animal-ownership restriction;</li>
+        <li>review for criminal referral.</li>
+      </ul>
+      <p>A Dutch gag, universal gag, elevator gag, running gag, or other Bit Class III bit combined with a twisted, chain, serrated, barbed, spiked, high-port, cutting, crushing, or other Mouthpiece Grade 3 mouthpiece shall not be treated as a mere bit violation.</p>
+      <p>Such combination shall be treated as evidence of deliberate or reckless possession for use of force-amplifying oral pain equipment unless the evidence establishes that the item was held solely for lawful evidence, museum, disposal, or educational purposes and was not available for use.</p>
+      <p>Opening an animal-abuse investigation under this Article shall not by itself establish guilt.</p>
+      <p>Aggravating factors include:</p>
+      <ul>
+        <li>multiple lower rings or force-amplifying rein positions;</li>
+        <li>sliding gag action;</li>
+        <li>leverage action;</li>
+        <li>absence of a non-chain rotation-limiting strap, back strap, or mechanical stop where such absence increases force, over-rotation, or pressure concentration;</li>
+        <li>thinness of the mouthpiece;</li>
+        <li>twisting;</li>
+        <li>chain construction;</li>
+        <li>wire or cable construction;</li>
+        <li>high port;</li>
+        <li>palate-contact risk;</li>
+        <li>sharp edges;</li>
+        <li>evidence of oral injury;</li>
+        <li>evidence of fear, panic, shutdown, head tossing, rearing, bolting, freezing, or defensive behaviour;</li>
+        <li>concealment;</li>
+        <li>repeated use;</li>
+        <li>use on young, injured, frightened, exhausted, or untrained equids;</li>
+        <li>use by a professional, trainer, seller, rental operator, public worker, or competition rider.</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-4">
+    <summary><span class="part__no">Chapter IV</span><span class="part__title">Mouth, Tongue, Head, and Posture Restraints</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-21">Article 21. Mouth-closing equipment</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>flash nosebands;</li>
+        <li>crank nosebands;</li>
+        <li>Swedish nosebands;</li>
+        <li>figure-eight nosebands;</li>
+        <li>grackle nosebands;</li>
+        <li>crossed nosebands;</li>
+        <li>Mexican nosebands;</li>
+        <li>drop nosebands;</li>
+        <li>jaw straps;</li>
+        <li>mouth ties;</li>
+        <li>anatomical bridles containing mouth-closing, jaw-restricting, or lip-restricting attachments;</li>
+        <li>any device intended to prevent normal mouth opening, jaw movement, tongue movement, lip movement, or visible resistance.</li>
+      </ul>
+      <p>This Article applies regardless of whether the equipment is marketed as stabilising, anatomical, corrective, soft, traditional, or necessary for control.</p>
+      <p>A person shall not close, restrict, bind, or conceal the mouth in order to suppress signs of pain, fear, confusion, unsuitable tack, poor training, or resistance.</p>
+
+      <h3 id="art-22">Article 22. Tongue restraints</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>tongue ties;</li>
+        <li>tongue straps;</li>
+        <li>tongue clips;</li>
+        <li>tongue retainers;</li>
+        <li>tongue depressors;</li>
+        <li>any device attaching the tongue to the jaw, bridle, noseband, bit, halter, or other equipment;</li>
+        <li>any device restricting normal tongue movement for control, display, racing, riding, driving, training, or sale.</li>
+      </ul>
+      <p>A suspected airway or tongue-related medical condition shall be assessed and treated by a licensed veterinarian. Routine restraint of the tongue shall not be used as management or training.</p>
+
+      <h3 id="art-23">Article 23. Draw-rein and rein-action modifying systems</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>draw reins;</li>
+        <li>German reins;</li>
+        <li>running reins;</li>
+        <li>sliding draw reins;</li>
+        <li>Market Harboroughs;</li>
+        <li>Harbridges;</li>
+        <li>running martingales;</li>
+        <li>German martingales;</li>
+        <li>any rein system running from the hand through headgear to the girth, saddle, roller, breastplate, chest, or harness;</li>
+        <li>any rein-action modifying device that changes the angle, leverage, direction, or force of the rein in order to mechanically lower, raise, flex, restrain, frame, or position the head or neck.</li>
+      </ul>
+      <p>No person shall use mechanical rein advantage to produce a frame, headset, outline, collection, or stopping response.</p>
+      <p>A lawful rein shall communicate directly from the hand, driving hand, or ground line to lawful headgear without pulleys, sliding restraint, forced head position, or force-amplifying redirection.</p>
+
+      <h3 id="art-24">Article 24. Fixed lunging and posture systems</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>fixed side reins;</li>
+        <li>elastic side reins;</li>
+        <li>sliding side reins;</li>
+        <li>Vienna reins;</li>
+        <li>triangle reins;</li>
+        <li>Lauffer reins;</li>
+        <li>Pessoa systems;</li>
+        <li>pulley systems;</li>
+        <li>Chambons;</li>
+        <li>de Gogues;</li>
+        <li>bungee neck stretchers;</li>
+        <li>elastic neck stretchers;</li>
+        <li>neck cradles;</li>
+        <li>any device attaching the headgear to a roller, girth, saddle, breastplate, chest, or harness for the purpose of holding posture.</li>
+      </ul>
+      <p>Balance, strength, coordination, collection, and movement shall be developed through lawful training and conditioning, not by mechanically fixing the head, neck, or body.</p>
+
+      <h3 id="art-25">Article 25. Fixed head-restraint equipment</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>standing martingales;</li>
+        <li>fixed martingales;</li>
+        <li>tie-downs;</li>
+        <li>Western tie-downs;</li>
+        <li>head ties;</li>
+        <li>overchecks;</li>
+        <li>bearing reins;</li>
+        <li>sidechecks;</li>
+        <li>check reins;</li>
+        <li>fixed neck straps attaching the head or neck to the saddle, girth, breastplate, roller, cart, or harness;</li>
+        <li>any device that fixes, holds, or limits normal head and neck movement for control, outline, carriage, appearance, or suppression of resistance.</li>
+      </ul>
+      <p>An equid shall retain sufficient freedom of the head and neck for balance, vision, recovery from stumbles, communication, and startle response.</p>
+      <p>A loose neck strap used by a rider as an emergency handhold is lawful where it does not restrain the equid&rsquo;s head or neck.</p>
+
+    </div>
+  </details>
+  <details class="part" id="ch-5">
+    <summary><span class="part__no">Chapter V</span><span class="part__title">Bitless Equipment, Hackamores, Bosals, and Nose Pressure</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-26">Article 26. General legality of bitless equipment</h3>
+      <p>Bitless equipment is lawful only where it complies with this Code.</p>
+      <p>The fact that equipment is bitless shall not make it lawful if it causes pain, restricts breathing, concentrates pressure, delays release, forces posture, suppresses communication, or produces control by fear or intimidation.</p>
+
+      <h3 id="art-27">Article 27. Prohibited hackamore and bosal designs</h3>
+      <p>Hackamores, bosals, and bosal-type devices may be lawful only for ridden, in-hand, groundwork, or other non-driving use where they meet Imperial fit, pressure-distribution, surface, placement, release, and certification standards.</p>
+      <p>No hackamore, mechanical hackamore, leverage hackamore, bosal, or bosal-type device is lawful for driving, ground-driving, long-lining for driving or carriage preparation, or vehicle-attached work. Only a direct-action sidepull complying with Article 41 is lawful for those purposes.</p>
+      <p>The following designs and components are prohibited:</p>
+      <ul>
+        <li>uncertified bitless leverage devices where certification is required;</li>
+        <li>leverage devices exceeding the limits prescribed by the Imperial Tack Measurement Schedule;</li>
+        <li>leverage devices whose weight, shank length, rotation, purchase, rein attachment, or construction creates excessive force or delayed release;</li>
+        <li>rawhide bosals and bosal-type devices, including rawhide primary nosepieces, regardless of padding, width, claimed softness, or traditional construction;</li>
+        <li>chain nosepieces;</li>
+        <li>cable nosepieces;</li>
+        <li>wire nosepieces;</li>
+        <li>metal-bar nosepieces;</li>
+        <li>serrated nosepieces;</li>
+        <li>sharp-edged nosepieces;</li>
+        <li>knotted hard-pressure nosepieces;</li>
+        <li>narrow hard nosepieces;</li>
+        <li>chain curb straps;</li>
+        <li>sharp-edged chin pieces;</li>
+        <li>leverage shanks with sharp corners;</li>
+        <li>designs requiring certification under the Imperial Tack Measurement Schedule where certification has not been granted, has expired, has been suspended, or does not cover the intended use;</li>
+        <li>designs lacking a lawful rotation stop where rotation may over-tighten the nose, chin, jaw, or poll;</li>
+        <li>designs that concentrate force on the nasal cartilage, soft muzzle, jaw, chin groove, or poll;</li>
+        <li>designs that do not release pressure immediately when rein, lead, lunge, or driving pressure is released.</li>
+      </ul>
+      <p>A lawful leverage hackamore shall have:</p>
+      <ul>
+        <li>certification under the Imperial Tack Measurement Schedule;</li>
+        <li>smoothly rounded shanks;</li>
+        <li>no sharp corners;</li>
+        <li>a broad, smooth nosepiece;</li>
+        <li>a broad, flat chin strap;</li>
+        <li>a lawful rotation stop where required;</li>
+        <li>immediate release of pressure when contact is released;</li>
+        <li>no chain, wire, cable, sharp, narrow, serrated, abrasive, or hard pressure-concentrating parts.</li>
+      </ul>
+      <p>A lawful bosal or bosal-type device shall have:</p>
+      <ul>
+        <li>a broad pressure-distributing contact surface;</li>
+        <li>a smooth or padded nose-contact surface;</li>
+        <li>no rawhide in the primary pressure-bearing nose loop;</li>
+        <li>no ridges, hard knots, sharp edges, or pressure points over the nasal bone;</li>
+        <li>stable placement over the nasal bone;</li>
+        <li>immediate release of pressure when contact is released;</li>
+        <li>no action that tightens onto the nasal cartilage, soft muzzle, jaw, or airway structures.</li>
+      </ul>
+      <p>A bosal that rubs, scrapes, abrades, swells, marks, or wounds the nose is unlawful regardless of tradition or material.</p>
+
+      <h3 id="art-28">Article 28. Nose-pressure placement, width, and release</h3>
+      <p>Any tack or training equipment applying pressure to the nose shall be fitted only over the stable nasal bone.</p>
+      <p>No nose-pressure equipment shall be fitted over the lower nasal cartilage, nostrils, soft muzzle, or airway structures.</p>
+      <p>This Article applies to:</p>
+      <ul>
+        <li>sidepulls;</li>
+        <li>bitless bridles;</li>
+        <li>bosals;</li>
+        <li>hackamores;</li>
+        <li>mechanical hackamores;</li>
+        <li>cavessons;</li>
+        <li>lunging cavessons;</li>
+        <li>halters used for riding, driving, or training;</li>
+        <li>combined sidepull-hackamore bridles;</li>
+        <li>cross-under bitless bridles;</li>
+        <li>any noseband used to control, restrain, steer, stop, flex, position, or hold an equid.</li>
+      </ul>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>nosebands fitted low on the nasal cartilage;</li>
+        <li>nosebands fitted close enough to interfere with nostril expansion or breathing;</li>
+        <li>nosebands that slide downward during use;</li>
+        <li>narrow nosepieces;</li>
+        <li>hard nosepieces;</li>
+        <li>knotted nosepieces;</li>
+        <li>wire, cable, chain, metal-bar, serrated, or pressure-concentrating nosepieces;</li>
+        <li>nose-pressure equipment fitted so that rein, lead, lunge, or driving pressure acts on cartilage rather than nasal bone;</li>
+        <li>nose-pressure equipment that does not release pressure immediately when contact is released;</li>
+        <li>equipment that causes swelling, rubs, hair loss, bruising, pain, breathing restriction, panic, head-shaking, facial evasion, or defensive behaviour.</li>
+      </ul>
+      <p>A lawful nose-pressure device shall be:</p>
+      <ul>
+        <li>broad enough to distribute pressure;</li>
+        <li>smooth;</li>
+        <li>stable during use;</li>
+        <li>correctly fitted to the individual equid;</li>
+        <li>high enough to remain on the stable nasal bone;</li>
+        <li>low enough not to rub the cheekbone or facial crest;</li>
+        <li>designed to release pressure immediately when contact is released;</li>
+        <li>used only with force appropriate to the equid&rsquo;s training and welfare.</li>
+      </ul>
+      <p>For ordinary riding, driving, training, and public work, nose-pressure equipment shall use the broadest practical nosepiece compatible with safe fit, clear breathing, and stable placement.</p>
+      <p>Minimum width standards shall be prescribed in the Imperial Tack Measurement Schedule.</p>
+      <p>A thinner nosepiece shall be presumed harsher unless the keeper proves that the design distributes pressure at least as safely as a broader lawful nosepiece.</p>
+      <p>Where correct placement, sufficient pressure distribution, or immediate release cannot be achieved because of the equid&rsquo;s head shape, age, injury, medical condition, or equipment design, that equipment shall not be used on that equid.</p>
+      <p>Marketing terms such as anatomical, soft, gentle, bitless, natural, comfort, hackamore, sidepull, cavesson, or welfare design shall not exempt equipment from this Article.</p>
+
+      <h3 id="art-29">Article 29. Cross-under, tightening, and delayed-release bitless bridles</h3>
+      <p>Cross-under, cross-jaw, tightening, sliding, wraparound, or delayed-release bitless bridles are restricted equipment for ridden and in-hand use.</p>
+      <p>They are prohibited for driving.</p>
+      <p>No cross-under, cross-jaw, tightening, sliding, wraparound, or delayed-release bitless bridle shall be used for:</p>
+      <ul>
+        <li>carriage driving;</li>
+        <li>cart driving;</li>
+        <li>wagon driving;</li>
+        <li>freight driving;</li>
+        <li>public transport;</li>
+        <li>rental driving;</li>
+        <li>ceremonial driving;</li>
+        <li>agricultural driving;</li>
+        <li>road driving;</li>
+        <li>long-rein driving where the equid is attached to a vehicle;</li>
+        <li>any vehicle-attached work.</li>
+      </ul>
+      <p>For ridden or in-hand use, such equipment shall be unlawful unless certified under the Imperial Tack Measurement Schedule.</p>
+      <p>A cross-under or tightening bitless bridle is prohibited where it:</p>
+      <ul>
+        <li>tightens around the nose, jaw, cheeks, chin, or poll without immediate release;</li>
+        <li>traps the head between opposing pressures;</li>
+        <li>applies simultaneous nose, jaw, cheek, chin, and poll pressure in a manner that the equid cannot clearly escape by yielding;</li>
+        <li>creates delayed release after rein, lead, or line pressure stops;</li>
+        <li>concentrates pressure through narrow straps, cords, knots, rings, or hard edges;</li>
+        <li>interferes with breathing, swallowing, jaw movement, or facial nerves;</li>
+        <li>causes head-shaking, panic, bracing, facial evasion, freezing, rearing, bolting, or defensive behaviour;</li>
+        <li>is used to force headset, flexion, braking, or compliance.</li>
+      </ul>
+      <p>A lawful tightening or cross-under design, where permitted for ridden or in-hand use by Schedule certification, shall:</p>
+      <ul>
+        <li>distribute pressure broadly;</li>
+        <li>release immediately and completely when contact is released;</li>
+        <li>avoid simultaneous trapping pressure;</li>
+        <li>avoid sustained, delayed, or trapping poll pressure;</li>
+        <li>avoid pressure on the nasal cartilage, throat, airway, and soft muzzle;</li>
+        <li>be fitted to the individual equid;</li>
+        <li>be used only by a person trained in that specific design.</li>
+      </ul>
+      <p>Certification of a cross-under or tightening design shall not permit its use on an equid for whom the device causes panic, bracing, facial evasion, breathing restriction, nerve pressure, delayed release, or defensive behaviour.</p>
+      <p>No tightening bitless bridle shall be presumed gentle because it is bitless.</p>
+
+      <h3 id="art-30">Article 30. Rope halters and rope nose-pressure equipment</h3>
+      <p>Rope halters, rope sidepulls, rope cavessons, and rope nose-pressure equipment are restricted equipment where used for riding, training, lunging, groundwork, restraint, or public handling. They are prohibited as driving headgear and for vehicle-attached work.</p>
+      <p>They are prohibited where they:</p>
+      <ul>
+        <li>use thin rope over the nasal bone;</li>
+        <li>place knots over the nasal bone, facial nerves, lower nasal cartilage, or soft muzzle;</li>
+        <li>concentrate pressure through hard knots or narrow cord;</li>
+        <li>slide downward during use;</li>
+        <li>tighten without immediate release;</li>
+        <li>are used for sharp yanking, jerking, shock-loading, pain compliance, yielding forced through pain, panic, pressure concentration, or unreleased pressure, dragging, tying down, panic compliance, or corrective pressure that depends on knots, narrow cord, nerve pressure, or other pressure concentration;</li>
+        <li>cause swelling, rubs, hair loss, bruising, defensive behaviour, head-shaking, or fear.</li>
+      </ul>
+      <p>A rope halter used only for calm leading or turnout handling may be lawful only where it does not place knots over sensitive facial structures, does not slide onto the lower nasal cartilage or soft muzzle, and is not used to apply sharp, punitive, corrective, or fear-based pressure through pressure concentration.</p>
+      <p>A rope device used for ridden, driven, lunging, training, or public-work control shall meet the pressure-distribution and release standards of this Code and any applicable Schedule.</p>
+      <p>A rope halter or rope nose-pressure device shall not be justified by claiming that knots make the equid feel the handler more clearly.</p>
+      <p>Equipment that increases sensation by placing narrow cord, hard knots, or pressure points over facial nerves, nasal bone, nasal cartilage, or soft muzzle is pressure-concentrating equipment.</p>
+      <p>A lawful pressure cue or lawful correction shall not be delivered through knots placed over sensitive facial structures.</p>
+
+      <h3 id="art-31">Article 31. Combined sidepull-hackamore bridles</h3>
+      <p>A combined sidepull-hackamore bridle may be lawful for ridden use where it contains no bit and where both rein systems independently comply with this Code. It is prohibited for driving and all vehicle-attached work.</p>
+      <p>A lawful combined sidepull-hackamore bridle shall meet all of the following conditions:</p>
+      <ul>
+        <li>the sidepull nosepiece is broad, smooth, stable, and correctly placed over the stable nasal bone;</li>
+        <li>the hackamore nosepiece is broad, smooth, stable, and correctly placed over the stable nasal bone;</li>
+        <li>any chin strap is broad, flat, and free of chain, wire, cable, serration, knots, sharp edges, or pressure-concentrating construction;</li>
+        <li>any shanks are smoothly rounded and certified under and compliant with the Imperial Tack Measurement Schedule;</li>
+        <li>both rein systems act independently;</li>
+        <li>the equid is trained to understand both rein systems;</li>
+        <li>the rider does not use both rein systems to trap the head, force posture, or stack continuous pressure.</li>
+      </ul>
+      <p>A combined sidepull-hackamore bridle is prohibited where it includes:</p>
+      <ul>
+        <li>a thin rope nosepiece;</li>
+        <li>knots over the nasal bone;</li>
+        <li>chain, wire, cable, or metal nose pressure;</li>
+        <li>long mechanical shanks;</li>
+        <li>sharp corners;</li>
+        <li>constant dual-rein pressure;</li>
+        <li>use for forced headset, forced flexion, or pain compliance.</li>
+      </ul>
+
+      <h3 id="art-32">Article 32. Cordeos, neck ropes, and bridleless equipment</h3>
+      <p>Cordeos, neck ropes, and neck rings are lawful only where they are loose, smooth, non-tightening, non-punitive, and used for communication rather than restraint.</p>
+      <p>A lawful cordeo shall:</p>
+      <ul>
+        <li>be smooth;</li>
+        <li>be broad enough not to cut or concentrate pressure;</li>
+        <li>contain no inward-facing studs, spikes, teeth, knots, barbs, ridges, or sharp parts;</li>
+        <li>contain no chain, wire, cable, choke mechanism, or tightening loop;</li>
+        <li>rest around the base of the neck or other safe neck position appropriate to the individual equid;</li>
+        <li>not press on the windpipe;</li>
+        <li>not restrict breathing;</li>
+        <li>not be used for jerking, sharp yanking, choking, dragging, punishment, or forced flexion;</li>
+        <li>release pressure immediately when the handler or rider releases contact.</li>
+      </ul>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>inward-studded neck ropes;</li>
+        <li>spiked cordeos;</li>
+        <li>chain cordeos;</li>
+        <li>choke-action neck ropes;</li>
+        <li>tightening neck loops;</li>
+        <li>slip-collar neck ropes;</li>
+        <li>wire or cable neck ropes;</li>
+        <li>knotted pressure neck ropes;</li>
+        <li>narrow cutting neck ropes;</li>
+        <li>any cordeo designed or used like a choke collar;</li>
+        <li>any neck device that causes coughing, bracing, panic, swelling, hair loss, skin injury, breathing restriction, or defensive behaviour.</li>
+      </ul>
+      <p>A cordeo shall not be used as a substitute for training where the equid cannot safely respond to lawful cues.</p>
+      <p>A bridleless equid used in public, competition, transport, display, or work shall be trained and certified for that use where certification is required by other Imperial law.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-6">
+    <summary><span class="part__no">Chapter VI</span><span class="part__title">Tying, Sensory Restriction, and Muzzles</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-33">Article 33. Tying, cross-tying, and fixed restraints</h3>
+      <p>Tying, cross-tying, trailer tying, stall tying, grooming tying, and public hitching are restraint methods and shall comply with this Code.</p>
+      <p>An equid shall not be tied, cross-tied, or fixed in place by:</p>
+      <ul>
+        <li>a bit;</li>
+        <li>a functional bit;</li>
+        <li>a mouthpiece;</li>
+        <li>a chain;</li>
+        <li>a choke-action device;</li>
+        <li>a tightening nose device;</li>
+        <li>a rope around the lower nasal cartilage or soft muzzle;</li>
+        <li>a neck rope that tightens under pressure;</li>
+        <li>any equipment that causes panic, choking, falling, rearing, collapse, or injury.</li>
+      </ul>
+      <p>A lawful tying arrangement shall:</p>
+      <ul>
+        <li>attach only to lawful headgear;</li>
+        <li>allow safe head and neck position;</li>
+        <li>allow normal breathing and swallowing;</li>
+        <li>use safe height and safe length;</li>
+        <li>prevent entanglement;</li>
+        <li>include a breakaway, quick-release, or supervised emergency-release method appropriate to the location;</li>
+        <li>be supervised where the equid is young, frightened, untrained, injured, in public, in transport, or under treatment.</li>
+      </ul>
+      <p>An equid shall not be left tied as ordinary housing, punishment, convenience storage, public display, or substitute turnout.</p>
+      <p>Cross-ties shall not be used where the equid has not been trained to stand calmly in them.</p>
+      <p>A person shall release or cut a restraint immediately where the equid is at material risk of choking, falling, panic, injury, or entanglement, unless release would create greater immediate danger.</p>
+
+      <h3 id="art-34">Article 34. Sensory-restricting equipment</h3>
+      <p>Sensory-restricting equipment is restricted equipment.</p>
+      <p>Blinders and blinkers are governed specifically by Article 42; this Article governs other sensory-restricting equipment.</p>
+      <p>This Article applies to:</p>
+      <ul>
+        <li>ear plugs;</li>
+        <li>ear covers used to reduce sound;</li>
+        <li>sound-dampening bonnets;</li>
+        <li>extreme blinkers;</li>
+        <li>face covers;</li>
+        <li>eye covers;</li>
+        <li>any device intended to reduce hearing, sight, or environmental awareness.</li>
+      </ul>
+      <p>Sensory-restricting equipment is prohibited where it:</p>
+      <ul>
+        <li>is used to conceal fear, panic, pain, poor training, or inability to cope;</li>
+        <li>prevents the equid from perceiving necessary road, handler, herd, environmental, or safety information;</li>
+        <li>causes fear, confusion, panic, head-shaking, rubbing, ear pain, or defensive behaviour;</li>
+        <li>is used to force tolerance of noise, traffic, crowds, ceremony, competition, fireworks, machinery, or public display;</li>
+        <li>is used instead of training, route change, removal from work, or environmental management.</li>
+      </ul>
+      <p>Ear covers or sound-reducing equipment may be lawful only where:</p>
+      <ul>
+        <li>the equipment is soft, safe, clean, and correctly fitted;</li>
+        <li>it does not enter, scrape, irritate, or injure the ear canal;</li>
+        <li>it does not prevent necessary awareness;</li>
+        <li>the equid has been gradually trained to accept it;</li>
+        <li>it is not used to hide distress or force exposure to an unsuitable environment.</li>
+      </ul>
+      <p>For public work, rental work, transport work, competition, ceremony, or government work, sensory-restricting equipment shall be recorded where required by the competent authority.</p>
+
+      <h3 id="art-35">Article 35. Muzzles and feed-restricting equipment</h3>
+      <p>Muzzles, grazing muzzles, anti-bite muzzles, feed-restricting devices, and similar equipment are restricted equipment.</p>
+      <p>A muzzle may be lawful only where it is used for a legitimate welfare, veterinary, turnout-management, transport-safety, or short-term safety purpose.</p>
+      <p>A lawful muzzle shall:</p>
+      <ul>
+        <li>permit normal breathing;</li>
+        <li>permit safe drinking. A temporary exception is lawful only while continuous direct supervision and an immediate specific veterinary, transport-safety, or other safety need makes drinking temporarily unsafe or impracticable; the muzzle shall be removed or modified and water offered as soon as that need ends, and the exception shall be recorded under Article 57;</li>
+        <li>avoid rubbing, heat, swelling, sores, panic, or facial nerve pressure;</li>
+        <li>be correctly fitted to the individual equid;</li>
+        <li>be removed and checked at appropriate intervals;</li>
+        <li>not prevent necessary forage intake beyond the lawful management purpose;</li>
+        <li>not be used as punishment.</li>
+      </ul>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>anti-bite muzzles used as punishment;</li>
+        <li>anti-cribbing muzzles used instead of investigating management or health causes;</li>
+        <li>muzzles that prevent drinking during turnout or ordinary housing;</li>
+        <li>muzzles used to silence, exhaust, frustrate, or suppress behaviour;</li>
+        <li>muzzles that cause rubs, swelling, breathing restriction, panic, sores, or hair loss;</li>
+        <li>prolonged muzzle use without welfare monitoring;</li>
+        <li>muzzle use as a substitute for adequate forage management, turnout management, veterinary care, or behavioural investigation.</li>
+      </ul>
+      <p>Use of a muzzle for weight, metabolic, veterinary, or turnout management shall be recorded where required by the competent authority.</p>
+
+    </div>
+  </details>
+  <details class="part" id="ch-7">
+    <summary><span class="part__no">Chapter VII</span><span class="part__title">Driving Harness and Vehicle-Attached Tack</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-36">Article 36. Application to driving harness</h3>
+      <p>This Chapter applies to all harness and vehicle-attached tack used for driving, carriage work, freight work, public transport, agricultural work, ceremonial driving, rental driving, training, and private driving.</p>
+      <p>Driving harness shall comply with this Code and with the Imperial Code for the Welfare of Working Carriage Equids.</p>
+
+      <h3 id="art-37">Article 37. Harness fit and pressure distribution</h3>
+      <p>A driving harness shall be fitted to the individual equid.</p>
+      <p>It shall not:</p>
+      <ul>
+        <li>restrict breathing;</li>
+        <li>press on the windpipe;</li>
+        <li>restrict shoulder movement;</li>
+        <li>restrict normal neck movement;</li>
+        <li>restrict normal back movement;</li>
+        <li>restrict normal tail movement;</li>
+        <li>create nerve pressure;</li>
+        <li>create rubs, sores, swelling, hair loss, bruising, or skin damage;</li>
+        <li>require the equid to hold the vehicle stationary by body strain;</li>
+        <li>use pain, pinching, or pressure concentration to increase obedience.</li>
+      </ul>
+      <p>Collars, breastcollars, traces, girths, surcingles, harness saddles, pads, breeching, cruppers, shafts, poles, kicking straps, and related parts shall be adjusted so that traction, stabilising, turning, and braking forces are distributed safely.</p>
+      <p>Harness shall be reassessed after vehicle change, route change, load change, bodyweight change, muscle change, rubs, swelling, gait change, fear, refusal, or defensive behaviour.</p>
+      <p>No harness part shall be tightened, shortened, weighted, padded, or repositioned to compensate for poor vehicle balance, poor shaft or pole fit, defective brakes, unsuitable load, unsuitable route, or unstable carriage design.</p>
+      <p>Where safe harness fit cannot be achieved without over-tightening, compensatory padding, forced posture, or restricted movement, the vehicle, route, load, or work assignment shall be changed.</p>
+
+      <h3 id="art-38">Article 38. Collars and breastcollars</h3>
+      <p>A collar or breastcollar is prohibited where it:</p>
+      <ul>
+        <li>compresses the windpipe;</li>
+        <li>obstructs breathing;</li>
+        <li>restricts shoulder movement;</li>
+        <li>sits too high against the throat;</li>
+        <li>sits too low so that draft force interferes with the forelimbs;</li>
+        <li>rubs the withers, shoulders, chest, or neck;</li>
+        <li>is too narrow to distribute draft pressure safely;</li>
+        <li>is used over untreated wounds, swelling, sores, or pressure marks;</li>
+        <li>is used to compensate for an overloaded vehicle, poor brakes, or unsuitable route.</li>
+      </ul>
+      <p>A working collar or breastcollar shall be broad, smooth, stable, and appropriate to the load, vehicle, route, and individual equid.</p>
+
+      <h3 id="art-39">Article 39. Breeching, braking, and holdback equipment</h3>
+      <p>Breeching and holdback equipment shall be used where necessary to prevent the vehicle from running onto the equid.</p>
+      <p>Breeching is prohibited where it:</p>
+      <ul>
+        <li>is absent on a route, vehicle, or gradient where it is necessary for safety;</li>
+        <li>is so loose that it fails to function;</li>
+        <li>is so tight that it restricts movement;</li>
+        <li>rubs, pinches, or injures the hindquarters, tail area, or thighs;</li>
+        <li>is used as a substitute for functioning vehicle brakes.</li>
+      </ul>
+      <p>No harness arrangement shall require the equid to serve as the vehicle&rsquo;s braking system.</p>
+
+      <h3 id="art-40">Article 40. Cruppers and tail-area equipment</h3>
+      <p>A crupper or tail-area stabilising device is lawful only where it is necessary for harness stability and correctly fitted.</p>
+      <p>A crupper is prohibited where it:</p>
+      <ul>
+        <li>lifts, fixes, or forces tail carriage;</li>
+        <li>rubs or injures the dock;</li>
+        <li>presses into the anus, vulva, sheath, or surrounding soft tissue;</li>
+        <li>causes tail clamping, kicking, bucking, panic, swelling, sores, or hair loss;</li>
+        <li>is used to create cosmetic tail position;</li>
+        <li>is used with tail-setting equipment prohibited by this Code.</li>
+      </ul>
+      <p>No tail strap, tail tie, or harness part shall bind the tail to the vehicle or restrict normal tail movement except in a genuine veterinary emergency or immediate safety emergency and subject to Article 57. The securing shall use the least restrictive safe method, remain continuously supervised, end immediately when the danger ends, and be recorded.</p>
+
+      <h3 id="art-41">Article 41. Driving headgear</h3>
+      <p>Only a direct-action sidepull, as defined by this Code, is lawful as driving headgear for carriage, cart, wagon, sleigh, freight, agricultural, ceremonial, rental, public-transport, emergency, training, or other vehicle-attached work.</p>
+      <p>A lawful driving sidepull shall:</p>
+      <ul>
+        <li>provide direct independent lateral rein action;</li>
+        <li>attach each driving line directly to the corresponding lateral side of the noseband;</li>
+        <li>transmit line tension without leverage, shanks, a central under-jaw pivot, crossing straps, sliding straps, tightening action, wraparound action, rotation, pulley action, or force multiplication;</li>
+        <li>release pressure immediately and completely when line tension is released;</li>
+        <li>remain mechanically stable under long-line use and not rotate, twist, migrate, invert, collapse, or ride upward or downward on the face during ordinary steering, stopping, backing, or turning;</li>
+        <li>use a broad, smooth, flexible, pressure-distributing noseband correctly placed over the stable nasal bone;</li>
+        <li>contain no mouthpiece, chain, wire, cable, metal pressure bar, hard knot, serration, sharp edge, narrow pressure-bearing cord, or other pressure-concentrating component;</li>
+        <li>permit normal breathing, swallowing, jaw movement, head movement, neck movement, vision, balance, and recovery.</li>
+      </ul>
+      <p>The following are prohibited as driving headgear:</p>
+      <ul>
+        <li>bosals and bosal-type devices, including traditional rawhide bosals and modern broad, padded, or non-rawhide bosals;</li>
+        <li>mechanical hackamores and any shanked, leverage, rotating, wheel, flower, multi-ring, or force-amplifying hackamore;</li>
+        <li>cross-under, cross-jaw, tightening, sliding, wraparound, and delayed-release bitless bridles;</li>
+        <li>combined sidepull-hackamore bridles;</li>
+        <li>double-rein bitless arrangements containing a bosal, hackamore, leverage system, tightening system, or second pressure system;</li>
+        <li>rope-halter bridles, rope sidepulls, and rope nose-pressure devices;</li>
+        <li>bits, functional bits, mouthpieces, overchecks, bearing reins, sidechecks, check reins, running martingales, fixed martingales, draw-rein systems, and devices forcing head carriage;</li>
+        <li>any headgear that does not satisfy the legal definition of a direct-action sidepull.</li>
+      </ul>
+      <p>Bosals are prohibited for driving because their reins or lines act from a common central attachment below the nose or jaw rather than from independent lateral attachments. They do not provide the direct independent left-and-right line action required for precise long-line steering.</p>
+      <p>Mechanical hackamores are prohibited for driving because asymmetric long-line tension acts through leverage and rotation rather than direct lateral noseband action. The device may rotate or ride upward on the face, alter its pressure location, reduce steering precision, and place avoidable pressure on sensitive facial, jaw, chin, or poll structures.</p>
+      <p>Cross-under and related tightening designs are prohibited for driving because they distribute and retain pressure around the head, may delay complete release, and do not provide the required direct independent lateral action.</p>
+      <p>A commercial name, padding, claimed softness, traditional status, or inclusion of an additional sidepull rein shall not make prohibited driving headgear lawful. Mechanical action and actual construction determine classification.</p>
+      <p>Driving headgear shall not be used to hide fear, suppress resistance, or compensate for poor training, poor vehicle fit, excessive load, unsafe route, inadequate brakes, or an unsuitable equid.</p>
+      <p>An approved Facial Marker may be attached to or integrated into lawful driving headgear where it complies with applicable public-road marking law and does not alter the headgear&rsquo;s fit, pressure distribution, line action, release, stability, or breathing clearance.</p>
+      <p>A marker-bearing muserola or other broad noseband may serve as the Facial Marker whether or not it attaches to the browband or crownpiece. Where it forms part of the control noseband, it shall remain fully compliant with Article 28 and this Article.</p>
+
+      <h3 id="art-42">Article 42. Blinders and blinkers</h3>
+      <p>Blinders or blinkers are restricted equipment.</p>
+      <p>This Article is the specific rule for blinders and blinkers and governs their use in every context; other sensory-restricting equipment is governed by Article 34.</p>
+      <p>They may be used for driving only where:</p>
+      <ul>
+        <li>the equid has been gradually trained to them;</li>
+        <li>they do not touch or irritate the eye;</li>
+        <li>they do not obstruct forward vision;</li>
+        <li>they do not prevent the equid from safely perceiving necessary road conditions;</li>
+        <li>they are not used to conceal fear, poor training, unsafe behaviour, pain, or inability to cope with traffic;</li>
+        <li>they are recorded where required in the Working Equid Passport.</li>
+      </ul>
+      <p>Extreme blinders that severely isolate the equid, prevent necessary awareness, or make the equid unsafe without them are prohibited.</p>
+      <p>Blinders or blinkers shall not be used for ordinary ridden work except under a written veterinary or rehabilitation authority.</p>
+
+      <h3 id="art-43">Article 43. Harness saddles, surcingles, girths, and pads</h3>
+      <p>Harness saddles, surcingles, girths, pads, and back-contact harness parts shall be fitted so that they do not create pressure injury, restrict breathing, restrict back movement, or concentrate load.</p>
+      <p>They are prohibited where they:</p>
+      <ul>
+        <li>press on the spine;</li>
+        <li>bridge or rock in a way that creates pressure points;</li>
+        <li>rub the withers, back, girth area, or loins;</li>
+        <li>restrict rib movement or breathing;</li>
+        <li>are over-tightened to stabilise a poorly fitted vehicle or harness;</li>
+        <li>are used over untreated wounds, swelling, sores, heat, or pain;</li>
+        <li>conceal pressure injury under padding.</li>
+      </ul>
+      <p>Padding shall not legalise a poorly fitted harness part.</p>
+
+      <h3 id="art-44">Article 44. Kicking straps and anti-kick equipment</h3>
+      <p>Kicking straps and anti-kick equipment are restricted equipment.</p>
+      <p>They may be used only where necessary for immediate safety or during supervised rehabilitation or training, only where they do not restrict normal movement more than necessary, and subject to Article 57. Rehabilitation or training use requires a written plan, stated review date, removal criteria, and session records; it shall not become routine vehicle equipment.</p>
+      <p>A kicking strap or anti-kick device is prohibited where it:</p>
+      <ul>
+        <li>is used as punishment;</li>
+        <li>is fitted so tightly that it restricts normal back, hindquarter, or limb movement;</li>
+        <li>causes pain, rubbing, panic, bucking, bracing, or defensive behaviour;</li>
+        <li>is used to force an equid to tolerate an unsafe vehicle, poor harness fit, excessive load, or unsuitable work;</li>
+        <li>is used as a substitute for training, veterinary assessment, or removal from work.</li>
+      </ul>
+      <p>Continued need for anti-kick equipment shall trigger welfare reassessment.</p>
+
+      <h3 id="art-45">Article 45. Trace, shaft, pole, and vehicle-attachment safety</h3>
+      <p>Traces, shafts, poles, and related attachments are prohibited where they:</p>
+      <ul>
+        <li>are frayed, cracked, sharp, unstable, or unsafe;</li>
+        <li>strike, pinch, or trap the equid;</li>
+        <li>restrict normal gait;</li>
+        <li>prevent emergency release;</li>
+        <li>create unequal draft force without lawful reason;</li>
+        <li>cause the equid to pull from an unsafe angle;</li>
+        <li>transfer excessive pole, shaft, or vehicle weight onto the equid;</li>
+        <li>are used with a vehicle unsuited to the equid&rsquo;s size, strength, training, or route.</li>
+      </ul>
+      <p>Harness shall include a safe emergency release system appropriate to the vehicle and work.</p>
+      <p>Non-contact vehicle safety chains may be used only where they do not touch, strike, tighten upon, entangle, frighten, or restrain the equid.</p>
+      <p>A chain shall not be used as a trace, rein, lead, contact strap, pressure device, correction device, punishment device, or restraint against the equid.</p>
+
+      <h3 id="art-46">Article 46. Decorative harness and vehicle-attached ornaments</h3>
+      <p>Decorative harness, ceremonial harness, bells, plumes, cloths, banners, covers, lamps, signs, or vehicle-attached ornaments are lawful only where they do not interfere with welfare or safety.</p>
+      <p>They are prohibited where they:</p>
+      <ul>
+        <li>rub, strike, frighten, entangle, or distract the equid;</li>
+        <li>restrict vision, hearing, breathing, head movement, neck movement, shoulder movement, back movement, tail movement, or gait;</li>
+        <li>add avoidable heat burden;</li>
+        <li>conceal injury, sweat, swelling, rubs, poor harness fit, or distress;</li>
+        <li>interfere with reins, traces, shafts, poles, breeching, brakes, emergency release, or driver visibility;</li>
+        <li>create noise, movement, glare, or vibration likely to cause fear or confusion.</li>
+      </ul>
+      <p>Ceremonial appearance shall not justify unsafe or uncomfortable harness.</p>
+      <p>Facial Markers and road-status inserts are lawful decorative and identification equipment only where they are securely fitted, clearly visible, non-restraining, and compliant with the applicable road-status marking law. Decoration shall not obscure, imitate, divide, or visually compete with the official insert.</p>
+      <p>A Facial Marker shall not obstruct vision, ears, breathing, nostril expansion, facial nerves, forelock comfort, head movement, headgear function, rein or line action, or pressure release.</p>
+      <p>Where a Facial Marker is integrated into a pressure-bearing noseband, its window, slot, pocket, insert, backing, edging, and fasteners shall not stiffen the noseband, create a hard edge or pressure point, concentrate force, impair fit or release, or alter rein or driving-line action.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-8">
+    <summary><span class="part__no">Chapter VIII</span><span class="part__title">Artificial Movement, Saddles, and Cosmetic Carriage</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-47">Article 47. Artificial gait and action equipment</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>weighted boots;</li>
+        <li>weighted bands;</li>
+        <li>pastern chains;</li>
+        <li>action chains;</li>
+        <li>weighted shoes;</li>
+        <li>stacked pads;</li>
+        <li>wedge stacks;</li>
+        <li>tall pads;</li>
+        <li>pressure pads;</li>
+        <li>artificial hoof extensions;</li>
+        <li>heavy roller boots;</li>
+        <li>ankle weights;</li>
+        <li>toe weights;</li>
+        <li>gait-enhancing shoes;</li>
+        <li>gait-altering wraps;</li>
+        <li>any device intended to exaggerate, manufacture, raise, snap, shorten, or otherwise alter natural movement.</li>
+      </ul>
+      <p>Therapeutic shoeing is lawful only where medically necessary for the individual equid and prescribed or approved by a licensed veterinarian. It shall not be used to create, preserve, or exaggerate a show gait.</p>
+
+      <h3 id="art-48">Article 48. Rear-set and lumbar-loading saddles</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>saddles designed to sit behind the equid&rsquo;s weight-bearing back;</li>
+        <li>saddles designed to load the lumbar region;</li>
+        <li>rear-set saddle-seat saddles;</li>
+        <li>saddle designs intended to exaggerate front-end action by placing the rider too far back;</li>
+        <li>any saddle deliberately positioned beyond the last rib.</li>
+      </ul>
+      <p>A saddle shall not load the lumbar region, distort movement, or prioritise visual action over back health, comfort, and normal locomotion.</p>
+
+      <h3 id="art-49">Article 49. Tail-setting equipment</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>tail sets;</li>
+        <li>tail braces;</li>
+        <li>tail cradles;</li>
+        <li>tail elevators;</li>
+        <li>tail weights;</li>
+        <li>tail carriage devices;</li>
+        <li>tail bands used to force carriage;</li>
+        <li>any device designed to hold the tail in a cosmetic position.</li>
+      </ul>
+      <p>The tail shall not be restrained, weighted, braced, tied, surgically altered, chemically altered, or mechanically positioned for appearance, breed standard, sale value, or competition style.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-9">
+    <summary><span class="part__no">Chapter IX</span><span class="part__title">Punitive and Behaviour-Suppression Equipment</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-50">Article 50. Chains and punitive restraint equipment</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>chain lead ropes;</li>
+        <li>stud chains;</li>
+        <li>chain shanks;</li>
+        <li>lip chains;</li>
+        <li>gum chains;</li>
+        <li>nose chains;</li>
+        <li>chain leads over the nose;</li>
+        <li>chain leads under the chin;</li>
+        <li>chain leads through the mouth;</li>
+        <li>chain leads across the gums;</li>
+        <li>animal-contact control chains;</li>
+        <li>nose twitches;</li>
+        <li>lip twitches;</li>
+        <li>ear twitches;</li>
+        <li>ear clamps;</li>
+        <li>war bridles;</li>
+        <li>pain-based restraint devices;</li>
+        <li>electric prods, goads, and hot-shots;</li>
+        <li>jiggers and other electric or electronic shock devices used on or near an equid to shock, cue, drive, or influence performance;</li>
+        <li>electrified bars, wires, panels, or fittings used to shock or train an equid;</li>
+        <li>any device intended to overpower an equid through pain, panic, or intimidation.</li>
+      </ul>
+      <p>Routine handling, training, grooming, transport, veterinary preparation, farrier preparation, and public control shall not depend on pain, panic, or fear.</p>
+      <p>Twitches are prohibited in all ordinary, professional, veterinary-preparation, farrier, grooming, transport, sale, competition, public-display, training, and handling contexts.</p>
+      <p>A genuine emergency medical or safety restraint may be used only where all of the following apply:</p>
+      <ul>
+        <li>the restraint is necessary to prevent immediate serious harm to the equid, a person, or another animal;</li>
+        <li>less harmful available methods are insufficient;</li>
+        <li>the restraint is the least harmful effective option available in that moment;</li>
+        <li>the restraint is not a twitch, chain restraint, mouth restraint, ear restraint, or pain-based restraint device;</li>
+        <li>the restraint is used under veterinary authority or, where waiting for veterinary authority would create immediate serious danger, is reported to a veterinarian and the competent authority as soon as practicable;</li>
+        <li>the restraint lasts only as long as the immediate danger lasts;</li>
+        <li>the incident, reason for use, equipment used, duration, and outcome are recorded.</li>
+      </ul>
+      <p>This emergency clause shall not authorise twitches, chain restraint, oral restraint, mouthpiece restraint, ear restraint, punitive restraint, convenience restraint, training restraint, sale restraint, competition restraint, or restraint used to force ordinary compliance.</p>
+      <p>A chain shall not be used as tack, restraint, lead equipment, pressure equipment, correction equipment, punishment equipment, or animal-contact control equipment.</p>
+      <p>This Article does not prohibit lawful veterinary instruments used by a licensed veterinarian for diagnosis or treatment, provided they are not used as training, punishment, handling-control, convenience-restraint, or compliance equipment.</p>
+      <p>This Article does not prohibit non-contact vehicle safety chains that are structurally part of a vehicle and do not touch, tighten upon, restrain, frighten, or communicate with the equid.</p>
+      <p>The use, fitting, supply, or possession for use of any electric, electronic, or shock-delivering device to control, train, correct, punish, drive, restrain, or influence an equid is prohibited. This prohibition applies whether the device is applied to the body, worn, built into fencing or fixtures, or held nearby, and whether or not it leaves a visible mark. It does not prohibit a clearly visible, correctly earthed electric fence used as a containment boundary in compliance with the General Imperial Equid Welfare Code, nor lawful veterinary instruments used by a licensed veterinarian for diagnosis or treatment.</p>
+
+      <h3 id="art-51">Article 51. Behaviour-suppression collars</h3>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>anti-cribbing collars;</li>
+        <li>electric collars;</li>
+        <li>shock collars;</li>
+        <li>choke collars;</li>
+        <li>anti-weaving collars;</li>
+        <li>any device that punishes repetitive behaviour rather than addressing its cause.</li>
+      </ul>
+      <p>Repetitive behaviour shall be investigated for pain, unsuitable feeding, insufficient forage, isolation, confinement, frustration, boredom, stress, poor turnout, or other management failure.</p>
+
+    </div>
+  </details>
+  <details class="part" id="ch-10">
+    <summary><span class="part__no">Chapter X</span><span class="part__title">Restricted Equipment and Aids</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-52">Article 52. Hobbles</h3>
+      <p>Hobbles are prohibited for ordinary ownership, training, transport, punishment, convenience, work, turnout, or restraint.</p>
+      <p>The sole exception is a controlled Imperial Government safety program designed to teach equids not to panic if accidentally caught in rope, fencing, tack, harness, vegetation, or other objects.</p>
+      <p>Such a program may be carried out only by specifically certified government officials.</p>
+      <p>The program shall include:</p>
+      <ul>
+        <li>veterinary clearance for the individual equid;</li>
+        <li>positive-reinforcement-based training;</li>
+        <li>gradual exposure;</li>
+        <li>quick-release equipment;</li>
+        <li>a safe enclosed training area;</li>
+        <li>at least two trained handlers;</li>
+        <li>written records of every session;</li>
+        <li>immediate termination of the session if the equid shows panic, pain, shutdown, or unsafe distress.</li>
+      </ul>
+      <p>No civilian owner, breeder, trainer, stable, competitor, rental business, or private organisation may use hobbles.</p>
+
+      <h3 id="art-53">Article 53. Spurs</h3>
+      <p>Spurs are lawful outside competition only where they comply with this Article.</p>
+      <p>All spurs are prohibited in competition.</p>
+      <p>This prohibition applies equally in every warm-up, schooling, collecting-ring, and practice area connected with a competition.</p>
+      <p>A lawful spur shall have:</p>
+      <ul>
+        <li>one fixed, non-moving contact point;</li>
+        <li>a smooth contact surface shaped as a rounded half-sphere;</li>
+        <li>no sharp corners;</li>
+        <li>no ridges, teeth, grooves, points, rotating parts, or rowels;</li>
+        <li>no thin, flat, angular, or edged contact surface;</li>
+        <li>no excessive length, weight, or leverage-shaped neck.</li>
+      </ul>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>rowel spurs;</li>
+        <li>star rowels;</li>
+        <li>serrated rowels;</li>
+        <li>toothed rowels;</li>
+        <li>pointed rowels;</li>
+        <li>needle spurs;</li>
+        <li>sharp spurs;</li>
+        <li>thin spurs;</li>
+        <li>heavy spurs;</li>
+        <li>oversized spurs;</li>
+        <li>flat-edged spurs;</li>
+        <li>Prince-of-Wales-style edged spurs;</li>
+        <li>ridged or knurled spurs;</li>
+        <li>spurs with insufficiently rounded corners;</li>
+        <li>long-necked spurs;</li>
+        <li>leverage-shaped spurs.</li>
+      </ul>
+      <p>A spur shall not be used for punishment, routine speed-making, forcing obedience, creating fear, or making an equid perform through pain. A spur may be used with force only in an immediate emergency where serious injury or death is likely and the least harmful available action is necessary to stop the danger. Force shall cease as soon as the immediate danger has passed. Every such use shall be recorded and reviewed under Article 57.</p>
+      <p>Visible marks, hair damage, broken skin, repeated spur use, defensive behaviour, tail clamping, ear pinning, kicking, rushing, freezing, or other signs of distress may trigger a welfare investigation.</p>
+      <p>Spurs shall not be regarded as proof of advanced riding, professionalism, or superior control.</p>
+
+      <h3 id="art-54">Article 54. Whips</h3>
+      <p>Whips are lawful outside competition only where used as visual or directional aids.</p>
+      <p>All whips are prohibited in competition.</p>
+      <p>This prohibition applies equally in every warm-up, schooling, collecting-ring, and practice area connected with a competition.</p>
+      <p>A whip shall not be used for punishment, routine speed-making, forcing obedience, creating fear, or making an equid perform through pain.</p>
+      <p>A whip may be used with force only in an immediate emergency where serious injury or death is likely and the least harmful available action is necessary to stop the danger. Force shall cease as soon as the immediate danger has passed. Every such use shall be recorded and reviewed under Article 57.</p>
+      <p>The following whip designs are prohibited:</p>
+      <ul>
+        <li>metal cores;</li>
+        <li>wire;</li>
+        <li>chain;</li>
+        <li>knots;</li>
+        <li>barbs;</li>
+        <li>spikes;</li>
+        <li>weighted ends;</li>
+        <li>rigid striking ends;</li>
+        <li>pain-increasing modifications;</li>
+        <li>split lashes designed to sting, cut, or mark.</li>
+      </ul>
+      <p>Misuse of a lawful whip constitutes a welfare offence.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-11">
+    <summary><span class="part__no">Chapter XI</span><span class="part__title">Surgical and Physical Alteration</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-55">Article 55. Docking and tail surgery</h3>
+      <p>Tail docking is permitted only where medically necessary for the individual equid.</p>
+      <p>It requires:</p>
+      <ul>
+        <li>diagnosis by an independent licensed veterinarian;</li>
+        <li>written evidence that less invasive treatment is unsuitable or has failed;</li>
+        <li>appropriate pain relief;</li>
+        <li>aftercare;</li>
+        <li>entry in the equid&rsquo;s welfare record.</li>
+      </ul>
+      <p>The following are prohibited:</p>
+      <ul>
+        <li>preventative docking;</li>
+        <li>cosmetic docking;</li>
+        <li>breed-standard docking;</li>
+        <li>docking for hygiene convenience;</li>
+        <li>docking for work convenience;</li>
+        <li>docking for sale value;</li>
+        <li>tail nicking;</li>
+        <li>tail blocking;</li>
+        <li>tail bracing;</li>
+        <li>tail weighting;</li>
+        <li>chemical tail alteration;</li>
+        <li>surgery intended to create cosmetic tail carriage.</li>
+      </ul>
+      <p>No person shall alter the tail for appearance, competition style, breed tradition, sale value, or convenience.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-12">
+    <summary><span class="part__no">Chapter XII</span><span class="part__title">Lawful and Therapeutic Equipment</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-56">Article 56. Ordinary lawful tack</h3>
+      <p>Tack is not unlawful merely because it is tack.</p>
+      <p>Properly fitted lawful equipment may include:</p>
+      <ul>
+        <li>wide sidepulls;</li>
+        <li>approved broad, smooth, flexible, padded, non-rawhide bosal-type devices that comply with Article 27 for ridden or in-hand use;</li>
+        <li>approved hackamores certified under the Imperial Tack Measurement Schedule;</li>
+        <li>approved combined sidepull-hackamore bridles for ridden or other non-driving use only;</li>
+        <li>approved double-rein bitless setups for ridden or other non-driving use only;</li>
+        <li>broad flat halters;</li>
+        <li>lead ropes without chain;</li>
+        <li>saddles;</li>
+        <li>harness;</li>
+        <li>breastplates;</li>
+        <li>loose lawful cordeos;</li>
+        <li>loose neck straps used as emergency handholds;</li>
+        <li>non-weighted protective boots;</li>
+        <li>fly gear;</li>
+        <li>medically necessary therapeutic equipment.</li>
+      </ul>
+      <p>Lawful equipment becomes unlawful when fitted, tightened, modified, or used in a way that causes pain, injury, breathing restriction, blocked movement, delayed release, suppressed communication, fear-based compliance, or avoidable distress.</p>
+      <p>Where a lawful bridle, sidepull, hackamore, cavesson, bosal, halter, or driving headgear uses nose pressure for communication or control, it shall comply with Article 28. A broad pressure-distributing nosepiece is preferred and may be required for public work, commercial work, training, rental use, or competition.</p>
+
+      <h3 id="art-57">Article 57. Emergency, veterinary, and temporary exceptions</h3>
+      <p>Any exception described as emergency, immediate-safety, veterinary, therapeutic, rehabilitation, temporary, or necessary shall be interpreted narrowly. It is lawful only where the condition is genuine, the measure is the least harmful effective option, no safer lawful alternative is reasonably available, and the use ends immediately when the qualifying need ends.</p>
+      <p>Where an exception permits tail securing, forceful whip contact, kicking straps, anti-kick equipment, muzzling that affects drinking, or another otherwise restricted measure, the responsible person shall record the reason, start and end time, equipment, person authorising or applying it, welfare checks, and outcome. Veterinary or rehabilitation use continuing beyond the immediate incident requires a written veterinary or competent-authority plan, stated review date, and removal criteria.</p>
+      <p>An emergency, veterinary, therapeutic, or rehabilitation label shall not authorise routine use, convenience use, punishment, behaviour suppression, public-performance use, indefinite renewal, or use after the danger or medical need has ended. Repeated reliance on the same exception shall trigger reassessment of the equid, training, management, equipment, environment, and responsible person.</p>
+
+      <h3 id="art-58">Article 58. Therapeutic equipment</h3>
+      <p>A veterinary prescription, recommendation, or treatment plan shall not convert prohibited control, restraint, correction, punishment, riding, driving, or training equipment into lawful equipment. Therapeutic equipment shall be used solely for the documented medical purpose and shall not be used to steer, stop, compel posture, suppress behaviour, or continue work that would otherwise be unlawful.</p>
+      <p>Therapeutic equipment may be used only where:</p>
+      <ul>
+        <li>it is medically indicated for the individual equid;</li>
+        <li>it is prescribed or approved by a licensed veterinarian;</li>
+        <li>the purpose, duration, fitting requirements, and review date are recorded;</li>
+        <li>it is not used for competition advantage, cosmetic effect, restraint, or forced posture;</li>
+        <li>it is removed or reassessed if pain, rubbing, distress, or deterioration occurs.</li>
+      </ul>
+      <p>Therapeutic description shall not legalise equipment that is in fact being used for control, cosmetics, performance enhancement, or convenience.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-13">
+    <summary><span class="part__no">Chapter XIII</span><span class="part__title">Enforcement, Records, and Offences</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-59">Article 59. Inspection authority</h3>
+      <p>The competent authority may inspect:</p>
+      <ul>
+        <li>tack;</li>
+        <li>restraint equipment;</li>
+        <li>training equipment;</li>
+        <li>harness;</li>
+        <li>saddles;</li>
+        <li>vehicles where relevant to tack or restraint;</li>
+        <li>fitting records;</li>
+        <li>veterinary records;</li>
+        <li>training records;</li>
+        <li>sale or hire records;</li>
+        <li>certification records;</li>
+        <li>equids on which equipment has been used.</li>
+      </ul>
+      <p>Where there is immediate welfare risk, the competent authority may order equipment removed, seize equipment, suspend use of the equid, require veterinary examination, or open an investigation.</p>
+      <p>Opening an investigation shall not by itself establish guilt.</p>
+
+      <h3 id="art-60">Article 60. Possession for use</h3>
+      <p>Possession of prohibited equipment shall constitute an offence where the circumstances show possession for use.</p>
+      <p>Relevant circumstances include:</p>
+      <ul>
+        <li>the equipment is kept with working tack;</li>
+        <li>the equipment is fitted to an equid;</li>
+        <li>the equipment is transported to training, competition, sale, rental, or public work;</li>
+        <li>the possessor advertises, hires, sells, or instructs use of the equipment;</li>
+        <li>the possessor has records, images, messages, or witness evidence showing intended use.</li>
+      </ul>
+      <p>Possession for museum, educational, legal evidence, disposal, or historical archive purposes may be lawful where the equipment is clearly marked as prohibited and not available for use.</p>
+
+      <h3 id="art-61">Article 61. Sale, manufacture, hire, and instruction</h3>
+      <p>No person shall manufacture, sell, hire, loan, advertise, import, or distribute prohibited equipment for use within the Empire.</p>
+      <p>A seller shall not avoid liability by describing prohibited equipment as decorative, traditional, export-only, professional, strong-control, correctional, or for experienced users.</p>
+      <p>No person shall teach, demonstrate, promote, or provide paid instruction in the use of prohibited equipment for use within the Empire, except for approved welfare, legal, veterinary, disposal, museum, historical, or inspector-training purposes where the equipment is not used on an equid.</p>
+
+      <h3 id="art-62">Article 62. Correction orders</h3>
+      <p>For a minor first breach not involving injury, immediate danger, concealment, prohibited bits, functional bits, mouthpieces, chains, choke-action equipment, delayed-release control equipment, or severe restraint, the competent authority may issue a correction order.</p>
+      <p>A correction order may require:</p>
+      <ul>
+        <li>equipment adjustment;</li>
+        <li>replacement;</li>
+        <li>removal;</li>
+        <li>tack fitting;</li>
+        <li>veterinary examination;</li>
+        <li>retraining;</li>
+        <li>record correction;</li>
+        <li>reinspection.</li>
+      </ul>
+      <p>Failure to comply escalates the offence.</p>
+
+      <h3 id="art-63">Article 63. Welfare offences</h3>
+      <p>A welfare offence includes:</p>
+      <ul>
+        <li>use of prohibited equipment;</li>
+        <li>possession for use of prohibited equipment;</li>
+        <li>sale or hire of prohibited equipment for use;</li>
+        <li>fitting lawful equipment in a harmful manner;</li>
+        <li>continuing use after signs of pain or injury;</li>
+        <li>concealing prohibited equipment;</li>
+        <li>falsifying equipment records;</li>
+        <li>ignoring a competent authority order;</li>
+        <li>using therapeutic equipment for non-therapeutic purposes;</li>
+        <li>using restricted equipment outside its permitted conditions;</li>
+        <li>using uncertified equipment where certification is required;</li>
+        <li>unlawful correction, unlawful pressure cue, or unlawful aversive handling that does not meet the serious-offence threshold in Article 64.</li>
+      </ul>
+      <p>Penalties may include:</p>
+      <ul>
+        <li>fine;</li>
+        <li>equipment seizure;</li>
+        <li>mandatory retraining;</li>
+        <li>tack-fitting order;</li>
+        <li>veterinary order;</li>
+        <li>temporary suspension from riding, driving, training, competition, sale, rental work, or public work;</li>
+        <li>operator licence restriction;</li>
+        <li>welfare monitoring;</li>
+        <li>Imperial Animal Welfare Registry entry.</li>
+      </ul>
+
+      <h3 id="art-64">Article 64. Serious offences</h3>
+      <p>A serious offence includes:</p>
+      <ul>
+        <li>use of Bit Class III equipment;</li>
+        <li>use of Mouthpiece Grade 3 equipment;</li>
+        <li>use of chains as lead, restraint, punishment, correction, or animal-contact pressure equipment;</li>
+        <li>use of choke-action neck equipment;</li>
+        <li>any use of a nose twitch, lip twitch, ear twitch, chain restraint, oral restraint, mouthpiece restraint, ear restraint, or pain-based restraint for handling control, punishment, training, convenience, sale presentation, competition, public display, or forced compliance;</li>
+        <li>use of delayed-release control equipment causing fear, pain, restriction, defensive behaviour, or loss of safe release;</li>
+        <li>sharp yanking, jerking, shock-loading, sawing, or repeated forceful pressure escalation causing pain, panic, injury, respiratory restriction, collapse, loss of balance, or defensive desperation;</li>
+        <li>correction or pressure cue delivered through prohibited equipment, exposed facial nerves, nasal cartilage, soft muzzle, mouth tissue, throat, chain, wire, cable, sharp knots, spikes, serration, or other pressure-concentrating structures where it causes pain, panic, injury, fear compliance, respiratory restriction, loss of balance, or defensive desperation;</li>
+        <li>repeated correction, pressure escalation, or aversive handling after the equid has shown pain, fear, confusion, exhaustion, defensive behaviour, or inability to understand the requested response;</li>
+        <li>repeated use of prohibited equipment;</li>
+        <li>use causing injury, bleeding, swelling, respiratory restriction, collapse, panic, or lasting fear;</li>
+        <li>use of equipment to conceal abuse;</li>
+        <li>use of equipment after prior warning or order;</li>
+        <li>retaliation against a person reporting unlawful tack;</li>
+        <li>falsification of veterinary, tack, certification, or training records;</li>
+        <li>organised sale or manufacture of prohibited equipment;</li>
+        <li>deliberate use of pain, panic, or intimidation to control an equid.</li>
+      </ul>
+      <p>Penalties may include:</p>
+      <ul>
+        <li>immediate seizure of equipment;</li>
+        <li>immediate removal of the equid from work;</li>
+        <li>suspension or revocation of licence;</li>
+        <li>prohibition from commercial equid work;</li>
+        <li>animal-ownership restriction;</li>
+        <li>criminal animal-abuse investigation;</li>
+        <li>welfare registry entry;</li>
+        <li>court-ordered forfeiture of equipment.</li>
+      </ul>
+
+      <h3 id="art-65">Article 65. Highest-severity tack offences</h3>
+      <p>A highest-severity tack offence includes:</p>
+      <ul>
+        <li>Bit Class III equipment combined with Mouthpiece Grade 3 equipment;</li>
+        <li>gag-action equipment combined with a twisted, chain, serrated, barbed, spiked, high-port, cutting, or crushing mouthpiece;</li>
+        <li>any mouthpiece materially likely to cut, crush, pierce, or wound the mouth;</li>
+        <li>any device designed to intensify force until stopped by pain, soft tissue compression, or anatomical resistance;</li>
+        <li>organised use, sale, or instruction in severe prohibited equipment.</li>
+      </ul>
+      <p>A highest-severity tack offence shall trigger:</p>
+      <ul>
+        <li>animal-abuse investigation;</li>
+        <li>full tack audit;</li>
+        <li>inspection of all equids under the person&rsquo;s care where relevant;</li>
+        <li>review of ownership, training, sale, rental, competition, and public-work permissions;</li>
+        <li>consideration of animal-ownership restriction;</li>
+        <li>consideration of criminal referral.</li>
+      </ul>
+      <p>Opening an animal-abuse investigation under this Article shall not by itself establish guilt.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-14">
+    <summary><span class="part__no">Chapter XIV</span><span class="part__title">Anti-Loophole Rule</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-66">Article 66. Functional equivalence</h3>
+      <p>A device is prohibited where it is materially equivalent to a prohibited item, whether or not it is named in this Code.</p>
+      <p>A person shall not avoid this Code by renaming, redesigning, combining, disguising, softening, padding, decorating, or marketing equipment where the equipment&rsquo;s function remains unlawful.</p>
+      <p>A device is prohibited where its design, fitting, or use is intended or likely to:</p>
+      <ul>
+        <li>force the mouth closed;</li>
+        <li>suppress jaw, tongue, lip, head, neck, back, limb, or tail movement;</li>
+        <li>tie the head or neck to the saddle, girth, roller, breastplate, cart, vehicle, or harness;</li>
+        <li>concentrate force through wire, chain, sharp edges, narrow pressure points, teeth, ridges, knots, or metal bars;</li>
+        <li>create exaggerated movement or artificial gait;</li>
+        <li>hide pain, resistance, fatigue, fear, confusion, or distress;</li>
+        <li>punish normal equine behaviour instead of addressing its cause;</li>
+        <li>produce compliance through pain, panic, fear, exhaustion, or helplessness.</li>
+      </ul>
+      <p>A person shall not avoid the prohibition on jerking by describing the act as correction, discipline, boundary-setting, respect training, pressure-and-release, negative reinforcement, punishment, a check, a reminder, or an aid where the mechanical action and welfare effect meet the definition of jerking.</p>
+      <p>A person shall not avoid the legality of a lawful correction by describing every non-reward-based cue as abuse where the act meets the definition of lawful correction and complies with this Code.</p>
+      <p>A person shall not avoid the prohibition on pain-based correction by claiming that the equid was disobedient, resistant, disrespectful, dominant, stubborn, or difficult where the behaviour was caused, likely caused, or reasonably suspected to be caused by pain, fear, confusion, unsuitable tack, poor fit, excessive work, poor handling, environmental overwhelm, or inability to understand the requested response.</p>
+
+      <h3 id="art-67">Article 67. Marketing terms</h3>
+      <p>No equipment becomes lawful merely because it is marketed as:</p>
+      <ul>
+        <li>anatomical;</li>
+        <li>comfort;</li>
+        <li>performance;</li>
+        <li>communication;</li>
+        <li>correctional;</li>
+        <li>corrective;</li>
+        <li>natural;</li>
+        <li>traditional;</li>
+        <li>soft;</li>
+        <li>welfare;</li>
+        <li>humane;</li>
+        <li>professional;</li>
+        <li>advanced;</li>
+        <li>therapeutic;</li>
+        <li>educational.</li>
+      </ul>
+      <p>The actual mechanical effect, fitting, use, and welfare consequence determine legality.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-15">
+    <summary><span class="part__no">Appendix I</span><span class="part__title">Nose-Pressure Placement Fitting Guide</span></summary>
+    <div class="part__body">
+
+      <h3 id="app-1-sec-1">Section 1. Legal status of guide</h3>
+      <p>This Appendix supports Article 28.</p>
+      <p>The written requirements of Article 28 prevail over all illustrations.</p>
+      <p>Illustrations included in working copies of this Code are reference figures only until replaced by official Imperial drawings.</p>
+      <p>Official Imperial drawings shall show the required placement principles but shall not authorise any equipment that violates the written text of this Code.</p>
+
+      <h3 id="app-1-sec-2">Section 2. Required illustrations</h3>
+      <p>The official fitting guide shall include:</p>
+      <p><strong>Figure 1 &mdash; Stable nasal bone placement.</strong> A side-view diagram showing the stable nasal bone and the lawful zone for broad, smooth nose-pressure equipment.</p>
+      <p><strong>Figure 2 &mdash; Prohibited low placement.</strong> A side-view diagram showing unlawful placement over the lower nasal cartilage, soft muzzle, nostril area, or airway structures.</p>
+      <p><strong>Figure 3 &mdash; Downward-sliding equipment.</strong> A comparison showing equipment that begins in an apparently lawful position but slides downward during rein, lead, lunge, or driving pressure.</p>
+      <p><strong>Figure 4 &mdash; Acceptable and prohibited comparison.</strong> A comparison showing acceptable nose-pressure placement and prohibited low, narrow, hard, abrasive, or pressure-concentrating placement.</p>
+
+      <h3 id="app-1-sec-3">Section 3. Interpretation</h3>
+      <p>A diagram shall not be used to excuse low placement, pressure concentration, sliding, airway restriction, pain, rubbing, swelling, or defensive behaviour.</p>
+      <p>Where the written standard and a visual example appear to conflict, the written standard governs.</p>
+
+    </div>
+  </details>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keisarikunta</h2>
+      <ul>
+        <li><a href="../../../../fi/gov/">Hallinto ja oppi</a></li>
+        <li><a href="../../../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+        <li><a href="../../../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+        <li><a href="../../../../fi/gov/law/">Keisarillinen oikeus</a></li>
+        <li><a href="../../../../fi/history/">Historia</a></li>
+        <li><a href="../../../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elämä täällä</h2>
+      <ul>
+        <li><a href="../../../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+        <li><a href="../../../../fi/living/health/">Terveydenhuolto</a></li>
+        <li><a href="../../../../fi/living/education/">Koulutus ja lapset</a></li>
+        <li><a href="../../../../fi/living/transport/">Liikenne ja tiet</a></li>
+        <li><a href="../../../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+        <li><a href="../../../../fi/living/money/">Työ ja raha</a></li>
+        <li><a href="../../../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hevoset ja tiet</h2>
+      <ul>
+        <li><a href="../../../../fi/horses/">Hevoset</a></li>
+        <li><a href="../../../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+        <li><a href="../../../../fi/horses/#service">Palvelushevoseläimet</a></li>
+        <li><a href="../../../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tämä portaali</h2>
+      <ul>
+        <li><a href="../../../../fi/about/">Tietoa tästä projektista</a></li>
+        <li><a href="../../../../fi/search/">Hae portaalista</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="Hrossagri&#240;in keisarikunnan lippu" width="120" height="80">
+    <p class="footer__disclaimer">Valitettavasti Hrossagrith on kuvitteellinen maa. Tämä sivusto on maailmanrakennusprojekti, eikä sillä ole mitään yhteyttä mihinkään todelliseen valtioon, hallitukseen tai viralliseen elimeen. :(</p>
+    <p class="footer__meta">Hrossagri&#240;in keisarikunta &middot; Keisarillinen valtionportaali &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+</body>
+</html>

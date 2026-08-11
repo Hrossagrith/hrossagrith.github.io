@@ -1331,12 +1331,63 @@ li {
   margin: 0 0 0.6rem;
 }
 
-.jump ol {
+.jump ol,
+.jump ul {
   margin: 0;
   padding-left: 1.2rem;
   font-size: 0.95rem;
   columns: 2;
   column-gap: 1.6rem;
+}
+
+/* ================= Published instruments ================= */
+
+/* A template is a blank form: the label carries the meaning, the rule is where
+   the issuing officer writes. */
+.fields {
+  margin: 0.8rem 0 1.4rem;
+  font-size: 0.95rem;
+}
+
+.fields dt {
+  font-family: var(--label);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-top: 0.7rem;
+}
+
+.fields dd {
+  margin: 0.15rem 0 0;
+}
+
+.fields dd.fill {
+  border-bottom: 1px solid var(--rule);
+  min-height: 1.4em;
+}
+
+.wrap table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1.6rem;
+  font-size: 0.93rem;
+}
+
+.wrap th,
+.wrap td {
+  border: 1px solid var(--rule);
+  padding: 0.45rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wrap th {
+  background: var(--paper-2);
+  font-family: var(--label);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .jump li {
@@ -1400,4 +1451,12 @@ li {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* An instrument still awaiting translation says so before its first article. */
+.notice--lang {
+  padding-left: 1.4rem;
+  min-height: 0;
+  border-left: 3px solid var(--cinnabar);
+  font-style: italic;
 }

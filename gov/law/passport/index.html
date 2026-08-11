@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Working Equid Passport Template &mdash; The Empire of Hrossagri&#240;</title>
+<meta name="description" content="The permanent individual identity, welfare, health, work, and restriction record kept for every working equid.">
+<link rel="icon" href="../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../" data-i18n="{&quot;light&quot;: &quot;Light&quot;, &quot;dark&quot;: &quot;Dark&quot;, &quot;theme_to_light&quot;: &quot;Switch to light theme&quot;, &quot;theme_to_dark&quot;: &quot;Switch to dark theme&quot;, &quot;search_prompt&quot;: &quot;Type a word or phrase above to search every page of this portal.&quot;, &quot;search_running&quot;: &quot;Searching…&quot;, &quot;search_none&quot;: &quot;No entry in the register matches every word. Try fewer or different words.&quot;, &quot;search_error&quot;: &quot;The search index could not be loaded. Please try again.&quot;, &quot;results_one&quot;: &quot;{n} result for “{q}”&quot;, &quot;results_many&quot;: &quot;{n} results for “{q}”&quot;, &quot;results_none&quot;: &quot;Nothing found for “{q}”&quot;, &quot;expand_all&quot;: &quot;Expand all parts&quot;, &quot;collapse_all&quot;: &quot;Collapse all parts&quot;}">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">A worldbuilding project</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Search the portal</label>
+      <input type="search" id="q" name="q" placeholder="Search the portal" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <label class="visually-hidden" for="locale">Language</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en" selected>English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel" width="360" height="360">
+    <p class="masthead__state">Imperial State Portal</p>
+    <p class="masthead__name"><a href="../../../">The Empire of Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="All sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>The Empire</h2>
+            <ul>
+            <li><a href="../../../gov/">Government and doctrine</a></li>
+            <li><a href="../../../gov/#dynamics">The Eight Dynamics</a></li>
+            <li><a href="../../../gov/#diarchy">The Imperial Diarchy</a></li>
+            <li><a href="../../../gov/law/">Imperial law</a></li>
+            <li><a href="../../../history/">History</a></li>
+            <li><a href="../../../symbols/">Name, flag and symbols</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Living here</h2>
+            <ul>
+            <li><a href="../../../living/">Living in Hrossagri&#240;</a></li>
+            <li><a href="../../../living/health/">Health</a></li>
+            <li><a href="../../../living/education/">Education and children</a></li>
+            <li><a href="../../../living/transport/">Transport and roads</a></li>
+            <li><a href="../../../living/justice/">Justice and policing</a></li>
+            <li><a href="../../../living/money/">Work and money</a></li>
+            <li><a href="../../../living/citizenship/">Citizenship and refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Horses and roads</h2>
+            <ul>
+            <li><a href="../../../horses/">Horses</a></li>
+            <li><a href="../../../horses/#welfare">Welfare and bitless control</a></li>
+            <li><a href="../../../horses/#service">Service equids</a></li>
+            <li><a href="../../../horses/road-status/">Road-status marker standard</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>This portal</h2>
+            <ul>
+            <li><a href="../../../about/">About this project</a></li>
+            <li><a href="../../../search/">Search the portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../">Home</a>
+    <a href="../../../horses/">Horses</a>
+    <a href="../../../living/">Living</a>
+    <a href="../../../gov/">Government</a>
+    <a href="../../../gov/law/" aria-current="page">Law</a>
+    <a href="../../../history/">History</a>
+    <a href="../../../symbols/">Symbols</a>
+    <a href="../../../about/">About</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../">Home</a><span>&rsaquo;</span><a href="../../../gov/">Government</a><span>&rsaquo;</span><a href="../../../gov/law/">Law</a><span>&rsaquo;</span><strong>Imperial Working Equid Passport Template</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Book III &middot; Template</p>
+  <h1 class="page-title">Imperial Working Equid Passport Template</h1>
+  <p class="page-standfirst">The permanent individual record kept for every working equid in the Empire, from identification and custody to work, restriction, retirement, and death.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">This Passport is the permanent individual welfare, identity, certification, work, health, restriction, and ownership record for a working equid. It does not replace specialised certificates. A certificate, licence, operator record, or owner declaration shall not override a stricter welfare restriction recorded here or imposed by law.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      In force as the official Passport form. This page reproduces the blank template: the fields below are those the issuing authority, keeper, and veterinarian complete, and no section of it is reserved.
+    </aside>
+  </div>
+
+  <h2 id="art-1">Section 1. Passport identity</h2>
+  <dl class="fields">
+    <dt>Passport number</dt><dd class="fill"></dd>
+    <dt>Central Imperial record number</dt><dd class="fill"></dd>
+    <dt>Issue date</dt><dd class="fill"></dd>
+    <dt>Issuing authority</dt><dd class="fill"></dd>
+    <dt>Passport revision number</dt><dd class="fill"></dd>
+    <dt>Superseded Passport or record number</dt><dd class="fill"></dd>
+    <dt>Current status</dt><dd>active / restricted / provisional / training-only / suspended / retired / deceased / transferred / revoked</dd>
+    <dt>Digital verification code or secure record link</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-2">Section 2. Equid identity</h2>
+  <dl class="fields">
+    <dt>Registered name</dt><dd class="fill"></dd>
+    <dt>Stable name</dt><dd class="fill"></dd>
+    <dt>Species or hybrid type</dt><dd>horse / pony / donkey / mule / hinny / zebra hybrid / other</dd>
+    <dt>Breed or recorded type</dt><dd class="fill"></dd>
+    <dt>Sex and reproductive classification</dt><dd class="fill"></dd>
+    <dt>Date of birth or verified age</dt><dd class="fill"></dd>
+    <dt>Maturity category</dt><dd>Category L / Category H</dd>
+    <dt>Maturity-classification date</dt><dd class="fill"></dd>
+    <dt>Projected mature bodyweight</dt><dd class="fill"></dd>
+    <dt>Classification evidence and veterinarian</dt><dd class="fill"></dd>
+    <dt>Competent-authority approval for any H-to-L reclassification</dt><dd>not applicable / attached</dd>
+    <dt>Earliest lawful ordinary load-bearing date</dt><dd class="fill"></dd>
+    <dt>Microchip, brand, tattoo, DNA, or official identification</dt><dd class="fill"></dd>
+    <dt>Colour and distinguishing marks</dt><dd class="fill"></dd>
+    <dt>Height</dt><dd class="fill"></dd>
+    <dt>Current measured bodyweight</dt><dd class="fill"></dd>
+    <dt>Bodyweight measurement date</dt><dd class="fill"></dd>
+    <dt>Measurement method and equipment</dt><dd>scale / calibrated weight bridge / approved tape / other</dd>
+    <dt>Body condition score and scale used</dt><dd class="fill"></dd>
+    <dt>Front, left, right, and rear identity images attached</dt><dd>yes / no</dd>
+  </dl>
+
+  <h2 id="art-3">Section 3. Ownership and custody</h2>
+  <dl class="fields">
+    <dt>Legal owner</dt><dd class="fill"></dd>
+    <dt>Ordinary keeper</dt><dd class="fill"></dd>
+    <dt>Operator or employer, if any</dt><dd class="fill"></dd>
+    <dt>Stable or ordinary place of keep</dt><dd class="fill"></dd>
+    <dt>Primary responsible person</dt><dd class="fill"></dd>
+    <dt>Emergency contact</dt><dd class="fill"></dd>
+    <dt>Emergency veterinary contact</dt><dd class="fill"></dd>
+    <dt>Date custody began</dt><dd class="fill"></dd>
+    <dt>Ownership or custody restrictions</dt><dd class="fill"></dd>
+  </dl>
+  <h3>Transfer history</h3>
+  <p>The template sets out three identical transfer rows, each carrying:</p>
+  <ul>
+    <li>Date</li>
+    <li>From</li>
+    <li>To</li>
+    <li>Reason</li>
+    <li>Verification</li>
+  </ul>
+
+  <h2 id="art-4">Section 4. Life-outside-work welfare baseline</h2>
+  <dl class="fields">
+    <dt>Ordinary housing type and dimensions</dt><dd class="fill"></dd>
+    <dt>Daily turnout arrangement and duration</dt><dd class="fill"></dd>
+    <dt>Compatible equid companionship or social-contact arrangement</dt><dd class="fill"></dd>
+    <dt>Forage and feeding plan</dt><dd class="fill"></dd>
+    <dt>Continuous water system and backup</dt><dd class="fill"></dd>
+    <dt>Bedding and recumbent-sleep provision</dt><dd class="fill"></dd>
+    <dt>Exercise outside assigned work</dt><dd class="fill"></dd>
+    <dt>Climate shelter, shade, ventilation, drainage, cooling, drying, and warming provisions</dt><dd class="fill"></dd>
+    <dt>Ordinary Rest Court or recovery facilities used</dt><dd class="fill"></dd>
+    <dt>Known welfare vulnerabilities</dt><dd class="fill"></dd>
+    <dt>General Imperial Equine Welfare Code compliance inspection date</dt><dd class="fill"></dd>
+    <dt>Next welfare review date</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-5">Section 5. Veterinary and preventive care</h2>
+  <dl class="fields">
+    <dt>Primary veterinarian</dt><dd class="fill"></dd>
+    <dt>Last full veterinary examination</dt><dd class="fill"></dd>
+    <dt>Next required examination</dt><dd class="fill"></dd>
+    <dt>Current general fitness status</dt><dd>fit / fit with restrictions / unfit / reassessment required</dd>
+    <dt>Known diagnoses</dt><dd class="fill"></dd>
+    <dt>Prior major illness, surgery, collapse, or injury</dt><dd class="fill"></dd>
+    <dt>Respiratory status</dt><dd class="fill"></dd>
+    <dt>Cardiovascular status</dt><dd class="fill"></dd>
+    <dt>Musculoskeletal status</dt><dd class="fill"></dd>
+    <dt>Neurological and sensory status</dt><dd class="fill"></dd>
+    <dt>Skin and pressure-sensitivity status</dt><dd class="fill"></dd>
+    <dt>Dental examination date and findings</dt><dd class="fill"></dd>
+    <dt>Next dental review</dt><dd class="fill"></dd>
+    <dt>Hoof-care provider</dt><dd class="fill"></dd>
+    <dt>Last trim, shoeing, or hoof-protection review</dt><dd class="fill"></dd>
+    <dt>Current hoof and traction plan</dt><dd class="fill"></dd>
+    <dt>Vaccination record</dt><dd class="fill"></dd>
+    <dt>Disease-control or quarantine status</dt><dd class="fill"></dd>
+    <dt>Allergies and adverse reactions</dt><dd class="fill"></dd>
+    <dt>Emergency treatment instructions</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-6">Section 6. Medication record</h2>
+  <p>The template sets out three identical medication rows, each carrying:</p>
+  <ul>
+    <li>Medication</li>
+    <li>Purpose</li>
+    <li>Dose</li>
+    <li>Prescriber</li>
+    <li>Start</li>
+    <li>End/review</li>
+    <li>Work restriction</li>
+  </ul>
+  <p>Necessary maintenance or therapeutic medication does not automatically prohibit work. Work is prohibited where medication masks relevant pain, suppresses warning signs, impairs coordination or judgement, artificially enhances performance, or conflicts with veterinary or legal restrictions.</p>
+
+  <h2 id="art-7">Section 7. Reproductive status</h2>
+  <dl class="fields">
+    <dt>Current status</dt><dd>not applicable / not pregnant / suspected pregnant / confirmed pregnant / postpartum / lactating / breeding restriction</dd>
+    <dt>Last reproductive examination</dt><dd class="fill"></dd>
+    <dt>Pregnancy or foaling dates, if applicable</dt><dd class="fill"></dd>
+    <dt>Reproductive veterinary restrictions</dt><dd class="fill"></dd>
+    <dt>Foal-related care requirements</dt><dd class="fill"></dd>
+    <dt>Required pregnancy-status marker</dt><dd>yes / no / details</dd>
+  </dl>
+  <p>Any known or reasonably suspected pregnancy triggers immediate review of all work certification. A pregnancy marker is a protective instruction and never authorises work prohibited by law.</p>
+
+  <h2 id="art-8">Section 8. Training and behaviour</h2>
+  <dl class="fields">
+    <dt>Primary training history</dt><dd class="fill"></dd>
+    <dt>Bitless cue system understood</dt><dd class="fill"></dd>
+    <dt>Certified Bitless Transition Trainer or university-trained transition professional, if used</dt><dd class="fill"></dd>
+    <dt>Transition start date</dt><dd class="fill"></dd>
+    <dt>Transition review notes and progress</dt><dd class="fill"></dd>
+    <dt>Road confidence status</dt><dd class="fill"></dd>
+    <dt>Traffic and crowd status</dt><dd class="fill"></dd>
+    <dt>Marker and switchable marker-illumination acceptance</dt><dd class="fill"></dd>
+    <dt>Startle recovery</dt><dd class="fill"></dd>
+    <dt>Standing, loading, unloading, and emergency-release behaviour</dt><dd class="fill"></dd>
+    <dt>Known fear, pain, shutdown, aggression, separation, or handling concerns</dt><dd class="fill"></dd>
+    <dt>Required handler skill level</dt><dd class="fill"></dd>
+    <dt>Training restrictions</dt><dd class="fill"></dd>
+  </dl>
+  <p>Transition duration shall be individual to the equid and based on welfare, comprehension, confidence, and safe transfer of cues. It shall not be shortened for schedule or commercial convenience and shall not be prolonged to maintain ordinary bitted work.</p>
+
+  <h2 id="art-9">Section 9. Tack and equipment authorisations</h2>
+  <dl class="fields">
+    <dt>Approved riding headgear</dt><dd class="fill"></dd>
+    <dt>Approved driving headgear, if applicable</dt><dd class="fill"></dd>
+    <dt>Approved harness or saddle classes</dt><dd class="fill"></dd>
+    <dt>Required fit modifications</dt><dd class="fill"></dd>
+    <dt>Prohibited or unsuitable equipment for this equid</dt><dd class="fill"></dd>
+    <dt>Sensory-restricting equipment authorisation, if any</dt><dd class="fill"></dd>
+    <dt>Marker-bearing frentera or muserola type</dt><dd class="fill"></dd>
+    <dt>Required public-road inserts</dt><dd class="fill"></dd>
+    <dt>Marker-illumination capability, approved power system, and switching method</dt><dd class="fill"></dd>
+    <dt>Last marker-illumination, battery, and backup inspection</dt><dd class="fill"></dd>
+    <dt>Tack Measurement Schedule certificate numbers</dt><dd class="fill"></dd>
+    <dt>Last tack and fit inspection</dt><dd class="fill"></dd>
+    <dt>Next review</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-10">Section 10. Work and service certifications</h2>
+  <dl class="fields">
+    <dt>Permitted work classes</dt><dd>ridden / led / groundwork / carriage / freight / passenger / taxi / ceremonial / mounted service / courier / agricultural / emergency / training / other</dd>
+    <dt>Prohibited work classes</dt><dd class="fill"></dd>
+    <dt>Young-equid habituation stage and Schedule 5 age band</dt><dd class="fill"></dd>
+    <dt>First lawful ridden-work date</dt><dd class="fill"></dd>
+    <dt>First lawful active-traction date</dt><dd class="fill"></dd>
+    <dt>Current first-year ridden progression month and limits</dt><dd class="fill"></dd>
+    <dt>Current first-year traction progression month and limits</dt><dd class="fill"></dd>
+    <dt>Mounted-jumping eligibility date</dt><dd class="fill"></dd>
+    <dt>Progression assessor and veterinary clearance</dt><dd class="fill"></dd>
+    <dt>Road certificate number and expiry</dt><dd class="fill"></dd>
+    <dt>Carriage-work certificate number and expiry</dt><dd class="fill"></dd>
+    <dt>Mounted-service certificate number and expiry</dt><dd class="fill"></dd>
+    <dt>Route classes permitted</dt><dd class="fill"></dd>
+    <dt>Vehicle classes permitted</dt><dd class="fill"></dd>
+    <dt>Hitch roles permitted</dt><dd class="fill"></dd>
+    <dt>Service classes permitted</dt><dd class="fill"></dd>
+    <dt>Maximum passenger number</dt><dd class="fill"></dd>
+    <dt>Maximum total load</dt><dd class="fill"></dd>
+    <dt>Maximum active traction per day</dt><dd class="fill"></dd>
+    <dt>Maximum assigned shift per day</dt><dd class="fill"></dd>
+    <dt>Maximum work-block length</dt><dd class="fill"></dd>
+    <dt>Minimum recovery after a work block</dt><dd class="fill"></dd>
+    <dt>Rolling seven-day limit</dt><dd class="fill"></dd>
+    <dt>Rolling thirty-day limit</dt><dd class="fill"></dd>
+    <dt>Full rest-day requirement</dt><dd class="fill"></dd>
+    <dt>Climate bands permitted</dt><dd class="fill"></dd>
+    <dt>Surface, gradient, speed, and route restrictions</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-11">Section 11. Full rest-day record</h2>
+  <p>A full rest day means no carriage work, riding, lunging, formal training, sport, public display, transport assignment, mounted service, active traction, or other labour. Ordinary care, turnout, compatible social activity, and voluntary low-demand movement remain permitted.</p>
+  <dl class="fields">
+    <dt>Required full rest day or frequency</dt><dd class="fill"></dd>
+    <dt>Recorded full rest days</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-12">Section 12. Daily work log</h2>
+  <p>The template sets out three identical log rows, each carrying:</p>
+  <ul>
+    <li>Date</li>
+    <li>Start</li>
+    <li>Finish</li>
+    <li>Active work</li>
+    <li>Assigned shift</li>
+    <li>Work type</li>
+    <li>Route/vehicle</li>
+    <li>Load</li>
+    <li>Climate band</li>
+    <li>Breaks</li>
+    <li>Recovery</li>
+    <li>Incidents</li>
+    <li>Responsible person</li>
+  </ul>
+  <p>Brief movement, changing stands, passenger loading, vehicle changes, unhooking and rehitching, or moving between nearby operators does not reset a waiting, assigned-shift, work-block, daily, or rolling workload clock.</p>
+
+  <h2 id="art-13">Section 13. Incident and welfare history</h2>
+  <p>The template sets out three identical incident rows, each carrying:</p>
+  <ul>
+    <li>Date</li>
+    <li>Incident</li>
+    <li>Veterinary assessment</li>
+    <li>Restriction or suspension</li>
+    <li>Review date</li>
+    <li>Authority verification</li>
+  </ul>
+  <p>Mandatory reassessment triggers include illness, injury, lameness, collapse, heat or cold stress, respiratory distress, serious startle, runaway, collision, entanglement, harness injury, pregnancy change, foaling, lactation change, medication masking concern, route change, vehicle change, ownership change, service change, and material workload change.</p>
+
+  <h2 id="art-14">Section 14. Restrictions, suspensions, and orders</h2>
+  <dl class="fields">
+    <dt>Current restriction or order</dt><dd class="fill"></dd>
+    <dt>Issuing authority or veterinarian</dt><dd class="fill"></dd>
+    <dt>Issue date</dt><dd class="fill"></dd>
+    <dt>Effective period</dt><dd class="fill"></dd>
+    <dt>Conditions for review or lifting</dt><dd class="fill"></dd>
+    <dt>Linked evidence or decision number</dt><dd class="fill"></dd>
+  </dl>
+  <p>A blank field does not create permission. Where a required capacity, status, or restriction is unknown, the stricter safe status applies until reassessment.</p>
+
+  <h2 id="art-15">Section 15. Retirement, death, or permanent removal from work</h2>
+  <dl class="fields">
+    <dt>Retirement date</dt><dd class="fill"></dd>
+    <dt>Reason</dt><dd class="fill"></dd>
+    <dt>Retirement home and responsible person</dt><dd class="fill"></dd>
+    <dt>Ongoing care requirements</dt><dd class="fill"></dd>
+    <dt>Prohibition on future work or breeding</dt><dd class="fill"></dd>
+    <dt>Date and verified cause of death, where applicable</dt><dd class="fill"></dd>
+    <dt>Final veterinary or authority record</dt><dd class="fill"></dd>
+  </dl>
+
+  <h2 id="art-16">Section 16. Revision and audit trail</h2>
+  <p>No Passport entry shall be erased. Corrections shall preserve the original entry, identify the person making the change, state the reason, and carry a date and verification.</p>
+  <p>The template sets out three identical revision rows, each carrying:</p>
+  <ul>
+    <li>Revision</li>
+    <li>Date</li>
+    <li>Sections changed</li>
+    <li>Previous record reference</li>
+    <li>Author</li>
+    <li>Authority verification</li>
+  </ul>
+
+  <h2 id="art-17">Section 17. Record retention and access</h2>
+  <p>The Passport shall remain with the equid&rsquo;s central record for life and for at least ten years after death. Ownership transfer, operator change, retirement, export, suspension, or revocation shall not destroy or restart the record.</p>
+  <p>The owner, keeper, operator, veterinarian, certifying authority, inspector, and competent welfare authority shall receive the access required by law. Falsifying, concealing, destroying, duplicating deceptively, or refusing lawful access to a Passport is an offence.</p>
+
+  <h2 id="art-18">Section 18. Final certification</h2>
+  <dl class="fields">
+    <dt>Current lawful status and summary</dt><dd class="fill"></dd>
+    <dt>Outstanding corrections before work</dt><dd class="fill"></dd>
+    <dt>Next mandatory review</dt><dd class="fill"></dd>
+    <dt>Issuing officer</dt><dd class="fill"></dd>
+    <dt>Veterinary verification, where required</dt><dd class="fill"></dd>
+    <dt>Owner or keeper acknowledgement</dt><dd class="fill"></dd>
+    <dt>Operator acknowledgement</dt><dd class="fill"></dd>
+    <dt>Digital or official seal</dt><dd class="fill"></dd>
+  </dl>
+  <p>This Passport records lawful capacity; it does not guarantee that work is lawful on a particular day. Current welfare, climate, route, surface, medication, equipment, and recovery conditions shall always be reassessed. The stricter rule prevails.</p>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>The Empire</h2>
+      <ul>
+        <li><a href="../../../gov/">Government and doctrine</a></li>
+        <li><a href="../../../gov/#dynamics">The Eight Dynamics</a></li>
+        <li><a href="../../../gov/#diarchy">The Imperial Diarchy</a></li>
+        <li><a href="../../../gov/law/">Imperial law</a></li>
+        <li><a href="../../../history/">History</a></li>
+        <li><a href="../../../symbols/">Name, flag and symbols</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Living here</h2>
+      <ul>
+        <li><a href="../../../living/">Living in Hrossagri&#240;</a></li>
+        <li><a href="../../../living/health/">Health</a></li>
+        <li><a href="../../../living/education/">Education and children</a></li>
+        <li><a href="../../../living/transport/">Transport and roads</a></li>
+        <li><a href="../../../living/justice/">Justice and policing</a></li>
+        <li><a href="../../../living/money/">Work and money</a></li>
+        <li><a href="../../../living/citizenship/">Citizenship and refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Horses and roads</h2>
+      <ul>
+        <li><a href="../../../horses/">Horses</a></li>
+        <li><a href="../../../horses/#welfare">Welfare and bitless control</a></li>
+        <li><a href="../../../horses/#service">Service equids</a></li>
+        <li><a href="../../../horses/road-status/">Road-status marker standard</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>This portal</h2>
+      <ul>
+        <li><a href="../../../about/">About this project</a></li>
+        <li><a href="../../../search/">Search the portal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.png" alt="Flag of the Empire of Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Unfortunately, Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body. :(</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Imperial State Portal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Road and Driver Code &mdash; L&rsquo;Impero di Hrossagri&#240;</title>
+<meta name="description" content="Public-road conduct, licensing, routes, status markers and priority for equids and drivers, and the imperial non-motor road and rail structure.">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../it/" data-i18n="{&quot;light&quot;: &quot;Chiaro&quot;, &quot;dark&quot;: &quot;Scuro&quot;, &quot;theme_to_light&quot;: &quot;Passa al tema chiaro&quot;, &quot;theme_to_dark&quot;: &quot;Passa al tema scuro&quot;, &quot;search_prompt&quot;: &quot;Digitare qui sopra una parola o una frase per cercare in tutte le pagine di questo portale.&quot;, &quot;search_running&quot;: &quot;Ricerca in corso…&quot;, &quot;search_none&quot;: &quot;Nessuna voce del registro contiene tutte le parole. Provare con meno parole o con parole diverse.&quot;, &quot;search_error&quot;: &quot;Non è stato possibile caricare l&amp;rsquo;indice di ricerca. Riprovare.&quot;, &quot;results_one&quot;: &quot;{n} risultato per «{q}»&quot;, &quot;results_many&quot;: &quot;{n} risultati per «{q}»&quot;, &quot;results_none&quot;: &quot;Nessun risultato per «{q}»&quot;, &quot;expand_all&quot;: &quot;Espandi tutte le parti&quot;, &quot;collapse_all&quot;: &quot;Comprimi tutte le parti&quot;}">
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un progetto di worldbuilding</p>
+    <form class="search" role="search" action="../../../../search/" method="get">
+      <label class="visually-hidden" for="q">Cerca nel portale</label>
+      <input type="search" id="q" name="q" placeholder="Cerca nel portale" autocomplete="off">
+      <button type="submit">Cerca</button>
+    </form>
+    <label class="visually-hidden" for="locale">Lingua</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it" selected>Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Scuro</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="Emblema dell&rsquo;Impero di Hrossagri&#240;: un ippogrifo rampante entro un tondo" width="360" height="360">
+    <p class="masthead__state">Portale Statale Imperiale</p>
+    <p class="masthead__name"><a href="../../../../it/">L&rsquo;Impero di Hrossagri&#240;</a></p>
+    <p class="masthead__motto">L&rsquo;asilo dei cavalli e la pace che viene fatta rispettare</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Tutte le sezioni">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L&rsquo;Impero</h2>
+            <ul>
+            <li><a href="../../../../it/gov/">Governo e dottrina</a></li>
+            <li><a href="../../../../it/gov/#dynamics">Le Otto Dinamiche</a></li>
+            <li><a href="../../../../it/gov/#diarchy">La Diarchia Imperiale</a></li>
+            <li><a href="../../../../it/gov/law/">Diritto imperiale</a></li>
+            <li><a href="../../../../it/history/">Storia</a></li>
+            <li><a href="../../../../it/symbols/">Nome, bandiera e simboli</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivere qui</h2>
+            <ul>
+            <li><a href="../../../../it/living/">Vivere in Hrossagri&#240;</a></li>
+            <li><a href="../../../../it/living/health/">Sanità</a></li>
+            <li><a href="../../../../it/living/education/">Istruzione e infanzia</a></li>
+            <li><a href="../../../../it/living/transport/">Trasporti e strade</a></li>
+            <li><a href="../../../../it/living/justice/">Giustizia e polizia</a></li>
+            <li><a href="../../../../it/living/money/">Lavoro e denaro</a></li>
+            <li><a href="../../../../it/living/citizenship/">Cittadinanza e asilo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Cavalli e strade</h2>
+            <ul>
+            <li><a href="../../../../it/horses/">Cavalli</a></li>
+            <li><a href="../../../../it/horses/#welfare">Benessere e controllo senza morso</a></li>
+            <li><a href="../../../../it/horses/#service">Equidi di servizio</a></li>
+            <li><a href="../../../../it/horses/road-status/">Standard dei marcatori di stato stradale</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Questo portale</h2>
+            <ul>
+            <li><a href="../../../../it/about/">Informazioni sul progetto</a></li>
+            <li><a href="../../../../it/search/">Cerca nel portale</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../../it/">Pagina iniziale</a>
+    <a href="../../../../it/horses/">Cavalli</a>
+    <a href="../../../../it/living/">Vita</a>
+    <a href="../../../../it/gov/">Governo</a>
+    <a href="../../../../it/gov/law/" aria-current="page">Diritto</a>
+    <a href="../../../../it/history/">Storia</a>
+    <a href="../../../../it/symbols/">Simboli</a>
+    <a href="../../../../it/about/">Informazioni</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../it/">Pagina iniziale</a><span>&rsaquo;</span><a href="../../../../it/gov/">Governo</a><span>&rsaquo;</span><a href="../../../../it/gov/law/">Diritto</a><span>&rsaquo;</span><strong>Imperial Road and Driver Code</strong></div>
+
+<main id="main" class="shell wrap">
+  <div class="notice notice--lang"><p>Questo atto non è ancora pubblicato in questa lingua. È mostrato il testo inglese.</p></div>
+
+
+  <p class="entry">Book III &middot; Sectoral code</p>
+  <h1 class="page-title">Imperial Road and Driver Code</h1>
+  <p class="page-standfirst">Road authority, licensing, priority and traffic conduct for every equid, rider, handler, driver and vehicle on a public road, and the national transport structure of the Empire.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">This Code governs equids, riders, handlers, drivers, carriages, carts, wagons, sleighs, mounted services, carriage services, private driving, public-road training, road crossings, equid-priority routes, service lanes, and all road users interacting with equids.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      In force. Cited in the archive as the Imperial Road and Driver Code. Eleven chapters and forty articles, none reserved. Chapter XI fixes the national transport structure.
+    </aside>
+  </div>
+
+  <p class="entry">Contents</p>
+  <ul class="jump">
+    <li><a href="#ch-1">I. Application and principles</a></li>
+    <li><a href="#ch-2">II. Certification and licensing</a></li>
+    <li><a href="#ch-3">III. Route and vehicle authorisation</a></li>
+    <li><a href="#ch-4">IV. Road conduct and passing</a></li>
+    <li><a href="#ch-5">V. Status markers and priority</a></li>
+    <li><a href="#ch-6">VI. Lighting and visibility</a></li>
+    <li><a href="#ch-7">VII. Emergency and service powers</a></li>
+    <li><a href="#ch-8">VIII. Records and incidents</a></li>
+    <li><a href="#ch-9">IX. Enforcement and offences</a></li>
+    <li><a href="#ch-10">X. Finality</a></li>
+    <li><a href="#ch-11">XI. National Transport Structure</a></li>
+  </ul>
+
+  <details class="part" id="ch-1" open>
+    <summary><span class="part__no">Chapter I</span><span class="part__title">Application and principles</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-1">Article 1. Application</h3>
+      <p>This Code governs equids, riders, handlers, drivers, carriages, carts, wagons, sleighs, mounted services, carriage services, private driving, public-road training, road crossings, equid-priority routes, service lanes, and all road users interacting with equids.</p>
+
+      <h3 id="art-2">Article 2. Welfare and public safety</h3>
+      <p>Road access shall be organised to protect equids, riders, handlers, passengers, pedestrians, and other road users. Speed, schedule, traffic convenience, public demand, tourism, ceremony, government function, or emergency-adjacent purpose shall not override equid welfare or immediate safety.</p>
+
+      <h3 id="art-3">Article 3. Functional interpretation</h3>
+      <p>The actual road use, vehicle, service, load, route, traffic condition, and welfare burden control. A person shall not evade this Code by calling a commercial activity private, a passenger service ceremonial, road training in-hand exposure, or ordinary work emergency service.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-2">
+    <summary><span class="part__no">Chapter II</span><span class="part__title">Certification and licensing</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-4">Article 4. Equid road certification</h3>
+      <p>No equid shall enter a public road for ridden, led, driven, mounted-service, commercial, ceremonial, training, or working use unless it holds the road certification required for that use and displays the required current status markers.</p>
+      <p>Direct emergency movement from immediate danger or to urgent veterinary care may occur without prior certification only where no safer alternative exists and the movement is recorded and reported.</p>
+
+      <h3 id="art-5">Article 5. Driver and rider licences</h3>
+      <p>No person shall operate a carriage, mounted service, commercial ridden service, tourist service, rental service, passenger service, freight service, ceremonial service, or emergency equid service on a public road unless licensed for the relevant equid type, vehicle or mounted class, route class, traffic class, service type, and conditions.</p>
+      <p>Private riders, handlers, and drivers shall meet any competency certificate required for the route or vehicle class.</p>
+
+      <h3 id="art-6">Article 6. Operator licences</h3>
+      <p>Every carriage, rental, tourist, riding, courier, mounted-service, freight, passenger, ceremonial, or public equid-road operator shall hold an operator licence. The licence shall identify responsible management, stabling and recovery facilities, vehicles, routes, staff, emergency arrangements, record systems, insurance where required, and welfare compliance.</p>
+
+      <h3 id="art-7">Article 7. Issue and renewal</h3>
+      <p>A licence or certificate may be issued only after documented competency, welfare, equipment, route, vehicle, record, and emergency assessment. Ordinary licences shall expire no later than three years after issue. Higher-risk, provisional, restricted, training-only, and emergency-service approvals may have shorter periods.</p>
+      <p>Renewal requires current records and reassessment. Expiry, suspension, revocation, or material change ends authority immediately.</p>
+
+      <h3 id="art-8">Article 8. Independence and conflict of interest</h3>
+      <p>A person shall not certify their own equid, vehicle, route, business, close family member, employer, financial partner, or equipment design. A certifying officer shall disclose conflicts and withdraw where impartiality may reasonably be questioned.</p>
+
+      <h3 id="art-9">Article 9. Suspension and revocation</h3>
+      <p>The competent authority may immediately suspend a licence, certificate, route, vehicle, equid, service, or operator where there is serious welfare risk, unsafe control, false records, obstruction, repeated breach, unfit equids, unsafe equipment, or a serious incident.</p>
+
+      <h3 id="art-10">Article 10. Appeals</h3>
+      <p>A person affected by refusal, restriction, suspension, or revocation may request written reasons and an independent appeal. An appeal does not stay an emergency welfare or safety suspension unless the reviewing authority expressly orders otherwise.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-3">
+    <summary><span class="part__no">Chapter III</span><span class="part__title">Route and vehicle authorisation</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-11">Article 11. Route certification</h3>
+      <p>A route shall be assessed for width, traffic density, speed environment, passing space, gradients, stopping distance, surfaces, bridges, underpasses, railway-corridor separation, tunnels, lighting, visibility, climate exposure, shade, water, Rest Courts, emergency pull-offs, and veterinary access.</p>
+
+      <h3 id="art-12">Article 12. Route classes</h3>
+      <p>Routes may be authorised as ordinary, restricted, training-only, service-only, daylight-only, seasonal, weather-dependent, vehicle-specific, mounted-only, led-only, or emergency-only. The strictest applicable restriction controls.</p>
+
+      <h3 id="art-13">Article 13. Vehicle approval</h3>
+      <p>An equid-drawn road vehicle shall be approved for weight, balance, axle load, wheel or runner type, braking, steering, stability, passenger protection, emergency release, lighting, signalling, hitch type, and the certified capacity of the assigned equid or team.</p>
+      <p>Vehicle brakes shall control the vehicle without depending upon the equid&rsquo;s body to absorb avoidable braking force.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-4">
+    <summary><span class="part__no">Chapter IV</span><span class="part__title">Road conduct and passing</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-14">Article 14. General duty of other road users</h3>
+      <p>A road user approaching an equid shall observe markers and human signals, reduce speed early, avoid unnecessary bells, whistles, shouting, whip-cracking, sudden acceleration, close following, splashing, glare, crowding, and abrupt movement, and leave sufficient lateral and stopping space.</p>
+
+      <h3 id="art-15">Article 15. Ordinary passing</h3>
+      <p>Unless a stricter marker or signal applies, a carriage, mounted road unit, ridden equid, led equid, or other moving road unit shall pass an equid only at a speed low enough to stop immediately, with not less than two metres lateral clearance where the road permits. Where two metres cannot be provided, the approaching unit shall wait unless the rider, driver, or handler deliberately signals a safe pass.</p>
+
+      <h3 id="art-16">Article 16. Restricted passing</h3>
+      <p>A white field with red border means that passing is prohibited until the rider, driver, or handler signals. A solid red field with a white X means stop and wait because an active hazard or immediate control condition exists. It shall not be confused with the white medical-service field bearing a red medical cross.</p>
+
+      <h3 id="art-17">Article 17. Human signals</h3>
+      <p>Approved hand, arm, lamp, paddle, carriage indicator, or Road Guard signals may instruct slow, stop, wait, pass, change side, or follow. A signal permits movement only where the road user can comply safely and does not override an obvious hazard.</p>
+
+      <h3 id="art-18">Article 18. Following distance</h3>
+      <p>A following road unit shall maintain enough distance to stop without reaching the equid if it shies, slips, falls, stops, reverses, or the leading vehicle becomes disabled. Tailgating an equid or carriage is prohibited.</p>
+
+      <h3 id="art-19">Article 19. Groups and teams</h3>
+      <p>A road user shall treat a pair, tandem, team, mounted unit, led group, or carriage convoy as one continuous protected unit unless an authorised officer or handler opens a safe gap and directs passage.</p>
+
+      <h3 id="art-20">Article 20. Vulnerable locations</h3>
+      <p>Passing is prohibited on a narrow bridge, blind bend, steep descent, tunnel, constriction, unstable shoulder, ice, flooding, active roadwork, or other location where safe clearance and recovery space are unavailable.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-5">
+    <summary><span class="part__no">Chapter V</span><span class="part__title">Status markers and priority</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-21">Article 21. Marker requirement</h3>
+      <p>Every public-road equid shall wear an approved front Facial Marker and any required side or rear markers under the Imperial Public-Road Equid Status Marking Standard. Required marker illumination shall be activated from sunset to sunrise, in tunnels, and whenever visibility materially reduces marker recognition. Markers are instructions to humans and do not replace judgement or lawful control.</p>
+
+      <h3 id="art-22">Article 22. Status hierarchy</h3>
+      <p>Where more than one status applies, the highest-priority front instruction shall be displayed in this order:</p>
+      <ol>
+        <li>active hazard or stop;</li>
+        <li>restricted passing;</li>
+        <li>authorised emergency service;</li>
+        <li>police or Road Guard control;</li>
+        <li>pregnancy or medical vulnerability;</li>
+        <li>yellow caution;</li>
+        <li>green or provisional status;</li>
+        <li>ordinary certified status.</li>
+      </ol>
+      <p>Secondary statuses shall be displayed on approved side or rear markers. Two front inserts may be displayed only in a certified divided field that preserves full size, shape, contrast, and immediate recognition of both symbols.</p>
+
+      <h3 id="art-23">Article 23. Service markers</h3>
+      <p>Police, Road Guard, medical, fire, rescue, veterinary, postal, military, sovereign, and government markers may be used only under current recorded authorisation. Possession, display, manufacture, lending, alteration, or imitation of a restricted service marker without authority is prohibited.</p>
+
+      <h3 id="art-24">Article 24. Damaged or unreadable markers</h3>
+      <p>Where a required marker becomes missing, muddy, hidden, detached, damaged, unreadable, unable to illuminate when required, stuck in an incorrect mode, or depleted of safe power, the rider, driver, or handler shall stop at the first safe place and clean, uncover, correct, recharge, repair, or replace it. A standard emergency temporary marker may be used only for direct movement to safety, a Rest Court, stable, veterinary facility, or repair point.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-6">
+    <summary><span class="part__no">Chapter VI</span><span class="part__title">Lighting and visibility</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-25">Article 25. Lighting</h3>
+      <p>Carriages and service equids shall use lighting and reflectors required by the Imperial Carriage Lighting and Signalling Standard. Switchable status-marker illumination is identification lighting governed by the Imperial Public-Road Equid Status Marking Standard and shall not be confused with emergency warning lamps or equid ground-guidance lamps. Lighting shall not blind, frighten, dazzle, heat, rattle against, or create sharp moving shadows for an equid.</p>
+
+      <h3 id="art-26">Article 26. Low visibility</h3>
+      <p>Road use shall be restricted or suspended where darkness, fog, snow, rain, dust, smoke, glare, or surface reflection prevents reliable judgement of the equid, vehicle, signals, footing, route edge, passing distance, or stopping distance.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-7">
+    <summary><span class="part__no">Chapter VII</span><span class="part__title">Emergency and service powers</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-27">Article 27. Road Guard powers</h3>
+      <p>An authorised Road Guard officer may stop traffic, create a protected corridor, close or reroute a road, suspend passing, inspect markers, licences, equids, vehicles, and records, and order movement to a safe place where necessary for welfare or public safety.</p>
+
+      <h3 id="art-28">Article 28. Emergency lanes</h3>
+      <p>Authorised medical, fire, rescue, veterinary, or welfare equid services may use an approved emergency lane only where the equids, vehicle, route, lighting, and service are specifically certified. Other road users shall yield as directed without creating sudden noise, crowding, or an unsafe gap.</p>
+
+      <h3 id="art-29">Article 29. Emergency is incident-specific</h3>
+      <p>Emergency priority and any extension of ordinary limits must be authorised for the particular incident by emergency control, the Road Guard, the competent welfare authority, or a veterinarian acting within lawful authority. A standing certificate, operator policy, staffing shortage, event schedule, or commercial need shall not create emergency status.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-8">
+    <summary><span class="part__no">Chapter VIII</span><span class="part__title">Records and incidents</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-30">Article 30. Road records</h3>
+      <p>Commercial, public, private carriage, mounted-service, rental, tourist, freight, ceremonial, training, and government road use shall be recorded where another Code requires a work log. Records shall include date, time, equid, rider or driver, vehicle, route, load, weather band, markers, required marker-illumination activation and failures, start and finish, breaks, incidents, and restrictions.</p>
+      <p>Records shall be retained for at least ten years. Records connected with an injury, collision, fall, runaway, complaint, suspension, prosecution, or death shall be preserved until all proceedings and review periods are complete.</p>
+
+      <h3 id="art-31">Article 31. Incident duties</h3>
+      <p>After a fall, collision, runaway, collapse, entanglement, serious startle, vehicle failure, unsafe passing event, or injury, the responsible person shall secure the scene, protect the equid, summon assistance where needed, preserve records and equipment, report as required, and obtain veterinary assessment where welfare may have been affected.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-9">
+    <summary><span class="part__no">Chapter IX</span><span class="part__title">Enforcement and offences</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-32">Article 32. Inspection</h3>
+      <p>The competent authority may inspect equids, licences, markers, tack, harness, vehicles, routes, lighting, loads, work records, climate records, Rest Courts, and operator facilities.</p>
+
+      <h3 id="art-33">Article 33. Obstruction</h3>
+      <p>It is an offence to refuse lawful access, flee or reroute to avoid inspection, hide or substitute an equid, vehicle, marker, or equipment item, destroy or alter records, intimidate witnesses, tamper with the scene or equipment, remove a certification mark, or refuse lawful measurement or veterinary examination.</p>
+
+      <h3 id="art-34">Article 34. Road offences</h3>
+      <p>Offences include unlicensed operation, uncertified road use, false or concealed markers, failure to activate required marker illumination, flashing, pulsing, colour-changing, dazzling, misleading, or service-imitating marker illumination, unsafe passing, excessive speed near equids, bell, whistle, shout, whip-crack, or other deliberate intimidation, tailgating, breach of a stop instruction, overloading, route violation, lighting violation, false emergency status, record falsification, and continued use after a suspension or incident stop.</p>
+
+      <h3 id="art-35">Article 35. Penalties</h3>
+      <p>Penalties may include warning, training, fine, route restriction, vehicle restriction, licence suspension or revocation, marker seizure, removal from road service, welfare investigation, and criminal proceedings where serious harm, deliberate intimidation, fraud, or repeated breach occurs.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-10">
+    <summary><span class="part__no">Chapter X</span><span class="part__title">Finality</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-36">Article 36. Stricter welfare rule</h3>
+      <p>This Code governs road authority, licensing, priority, and traffic conduct. It does not authorise equipment, workload, climate exposure, or animal use prohibited by another Imperial welfare law. The stricter welfare-protective rule prevails.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-11">
+    <summary><span class="part__no">Chapter XI</span><span class="part__title">National Transport Structure</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-37">Article 37. Lawful Road Transport</h3>
+      <p>The public road network is a non-motor road system. Lawful ordinary road movement consists of walking, led or ridden equids, equid-drawn carriages, carts, wagons, sleighs, and other non-self-propelled movement expressly authorised by Imperial law.</p>
+      <p>A road vehicle under this Code means an equid-drawn carriage, cart, wagon, sleigh, or comparable non-self-propelled vehicle. It does not include a motor vehicle.</p>
+
+      <h3 id="art-38">Article 38. Prohibition of Motor Road Vehicles and Hrossaway Freight Exception</h3>
+      <p>Cars and other self-propelled road transport vehicles are prohibited throughout the ordinary Imperial road network. No car, van, lorry, bus, motorcycle, moped, motor taxi, self-propelled road carriage, or comparable wheeled or tracked transport vehicle may be manufactured, imported, registered, sold, hired, owned for ordinary road use, stored for ordinary operational road use, or operated within Imperial territory except under the narrow Hrossaway freight exception in this Article or the constitutional military tank exception.</p>
+      <p>Private, ordinary commercial, governmental, military, police, medical, fire, rescue, postal, ceremonial, agricultural, or emergency purpose does not create a general exception. Equipment that is not designed or used for transport is outside this Article, but may not be converted into ordinary road transport.</p>
+      <p>A Hrossaway is a designated, access-controlled motor-freight corridor connecting an international port, cargo-ferry terminal, border freight terminal, or other approved international freight gateway directly to one or more secured freight-transfer hubs, warehouses, rail terminals, or industrial transfer yards. A Hrossaway is not a public road and shall not form part of the ordinary local road network.</p>
+      <p>Only freight motor vehicles carrying goods in international import or export movement, and motor vehicles strictly necessary to recover, maintain, inspect, or respond to incidents within the Hrossaway system, may operate on a Hrossaway. A Hrossaway vehicle may carry only the driver and personnel necessary for the freight movement or corridor operation. Passenger service, private travel, commuting, tourism, local delivery, ordinary government travel, and use as a shortcut are prohibited.</p>
+      <p>The general public, pedestrians, ridden or led equids, equid-drawn vehicles, and non-motor bicycles shall not enter a Hrossaway. Hrossaways shall be physically separated from equid roads, public paths, settlements, and ordinary road traffic, with controlled access and grade-separated crossings wherever the networks intersect.</p>
+      <p>A freight motor vehicle shall remain within the Hrossaway and its secured terminal, warehouse, transfer-yard, or service premises. It shall not continue into domestic distribution on an ordinary road. Cargo entering domestic circulation shall be transferred at an approved hub to long-distance rail, equid-drawn freight wagons or teams, or another lawful non-road mode. The Hrossaway exception shall not be enlarged by contract, licence, emergency label, commercial convenience, or claimed necessity into a general motor-road system.</p>
+
+      <h3 id="art-39">Article 39. National Rail System</h3>
+      <p>The Empire&rsquo;s mechanised public land transport is limited to long-distance high-speed electric rail operating on dedicated mainline tracks.</p>
+      <p>The Empire has no metro, underground urban railway, tramway, suburban commuter railway, light rail, local rapid-transit railway, diesel train service, steam train service, or other short-distance urban rail network.</p>
+      <p>Rail is used for travel between distant regions and principal settlements. Local movement within settlements and between a station and its surrounding district occurs by walking, ridden or led equid, or equid-drawn vehicle.</p>
+
+      <h3 id="art-40">Article 40. Separation of Road and Rail</h3>
+      <p>High-speed railway corridors shall be physically separated from equid roads, settlements, pastures, and public paths. Public road routes shall cross active high-speed railway lines only by grade-separated bridge or underpass.</p>
+      <p>No level crossing, road-running rail, shared tramway surface, or mixed rail-and-equid traffic corridor is permitted.</p>
+      <p>Stations, access roads, loading areas, and service yards shall be designed so that train noise, air movement, vibration, lighting, barriers, crowds, and sudden movement do not create avoidable equid danger.</p>
+
+    </div>
+  </details>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L&rsquo;Impero</h2>
+      <ul>
+        <li><a href="../../../../it/gov/">Governo e dottrina</a></li>
+        <li><a href="../../../../it/gov/#dynamics">Le Otto Dinamiche</a></li>
+        <li><a href="../../../../it/gov/#diarchy">La Diarchia Imperiale</a></li>
+        <li><a href="../../../../it/gov/law/">Diritto imperiale</a></li>
+        <li><a href="../../../../it/history/">Storia</a></li>
+        <li><a href="../../../../it/symbols/">Nome, bandiera e simboli</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivere qui</h2>
+      <ul>
+        <li><a href="../../../../it/living/">Vivere in Hrossagri&#240;</a></li>
+        <li><a href="../../../../it/living/health/">Sanità</a></li>
+        <li><a href="../../../../it/living/education/">Istruzione e infanzia</a></li>
+        <li><a href="../../../../it/living/transport/">Trasporti e strade</a></li>
+        <li><a href="../../../../it/living/justice/">Giustizia e polizia</a></li>
+        <li><a href="../../../../it/living/money/">Lavoro e denaro</a></li>
+        <li><a href="../../../../it/living/citizenship/">Cittadinanza e asilo</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Cavalli e strade</h2>
+      <ul>
+        <li><a href="../../../../it/horses/">Cavalli</a></li>
+        <li><a href="../../../../it/horses/#welfare">Benessere e controllo senza morso</a></li>
+        <li><a href="../../../../it/horses/#service">Equidi di servizio</a></li>
+        <li><a href="../../../../it/horses/road-status/">Standard dei marcatori di stato stradale</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Questo portale</h2>
+      <ul>
+        <li><a href="../../../../it/about/">Informazioni sul progetto</a></li>
+        <li><a href="../../../../it/search/">Cerca nel portale</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="Bandiera dell&rsquo;Impero di Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Purtroppo Hrossagrith è un paese immaginario. Questo sito è un progetto di worldbuilding e non ha alcun legame con uno Stato, un governo o un ente ufficiale reali. :(</p>
+    <p class="footer__meta">L&rsquo;Impero di Hrossagri&#240; &middot; Portale Statale Imperiale &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+</body>
+</html>

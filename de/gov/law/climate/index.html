@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Equine Climatic Burden Standard &mdash; Das Kaiserreich Hrossagri&#240;</title>
+<meta name="description" content="Climatic burden assessment for equids: five bands, automatic triggers, heat, cold, surface, visibility and air-quality thresholds, records and offences.">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../de/" data-i18n="{&quot;light&quot;: &quot;Hell&quot;, &quot;dark&quot;: &quot;Dunkel&quot;, &quot;theme_to_light&quot;: &quot;Zum hellen Design wechseln&quot;, &quot;theme_to_dark&quot;: &quot;Zum dunklen Design wechseln&quot;, &quot;search_prompt&quot;: &quot;Geben Sie oben ein Wort oder eine Wendung ein, um alle Seiten dieses Portals zu durchsuchen.&quot;, &quot;search_running&quot;: &quot;Suche läuft…&quot;, &quot;search_none&quot;: &quot;Kein Eintrag im Register enthält alle Wörter. Versuchen Sie es mit weniger oder anderen Wörtern.&quot;, &quot;search_error&quot;: &quot;Der Suchindex konnte nicht geladen werden. Bitte versuchen Sie es erneut.&quot;, &quot;results_one&quot;: &quot;{n} Ergebnis für „{q}“&quot;, &quot;results_many&quot;: &quot;{n} Ergebnisse für „{q}“&quot;, &quot;results_none&quot;: &quot;Nichts gefunden für „{q}“&quot;, &quot;expand_all&quot;: &quot;Alle Teile aufklappen&quot;, &quot;collapse_all&quot;: &quot;Alle Teile zuklappen&quot;}">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Ein Worldbuilding-Projekt</p>
+    <form class="search" role="search" action="../../../../search/" method="get">
+      <label class="visually-hidden" for="q">Portal durchsuchen</label>
+      <input type="search" id="q" name="q" placeholder="Portal durchsuchen" autocomplete="off">
+      <button type="submit">Suchen</button>
+    </form>
+    <label class="visually-hidden" for="locale">Sprache</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de" selected>Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dunkel</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="Wappen des Kaiserreichs Hrossagri&#240;: ein sich aufbäumender Hippogryph in einem Rundfeld" width="360" height="360">
+    <p class="masthead__state">Kaiserliches Staatsportal</p>
+    <p class="masthead__name"><a href="../../../../de/">Das Kaiserreich Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Zuflucht der Pferde und der Frieden, der durchgesetzt wird</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle Abschnitte">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menü
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Das Kaiserreich</h2>
+            <ul>
+            <li><a href="../../../../de/gov/">Regierung und Doktrin</a></li>
+            <li><a href="../../../../de/gov/#dynamics">Die Acht Dynamiken</a></li>
+            <li><a href="../../../../de/gov/#diarchy">Die Kaiserliche Diarchie</a></li>
+            <li><a href="../../../../de/gov/law/">Kaiserliches Recht</a></li>
+            <li><a href="../../../../de/history/">Geschichte</a></li>
+            <li><a href="../../../../de/symbols/">Name, Flagge und Symbole</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Das Leben hier</h2>
+            <ul>
+            <li><a href="../../../../de/living/">Leben in Hrossagri&#240;</a></li>
+            <li><a href="../../../../de/living/health/">Gesundheit</a></li>
+            <li><a href="../../../../de/living/education/">Bildung und Kinder</a></li>
+            <li><a href="../../../../de/living/transport/">Verkehr und Straßen</a></li>
+            <li><a href="../../../../de/living/justice/">Justiz und Polizei</a></li>
+            <li><a href="../../../../de/living/money/">Arbeit und Geld</a></li>
+            <li><a href="../../../../de/living/citizenship/">Staatsbürgerschaft und Zuflucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Pferde und Straßen</h2>
+            <ul>
+            <li><a href="../../../../de/horses/">Pferde</a></li>
+            <li><a href="../../../../de/horses/#welfare">Tierwohl und gebisslose Kontrolle</a></li>
+            <li><a href="../../../../de/horses/#service">Dienstequiden</a></li>
+            <li><a href="../../../../de/horses/road-status/">Standard für Straßenstatus-Marker</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dieses Portal</h2>
+            <ul>
+            <li><a href="../../../../de/about/">Über dieses Projekt</a></li>
+            <li><a href="../../../../de/search/">Portal durchsuchen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../../de/">Startseite</a>
+    <a href="../../../../de/horses/">Pferde</a>
+    <a href="../../../../de/living/">Leben</a>
+    <a href="../../../../de/gov/">Regierung</a>
+    <a href="../../../../de/gov/law/" aria-current="page">Recht</a>
+    <a href="../../../../de/history/">Geschichte</a>
+    <a href="../../../../de/symbols/">Symbole</a>
+    <a href="../../../../de/about/">Über</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../de/">Startseite</a><span>&rsaquo;</span><a href="../../../../de/gov/">Regierung</a><span>&rsaquo;</span><a href="../../../../de/gov/law/">Recht</a><span>&rsaquo;</span><strong>Imperial Equine Climatic Burden Standard</strong></div>
+
+<main id="main" class="shell wrap">
+  <div class="notice notice--lang"><p>Dieses Instrument liegt in dieser Sprache noch nicht vor. Gezeigt wird der englische Text.</p></div>
+
+
+  <p class="entry">Book III &middot; Standard</p>
+  <h1 class="page-title">Imperial Equine Climatic Burden Standard</h1>
+  <p class="page-standfirst">The assessment of weather, surface, visibility and work burden on equids, the five bands of the Imperial Equine Climatic Burden Index, and the measured thresholds that assign them.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">The purpose of this Standard is to prevent heat stress, cold stress, wet-coat chilling, humidity burden, sweat-drying failure, respiratory burden, slipping, hoof injury, exhaustion, collapse, fear, panic, overwork, and weather-related suffering.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      In force. Cited in the archive as the Imperial Equine Climatic Burden Standard. Twelve chapters and forty-five articles, followed by Schedules A to E. Nothing is reserved; Article 45 declares the Standard final law for equine climatic burden.
+    </aside>
+  </div>
+
+  <p class="entry">Contents</p>
+  <ul class="jump">
+    <li><a href="#ch-1">I. Application, Purpose, and Supremacy</a></li>
+    <li><a href="#ch-2">II. Mandatory Assessment and Band Assignment</a></li>
+    <li><a href="#ch-3">III. Final Band Rules</a></li>
+    <li><a href="#ch-4">IV. Automatic Band Triggers</a></li>
+    <li><a href="#ch-5">V. Heat, Humidity, Sun, and Road Heat</a></li>
+    <li><a href="#ch-6">VI. Cold, Wetness, Wind, and Drying Failure</a></li>
+    <li><a href="#ch-7">VII. Surface, Footing, Hoof, and Visibility Burden</a></li>
+    <li><a href="#ch-8">VIII. Work Type Modifiers</a></li>
+    <li><a href="#ch-9">IX. Facilities and Infrastructure</a></li>
+    <li><a href="#ch-10">X. Monitoring, Immediate Stop, and Recovery</a></li>
+    <li><a href="#ch-11">XI. Records, Enforcement, and Offences</a></li>
+    <li><a href="#ch-12">XII. Anti-Loophole and Finality</a></li>
+    <li><a href="#ch-13">Schedules A to E</a></li>
+  </ul>
+
+  <details class="part" id="ch-1" open>
+    <summary><span class="part__no">Chapter I</span><span class="part__title">Application, Purpose, and Supremacy</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-1">Article 1. Application</h3>
+      <p>This Standard applies to every equid used, kept, transported, trained, ridden, driven, led, shown, worked, displayed, patrolled, bred, recovered, or otherwise managed in any condition where weather, climate, surface, visibility, or environmental burden may affect welfare.</p>
+      <p>This Standard applies to private owners, public authorities, carriage operators, mounted services, riding schools, equestrian sport, veterinary movement, breeding establishments, rescue facilities, sanctuaries, government service equids, military equids, postal or courier equids, agricultural equids, and all persons responsible for an equid.</p>
+      <p>Where a specialised Code contains stricter climate, workload, route, rest, or suspension rules, the stricter rule prevails.</p>
+
+      <h3 id="art-2">Article 2. Purpose</h3>
+      <p>The purpose of this Standard is to prevent heat stress, cold stress, wet-coat chilling, humidity burden, sweat-drying failure, respiratory burden, slipping, hoof injury, exhaustion, collapse, fear, panic, overwork, and weather-related suffering.</p>
+      <p>Air temperature alone shall never be treated as a sufficient welfare assessment. Heat, humidity, sun, wind, rain, snow, freezing rain, wet coat, sweat drying, coat type, clipping, rugging, acclimation, body condition, health, workload, load, footing, braking demand, traction, visibility, shelter, shade, road surface, traffic, and recovery capacity shall be assessed together.</p>
+
+      <h3 id="art-3">Article 3. Supremacy of welfare</h3>
+      <p>No route approval, event approval, service authorisation, emergency purpose, commercial demand, public schedule, tradition, ceremony, military command, tourist demand, rental booking, passenger need, or owner preference shall override climatic welfare restrictions.</p>
+      <p>Where climate burden makes work, transport, display, turnout, standing, or movement unsafe or unfair, the equid shall be protected even if cancellation, delay, rerouting, sheltering, or removal is inconvenient.</p>
+
+      <h3 id="art-4">Article 4. Definitions</h3>
+      <p>For the purposes of this Standard:</p>
+      <p>Climatic burden means the combined welfare burden created by weather, surface, visibility, environment, work demand, and the individual equid&rsquo;s capacity to cope.</p>
+      <p>IECBI means the Imperial Equine Climatic Burden Index established by this Standard.</p>
+      <p>Heat burden means risk arising from heat, humidity, sun, radiant road heat, poor air flow, high workload, high load, poor recovery, dehydration, or inability to cool.</p>
+      <p>Cold burden means risk arising from cold, wind, wetness, freezing rain, snow, wet coat, sweat that cannot dry, clipping, poor shelter, poor body condition, or standing after work while damp.</p>
+      <p>Wet-coat burden means the welfare burden created when rain, snow, washing, sweat, humidity, or condensation leaves the coat wet or prevents normal drying.</p>
+      <p>Drying failure means a condition where an equid remains wet, sweaty, or chilled because air humidity, low temperature, wind, coat density, clipping, rugging, shelter, or management prevents safe drying.</p>
+      <p>Surface burden means welfare risk created by road heat, frozen ground, ice, mud, snow, loose stone, metal, slippery paving, tramlines, rail grooves, flooding, uneven footing, deep footing, or excessive concussion.</p>
+      <p>Individual vulnerability means any condition that lowers an equid&rsquo;s ability to cope with climate burden, including age, pregnancy, lactation, recent illness, poor body condition, obesity, low fitness, heavy coat, clipping, poor acclimation, medication, hoof condition, respiratory disease, metabolic disease, recovery status, green-status training, fear, or prior heat or cold stress.</p>
+      <p>Work burden means burden created by active traction, riding, carrying, driving, load, speed, gradient, footing, braking, crowds, traffic, stress, harness, tack, waiting, standing, transport, or public display.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-2">
+    <summary><span class="part__no">Chapter II</span><span class="part__title">Mandatory Assessment and Band Assignment</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-5">Article 5. Duty to assess</h3>
+      <p>A responsible person shall assess climatic burden before work, transport, turnout, public display, route use, event participation, service duty, or any other activity likely to expose an equid to material weather or surface burden.</p>
+      <p>A responsible person shall reassess during the activity where conditions change, the equid&rsquo;s behaviour changes, the equid&rsquo;s recovery changes, the route changes, the surface changes, the workload increases, or a welfare concern arises.</p>
+      <p>A responsible person shall reassess after work where cooling, drying, shelter, rugging, feeding, watering, or recovery may be affected by climate.</p>
+
+      <h3 id="art-6">Article 6. Mandatory assessment factors</h3>
+      <p>The assessment shall include, where relevant:</p>
+      <ul>
+        <li>air temperature;</li>
+        <li>relative humidity;</li>
+        <li>direct sun;</li>
+        <li>shade;</li>
+        <li>radiant heat from roads, stone, sand, walls, buildings, or vehicles;</li>
+        <li>wind speed;</li>
+        <li>rain;</li>
+        <li>snow;</li>
+        <li>sleet;</li>
+        <li>freezing rain;</li>
+        <li>hail;</li>
+        <li>thunderstorm risk;</li>
+        <li>lightning risk;</li>
+        <li>fog;</li>
+        <li>smoke;</li>
+        <li>dust;</li>
+        <li>air quality;</li>
+        <li>visibility;</li>
+        <li>wet coat;</li>
+        <li>sweat that cannot dry;</li>
+        <li>coat length;</li>
+        <li>clipping;</li>
+        <li>rugging;</li>
+        <li>feathering and drying burden;</li>
+        <li>acclimation;</li>
+        <li>body condition;</li>
+        <li>age;</li>
+        <li>pregnancy;</li>
+        <li>lactation;</li>
+        <li>recovery status;</li>
+        <li>health;</li>
+        <li>respiratory condition;</li>
+        <li>metabolic condition;</li>
+        <li>hydration;</li>
+        <li>hoof condition;</li>
+        <li>tack or harness heat burden;</li>
+        <li>work type;</li>
+        <li>load;</li>
+        <li>speed;</li>
+        <li>gradient;</li>
+        <li>braking demand;</li>
+        <li>footing;</li>
+        <li>traction;</li>
+        <li>traffic density;</li>
+        <li>crowding;</li>
+        <li>access to water;</li>
+        <li>access to shelter;</li>
+        <li>access to shade;</li>
+        <li>access to Rest Courts or recovery facilities.</li>
+      </ul>
+
+      <h3 id="art-7">Article 7. Band assignment</h3>
+      <p>Every assessed condition shall be assigned one of the following bands:</p>
+      <ul>
+        <li>Band I &mdash; Ordinary Burden;</li>
+        <li>Band II &mdash; Caution Burden;</li>
+        <li>Band III &mdash; Restricted Work;</li>
+        <li>Band IV &mdash; Emergency-Only Work;</li>
+        <li>Band V &mdash; Suspended Work.</li>
+      </ul>
+      <p>The assigned band shall be the highest band reached by any major risk factor. A person shall not average a severe risk down by pointing to other favourable conditions.</p>
+      <p>Where there is doubt between two bands, the higher welfare-protective band shall be used until the competent authority, veterinarian, or trained welfare officer determines otherwise.</p>
+
+      <h3 id="art-8">Article 8. Individual downward adjustment</h3>
+      <p>An equid shall be moved into a stricter band where individual vulnerability increases risk.</p>
+      <p>Automatic one-band increase applies to:</p>
+      <ul>
+        <li>green-status equids;</li>
+        <li>equids in training or provisional certification;</li>
+        <li>equids over twenty years unless individually cleared;</li>
+        <li>equids under six years in work training;</li>
+        <li>pregnant mares;</li>
+        <li>lactating mares;</li>
+        <li>recently foaled mares;</li>
+        <li>equids returning from illness, injury, heat stress, cold stress, collapse, surgery, or transport stress;</li>
+        <li>underweight equids;</li>
+        <li>obese equids;</li>
+        <li>poorly conditioned equids;</li>
+        <li>equids with respiratory disease;</li>
+        <li>equids with metabolic disease;</li>
+        <li>equids with poor hoof condition;</li>
+        <li>equids not acclimated to the current climate;</li>
+        <li>equids carrying unusually heavy coat, feathering, or rugging for the conditions;</li>
+        <li>clipped equids exposed to cold, wet, or wind;</li>
+        <li>equids with previous heat-stress or cold-stress history.</li>
+      </ul>
+      <p>The competent authority or veterinarian may require a two-band increase for serious vulnerability.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-3">
+    <summary><span class="part__no">Chapter III</span><span class="part__title">Final Band Rules</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-9">Article 9. Band I: Ordinary Burden</h3>
+      <p>Band I applies where the combination of temperature, humidity, wind, sun, wetness, surface, visibility, workload, and individual condition creates no material added climatic risk beyond ordinary lawful activity.</p>
+      <p>Band I permits ordinary work, turnout, transport, riding, driving, and public activity subject to ordinary welfare checks, water access, tack and harness fit, route approval, and individual restrictions.</p>
+      <p>Band I shall not be used where the equid shows distress, poor recovery, lameness, sweating abnormality, shivering, respiratory difficulty, dehydration, panic, shutdown, or fatigue.</p>
+
+      <h3 id="art-10">Article 10. Band II: Caution Burden</h3>
+      <p>Band II applies where climatic or surface conditions create increased but manageable welfare burden.</p>
+      <p>Band II requires active mitigation, including appropriate reduction of workload, reduction of speed, reduction of load, increased rest, increased water access, shade or shelter use, closer monitoring, and removal of vulnerable equids from unnecessary work.</p>
+      <p>In Band II:</p>
+      <ul>
+        <li>ordinary commercial carriage active traction shall not exceed four hours per day;</li>
+        <li>ordinary work blocks shall not exceed sixty minutes where burden is moderate;</li>
+        <li>rest after each work block shall be not less than twenty minutes;</li>
+        <li>heavy loads shall be reduced;</li>
+        <li>green-status equids shall be used only for necessary supervised exposure;</li>
+        <li>public display shall be shortened;</li>
+        <li>waiting in harness or tack shall be reduced;</li>
+        <li>water shall be offered at shorter intervals;</li>
+        <li>cooling, drying, or warming measures shall be available as the condition requires.</li>
+      </ul>
+
+      <h3 id="art-11">Article 11. Band III: Restricted Work</h3>
+      <p>Band III applies where ordinary work would create material welfare risk and only limited necessary work may continue.</p>
+      <p>In Band III, the following are suspended unless expressly authorised for essential welfare or public-service need:</p>
+      <ul>
+        <li>tourist carriage work;</li>
+        <li>rental carriage work;</li>
+        <li>ceremonial carriage work;</li>
+        <li>non-essential freight;</li>
+        <li>non-essential riding lessons;</li>
+        <li>sport competition;</li>
+        <li>public display;</li>
+        <li>parades;</li>
+        <li>non-essential mounted patrol;</li>
+        <li>training for convenience;</li>
+        <li>green-status road exposure;</li>
+        <li>work by pregnant, lactating, ill, recovering, elderly, unfit, or non-acclimated equids.</li>
+      </ul>
+      <p>In Band III:</p>
+      <ul>
+        <li>essential active work shall not exceed two hours per day;</li>
+        <li>work blocks shall not exceed thirty minutes;</li>
+        <li>each work block shall be followed by not less than thirty minutes of recovery;</li>
+        <li>load shall be reduced to the lowest practicable level;</li>
+        <li>speed shall be reduced;</li>
+        <li>hills, difficult footing, crowds, and dense traffic shall be avoided;</li>
+        <li>the reason for continuing work shall be recorded;</li>
+        <li>a post-work welfare check is mandatory.</li>
+      </ul>
+
+      <h3 id="art-12">Article 12. Band IV: Emergency-Only Work</h3>
+      <p>Band IV applies where climate burden makes ordinary activity unsafe and only emergency, veterinary, welfare, evacuation, or direct movement to safety may occur.</p>
+      <p>In Band IV, work is prohibited except:</p>
+      <ul>
+        <li>direct movement to shelter;</li>
+        <li>direct movement to veterinary care;</li>
+        <li>rescue from immediate danger;</li>
+        <li>emergency medical, fire, veterinary, or welfare service where no safer alternative exists;</li>
+        <li>short controlled movement necessary to prevent greater harm.</li>
+      </ul>
+      <p>In Band IV:</p>
+      <ul>
+        <li>active movement shall be the shortest safe duration;</li>
+        <li>ordinary commercial, ceremonial, sport, tourist, rental, training, and public-display work is prohibited;</li>
+        <li>a competent person shall monitor the equid continuously;</li>
+        <li>post-event welfare review is mandatory;</li>
+        <li>repeated Band IV use by the same operator triggers inspection.</li>
+      </ul>
+
+      <h3 id="art-13">Article 13. Band V: Suspended Work</h3>
+      <p>Band V applies where any equid activity outside shelter, veterinary necessity, or immediate rescue would create serious and unjustifiable welfare risk.</p>
+      <p>In Band V, all non-essential equid work, public display, transport, turnout in exposed conditions, carriage work, mounted service, riding, driving, sport, training, and commercial movement is suspended.</p>
+      <p>Band V permits only:</p>
+      <ul>
+        <li>emergency rescue;</li>
+        <li>emergency veterinary intervention;</li>
+        <li>movement from danger to shelter;</li>
+        <li>evacuation where staying is more dangerous;</li>
+        <li>urgent welfare intervention authorised by the competent authority.</li>
+      </ul>
+      <p>Band V exceptions shall be recorded and reviewed.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-4">
+    <summary><span class="part__no">Chapter IV</span><span class="part__title">Automatic Band Triggers</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-14">Article 14. Automatic Band III triggers</h3>
+      <p>Band III applies automatically where any of the following occurs, unless the competent authority assigns a stricter band:</p>
+      <ul>
+        <li>heat combined with high humidity prevents normal cooling;</li>
+        <li>the equid&rsquo;s coat remains wet or sweaty and safe drying cannot be provided during work;</li>
+        <li>wind, wetness, or cold creates chilling risk during standing, waiting, or recovery;</li>
+        <li>footing requires repeated slipping correction or guarded movement;</li>
+        <li>road surface heat is uncomfortable for the handler&rsquo;s hand or unsafe for hoof protection;</li>
+        <li>visibility is poor enough that traffic, route edges, obstacles, or signals cannot be reliably judged;</li>
+        <li>work requires significant hills, braking, load, or traffic stress during non-ordinary weather;</li>
+        <li>an equid shows delayed recovery after a previous work block;</li>
+        <li>a green-status, pregnant, recovering, elderly, or non-acclimated equid would otherwise be assigned work.</li>
+      </ul>
+
+      <h3 id="art-15">Article 15. Automatic Band IV triggers</h3>
+      <p>Band IV applies automatically where any of the following occurs:</p>
+      <ul>
+        <li>heat-stress signs appear;</li>
+        <li>cold-stress signs appear;</li>
+        <li>freezing rain affects footing or coat;</li>
+        <li>ice cannot be made hoof-safe;</li>
+        <li>deep mud, deep snow, or flooding materially increases strain;</li>
+        <li>lightning is close enough to create public safety risk;</li>
+        <li>wind makes vehicle, rider, handler, branch, sign, or object movement unsafe;</li>
+        <li>visibility is too poor for safe passing, stopping, or route control;</li>
+        <li>smoke, dust, or air quality causes coughing, breathing distress, eye irritation, or dullness;</li>
+        <li>road surface creates repeated slipping, stumbling, or fear;</li>
+        <li>an equid cannot dry safely after sweating;</li>
+        <li>a vehicle or load cannot be safely controlled without increased animal strain.</li>
+      </ul>
+
+      <h3 id="art-16">Article 16. Automatic Band V triggers</h3>
+      <p>Band V applies automatically where any of the following occurs:</p>
+      <ul>
+        <li>collapse;</li>
+        <li>severe heat stress;</li>
+        <li>severe cold stress;</li>
+        <li>hypothermia suspicion;</li>
+        <li>heat stroke suspicion;</li>
+        <li>lightning directly threatens the route or turnout area;</li>
+        <li>floodwater, ice, storm debris, fire, smoke, or structural failure makes safe movement impossible except evacuation;</li>
+        <li>visibility is insufficient for safe human control;</li>
+        <li>the competent authority issues a suspension order;</li>
+        <li>the equid cannot stand, breathe, cool, warm, dry, or recover safely in the current environment.</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-5">
+    <summary><span class="part__no">Chapter V</span><span class="part__title">Heat, Humidity, Sun, and Road Heat</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-17">Article 17. Heat burden rules</h3>
+      <p>Heat burden shall be assessed by combining air temperature, humidity, solar radiation, wind, shade, road heat, load, work intensity, coat, acclimation, body condition, hydration, and recovery.</p>
+      <p>A person shall not treat a dry thermometer reading as safe where humidity, sun, still air, road heat, workload, poor fitness, heavy coat, obesity, or lack of acclimation increases risk.</p>
+
+      <h3 id="art-18">Article 18. Humidity and cooling failure</h3>
+      <p>High humidity increases heat burden because sweat evaporation and cooling may fail.</p>
+      <p>Where sweat does not evaporate effectively, the equid shall be treated as at least Band II.</p>
+      <p>Where sweat fails to evaporate during work or recovery, the equid shall be treated as at least Band III.</p>
+      <p>Where the equid shows distress, weakness, rapid breathing that does not recover, abnormal sweating, failure to sweat, staggering, dullness, or collapse, the condition is Band IV or Band V and work shall stop immediately.</p>
+
+      <h3 id="art-19">Article 19. Sun and radiant heat</h3>
+      <p>Direct sun, reflective stone, sand, pale paving, walls, carriage bodies, buildings, and road surfaces shall be considered radiant heat sources.</p>
+      <p>Shade shall be required for waiting, recovery, public display, passenger loading, and Rest Courts where sun exposure materially increases heat burden.</p>
+      <p>A road, yard, arena, or waiting surface shall be restricted or suspended where radiant heat or surface heat increases hoof risk, limb strain, dehydration, or heat stress.</p>
+
+      <h3 id="art-20">Article 20. Heat mitigation duties</h3>
+      <p>Where heat burden reaches Band II or above, the responsible person shall provide appropriate mitigation, including as applicable:</p>
+      <ul>
+        <li>shade;</li>
+        <li>water;</li>
+        <li>reduced load;</li>
+        <li>reduced speed;</li>
+        <li>shorter work blocks;</li>
+        <li>longer rest;</li>
+        <li>cooling with water where suitable;</li>
+        <li>airflow;</li>
+        <li>removal from sun;</li>
+        <li>removal of unnecessary tack, harness, rugs, decoration, or covers;</li>
+        <li>monitoring of breathing, sweating, pulse, attitude, coordination, and recovery.</li>
+      </ul>
+      <p>A person shall not deny water, cooling, shade, or rest for appearance, cleanliness, schedule, commercial demand, or convenience.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-6">
+    <summary><span class="part__no">Chapter VI</span><span class="part__title">Cold, Wetness, Wind, and Drying Failure</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-21">Article 21. Cold burden rules</h3>
+      <p>Cold burden shall be assessed by combining air temperature, wind, humidity, precipitation, wet coat, sweat drying, coat length, clipping, rugging, body condition, acclimation, health, workload, shelter, footing, and post-work management.</p>
+      <p>Cold air alone shall not be treated as the sole risk. A dry, acclimated, fit equid in calm cold may cope better than a wet, clipped, tired, sweating, thin, old, or non-acclimated equid in milder damp wind.</p>
+
+      <h3 id="art-22">Article 22. Wet coat and humidity in cold</h3>
+      <p>Wet coat, wet air, rain, snow, sleet, freezing rain, fog, and sweat that cannot dry increase cold burden.</p>
+      <p>Where an equid is wet and cannot dry safely while standing, waiting, travelling, or recovering, the condition is at least Band II.</p>
+      <p>Where the equid is wet, sweating, clipped, thin, tired, young, old, ill, or exposed to wind without shelter, the condition is at least Band III.</p>
+      <p>Where the equid shivers, becomes dull, stiff, chilled, unwilling to move, poorly coordinated, or unable to dry, work shall stop and the condition is Band IV or Band V.</p>
+
+      <h3 id="art-23">Article 23. Sweat drying after work</h3>
+      <p>A sweaty equid shall not be left standing in cold, wind, rain, snow, or damp air without appropriate cooling, drying, shelter, monitoring, and rugging where suitable.</p>
+      <p>Rugging shall not be used to hide sweat, trap heat, trap moisture, conceal poor cooling, or delay proper drying.</p>
+      <p>A clipped equid shall receive stricter cold, wind, and wetness protection.</p>
+      <p>An equid with heavy coat or feathering shall receive stricter drying assessment where wetness may remain trapped.</p>
+
+      <h3 id="art-24">Article 24. Wind burden</h3>
+      <p>Wind burden shall include wind chill, dust, debris, vehicle instability, object movement, branch movement, sign movement, loss of rider or driver control, and increased startle risk.</p>
+      <p>Work shall be restricted where wind creates material risk to footing, vehicle control, handler control, tack stability, respiratory comfort, or fear.</p>
+      <p>Work shall be suspended where wind makes control, visibility, object stability, or recovery unsafe.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-7">
+    <summary><span class="part__no">Chapter VII</span><span class="part__title">Surface, Footing, Hoof, and Visibility Burden</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-25">Article 25. Surface burden</h3>
+      <p>Surface burden shall be assessed separately from air weather.</p>
+      <p>A surface may make work unlawful even where temperature and weather appear mild.</p>
+      <p>Surface burden includes:</p>
+      <ul>
+        <li>ice;</li>
+        <li>wet stone;</li>
+        <li>metal plates;</li>
+        <li>rail grooves;</li>
+        <li>tramlines;</li>
+        <li>polished paving;</li>
+        <li>mud;</li>
+        <li>deep sand;</li>
+        <li>deep snow;</li>
+        <li>loose gravel;</li>
+        <li>road heat;</li>
+        <li>frozen ruts;</li>
+        <li>flooding;</li>
+        <li>sharp debris;</li>
+        <li>unstable shoulders;</li>
+        <li>excessive concussion;</li>
+        <li>surfaces that trap wheels, runners, hooves, or hoof boots.</li>
+      </ul>
+
+      <h3 id="art-26">Article 26. Hoof traction and climate</h3>
+      <p>No equid shall be worked on a surface where safe traction cannot be provided without creating hoof pain, limb strain, slipping, jarring, or compensatory effort.</p>
+      <p>Shoes, boots, studs, pads, caulks, borium, barefoot management, trimming, or other hoof-protection methods shall be climate- and route-suitable.</p>
+      <p>A hoof method suitable in one season shall not be presumed suitable in another season.</p>
+
+      <h3 id="art-27">Article 27. Visibility burden</h3>
+      <p>Low visibility increases climatic burden because it affects traffic safety, equid confidence, route recognition, stopping distance, and human control.</p>
+      <p>Fog, snow, rain, darkness, smoke, dust, glare, storm conditions, tunnel conditions, shaded streets, or reflective surfaces shall trigger stricter visibility assessment.</p>
+      <p>Where visibility prevents safe judgement of passing distance, footing, route edge, obstacles, signals, other equids, or vehicles, work shall be restricted or suspended.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-8">
+    <summary><span class="part__no">Chapter VIII</span><span class="part__title">Work Type Modifiers</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-28">Article 28. Carriage and active traction</h3>
+      <p>Active traction increases climatic burden because the equid must pull, hold, brake, stabilise, turn, stand under vehicle assignment, and recover from load.</p>
+      <p>In Band II, carriage load shall be reduced, work blocks shortened, waiting limited, and Rest Court access confirmed.</p>
+      <p>In Band III, commercial, tourist, rental, ceremonial, and non-essential carriage work is suspended.</p>
+      <p>In Band IV and Band V, carriage work is prohibited except emergency safety movement permitted by this Standard.</p>
+
+      <h3 id="art-29">Article 29. Mounted, ridden, and led work</h3>
+      <p>Mounted, ridden, and led work shall be restricted where climate burden affects footing, breathing, cooling, drying, confidence, visibility, or recovery.</p>
+      <p>A lighter workload does not excuse ignoring heat, cold, wetness, wind, footing, or individual vulnerability.</p>
+      <p>Mounted service, patrol, sport, lesson, public display, and riding-school work shall follow the same band restrictions unless a stricter Code applies.</p>
+
+      <h3 id="art-30">Article 30. Transport and waiting</h3>
+      <p>Transport, queueing, tied standing, loading, unloading, holding, veterinary waiting, show waiting, passenger waiting, and ceremonial standing count as climate exposure.</p>
+      <p>A person shall not treat an equid as resting where the equid is standing in heat, cold, wetness, wind, poor footing, traffic, crowding, poor ventilation, or stress.</p>
+      <p>Trailers, stables, vehicles, Rest Courts, waiting bays, and service yards shall be ventilated, shaded, sheltered, drained, and managed according to climate burden.</p>
+
+      <h3 id="art-31">Article 31. Public display and events</h3>
+      <p>Public display, ceremonies, markets, shows, parades, sport, festivals, and exhibitions shall be restricted or suspended where climate burden, crowds, footing, waiting, noise, or visibility creates welfare risk.</p>
+      <p>The fact that an event is scheduled, sold, public, ceremonial, royal, traditional, or profitable shall not reduce the assigned band.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-9">
+    <summary><span class="part__no">Chapter IX</span><span class="part__title">Facilities and Infrastructure</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-32">Article 32. Water, shade, shelter, and drying facilities</h3>
+      <p>Where climate burden may arise, facilities shall provide appropriate access to water, shade, shelter, drainage, non-slip footing, ventilation, cooling, drying, warming, and recovery areas.</p>
+      <p>A facility shall not be approved where equids must wait in sun, wet wind, ice, standing water, deep mud, smoke, dust, poor air, poor ventilation, unstable footing, or crowd pressure without relief.</p>
+
+      <h3 id="art-33">Article 33. Rest Courts and service facilities</h3>
+      <p>Rest Courts, carriage stands, mounted-service yards, riding facilities, veterinary waiting areas, public-event equid areas, and transport hubs shall be assessed under this Standard.</p>
+      <p>A Rest Court shall not count as climate-safe unless it provides safe footing, water, shade or shelter, ventilation, drainage, weather protection, space, monitoring access, and the ability to remove or adjust tack, harness, rugs, lamps, and decorative equipment.</p>
+
+      <h3 id="art-34">Article 34. Route and district suspension</h3>
+      <p>The competent authority may issue route-specific, district-specific, service-specific, event-specific, or Empire-wide climate suspension orders.</p>
+      <p>A suspension order may apply by species, work type, vehicle class, route class, service class, time of day, band level, age group, vulnerability group, or surface type.</p>
+      <p>No person shall evade a suspension order by renaming the work, claiming private use, changing route labels, changing service labels, or moving the equid to a nearby unsuspended route with the same risk.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-10">
+    <summary><span class="part__no">Chapter X</span><span class="part__title">Monitoring, Immediate Stop, and Recovery</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-35">Article 35. Monitoring during exposure</h3>
+      <p>During climate exposure, the responsible person shall monitor the equid for:</p>
+      <ul>
+        <li>breathing rate;</li>
+        <li>breathing effort;</li>
+        <li>sweating;</li>
+        <li>failure to sweat;</li>
+        <li>shivering;</li>
+        <li>coat wetness;</li>
+        <li>skin heat or coldness;</li>
+        <li>posture;</li>
+        <li>gait;</li>
+        <li>stumbling;</li>
+        <li>reluctance;</li>
+        <li>dullness;</li>
+        <li>agitation;</li>
+        <li>panic;</li>
+        <li>shutdown;</li>
+        <li>thirst;</li>
+        <li>dehydration signs;</li>
+        <li>mucous membrane changes;</li>
+        <li>coordination;</li>
+        <li>hoof slipping;</li>
+        <li>recovery after effort;</li>
+        <li>interest in surroundings;</li>
+        <li>signs of pain or fatigue.</li>
+      </ul>
+
+      <h3 id="art-36">Article 36. Immediate stop triggers</h3>
+      <p>Work, display, training, transport loading, public waiting, carriage work, mounted service, or route use shall stop immediately where an equid shows:</p>
+      <ul>
+        <li>collapse;</li>
+        <li>weakness;</li>
+        <li>staggering;</li>
+        <li>poor coordination;</li>
+        <li>heat stress;</li>
+        <li>cold stress;</li>
+        <li>shivering;</li>
+        <li>failure to sweat in heat;</li>
+        <li>abnormal sweating;</li>
+        <li>rapid breathing that does not recover;</li>
+        <li>coughing caused or worsened by conditions;</li>
+        <li>nostril flare with distress;</li>
+        <li>dullness;</li>
+        <li>panic;</li>
+        <li>shutdown;</li>
+        <li>repeated refusal;</li>
+        <li>stumbling;</li>
+        <li>slipping;</li>
+        <li>lameness;</li>
+        <li>dehydration signs;</li>
+        <li>inability to warm;</li>
+        <li>inability to cool;</li>
+        <li>inability to dry;</li>
+        <li>harness or tack injury worsened by climate;</li>
+        <li>hoof pain;</li>
+        <li>any sign that continued activity is unsafe or unfair.</li>
+      </ul>
+
+      <h3 id="art-37">Article 37. Recovery duties</h3>
+      <p>After exposure to Band II or above, the responsible person shall provide appropriate recovery, including water, cooling, warming, drying, shade, shelter, ventilation, monitoring, feed where suitable, tack or harness removal, rugging where suitable, and veterinary care where needed.</p>
+      <p>After Band III work, a recorded recovery check is mandatory.</p>
+      <p>After Band IV or Band V emergency exposure, competent-authority or veterinary review may be required before further work.</p>
+      <p>An equid shall not return to work merely because the weather event has passed. Recovery capacity and individual condition shall be reassessed.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-11">
+    <summary><span class="part__no">Chapter XI</span><span class="part__title">Records, Enforcement, and Offences</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-38">Article 38. Climate records</h3>
+      <p>Commercial, public, service, carriage, sport, riding-school, rental, government, breeding, transport, and event operators shall create and retain climate-burden records for every official assessment; whenever Band II or above applies; whenever conditions, workload, route, surface, or individual vulnerability materially changes; whenever a stop, restriction, or suspension order is issued; and whenever a climate-related incident, emergency exposure, or recovery concern occurs. This is a direct duty under this Standard and does not depend upon another regulation.</p>
+      <p>Records shall include, where relevant:</p>
+      <ul>
+        <li>date;</li>
+        <li>time;</li>
+        <li>location;</li>
+        <li>assigned band;</li>
+        <li>temperature;</li>
+        <li>humidity;</li>
+        <li>wind;</li>
+        <li>precipitation;</li>
+        <li>surface condition;</li>
+        <li>visibility;</li>
+        <li>sun or shade condition;</li>
+        <li>work type;</li>
+        <li>load;</li>
+        <li>route;</li>
+        <li>equid identity;</li>
+        <li>individual vulnerability;</li>
+        <li>mitigation used;</li>
+        <li>water and rest;</li>
+        <li>shelter or shade;</li>
+        <li>stop orders;</li>
+        <li>incidents;</li>
+        <li>recovery checks;</li>
+        <li>veterinary or authority orders.</li>
+      </ul>
+
+      <h3 id="art-39">Article 39. Inspection powers</h3>
+      <p>The competent authority may inspect climate conditions, surfaces, equids, records, routes, events, Rest Courts, waiting bays, vehicles, shelters, rugs, tack, harness, lamps, hoof protection, and recovery areas.</p>
+      <p>The competent authority may order work reduction, route change, load reduction, immediate rest, watering, sheltering, cooling, warming, drying, veterinary examination, removal from work, event suspension, route suspension, or service suspension.</p>
+
+      <h3 id="art-40">Article 40. Welfare offences</h3>
+      <p>A welfare offence includes:</p>
+      <ul>
+        <li>failing to assess climate burden;</li>
+        <li>assigning the wrong band;</li>
+        <li>ignoring individual vulnerability;</li>
+        <li>working during a suspension;</li>
+        <li>working in Band III without lawful necessity;</li>
+        <li>working in Band IV without emergency, veterinary, welfare, or direct-safety necessity;</li>
+        <li>working in Band V except for rescue, veterinary necessity, or movement to safety;</li>
+        <li>denying water, shade, shelter, drying, cooling, warming, or recovery;</li>
+        <li>using tack, harness, rugging, decoration, or vehicle design that worsens climate burden;</li>
+        <li>falsifying climate records;</li>
+        <li>hiding weather-related distress;</li>
+        <li>continuing after stop triggers;</li>
+        <li>failing to provide post-exposure recovery.</li>
+      </ul>
+
+      <h3 id="art-41">Article 41. Serious offences</h3>
+      <p>A serious offence includes:</p>
+      <ul>
+        <li>work causing heat stress;</li>
+        <li>work causing cold stress;</li>
+        <li>work causing collapse;</li>
+        <li>deliberate use of weather to exhaust, punish, suppress, or force compliance;</li>
+        <li>knowingly working an equid in Band IV or Band V unlawfully;</li>
+        <li>falsifying band records to conceal overwork or distress;</li>
+        <li>ignoring a suspension order;</li>
+        <li>repeated climate-related welfare breaches;</li>
+        <li>continuing work after heat-stress, cold-stress, collapse, respiratory distress, severe slipping, or inability to recover.</li>
+      </ul>
+
+      <h3 id="art-42">Article 42. Penalties</h3>
+      <p>Penalties may include warning, correction order, mandatory training, route restriction, work restriction, climate monitoring order, veterinary order, facility order, Rest Court order, event suspension, operator suspension, service suspension, licence suspension, licence revocation, animal-welfare registry entry, seizure of unlawful equipment, removal of equids from work, and criminal animal-abuse investigation where required by law.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-12">
+    <summary><span class="part__no">Chapter XII</span><span class="part__title">Anti-Loophole and Finality</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-43">Article 43. No climate loophole</h3>
+      <p>A person shall not avoid this Standard by claiming that the activity is short, private, traditional, ceremonial, voluntary, educational, emergency-adjacent, low intensity, photogenic, already booked, historically common, or demanded by the public.</p>
+      <p>The real welfare burden on the equid controls.</p>
+
+      <h3 id="art-44">Article 44. Stricter rule prevails</h3>
+      <p>Where this Standard conflicts with another Imperial equid-welfare rule, the stricter welfare-protective rule prevails.</p>
+      <p>A specialised code, route order, veterinary order, Passport restriction, or service standard may impose stricter requirements.</p>
+      <p>No administrative rule, operator policy, custom, route approval, event approval, commercial contract, public-service schedule, or ceremony shall weaken this Standard.</p>
+
+      <h3 id="art-45">Article 45. Finality</h3>
+      <p>This Standard is final law for equine climatic burden. Future schedules, tables, measuring instruments, regional maps, or service manuals may clarify, measure, illustrate, or impose stricter duties, but shall not weaken this Standard unless the Standard itself is lawfully amended.</p>
+
+    </div>
+  </details>
+
+  <details class="part" id="ch-13">
+    <summary><span class="part__no">Schedules</span><span class="part__title">A to E</span></summary>
+    <div class="part__body">
+
+      <h3 id="art-46">Schedule A &mdash; Final IECBI Band Summary</h3>
+      <ul>
+        <li>Band I &mdash; Ordinary Burden: ordinary lawful activity permitted with normal welfare checks.</li>
+        <li>Band II &mdash; Caution Burden: activity permitted only with mitigation, shorter work, more rest, water, shade, shelter, reduced load, and close monitoring.</li>
+        <li>Band III &mdash; Restricted Work: ordinary commercial, tourist, rental, sport, ceremonial, display, and non-essential work suspended; only essential reduced work permitted.</li>
+        <li>Band IV &mdash; Emergency-Only Work: ordinary work prohibited; only emergency, veterinary, welfare, evacuation, or direct movement to safety permitted.</li>
+        <li>Band V &mdash; Suspended Work: all non-essential activity suspended; only rescue, veterinary necessity, evacuation, or movement from danger permitted.</li>
+      </ul>
+
+      <h3 id="art-47">Schedule B &mdash; Final Heat and Cooling Stop Signs</h3>
+      <p>Immediate stop is required for weakness, staggering, abnormal sweating, failure to sweat in heat, rapid breathing that does not recover, dullness, collapse, refusal, dehydration signs, panic, poor coordination, or any sign of heat stress.</p>
+
+      <h3 id="art-48">Schedule C &mdash; Final Cold, Wetness, and Drying Stop Signs</h3>
+      <p>Immediate stop is required for shivering, chill, stiffness, dullness, wet coat that cannot dry, sweat that cannot dry, cold ears or extremities with distress, reluctance to move, poor coordination, inability to warm, or any sign of cold stress.</p>
+
+      <h3 id="art-49">Schedule D &mdash; Final Surface and Visibility Stop Signs</h3>
+      <p>Immediate stop is required for repeated slipping, stumbling, hoof pain, unsafe ice, unsafe mud, deep snow strain, flooding, poor visibility, inability to judge route edge or traffic, dangerous glare, smoke, dust, or any surface condition requiring compensatory effort likely to cause injury.</p>
+
+      <h3 id="art-50">Schedule E &mdash; Binding measurement and threshold rules</h3>
+
+      <h3 id="art-51">1. Required instruments and observations</h3>
+      <p>A commercial, public, service, sport, riding-school, carriage, rental, government, breeding, transport, or organised-event assessment shall use instruments suitable for the site and shall record:</p>
+      <ul>
+        <li>shaded air temperature at equid chest height;</li>
+        <li>relative humidity;</li>
+        <li>wet-bulb globe temperature, including in cool and cold conditions;</li>
+        <li>wet-bulb temperature where the instrument provides it;</li>
+        <li>wind speed and calculated wind chill where applicable;</li>
+        <li>direct sun or radiant-heat exposure;</li>
+        <li>road or working-surface temperature;</li>
+        <li>precipitation and coat wetness;</li>
+        <li>air-quality index or particulate reading where smoke, dust, pollution, or poor air is possible;</li>
+        <li>visibility distance;</li>
+        <li>surface and traction condition;</li>
+        <li>workload, load, gradient, speed, waiting, and individual vulnerability.</li>
+      </ul>
+      <p>Air temperature alone shall never assign a band. Wet-bulb globe temperature is a required environmental reading across the full operating range; in cold conditions it shall be interpreted together with humidity, wet-bulb temperature, wind chill, precipitation, coat wetness, drying ability, and shelter rather than used as a heat-only number.</p>
+      <p>Instruments used for official records shall be calibrated or manufacturer-verified at least annually and after damage. Phone weather data may support but shall not replace on-site readings where local sun, shade, road heat, wind, humidity, or precipitation differs materially.</p>
+
+      <h3 id="art-52">2. Heat bands by WBGT and work burden</h3>
+      <p>The following are base bands before individual, sun, surface, humidity, and recovery adjustments:</p>
+      <p>Light work, turnout, gentle led work, or waiting without load:</p>
+      <ul>
+        <li>Band I: below 25&deg;C WBGT;</li>
+        <li>Band II: 25&deg;C to below 27&deg;C;</li>
+        <li>Band III: 27&deg;C to below 29&deg;C;</li>
+        <li>Band IV: 29&deg;C to below 31&deg;C;</li>
+        <li>Band V: 31&deg;C or above.</li>
+      </ul>
+      <p>Moderate ridden, mounted-service, training, or light traction work:</p>
+      <ul>
+        <li>Band I: below 23&deg;C WBGT;</li>
+        <li>Band II: 23&deg;C to below 25&deg;C;</li>
+        <li>Band III: 25&deg;C to below 27&deg;C;</li>
+        <li>Band IV: 27&deg;C to below 29&deg;C;</li>
+        <li>Band V: 29&deg;C or above.</li>
+      </ul>
+      <p>Heavy ridden work, sustained speed, hills, freight, passenger carriage, emergency carriage, or material active traction:</p>
+      <ul>
+        <li>Band I: below 21&deg;C WBGT;</li>
+        <li>Band II: 21&deg;C to below 23&deg;C;</li>
+        <li>Band III: 23&deg;C to below 25&deg;C;</li>
+        <li>Band IV: 25&deg;C to below 27&deg;C;</li>
+        <li>Band V: 27&deg;C or above.</li>
+      </ul>
+      <p>Direct sun without effective shade, radiant road heat above 45&deg;C, poor airflow, high humidity with ineffective sweat evaporation, heavy coat, obesity, lack of acclimation, delayed recovery, or respiratory disease increases the band by at least one level. Where two or more such factors are material, the competent person shall consider a two-band increase.</p>
+
+      <h3 id="art-53">3. Cold, humidity, wetness, and wind bands</h3>
+      <p>Cold burden shall be assigned from the most severe of shaded air temperature, wet-bulb temperature, wind chill, coat wetness, precipitation, humidity, drying ability, and individual vulnerability.</p>
+      <p>For a dry, unclipped, acclimated, healthy adult equid with shelter available:</p>
+      <ul>
+        <li>Band I: effective cold reading above 5&deg;C;</li>
+        <li>Band II: above 0&deg;C to 5&deg;C;</li>
+        <li>Band III: above &minus;10&deg;C to 0&deg;C;</li>
+        <li>Band IV: above &minus;20&deg;C to &minus;10&deg;C;</li>
+        <li>Band V: &minus;20&deg;C or below.</li>
+      </ul>
+      <p>The effective cold reading is the lowest relevant value among shaded air temperature, wet-bulb temperature, and wind chill. The assigned band shall increase by at least one level where:</p>
+      <ul>
+        <li>relative humidity is 85 percent or higher at 10&deg;C or below;</li>
+        <li>rain, sleet, wet snow, freezing rain, fog, washing, or sweat materially wets the coat;</li>
+        <li>the equid cannot dry before standing, transport, or further exposure;</li>
+        <li>the equid is clipped, thin, old, young, ill, recovering, exhausted, non-acclimated, or lacks shelter;</li>
+        <li>wind materially penetrates the coat or increases chilling;</li>
+        <li>rugs trap sweat or moisture.</li>
+      </ul>
+      <p>A wet or sweating equid exposed to wind at 5&deg;C or below is at least Band III. Freezing rain affecting coat or footing is at least Band IV. Shivering, dullness, stiffness, poor coordination, inability to warm, or inability to dry is Band IV or V regardless of instrument values.</p>
+
+      <h3 id="art-54">4. Air quality</h3>
+      <p>Unless a stricter veterinary or public-health order applies:</p>
+      <ul>
+        <li>Band I: AQI 0&ndash;50;</li>
+        <li>Band II: AQI 51&ndash;100;</li>
+        <li>Band III: AQI 101&ndash;150;</li>
+        <li>Band IV: AQI 151&ndash;200;</li>
+        <li>Band V: AQI above 200.</li>
+      </ul>
+      <p>An equid with respiratory disease, recent transport stress, heat burden, or active coughing shall be moved at least one band stricter. Visible smoke, eye irritation, laboured breathing, repeated coughing, or ash deposition may assign Band IV or V regardless of reported AQI.</p>
+
+      <h3 id="art-55">5. Visibility</h3>
+      <p>Visibility greater than 500 metres is ordinarily Band I unless another risk applies. Visibility of 200&ndash;500 metres is at least Band II; 100&ndash;200 metres at least Band III; 50&ndash;100 metres at least Band IV; and below 50 metres Band V for public-road use. Route speed, lighting, traffic, crossings, and equid confidence may require a stricter band.</p>
+
+      <h3 id="art-56">6. Surface and traction</h3>
+      <p>The following automatically assign at least the stated band:</p>
+      <ul>
+        <li>repeated minor slipping correction, guarded steps, loose deep footing, or material road heat: Band III;</li>
+        <li>uncontrolled slipping, ice not made hoof-safe, deep mud or snow materially increasing strain, floodwater, rail or tram grooves that cannot be safely crossed, or a surface requiring repeated compensatory effort: Band IV;</li>
+        <li>collapse risk, impassable ice, structural failure, fire, deep floodwater, hidden holes, or movement impossible except evacuation: Band V.</li>
+      </ul>
+
+      <h3 id="art-57">7. Measurement frequency</h3>
+      <p>The band shall be recorded before activity, at least every sixty minutes during Band I, every thirty minutes during Band II, every fifteen minutes during Band III, continuously during a lawful Band IV emergency, and immediately whenever conditions, surface, workload, route, behaviour, sweating, breathing, gait, or recovery change.</p>
+
+      <h3 id="art-58">8. Highest-factor rule</h3>
+      <p>The final band is the highest band produced by any material factor after individual adjustments. Favourable temperature, shade, low load, or good fitness shall not average down severe humidity, wetness, wind, surface, air-quality, visibility, or individual risk.</p>
+
+      <h3 id="art-59">9. Regional adjustment</h3>
+      <p>A competent Imperial authority may issue stricter regional, seasonal, species-specific, work-specific, or individual thresholds based on validated evidence. It shall not issue weaker thresholds without formal amendment of this Standard.</p>
+
+      <h3 id="art-60">10. Record and review</h3>
+      <p>Every official assessment shall retain the raw readings, instruments, calibration status, location, time, work class, equid identity, vulnerability, mitigation, assigned band, assessor, and outcome for at least ten years. False readings, selecting a sheltered measurement point unrepresentative of the equid&rsquo;s exposure, omitting humidity or wetness in cold conditions, or averaging away a severe factor is an offence.</p>
+
+    </div>
+  </details>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Das Kaiserreich</h2>
+      <ul>
+        <li><a href="../../../../de/gov/">Regierung und Doktrin</a></li>
+        <li><a href="../../../../de/gov/#dynamics">Die Acht Dynamiken</a></li>
+        <li><a href="../../../../de/gov/#diarchy">Die Kaiserliche Diarchie</a></li>
+        <li><a href="../../../../de/gov/law/">Kaiserliches Recht</a></li>
+        <li><a href="../../../../de/history/">Geschichte</a></li>
+        <li><a href="../../../../de/symbols/">Name, Flagge und Symbole</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Das Leben hier</h2>
+      <ul>
+        <li><a href="../../../../de/living/">Leben in Hrossagri&#240;</a></li>
+        <li><a href="../../../../de/living/health/">Gesundheit</a></li>
+        <li><a href="../../../../de/living/education/">Bildung und Kinder</a></li>
+        <li><a href="../../../../de/living/transport/">Verkehr und Straßen</a></li>
+        <li><a href="../../../../de/living/justice/">Justiz und Polizei</a></li>
+        <li><a href="../../../../de/living/money/">Arbeit und Geld</a></li>
+        <li><a href="../../../../de/living/citizenship/">Staatsbürgerschaft und Zuflucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pferde und Straßen</h2>
+      <ul>
+        <li><a href="../../../../de/horses/">Pferde</a></li>
+        <li><a href="../../../../de/horses/#welfare">Tierwohl und gebisslose Kontrolle</a></li>
+        <li><a href="../../../../de/horses/#service">Dienstequiden</a></li>
+        <li><a href="../../../../de/horses/road-status/">Standard für Straßenstatus-Marker</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dieses Portal</h2>
+      <ul>
+        <li><a href="../../../../de/about/">Über dieses Projekt</a></li>
+        <li><a href="../../../../de/search/">Portal durchsuchen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="Flagge des Kaiserreichs Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Leider ist Hrossagrith ein fiktives Land. Diese Website ist ein Worldbuilding-Projekt und steht in keiner Verbindung zu einem realen Staat, einer Regierung oder einer amtlichen Stelle. :(</p>
+    <p class="footer__meta">Das Kaiserreich Hrossagri&#240; &middot; Kaiserliches Staatsportal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+</body>
+</html>

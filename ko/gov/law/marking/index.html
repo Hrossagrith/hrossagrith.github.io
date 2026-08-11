@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperial Public-Road Equid Status Marking Standard &mdash; 흐로사그리드 제국</title>
+<meta name="description" content="The universal road-status marking rule for every public-road equid: Facial Markers, insert fields, colours, dimensions, illumination, priority and offences.">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../ko/" data-i18n="{&quot;light&quot;: &quot;밝게&quot;, &quot;dark&quot;: &quot;어둡게&quot;, &quot;theme_to_light&quot;: &quot;밝은 테마로 전환&quot;, &quot;theme_to_dark&quot;: &quot;어두운 테마로 전환&quot;, &quot;search_prompt&quot;: &quot;위에 단어나 구절을 입력하면 이 포털의 모든 페이지를 검색한다.&quot;, &quot;search_running&quot;: &quot;검색 중…&quot;, &quot;search_none&quot;: &quot;모든 단어를 포함하는 항목이 등록부에 없다. 단어 수를 줄이거나 다른 단어로 시도할 것.&quot;, &quot;search_error&quot;: &quot;검색 색인을 불러오지 못하였다. 다시 시도할 것.&quot;, &quot;results_one&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_many&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_none&quot;: &quot;“{q}”에 대한 검색 결과가 없습니다&quot;, &quot;expand_all&quot;: &quot;모든 부 펼치기&quot;, &quot;collapse_all&quot;: &quot;모든 부 접기&quot;}">
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">세계관 구축 프로젝트</p>
+    <form class="search" role="search" action="../../../../search/" method="get">
+      <label class="visually-hidden" for="q">포털 검색</label>
+      <input type="search" id="q" name="q" placeholder="포털 검색" autocomplete="off">
+      <button type="submit">검색</button>
+    </form>
+    <label class="visually-hidden" for="locale">언어</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru">Русский</option>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko" selected>한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">어둡게</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="흐로사그리드 제국의 문장: 원형 문양 안에서 앞발을 든 히포그리프" width="360" height="360">
+    <p class="masthead__state">제국 국가 포털</p>
+    <p class="masthead__name"><a href="../../../../ko/">흐로사그리드 제국</a></p>
+    <p class="masthead__motto">말들의 비호, 그리고 강제되는 평화</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="모든 부문">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        메뉴
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>제국</h2>
+            <ul>
+            <li><a href="../../../../ko/gov/">정부와 교의</a></li>
+            <li><a href="../../../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+            <li><a href="../../../../ko/gov/#diarchy">제국 이두정</a></li>
+            <li><a href="../../../../ko/gov/law/">제국법</a></li>
+            <li><a href="../../../../ko/history/">역사</a></li>
+            <li><a href="../../../../ko/symbols/">이름, 국기, 상징</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이곳에서의 삶</h2>
+            <ul>
+            <li><a href="../../../../ko/living/">흐로사그리드에서의 삶</a></li>
+            <li><a href="../../../../ko/living/health/">보건</a></li>
+            <li><a href="../../../../ko/living/education/">교육과 아동</a></li>
+            <li><a href="../../../../ko/living/transport/">교통과 도로</a></li>
+            <li><a href="../../../../ko/living/justice/">사법과 치안</a></li>
+            <li><a href="../../../../ko/living/money/">노동과 금전</a></li>
+            <li><a href="../../../../ko/living/citizenship/">시민권과 비호</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>말과 도로</h2>
+            <ul>
+            <li><a href="../../../../ko/horses/">말</a></li>
+            <li><a href="../../../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+            <li><a href="../../../../ko/horses/#service">공무 말과 동물</a></li>
+            <li><a href="../../../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이 포털</h2>
+            <ul>
+            <li><a href="../../../../ko/about/">이 프로젝트에 대하여</a></li>
+            <li><a href="../../../../ko/search/">포털 검색</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../../ko/">홈</a>
+    <a href="../../../../ko/horses/">말</a>
+    <a href="../../../../ko/living/">삶</a>
+    <a href="../../../../ko/gov/">정부</a>
+    <a href="../../../../ko/gov/law/" aria-current="page">법</a>
+    <a href="../../../../ko/history/">역사</a>
+    <a href="../../../../ko/symbols/">상징</a>
+    <a href="../../../../ko/about/">소개</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../ko/">홈</a><span>&rsaquo;</span><a href="../../../../ko/gov/">정부</a><span>&rsaquo;</span><a href="../../../../ko/gov/law/">법</a><span>&rsaquo;</span><strong>Imperial Public-Road Equid Status Marking Standard</strong></div>
+
+<main id="main" class="shell wrap">
+  <div class="notice notice--lang"><p>이 법령은 아직 이 언어로 공개되지 않았다. 아래는 영어 본문이다.</p></div>
+
+
+  <p class="entry">Book III &middot; Standard</p>
+  <h1 class="page-title">Imperial Public-Road Equid Status Marking Standard</h1>
+  <p class="page-standfirst">The universal marking rule for every equid on a public road: the Facial Marker, its interchangeable insert, the fields and symbols, their dimensions, illumination, priority and control.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">This Standard shall regulate the public-road status markers used by ridden, driven, led, mounted-service, carriage, freight, taxi, ceremonial, emergency, veterinary, postal, military, sovereign, government, and private equids.</p>
+    </div>
+    <aside class="marg">
+      <strong>Status</strong>
+      In force. This is the final and binding universal standard for every public-road equid. The Carriage Code may impose additional carriage-specific or stricter requirements. The Standard has no chapters and no numbered articles; nothing in it is reserved.
+    </aside>
+  </div>
+
+  <h2 id="art-1">Status</h2>
+  <p>This is the final and binding universal standard for every public-road equid. The Carriage Code may impose additional carriage-specific or stricter requirements.</p>
+
+  <h2 id="art-2">Purpose</h2>
+  <p>This Standard shall regulate the public-road status markers used by ridden, driven, led, mounted-service, carriage, freight, taxi, ceremonial, emergency, veterinary, postal, military, sovereign, government, and private equids.</p>
+
+  <h2 id="art-3">Definitions and core rule</h2>
+  <p>Facial Marker means an approved, non-restraining, marker-bearing facial tack component used to display an interchangeable road-status insert clearly from the front. Facial Markers are either marker-bearing frenteras or marker-bearing muserolas. A Facial Marker may be integrated into headgear or fitted as a separate non-control component.</p>
+  <p>Frentera means, for the purposes of this Standard, a frontal tack component extending vertically along the centre of the equid&rsquo;s face from the upper bridle, headstall, browband, crown area, or equivalent upper attachment toward the forehead or nasal bridge. It may be narrow, X-shaped, branched, broad, ornamental, or panel-like, and may terminate above, attach to, overlap, or continue onto a noseband. Its official insert may be carried upon the forehead or upon the stable upper nasal bridge. A component confined to crossing or encircling the nose, without an upper vertical facial connection, is not a frentera.</p>
+  <p>Muserola means, for the purposes of this Standard, a noseband or nosepiece crossing and ordinarily encircling the equid&rsquo;s nose. A marker-bearing muserola may be broad, decorative, separately mounted, incorporated into lawful headgear, or integrated into a lawful control noseband. It need not attach to the browband, crownpiece, or any vertical frontal component. The term includes an approved broad marker-bearing noseband or nosepiece performing the same function, regardless of commercial or regional name.</p>
+  <p>A frentera or muserola qualifies as a Facial Marker only where it provides a dedicated, clearly visible insert field of sufficient size and contrast for road use. A small ornament, medallion, stud, badge, or decorative plate that cannot carry the required insert visibly does not qualify.</p>
+  <p>Every equid entering a public road shall wear approved public-road bitless headgear fitted with an approved Facial Marker displaying the equid&rsquo;s current interchangeable retroreflective and switchably illuminated road-status insert.</p>
+  <p>A Facial Marker may be mounted upon the forehead, the stable nasal bridge, or both. A marker-bearing muserola, including a broad noseband or nosepiece performing that function, may qualify whether or not it attaches to the browband or crownpiece.</p>
+  <p>The insert shall occupy a dedicated, visually distinct field and may be a circle, square, diamond, rectangle, shield, emblem shape, or another approved simple visible shape. It shall remain recognisable from the front and shall not be hidden, divided, imitated, or visually overwhelmed by mane, forelock, straps, studs, medallions, filigree, tassels, or other decoration.</p>
+  <p>A nose-mounted Facial Marker shall remain over the stable nasal bone and clear of lower nasal cartilage and nostrils. Where integrated into a pressure-bearing noseband, its window, slot, pocket, insert, backing, edging, and fasteners shall not stiffen the noseband, create hard edges or pressure points, concentrate force, impair fit or release, alter rein or line action, or restrict breathing.</p>
+  <p>The marker shall be a road instruction to humans. It shall not be used as advertisement, decoration-only, medical disclosure beyond necessity, shame marking, or a replacement for driver/rider judgement.</p>
+
+  <h2 id="art-4">Marker placement system</h2>
+  <ul>
+    <li>Front: interchangeable retroreflective and switchably illuminated insert displayed in either a marker-bearing frentera or a marker-bearing muserola.</li>
+  </ul>
+  <p>An extensive frentera shall not be approved solely because it can carry an insert. It shall provide a dedicated marker field and comply with all applicable vision, breathing, weight, flexibility, heat, stability, and welfare requirements.</p>
+  <ul>
+    <li>Side: round or approved side status plate on harness, breastcollar, breastplate, saddlecloth, service cloth, or other non-restraining equipment.</li>
+    <li>Rear carriage board: markers arranged to match team formation so road users can identify the status of each equid in a hitch.</li>
+    <li>No direct body application: no paint, dye, clipping, branding, glue, mane attachment, tail attachment, skin marking, or coat alteration.</li>
+  </ul>
+
+  <h2 id="art-5">Ordinary and restricted markers</h2>
+  <ul>
+    <li>White reflective field: ordinary road-certified equid.</li>
+    <li>Green reflective field: green equid, provisional road certificate, training status, or supervised road work.</li>
+    <li>Yellow warning field: caution status, sensitivity, extra-space requirement, or heightened startle risk.</li>
+    <li>White field with red border: restricted passing; pass only by driver, rider, or handler signal.</li>
+    <li>Solid red field with a white X: do not pass; stop and wait because an active hazard, incident, or immediate control condition exists.</li>
+  </ul>
+
+  <h2 id="art-6">Public availability of ordinary markers</h2>
+  <p>Ordinary, green-status, caution, restricted-passing, hazard, pregnancy-status, and other non-service protective markers may be manufactured, stocked, advertised, sold, purchased, possessed, and replaced through ordinary pet, tack, road-safety, veterinary, and general retail channels. Possession alone is not an offence. The offence is false display, concealment, misuse, alteration, or misrepresentation of the equid&rsquo;s current status.</p>
+
+  <h2 id="art-7">Service markers</h2>
+  <ul>
+    <li>Blue with Road Guard emblem: Imperial Road Guard, traffic patrol, or DPS-equivalent road-control service.</li>
+    <li>Blue with police shield or police star: police service where authorised.</li>
+    <li>White with red cross: ambulance or authorised medical emergency service.</li>
+    <li>Red with white flame: fire or rescue service.</li>
+    <li>Green with white paw-and-hoof: veterinary emergency service.</li>
+    <li>Blue with winged letter, Hermes-wing emblem, postal horn, or courier emblem: post, messenger, or courier service.</li>
+    <li>Black: sovereign or Empress passage where legally authorised.</li>
+    <li>Black with crown: authorised Imperial government official, deputy, ministerial, or state authority passage.</li>
+    <li>Very dark green with military sigil: military service.</li>
+  </ul>
+
+  <h2 id="art-8">Writing rule</h2>
+  <p>Ordinary horse-mounted markers shall not rely on writing. Writing may be used on authorised government or service carriage bodies, rider uniforms, driver uniforms, service cloths, carriage panels, or official livery where approved.</p>
+
+  <h2 id="art-9">Binding technical and administrative rules</h2>
+
+  <h2 id="art-10">Marker dimensions</h2>
+  <p>The clear visible field of a front insert shall measure not less than:</p>
+  <ul>
+    <li>70 millimetres across its shortest dimension for an equid above 300 kilograms;</li>
+    <li>60 millimetres for an equid of 100&ndash;300 kilograms;</li>
+    <li>50 millimetres for an equid below 100 kilograms.</li>
+  </ul>
+  <p>A side status plate shall measure not less than 90 millimetres across its shortest dimension. A rear carriage-board marker shall measure not less than 120 millimetres. Borders, symbols, and divided fields shall remain proportionate and shall not reduce any required clear field below these minima.</p>
+
+  <h2 id="art-11">Viewing and recognition test</h2>
+  <p>A front marker shall be correctly identified by a person with ordinary corrected vision at not less than 50 metres in daylight and 30 metres at night. Side and rear markers shall be identified at not less than 60 metres in daylight and 40 metres at night. Night testing shall be passed both in powered illuminated mode and in unpowered retroreflective mode under lawful road lighting. Testing shall include frontal and fifteen-degree offset views, walking and ordinary road movement, wet conditions, partial forelock movement, full and low battery states, and deliberate switching on and off.</p>
+
+  <h2 id="art-12">Retroreflective material</h2>
+  <p>Every operational field, border, and symbol shall use certified road-grade retroreflective material suitable for rain, mud, freezing, heat, repeated flexion, cleaning, and at least two years of ordinary service. A marker that cracks, delaminates, becomes permanently stained, curls, loses contrast, or fails the viewing test shall be replaced immediately.</p>
+
+  <h2 id="art-13">Switchable marker illumination</h2>
+  <p>Every approved operational front, side, and rear marker shall be capable of operating in both:</p>
+  <ul>
+    <li>an unpowered road-grade retroreflective mode; and</li>
+    <li>an independently switchable, steady self-illuminated mode reproducing the marker&rsquo;s assigned field colour, border, shape, and symbol.</li>
+  </ul>
+  <p>The illumination control shall permit deliberate activation and deactivation without removing or reversing the marker. Automatic low-light activation or dimming may supplement, but shall not replace, a manual override available to the rider, driver, handler, or authorised operator.</p>
+  <p>Illumination shall be activated from sunset to sunrise, in tunnels, and whenever fog, rain, snow, smoke, dust, glare, or another condition materially reduces marker recognition. It may be switched off in adequate daylight or where ordered to prevent glare, provided the retroreflective marker remains fully visible and no night or reduced-visibility activation duty applies.</p>
+  <p>Illumination shall be steady. It shall not flash, strobe, pulse, rotate, sweep, alternate colours, imitate a turn, brake, hazard, police, Road Guard, medical, fire, rescue, or other emergency warning lamp, project a beam onto the road, or function as an equid ground-guidance lamp. Status-marker illumination is identification lighting and does not create emergency priority.</p>
+  <p>The powered marker shall preserve the same colour-blind-accessible shape, border, and symbol used in its unpowered state. A white field shall emit white; coloured fields shall emit their assigned approved colour; and white borders and symbols shall remain white. A black field shall remain visually black while its required white or silver border and emblem illuminate. A very dark field may use only the approved low-luminance hue while its border and emblem provide recognition.</p>
+  <p>Brightness shall be sufficient to pass the night recognition test without glare to the equid, rider, driver, passengers, pedestrians, or other road users. The emitter shall be diffused and physically shielded so that no direct light source is visible from either equid eye position and no light spills into the eyes or creates distracting reflections on the face, headgear, reins, lines, shafts, or vehicle. The light source, diffuser, battery, wiring, switch, and housing shall not create heat, pressure, sharp edges, weight concentration, vibration, rattling, entanglement, water ingress, delayed tack release, or interference with reins, lines, harness, breathing, vision, or movement.</p>
+  <p>The complete electrical assembly shall be at least IP65 equivalent. Batteries and electrical contacts shall be enclosed against rain, washing, sweat, mud, crushing, leakage, and access by the equid. A manual control shall be operable in gloves where relevant and guarded against accidental activation, deactivation, or mode change.</p>
+  <p>Where the rider, driver, or handler cannot directly see every required illuminated marker from the normal operating position, the system shall provide a non-distracting status indication confirming activation, power condition, and individual marker failure. A carriage or multi-equid team shall provide central control and individual failure identification for every required front, side, and rear marker.</p>
+  <p>A programmable or software-controlled light source shall be locked to the currently fitted certified insert. A lawful change between non-service statuses may occur only by fitting the corresponding approved physical insert, or by another equally secure approved method that changes the visible unpowered field and the illuminated identity together. An ordinary user shall not be able to select an independent light colour, border, symbol, emblem, service status, or legal instruction through a menu, application, remote control, or replacement light profile. Official-service identities remain subject to controlled issue and verification.</p>
+  <p>A powered marker shall remain fully retroreflective when switched off or when power fails. Its battery reserve shall cover the planned journey plus not less than two hours. Commercial, public, service, rental, tourist, freight, ceremonial, emergency, and government road use shall carry an approved replacement power source or backup illuminated marker.</p>
+  <p>A standard emergency temporary marker need not be self-illuminated only during direct movement to the nearest safe place, Rest Court, stable, veterinary facility, or repair point, provided all other required lighting and reflective visibility remain operational.</p>
+
+  <h2 id="art-14">Colour and colour-blind accessibility</h2>
+  <p>Colour shall never be the sole distinction between instructions. Every status shall also use a unique shape, border, or symbol. The approved colour values and tolerances shall be published by the competent road authority and verified with calibrated colour measurement.</p>
+  <p>The solid red hazard field with a white X is reserved for stop-and-wait conditions. The medical-service marker remains a white field with a red medical cross. These two markers shall not share the same dominant field colour, border, or outer shape.</p>
+
+  <h2 id="art-15">Status hierarchy and combinations</h2>
+  <p>Where more than one status applies, the highest-priority front instruction shall be displayed in this order:</p>
+  <ol>
+    <li>active hazard or stop;</li>
+    <li>restricted passing;</li>
+    <li>authorised emergency service;</li>
+    <li>police or Road Guard traffic control;</li>
+    <li>pregnancy or medical vulnerability;</li>
+    <li>yellow caution;</li>
+    <li>green or provisional status;</li>
+    <li>ordinary road certification.</li>
+  </ol>
+  <p>Secondary statuses shall appear on approved side or rear markers. An authorised emergency, police, Road Guard, government, or other service status shall not erase or conceal pregnancy, green, caution, restricted, hazard, or suspension status. Two front statuses may share a certified divided field only where each retains its minimum size, full symbol, full contrast, and immediate recognisability. Decorative combinations, blended colours, half-symbols, reversible ambiguity, and unofficial overlays are prohibited.</p>
+
+  <h2 id="art-16">Dark service fields</h2>
+  <p>Black, very dark green, and other dark service fields shall have a continuous white or silver retroreflective outer border not less than one-tenth of the marker&rsquo;s shortest dimension and a high-contrast retroreflective emblem. In illuminated mode, a black field shall remain visually black while the border and emblem illuminate; a very dark coloured field may emit only its approved low-luminance hue while the border and emblem remain the principal night-recognition elements. A dark field without the required border, emblem, and lawful illumination capability is not road-valid at night.</p>
+
+  <h2 id="art-17">Attachment and breakaway safety</h2>
+  <p>A Facial Marker shall weigh no more than necessary and shall comply with the Imperial Tack Measurement Schedule. It shall not stiffen a control noseband, alter rein or line action, delay release, create heat, rattle, swing, obscure vision, or concentrate pressure.</p>
+  <p>A side or rear marker shall remain secure under ordinary movement, wind, rain, and vibration. Where detachment could entangle an equid, rein, line, harness, rider, wheel, or runner, the mounting shall incorporate an approved safe-release or guarded attachment system.</p>
+
+  <h2 id="art-18">Damaged, lost, dirty, or concealed markers</h2>
+  <p>Where a required marker becomes missing, muddy, snow-covered, hidden, detached, damaged, reversed, unreadable, unable to illuminate when illumination is required, stuck in an incorrect mode, or depleted of safe power, the rider, driver, or handler shall stop at the first safe place and clean, uncover, correct, recharge, repair, or replace it.</p>
+  <p>A standard temporary marker may be used only for direct movement to the nearest safe place, Rest Court, stable, veterinary facility, or repair point. A handwritten note, coloured ribbon, body paint, phone screen, ordinary light, or improvised decoration is not a substitute.</p>
+
+  <h2 id="art-19">Authorisation and anti-counterfeit control</h2>
+  <p>Police, Road Guard, medical, fire, rescue, veterinary, postal, military, sovereign, government, and other official-service markers shall carry a controlled issue number or secure digital verification linked to the authorised service, equid, vehicle where applicable, issue date, expiry, and revocation status. Official marker specifications, meanings, authorised emblems, and public-recognition guides shall be publicly accessible, but the physical official markers and credentials shall be manufactured, issued, supplied, and sold only through authorised channels to verified services or authorised persons.</p>
+  <p>Unauthorised manufacture, sale, lending, display, imitation, alteration, duplication, possession for deceptive use, or failure to surrender a revoked service marker is an offence.</p>
+
+  <h2 id="art-20">Inspection and replacement</h2>
+  <p>Commercial, public, service, rental, tourist, freight, ceremonial, emergency, and government markers shall receive a recorded condition check before each working day and a formal inspection at least every six months. The check shall include retroreflective condition, colour and symbol integrity, switch guarding and operation, brightness and dimming, battery reserve, backup, wiring, sealing, heat, glare, attachment, operator status indication, central control where fitted, individual failure identification, certified colour lock, and correct activation. Private road markers shall be checked before every road use and formally reviewed at road-certificate renewal.</p>
+
+  <h2 id="art-21">Offences</h2>
+  <p>Offences include displaying a false status, using an unreadable marker, concealing a required status, displaying a lower-priority status instead of a higher one, using an unauthorised service emblem, altering a marker to resemble another status, attaching the marker directly to the body, failing to activate required illumination, using flashing, pulsing, colour-changing, dazzling, misleading, or service-imitating marker illumination, or continuing road use after marker or marker-power failure except direct lawful movement to safety.</p>
+
+  <h2 id="art-22">Finality</h2>
+  <p>These technical and administrative rules are binding. Later diagrams and approved-product lists may illustrate or impose stricter requirements but shall not weaken them.</p>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>제국</h2>
+      <ul>
+        <li><a href="../../../../ko/gov/">정부와 교의</a></li>
+        <li><a href="../../../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+        <li><a href="../../../../ko/gov/#diarchy">제국 이두정</a></li>
+        <li><a href="../../../../ko/gov/law/">제국법</a></li>
+        <li><a href="../../../../ko/history/">역사</a></li>
+        <li><a href="../../../../ko/symbols/">이름, 국기, 상징</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이곳에서의 삶</h2>
+      <ul>
+        <li><a href="../../../../ko/living/">흐로사그리드에서의 삶</a></li>
+        <li><a href="../../../../ko/living/health/">보건</a></li>
+        <li><a href="../../../../ko/living/education/">교육과 아동</a></li>
+        <li><a href="../../../../ko/living/transport/">교통과 도로</a></li>
+        <li><a href="../../../../ko/living/justice/">사법과 치안</a></li>
+        <li><a href="../../../../ko/living/money/">노동과 금전</a></li>
+        <li><a href="../../../../ko/living/citizenship/">시민권과 비호</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>말과 도로</h2>
+      <ul>
+        <li><a href="../../../../ko/horses/">말</a></li>
+        <li><a href="../../../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+        <li><a href="../../../../ko/horses/#service">공무 말과 동물</a></li>
+        <li><a href="../../../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이 포털</h2>
+      <ul>
+        <li><a href="../../../../ko/about/">이 프로젝트에 대하여</a></li>
+        <li><a href="../../../../ko/search/">포털 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="흐로사그리드 제국의 국기" width="120" height="80">
+    <p class="footer__disclaimer">안타깝게도 흐로사그리드는 가상의 나라이다. 이 사이트는 세계관 구축 프로젝트이며, 실재하는 어떠한 국가나 정부, 공식 기관과도 관련이 없다. :(</p>
+    <p class="footer__meta">흐로사그리드 제국 &middot; 제국 국가 포털 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+</body>
+</html>
