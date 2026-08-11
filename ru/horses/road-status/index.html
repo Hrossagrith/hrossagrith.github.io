@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дорожные маркеры &mdash; Империя Хроссагрид</title>
+<meta name="description" content="Имперский стандарт маркировки дорожного статуса непарнокопытных.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Поиск по порталу</label>
+      <input type="search" id="q" name="q" placeholder="Поиск по порталу" autocomplete="off">
+      <button type="submit">Найти</button>
+    </form>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" selected>Русский</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
+         width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../../../ru/">Империя Хроссагрид</a></p>
+    <p class="masthead__motto">Убежище для лошадей и мир, который обеспечен силой закона</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Все разделы">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Меню
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Империя</h2>
+            <ul>
+            <li><a href="../../../ru/gov/">Государство и доктрина</a></li>
+            <li><a href="../../../ru/gov/#dynamics">Восемь Динамик</a></li>
+            <li><a href="../../../ru/gov/#diarchy">Имперская диархия</a></li>
+            <li><a href="../../../ru/gov/law/">Имперское право</a></li>
+            <li><a href="../../../ru/history/">История</a></li>
+            <li><a href="../../../ru/symbols/">Название, флаг и символы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Жизнь здесь</h2>
+            <ul>
+            <li><a href="../../../ru/living/">Жизнь в Хроссагрид</a></li>
+            <li><a href="../../../ru/living/health/">Здравоохранение</a></li>
+            <li><a href="../../../ru/living/education/">Образование и дети</a></li>
+            <li><a href="../../../ru/living/transport/">Транспорт и дороги</a></li>
+            <li><a href="../../../ru/living/justice/">Правосудие и полиция</a></li>
+            <li><a href="../../../ru/living/money/">Труд и деньги</a></li>
+            <li><a href="../../../ru/living/citizenship/">Гражданство и убежище</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Лошади и дороги</h2>
+            <ul>
+            <li><a href="../../../ru/horses/">Лошади</a></li>
+            <li><a href="../../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+            <li><a href="../../../ru/horses/#service">Служебные непарнокопытные</a></li>
+            <li><a href="../../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Портал</h2>
+            <ul>
+            <li><a href="../../../ru/about/">О проекте</a></li>
+            <li><a href="../../../ru/search/">Поиск по порталу</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ru/">Главная</a>
+    <a href="../../../ru/horses/" aria-current="page">Лошади</a>
+    <a href="../../../ru/living/">Жизнь</a>
+    <a href="../../../ru/gov/">Государство</a>
+    <a href="../../../ru/gov/law/">Право</a>
+    <a href="../../../ru/history/">История</a>
+    <a href="../../../ru/symbols/">Символы</a>
+    <a href="../../../ru/about/">О проекте</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ru/">Главная</a><span>&rsaquo;</span><a href="../../../ru/horses/">Лошади</a><span>&rsaquo;</span><strong>Дорожные маркеры</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Книга III &middot; Стандарт</p>
+  <h1 class="page-title">Маркировка дорожного статуса непарнокопытных</h1>
+  <p class="page-standfirst">Окончательный и обязывающий всеобщий стандарт для каждого непарнокопытного на общественной дороге. Кодекс упряжных животных может добавлять к нему дополнительные или более строгие требования.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Каждое непарнокопытное, выходящее на общественную дорогу, обязано нести разрешённую дорожную безтрензельную амуницию с разрешённым <strong>лицевым маркером</strong>, показывающим текущую сменную световозвращающую и переключаемо подсвечиваемую вставку дорожного статуса. Маркер есть дорожное указание людям. Он не может использоваться как реклама, как одно лишь украшение, как медицинское раскрытие сверх необходимого, как клеймо позора или как замена суждению всадника либо возницы.</p>
+
+      <h2>Определения</h2>
+      <p class="h2-num">Френтера и мусерола</p>
+      <p><strong>Френтера</strong> — лобовой элемент, идущий вертикально по центру морды от верхней части оголовья, налобника или затылочного ремня ко лбу либо переносице. Она может быть узкой, X-образной, разветвлённой, широкой или панельной. Элемент, только пересекающий или охватывающий нос и не имеющий верхнего вертикального соединения, френтерой не является.</p>
+      <p><strong>Мусерола</strong> — капсюль или наносник, пересекающий и обычно охватывающий нос. Она может быть широкой, декоративной, установленной отдельно или встроенной в законный управляющий капсюль, и не обязана крепиться к налобнику или затылочному ремню.</p>
+      <p>И та и другая признаётся лицевым маркером только тогда, когда даёт выделенное, ясно видимое поле вставки достаточного размера и контраста для дорожного применения. Мелкое украшение, медальон, заклёпка или бляха, неспособные нести вставку заметно, не годятся.</p>
+    </div>
+    <aside class="marg">
+      <strong>Никакой маркировки по телу</strong>
+      Ни краска, ни окрашивание, ни выстригание, ни клеймо, ни клей, ни крепление к гриве или хвосту, ни разметка по коже, ни изменение шерсти не могут применяться для показа статуса. Никогда.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Обычные и ограничительные маркеры</h2>
+  <p class="h2-num">Цвет никогда не является единственным различием</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Белое поле</strong>
+          <span class="marker__what">Обычное непарнокопытное с дорожным сертификатом.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Зелёное поле</strong>
+          <span class="marker__what">Неопытное животное, временный сертификат, обучение или работа на дороге под надзором.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Жёлтое поле</strong>
+          <span class="marker__what">Осторожно: чувствительность, потребность в дополнительном пространстве или повышенная пугливость.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Белое поле с красной каймой</strong>
+          <span class="marker__what">Обгон ограничен. Обгонять только по сигналу возницы, всадника или сопровождающего.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Красное поле с белым X</strong>
+          <span class="marker__what">Обгон запрещён. Остановиться и ждать: действует опасность или требуется немедленный контроль.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h2>Служебные маркеры</h2>
+  <p class="h2-num">Выпускаются и проверяются только через уполномоченные каналы</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Синее, эмблема Дорожной стражи</strong>
+          <span class="marker__what">Имперская дорожная стража, дорожный патруль, служба управления движением.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Синее, полицейский щит</strong>
+          <span class="marker__what">Полицейская служба, при наличии полномочий.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Белое, красный крест</strong>
+          <span class="marker__what">Санитарная карета или уполномоченная служба скорой медицинской помощи.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Красное, белое пламя</strong>
+          <span class="marker__what">Пожарная или спасательная служба.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Зелёное, лапа и копыто</strong>
+          <span class="marker__what">Ветеринарная экстренная служба.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Синее, пегас</strong>
+          <span class="marker__what">Имперская почта, курьерская или посыльная служба.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Чёрное с белой каймой</strong>
+          <span class="marker__what">Проезд суверена, при наличии законных полномочий.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Чёрное с короной</strong>
+          <span class="marker__what">Проезд уполномоченного имперского, министерского или государственного должностного лица.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Тёмно-зелёное со знаком</strong>
+          <span class="marker__what">Военная служба.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <h2>Размещение</h2>
+      <p class="h2-num">Спереди, сбоку и сзади</p>
+      <ul>
+        <li><strong>Спереди:</strong> сменная вставка во френтере или мусероле с маркером.</li>
+        <li><strong>Сбоку:</strong> круглая или иная разрешённая пластина статуса на упряжи, нагруднике, подперсье, вальтрапе или ином не стесняющем снаряжении.</li>
+        <li><strong>Задний каретный щит:</strong> маркеры, расставленные по схеме запряжки, чтобы участники движения различали статус каждого животного в упряжке.</li>
+      </ul>
+      <p>Носовой маркер должен располагаться над твёрдой носовой костью, вне нижних носовых хрящей и ноздрей. При встраивании в давящий капсюль ни окно, ни подложка, ни окантовка, ни застёжки не должны делать капсюль жёстче, создавать острые кромки или точки давления, концентрировать усилие, ухудшать посадку или расстёгивание, менять действие поводьев и вожжей либо стеснять дыхание.</p>
+
+      <h2>Минимальные размеры</h2>
+      <p class="h2-num">Чистое видимое поле, наименьший размер</p>
+      <ul>
+        <li><strong>70&nbsp;мм</strong> для передней вставки при массе животного свыше 300&nbsp;кг</li>
+        <li><strong>60&nbsp;мм</strong> при массе 100–300&nbsp;кг</li>
+        <li><strong>50&nbsp;мм</strong> при массе менее 100&nbsp;кг</li>
+        <li><strong>90&nbsp;мм</strong> для боковой пластины статуса</li>
+        <li><strong>120&nbsp;мм</strong> для маркера заднего каретного щита</li>
+      </ul>
+      <p>Каймы, символы и разделённые поля должны сохранять пропорции и не могут уменьшать требуемое чистое поле ниже этих минимумов.</p>
+
+      <h2>Испытание на распознавание</h2>
+      <p class="h2-num">Измеряется, а не декларируется</p>
+      <p>Передний маркер должен верно опознаваться человеком с обычным скорректированным зрением не менее чем с 50&nbsp;м днём и с 30&nbsp;м ночью; боковой и задний — с 60&nbsp;м и 40&nbsp;м. Ночное испытание проходится и в режиме подсветки, и в непитаемом световозвращающем режиме. Испытание включает вид спереди и под углом пятнадцать градусов, шаг и обычное дорожное движение, мокрые условия, частичное движение чёлки, полный и разряженный аккумулятор, а также намеренное включение и выключение.</p>
+
+      <h2>Подсветка</h2>
+      <p class="h2-num">Опознавательный свет, а не аварийный</p>
+      <p>Каждый разрешённый маркер работает и в непитаемом световозвращающем режиме, и в независимо переключаемом режиме ровной собственной подсветки, воспроизводящем присвоенные цвет поля, кайму, форму и символ. Подсветка обязательна от заката до рассвета, в тоннелях и всякий раз, когда туман, дождь, снег, дым, пыль или блики существенно ухудшают распознавание.</p>
+      <p>Подсветка должна быть ровной. Она не может мигать, стробировать, пульсировать, вращаться, бегать, менять цвет, имитировать указатель поворота, стоп-сигнал, аварийную или экстренную лампу, проецировать луч на дорогу или работать как лампа наземного наведения. Подсветка статуса — опознавательный свет и никакого приоритета не создаёт.</p>
+      <p>Излучатель рассеян и экранирован так, чтобы источник света не был виден ни из одного положения глаз животного. Электрическая сборка целиком имеет степень защиты не ниже IP65. Питаемый маркер остаётся полностью световозвращающим при выключении и при отказе питания, а запас батареи покрывает планируемую поездку плюс не менее двух часов.</p>
+
+      <h2>Порядок приоритета</h2>
+      <p class="h2-num">Когда применимо более одного статуса</p>
+      <ol>
+        <li>Действующая опасность или остановка</li>
+        <li>Ограничение обгона</li>
+        <li>Уполномоченная экстренная служба</li>
+        <li>Полиция или Дорожная стража, управляющая движением</li>
+        <li>Жерёбость или медицинская уязвимость</li>
+        <li>Жёлтая осторожность</li>
+        <li>Зелёный или временный статус</li>
+        <li>Обычная дорожная сертификация</li>
+      </ol>
+      <p>Второстепенные статусы выносятся на разрешённые боковые или задние маркеры. Служебный статус не отменяет и не скрывает статус жерёбости, зелёный, осторожность, ограничение, опасность или приостановление. Декоративные сочетания, смешанные цвета, половинчатые символы и неофициальные наложения запрещены.</p>
+
+      <h2>Правонарушения</h2>
+      <p class="h2-num">Что наказывается</p>
+      <p>Показ ложного статуса; использование нечитаемого маркера; сокрытие обязательного статуса; показ статуса более низкого приоритета вместо более высокого; использование неразрешённой служебной эмблемы; изменение маркера до сходства с другим статусом; крепление маркера прямо к телу; невключение обязательной подсветки; применение мигающей, пульсирующей, меняющей цвет, слепящей или имитирующей служебную подсветки; продолжение движения после отказа маркера или его питания, кроме прямого законного перемещения к безопасному месту.</p>
+      <p>Неразрешённые изготовление, продажа, передача, показ, имитация, изменение, копирование, хранение с целью обмана либо несдача отозванного служебного маркера равным образом являются правонарушениями. Обычные неслужебные маркеры, напротив, свободно изготавливаются, продаются и хранятся: само по себе владение правонарушением не является, наказывается ложный показ или введение в заблуждение.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Доступность.</strong> Официальные спецификации маркеров, их значения, разрешённые эмблемы и справочники для узнавания общедоступны. Сами физические служебные маркеры и удостоверения изготавливаются, выдаются и поставляются только через уполномоченные каналы проверенным службам.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Тёмные поля</strong>
+      Чёрные, тёмно-зелёные и иные тёмные служебные поля несут непрерывную белую или серебристую световозвращающую внешнюю кайму шириной не менее одной десятой наименьшего размера маркера и контрастную эмблему. Тёмное поле без такой каймы, эмблемы и законной способности к подсветке ночью недействительно.
+      <br><br>
+      <strong>Проверка</strong>
+      Коммерческие, общественные, служебные, прокатные, грузовые, церемониальные, экстренные и государственные маркеры проходят регистрируемую проверку перед каждым рабочим днём и формальный осмотр не реже одного раза в шесть месяцев.
+      <br><br>
+      <strong>Если отказал</strong>
+      Остановиться в первом безопасном месте и очистить, открыть, исправить, зарядить, починить или заменить. Записка от руки, лента, краска по телу, экран телефона или обычный фонарь заменой не являются.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Империя</h2>
+      <ul>
+        <li><a href="../../../ru/gov/">Государство и доктрина</a></li>
+        <li><a href="../../../ru/gov/#dynamics">Восемь Динамик</a></li>
+        <li><a href="../../../ru/gov/#diarchy">Имперская диархия</a></li>
+        <li><a href="../../../ru/gov/law/">Имперское право</a></li>
+        <li><a href="../../../ru/history/">История</a></li>
+        <li><a href="../../../ru/symbols/">Название, флаг и символы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Жизнь здесь</h2>
+      <ul>
+        <li><a href="../../../ru/living/">Жизнь в Хроссагрид</a></li>
+        <li><a href="../../../ru/living/health/">Здравоохранение</a></li>
+        <li><a href="../../../ru/living/education/">Образование и дети</a></li>
+        <li><a href="../../../ru/living/transport/">Транспорт и дороги</a></li>
+        <li><a href="../../../ru/living/justice/">Правосудие и полиция</a></li>
+        <li><a href="../../../ru/living/money/">Труд и деньги</a></li>
+        <li><a href="../../../ru/living/citizenship/">Гражданство и убежище</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Лошади и дороги</h2>
+      <ul>
+        <li><a href="../../../ru/horses/">Лошади</a></li>
+        <li><a href="../../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+        <li><a href="../../../ru/horses/#service">Служебные непарнокопытные</a></li>
+        <li><a href="../../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Портал</h2>
+      <ul>
+        <li><a href="../../../ru/about/">О проекте</a></li>
+        <li><a href="../../../ru/search/">Поиск по порталу</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>
