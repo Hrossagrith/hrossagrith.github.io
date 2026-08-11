@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About &mdash; The Empire of Hrossagri&#240;</title>
-<meta name="description" content="What Hrossagrith is, what this portal is for, its method, and the frameworks it borrows.">
+<meta name="description" content="What Hrossagrith is, what this portal is for, its method, its illustration, and the frameworks it borrows.">
 <link rel="icon" href="../assets/flag-mark.jpg">
 <link rel="stylesheet" href="../assets/style.css">
 <script>
@@ -24,66 +24,136 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">A worldbuilding project &mdash; Hrossagri&#240; is a fictional country</p>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</div>
+
 <header class="masthead">
-  <div class="masthead__inner">
-    <img class="masthead__mark" src="../assets/flag-mark.jpg"
-         alt="Flag of the Empire of Hrossagri&#240;" width="96" height="64">
-    <div class="masthead__text">
-      <p class="masthead__state">State Portal</p>
-      <p class="masthead__name">The Empire of Hrossagri&#240;</p>
-      <p class="masthead__latin">Hrossagrith &middot; horses&rsquo; sanctuary, and the peace that is enforced</p>
-    </div>
+  <div class="shell masthead__inner">
+    <img class="masthead__flag" src="../assets/flag.jpg"
+         alt="Flag of the Empire of Hrossagri&#240;" width="84" height="56">
+    <svg class="masthead__emblem" aria-hidden="true"><use href="../assets/icons.svg#i-emblem"></use></svg>
+    <p class="masthead__state">Imperial State Portal</p>
+    <p class="masthead__name"><a href="../">The Empire of Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
   </div>
 </header>
 
 <nav class="nav" aria-label="Primary">
-  <div class="nav__inner">
+  <div class="shell nav__inner">
     <a href="../">Home</a>
-    <a href="../symbols/">Name &amp; Symbols</a>
-    <a href="../history/">History</a>
+    <a href="../horses/">Horses</a>
+    <a href="../living/">Living</a>
     <a href="../gov/">Government</a>
     <a href="../gov/law/">Law</a>
+    <a href="../history/">History</a>
+    <a href="../symbols/">Symbols</a>
     <a href="../about/" aria-current="page">About</a>
-    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
   </div>
 </nav>
 
-<main id="main" class="wrap">
-  <div class="prose">
-    <p class="eyebrow">About</p>
-    <h1 class="page-title">About this portal</h1>
-    <p class="page-standfirst">Hrossagrith is a fictional country, and this site is the reference portal for it.</p>
+<div class="shell crumb"><a href="../">Home</a><span>&rsaquo;</span><strong>About</strong></div>
 
-    <h2>This is a worldbuilding project</h2>
-    <p><strong>Hrossagrith does not exist.</strong> It is an invented country. This site is a worldbuilding project and has no connection to any real state, government, ministry, agency, or official body, and it does not represent or claim to represent any such organisation. Nothing published here is a real law, a real regulation, or a real government notice, and none of it should be relied upon as one.</p>
+<main id="main" class="shell wrap">
+  <p class="entry">Colophon</p>
+  <h1 class="page-title">About this portal</h1>
+  <p class="page-standfirst">Hrossagrith is a fictional country, and this site is the reference portal for it.</p>
 
-    <h2>What the portal contains</h2>
-    <ul>
-      <li><a href="../symbols/">Name &amp; Symbols</a> &mdash; the canonical forms of the state name, its Old Norse etymology, correct usage of the demonym, the flag, and the national animal.</li>
-      <li><a href="../history/">History</a> &mdash; the reconstructed early history of the Hrossagrith people, with the limits of that reconstruction stated openly.</li>
-      <li><a href="../gov/">Government</a> &mdash; the constitutional order and the political doctrine behind it.</li>
-      <li><a href="../gov/law/">Law</a> &mdash; the register of the imperial legal corpus.</li>
-    </ul>
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Hrossagrith does not exist. It is an invented country. This site is a worldbuilding project and has no connection to any real state, government, ministry, agency or official body, and it does not represent or claim to represent any such organisation. Nothing published here is a real law, a real regulation or a real government notice, and none of it should be relied upon as one.</p>
 
-    <h2>Method</h2>
-    <p>Two habits run through the whole project, and they shape how the material reads.</p>
-    <p>The first is that <strong>uncertainty is preserved rather than resolved</strong>. Where the invented tradition cannot distinguish among several explanations, the text says so instead of choosing one and presenting it as settled. Where the deeper prehistory of a word is genuinely disputed, it is marked as disputed rather than converted into fact.</p>
-    <p>The second is that <strong>real constraints are respected where they apply</strong>. The linguistic analysis uses attested Old Norse morphology; the historical reconstruction works within what is plausible for Iron Age Ireland rather than against it. The invented parts are the feuds, decisions and institutions &mdash; not the grammar or the archaeology.</p>
+      <h2>Method</h2>
+      <p class="h2-num">Two habits that shape everything here</p>
+      <p>The first is that <strong>uncertainty is preserved rather than resolved</strong>. Where the invented tradition cannot distinguish among several explanations, the text says so instead of choosing one and presenting it as settled. Where the deeper prehistory of a word is genuinely disputed, it is marked as disputed rather than converted into fact.</p>
+      <p>The second is that <strong>real constraints are respected where they apply</strong>. The linguistic analysis uses attested Old Norse morphology; the historical reconstruction works within what is plausible for Iron Age Ireland rather than against it. The invented parts are the feuds, decisions and institutions &mdash; not the grammar, and not the archaeology.</p>
 
-    <h2>Borrowed frameworks</h2>
-    <p>The Empire&rsquo;s political doctrine uses the <strong>Eight Dynamics</strong>, a concept belonging to Scientology, as its ethical framework. That borrowing is stated openly on the <a href="../gov/">government page</a> rather than disguised. It is not an endorsement, an affiliation, or a claim to represent Scientology, and no text from Scientology&rsquo;s own materials is reproduced here &mdash; the Dynamics are summarised in this project&rsquo;s own words. Every political conclusion drawn from them is fictional and Hrossagrithic. The classical concept of <em>eudaimonia</em> is likewise drawn from Aristotelian ethics and adapted rather than reproduced.</p>
+      <h2>Borrowed frameworks</h2>
+      <p class="h2-num">Stated openly rather than disguised</p>
+      <p>The Empire&rsquo;s political doctrine uses the <strong>Eight Dynamics</strong>, a concept belonging to Scientology, as its ethical framework. That borrowing is named on the <a href="../gov/">government page</a>. It is not an endorsement, an affiliation, or a claim to represent Scientology, and no text from Scientology&rsquo;s own materials is reproduced here &mdash; the Dynamics are summarised in this project&rsquo;s own words. Every political conclusion drawn from them is fictional and Hrossagrithic. The classical concept of <em>eudaimonia</em> is likewise drawn from Aristotelian ethics and adapted rather than reproduced.</p>
 
-    <h2>Status</h2>
-    <p>The portal is under construction. Sections are published as they are written, and full texts of the imperial instruments will be added one at a time. Structure and wording are subject to change without notice.</p>
+      <h2>Illustration</h2>
+      <p class="h2-num">Where the pictures come from</p>
+      <p>The flag is the author&rsquo;s own. Every other image on this portal &mdash; the state mark, the section icons, the ornaments and rules, the road-status marker drawings and the banner illustration &mdash; is original vector artwork drawn for this site. No third-party photographs or stock images are used anywhere.</p>
 
-    <div class="notice">
-      <p><strong>Reuse.</strong> The setting, names, texts and flag of Hrossagrith are the work of their author. Please do not republish them as your own.</p>
+      <h2>Status</h2>
+      <p class="h2-num">Under construction, and saying so</p>
+      <p>Sections are published as they are written, and full texts of the imperial instruments will be added one at a time. Where a section of national life has not yet been written into the canon, this portal marks it <em>in preparation</em> rather than inventing an answer. Structure and wording are subject to change without notice.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Reuse.</strong> The setting, names, texts, flag and artwork of Hrossagrith are the work of their author. Please do not republish them as your own.</p></div>
     </div>
+    <aside class="marg">
+      <strong>Contents</strong>
+      Book I &mdash; <a href="../gov/">the state and its doctrine</a><br>
+      Book II &mdash; <a href="../living/">living in Hrossagri&#240;</a><br>
+      Book III &mdash; <a href="../gov/law/">imperial law</a><br>
+      Book IV &mdash; <a href="../history/">early history</a><br>
+      Book V &mdash; <a href="../symbols/">name and symbols</a><br>
+      &mdash; <a href="../horses/">horses</a>
+    </aside>
   </div>
 </main>
 
 <footer class="footer">
-  <div class="footer__inner">
+  <div class="shell footer__top">
+    <div>
+      <h2>The Empire</h2>
+      <ul>
+        <li><a href="../gov/">Government and doctrine</a></li>
+        <li><a href="../gov/law/">Imperial law</a></li>
+        <li><a href="../history/">History</a></li>
+        <li><a href="../symbols/">Name, flag and symbols</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Living here</h2>
+      <ul>
+        <li><a href="../living/health/">Health</a></li>
+        <li><a href="../living/education/">Education and children</a></li>
+        <li><a href="../living/justice/">Justice and policing</a></li>
+        <li><a href="../living/money/">Work and money</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Roads and equids</h2>
+      <ul>
+        <li><a href="../horses/">Horses</a></li>
+        <li><a href="../horses/road-status/">Road-status markers</a></li>
+        <li><a href="../living/transport/">Transport and roads</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>This portal</h2>
+      <ul>
+        <li><a href="../about/">About this project</a></li>
+        <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
     <p class="footer__disclaimer">Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
     <p class="footer__meta">The Empire of Hrossagri&#240; &middot; State Portal &middot; hrossagrith.github.io</p>
   </div>
