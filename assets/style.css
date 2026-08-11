@@ -161,6 +161,22 @@ body {
   margin: 0;
 }
 
+.search-link {
+  font-family: var(--label);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--deep-muted);
+  text-decoration: none;
+  border: 1px solid rgba(194, 160, 82, 0.45);
+  padding: 0.25rem 0.7rem;
+}
+
+.search-link:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold-bright);
+}
+
 .theme-toggle {
   margin-left: auto;
   border: 1px solid rgba(194, 160, 82, 0.45);
