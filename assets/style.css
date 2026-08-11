@@ -196,11 +196,12 @@ body {
 }
 
 .masthead__emblem {
-  width: 84px;
-  height: 84px;
-  color: var(--gold-bright);
+  width: 96px;
+  height: 96px;
   display: block;
-  margin: 0 auto 0.85rem;
+  margin: 0 auto 0.9rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--gold), 0 0 0 5px rgba(194, 160, 82, 0.28);
 }
 
 .masthead__state {
@@ -242,13 +243,12 @@ body {
   height: 22px;
 }
 
-.masthead__flag {
-  position: absolute;
-  right: 1.6rem;
-  top: 1.9rem;
-  width: 84px;
-  height: 56px;
+.footer__flag {
+  display: block;
+  width: 120px;
+  height: 80px;
   object-fit: cover;
+  margin: 0 0 1rem;
   box-shadow: 0 0 0 1px rgba(194, 160, 82, 0.6);
 }
 
@@ -687,10 +687,13 @@ li {
   padding: 1rem 1.1rem;
 }
 
-.marker svg {
-  width: 50px;
-  height: 50px;
+.marker__disc {
+  width: 54px;
+  height: 54px;
   flex: 0 0 auto;
+  border-radius: 50%;
+  /* The plain white disc would otherwise vanish against the parchment card. */
+  box-shadow: 0 0 0 1px rgba(34, 48, 47, 0.32);
 }
 
 .marker__name {
@@ -976,15 +979,9 @@ li {
     padding-right: 1.1rem;
   }
 
-  .masthead__flag {
-    position: static;
-    margin: 0 auto 0.8rem;
-    display: block;
-  }
-
   .masthead__emblem {
-    width: 62px;
-    height: 62px;
+    width: 72px;
+    height: 72px;
   }
 
   .nav a {
