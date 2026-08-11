@@ -11,27 +11,37 @@
   <symbol id="i-history" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 6.5V12l4 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
   <symbol id="i-symbols" viewBox="0 0 24 24"><path d="M5 3v18M5 4h14l-3 4.5L19 13H5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
   <symbol id="i-horse" viewBox="0 0 140 150"><g fill="currentColor"><path fill-rule="evenodd" d="
-      M 70 32
-      C 64 40, 56 52, 49 65
-      C 42 78, 37 90, 35 99
-      C 34 104, 35 109, 38 112
-      C 41 115, 46 116, 50 114
-      L 54 118
-      C 58 121, 64 120, 68 116
-      C 72 112, 75 107, 77 102
-      C 80 106, 83 112, 86 120
-      L 92 140
-      L 116 140
-      C 114 124, 110 108, 104 93
-      C 98 77, 90 60, 80 46
-      C 77 41, 73 36, 70 32
-      Z
-      M 72 64
-      a 4 2.8 0 1 0 8 0
-      a 4 2.8 0 1 0 -8 0
-      Z"/>
-    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
-    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/></g></symbol>
+M 110 38
+C 112 29, 108 21, 102 16
+C 99 22, 97 29, 97 36
+C 95 36, 93 36, 91 34
+C 92 27, 90 21, 86 16
+C 82 21, 80 27, 79 33
+C 70 36, 52 44, 39 49
+C 28 53, 12 59, 6 65
+C 3 69, 3 78, 7 84
+C 9 87, 12 89, 16 89
+C 20 89, 23 88, 26 88
+C 40 87, 56 85, 70 86
+C 80 88, 88 93, 94 88
+C 98 85, 104 76, 107 64
+C 106 80, 92 116, 72 148
+L 137 148
+C 139 140, 138 134, 137 129
+C 134 124, 132 119, 130 113
+C 133 108, 135 104, 135 99
+C 131 93, 128 87, 125 81
+C 128 76, 130 73, 130 68
+C 127 58, 118 46, 110 38
+Z
+M 58.9 50.06
+a 5.5 4 -22 1 0 10.2 -4.12
+a 5.5 4 -22 1 0 -10.2 4.12
+Z
+M 13.83 71.69
+a 4.5 3 -22 1 0 8.34 -3.38
+a 4.5 3 -22 1 0 -8.34 3.38
+Z"/></g></symbol>
   <symbol id="i-emblem" viewBox="0 0 160 160">
     <circle cx="80" cy="80" r="76" fill="none" stroke="currentColor" stroke-width="3"/>
     <circle cx="80" cy="80" r="66" fill="none" stroke="currentColor" stroke-width="1"/>

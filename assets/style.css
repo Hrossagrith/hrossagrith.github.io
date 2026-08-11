@@ -1389,3 +1389,15 @@ li {
     columns: 1;
   }
 }
+
+/* The 404 page is the one place the escutcheon stands on its own. */
+.figure--emblem {
+  margin: 0 auto 1.6rem;
+  max-width: 190px;
+}
+
+.figure--emblem img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
