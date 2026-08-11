@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Название и символы &mdash; Империя Хроссагрид</title>
+<meta name="description" content="Канонические формы, древнескандинавская этимология, флаг и национальное животное.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Поиск по порталу</label>
+      <input type="search" id="q" name="q" placeholder="Поиск по порталу" autocomplete="off">
+      <button type="submit">Найти</button>
+    </form>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" selected>Русский</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
+         width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../../ru/">Империя Хроссагрид</a></p>
+    <p class="masthead__motto">Убежище для лошадей и мир, который обеспечен силой закона</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Все разделы">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Меню
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Империя</h2>
+            <ul>
+            <li><a href="../../ru/gov/">Государство и доктрина</a></li>
+            <li><a href="../../ru/gov/#dynamics">Восемь Динамик</a></li>
+            <li><a href="../../ru/gov/#diarchy">Имперская диархия</a></li>
+            <li><a href="../../ru/gov/law/">Имперское право</a></li>
+            <li><a href="../../ru/history/">История</a></li>
+            <li><a href="../../ru/symbols/">Название, флаг и символы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Жизнь здесь</h2>
+            <ul>
+            <li><a href="../../ru/living/">Жизнь в Хроссагрид</a></li>
+            <li><a href="../../ru/living/health/">Здравоохранение</a></li>
+            <li><a href="../../ru/living/education/">Образование и дети</a></li>
+            <li><a href="../../ru/living/transport/">Транспорт и дороги</a></li>
+            <li><a href="../../ru/living/justice/">Правосудие и полиция</a></li>
+            <li><a href="../../ru/living/money/">Труд и деньги</a></li>
+            <li><a href="../../ru/living/citizenship/">Гражданство и убежище</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Лошади и дороги</h2>
+            <ul>
+            <li><a href="../../ru/horses/">Лошади</a></li>
+            <li><a href="../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+            <li><a href="../../ru/horses/#service">Служебные непарнокопытные</a></li>
+            <li><a href="../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Портал</h2>
+            <ul>
+            <li><a href="../../ru/about/">О проекте</a></li>
+            <li><a href="../../ru/search/">Поиск по порталу</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../ru/">Главная</a>
+    <a href="../../ru/horses/">Лошади</a>
+    <a href="../../ru/living/">Жизнь</a>
+    <a href="../../ru/gov/">Государство</a>
+    <a href="../../ru/gov/law/">Право</a>
+    <a href="../../ru/history/">История</a>
+    <a href="../../ru/symbols/" aria-current="page">Символы</a>
+    <a href="../../ru/about/">О проекте</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../ru/">Главная</a><span>&rsaquo;</span><strong>Символы</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Книга V</p>
+  <h1 class="page-title">Название, этимология и национальный символ</h1>
+  <p class="page-standfirst">Название государства образовано из двух подлинных древнескандинавских элементов подлинной древнескандинавской моделью словосложения. Ниже — каноническое объяснение для правового, образовательного, дипломатического и культурного употребления.</p>
+
+  <div class="two">
+    <div class="col">
+      <h2>Канонические формы</h2>
+      <p class="h2-num">Статья I &middot; Как пишется название</p>
+      <ul>
+        <li>Родное написание: <span class="native">Hrossagrið</span></li>
+        <li>Международное написание: Hrossagrith</li>
+        <li>Полное название государства: <span class="native">The Empire of Hrossagrið</span>, по-русски — Империя Хроссагрид</li>
+        <li>Гражданин: <strong>Hrossagrith</strong>, неизменяемо — ни единственного, ни множественного суффикса</li>
+        <li>Прилагательное и культурный термин: <strong>хроссагридский</strong></li>
+        <li>Практическое произношение: <strong>ХРОСС-а-грит</strong></li>
+      </ul>
+      <p>Международные формы на <em>th</em> используются везде, где буква <span class="native">ð</span> недоступна или её трудно набрать.</p>
+
+      <h2>Основное значение</h2>
+      <p class="h2-num">Статья II &middot; Что говорит название</p>
+      <p class="dropcap">Hrossagrið означает конское убежище, конскую защиту или охраняемый мир для лошадей и связанных с ними людей. Центральное понятие — <span class="native">грид</span>: убежище, гарантированная защита, охранное сопровождение, правовая неприкосновенность, охраняемый мир и прекращение преследования или возмездия. Название не говорит, что страна — всего лишь «страна лошадей». Оно означает место, где убежище достаточно настоящее, чтобы путник был защищён вместе с той живой связью, которая его несёт.</p>
+
+      <h2>Этимология</h2>
+      <p class="h2-num">Статья III &middot; Композит и два его элемента</p>
+      <p>Название состоит из <span class="native">hross</span> + <span class="native">-a</span> + <span class="native">grið</span> — точнее, из формы родительного падежа множественного числа <span class="native">hrossa-</span> и существительного <span class="native">grið</span>. Внутреннее <span class="native">-a</span> не декоративно и не является английской соединительной гласной: это окончание родительного множественного от <span class="native">hross</span>, дающее первому элементу значение «лошадей».</p>
+      <p>Древнескандинавские композиты читаются от конечного элемента назад. Вершина — <span class="native">grið</span>: название есть форма, место или юрисдикция защиты, уточнённая лошадьми, а не лошадь, уточнённая миром.</p>
+
+      <h3>Первый элемент: <span class="native">hross</span></h3>
+      <p>Древнескандинавское <span class="native">hross</span> — существительное среднего рода со значением «лошадь», обычное историческое слово, а не поэтическая выдумка. Его родительный множественного — <span class="native">hrossa</span>, и поскольку несклонённые единственное и множественное совпадают в форме <span class="native">hross</span>, именно эта форма важна: она делает собирательное отношение явным. Название не значит «защита одной лошади». Оно призывает лошадей собирательно.</p>
+      <p>Слово принадлежит старой германской семье: древнеанглийское <span class="native">hors</span>, древнесаксонское <span class="native">hros</span>, древневерхненемецкое <span class="native">hros</span> или <span class="native">ros</span>, немецкое <span class="native">Ross</span>, исландское <span class="native">hross</span>. Часто предлагаемая более глубокая реконструкция — прагерманское <span class="native">*hrussą</span>, иногда связываемое с идеей бега, но эта этимология недостаточно надёжна, чтобы считать её официальным значением. Надёжно засвидетельствованное значение одно: лошадь.</p>
+
+      <h3>Второй элемент: <span class="native">grið</span></h3>
+      <p>Древнескандинавское <span class="native">grið</span> — существительное среднего рода, употребляемое как собирательное правовое понятие: мир, пощада, перемирие, квартира, гарантированная безопасность, охранное сопровождение, убежище и защита от преследования или насилия. Это не пассивная тишина, а мир, введённый в действие признанием, обещанием, обычаем или законом, — перемирие, обязывающее прекратить военные действия, пощада тому, кто иначе беззащитен, охранный проход через опасную местность или гарантированное состояние, в котором захват и возмездие запрещены.</p>
+      <p>Место становится убежищем потому, что там действует <span class="native">grið</span>. Страна названа не по одной конюшне, храму или приюту, а по защите, которую она устанавливает на всей юрисдикции.</p>
+
+      <h3>Международная форма: <span class="native">grith</span></h3>
+      <p>Замена <span class="native">ð</span> на <em>th</em> есть транслитерация, а не смена корня. <em>Grith</em> — к тому же реальное историческое английское слово, заимствованное из древнескандинавского и обозначавшее гарантированную безопасность, охранное сопровождение, убежище и приют. Сейчас оно архаично, что делает международное написание необычайно точным. Название пишется с <em>-grith</em> — никогда не <em>-grit</em>, <em>-girth</em>, <em>-griff</em> или <em>-grid</em>.</p>
+
+      <div class="pullquote">
+        <p>Название означает убежище и принудительно обеспеченную защиту, распространяемую на лошадей и — через неотделимые от них связи — на людей, которые вместе с ними едут, живут, работают и ищут безопасности.</p>
+      </div>
+
+      <h2>Чего название не означает</h2>
+      <p class="h2-num">Статья IV &middot; Устойчивые поправки</p>
+      <ul>
+        <li>Не «конская империя». Слово <em>империя</em> описывает форму государства в полном титуле и в самом названии страны не содержится.</li>
+        <li>Не «страна лошадей», не «конское королевство», не «конюшня» и не «пастбище». Эти прочтения выбрасывают <span class="native">grið</span> и сводят название к географии.</li>
+        <li>Не притязание на собственность ни в одну, ни в другую сторону. Родительный падеж указывает выгодоприобретателей и охват защиты.</li>
+        <li>Не «укрощённая» и не «покорная лошадь». <span class="native">Grið</span> управляет правовой средой вокруг лошади и не описывает покорности животного.</li>
+        <li>Не связано с грифоном, гиппогрифом, оленем, рогами или каким-либо выдуманным существом.</li>
+      </ul>
+
+      <h2 id="flag">Флаг</h2>
+      <p class="h2-num">Статья V &middot; Три полосы и национальное животное</p>
+
+      <figure class="figure">
+        <img src="/assets/flag.jpg" alt="Флаг Империи Хроссагрид: три горизонтальные полосы — бледно-жёлтая, зелёная и синяя — с белым медальоном и вздыбленным гиппогрифом." width="1400" height="933">
+        <figcaption>Флаг Империи Хроссагрид. Три горизонтальные полосы с изображением национального животного.</figcaption>
+      </figure>
+
+      <h2>Национальное животное</h2>
+      <p class="h2-num">Статья VI &middot; Гиппогриф и почему он не корень</p>
+      <p>Национальное животное — <strong>гиппогриф</strong>. Он не является источником названия страны. Его приняли позже как символ свободы, ума, силы, достоинства, охраны и связи между человеком и животным. Конская половина отзывается на символику, которую название несло и раньше: связи, движение, доверие, товарищество, обязанность заботы и способность вернуться домой. Национальное животное поддерживает название, но не заменяет его значения убежища.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Филологическая основа.</strong> Разбор опирается на засвидетельствованное древнескандинавское <span class="native">hross</span> и его родительный множественного; на засвидетельствованное собирательное <span class="native">grið</span> и его правовые значения; на историческое английское <em>grith</em>; и на обычную древнескандинавскую модель словосложения с родительным падежом. Там, где глубинная предыстория корня недостоверна, хроссагридское объяснение помечает её как недостоверную, а не превращает гипотезу в факт.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Не переписывать</strong>
+      Ни Hrossagriff, ни Hrossgriff, ни «страна гиппогрифов». Любое написание, делающее гиппогрифа этимологическим источником, теряет половину названия, отвечающую за убежище.
+      <br><br>
+      <strong>О букве</strong>
+      <span class="native">ð</span> называется «эт». Она принадлежит написанию <span class="native">grið</span> и не является «о» с диакритикой.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Империя</h2>
+      <ul>
+        <li><a href="../../ru/gov/">Государство и доктрина</a></li>
+        <li><a href="../../ru/gov/#dynamics">Восемь Динамик</a></li>
+        <li><a href="../../ru/gov/#diarchy">Имперская диархия</a></li>
+        <li><a href="../../ru/gov/law/">Имперское право</a></li>
+        <li><a href="../../ru/history/">История</a></li>
+        <li><a href="../../ru/symbols/">Название, флаг и символы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Жизнь здесь</h2>
+      <ul>
+        <li><a href="../../ru/living/">Жизнь в Хроссагрид</a></li>
+        <li><a href="../../ru/living/health/">Здравоохранение</a></li>
+        <li><a href="../../ru/living/education/">Образование и дети</a></li>
+        <li><a href="../../ru/living/transport/">Транспорт и дороги</a></li>
+        <li><a href="../../ru/living/justice/">Правосудие и полиция</a></li>
+        <li><a href="../../ru/living/money/">Труд и деньги</a></li>
+        <li><a href="../../ru/living/citizenship/">Гражданство и убежище</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Лошади и дороги</h2>
+      <ul>
+        <li><a href="../../ru/horses/">Лошади</a></li>
+        <li><a href="../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+        <li><a href="../../ru/horses/#service">Служебные непарнокопытные</a></li>
+        <li><a href="../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Портал</h2>
+      <ul>
+        <li><a href="../../ru/about/">О проекте</a></li>
+        <li><a href="../../ru/search/">Поиск по порталу</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
