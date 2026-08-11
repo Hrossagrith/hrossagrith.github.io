@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Империя Хроссагрид &mdash; Имперский государственный портал</title>
+<meta name="description" content="Официальный портал Империи Хроссагрид: лошади, здравоохранение, образование, транспорт, правосудие, государство, право, история и символы.">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Поиск по порталу</label>
+      <input type="search" id="q" name="q" placeholder="Поиск по порталу" autocomplete="off">
+      <button type="submit">Найти</button>
+    </form>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" selected>Русский</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
+         width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../ru/">Империя Хроссагрид</a></p>
+    <p class="masthead__motto">Убежище для лошадей и мир, который обеспечен силой закона</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Все разделы">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Меню
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Империя</h2>
+            <ul>
+            <li><a href="../ru/gov/">Государство и доктрина</a></li>
+            <li><a href="../ru/gov/#dynamics">Восемь Динамик</a></li>
+            <li><a href="../ru/gov/#diarchy">Имперская диархия</a></li>
+            <li><a href="../ru/gov/law/">Имперское право</a></li>
+            <li><a href="../ru/history/">История</a></li>
+            <li><a href="../ru/symbols/">Название, флаг и символы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Жизнь здесь</h2>
+            <ul>
+            <li><a href="../ru/living/">Жизнь в Хроссагрид</a></li>
+            <li><a href="../ru/living/health/">Здравоохранение</a></li>
+            <li><a href="../ru/living/education/">Образование и дети</a></li>
+            <li><a href="../ru/living/transport/">Транспорт и дороги</a></li>
+            <li><a href="../ru/living/justice/">Правосудие и полиция</a></li>
+            <li><a href="../ru/living/money/">Труд и деньги</a></li>
+            <li><a href="../ru/living/citizenship/">Гражданство и убежище</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Лошади и дороги</h2>
+            <ul>
+            <li><a href="../ru/horses/">Лошади</a></li>
+            <li><a href="../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+            <li><a href="../ru/horses/#service">Служебные непарнокопытные</a></li>
+            <li><a href="../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Портал</h2>
+            <ul>
+            <li><a href="../ru/about/">О проекте</a></li>
+            <li><a href="../ru/search/">Поиск по порталу</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../ru/" aria-current="page">Главная</a>
+    <a href="../ru/horses/">Лошади</a>
+    <a href="../ru/living/">Жизнь</a>
+    <a href="../ru/gov/">Государство</a>
+    <a href="../ru/gov/law/">Право</a>
+    <a href="../ru/history/">История</a>
+    <a href="../ru/symbols/">Символы</a>
+    <a href="../ru/about/">О проекте</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero__art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="A road running through a stone gate between low hills">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--art-sky-top, #dfe7ee)"/>
+      <stop offset="1" stop-color="var(--art-sky-bottom, #eef1e9)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- Far hills -->
+  <path d="M 0 214 C 120 190, 210 200, 300 210 C 400 221, 470 196, 560 190
+           C 660 183, 740 205, 840 202 C 940 199, 1050 178, 1200 192 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-far, #cfdcd3)"/>
+
+  <!-- Middle hills -->
+  <path d="M 0 250 C 130 232, 240 246, 350 254 C 460 262, 540 244, 660 242
+           C 780 240, 900 258, 1010 252 C 1100 247, 1150 240, 1200 236 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-mid, #b9cdbc)"/>
+
+  <!-- Near ground -->
+  <path d="M 0 288 C 160 278, 320 288, 470 292 C 620 296, 760 286, 900 288
+           C 1020 290, 1120 294, 1200 292 L 1200 340 L 0 340 Z"
+        fill="var(--art-ground, #a8c0ad)"/>
+
+  <!-- The road, narrowing toward the gate -->
+  <path d="M 520 214 L 680 214 L 900 340 L 300 340 Z" fill="var(--art-road, #e6e2d4)"/>
+  <path d="M 598 216 L 602 216 L 612 340 L 588 340 Z" fill="var(--art-road-line, #ddd6c4)"/>
+
+  <!-- Stone gate: the border at which pursuit stops -->
+  <g fill="var(--art-stone, #7d8b84)">
+    <rect x="452" y="96" width="46" height="152" rx="4"/>
+    <rect x="702" y="96" width="46" height="152" rx="4"/>
+    <path d="M 452 96 L 748 96 L 748 132 L 452 132 Z"/>
+    <path d="M 498 132 C 520 132, 540 148, 548 172 L 560 172 C 552 140, 528 120, 498 120 Z"/>
+    <path d="M 702 132 C 680 132, 660 148, 652 172 L 640 172 C 648 140, 672 120, 702 120 Z"/>
+  </g>
+  <g fill="var(--art-stone-dark, #63706a)">
+    <rect x="446" y="86" width="58" height="14" rx="3"/>
+    <rect x="696" y="86" width="58" height="14" rx="3"/>
+    <rect x="440" y="72" width="320" height="16" rx="3"/>
+  </g>
+
+  <!-- Hoofprints along the road -->
+  <g fill="var(--art-hoof, #c8bfa6)">
+    <ellipse cx="566" cy="262" rx="4" ry="5"/>
+    <ellipse cx="578" cy="264" rx="4" ry="5"/>
+    <ellipse cx="546" cy="292" rx="5" ry="6"/>
+    <ellipse cx="560" cy="295" rx="5" ry="6"/>
+    <ellipse cx="520" cy="324" rx="6" ry="7.5"/>
+    <ellipse cx="537" cy="328" rx="6" ry="7.5"/>
+  </g>
+</svg>
+</div>
+  <div class="shell">
+    <div class="hero__panel">
+      <h1>Граница, на которой прекращается преследование</h1>
+      <p>Всё, что Империя делает для живущих здесь людей и для животных, по которым она названа.</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="shell wrap">
+  <div class="two">
+    <div class="col">
+      <p class="entry">Запись I &middot; Исходное значение</p>
+      <h2>Почему Империя носит это имя</h2>
+      <p class="h2-num">Внесено в имперский реестр</p>
+      <p class="dropcap">Хроссагрид назван не по лошадям. Он назван по своему <span class="native">гриду</span> — гарантированному миру, охранному сопровождению, пощаде, убежищу — и по лошадям, которые определяют, кому это убежище причитается. Название возникло как экзоним. Купцы, гонцы, беженцы и всадники, пересекавшие границу, обнаруживали, что преследование обязано прекратиться: путник, его спутники и его непарнокопытные вместе входили под защиту.</p>
+      <p>Лошадей нельзя было изъять для войны, украсть, реквизировать, обменять или использовать как рычаг давления на тех, кто от них зависел. Чужеземцы называли это состояние <span class="native">hrossagrið</span>, и со временем слово ушло от границы к дорогам, к поселениям, к признанной территории и наконец к самой стране.</p>
+    </div>
+    <aside class="marg">
+      <strong>Пометка на полях</strong>
+      Древнейшее практическое значение названия: граница, на которой преследование прекращалось, а защита начиналась — и для путника, и для животного, которое его несёт.
+    </aside>
+  </div>
+
+  <div class="pullquote">
+    <p>Защита человека неполна там, где его лошадь, средство передвижения, источник существования или дорога домой всё ещё могут быть отняты, замучены, изнурены или использованы как рычаг давления.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Запись II &middot; Реестр разделов</p>
+  <h2>Услуги и сведения</h2>
+  <p class="h2-num">Всё, что Империя ведёт по записи для живущих здесь</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <p class="service__no">Раздел I</p>
+      <h3><a href="horses/">Лошади</a></h3>
+      <p>Национальное достояние и причина, по которой Империя устроена именно так. Благополучие, амуниция без трензеля, дорожный статус, служебные животные.</p>
+      <ul class="service__links"><li><a href="horses/road-status/">Дорожные маркеры</a></li><li><a href="horses/#welfare">Благополучие и управление без трензеля</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">Раздел II</p>
+      <h3><a href="living/health/">Здравоохранение</a></h3>
+      <p>Бесплатно в момент обращения, щедро финансируется и построено против очередей, нехватки персонала и регионального неравенства.</p>
+      <ul class="service__links"><li><a href="living/health/">Что гарантирует Империя</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">Раздел III</p>
+      <h3><a href="living/education/">Образование и дети</a></h3>
+      <p>Бесплатное образование на всех ступенях, бесплатные ясли независимо от занятости родителей и исключительно сильная защита детей.</p>
+      <ul class="service__links"><li><a href="living/education/#childcare">Уход за детьми</a></li><li><a href="living/education/#protection">Защита детей</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">Раздел IV</p>
+      <h3><a href="living/transport/">Транспорт и дороги</a></h3>
+      <p>Страна, построенная вокруг гужевого транспорта и железных дорог, с единственным узким исключением для грузовых автомобилей.</p>
+      <ul class="service__links"><li><a href="living/transport/#hrossaway">Хроссавей</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">Раздел V</p>
+      <h3><a href="living/justice/">Правосудие и полиция</a></h3>
+      <p>Отбор и подготовка полиции по авиационной модели, деэскалация по умолчанию и абсолютный запрет смертной казни.</p>
+      <ul class="service__links"><li><a href="living/justice/#privacy">Приватность и киберпреступность</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">Раздел VI</p>
+      <h3><a href="living/money/">Труд и деньги</a></h3>
+      <p>Прогрессивное налогообложение доходов, состояний, прироста капитала и крупных наследств.</p>
+      <ul class="service__links"><li><a href="living/money/">Налогообложение</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">Раздел VII</p>
+      <h3><a href="living/citizenship/">Гражданство и убежище</a></h3>
+      <p>Многообразная человеческая нация, происходящая от множества народов, интегрированных за века через миграцию и убежище.</p>
+      <ul class="service__links"><li><a href="living/citizenship/">Убежище и интеграция</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <p class="service__no">Раздел VIII</p>
+      <h3><a href="gov/">Государство</a></h3>
+      <p>Эвдемонократия, Восемь Динамик и две равные Короны, правящие в рамках одной конституции.</p>
+      <ul class="service__links"><li><a href="gov/#diarchy">Имперская диархия</a></li><li><a href="gov/law/">Правовой корпус</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <p class="service__no">Раздел IX</p>
+      <h3><a href="history/">История</a></h3>
+      <p>От Кризиса переправы около 1050 г. до н. э. до споров о конных гарантиях третьего века.</p>
+      <ul class="service__links"><li><a href="history/">Ранняя история, ок. 1200–100 гг. до н. э.</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <p class="service__no">Раздел X</p>
+      <h3><a href="symbols/">Название и символы</a></h3>
+      <p>Канонические формы, древнескандинавская этимология, флаг и национальное животное.</p>
+      <ul class="service__links"><li><a href="symbols/#flag">Флаг</a></li></ul>
+    </li>
+  </ul>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <div class="two">
+    <div class="col">
+      <p class="entry">Запись III &middot; Государство</p>
+      <h2>Что такое Империя</h2>
+      <p class="h2-num">Население, конституция и характер</p>
+      <p>Современный Хроссагрид — <strong>человеческая нация</strong>, причём весьма многообразная: его население происходит от множества народов, интегрированных за века через миграцию и убежище. Лошади и другие непарнокопытные — защищаемые живые существа, спутники и рабочие партнёры, основа дорожно-транспортной культуры Империи. Они не являются населением и не занимают человеческих государственных должностей.</p>
+      <p>Конституционно Империя есть <a href="gov/">эвдемонократическая диархическая монархия</a>: две равные Короны, Ведущая и Охраняющая, правящие в рамках философии, которая оценивает решение по тому, что оно создаёт и что разрушает во всей широте жизни, а не по тому, чего в данный момент хочет большинство.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Историческая правда.</strong> Империя не переписывает, не стирает и не обеляет свою историю в политических целях. Её запись о собственных успехах, неудачах, несправедливостях и спорных решениях должна быть точной, и <a href="history/">раздел истории</a> прямо указывает пределы собственной реконструкции, а не скрывает их.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Канонические формы</strong>
+      Родное написание: <span class="native">Hrossagrið</span><br>
+      Международное: Hrossagrith<br>
+      По-русски: Хроссагрид<br>
+      Прилагательное: хроссагридский<br>
+      Произношение: ХРОСС-а-грит
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Империя</h2>
+      <ul>
+        <li><a href="../ru/gov/">Государство и доктрина</a></li>
+        <li><a href="../ru/gov/#dynamics">Восемь Динамик</a></li>
+        <li><a href="../ru/gov/#diarchy">Имперская диархия</a></li>
+        <li><a href="../ru/gov/law/">Имперское право</a></li>
+        <li><a href="../ru/history/">История</a></li>
+        <li><a href="../ru/symbols/">Название, флаг и символы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Жизнь здесь</h2>
+      <ul>
+        <li><a href="../ru/living/">Жизнь в Хроссагрид</a></li>
+        <li><a href="../ru/living/health/">Здравоохранение</a></li>
+        <li><a href="../ru/living/education/">Образование и дети</a></li>
+        <li><a href="../ru/living/transport/">Транспорт и дороги</a></li>
+        <li><a href="../ru/living/justice/">Правосудие и полиция</a></li>
+        <li><a href="../ru/living/money/">Труд и деньги</a></li>
+        <li><a href="../ru/living/citizenship/">Гражданство и убежище</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Лошади и дороги</h2>
+      <ul>
+        <li><a href="../ru/horses/">Лошади</a></li>
+        <li><a href="../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+        <li><a href="../ru/horses/#service">Служебные непарнокопытные</a></li>
+        <li><a href="../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Портал</h2>
+      <ul>
+        <li><a href="../ru/about/">О проекте</a></li>
+        <li><a href="../ru/search/">Поиск по порталу</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
