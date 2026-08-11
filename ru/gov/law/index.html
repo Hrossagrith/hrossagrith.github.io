@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Имперское право &mdash; Империя Хроссагрид</title>
+<meta name="description" content="Правовой корпус Хроссагрид: действующие кодексы, технические стандарты, формы и отложенное право.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Поиск по порталу</label>
+      <input type="search" id="q" name="q" placeholder="Поиск по порталу" autocomplete="off">
+      <button type="submit">Найти</button>
+    </form>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" selected>Русский</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
+         width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../../../ru/">Империя Хроссагрид</a></p>
+    <p class="masthead__motto">Убежище для лошадей и мир, который обеспечен силой закона</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Все разделы">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Меню
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Империя</h2>
+            <ul>
+            <li><a href="../../../ru/gov/">Государство и доктрина</a></li>
+            <li><a href="../../../ru/gov/#dynamics">Восемь Динамик</a></li>
+            <li><a href="../../../ru/gov/#diarchy">Имперская диархия</a></li>
+            <li><a href="../../../ru/gov/law/">Имперское право</a></li>
+            <li><a href="../../../ru/history/">История</a></li>
+            <li><a href="../../../ru/symbols/">Название, флаг и символы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Жизнь здесь</h2>
+            <ul>
+            <li><a href="../../../ru/living/">Жизнь в Хроссагрид</a></li>
+            <li><a href="../../../ru/living/health/">Здравоохранение</a></li>
+            <li><a href="../../../ru/living/education/">Образование и дети</a></li>
+            <li><a href="../../../ru/living/transport/">Транспорт и дороги</a></li>
+            <li><a href="../../../ru/living/justice/">Правосудие и полиция</a></li>
+            <li><a href="../../../ru/living/money/">Труд и деньги</a></li>
+            <li><a href="../../../ru/living/citizenship/">Гражданство и убежище</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Лошади и дороги</h2>
+            <ul>
+            <li><a href="../../../ru/horses/">Лошади</a></li>
+            <li><a href="../../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+            <li><a href="../../../ru/horses/#service">Служебные непарнокопытные</a></li>
+            <li><a href="../../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Портал</h2>
+            <ul>
+            <li><a href="../../../ru/about/">О проекте</a></li>
+            <li><a href="../../../ru/search/">Поиск по порталу</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ru/">Главная</a>
+    <a href="../../../ru/horses/">Лошади</a>
+    <a href="../../../ru/living/">Жизнь</a>
+    <a href="../../../ru/gov/">Государство</a>
+    <a href="../../../ru/gov/law/" aria-current="page">Право</a>
+    <a href="../../../ru/history/">История</a>
+    <a href="../../../ru/symbols/">Символы</a>
+    <a href="../../../ru/about/">О проекте</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ru/">Главная</a><span>&rsaquo;</span><a href="../../../ru/gov/">Государство</a><span>&rsaquo;</span><strong>Право</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Книга III</p>
+  <h1 class="page-title">Имперский правовой корпус</h1>
+  <p class="page-standfirst">Действующие кодексы, технические стандарты, несущие их измеримую часть, официальные формы, которые они создают, и право, отложенное для разработки.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Поскольку само название государства помнит о защищённом проходе, благополучие непарнокопытных не является декоративной символикой. Оно прямо следует из Пятой Динамики и стоит близко к центру имперского права. Защищать человека, позволяя при этом мучить, отнимать, перегружать его лошадь или использовать её как рычаг давления, — не настоящая защита, и каждый акт ниже читается против этого принципа.</p>
+    </div>
+    <aside class="marg">
+      <strong>Порядок чтения</strong>
+      Кодекс устанавливает обязанности и составы правонарушений. Стандарт несёт измеримую часть и изменяется чаще. Форма — бланк, вид которого закреплён создающим его актом.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Действующие кодексы</h2>
+  <p class="h2-num">Обязывающее право</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Общий кодекс</p>
+        <h3 class="register__title">Общий имперский кодекс благополучия непарнокопытных</h3>
+        <p class="register__note">Главный акт Империи о благополучии, охватывающий непарнокопытных во всех условиях, а не в одном виде работы.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Отраслевой кодекс</p>
+        <h3 class="register__title">Имперский кодекс благополучия рабочих упряжных непарнокопытных</h3>
+        <p class="register__note">Упряжное благополучие целиком: паспорта, сертификация, нагрузка и отдых, погодная нагрузка, безопасность маршрута, упряжь, крепления оголовья, вставки дорожного статуса, освещение, лампы наземного наведения, санитарные кареты, надзор, составы правонарушений и переходные регламенты.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Отраслевой кодекс</p>
+        <h3 class="register__title">Имперский кодекс амуниции, средств удержания и благополучия</h3>
+        <p class="register__note">Снаряжение, надеваемое на животное, и пределы удержания. Здесь же изложен имперский принцип управления без трензеля.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Отраслевой кодекс</p>
+        <h3 class="register__title">Имперский кодекс дорог и возниц</h3>
+        <p class="register__note">Поведение на общественных дорогах и обязанности возниц, а также всеобщее требование, чтобы каждое непарнокопытное на дороге показывало свой дорожный статус.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Отраслевой кодекс</p>
+        <h3 class="register__title">Имперский кодекс конной службы и дорожного патруля</h3>
+        <p class="register__note">Обязывающее право для конной полиции, конной Дорожной стражи, верховых курьеров и патрульных животных — верховая служба, которая не является упряжной работой и потому регулируется отдельно.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Отраслевой кодекс</p>
+        <h3 class="register__title">Имперский кодекс разведения и реестра</h3>
+        <p class="register__note">Практика разведения и имперский реестр.</p>
+      </li>
+  </ul>
+
+  <h2>Технические стандарты</h2>
+  <p class="h2-num">Пороги, размеры, цвета и испытания</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Стандарт</p>
+        <h3 class="register__title">Имперский стандарт маркировки дорожного статуса непарнокопытных</h3>
+        <p class="register__note">Всеобщее правило маркировки для каждого непарнокопытного на общественной дороге. Статус показывается сменной вставкой во френтере или мусероле с маркером, дорожного класса световозвращения и с самоподсветкой в присвоенном цвете. Краска, окрашивание, выстригание, клеймение, клей и любое изменение шерсти запрещены.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Стандарт</p>
+        <h3 class="register__title">Имперский стандарт отбора и породности служебных непарнокопытных</h3>
+        <p class="register__note">Отбор для полицейской, санитарной, извозной, курьерской, ветеринарной, пожарной, военной и суверенной службы. Пригодность определяют выносливость, восстановление, дорожное мужество, темперамент, спокойствие в потоке и законное управление без трензеля, а не породный ярлык или мода. Индивидуальная сертификация имеет приоритет над породой.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Стандарт</p>
+        <h3 class="register__title">Имперский стандарт климатической нагрузки на лошадей</h3>
+        <p class="register__note">Погода, влажность, сырость, холод, жара, ветер, состояние грунта и уровни подвески, выраженные в порогах нагрузки.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Стандарт</p>
+        <h3 class="register__title">Имперский стандарт освещения и сигнализации экипажей</h3>
+        <p class="register__note">Каретные фонари, аварийные предупреждения, подсвечиваемые маркеры дорожного статуса и лампы наземного наведения.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Стандарт</p>
+        <h3 class="register__title">Имперский технический стандарт санитарной кареты</h3>
+        <p class="register__note">Скорость, малая тряска, подвеска, полосы экстренного проезда, глайдвеи и испытания.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Регламент</p>
+        <h3 class="register__title">Имперский регламент обмеров амуниции</h3>
+        <p class="register__note">Порядок измерения и допустимые значения, обеспечивающие Кодекс амуниции, средств удержания и благополучия.</p>
+      </li>
+  </ul>
+
+  <h2>Официальные формы</h2>
+  <p class="h2-num">Бланки, выпускаемые Империей</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Форма</p>
+        <h3 class="register__title">Имперская форма паспорта рабочего непарнокопытного</h3>
+        <p class="register__note">Документ, удостоверяющий личность каждого рабочего непарнокопытного.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">Действует</span> &middot; Форма</p>
+        <h3 class="register__title">Имперская форма дорожно-рабочего свидетельства упряжного непарнокопытного</h3>
+        <p class="register__note">Свидетельство о пригодности к дорожной и упряжной работе.</p>
+      </li>
+  </ul>
+
+  <h2>Отложено для разработки</h2>
+  <p class="h2-num">Решено по существу, но ещё не написано</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Планируется</span> &middot; Инфраструктура</p>
+        <h3 class="register__title">Дорожно-административное и инфраструктурное право</h3>
+        <p class="register__note">Строительство, содержание и управление сетью общественных дорог, отделённые от кодексов благополучия, которые эту сеть используют.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Планируется</span> &middot; Ливрея</p>
+        <h3 class="register__title">Стандарт ливреи и служебной формы</h3>
+        <p class="register__note">Оформление служебной ливреи, вынесенное за пределы кодексов благополучия.</p>
+      </li>
+  </ul>
+
+  <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Примечание к реестру.</strong> Названия и охват взяты из рабочего корпуса. Полные тексты на портале пока не опубликованы; они будут добавляться акт за актом. Стандарт дорожных маркеров изложен полностью в разделе <a href="../../horses/road-status/">лошадей</a>.</p></div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Империя</h2>
+      <ul>
+        <li><a href="../../../ru/gov/">Государство и доктрина</a></li>
+        <li><a href="../../../ru/gov/#dynamics">Восемь Динамик</a></li>
+        <li><a href="../../../ru/gov/#diarchy">Имперская диархия</a></li>
+        <li><a href="../../../ru/gov/law/">Имперское право</a></li>
+        <li><a href="../../../ru/history/">История</a></li>
+        <li><a href="../../../ru/symbols/">Название, флаг и символы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Жизнь здесь</h2>
+      <ul>
+        <li><a href="../../../ru/living/">Жизнь в Хроссагрид</a></li>
+        <li><a href="../../../ru/living/health/">Здравоохранение</a></li>
+        <li><a href="../../../ru/living/education/">Образование и дети</a></li>
+        <li><a href="../../../ru/living/transport/">Транспорт и дороги</a></li>
+        <li><a href="../../../ru/living/justice/">Правосудие и полиция</a></li>
+        <li><a href="../../../ru/living/money/">Труд и деньги</a></li>
+        <li><a href="../../../ru/living/citizenship/">Гражданство и убежище</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Лошади и дороги</h2>
+      <ul>
+        <li><a href="../../../ru/horses/">Лошади</a></li>
+        <li><a href="../../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+        <li><a href="../../../ru/horses/#service">Служебные непарнокопытные</a></li>
+        <li><a href="../../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Портал</h2>
+      <ul>
+        <li><a href="../../../ru/about/">О проекте</a></li>
+        <li><a href="../../../ru/search/">Поиск по порталу</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>
