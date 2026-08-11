@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +21,33 @@
 })();
 </script>
 </head>
-<body>
+<body data-root="../">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <div class="utility">
   <div class="shell utility__inner">
-    <p class="utility__note">A worldbuilding project &mdash; Hrossagri&#240; is a fictional country</p>
+    <p class="utility__note">A worldbuilding project</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Search the portal</label>
+      <input type="search" id="q" name="q" placeholder="Search the portal" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <label class="visually-hidden" for="locale">Language</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en" selected>English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" disabled>Русский — in preparation</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
   </div>
 </div>
@@ -45,6 +66,55 @@
 
 <nav class="nav" aria-label="Primary">
   <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="All sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>The Empire</h2>
+            <ul>
+            <li><a href="../gov/">Government and doctrine</a></li>
+            <li><a href="../gov/#dynamics">The Eight Dynamics</a></li>
+            <li><a href="../gov/#diarchy">The Imperial Diarchy</a></li>
+            <li><a href="../gov/law/">Imperial law</a></li>
+            <li><a href="../history/">History</a></li>
+            <li><a href="../symbols/">Name, flag and symbols</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Living here</h2>
+            <ul>
+            <li><a href="../living/">Living in Hrossagri&#240;</a></li>
+            <li><a href="../living/health/">Health</a></li>
+            <li><a href="../living/education/">Education and children</a></li>
+            <li><a href="../living/transport/">Transport and roads</a></li>
+            <li><a href="../living/justice/">Justice and policing</a></li>
+            <li><a href="../living/money/">Work and money</a></li>
+            <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Horses and roads</h2>
+            <ul>
+            <li><a href="../horses/">Horses</a></li>
+            <li><a href="../horses/#welfare">Welfare and bitless control</a></li>
+            <li><a href="../horses/#service">Service equids</a></li>
+            <li><a href="../horses/road-status/">Road-status marker standard</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>This portal</h2>
+            <ul>
+            <li><a href="../about/">About this project</a></li>
+            <li><a href="../search/">Search the portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
     <a href="../">Home</a>
     <a href="../horses/" aria-current="page">Horses</a>
     <a href="../living/">Living</a>
@@ -192,17 +262,54 @@
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#3d7860"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 17c8 0 13 6 13 14 0 8-5 15-13 15s-13-7-13-15c0-8 5-14 13-14zm0 8c-4 0-6 3-6 7 0 5 2 9 6 9s6-4 6-9c0-4-2-7-6-7z" fill="#ffffff"/></svg>
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#3d7860"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/>
+  <g fill="#ffffff">
+    <!-- Hoofprint: open-heeled U, as a hoof leaves in soft ground -->
+    <path d="M21 21c-4.6 0-7.6 3.6-7.6 8.6 0 4.6 1.6 8.4 3.6 10.9 1 1.2 2.6.5 2.6-1V33c0-1 .6-1.6 1.4-1.6s1.4.6 1.4 1.6v6.5c0 1.5 1.6 2.2 2.6 1 2-2.5 3.6-6.3 3.6-10.9 0-5-3-8.6-7.6-8.6z"/>
+    <!-- Pawprint: central pad and four toes -->
+    <circle cx="43" cy="27.5" r="2.9"/>
+    <circle cx="50.5" cy="26" r="2.9"/>
+    <circle cx="37.5" cy="33" r="2.7"/>
+    <circle cx="54" cy="32" r="2.7"/>
+    <path d="M45.8 34.6c4.4 0 7.6 3 7.6 6.4 0 2.8-2.4 4.4-5.2 4.4h-4.8c-2.8 0-5.2-1.6-5.2-4.4 0-3.4 3.2-6.4 7.6-6.4z"/>
+  </g>
+</svg>
         <span>
-          <strong class="marker__name">Green, paw-and-hoof</strong>
+          <strong class="marker__name">Green, paw and hoof</strong>
           <span class="marker__what">Veterinary emergency service.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#2f5f96"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M16 34c6-6 13-9 22-9l-4-5 12 7-12 7 4-5c-8 0-15 2-22 5z" fill="#ffffff"/><rect x="20" y="38" width="24" height="7" rx="1.5" fill="#ffffff"/></svg>
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#2f5f96"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/>
+  <g fill="#ffffff">
+    <!-- Barrel -->
+    <ellipse cx="32" cy="38" rx="12" ry="7"/>
+    <!-- Chest and haunch, kept as separate masses so the outline reads -->
+    <circle cx="22.5" cy="37" r="6"/>
+    <circle cx="41" cy="36.5" r="6.5"/>
+    <!-- Neck and head drawn as thick strokes: they stay legible at 50px -->
+    <g stroke="#ffffff" stroke-linecap="round" fill="none">
+      <path d="M20.5 35 L15.5 22.5" stroke-width="8"/>
+      <path d="M15.2 21.5 L9.4 18.6" stroke-width="6.4"/>
+    </g>
+    <path d="M14.2 17.4 l-1.1-4.4 c-.2-1 1.1-1.5 1.6-.6 l2 3.5z"/>
+    <!-- Wing: a fan of three feathers swept up and back -->
+    <path d="M34 31 C 38 22, 45 16, 53 13 c1.1-.4 2 .8 1.3 1.7 l-5 6.4
+             6.6-2.6 c1.2-.5 2.2.9 1.3 1.8 l-5.6 5.4 5.6-.7
+             c1.3-.2 1.9 1.5.8 2.1 l-8.4 4.6 C 44 33.6, 38.6 33.2, 34 31 z"/>
+    <!-- Legs -->
+    <path d="M25 44 l-1.6 8.5 c-.2 1.2 1.6 1.5 1.9.3 L27.4 45z"/>
+    <path d="M30.5 45 l-.8 8.8 c-.1 1.2 1.7 1.4 1.9.2 L33.4 45.4z"/>
+    <path d="M39 44.5 l1.4 8.6 c.2 1.2 2 1 1.9-.2 L41.6 44.6z"/>
+    <path d="M44 43 l2.6 8 c.4 1.2 2.1.7 1.9-.5 L47 42.4z"/>
+    <!-- Tail -->
+    <path d="M46.6 34 c3.6.6 6.4 2.8 8.2 6.2.6 1.1-.9 2-1.7 1.1 l-3-3.2 .9 4.4
+             c.2 1.2-1.5 1.6-1.9.4 L46 36.6z"/>
+  </g>
+</svg>
         <span>
-          <strong class="marker__name">Blue, winged emblem</strong>
-          <span class="marker__what">Post, messenger or courier service.</span>
+          <strong class="marker__name">Blue, pegasus</strong>
+          <span class="marker__what">Imperial post, messenger or courier service.</span>
         </span>
       </li>
       <li class="marker">
@@ -220,9 +327,9 @@
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#16261d"/><circle cx="32" cy="32" r="25.0" fill="none" stroke="#e8e8e2" stroke-width="6"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 16l4 10 10-2-6 9 6 9-10-2-4 10-4-10-10 2 6-9-6-9 10 2z" fill="#ffffff"/></svg>
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#1f4d2f"/><circle cx="32" cy="32" r="25.0" fill="none" stroke="#e8e8e2" stroke-width="6"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 16l4 10 10-2-6 9 6 9-10-2-4 10-4-10-10 2 6-9-6-9 10 2z" fill="#ffffff"/></svg>
         <span>
-          <strong class="marker__name">Very dark green, sigil</strong>
+          <strong class="marker__name">Dark green, sigil</strong>
           <span class="marker__what">Military service.</span>
         </span>
       </li>
@@ -259,6 +366,8 @@
       <h2>The Empire</h2>
       <ul>
         <li><a href="../gov/">Government and doctrine</a></li>
+        <li><a href="../gov/#dynamics">The Eight Dynamics</a></li>
+        <li><a href="../gov/#diarchy">The Imperial Diarchy</a></li>
         <li><a href="../gov/law/">Imperial law</a></li>
         <li><a href="../history/">History</a></li>
         <li><a href="../symbols/">Name, flag and symbols</a></li>
@@ -267,34 +376,39 @@
     <div>
       <h2>Living here</h2>
       <ul>
+        <li><a href="../living/">Living in Hrossagri&#240;</a></li>
         <li><a href="../living/health/">Health</a></li>
         <li><a href="../living/education/">Education and children</a></li>
+        <li><a href="../living/transport/">Transport and roads</a></li>
         <li><a href="../living/justice/">Justice and policing</a></li>
         <li><a href="../living/money/">Work and money</a></li>
+        <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
       </ul>
     </div>
     <div>
-      <h2>Roads and equids</h2>
+      <h2>Horses and roads</h2>
       <ul>
         <li><a href="../horses/">Horses</a></li>
-        <li><a href="../horses/road-status/">Road-status markers</a></li>
-        <li><a href="../living/transport/">Transport and roads</a></li>
+        <li><a href="../horses/#welfare">Welfare and bitless control</a></li>
+        <li><a href="../horses/#service">Service equids</a></li>
+        <li><a href="../horses/road-status/">Road-status marker standard</a></li>
       </ul>
     </div>
     <div>
       <h2>This portal</h2>
       <ul>
         <li><a href="../about/">About this project</a></li>
-        <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
+        <li><a href="../search/">Search the portal</a></li>
       </ul>
     </div>
   </div>
   <div class="shell footer__bottom">
-    <p class="footer__disclaimer">Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
-    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; State Portal &middot; hrossagrith.github.io</p>
+    <p class="footer__disclaimer">Unfortunately, Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Imperial State Portal &middot; hrossagrith.github.io</p>
   </div>
 </footer>
 
 <script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
 </body>
 </html>
