@@ -610,8 +610,8 @@ li {
   top: 1.1rem;
   width: 56px;
   height: 56px;
-  color: var(--cinnabar);
-  opacity: 0.9;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--gold), 0 0 0 3px rgba(194, 160, 82, 0.22);
 }
 
 .notice p:last-child {
