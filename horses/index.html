@@ -36,7 +36,7 @@
     <select class="locale" id="locale" data-locale-picker>
       <option value="en" selected>English (UK)</option>
       <option value="en-us" disabled>English (US) — in preparation</option>
-      <option value="ru" disabled>Русский — in preparation</option>
+      <option value="ru">Русский</option>
       <option value="de" disabled>Deutsch — in preparation</option>
       <option value="fr" disabled>Français — in preparation</option>
       <option value="nl" disabled>Nederlands — in preparation</option>
@@ -54,9 +54,9 @@
 
 <header class="masthead">
   <div class="shell masthead__inner">
-    <img class="masthead__flag" src="../assets/flag.jpg"
-         alt="Flag of the Empire of Hrossagri&#240;" width="84" height="56">
-    <svg class="masthead__emblem" aria-hidden="true"><use href="../assets/icons.svg#i-emblem"></use></svg>
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
+         width="360" height="360">
     <p class="masthead__state">Imperial State Portal</p>
     <p class="masthead__name"><a href="../">The Empire of Hrossagri&#240;</a></p>
     <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>
@@ -195,35 +195,35 @@
   <h3>Ordinary and restricted statuses</h3>
   <ul class="markers">
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#f7f7f4"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/></svg>
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">White field</strong>
           <span class="marker__what">Ordinary road-certified equid.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#4f9d54"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/></svg>
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Green field</strong>
           <span class="marker__what">Green equid, provisional certificate, training status, or supervised road work.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#e8c33a"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/></svg>
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Yellow field</strong>
           <span class="marker__what">Caution: sensitivity, extra-space requirement, or heightened startle risk.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#f7f7f4"/><circle cx="32" cy="32" r="24.5" fill="none" stroke="#c0392b" stroke-width="7"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/></svg>
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">White field, red border</strong>
           <span class="marker__what">Restricted passing. Pass only on the signal of the driver, rider or handler.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#c0392b"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M22 22 L42 42 M42 22 L22 42" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/></svg>
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Red field, white X</strong>
           <span class="marker__what">Do not pass. Stop and wait: an active hazard or immediate control condition exists.</span>
@@ -234,100 +234,63 @@
   <h3>Service statuses</h3>
   <ul class="markers">
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#2f5f96"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 17l12 12-5 5-7-7-7 7-5-5z" fill="#ffffff"/><path d="M32 31l12 12-5 5-7-7-7 7-5-5z" fill="#ffffff" opacity="0.8"/></svg>
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Blue, Road Guard emblem</strong>
           <span class="marker__what">Imperial Road Guard, traffic patrol, road-control service.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#2f5f96"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 16l11 4v10c0 8-5 14-11 17-6-3-11-9-11-17V20z" fill="#ffffff"/></svg>
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Blue, police shield</strong>
           <span class="marker__what">Police service, where authorised.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#f7f7f4"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M28 16h8v12h12v8H36v12h-8V36H16v-8h12z" fill="#c0392b"/></svg>
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">White, red cross</strong>
           <span class="marker__what">Ambulance or authorised medical emergency service.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#c0392b"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 15c6 7 9 12 9 17a9 9 0 0 1-18 0c0-3 1-5 3-8 1 3 2 4 3 4 1 0 1-1 1-3 0-3 1-6 2-10z" fill="#ffffff"/></svg>
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Red, white flame</strong>
           <span class="marker__what">Fire or rescue service.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#3d7860"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/>
-  <g fill="#ffffff">
-    <!-- Hoofprint: open-heeled U, as a hoof leaves in soft ground -->
-    <path d="M21 21c-4.6 0-7.6 3.6-7.6 8.6 0 4.6 1.6 8.4 3.6 10.9 1 1.2 2.6.5 2.6-1V33c0-1 .6-1.6 1.4-1.6s1.4.6 1.4 1.6v6.5c0 1.5 1.6 2.2 2.6 1 2-2.5 3.6-6.3 3.6-10.9 0-5-3-8.6-7.6-8.6z"/>
-    <!-- Pawprint: central pad and four toes -->
-    <circle cx="43" cy="27.5" r="2.9"/>
-    <circle cx="50.5" cy="26" r="2.9"/>
-    <circle cx="37.5" cy="33" r="2.7"/>
-    <circle cx="54" cy="32" r="2.7"/>
-    <path d="M45.8 34.6c4.4 0 7.6 3 7.6 6.4 0 2.8-2.4 4.4-5.2 4.4h-4.8c-2.8 0-5.2-1.6-5.2-4.4 0-3.4 3.2-6.4 7.6-6.4z"/>
-  </g>
-</svg>
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Green, paw and hoof</strong>
           <span class="marker__what">Veterinary emergency service.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#2f5f96"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/>
-  <g fill="#ffffff">
-    <!-- Barrel -->
-    <ellipse cx="32" cy="38" rx="12" ry="7"/>
-    <!-- Chest and haunch, kept as separate masses so the outline reads -->
-    <circle cx="22.5" cy="37" r="6"/>
-    <circle cx="41" cy="36.5" r="6.5"/>
-    <!-- Neck and head drawn as thick strokes: they stay legible at 50px -->
-    <g stroke="#ffffff" stroke-linecap="round" fill="none">
-      <path d="M20.5 35 L15.5 22.5" stroke-width="8"/>
-      <path d="M15.2 21.5 L9.4 18.6" stroke-width="6.4"/>
-    </g>
-    <path d="M14.2 17.4 l-1.1-4.4 c-.2-1 1.1-1.5 1.6-.6 l2 3.5z"/>
-    <!-- Wing: a fan of three feathers swept up and back -->
-    <path d="M34 31 C 38 22, 45 16, 53 13 c1.1-.4 2 .8 1.3 1.7 l-5 6.4
-             6.6-2.6 c1.2-.5 2.2.9 1.3 1.8 l-5.6 5.4 5.6-.7
-             c1.3-.2 1.9 1.5.8 2.1 l-8.4 4.6 C 44 33.6, 38.6 33.2, 34 31 z"/>
-    <!-- Legs -->
-    <path d="M25 44 l-1.6 8.5 c-.2 1.2 1.6 1.5 1.9.3 L27.4 45z"/>
-    <path d="M30.5 45 l-.8 8.8 c-.1 1.2 1.7 1.4 1.9.2 L33.4 45.4z"/>
-    <path d="M39 44.5 l1.4 8.6 c.2 1.2 2 1 1.9-.2 L41.6 44.6z"/>
-    <path d="M44 43 l2.6 8 c.4 1.2 2.1.7 1.9-.5 L47 42.4z"/>
-    <!-- Tail -->
-    <path d="M46.6 34 c3.6.6 6.4 2.8 8.2 6.2.6 1.1-.9 2-1.7 1.1 l-3-3.2 .9 4.4
-             c.2 1.2-1.5 1.6-1.9.4 L46 36.6z"/>
-  </g>
-</svg>
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Blue, pegasus</strong>
           <span class="marker__what">Imperial post, messenger or courier service.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#14181a"/><circle cx="32" cy="32" r="25.0" fill="none" stroke="#e8e8e2" stroke-width="6"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/></svg>
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Black, white border</strong>
           <span class="marker__what">Sovereign passage, where legally authorised.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#14181a"/><circle cx="32" cy="32" r="25.0" fill="none" stroke="#e8e8e2" stroke-width="6"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M18 42l-3-18 8 6 9-12 9 12 8-6-3 18z" fill="#ffffff"/><rect x="18" y="44" width="28" height="4" fill="#ffffff"/></svg>
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Black with crown</strong>
           <span class="marker__what">Authorised imperial government, ministerial or state authority passage.</span>
         </span>
       </li>
       <li class="marker">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#1f4d2f"/><circle cx="32" cy="32" r="25.0" fill="none" stroke="#e8e8e2" stroke-width="6"/><circle cx="32" cy="32" r="28" fill="none" stroke="#22302f" stroke-width="1.5" opacity="0.35"/><path d="M32 16l4 10 10-2-6 9 6 9-10-2-4 10-4-10-10 2 6-9-6-9 10 2z" fill="#ffffff"/></svg>
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
         <span>
           <strong class="marker__name">Dark green, sigil</strong>
           <span class="marker__what">Military service.</span>
@@ -403,6 +366,7 @@
     </div>
   </div>
   <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="Flag of the Empire of Hrossagri&#240;" width="120" height="80">
     <p class="footer__disclaimer">Unfortunately, Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
     <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Imperial State Portal &middot; hrossagrith.github.io</p>
   </div>
