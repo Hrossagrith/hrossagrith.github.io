@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Здравоохранение &mdash; Империя Хроссагрид</title>
+<meta name="description" content="Медицина в Хроссагрид: бесплатно в момент обращения, на данных и с перепроверкой.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Поиск по порталу</label>
+      <input type="search" id="q" name="q" placeholder="Поиск по порталу" autocomplete="off">
+      <button type="submit">Найти</button>
+    </form>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" selected>Русский</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
+         width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../../../ru/">Империя Хроссагрид</a></p>
+    <p class="masthead__motto">Убежище для лошадей и мир, который обеспечен силой закона</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Все разделы">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Меню
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Империя</h2>
+            <ul>
+            <li><a href="../../../ru/gov/">Государство и доктрина</a></li>
+            <li><a href="../../../ru/gov/#dynamics">Восемь Динамик</a></li>
+            <li><a href="../../../ru/gov/#diarchy">Имперская диархия</a></li>
+            <li><a href="../../../ru/gov/law/">Имперское право</a></li>
+            <li><a href="../../../ru/history/">История</a></li>
+            <li><a href="../../../ru/symbols/">Название, флаг и символы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Жизнь здесь</h2>
+            <ul>
+            <li><a href="../../../ru/living/">Жизнь в Хроссагрид</a></li>
+            <li><a href="../../../ru/living/health/">Здравоохранение</a></li>
+            <li><a href="../../../ru/living/education/">Образование и дети</a></li>
+            <li><a href="../../../ru/living/transport/">Транспорт и дороги</a></li>
+            <li><a href="../../../ru/living/justice/">Правосудие и полиция</a></li>
+            <li><a href="../../../ru/living/money/">Труд и деньги</a></li>
+            <li><a href="../../../ru/living/citizenship/">Гражданство и убежище</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Лошади и дороги</h2>
+            <ul>
+            <li><a href="../../../ru/horses/">Лошади</a></li>
+            <li><a href="../../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+            <li><a href="../../../ru/horses/#service">Служебные непарнокопытные</a></li>
+            <li><a href="../../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Портал</h2>
+            <ul>
+            <li><a href="../../../ru/about/">О проекте</a></li>
+            <li><a href="../../../ru/search/">Поиск по порталу</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ru/">Главная</a>
+    <a href="../../../ru/horses/">Лошади</a>
+    <a href="../../../ru/living/" aria-current="page">Жизнь</a>
+    <a href="../../../ru/gov/">Государство</a>
+    <a href="../../../ru/gov/law/">Право</a>
+    <a href="../../../ru/history/">История</a>
+    <a href="../../../ru/symbols/">Символы</a>
+    <a href="../../../ru/about/">О проекте</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ru/">Главная</a><span>&rsaquo;</span><a href="../../../ru/living/">Жизнь</a><span>&rsaquo;</span><strong>Здравоохранение</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Книга II &middot; Часть I</p>
+  <h1 class="page-title">Здравоохранение</h1>
+  <p class="page-standfirst">Бесплатно в момент обращения, щедро финансируется и намеренно спроектировано против тех сбоев, из-за которых бесплатная медицина в других местах перестаёт работать.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Медицинская помощь в Хроссагрид бесплатна в момент обращения. Это легко провозгласить и трудно обеспечить, поэтому цель проектирования сформулирована от противного: система строится так, чтобы предотвращать очереди, нехватку персонала и региональное неравенство, а не объявлять право и затем тихо его нормировать.</p>
+
+      <h2>Данные прежде намерений</h2>
+      <p class="h2-num">Почему Империя перепроверяет то, во что уже верит</p>
+      <p>Этика решает, что считается созидательным; наука устанавливает, что происходит на самом деле. Лечение принимается не потому, что цель у него благая. Оно принимается потому, что исследования, воспроизведение, статистика, наблюдение за нежелательными эффектами и сравнение с альтернативами говорят, что оно работает. Если препарат не действует, благие намерения не дают права его применять.</p>
+      <p>То же правило действует и назад во времени. Новое исследование не лучше старого автоматически, и превосходное старое исследование, выдержавшее современную проверку, остаётся. Но старое утверждение не получает бессрочного иммунитета за то, что век пролежало в учебниках. Старым медицинским догмам, психологическим теориям и профессиональным стандартам задают один и тот же вопрос: а это вообще когда-нибудь проверяли как следует?</p>
+
+      <h2>Женщины и дети</h2>
+      <p class="h2-num">Там, где исторические данные слабее всего</p>
+      <p>Значительная часть медицинской литературы создана в обществах с тяжёлым сексизмом и совсем иным отношением к детям. Там, где прежние исследования плохо изучали женщин, Империя не считает это досадным, но окончательным. Она целенаправленно финансирует исследования женской боли, гинекологических заболеваний, сердечно-сосудистых заболеваний у женщин, действия лекарств на женщин, аутизма и других состояний у девочек, материнского здоровья.</p>
+      <p>Ребёнок не рассматривается как уменьшенный взрослый. Исследование обязано учитывать развивающееся тело и психику, а клиническая практика следует за исследованием, а не за традицией.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>В подготовке.</strong> Устройство имперских больниц, санитарной службы и медицинских профессий пока не внесено в реестр. Имперский технический стандарт санитарной кареты, регулирующий перевозку больных, <a href="../../gov/law/">действует</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Связанное</strong>
+      <a href="../../gov/law/">Имперский технический стандарт санитарной кареты</a> — скорость, малая тряска, подвеска, полосы экстренного проезда и испытания.
+      <br><br>
+      <strong>Принцип</strong>
+      Этика говорит, что важно. Наука говорит, что истинно. Одно не подменяет другого.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Империя</h2>
+      <ul>
+        <li><a href="../../../ru/gov/">Государство и доктрина</a></li>
+        <li><a href="../../../ru/gov/#dynamics">Восемь Динамик</a></li>
+        <li><a href="../../../ru/gov/#diarchy">Имперская диархия</a></li>
+        <li><a href="../../../ru/gov/law/">Имперское право</a></li>
+        <li><a href="../../../ru/history/">История</a></li>
+        <li><a href="../../../ru/symbols/">Название, флаг и символы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Жизнь здесь</h2>
+      <ul>
+        <li><a href="../../../ru/living/">Жизнь в Хроссагрид</a></li>
+        <li><a href="../../../ru/living/health/">Здравоохранение</a></li>
+        <li><a href="../../../ru/living/education/">Образование и дети</a></li>
+        <li><a href="../../../ru/living/transport/">Транспорт и дороги</a></li>
+        <li><a href="../../../ru/living/justice/">Правосудие и полиция</a></li>
+        <li><a href="../../../ru/living/money/">Труд и деньги</a></li>
+        <li><a href="../../../ru/living/citizenship/">Гражданство и убежище</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Лошади и дороги</h2>
+      <ul>
+        <li><a href="../../../ru/horses/">Лошади</a></li>
+        <li><a href="../../../ru/horses/#welfare">Благополучие и управление без трензеля</a></li>
+        <li><a href="../../../ru/horses/#service">Служебные непарнокопытные</a></li>
+        <li><a href="../../../ru/horses/road-status/">Стандарт дорожных маркеров</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Портал</h2>
+      <ul>
+        <li><a href="../../../ru/about/">О проекте</a></li>
+        <li><a href="../../../ru/search/">Поиск по порталу</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>
