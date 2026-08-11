@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +21,33 @@
 })();
 </script>
 </head>
-<body>
+<body data-root="../">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <div class="utility">
   <div class="shell utility__inner">
-    <p class="utility__note">A worldbuilding project &mdash; Hrossagri&#240; is a fictional country</p>
+    <p class="utility__note">A worldbuilding project</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Search the portal</label>
+      <input type="search" id="q" name="q" placeholder="Search the portal" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <label class="visually-hidden" for="locale">Language</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en" selected>English (UK)</option>
+      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="ru" disabled>Русский — in preparation</option>
+      <option value="de" disabled>Deutsch — in preparation</option>
+      <option value="fr" disabled>Français — in preparation</option>
+      <option value="nl" disabled>Nederlands — in preparation</option>
+      <option value="no" disabled>Norsk bokmål — in preparation</option>
+      <option value="sv" disabled>Svenska — in preparation</option>
+      <option value="fi" disabled>Suomi — in preparation</option>
+      <option value="it" disabled>Italiano — in preparation</option>
+      <option value="zh" disabled>中文 — in preparation</option>
+      <option value="ja" disabled>日本語 — in preparation</option>
+      <option value="ko" disabled>한국어 — in preparation</option>
+    </select>
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
   </div>
 </div>
@@ -45,6 +66,55 @@
 
 <nav class="nav" aria-label="Primary">
   <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="All sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>The Empire</h2>
+            <ul>
+            <li><a href="../gov/">Government and doctrine</a></li>
+            <li><a href="../gov/#dynamics">The Eight Dynamics</a></li>
+            <li><a href="../gov/#diarchy">The Imperial Diarchy</a></li>
+            <li><a href="../gov/law/">Imperial law</a></li>
+            <li><a href="../history/">History</a></li>
+            <li><a href="../symbols/">Name, flag and symbols</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Living here</h2>
+            <ul>
+            <li><a href="../living/">Living in Hrossagri&#240;</a></li>
+            <li><a href="../living/health/">Health</a></li>
+            <li><a href="../living/education/">Education and children</a></li>
+            <li><a href="../living/transport/">Transport and roads</a></li>
+            <li><a href="../living/justice/">Justice and policing</a></li>
+            <li><a href="../living/money/">Work and money</a></li>
+            <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Horses and roads</h2>
+            <ul>
+            <li><a href="../horses/">Horses</a></li>
+            <li><a href="../horses/#welfare">Welfare and bitless control</a></li>
+            <li><a href="../horses/#service">Service equids</a></li>
+            <li><a href="../horses/road-status/">Road-status marker standard</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>This portal</h2>
+            <ul>
+            <li><a href="../about/">About this project</a></li>
+            <li><a href="../search/">Search the portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
     <a href="../">Home</a>
     <a href="../horses/">Horses</a>
     <a href="../living/">Living</a>
@@ -123,6 +193,8 @@
       <h2>The Empire</h2>
       <ul>
         <li><a href="../gov/">Government and doctrine</a></li>
+        <li><a href="../gov/#dynamics">The Eight Dynamics</a></li>
+        <li><a href="../gov/#diarchy">The Imperial Diarchy</a></li>
         <li><a href="../gov/law/">Imperial law</a></li>
         <li><a href="../history/">History</a></li>
         <li><a href="../symbols/">Name, flag and symbols</a></li>
@@ -131,34 +203,39 @@
     <div>
       <h2>Living here</h2>
       <ul>
+        <li><a href="../living/">Living in Hrossagri&#240;</a></li>
         <li><a href="../living/health/">Health</a></li>
         <li><a href="../living/education/">Education and children</a></li>
+        <li><a href="../living/transport/">Transport and roads</a></li>
         <li><a href="../living/justice/">Justice and policing</a></li>
         <li><a href="../living/money/">Work and money</a></li>
+        <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
       </ul>
     </div>
     <div>
-      <h2>Roads and equids</h2>
+      <h2>Horses and roads</h2>
       <ul>
         <li><a href="../horses/">Horses</a></li>
-        <li><a href="../horses/road-status/">Road-status markers</a></li>
-        <li><a href="../living/transport/">Transport and roads</a></li>
+        <li><a href="../horses/#welfare">Welfare and bitless control</a></li>
+        <li><a href="../horses/#service">Service equids</a></li>
+        <li><a href="../horses/road-status/">Road-status marker standard</a></li>
       </ul>
     </div>
     <div>
       <h2>This portal</h2>
       <ul>
         <li><a href="../about/">About this project</a></li>
-        <li><a href="../living/citizenship/">Citizenship and refuge</a></li>
+        <li><a href="../search/">Search the portal</a></li>
       </ul>
     </div>
   </div>
   <div class="shell footer__bottom">
-    <p class="footer__disclaimer">Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
-    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; State Portal &middot; hrossagrith.github.io</p>
+    <p class="footer__disclaimer">Unfortunately, Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Imperial State Portal &middot; hrossagrith.github.io</p>
   </div>
 </footer>
 
 <script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
 </body>
 </html>
