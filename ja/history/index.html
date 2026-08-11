@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歴史 &mdash; フロッサグリーズ帝国</title>
+<meta name="description" content="フロッサグリーズの民の初期の歴史、c. 1200-100 BC。渡河危機、庇護の盟約、三路協定。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../ja/gov/">政府と教義</a></li>
+            <li><a href="../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../../ja/gov/law/">帝国法</a></li>
+            <li><a href="../../ja/history/">歴史</a></li>
+            <li><a href="../../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../../ja/living/health/">保健医療</a></li>
+            <li><a href="../../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../../ja/horses/">馬</a></li>
+            <li><a href="../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../../ja/about/">この企画について</a></li>
+            <li><a href="../../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../ja/">ホーム</a>
+    <a href="../../ja/horses/">馬</a>
+    <a href="../../ja/living/">暮らし</a>
+    <a href="../../ja/gov/">政府</a>
+    <a href="../../ja/gov/law/">法</a>
+    <a href="../../ja/history/" aria-current="page">歴史</a>
+    <a href="../../ja/symbols/">象徴</a>
+    <a href="../../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../ja/">ホーム</a><span>&rsaquo;</span><strong>歴史</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第IV書</p>
+  <h1 class="page-title">初期の歴史</h1>
+  <p class="page-standfirst">c.&nbsp;1200&ndash;100 BC を扱う、四つの再構成された部。この記述は望ましい現代の領域から始まるのではなく、史料が支えきれない国民的な誕生を帝国に与えることもしない。</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>歴史的方法。</strong> この再構成は、実在の考古学的な制約と、架空のフロッサグリーズの伝承とを結び合わせたものである。考古学は環境、技術、集落の形態および物資の交換を制約し得るが、ここに記された個々の血讐、決定、演説または動機を裏づけることはできない。残された伝承が複数の説明を区別し得ないところでは、この記述は一つの動機を確立した事実として示すのではなく、その不確かさを保存する。</p></div>
+
+
+  <div class="jump">
+    <h2>部へ移動</h2>
+    <ol>
+      <li><a href="#part-1">第I部 &middot; c. 1200&ndash;650 BC &mdash; 民の成立以前と、その危機</a></li>
+      <li><a href="#part-2">第II部 &middot; c. 650&ndash;500 BC &mdash; 頼りにならない網</a></li>
+      <li><a href="#part-3">第III部 &middot; c. 500&ndash;300 BC &mdash; 再興、過度の拡張、最初の政治的な馬</a></li>
+      <li><a href="#part-4">第IV部 &middot; c. 300&ndash;100 BC &mdash; 速度と、それが購い得なかったもの</a></li>
+    </ol>
+  </div>
+
+  <div class="controls">
+    <button type="button" data-expand-all aria-pressed="false">すべての部を展開</button>
+  </div>
+
+      <details class="part" id="part-1" open>
+        <summary><span class="part__years">c. 1200&ndash;650 BC</span> 第I部</summary>
+        <div class="part__body">
+        <p class="h2-num">民の成立以前と、民を作り出した危機</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 1200&ndash;1050 BC</p>
+          <h3 class="timeline__title">フロッサグリーズの民の以前</h3>
+          <p>フロッサグリーズの民も、国家も、共通の同一性も存在しない。アイルランド中部の低地には、シャノン川中流、ロッホ・リー、ウェストミース中部、ロスコモン東部およびオファリー北部の周辺に、散在する農耕共同体がある。権威は恒久的な国家にではなく、家門、親族集団および地域の首長に属する。馬は少数であれば存在し得るが、まだ社会、法または統治の基礎ではない&mdash;そして後にフロッサグリーズの中核となる地域は、より豊かな幾つかの地域に混じった、ありふれた内陸の一地域にすぎない。</p>
+          <p class="timeline__status">領域の状態：盟約なく、共有された領域もない。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 1050&ndash;980 BC</p>
+          <h3 class="timeline__title">渡河危機</h3>
+          <p>最初の持続的な分岐は、シャノン川中流の重要な渡河点に置かれる&mdash;そこはすでに実用的な経路以上のものであり、季節ごとの交換、婚姻の取決め、儀礼的な集会、紛争の解決、ならびに家畜と旅人の移動に用いられていた。</p>
+          <p>盗まれた牛、渡河点への通行、そして古い殺害をめぐる一連の争いが、血讐へと広がる。報復は当初の家族の枠を越えて広がり、旅人は襲われ、補修は止み、渡河点は使用に堪えなくなる。近隣の誰もが損害を被る。家畜を安全に移すことができず、商人は経路を避け、孤立した集落は無防備になる。</p>
+          <p>その後の幾度かの集会を通じて、有力な家門は一時的な平和の慣行を繰り返し回復し、また拡張する&mdash;おおよそ、集会の間、またはその承認された接近路において、受け入れられた参加者を殺害しまたは捕らえることの禁止である。この保護は狭い。集会の間に限り、承認された場所に限り、受け入れ主が受け入れた者に限られる。</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <details class="part" id="part-2" open>
+        <summary><span class="part__years">c. 650&ndash;500 BC</span> 第II部</summary>
+        <div class="part__body">
+        <p class="h2-num">小さく頼りにならない、繰り返し作り直される網</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 650&ndash;620 BC</p>
+          <h3 class="timeline__title">存続と頼りにならない記憶</h3>
+          <p>ある集団は渡河点を補修し、別の集団は舟を備え、別の集団は砂礫の尾根を越える高所の道を切り開き、別の集団は飼料を蓄える。その結果生じるのは、計画された道路網ではなく、使用可能な経路のむらのある網である。文字による記録はない。合意は証人の前で公然と繰り返され、交換された物品、担保に出された家畜または承認された目印によって印づけられる。証人は死に、物品は失われ、有力な家門は人々を威嚇し、集落は同じ約束について両立しない版を保持する。</p>
+          <p>庇護もまた破綻する。保護された旅人が略奪され、または殺されることが時にあり、それが自らの受け入れ主に連なる者によることもある。庇護を価値あるものにしているのは、それが決して破られないことではなく、これを破れば互いに無関係な複数の共同体からの報復を招き、将来の交易を損ない得ることである。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 620&ndash;590 BC</p>
+          <h3 class="timeline__title">工人の家門と争われる従属</h3>
+          <p>鉄は一つの技術的な転換によってではなく、複数の人と経路を通じて、むらを伴って到来する。青銅は価値を保ち、盟約に信頼し得る鉄の産業はない。遍歴する工人の家門は、その技能ゆえに選別して迎え入れられ、後援者は労働、物品または教授と引き換えに食糧、保護および仕事場を与える&mdash;その量、期間または同意が明確に定められなかったとき、繰り返し争いを生む取決めである。</p>
+          <p>数十年をかけて一つの慣行が強まる。保護の下に受け入れられた者は、争いが証人の前に持ち出される前に、同行する家門の構成員から引き離され、または保護された動物および不可欠な物品を奪われるべきではない、というものである。有力な後援者はこれを全く顧みないことがある。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 590&ndash;550 BC</p>
+          <h3 class="timeline__title">護送の対価をめぐる争いと、結合した後ろ盾</h3>
+          <p>護送、舟および見張りを提供する家門は、より多くの補償を求める。それらは職業的な兵ではなく、生命を賭しつつ労働と食糧を割く農耕と牧畜の家門である。有力な護送の家系が、すでに保護を約束された旅人から追加の支払を取っていると告発されると、受け入れ主は、それは保障を強請に変えるものだと異議を唱える。いずれの側も持続する勝利を得ない。</p>
+          <p>代わりに残るのは、持続する実際的な教訓である。二つの種類の社会的な力の<em>双方</em>に支えられた合意は長く保つ&mdash;証人を集め義務を交渉し得る人々と、護送、報復および防衛を組織し得る人々である。これは慣習であって二頭制ではなく、いかなる公職をも生まない。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 550&ndash;500 BC</p>
+          <h3 class="timeline__title">持続するが争われる網</h3>
+          <p>出自の異なる家門は、婚姻、里子、負債、血讐および工人の縁によって結ばれるが、明確な共通の同一性は記録に残らない。いくつかの期待は、それを生んだ危急の事態より長く残る。援助は返され、共同で維持される渡河点は予告なく塞がれず、保護された客を襲えば被害者と無関係な共同体からの報復を招き得る。</p>
+          <p>有力な慣行は、人に対する恒久的な所有と、人を財産として移転することを引き続き否認する。拘束と一時的な人質は生じるが、留め置かれた者は保護される者にとどまり、義務が履行され、または正式に放棄されたときには解放されなければならない。</p>
+          <p>馬は依然として証拠に乏しく社会的にも限られており、まだいかなる同一性の中心でもない。安全通行の慣行は、家門とともに移動する動物を、そこにいる馬を含めて保護する。それらの押収が、保護された人々を身動きできなくし、または窮乏させ得るからである。</p>
+          <p class="timeline__status">領域の状態：シャノン川中流の周辺に広がる脆い保護の網&mdash;Hrossagri&#240; の名も、君主も、いずれの王冠も、成文の法も、常備の軍も、首都も、連続した国境もない。</p>
+        </li>
+      </ol>
+
+      <div class="pullquote">
+        <p>保護の約束は、それを物理的に現実のものとし得る者がいなければほとんど意味を持たず、他方で、承認された約束を伴わない力は強請となる。</p>
+      </div>
+
+      </div></details>
+
+      <details class="part" id="part-3" open>
+        <summary><span class="part__years">c. 500&ndash;300 BC</span> 第III部</summary>
+        <div class="part__body">
+        <p class="h2-num">再興、過度の拡張、失敗、そして最初の政治的な馬</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 500&ndash;460 BC</p>
+          <h3 class="timeline__title">集権化なき再興</h3>
+          <p>庇護の慣行は、繰り返し生じる問題を解くがゆえに続く。よそ者には後援者が要り、商人には安全な逗留の場所が要り、受け入れ主には補償が要り、隣人には全面的に屈することなく血讐を終える方法が要る。ある季節ごとの集会がより定期的なものとなる&mdash;誰かが首都を建てるからではなく、その場所に水と放牧地と慣れ親しんだ接近路があり、受け入れ主の家門がそれのもたらす威信を競うからである。欠乏の年には、集会は縮み、移り、または取りやめられる。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 460&ndash;420 BC</p>
+          <h3 class="timeline__title">三路協定</h3>
+          <p>もとの渡河点は、良い季節には隘路となり、悪い季節には破綻の一点となる。有力な家門は三つの代替路を結ぼうと試みる。古い渡河点、上流の舟による渡り、そしてより堅い高地を越える東&ndash;西の道であり、護送の分担、舟の補修、補償および非常時の放牧地を調整する。</p>
+          <p>いずれの経路も不可欠ではないため、これはしばらくの間うまく働く。ついでその成功が新たな対立を生む。分担は等しくなく、最も往来の多い渡河点に近い家門はより多くの贈与と威信を集め、分担する者はただ乗りに対して、舟と護送を自らの者のために留保することで応じる。協定は一瞬で崩れるのではない&mdash;分担は不規則になり、集会には選んで出るようになり、一世代のうちに共同の調整はおおむね働かなくなる。</p>
+          <p class="timeline__status">領域の状態：重なり合う約束によって短い間結ばれた三つの経路。それらが一つの統治される地区になることはついにない。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 420&ndash;370 BC</p>
+          <h3 class="timeline__title">飼料の年と避難の限界</h3>
+          <p>一世代のうちに生じた幾度かの損害の大きい地域的な季節&mdash;冠水した放牧地、飼料の不足、家畜の疫病、途絶した交換&mdash;は、年代の定まった気候上の出来事としてではなく、もっともらしい複合的な打撃として採られている。避難の網はすべての者を受け入れることができない。受け入れ主は保護を割り当てる。技能を持つ働き手と婚姻の縁を持つ者は、後ろ盾のない家族よりも受け入れられやすい。</p>
+          <p>この圧力は、所有を否認する慣行の限界を露わにする。後援者は、支払われていない食糧の負債を期限のない奉仕に変えようとし、または取決めの終了後も年少の家門構成員を留め置こうとする。この対立は、奉仕の継続には証人の前での更新を要し、その際に奉仕を求められる者が居合わせ、その承諾が聞き取られなければならない、というむらのある規則を強める&mdash;もっとも、圧力はなお承諾を虚構に変え得る。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 330&ndash;300 BC</p>
+          <h3 class="timeline__title">政治的に意味を持つ馬の飼養</h3>
+          <p>経路をめぐる争いが繰り返され速度が価値を持つようになるため、少数の富裕な保護の家門が、放牧地、冬の飼料および労働を次第に馬へと振り向ける。繁殖は頭数を速やかには増やさない。牝馬は一年の大半にわたって仔を宿し、生き延びた若い馬が急ぎの騎手を乗せ得るまでには幾季節も費やされる。集められた頭数は、傷、病または一頭の牝馬の喪失によって、一世代のうちに消え去り得る。</p>
+          <p>それでもなお、利点は政治的なものである。騎馬の伝令は渡河点に警告し、縁者を呼び集め、または争いについての対立する説明よりも先に集会に着くことができる。しかし速度は伝言を真実にしない。後から現れる証人がこれを否定することもあり、受け入れ主は裏づけのない騎馬の報告を操作と見なすこともある。</p>
+          <p class="timeline__status">c. 300 BC までの領域の状態：承認された慣行は増え、富裕な家系がいくつかあり、鉄の加工にはむらがある&mdash;そして依然として、共通の国民的な名も、君主も、王冠も、常設の集会も、成文の法も、軍も、課税も、貨幣も、都市も、定まった国境もない。</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <details class="part" id="part-4" open>
+        <summary><span class="part__years">c. 300&ndash;100 BC</span> 第IV部</summary>
+        <div class="part__body">
+        <p class="h2-num">速度と、それが購い得なかったもの</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 300&ndash;260 BC</p>
+          <h3 class="timeline__title">先に動くことの代価</h3>
+          <p>騎馬の伝令は直ちに政治的な問題を生むが、その答えは騎馬の支配階層ではない。適した馬は乏しく、所有することは使える状態に保つことと同じではない。飼料を蓄えねばならず、傷を手当てせねばならず、騎手は土地を知らねばならない。湿った地面、増水、暗さおよび渡河は、速度の利点の多くを消し去る。</p>
+          <p>より深い変化は、有力な受け入れ主が、最初に到着したことを証明として扱うことを次第に拒むようになる点にある。伝令は一時的な用心を取り付けることはできるが、持続する裁定は、名を挙げられた証人または第二の説明を待つ&mdash;これは、偽りの話を先に確立しようと競うことの利得を減らす。</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 260&ndash;220 BC</p>
+          <h3 class="timeline__title">馬保障をめぐる争い</h3>
+          <p>馬の押収は、通常の動物の喪失とは異なる仕方で政治的な重みを帯びる。大多数の家門にとって、富および食糧としては牛の方がはるかに重要であり続けるが、競合する者の馬を奪うことは、速度、威信、および盟友を呼び集める能力を奪う。馬が法において牛とは異なるという一般的な教義はなお存在せず、網の外にある共同体は、いかなる特別の区別をも認める理由を全く見出さないことがある。</p>
+          <p class="timeline__status">領域の状態：独立に支配される土地の間に埋め込まれた、保護された場所と経路。人は、連続した管轄に一度も入ることなく、承認された一人の受け入れ主から他の受け入れ主へと移ることができる。</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>名称について、また王冠について。</strong> この時代を通じて <span class="native">Hrossagri&#240;</span> の名は存在しない。それははるか後に、古ノルド語による他称として現れる。義務を交渉する人々と保護を組織する人々との間に繰り返し現れる区別を、歴史家は、はるか後に別個の危機から生じる<a href="../gov/#diarchy">導く王冠と守る王冠</a>の、かすかな文化的な先祖としてのみ扱う。両者をつなぐ途切れない公職は存在しない。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>ここで用いる名称</strong>
+      初期の時代について、歴史家は<em>庇護の盟約</em>および<em>盟約の諸共同体</em>という現代の呼称を用いる。同時代の共通の名称は残っていない。
+      <br><br>
+      <strong>何が創作か</strong>
+      血讐、決定および制度である。考古学ではなく、また後の名称の文法でもない。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../ja/gov/">政府と教義</a></li>
+        <li><a href="../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../../ja/gov/law/">帝国法</a></li>
+        <li><a href="../../ja/history/">歴史</a></li>
+        <li><a href="../../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../../ja/living/health/">保健医療</a></li>
+        <li><a href="../../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../../ja/horses/">馬</a></li>
+        <li><a href="../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../../ja/about/">この企画について</a></li>
+        <li><a href="../../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

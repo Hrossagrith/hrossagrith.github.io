@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>政府 &mdash; 赫罗萨格里德帝国</title>
+<meta name="description" content="幸福政制、八大动力、引导之冠与守护之冠、议会与法院、继承，以及根本价值。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../zh/" data-i18n="{&quot;light&quot;: &quot;浅色&quot;, &quot;dark&quot;: &quot;深色&quot;, &quot;theme_to_light&quot;: &quot;切换到浅色主题&quot;, &quot;theme_to_dark&quot;: &quot;切换到深色主题&quot;, &quot;search_prompt&quot;: &quot;在上方输入词语或短语，即可搜索本门户的每一个页面。&quot;, &quot;search_running&quot;: &quot;正在搜索…&quot;, &quot;search_none&quot;: &quot;名录中没有条目同时包含全部词语。请减少词语或换用其他词语。&quot;, &quot;search_error&quot;: &quot;无法加载搜索索引。请重试。&quot;, &quot;results_one&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_many&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_none&quot;: &quot;未找到与“{q}”相关的结果&quot;, &quot;expand_all&quot;: &quot;展开全部部分&quot;, &quot;collapse_all&quot;: &quot;收起全部部分&quot;}">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">一个架空世界构建项目</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">搜索本门户</label>
+      <input type="search" id="q" name="q" placeholder="搜索本门户" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <label class="visually-hidden" for="locale">语言</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh" selected>中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="赫罗萨格里德帝国国徽：圆盘之中一只人立的骏鹰" width="360" height="360">
+    <p class="masthead__state">帝国国家门户</p>
+    <p class="masthead__name"><a href="../../zh/">赫罗萨格里德帝国</a></p>
+    <p class="masthead__motto">马匹的庇护之所，以及得到强制维护的和平</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="全部栏目">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        菜单
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../zh/gov/">政府与学说</a></li>
+            <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+            <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+            <li><a href="../../zh/gov/law/">帝国法律</a></li>
+            <li><a href="../../zh/history/">历史</a></li>
+            <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>在此生活</h2>
+            <ul>
+            <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+            <li><a href="../../zh/living/health/">医疗卫生</a></li>
+            <li><a href="../../zh/living/education/">教育与儿童</a></li>
+            <li><a href="../../zh/living/transport/">交通与道路</a></li>
+            <li><a href="../../zh/living/justice/">司法与警务</a></li>
+            <li><a href="../../zh/living/money/">工作与金钱</a></li>
+            <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>马匹与道路</h2>
+            <ul>
+            <li><a href="../../zh/horses/">马匹</a></li>
+            <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+            <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+            <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本门户</h2>
+            <ul>
+            <li><a href="../../zh/about/">关于本项目</a></li>
+            <li><a href="../../zh/search/">搜索本门户</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../zh/">首页</a>
+    <a href="../../zh/horses/">马匹</a>
+    <a href="../../zh/living/">生活</a>
+    <a href="../../zh/gov/" aria-current="page">政府</a>
+    <a href="../../zh/gov/law/">法律</a>
+    <a href="../../zh/history/">历史</a>
+    <a href="../../zh/symbols/">符号</a>
+    <a href="../../zh/about/">关于</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../zh/">首页</a><span>&rsaquo;</span><strong>政府</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第 I 卷</p>
+  <h1 class="page-title">国家及其学说</h1>
+  <p class="page-standfirst">赫罗萨格里德（Hrossagri&#240;）完整的宪制定义是幸福政制的二元君主国。幸福政制回答国家权力为何存在。二元君主制回答权力由谁掌握。</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>一个人类的国家。</strong> 赫罗萨格里德由人类治理，也为人类而治理。它的公民、君主、官员、选民、劳动者、病人和乘客都是人。马与其他马科动物是受保护的生命与劳作搭档；它们不是人口，也不担任任何人类的政治职务。</p></div>
+
+      <h2>幸福政制</h2>
+      <p class="h2-num">第 I 条 &middot; 国家权力的目的</p>
+      <p class="dropcap">这个名称来自 <em>eudaimonia</em>，这个古典希腊概念通常被误译为“快乐”。它更接近于<strong>繁盛</strong>：指整体上过得好的一生，而不是某个感觉良好的瞬间。一个人可以一边享受某事，一边毁掉自己的人生；而今天令人不快的事，可能正是整体上真正美好的人生所必需的。</p>
+      <p>赫罗萨格里德的术语由此而来：以繁盛为导向的治理。但帝国并非简单照搬亚里士多德。古典的 eudaimonia 首先讲的是人的繁盛，而赫罗萨格里德刻意借助一套既有的八分式伦理体系拓宽了这一框架。</p>
+
+      <div class="pullquote">
+        <p>国家权力的正当目的，是在八大动力的全部范围内最大化建设性的存续与繁盛，并最小化严重的破坏，同时以现有最佳证据判定政策的实际后果。</p>
+      </div>
+
+      <h2 id="dynamics">八大动力</h2>
+      <p class="h2-num">第 II 条 &middot; 伦理框架及其来源</p>
+      <p>八大动力并非赫罗萨格里德的发明。它是山达基的概念，该体系把存在的基本原理描述为一种求生的驱力，并将其划分为八种彼此关联的冲动。帝国借用这一框架作为自己的伦理体系；由此得出的政治结论则是它自己的。</p>
+
+      <ol class="dynamics">
+        <li><strong>自我</strong> &mdash; 作为个体存续并成为自己的冲动。</li>
+        <li><strong>创造</strong> &mdash; 为未来而创造：性、家庭、子女、养育子女，以及朝向未来的创造。</li>
+        <li><strong>团体</strong> &mdash; 通过团体或作为团体而存续，规模不限，从一个班级到一个国家。</li>
+        <li><strong>人类</strong> &mdash; 作为整体的人类物种，有别于任何单一国族。</li>
+        <li><strong>生命形式</strong> &mdash; 动物、鸟类、昆虫、鱼类与植物；生命本身。</li>
+        <li><strong>物质宇宙</strong> &mdash; 物质、能量、空间与时间。</li>
+        <li><strong>灵性动力</strong> &mdash; 灵性存在者、灵性的存在，以及生命的灵性源头。</li>
+        <li><strong>无限</strong> &mdash; 作为无限的存在，与上帝、至高存在或造物主相关联。</li>
+      </ol>
+
+      <p>在原本的框架中，能在多数动力上增进存续的行为被视为建设性的，而摧毁或否定这些领域的行为则被视为破坏性的。正是这一部分被赫罗萨格里德转化为一种政治方法 &mdash; 而第五动力正是<a href="../horses/">马匹不被仅仅算作某人财产</a>的原因。</p>
+
+      <h2>幸福政制不是什么</h2>
+      <p class="h2-num">第 III 条 &middot; 四种长期存在的误读</p>
+      <ul>
+        <li><strong>不是幸福制造机。</strong> 即时的快感并不是 eudaimonia。一项政策要看它在时间中对一生的影响，以及对家庭、团体和他人的影响。</li>
+        <li><strong>不是普通的民主。</strong> 有议会、选举、公众舆论和批评政府的权利 &mdash; 但多数并不是绝对的主权者。如果证据强烈表明某一路线会造成巨大危害，答案可以是否定的。百分之五十一的选票不会把破坏性的行为变成建设性的行为。</li>
+        <li><strong>不是技术官僚制。</strong> 专家确立并检验事实。某一结果是否值得追求、又要付出多大代价，则是政治与伦理问题；科学家不会因为身为科学家就成为君主。</li>
+        <li><strong>不是简单的功利主义。</strong> 问题不在于哪一边的利益总量更大，而在于究竟创造了什么、摧毁了什么，在何处、有多严重，以及能否以更小的破坏达到同样的结果。</li>
+      </ul>
+
+      <h2 id="diarchy">帝国二元君主制</h2>
+      <p class="h2-num">第 IV 条 &middot; 两顶王冠，权力相等</p>
+      <p>赫罗萨格里德通过两个长期而分立的职位进行治理，二者<strong>在治理权力上相等</strong>。两位君主互不统辖，互无高下，也不得单方面罢免对方。任何一顶王冠的持有者均可使用女皇或皇帝的称号；二元君主制可以由两位女皇、两位皇帝，或一位女皇与一位皇帝组成。</p>
+    </div>
+    <aside class="marg">
+      <strong>马群原型</strong>
+      两顶王冠在文化上通过决定方向的领头母马，以及负责侦察与守卫的护群公马来理解。它们是功能的象征 &mdash; 而不是关于生理性别或社会性别的宪制规则，也不对任何公民构成限制。
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>引导之冠</h3>
+      <p>内政、外交、民政管理、经济与社会方向、基础设施，以及帝国的长期路线。</p>
+    </li>
+    <li>
+      <h3>守护之冠</h3>
+      <p>国防、边境、国家安全、军事戒备、防卫性情报、紧急防护与应对、侦察，以及防卫战略。</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>引导之冠的优先地位仅体现在礼仪次序上，以及同一人同时成为两条继承线上下一位有权获得合法邀约者的情形。这种优先地位并不带来更大的治理权力。</p>
+      <p>国家只有一个，政府只有一个，内阁只有一个，国家预算只有一份，军事结构只有一套，文官系统只有一套。任何一顶王冠都不得另设与之并立的政府、国库、军队、情报机构或行政机关，不得通过对方的指挥链下达命令，也不得罢免对方的官员。</p>
+
+      <h3>何者须经两顶王冠共同决定</h3>
+      <p>每顶王冠自行决定那些主要目的与直接法律效果都落在其自身领域内的普通事项。当一项决定直接改变另一顶王冠的法定权限或指挥链；调用或撤走共有资金、人员、基础设施或核心作战能力中的相当份额；在两个领域内同时设定具有约束力的国家义务；或者对另一顶王冠的安全或履职能力造成具体、重大且具有相当可能性的影响时，该决定即成为共同决定。</p>
+      <p><strong>以实际效果为准。</strong> 一项决定不得通过拆分为若干较小的行为，或被改称为临时的、试验性的、行政性的、秘密的、军事的或近似紧急的，来规避共同批准。关于归类的争议 &mdash; 而非关于政策实质的争议 &mdash; 交由三名资深法官处理，法官以可受公众审计的抽签方式产生。</p>
+
+      <h3 id="deadlock">僵局</h3>
+      <p>当两顶王冠在共同事项上意见不一致时，任何一方都不得强行推行有争议的提案。普通的共同提案须在三十日内解决，紧急提案须在七十二小时内解决；未达成一致的，<strong>该提案即告失败</strong>。沉默、拒不出席或拖延，任何时候都不算作批准。</p>
+      <p>此后先前的合法状态继续维持 &mdash; 公共服务、防卫戒备、必要的临时任命，以及仅按已公布的客观公式调整的基本预算。此项安排的存在，是为了使王冠或议会都无法靠拖延时间制造一场崩溃。</p>
+
+      <h3>紧急情况下的行动</h3>
+      <p>在正在发生或迫在眉睫的攻击、灾害或其他不容拖延的威胁期间，守护之冠可以在其领域内立即下达作战命令，无须等待共同批准。引导领域内出现紧急威胁时 &mdash; 疫情，食品、供水或基础设施的中断，金融系统被夺取 &mdash; 引导之冠同样可以下达这类最低限度的临时命令。两者均不得修改宪法、继承顺序或权力的基本分配，也不得把普通的政策偏好伪装成紧急情况。每一道紧急命令都连同其依据一并记录在案，并至少每七十二小时复核一次。</p>
+
+      <h2>议会与法院</h2>
+      <p class="h2-num">第 V 条 &middot; 宪法之内的王冠至上</p>
+      <p>赫罗萨格里德以王冠为主导，但<strong>王冠的至上地位存在于宪法之内，而不在宪法之外</strong>。议会代表公众，辩论并起草法律，调查失职行为，监督行政，并行使受托的权力。凡须经王冠同意的事项，议会不得在该王冠或该等王冠拒绝的情况下通过法律，它也没有推翻否决的权力。</p>
+
+      <h2>继承、摄政与罢免</h2>
+      <p class="h2-num">第 VI 条 &middot; 两条继承线，各自分立</p>
+      <p>两顶王冠有各自分立的继承线。除世袭继承之外，王冠也可以通过遗嘱指定或遗嘱排除来填补，空缺的王冠还可以交由全国选举，由候选人作出公开承诺。接受与拒绝都是实在的：没有人有义务接受。未成年君主通过摄政会议进行治理，其权力按年龄逐步释放；而暂时丧失行为能力、失踪、因医疗原因退职、逊位与罢免，各有其确定的程序。</p>
+
+      <h2>根本价值</h2>
+      <p class="h2-num">第 VII 条 &middot; 八项，按记载的顺序</p>
+      <ul>
+        <li>历史诚实</li>
+        <li>贤能主义</li>
+        <li>动物福利</li>
+        <li>科学进步</li>
+        <li>环境守护</li>
+        <li>难民融合</li>
+        <li>社会平等</li>
+        <li>合乎伦理的治理</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>与之相应的一整套具有约束力的规范性文件 &mdash; 法典、技术标准与官方范本 &mdash; 编入<a href="law/">帝国法律名录</a>。国家为居住于此的人们提供什么，则载于<a href="../living/">《在赫罗萨格里德生活》</a>。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>门槛</strong>
+      凡宪法设定议会门槛之处，均以法定的全体席位数为基数计算。空缺、缺席与弃权不会降低这一分母。
+      <br><br>
+      <strong>抽签</strong>
+      宪制争议的法官与审计员，以可受公众审计的抽签方式，从由常任文官维护的冻结职业名册中产生。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../zh/gov/">政府与学说</a></li>
+        <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+        <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+        <li><a href="../../zh/gov/law/">帝国法律</a></li>
+        <li><a href="../../zh/history/">历史</a></li>
+        <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>在此生活</h2>
+      <ul>
+        <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+        <li><a href="../../zh/living/health/">医疗卫生</a></li>
+        <li><a href="../../zh/living/education/">教育与儿童</a></li>
+        <li><a href="../../zh/living/transport/">交通与道路</a></li>
+        <li><a href="../../zh/living/justice/">司法与警务</a></li>
+        <li><a href="../../zh/living/money/">工作与金钱</a></li>
+        <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>马匹与道路</h2>
+      <ul>
+        <li><a href="../../zh/horses/">马匹</a></li>
+        <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+        <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+        <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本门户</h2>
+      <ul>
+        <li><a href="../../zh/about/">关于本项目</a></li>
+        <li><a href="../../zh/search/">搜索本门户</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="赫罗萨格里德帝国国旗" width="120" height="80">
+    <p class="footer__disclaimer">很遗憾，赫罗萨格里德是一个虚构的国家。本站是一个架空世界构建项目，与任何真实的国家、政府或官方机构均无关联。</p>
+    <p class="footer__meta">赫罗萨格里德帝国 &middot; 帝国国家门户 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

@@ -10,6 +10,14 @@
   var root = document.documentElement;
   var button = document.querySelector("[data-theme-toggle]");
   var query = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var text = {};
+  try {
+    text = JSON.parse(document.body.getAttribute("data-i18n") || "{}");
+  } catch (error) { /* fall back to the English wording below */ }
+
+  function say(key, fallback) {
+    return text[key] || fallback;
+  }
 
   function storedTheme() {
     try {
@@ -32,8 +40,10 @@
     root.setAttribute("data-theme", theme);
     if (button) {
       button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-      button.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
-      button.textContent = theme === "dark" ? "Light" : "Dark";
+      button.setAttribute("aria-label", theme === "dark"
+        ? say("theme_to_light", "Switch to light theme")
+        : say("theme_to_dark", "Switch to dark theme"));
+      button.textContent = theme === "dark" ? say("light", "Light") : say("dark", "Dark");
     }
   }
 

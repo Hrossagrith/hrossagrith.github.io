@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이름과 상징 &mdash; 흐로사그리드 제국</title>
+<meta name="description" content="흐로사그리드 제국의 표준 표기 형태, 고대 노르드어 어원, 올바른 용법, 국기, 그리고 국가 동물.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../ko/" data-i18n="{&quot;light&quot;: &quot;밝게&quot;, &quot;dark&quot;: &quot;어둡게&quot;, &quot;theme_to_light&quot;: &quot;밝은 테마로 전환&quot;, &quot;theme_to_dark&quot;: &quot;어두운 테마로 전환&quot;, &quot;search_prompt&quot;: &quot;위에 단어나 구절을 입력하면 이 포털의 모든 페이지를 검색한다.&quot;, &quot;search_running&quot;: &quot;검색 중…&quot;, &quot;search_none&quot;: &quot;모든 단어를 포함하는 항목이 등록부에 없다. 단어 수를 줄이거나 다른 단어로 시도할 것.&quot;, &quot;search_error&quot;: &quot;검색 색인을 불러오지 못하였다. 다시 시도할 것.&quot;, &quot;results_one&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_many&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_none&quot;: &quot;“{q}”에 대한 검색 결과가 없습니다&quot;, &quot;expand_all&quot;: &quot;모든 부 펼치기&quot;, &quot;collapse_all&quot;: &quot;모든 부 접기&quot;}">
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">세계관 구축 프로젝트</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">포털 검색</label>
+      <input type="search" id="q" name="q" placeholder="포털 검색" autocomplete="off">
+      <button type="submit">검색</button>
+    </form>
+    <label class="visually-hidden" for="locale">언어</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko" selected>한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">어둡게</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="흐로사그리드 제국의 문장: 원형 문양 안에서 앞발을 든 히포그리프" width="360" height="360">
+    <p class="masthead__state">제국 국가 포털</p>
+    <p class="masthead__name"><a href="../../ko/">흐로사그리드 제국</a></p>
+    <p class="masthead__motto">말들의 비호, 그리고 강제되는 평화</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="모든 부문">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        메뉴
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>제국</h2>
+            <ul>
+            <li><a href="../../ko/gov/">정부와 교의</a></li>
+            <li><a href="../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+            <li><a href="../../ko/gov/#diarchy">제국 이두정</a></li>
+            <li><a href="../../ko/gov/law/">제국법</a></li>
+            <li><a href="../../ko/history/">역사</a></li>
+            <li><a href="../../ko/symbols/">이름, 국기, 상징</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이곳에서의 삶</h2>
+            <ul>
+            <li><a href="../../ko/living/">흐로사그리드에서의 삶</a></li>
+            <li><a href="../../ko/living/health/">보건</a></li>
+            <li><a href="../../ko/living/education/">교육과 아동</a></li>
+            <li><a href="../../ko/living/transport/">교통과 도로</a></li>
+            <li><a href="../../ko/living/justice/">사법과 치안</a></li>
+            <li><a href="../../ko/living/money/">노동과 금전</a></li>
+            <li><a href="../../ko/living/citizenship/">시민권과 비호</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>말과 도로</h2>
+            <ul>
+            <li><a href="../../ko/horses/">말</a></li>
+            <li><a href="../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+            <li><a href="../../ko/horses/#service">공무 말과 동물</a></li>
+            <li><a href="../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이 포털</h2>
+            <ul>
+            <li><a href="../../ko/about/">이 프로젝트에 대하여</a></li>
+            <li><a href="../../ko/search/">포털 검색</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../ko/">홈</a>
+    <a href="../../ko/horses/">말</a>
+    <a href="../../ko/living/">삶</a>
+    <a href="../../ko/gov/">정부</a>
+    <a href="../../ko/gov/law/">법</a>
+    <a href="../../ko/history/">역사</a>
+    <a href="../../ko/symbols/" aria-current="page">상징</a>
+    <a href="../../ko/about/">소개</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../ko/">홈</a><span>&rsaquo;</span><strong>상징</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">제V권</p>
+  <h1 class="page-title">이름, 어원, 그리고 국가 상징</h1>
+  <p class="page-standfirst">국명은 실재하는 두 고대 노르드어 요소가 실재하는 고대 노르드어 합성 방식으로 결합하여 이루어진 것이다. 아래는 법적, 교육적, 외교적, 문화적 용도를 위한 정본 설명이다.</p>
+
+  <div class="two">
+    <div class="col">
+      <h2>표준 표기 형태</h2>
+      <p class="h2-num">제I조 &middot; 이름을 적는 방식</p>
+      <ul>
+        <li>공식 고유 명칭: <span class="native">Hrossagri&#240;</span></li>
+        <li>국제 표기: Hrossagrith</li>
+        <li>공식 국명: <span class="native">The Empire of Hrossagri&#240;</span>, 한국어로는 흐로사그리드 제국</li>
+        <li>국민 명칭: <strong>Hrossagrith</strong>, 불변 &mdash; 단수 접미사도 복수 접미사도 없음</li>
+        <li>형용사 및 문화 용어: <strong>Hrossagrithic</strong></li>
+        <li>실용 영어 발음: <strong>HROSS-a-grith</strong></li>
+      </ul>
+      <p>올바른 단수 용법은 <em>I am Hrossagrith</em>이고, 올바른 집합 용법은 <em>the Hrossagrith people</em>이다. <em>th</em>를 쓴 국제 형태는 <span class="native">&#240;</span> 문자를 쓸 수 없거나 입력하기 어려운 모든 곳에서 사용한다.</p>
+
+      <h2>핵심 의미</h2>
+      <p class="h2-num">제II조 &middot; 이름이 말하는 것</p>
+      <p class="dropcap">Hrossagri&#240;는 말의 비호, 말의 보호, 또는 말과 그들에게 매인 사람들을 위한 보장된 평화를 뜻한다. 그 중심 관념은 <span class="native">gri&#240;</span>이다. 곧 비호, 보장된 보호, 안전 통행, 법적 불가침, 보장된 평화, 그리고 추격이나 보복의 중단이다. 이 이름은 이 나라가 그저 말의 나라라고 말하려는 것이 아니다. 그것은 비호가 충분히 실질적이어서 여행자가 그를 태우고 가는 살아 있는 인연과 함께 보호받는 곳을 뜻한다.</p>
+
+      <h2>어원</h2>
+      <p class="h2-num">제III조 &middot; 합성어와 그 두 요소</p>
+      <p>이 이름은 <span class="native">hross</span> + <span class="native">-a</span> + <span class="native">gri&#240;</span>로 이루어져 있다 &mdash; 더 정확히는 속격 복수의 합성형 <span class="native">hrossa-</span>와 명사 <span class="native">gri&#240;</span>로 이루어진다. 내부의 <span class="native">-a</span>는 장식도 아니고 영어의 연결 모음도 아니다. 그것은 <span class="native">hross</span>의 속격 복수 어미로서, 첫 요소에 &ldquo;말들의&rdquo;라는 의미를 준다.</p>
+      <p>고대 노르드어 합성어는 마지막 요소에서 거꾸로 읽어 이해한다. 중심어는 <span class="native">gri&#240;</span>이다. 곧 이 이름은 말에 의하여 한정된 보호의 형태, 장소 또는 관할이며 &mdash; 평화에 의하여 수식된 말이 아니다.</p>
+
+      <h3>첫째 요소: <span class="native">hross</span></h3>
+      <p>고대 노르드어 <span class="native">hross</span>는 말을 뜻하는 중성 명사이며 &mdash; 시적인 조어가 아니라 평범한 역사적 말 낱말이다. 그 속격 복수형은 <span class="native">hrossa</span>이고, 굴절하지 아니한 단수와 복수가 모두 <span class="native">hross</span>로 나타날 수 있으므로 그 형태가 중요하다. 그것이 집합적 관계를 명시하기 때문이다. 이 이름은 말 한 마리의 보호를 뜻하지 아니한다. 그것은 말을 집합적으로 불러낸다.</p>
+      <p>이 낱말은 오래된 게르만어 낱말 갈래에 속한다. 고대 영어 <span class="native">hors</span>, 고대 색슨어 <span class="native">hros</span>, 고대 고지 독일어 <span class="native">hros</span> 또는 <span class="native">ros</span>, 독일어 <span class="native">Ross</span>, 아이슬란드어 <span class="native">hross</span>가 그것이다. 흔히 제시되는 더 깊은 재구형은 원게르만어 <span class="native">*hruss&#261;</span>이며 때로 달린다는 옛 관념과 연결되기도 하나, 그 유래는 공식적인 의미로 다루기에 충분히 확실하지 아니하다. 확실한 의미는 문증된 것 하나뿐이다. 곧 말이다.</p>
+
+      <h3>둘째 요소: <span class="native">gri&#240;</span></h3>
+      <p>고대 노르드어 <span class="native">gri&#240;</span>는 집합적 법 개념으로 쓰이는 중성 명사이다. 곧 평화, 자비, 휴전, 구명, 보장된 안전, 안전 통행, 비호, 피난처, 그리고 추격이나 폭력에 맞서 주어지는 보호이다. 그것은 수동적인 고요함이 아니라 승인이나 약속이나 관습이나 법에 의하여 작동하게 된 평화이다 &mdash; 적대 행위의 중지를 요구하는 휴전, 달리 무방비인 사람에게 주어지는 구명, 위험한 땅을 지나는 안전 통행, 또는 압류와 보복이 금지되는 보장된 상태가 그것이다.</p>
+      <p>어떤 장소가 피난처가 되는 것은 그곳에 <span class="native">gri&#240;</span>가 적용되기 때문이다. 이 나라의 이름은 하나의 마구간이나 신전이나 피난처에서 온 것이 아니라, 그 나라가 관할 전역에 부과하는 보호에서 온 것이다.</p>
+
+      <h3>국제 형태: <span class="native">grith</span></h3>
+      <p><span class="native">&#240;</span>를 <em>th</em>로 바꾸는 것은 전자(轉字)이지 어근의 변경이 아니다. <em>Grith</em>는 또한 실제의 역사적 영어 낱말로서, 고대 노르드어에서 차용되어 보장된 안전, 안전 통행, 피난처, 비호를 뜻하는 데 쓰였다. 오늘날에는 고어이며, 그 덕분에 국제 표기가 유달리 정확해진다. 이 이름은 <em>-grith</em>로 적으며 &mdash; 결코 <em>-grit</em>, <em>-girth</em>, <em>-griff</em> 또는 <em>-grid</em>로 적지 아니한다.</p>
+
+      <div class="pullquote">
+        <p>이 이름은 말에게, 그리고 말과 떼어 놓을 수 없는 인연을 통하여 말과 함께 이동하고 살고 일하고 안전을 구하는 사람들에게까지 미치는 비호와 강제할 수 있는 보호를 뜻한다.</p>
+      </div>
+
+      <h2>이 이름이 뜻하지 아니하는 것</h2>
+      <p class="h2-num">제IV조 &middot; 상시 정정</p>
+      <ul>
+        <li>&ldquo;말의 제국&rdquo;이 아니다. <em>제국</em>은 공식 명칭에서 국가의 형태를 가리킬 뿐, 국명 자체에 담겨 있지 아니하다.</li>
+        <li>&ldquo;말의 땅&rdquo;, &ldquo;말의 왕국&rdquo;, &ldquo;말의 마구간&rdquo; 또는 &ldquo;말의 목장&rdquo;이 아니다. 그러한 읽기는 <span class="native">gri&#240;</span>를 빠뜨리고 이름을 지리로 축소한다.</li>
+        <li>어느 방향으로도 소유의 주장이 아니다. 속격은 보호의 수혜자와 그 범위를 가리킨다.</li>
+        <li>&ldquo;길들여진&rdquo; 또는 &ldquo;순종하는 말&rdquo;이 아니다. <span class="native">Gri&#240;</span>는 말을 둘러싼 법적 환경을 규율할 뿐, 동물의 복종을 기술하지 아니한다.</li>
+        <li>그리핀, 히포그리프, 사슴, 수사슴, 뿔 또는 그 밖에 지어낸 어떠한 생물의 이름과도 관계가 없다.</li>
+      </ul>
+
+      <h2 id="flag">국기</h2>
+      <p class="h2-num">제V조 &middot; 세 개의 띠와 국가 동물</p>
+
+      <figure class="figure">
+        <img src="/assets/flag.jpg" alt="흐로사그리드 제국의 국기: 옅은 노랑, 초록, 파랑의 가로 세 띠에 앞발을 든 짙은 색 히포그리프를 얹은 것." width="1400" height="933">
+        <figcaption>흐로사그리드 제국의 국기. 국가 동물을 얹은 가로 세 띠.</figcaption>
+      </figure>
+
+      <h2>국가 동물</h2>
+      <p class="h2-num">제VI조 &middot; 히포그리프, 그리고 그것이 어근이 아닌 까닭</p>
+      <p>국가 동물은 <strong>히포그리프</strong>이다. 그것은 국명의 유래가 아니다. 그것은 자유, 지성, 힘, 존엄, 수호, 그리고 사람과 동물 사이의 인연을 나타내는 상징으로 뒷날 채택되었다. 말의 절반은 이름이 이미 지니고 있던 더 오래된 상징을 되울린다. 곧 인연, 이동, 신뢰, 동행, 돌볼 의무, 그리고 집으로 돌아갈 수 있음이다. 국가 동물은 이름을 뒷받침할 뿐, 그 비호의 의미를 대신하지 아니한다.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>문헌학적 근거.</strong> 이 분석은 문증된 고대 노르드어 명사 <span class="native">hross</span>와 그 속격 복수형, 문증된 집합 명사 <span class="native">gri&#240;</span>와 그 법적 의미, 역사적 영어 명사 <em>grith</em>, 그리고 고대 노르드어의 표준적인 속격 합성 방식에 근거한다. 어근의 더 깊은 선사가 불확실한 경우, 흐로사그리드의 설명은 가설을 사실로 바꾸지 아니하고 불확실한 것으로 표시한다.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>고쳐 적지 말 것</strong>
+      Hrossagriff도, Hrossgriff도, Hippogriff-land도 아니다. 히포그리프를 어원상의 유래로 만드는 표기는 모두 이름의 비호에 해당하는 절반을 잃는다.
+      <br><br>
+      <strong>그 글자</strong>
+      <span class="native">&#240;</span>는 에드(eth)라고 부른다. 그것은 <span class="native">gri&#240;</span>의 표기에 속하며, 발음 부호가 붙은 o가 아니다.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>제국</h2>
+      <ul>
+        <li><a href="../../ko/gov/">정부와 교의</a></li>
+        <li><a href="../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+        <li><a href="../../ko/gov/#diarchy">제국 이두정</a></li>
+        <li><a href="../../ko/gov/law/">제국법</a></li>
+        <li><a href="../../ko/history/">역사</a></li>
+        <li><a href="../../ko/symbols/">이름, 국기, 상징</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이곳에서의 삶</h2>
+      <ul>
+        <li><a href="../../ko/living/">흐로사그리드에서의 삶</a></li>
+        <li><a href="../../ko/living/health/">보건</a></li>
+        <li><a href="../../ko/living/education/">교육과 아동</a></li>
+        <li><a href="../../ko/living/transport/">교통과 도로</a></li>
+        <li><a href="../../ko/living/justice/">사법과 치안</a></li>
+        <li><a href="../../ko/living/money/">노동과 금전</a></li>
+        <li><a href="../../ko/living/citizenship/">시민권과 비호</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>말과 도로</h2>
+      <ul>
+        <li><a href="../../ko/horses/">말</a></li>
+        <li><a href="../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+        <li><a href="../../ko/horses/#service">공무 말과 동물</a></li>
+        <li><a href="../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이 포털</h2>
+      <ul>
+        <li><a href="../../ko/about/">이 프로젝트에 대하여</a></li>
+        <li><a href="../../ko/search/">포털 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="흐로사그리드 제국의 국기" width="120" height="80">
+    <p class="footer__disclaimer">안타깝게도 흐로사그리드는 가상의 나라이다. 이 사이트는 세계관 구축 프로젝트이며, 실재하는 어떠한 국가나 정부, 공식 기관과도 관련이 없다.</p>
+    <p class="footer__meta">흐로사그리드 제국 &middot; 제국 국가 포털 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

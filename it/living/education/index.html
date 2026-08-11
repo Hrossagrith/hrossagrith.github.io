@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Istruzione e infanzia &mdash; L&rsquo;Impero di Hrossagri&#240;</title>
+<meta name="description" content="Istruzione gratuita a ogni livello, servizi per l&rsquo;infanzia gratuiti e la tutela dei minori.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../it/" data-i18n="{&quot;light&quot;: &quot;Chiaro&quot;, &quot;dark&quot;: &quot;Scuro&quot;, &quot;theme_to_light&quot;: &quot;Passa al tema chiaro&quot;, &quot;theme_to_dark&quot;: &quot;Passa al tema scuro&quot;, &quot;search_prompt&quot;: &quot;Digitare qui sopra una parola o una frase per cercare in tutte le pagine di questo portale.&quot;, &quot;search_running&quot;: &quot;Ricerca in corso…&quot;, &quot;search_none&quot;: &quot;Nessuna voce del registro contiene tutte le parole. Provare con meno parole o con parole diverse.&quot;, &quot;search_error&quot;: &quot;Non è stato possibile caricare l&amp;rsquo;indice di ricerca. Riprovare.&quot;, &quot;results_one&quot;: &quot;{n} risultato per «{q}»&quot;, &quot;results_many&quot;: &quot;{n} risultati per «{q}»&quot;, &quot;results_none&quot;: &quot;Nessun risultato per «{q}»&quot;, &quot;expand_all&quot;: &quot;Espandi tutte le parti&quot;, &quot;collapse_all&quot;: &quot;Comprimi tutte le parti&quot;}">
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un progetto di worldbuilding</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Cerca nel portale</label>
+      <input type="search" id="q" name="q" placeholder="Cerca nel portale" autocomplete="off">
+      <button type="submit">Cerca</button>
+    </form>
+    <label class="visually-hidden" for="locale">Lingua</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it" selected>Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Scuro</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblema dell&rsquo;Impero di Hrossagri&#240;: un ippogrifo rampante entro un tondo" width="360" height="360">
+    <p class="masthead__state">Portale Statale Imperiale</p>
+    <p class="masthead__name"><a href="../../../it/">L&rsquo;Impero di Hrossagri&#240;</a></p>
+    <p class="masthead__motto">L&rsquo;asilo dei cavalli e la pace che viene fatta rispettare</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Tutte le sezioni">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L&rsquo;Impero</h2>
+            <ul>
+            <li><a href="../../../it/gov/">Governo e dottrina</a></li>
+            <li><a href="../../../it/gov/#dynamics">Le Otto Dinamiche</a></li>
+            <li><a href="../../../it/gov/#diarchy">La Diarchia Imperiale</a></li>
+            <li><a href="../../../it/gov/law/">Diritto imperiale</a></li>
+            <li><a href="../../../it/history/">Storia</a></li>
+            <li><a href="../../../it/symbols/">Nome, bandiera e simboli</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivere qui</h2>
+            <ul>
+            <li><a href="../../../it/living/">Vivere in Hrossagri&#240;</a></li>
+            <li><a href="../../../it/living/health/">Sanità</a></li>
+            <li><a href="../../../it/living/education/">Istruzione e infanzia</a></li>
+            <li><a href="../../../it/living/transport/">Trasporti e strade</a></li>
+            <li><a href="../../../it/living/justice/">Giustizia e polizia</a></li>
+            <li><a href="../../../it/living/money/">Lavoro e denaro</a></li>
+            <li><a href="../../../it/living/citizenship/">Cittadinanza e asilo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Cavalli e strade</h2>
+            <ul>
+            <li><a href="../../../it/horses/">Cavalli</a></li>
+            <li><a href="../../../it/horses/#welfare">Benessere e controllo senza morso</a></li>
+            <li><a href="../../../it/horses/#service">Equidi di servizio</a></li>
+            <li><a href="../../../it/horses/road-status/">Standard dei marcatori di stato stradale</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Questo portale</h2>
+            <ul>
+            <li><a href="../../../it/about/">Informazioni sul progetto</a></li>
+            <li><a href="../../../it/search/">Cerca nel portale</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../it/">Pagina iniziale</a>
+    <a href="../../../it/horses/">Cavalli</a>
+    <a href="../../../it/living/" aria-current="page">Vita</a>
+    <a href="../../../it/gov/">Governo</a>
+    <a href="../../../it/gov/law/">Diritto</a>
+    <a href="../../../it/history/">Storia</a>
+    <a href="../../../it/symbols/">Simboli</a>
+    <a href="../../../it/about/">Informazioni</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../it/">Pagina iniziale</a><span>&rsaquo;</span><a href="../../../it/living/">Vita</a><span>&rsaquo;</span><strong>Istruzione e infanzia</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Libro II &middot; Parte II</p>
+  <h1 class="page-title">Istruzione e infanzia</h1>
+  <p class="page-standfirst">Gratuita a ogni livello, realmente accessibile e unita ai più forti doveri di tutela che l&rsquo;Impero imponga in qualunque punto del suo diritto.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">L&rsquo;istruzione in Hrossagri&#240; è gratuita, ampiamente finanziata e realmente accessibile a ogni livello &mdash; e l&rsquo;ultima parola svolge un lavoro effettivo, poiché un sistema senza rette ma irraggiungibile nei fatti non è affatto accessibile.</p>
+
+      <h2 id="truth">Educazione storica</h2>
+      <p class="h2-num">L&rsquo;Impero non insegna una versione lusinghiera di sé</p>
+      <p>L&rsquo;educazione storica è accurata riguardo ai successi, ai fallimenti, alle ingiustizie, ai conflitti e alle decisioni controverse dell&rsquo;Impero. I materiali destinati ai bambini più piccoli possono omettere i particolari più crudi, ma non possono falsificare ciò che è accaduto, e il dettaglio maggiore è introdotto progressivamente con l&rsquo;età. L&rsquo;Impero non riscrive, non cancella e non edulcora la propria storia per fini politici.</p>
+
+      <h2 id="childcare">Servizi per l&rsquo;infanzia</h2>
+      <p class="h2-num">Gratuiti o di fatto gratuiti, e non condizionati all&rsquo;occupazione</p>
+      <p>I servizi per l&rsquo;infanzia sono gratuiti o di fatto gratuiti, abbondanti, adeguatamente dotati di personale e ampiamente finanziati. Sono disponibili a prescindere dal fatto che i genitori siano occupati &mdash; un deliberato rifiuto di trattare i servizi per l&rsquo;infanzia come un sussidio legato al lavoro anziché come una provvidenza destinata al bambino.</p>
+
+      <h2 id="protection">Tutela dei minori</h2>
+      <p class="h2-num">Doveri, non aspirazioni</p>
+      <p>I minori ricevono una tutela eccezionalmente forte contro la violenza, lo sfruttamento, l&rsquo;incuria, l&rsquo;abuso istituzionale e il controllo coercitivo, e devono essere ascoltati nelle decisioni che li riguardano.</p>
+      <p>Accanto all&rsquo;attività repressiva, l&rsquo;Impero conduce programmi pubblici gratuiti e pubblicizzati con insistenza che insegnano la genitorialità, la regolazione emotiva, il conflitto rispettoso, i diritti dei minori e il modo di riconoscere e interrompere i cicli generazionali di abuso. Vi si accede facilmente e sono presentati come ordinaria educazione pubblica &mdash; non come terapia e non come punizione per le persone cattive.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>In preparazione.</strong> L&rsquo;assetto della scuola imperiale, degli esami, della formazione degli insegnanti e dell&rsquo;istruzione superiore non è ancora iscritto nel registro.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Valori fondanti</strong>
+      Onestà storica &middot; meritocrazia &middot; benessere degli animali &middot; progresso scientifico &middot; tutela dell&rsquo;ambiente &middot; integrazione dei rifugiati &middot; uguaglianza sociale &middot; governo etico.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L&rsquo;Impero</h2>
+      <ul>
+        <li><a href="../../../it/gov/">Governo e dottrina</a></li>
+        <li><a href="../../../it/gov/#dynamics">Le Otto Dinamiche</a></li>
+        <li><a href="../../../it/gov/#diarchy">La Diarchia Imperiale</a></li>
+        <li><a href="../../../it/gov/law/">Diritto imperiale</a></li>
+        <li><a href="../../../it/history/">Storia</a></li>
+        <li><a href="../../../it/symbols/">Nome, bandiera e simboli</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivere qui</h2>
+      <ul>
+        <li><a href="../../../it/living/">Vivere in Hrossagri&#240;</a></li>
+        <li><a href="../../../it/living/health/">Sanità</a></li>
+        <li><a href="../../../it/living/education/">Istruzione e infanzia</a></li>
+        <li><a href="../../../it/living/transport/">Trasporti e strade</a></li>
+        <li><a href="../../../it/living/justice/">Giustizia e polizia</a></li>
+        <li><a href="../../../it/living/money/">Lavoro e denaro</a></li>
+        <li><a href="../../../it/living/citizenship/">Cittadinanza e asilo</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Cavalli e strade</h2>
+      <ul>
+        <li><a href="../../../it/horses/">Cavalli</a></li>
+        <li><a href="../../../it/horses/#welfare">Benessere e controllo senza morso</a></li>
+        <li><a href="../../../it/horses/#service">Equidi di servizio</a></li>
+        <li><a href="../../../it/horses/road-status/">Standard dei marcatori di stato stradale</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Questo portale</h2>
+      <ul>
+        <li><a href="../../../it/about/">Informazioni sul progetto</a></li>
+        <li><a href="../../../it/search/">Cerca nel portale</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Bandiera dell&rsquo;Impero di Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Purtroppo Hrossagrith è un paese immaginario. Questo sito è un progetto di worldbuilding e non ha alcun legame con uno Stato, un governo o un ente ufficiale reali.</p>
+    <p class="footer__meta">L&rsquo;Impero di Hrossagri&#240; &middot; Portale Statale Imperiale &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

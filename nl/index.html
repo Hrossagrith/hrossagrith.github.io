@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Het Keizerrijk Hrossagri&#240; &mdash; Keizerlijk Staatsportaal</title>
+<meta name="description" content="Officieel portaal van Het Keizerrijk Hrossagrith: paarden, gezondheidszorg, onderwijs, vervoer, justitie, regering, recht, geschiedenis en symbolen. Een worldbuildingproject.">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../" data-base="../nl/" data-i18n="{&quot;light&quot;: &quot;Licht&quot;, &quot;dark&quot;: &quot;Donker&quot;, &quot;theme_to_light&quot;: &quot;Overschakelen naar het lichte thema&quot;, &quot;theme_to_dark&quot;: &quot;Overschakelen naar het donkere thema&quot;, &quot;search_prompt&quot;: &quot;Typ hierboven een woord of woordgroep om elke pagina van dit portaal te doorzoeken.&quot;, &quot;search_running&quot;: &quot;Bezig met zoeken…&quot;, &quot;search_none&quot;: &quot;Geen enkel item in het register bevat alle woorden. Probeer minder of andere woorden.&quot;, &quot;search_error&quot;: &quot;De zoekindex kon niet worden geladen. Probeer het opnieuw.&quot;, &quot;results_one&quot;: &quot;{n} resultaat voor “{q}”&quot;, &quot;results_many&quot;: &quot;{n} resultaten voor “{q}”&quot;, &quot;results_none&quot;: &quot;Niets gevonden voor “{q}”&quot;, &quot;expand_all&quot;: &quot;Alle delen uitklappen&quot;, &quot;collapse_all&quot;: &quot;Alle delen inklappen&quot;}">
+<a class="skip-link" href="#main">Naar de inhoud</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Een worldbuildingproject</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Doorzoek het portaal</label>
+      <input type="search" id="q" name="q" placeholder="Doorzoek het portaal" autocomplete="off">
+      <button type="submit">Zoeken</button>
+    </form>
+    <label class="visually-hidden" for="locale">Taal</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl" selected>Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Donker</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="Wapen van Het Keizerrijk Hrossagri&#240;: een steigerende hippogrief binnen een rondeel" width="360" height="360">
+    <p class="masthead__state">Keizerlijk Staatsportaal</p>
+    <p class="masthead__name"><a href="../nl/">Het Keizerrijk Hrossagri&#240;</a></p>
+    <p class="masthead__motto">De toevlucht der paarden, en de vrede die wordt gehandhaafd</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle afdelingen">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Het Keizerrijk</h2>
+            <ul>
+            <li><a href="../nl/gov/">Regering en doctrine</a></li>
+            <li><a href="../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+            <li><a href="../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+            <li><a href="../nl/gov/law/">Keizerlijk recht</a></li>
+            <li><a href="../nl/history/">Geschiedenis</a></li>
+            <li><a href="../nl/symbols/">Naam, vlag en symbolen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Het leven hier</h2>
+            <ul>
+            <li><a href="../nl/living/">Leven in Hrossagri&#240;</a></li>
+            <li><a href="../nl/living/health/">Gezondheidszorg</a></li>
+            <li><a href="../nl/living/education/">Onderwijs en kinderen</a></li>
+            <li><a href="../nl/living/transport/">Vervoer en wegen</a></li>
+            <li><a href="../nl/living/justice/">Justitie en politie</a></li>
+            <li><a href="../nl/living/money/">Werk en geld</a></li>
+            <li><a href="../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Paarden en wegen</h2>
+            <ul>
+            <li><a href="../nl/horses/">Paarden</a></li>
+            <li><a href="../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+            <li><a href="../nl/horses/#service">Dienstequiden</a></li>
+            <li><a href="../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dit portaal</h2>
+            <ul>
+            <li><a href="../nl/about/">Over dit project</a></li>
+            <li><a href="../nl/search/">Doorzoek het portaal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../nl/" aria-current="page">Startpagina</a>
+    <a href="../nl/horses/">Paarden</a>
+    <a href="../nl/living/">Leven</a>
+    <a href="../nl/gov/">Regering</a>
+    <a href="../nl/gov/law/">Recht</a>
+    <a href="../nl/history/">Geschiedenis</a>
+    <a href="../nl/symbols/">Symbolen</a>
+    <a href="../nl/about/">Over</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero__art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="A road running through a stone gate between low hills">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--art-sky-top, #dfe7ee)"/>
+      <stop offset="1" stop-color="var(--art-sky-bottom, #eef1e9)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- Far hills -->
+  <path d="M 0 214 C 120 190, 210 200, 300 210 C 400 221, 470 196, 560 190
+           C 660 183, 740 205, 840 202 C 940 199, 1050 178, 1200 192 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-far, #cfdcd3)"/>
+
+  <!-- Middle hills -->
+  <path d="M 0 250 C 130 232, 240 246, 350 254 C 460 262, 540 244, 660 242
+           C 780 240, 900 258, 1010 252 C 1100 247, 1150 240, 1200 236 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-mid, #b9cdbc)"/>
+
+  <!-- Near ground -->
+  <path d="M 0 288 C 160 278, 320 288, 470 292 C 620 296, 760 286, 900 288
+           C 1020 290, 1120 294, 1200 292 L 1200 340 L 0 340 Z"
+        fill="var(--art-ground, #a8c0ad)"/>
+
+  <!-- The road, narrowing toward the gate -->
+  <path d="M 520 214 L 680 214 L 900 340 L 300 340 Z" fill="var(--art-road, #e6e2d4)"/>
+  <path d="M 598 216 L 602 216 L 612 340 L 588 340 Z" fill="var(--art-road-line, #ddd6c4)"/>
+
+  <!-- Stone gate: the border at which pursuit stops -->
+  <g fill="var(--art-stone, #7d8b84)">
+    <rect x="452" y="96" width="46" height="152" rx="4"/>
+    <rect x="702" y="96" width="46" height="152" rx="4"/>
+    <path d="M 452 96 L 748 96 L 748 132 L 452 132 Z"/>
+    <path d="M 498 132 C 520 132, 540 148, 548 172 L 560 172 C 552 140, 528 120, 498 120 Z"/>
+    <path d="M 702 132 C 680 132, 660 148, 652 172 L 640 172 C 648 140, 672 120, 702 120 Z"/>
+  </g>
+  <g fill="var(--art-stone-dark, #63706a)">
+    <rect x="446" y="86" width="58" height="14" rx="3"/>
+    <rect x="696" y="86" width="58" height="14" rx="3"/>
+    <rect x="440" y="72" width="320" height="16" rx="3"/>
+  </g>
+
+  <!-- Hoofprints along the road -->
+  <g fill="var(--art-hoof, #c8bfa6)">
+    <ellipse cx="566" cy="262" rx="4" ry="5"/>
+    <ellipse cx="578" cy="264" rx="4" ry="5"/>
+    <ellipse cx="546" cy="292" rx="5" ry="6"/>
+    <ellipse cx="560" cy="295" rx="5" ry="6"/>
+    <ellipse cx="520" cy="324" rx="6" ry="7.5"/>
+    <ellipse cx="537" cy="328" rx="6" ry="7.5"/>
+  </g>
+</svg>
+</div>
+  <div class="shell">
+    <div class="hero__panel">
+      <h1>De grens waarop de achtervolging ophoudt</h1>
+      <p>Alles wat het Keizerrijk doet voor de mensen die hier wonen, en voor de dieren waarnaar het is genoemd.</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="shell wrap">
+  <div class="two">
+    <div class="col">
+      <p class="entry">Inschrijving I &middot; De oorspronkelijke betekenis</p>
+      <h2>Waarom het Keizerrijk deze naam draagt</h2>
+      <p class="h2-num">Opgetekend in het keizerlijke register</p>
+      <p class="dropcap">Hrossagri&#240; is niet naar zijn paarden genoemd. Het is genoemd naar zijn <span class="native">gri&#240;</span> &mdash; gewaarborgde vrede, vrijgeleide, genade, toevlucht &mdash; en naar de paarden die bepalen aan wie die toevlucht verschuldigd is. De naam ontstond als exoniem. Kooplieden, boden, vluchtelingen en ruiters die de grens overstaken, ondervonden dat de achtervolging moest ophouden: de reiziger, zijn metgezellen en zijn equiden kwamen alle onder bescherming.</p>
+      <p>Paarden konden niet voor de oorlog in beslag worden genomen, gestolen, gevorderd, weggeruild of gebruikt als drukmiddel tegen de mensen die van hen afhankelijk waren. Buitenstaanders noemden die toestand <span class="native">hrossagri&#240;</span>, en mettertijd reisde het woord van de grens naar buiten, naar de wegen, de nederzettingen, het erkende gebied en ten slotte naar het land zelf.</p>
+    </div>
+    <aside class="marg">
+      <strong>Kanttekening</strong>
+      De oudste praktische betekenis van de naam: een grens waarop de achtervolging ophield en de bescherming begon &mdash; voor de reiziger en voor het dier dat hem draagt evenzeer.
+    </aside>
+  </div>
+
+  <div class="pullquote">
+    <p>De bescherming van een persoon is onvolledig waar het paard van die persoon, diens middel van verplaatsing, bestaansmiddel of weg naar huis nog altijd in beslag kan worden genomen, mishandeld, uitgeput of als drukmiddel gebruikt.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Inschrijving II &middot; Het register van afdelingen</p>
+  <h2>Diensten en informatie</h2>
+  <p class="h2-num">Alles wat het Keizerrijk vastlegt voor wie hier woont</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <p class="service__no">Afdeling I</p>
+      <h3><a href="horses/">Paarden</a></h3>
+      <p>De nationale schat en de reden waarom het Keizerrijk is gevormd zoals het is. Welzijn, bitloos hoofdstel, wegstatus, dienstequiden.</p>
+      <ul class="service__links"><li><a href="horses/road-status/">Wegstatusmarkeringen</a></li><li><a href="horses/#welfare">Welzijn en bitloze beheersing</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">Afdeling II</p>
+      <h3><a href="living/health/">Gezondheidszorg</a></h3>
+      <p>Gratis op het moment van gebruik, ruim gefinancierd en ontworpen tegen wachtlijsten, personeelstekorten en regionale ongelijkheid.</p>
+      <ul class="service__links"><li><a href="living/health/">Wat het Keizerrijk waarborgt</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">Afdeling III</p>
+      <h3><a href="living/education/">Onderwijs &amp; kinderen</a></h3>
+      <p>Gratis onderwijs op elk niveau, gratis kinderopvang ongeacht het werk van de ouders, en uitzonderlijk sterke kinderbescherming.</p>
+      <ul class="service__links"><li><a href="living/education/#childcare">Kinderopvang</a></li><li><a href="living/education/#protection">Bescherming van kinderen</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">Afdeling IV</p>
+      <h3><a href="living/transport/">Vervoer &amp; wegen</a></h3>
+      <p>Een land dat is gebouwd rond paardentractie op de weg en het spoor, met één beperkte uitzondering voor gemotoriseerd goederenvervoer.</p>
+      <ul class="service__links"><li><a href="living/transport/#hrossaway">Hrossaway</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">Afdeling V</p>
+      <h3><a href="living/justice/">Justitie &amp; politie</a></h3>
+      <p>Selectie en opleiding van de politie op luchtvaartniveau, de-escalatie als regel en een absoluut verbod op de doodstraf.</p>
+      <ul class="service__links"><li><a href="living/justice/#privacy">Privacy en cybercriminaliteit</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">Afdeling VI</p>
+      <h3><a href="living/money/">Werk &amp; geld</a></h3>
+      <p>Progressieve belasting op inkomen, vermogen, vermogenswinst en grote erfenissen.</p>
+      <ul class="service__links"><li><a href="living/money/">Belastingheffing</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">Afdeling VII</p>
+      <h3><a href="living/citizenship/">Burgerschap &amp; toevlucht</a></h3>
+      <p>Een diverse menselijke natie die afstamt van vele volkeren die door de eeuwen heen via migratie en toevlucht zijn opgenomen.</p>
+      <ul class="service__links"><li><a href="living/citizenship/">Toevlucht en integratie</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <p class="service__no">Afdeling VIII</p>
+      <h3><a href="gov/">Regering</a></h3>
+      <p>Eudaimonocratie, de Acht Dynamieken en twee gelijkwaardige Kronen die onder één grondwet regeren.</p>
+      <ul class="service__links"><li><a href="gov/#diarchy">De Keizerlijke Diarchie</a></li><li><a href="gov/law/">Het rechtscorpus</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <p class="service__no">Afdeling IX</p>
+      <h3><a href="history/">Geschiedenis</a></h3>
+      <p>Van de Overtochtscrisis van c.&nbsp;1050 v.Chr. tot de geschillen over de paardenwaarborgen in de derde eeuw.</p>
+      <ul class="service__links"><li><a href="history/">Vroege geschiedenis, c. 1200&ndash;100 v.Chr.</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <p class="service__no">Afdeling X</p>
+      <h3><a href="symbols/">Naam &amp; symbolen</a></h3>
+      <p>Canonieke vormen, de Oudnoorse etymologie, de vlag en het nationale dier.</p>
+      <ul class="service__links"><li><a href="symbols/#flag">De vlag</a></li></ul>
+    </li>
+  </ul>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <div class="two">
+    <div class="col">
+      <p class="entry">Inschrijving III &middot; De staat</p>
+      <h2>Wat het Keizerrijk is</h2>
+      <p class="h2-num">Bevolking, grondwet en karakter</p>
+      <p>Het moderne Hrossagri&#240; is een <strong>menselijke natie</strong>, en een zeer diverse: zijn bevolking stamt af van talrijke volkeren die door de eeuwen heen via migratie en toevlucht zijn opgenomen. Paarden en andere equiden zijn beschermde levende wezens, metgezellen en werkpartners, en de grondslag van de wegvervoerscultuur van het Keizerrijk. Zij vormen niet de bevolking en bekleden geen menselijk politiek ambt.</p>
+      <p>Staatsrechtelijk is het Keizerrijk een <a href="gov/">eudaimonocratische diarchische monarchie</a>: twee gelijkwaardige Kronen, de Leidende en de Behoedende, die regeren onder een filosofie die een beleid beoordeelt naar wat het opbouwt en wat het vernietigt over de volle breedte van het leven, en niet naar wat een meerderheid toevallig wenst.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Historische waarheid.</strong> Het Keizerrijk herschrijft, wist of vergoelijkt zijn geschiedenis niet om politieke redenen. Zijn verslag van de eigen successen, mislukkingen, onrechtvaardigheden en omstreden besluiten hoort accuraat te zijn, en het <a href="history/">hoofdstuk geschiedenis</a> benoemt de grenzen van zijn eigen reconstructie in plaats van ze te verbergen.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Canonieke vormen</strong>
+      Inheems: <span class="native">Hrossagri&#240;</span><br>
+      Internationaal: Hrossagrith<br>
+      Burger: Hrossagrith (onveranderlijk)<br>
+      Bijvoeglijk naamwoord: hrossagridisch<br>
+      Uitgesproken: HROSS-a-grith
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Het Keizerrijk</h2>
+      <ul>
+        <li><a href="../nl/gov/">Regering en doctrine</a></li>
+        <li><a href="../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+        <li><a href="../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+        <li><a href="../nl/gov/law/">Keizerlijk recht</a></li>
+        <li><a href="../nl/history/">Geschiedenis</a></li>
+        <li><a href="../nl/symbols/">Naam, vlag en symbolen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Het leven hier</h2>
+      <ul>
+        <li><a href="../nl/living/">Leven in Hrossagri&#240;</a></li>
+        <li><a href="../nl/living/health/">Gezondheidszorg</a></li>
+        <li><a href="../nl/living/education/">Onderwijs en kinderen</a></li>
+        <li><a href="../nl/living/transport/">Vervoer en wegen</a></li>
+        <li><a href="../nl/living/justice/">Justitie en politie</a></li>
+        <li><a href="../nl/living/money/">Werk en geld</a></li>
+        <li><a href="../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Paarden en wegen</h2>
+      <ul>
+        <li><a href="../nl/horses/">Paarden</a></li>
+        <li><a href="../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+        <li><a href="../nl/horses/#service">Dienstequiden</a></li>
+        <li><a href="../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dit portaal</h2>
+      <ul>
+        <li><a href="../nl/about/">Over dit project</a></li>
+        <li><a href="../nl/search/">Doorzoek het portaal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="Vlag van Het Keizerrijk Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Helaas is Hrossagrith een fictief land. Deze website is een worldbuildingproject en heeft geen enkele band met een werkelijke staat, regering of officiële instantie.</p>
+    <p class="footer__meta">Het Keizerrijk Hrossagri&#240; &middot; Keizerlijk Staatsportaal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

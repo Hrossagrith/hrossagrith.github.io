@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Road-status markers &mdash; The Empire of Hrossagri&#240;</title>
+<meta name="description" content="The Imperial Public-Road Equid Status Marking Standard: fields, borders, symbols, dimensions, illumination, priority and offenses.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../en-us/" data-i18n="{&quot;light&quot;: &quot;Light&quot;, &quot;dark&quot;: &quot;Dark&quot;, &quot;theme_to_light&quot;: &quot;Switch to light theme&quot;, &quot;theme_to_dark&quot;: &quot;Switch to dark theme&quot;, &quot;search_prompt&quot;: &quot;Type a word or phrase above to search every page of this portal.&quot;, &quot;search_running&quot;: &quot;Searching…&quot;, &quot;search_none&quot;: &quot;No entry in the register matches every word. Try fewer or different words.&quot;, &quot;search_error&quot;: &quot;The search index could not be loaded. Please try again.&quot;, &quot;results_one&quot;: &quot;{n} result for “{q}”&quot;, &quot;results_many&quot;: &quot;{n} results for “{q}”&quot;, &quot;results_none&quot;: &quot;Nothing found for “{q}”&quot;, &quot;expand_all&quot;: &quot;Expand all parts&quot;, &quot;collapse_all&quot;: &quot;Collapse all parts&quot;}">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">A worldbuilding project</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Search the portal</label>
+      <input type="search" id="q" name="q" placeholder="Search the portal" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <label class="visually-hidden" for="locale">Language</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" selected>English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel" width="360" height="360">
+    <p class="masthead__state">Imperial State Portal</p>
+    <p class="masthead__name"><a href="../../../en-us/">The Empire of Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="All sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>The Empire</h2>
+            <ul>
+            <li><a href="../../../en-us/gov/">Government and doctrine</a></li>
+            <li><a href="../../../en-us/gov/#dynamics">The Eight Dynamics</a></li>
+            <li><a href="../../../en-us/gov/#diarchy">The Imperial Diarchy</a></li>
+            <li><a href="../../../en-us/gov/law/">Imperial law</a></li>
+            <li><a href="../../../en-us/history/">History</a></li>
+            <li><a href="../../../en-us/symbols/">Name, flag and symbols</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Living here</h2>
+            <ul>
+            <li><a href="../../../en-us/living/">Living in Hrossagri&#240;</a></li>
+            <li><a href="../../../en-us/living/health/">Health</a></li>
+            <li><a href="../../../en-us/living/education/">Education and children</a></li>
+            <li><a href="../../../en-us/living/transport/">Transport and roads</a></li>
+            <li><a href="../../../en-us/living/justice/">Justice and policing</a></li>
+            <li><a href="../../../en-us/living/money/">Work and money</a></li>
+            <li><a href="../../../en-us/living/citizenship/">Citizenship and refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Horses and roads</h2>
+            <ul>
+            <li><a href="../../../en-us/horses/">Horses</a></li>
+            <li><a href="../../../en-us/horses/#welfare">Welfare and bitless control</a></li>
+            <li><a href="../../../en-us/horses/#service">Service equids</a></li>
+            <li><a href="../../../en-us/horses/road-status/">Road-status marker standard</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>This portal</h2>
+            <ul>
+            <li><a href="../../../en-us/about/">About this project</a></li>
+            <li><a href="../../../en-us/search/">Search the portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../en-us/">Home</a>
+    <a href="../../../en-us/horses/" aria-current="page">Horses</a>
+    <a href="../../../en-us/living/">Living</a>
+    <a href="../../../en-us/gov/">Government</a>
+    <a href="../../../en-us/gov/law/">Law</a>
+    <a href="../../../en-us/history/">History</a>
+    <a href="../../../en-us/symbols/">Symbols</a>
+    <a href="../../../en-us/about/">About</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../en-us/">Home</a><span>&rsaquo;</span><a href="../../../en-us/horses/">Horses</a><span>&rsaquo;</span><strong>Road-status markers</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Book III &middot; Standard</p>
+  <h1 class="page-title">Public-road equid status marking</h1>
+  <p class="page-standfirst">The final and binding universal standard for every public-road equid. The Carriage Code may impose additional or stricter requirements on top of it.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Every equid entering a public road shall wear approved public-road bitless headgear fitted with an approved <strong>Facial Marker</strong> displaying that equid&rsquo;s current interchangeable retroreflective and switchably illuminated road-status insert. The marker is a road instruction to humans. It shall not be used as advertisement, as decoration alone, as medical disclosure beyond necessity, as shame marking, or as a replacement for the judgment of the rider or driver.</p>
+
+      <h2>Definitions</h2>
+      <p class="h2-num">Frentera and muserola</p>
+      <p>A <strong>frentera</strong> is a frontal component running vertically down the center of the face from the upper bridle, headstall, browband or crown area toward the forehead or nasal bridge. It may be narrow, X-shaped, branched, broad or panel-like. A component confined to crossing or encircling the nose, with no upper vertical facial connection, is not a frentera.</p>
+      <p>A <strong>muserola</strong> is a noseband or nosepiece crossing and ordinarily encircling the nose. It may be broad, decorative, separately mounted, or integrated into a lawful control noseband, and need not attach to the browband or crownpiece.</p>
+      <p>Either qualifies as a Facial Marker only where it provides a dedicated, clearly visible insert field of sufficient size and contrast for road use. A small ornament, medallion, stud or badge that cannot carry the insert visibly does not qualify.</p>
+    </div>
+    <aside class="marg">
+      <strong>No body marking</strong>
+      No paint, dye, clipping, branding, glue, mane attachment, tail attachment, skin marking or coat alteration may be used to show status. Ever.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Ordinary and restricted markers</h2>
+  <p class="h2-num">Color is never the only distinction</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">White field</strong>
+          <span class="marker__what">Ordinary road-certified equid.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Green field</strong>
+          <span class="marker__what">Green equid, provisional certificate, training status, or supervised road work.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Yellow field</strong>
+          <span class="marker__what">Caution: sensitivity, extra-space requirement, or heightened startle risk.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">White field, red border</strong>
+          <span class="marker__what">Restricted passing. Pass only on the signal of the driver, rider or handler.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Red field, white X</strong>
+          <span class="marker__what">Do not pass. Stop and wait: an active hazard or immediate control condition exists.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h2>Service markers</h2>
+  <p class="h2-num">Issued and verified through authorized channels only</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blue, Road Guard emblem</strong>
+          <span class="marker__what">Imperial Road Guard, traffic patrol, road-control service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blue, police shield</strong>
+          <span class="marker__what">Police service, where authorized.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">White, red cross</strong>
+          <span class="marker__what">Ambulance or authorized medical emergency service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Red, white flame</strong>
+          <span class="marker__what">Fire or rescue service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Green, paw and hoof</strong>
+          <span class="marker__what">Veterinary emergency service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blue, pegasus</strong>
+          <span class="marker__what">Imperial post, messenger or courier service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Black, white border</strong>
+          <span class="marker__what">Sovereign passage, where legally authorized.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Black with crown</strong>
+          <span class="marker__what">Authorized imperial government, ministerial or state authority passage.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Dark green, sigil</strong>
+          <span class="marker__what">Military service.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <h2>Placement</h2>
+      <p class="h2-num">Front, side and rear</p>
+      <ul>
+        <li><strong>Front:</strong> the interchangeable insert, displayed in a marker-bearing frentera or muserola.</li>
+        <li><strong>Side:</strong> a round or approved status plate on harness, breastcollar, breastplate, saddlecloth or other non-restraining equipment.</li>
+        <li><strong>Rear carriage board:</strong> markers arranged to match team formation, so road users can identify the status of each equid in a hitch.</li>
+      </ul>
+      <p>A nose-mounted marker shall sit over the stable nasal bone, clear of lower nasal cartilage and nostrils. Where integrated into a pressure-bearing noseband, nothing about the window, backing, edging or fasteners may stiffen the noseband, create hard edges or pressure points, concentrate force, impair fit or release, alter rein or line action, or restrict breathing.</p>
+
+      <h2>Minimum dimensions</h2>
+      <p class="h2-num">Clear visible field, shortest dimension</p>
+      <ul>
+        <li><strong>70&nbsp;mm</strong> front insert for an equid above 300&nbsp;kg</li>
+        <li><strong>60&nbsp;mm</strong> for an equid of 100&ndash;300&nbsp;kg</li>
+        <li><strong>50&nbsp;mm</strong> for an equid below 100&nbsp;kg</li>
+        <li><strong>90&nbsp;mm</strong> side status plate</li>
+        <li><strong>120&nbsp;mm</strong> rear carriage-board marker</li>
+      </ul>
+      <p>Borders, symbols and divided fields must stay proportionate and may not reduce any required clear field below these minima.</p>
+
+      <h2>Recognition test</h2>
+      <p class="h2-num">Measured, not asserted</p>
+      <p>A front marker shall be correctly identified by a person with ordinary corrected vision at not less than 50&nbsp;m in daylight and 30&nbsp;m at night; side and rear markers at 60&nbsp;m and 40&nbsp;m. Night testing is passed both in powered illuminated mode and in unpowered retroreflective mode. Testing includes frontal and fifteen-degree offset views, walking and ordinary road movement, wet conditions, partial forelock movement, full and low battery states, and deliberate switching on and off.</p>
+
+      <h2>Illumination</h2>
+      <p class="h2-num">Identification lighting, not emergency lighting</p>
+      <p>Every approved marker operates both in an unpowered road-grade retroreflective mode and in an independently switchable, steady self-illuminated mode reproducing its assigned field color, border, shape and symbol. Illumination is required from sunset to sunrise, in tunnels, and whenever fog, rain, snow, smoke, dust or glare materially reduces recognition.</p>
+      <p>Illumination shall be steady. It shall not flash, strobe, pulse, rotate, sweep, alternate colors, imitate a turn, brake, hazard or emergency lamp, project a beam onto the road, or act as a ground-guidance lamp. Status-marker illumination is identification lighting and creates no emergency priority.</p>
+      <p>The emitter is diffused and shielded so that no direct light source is visible from either equid eye position. The complete electrical assembly is at least IP65 equivalent. A powered marker remains fully retroreflective when switched off or when power fails, and its battery reserve covers the planned journey plus not less than two hours.</p>
+
+      <h2>Priority order</h2>
+      <p class="h2-num">Where more than one status applies</p>
+      <ol>
+        <li>Active hazard or stop</li>
+        <li>Restricted passing</li>
+        <li>Authorized emergency service</li>
+        <li>Police or Road Guard traffic control</li>
+        <li>Pregnancy or medical vulnerability</li>
+        <li>Yellow caution</li>
+        <li>Green or provisional status</li>
+        <li>Ordinary road certification</li>
+      </ol>
+      <p>Secondary statuses appear on approved side or rear markers. A service status shall not erase or conceal pregnancy, green, caution, restricted, hazard or suspension status. Decorative combinations, blended colors, half-symbols and unofficial overlays are prohibited.</p>
+
+      <h2>Offenses</h2>
+      <p class="h2-num">What is punished</p>
+      <p>Displaying a false status; using an unreadable marker; concealing a required status; displaying a lower-priority status instead of a higher one; using an unauthorized service emblem; altering a marker to resemble another status; attaching a marker directly to the body; failing to activate required illumination; using flashing, pulsing, color-changing, dazzling or service-imitating illumination; or continuing road use after marker or power failure, except direct lawful movement to safety.</p>
+      <p>Unauthorized manufacture, sale, lending, display, imitation, alteration, duplication, possession for deceptive use, or failure to surrender a revoked service marker is likewise an offense. Ordinary non-service markers, by contrast, may be freely manufactured, stocked, sold and possessed: possession alone is not an offense, and the offense is false display or misrepresentation.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Availability.</strong> Official marker specifications, meanings, authorized emblems and public-recognition guides are publicly accessible. The physical official markers and credentials are manufactured, issued and supplied only through authorized channels to verified services.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Dark fields</strong>
+      Black, very dark green and other dark service fields carry a continuous white or silver retroreflective outer border not less than one-tenth of the marker&rsquo;s shortest dimension, plus a high-contrast emblem. A dark field without that border, emblem and lawful illumination capability is not road-valid at night.
+      <br><br>
+      <strong>Inspection</strong>
+      Commercial, public, service, rental, freight, ceremonial, emergency and government markers get a recorded check before each working day and a formal inspection at least every six months.
+      <br><br>
+      <strong>If it fails</strong>
+      Stop at the first safe place and clean, uncover, correct, recharge, repair or replace. A handwritten note, ribbon, body paint, phone screen or ordinary light is not a substitute.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>The Empire</h2>
+      <ul>
+        <li><a href="../../../en-us/gov/">Government and doctrine</a></li>
+        <li><a href="../../../en-us/gov/#dynamics">The Eight Dynamics</a></li>
+        <li><a href="../../../en-us/gov/#diarchy">The Imperial Diarchy</a></li>
+        <li><a href="../../../en-us/gov/law/">Imperial law</a></li>
+        <li><a href="../../../en-us/history/">History</a></li>
+        <li><a href="../../../en-us/symbols/">Name, flag and symbols</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Living here</h2>
+      <ul>
+        <li><a href="../../../en-us/living/">Living in Hrossagri&#240;</a></li>
+        <li><a href="../../../en-us/living/health/">Health</a></li>
+        <li><a href="../../../en-us/living/education/">Education and children</a></li>
+        <li><a href="../../../en-us/living/transport/">Transport and roads</a></li>
+        <li><a href="../../../en-us/living/justice/">Justice and policing</a></li>
+        <li><a href="../../../en-us/living/money/">Work and money</a></li>
+        <li><a href="../../../en-us/living/citizenship/">Citizenship and refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Horses and roads</h2>
+      <ul>
+        <li><a href="../../../en-us/horses/">Horses</a></li>
+        <li><a href="../../../en-us/horses/#welfare">Welfare and bitless control</a></li>
+        <li><a href="../../../en-us/horses/#service">Service equids</a></li>
+        <li><a href="../../../en-us/horses/road-status/">Road-status marker standard</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>This portal</h2>
+      <ul>
+        <li><a href="../../../en-us/about/">About this project</a></li>
+        <li><a href="../../../en-us/search/">Search the portal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Flag of the Empire of Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Unfortunately, Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Imperial State Portal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

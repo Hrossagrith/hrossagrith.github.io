@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kejsardömet Hrossagri&#240; &mdash; Kejserliga statsportalen</title>
+<meta name="description" content="Officiell portal för Kejsardömet Hrossagrith: hästar, hälso- och sjukvård, utbildning, transport, rättsväsende, statsstyre, rätt, historia och symboler. Ett worldbuildingprojekt.">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../" data-base="../sv/" data-i18n="{&quot;light&quot;: &quot;Ljust&quot;, &quot;dark&quot;: &quot;Mörkt&quot;, &quot;theme_to_light&quot;: &quot;Byt till ljust tema&quot;, &quot;theme_to_dark&quot;: &quot;Byt till mörkt tema&quot;, &quot;search_prompt&quot;: &quot;Skriv in ett ord eller uttryck ovan för att söka på alla sidor i portalen.&quot;, &quot;search_running&quot;: &quot;Söker…&quot;, &quot;search_none&quot;: &quot;Ingen post i registret innehåller alla orden. Prova med färre eller andra ord.&quot;, &quot;search_error&quot;: &quot;Sökindexet kunde inte laddas. Försök igen.&quot;, &quot;results_one&quot;: &quot;{n} träff för ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} träffar för ”{q}”&quot;, &quot;results_none&quot;: &quot;Inga träffar för ”{q}”&quot;, &quot;expand_all&quot;: &quot;Expandera alla delar&quot;, &quot;collapse_all&quot;: &quot;Komprimera alla delar&quot;}">
+<a class="skip-link" href="#main">Hoppa till innehållet</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Ett worldbuildingprojekt</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Sök i portalen</label>
+      <input type="search" id="q" name="q" placeholder="Sök i portalen" autocomplete="off">
+      <button type="submit">Sök</button>
+    </form>
+    <label class="visually-hidden" for="locale">Språk</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv" selected>Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Mörkt</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="Kejsardömet Hrossagri&#240;s emblem: en stegrande hippogriff i en rundel" width="360" height="360">
+    <p class="masthead__state">Kejserliga statsportalen</p>
+    <p class="masthead__name"><a href="../sv/">Kejsardömet Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Hästarnas fristad, och freden som upprätthålls</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alla avdelningar">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Meny
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Kejsardömet</h2>
+            <ul>
+            <li><a href="../sv/gov/">Statsstyre och doktrin</a></li>
+            <li><a href="../sv/gov/#dynamics">De Åtta Dynamikerna</a></li>
+            <li><a href="../sv/gov/#diarchy">Den kejserliga diarkin</a></li>
+            <li><a href="../sv/gov/law/">Kejserlig rätt</a></li>
+            <li><a href="../sv/history/">Historia</a></li>
+            <li><a href="../sv/symbols/">Namn, flagga och symboler</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Livet här</h2>
+            <ul>
+            <li><a href="../sv/living/">Att leva i Hrossagri&#240;</a></li>
+            <li><a href="../sv/living/health/">Hälso- och sjukvård</a></li>
+            <li><a href="../sv/living/education/">Utbildning och barn</a></li>
+            <li><a href="../sv/living/transport/">Transport och vägar</a></li>
+            <li><a href="../sv/living/justice/">Rättsväsende och polis</a></li>
+            <li><a href="../sv/living/money/">Arbete och pengar</a></li>
+            <li><a href="../sv/living/citizenship/">Medborgarskap och fristad</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hästar och vägar</h2>
+            <ul>
+            <li><a href="../sv/horses/">Hästar</a></li>
+            <li><a href="../sv/horses/#welfare">Välfärd och bettlös styrning</a></li>
+            <li><a href="../sv/horses/#service">Tjänstehästdjur</a></li>
+            <li><a href="../sv/horses/road-status/">Standard för vägstatusmarkörer</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Denna portal</h2>
+            <ul>
+            <li><a href="../sv/about/">Om detta projekt</a></li>
+            <li><a href="../sv/search/">Sök i portalen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../sv/" aria-current="page">Startsida</a>
+    <a href="../sv/horses/">Hästar</a>
+    <a href="../sv/living/">Livet här</a>
+    <a href="../sv/gov/">Statsstyre</a>
+    <a href="../sv/gov/law/">Rätt</a>
+    <a href="../sv/history/">Historia</a>
+    <a href="../sv/symbols/">Symboler</a>
+    <a href="../sv/about/">Om</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero__art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="A road running through a stone gate between low hills">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--art-sky-top, #dfe7ee)"/>
+      <stop offset="1" stop-color="var(--art-sky-bottom, #eef1e9)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- Far hills -->
+  <path d="M 0 214 C 120 190, 210 200, 300 210 C 400 221, 470 196, 560 190
+           C 660 183, 740 205, 840 202 C 940 199, 1050 178, 1200 192 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-far, #cfdcd3)"/>
+
+  <!-- Middle hills -->
+  <path d="M 0 250 C 130 232, 240 246, 350 254 C 460 262, 540 244, 660 242
+           C 780 240, 900 258, 1010 252 C 1100 247, 1150 240, 1200 236 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-mid, #b9cdbc)"/>
+
+  <!-- Near ground -->
+  <path d="M 0 288 C 160 278, 320 288, 470 292 C 620 296, 760 286, 900 288
+           C 1020 290, 1120 294, 1200 292 L 1200 340 L 0 340 Z"
+        fill="var(--art-ground, #a8c0ad)"/>
+
+  <!-- The road, narrowing toward the gate -->
+  <path d="M 520 214 L 680 214 L 900 340 L 300 340 Z" fill="var(--art-road, #e6e2d4)"/>
+  <path d="M 598 216 L 602 216 L 612 340 L 588 340 Z" fill="var(--art-road-line, #ddd6c4)"/>
+
+  <!-- Stone gate: the border at which pursuit stops -->
+  <g fill="var(--art-stone, #7d8b84)">
+    <rect x="452" y="96" width="46" height="152" rx="4"/>
+    <rect x="702" y="96" width="46" height="152" rx="4"/>
+    <path d="M 452 96 L 748 96 L 748 132 L 452 132 Z"/>
+    <path d="M 498 132 C 520 132, 540 148, 548 172 L 560 172 C 552 140, 528 120, 498 120 Z"/>
+    <path d="M 702 132 C 680 132, 660 148, 652 172 L 640 172 C 648 140, 672 120, 702 120 Z"/>
+  </g>
+  <g fill="var(--art-stone-dark, #63706a)">
+    <rect x="446" y="86" width="58" height="14" rx="3"/>
+    <rect x="696" y="86" width="58" height="14" rx="3"/>
+    <rect x="440" y="72" width="320" height="16" rx="3"/>
+  </g>
+
+  <!-- Hoofprints along the road -->
+  <g fill="var(--art-hoof, #c8bfa6)">
+    <ellipse cx="566" cy="262" rx="4" ry="5"/>
+    <ellipse cx="578" cy="264" rx="4" ry="5"/>
+    <ellipse cx="546" cy="292" rx="5" ry="6"/>
+    <ellipse cx="560" cy="295" rx="5" ry="6"/>
+    <ellipse cx="520" cy="324" rx="6" ry="7.5"/>
+    <ellipse cx="537" cy="328" rx="6" ry="7.5"/>
+  </g>
+</svg>
+</div>
+  <div class="shell">
+    <div class="hero__panel">
+      <h1>Gränsen vid vilken förföljelsen upphör</h1>
+      <p>Allt som Kejsardömet gör för människorna som bor här, och för djuren det är uppkallat efter.</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="shell wrap">
+  <div class="two">
+    <div class="col">
+      <p class="entry">Införing I &middot; Den ursprungliga betydelsen</p>
+      <h2>Varför Kejsardömet bär detta namn</h2>
+      <p class="h2-num">Infört i det kejserliga registret</p>
+      <p class="dropcap">Hrossagri&#240; är inte uppkallat efter sina hästar. Det är uppkallat efter sitt <span class="native">gri&#240;</span> &mdash; garanterad fred, fri lejd, pardon, fristad &mdash; och efter de hästar som avgör vem fristaden tillkommer. Namnet uppstod som ett exonym. Köpmän, budbärare, flyktingar och ryttare som korsade gränsen fann att förföljelsen måste upphöra: den resande, dennes följeslagare och dennes hästdjur trädde alla in under skydd.</p>
+      <p>Hästar kunde inte tas i beslag för krig, stjälas, rekvireras, bytas bort eller användas som påtryckningsmedel mot de människor som var beroende av dem. Utomstående kallade detta tillstånd <span class="native">hrossagri&#240;</span>, och med tiden vandrade ordet utåt från gränsen till vägarna, bosättningarna, det erkända territoriet och slutligen till landet självt.</p>
+    </div>
+    <aside class="marg">
+      <strong>Anteckning i marginalen</strong>
+      Namnets äldsta praktiska betydelse: en gräns vid vilken förföljelsen upphörde och skyddet började &mdash; för den resande och för djuret som bar denne i lika mån.
+    </aside>
+  </div>
+
+  <div class="pullquote">
+    <p>Skyddet av en person är ofullständigt där personens häst, färdmedel, försörjning eller väg hem alltjämt kan tas i beslag, misshandlas, utmattas eller användas som påtryckningsmedel.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Införing II &middot; Registret över avdelningar</p>
+  <h2>Tjänster och information</h2>
+  <p class="h2-num">Allt som Kejsardömet för register över åt dem som bor här</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <p class="service__no">Avdelning I</p>
+      <h3><a href="horses/">Hästar</a></h3>
+      <p>Nationalskatten, och skälet till att Kejsardömet är format som det är. Välfärd, bettlös utrustning, vägstatus, tjänstehästdjur.</p>
+      <ul class="service__links"><li><a href="horses/road-status/">Vägstatusmarkörer</a></li><li><a href="horses/#welfare">Välfärd och bettlös styrning</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">Avdelning II</p>
+      <h3><a href="living/health/">Hälso- och sjukvård</a></h3>
+      <p>Kostnadsfri vid vårdtillfället, generöst finansierad och utformad mot väntelistor, personalbrist och regional ojämlikhet.</p>
+      <ul class="service__links"><li><a href="living/health/">Vad Kejsardömet garanterar</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">Avdelning III</p>
+      <h3><a href="living/education/">Utbildning &amp; barn</a></h3>
+      <p>Kostnadsfri utbildning på varje nivå, kostnadsfri barnomsorg oavsett föräldrarnas sysselsättning, och exceptionellt starkt barnskydd.</p>
+      <ul class="service__links"><li><a href="living/education/#childcare">Barnomsorg</a></li><li><a href="living/education/#protection">Skydd av barn</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">Avdelning IV</p>
+      <h3><a href="living/transport/">Transport &amp; vägar</a></h3>
+      <p>Ett land byggt kring hästdragen vägtransport och järnväg, med ett enda snävt undantag för motoriserad godstrafik.</p>
+      <ul class="service__links"><li><a href="living/transport/#hrossaway">Hrossaway</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">Avdelning V</p>
+      <h3><a href="living/justice/">Rättsväsende &amp; polis</a></h3>
+      <p>Urval och utbildning av polis på flygbranschnivå, deeskalering som standard, och ett absolut förbud mot dödsstraff.</p>
+      <ul class="service__links"><li><a href="living/justice/#privacy">Integritet och it-brottslighet</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">Avdelning VI</p>
+      <h3><a href="living/money/">Arbete &amp; pengar</a></h3>
+      <p>Progressiv beskattning av inkomst, förmögenhet, kapitalvinster och stora arv.</p>
+      <ul class="service__links"><li><a href="living/money/">Beskattning</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">Avdelning VII</p>
+      <h3><a href="living/citizenship/">Medborgarskap &amp; fristad</a></h3>
+      <p>En mångskiftande mänsklig nation som härstammar från många folk, integrerade under århundraden genom migration och fristad.</p>
+      <ul class="service__links"><li><a href="living/citizenship/">Fristad och integration</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <p class="service__no">Avdelning VIII</p>
+      <h3><a href="gov/">Statsstyre</a></h3>
+      <p>Eudaimonokrati, de Åtta Dynamikerna och två likställda Kronor som styr under en enda författning.</p>
+      <ul class="service__links"><li><a href="gov/#diarchy">Den kejserliga diarkin</a></li><li><a href="gov/law/">Rättskorpusen</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <p class="service__no">Avdelning IX</p>
+      <h3><a href="history/">Historia</a></h3>
+      <p>Från Överfartskrisen c.&nbsp;1050 f.Kr. till hästgarantitvisterna under det tredje århundradet.</p>
+      <ul class="service__links"><li><a href="history/">Tidig historia, c. 1200&ndash;100 f.Kr.</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <p class="service__no">Avdelning X</p>
+      <h3><a href="symbols/">Namn &amp; symboler</a></h3>
+      <p>Kanoniska former, den fornnordiska etymologin, flaggan och nationaldjuret.</p>
+      <ul class="service__links"><li><a href="symbols/#flag">Flaggan</a></li></ul>
+    </li>
+  </ul>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <div class="two">
+    <div class="col">
+      <p class="entry">Införing III &middot; Staten</p>
+      <h2>Vad Kejsardömet är</h2>
+      <p class="h2-num">Befolkning, författning och karaktär</p>
+      <p>Det moderna Hrossagri&#240; är en <strong>mänsklig nation</strong>, och en mycket mångskiftande sådan: dess befolkning härstammar från talrika folk som integrerats under århundraden genom migration och fristad. Hästar och andra hästdjur är skyddade levande varelser, följeslagare och arbetspartner, och grundvalen för Kejsardömets vägtransportkultur. De utgör inte befolkningen och innehar inget mänskligt politiskt ämbete.</p>
+      <p>Författningsmässigt är Kejsardömet en <a href="gov/">eudaimonokratisk diarkisk monarki</a>: två likställda Kronor, den Vägledande och den Vaktande, som styr under en filosofi som mäter en politik efter vad den bygger upp och vad den förstör över livets hela bredd snarare än efter vad en majoritet råkar önska.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Historisk sanning.</strong> Kejsardömet skriver inte om, utplånar eller skönmålar sin historia i politiska syften. Dess redovisning av de egna framgångarna, misslyckandena, orättvisorna och omstridda besluten är avsedd att vara korrekt, och <a href="history/">historieavsnittet</a> anger gränserna för sin egen rekonstruktion i stället för att dölja dem.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Kanoniska former</strong>
+      Inhemsk: <span class="native">Hrossagri&#240;</span><br>
+      Internationell: Hrossagrith<br>
+      Medborgare: Hrossagrith (oböjligt)<br>
+      Adjektiv: hrossagridisk<br>
+      Uttal: HROSS-a-grith
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Kejsardömet</h2>
+      <ul>
+        <li><a href="../sv/gov/">Statsstyre och doktrin</a></li>
+        <li><a href="../sv/gov/#dynamics">De Åtta Dynamikerna</a></li>
+        <li><a href="../sv/gov/#diarchy">Den kejserliga diarkin</a></li>
+        <li><a href="../sv/gov/law/">Kejserlig rätt</a></li>
+        <li><a href="../sv/history/">Historia</a></li>
+        <li><a href="../sv/symbols/">Namn, flagga och symboler</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Livet här</h2>
+      <ul>
+        <li><a href="../sv/living/">Att leva i Hrossagri&#240;</a></li>
+        <li><a href="../sv/living/health/">Hälso- och sjukvård</a></li>
+        <li><a href="../sv/living/education/">Utbildning och barn</a></li>
+        <li><a href="../sv/living/transport/">Transport och vägar</a></li>
+        <li><a href="../sv/living/justice/">Rättsväsende och polis</a></li>
+        <li><a href="../sv/living/money/">Arbete och pengar</a></li>
+        <li><a href="../sv/living/citizenship/">Medborgarskap och fristad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hästar och vägar</h2>
+      <ul>
+        <li><a href="../sv/horses/">Hästar</a></li>
+        <li><a href="../sv/horses/#welfare">Välfärd och bettlös styrning</a></li>
+        <li><a href="../sv/horses/#service">Tjänstehästdjur</a></li>
+        <li><a href="../sv/horses/road-status/">Standard för vägstatusmarkörer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Denna portal</h2>
+      <ul>
+        <li><a href="../sv/about/">Om detta projekt</a></li>
+        <li><a href="../sv/search/">Sök i portalen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="Kejsardömet Hrossagri&#240;s flagga" width="120" height="80">
+    <p class="footer__disclaimer">Tyvärr är Hrossagrith ett fiktivt land. Denna webbplats är ett worldbuildingprojekt och har ingen som helst koppling till någon verklig stat, regering eller officiell instans.</p>
+    <p class="footer__meta">Kejsardömet Hrossagri&#240; &middot; Kejserliga statsportalen &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hevoset &mdash; Hrossagri&#240;in keisarikunta</title>
+<meta name="description" content="Hrossagrithin kansallisaarre: hevoseläinten hyvinvointi, kuolaimeton hallinta, tiestatusmerkit ja palvelushevoseläimet.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../fi/" data-i18n="{&quot;light&quot;: &quot;Vaalea&quot;, &quot;dark&quot;: &quot;Tumma&quot;, &quot;theme_to_light&quot;: &quot;Vaihda vaaleaan teemaan&quot;, &quot;theme_to_dark&quot;: &quot;Vaihda tummaan teemaan&quot;, &quot;search_prompt&quot;: &quot;Kirjoita yllä olevaan kenttään sana tai lause, niin haku kohdistuu portaalin kaikkiin sivuihin.&quot;, &quot;search_running&quot;: &quot;Haetaan…&quot;, &quot;search_none&quot;: &quot;Mikään rekisterin merkintä ei sisällä kaikkia sanoja. Kokeile vähemmillä tai eri sanoilla.&quot;, &quot;search_error&quot;: &quot;Hakuindeksin lataaminen epäonnistui. Yritä uudelleen.&quot;, &quot;results_one&quot;: &quot;{n} tulos haulla ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} tulosta haulla ”{q}”&quot;, &quot;results_none&quot;: &quot;Ei tuloksia haulla ”{q}”&quot;, &quot;expand_all&quot;: &quot;Avaa kaikki osat&quot;, &quot;collapse_all&quot;: &quot;Sulje kaikki osat&quot;}">
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Maailmanrakennusprojekti</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Hae portaalista</label>
+      <input type="search" id="q" name="q" placeholder="Hae portaalista" autocomplete="off">
+      <button type="submit">Hae</button>
+    </form>
+    <label class="visually-hidden" for="locale">Kieli</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi" selected>Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Tumma</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Hrossagri&#240;in keisarikunnan vaakuna: takajaloilleen nouseva hippogriifi pyöreässä kentässä" width="360" height="360">
+    <p class="masthead__state">Keisarillinen valtionportaali</p>
+    <p class="masthead__name"><a href="../../fi/">Hrossagri&#240;in keisarikunta</a></p>
+    <p class="masthead__motto">Hevosten turvapaikka ja rauha, joka pannaan täytäntöön</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Kaikki osastot">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Valikko
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keisarikunta</h2>
+            <ul>
+            <li><a href="../../fi/gov/">Hallinto ja oppi</a></li>
+            <li><a href="../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+            <li><a href="../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+            <li><a href="../../fi/gov/law/">Keisarillinen oikeus</a></li>
+            <li><a href="../../fi/history/">Historia</a></li>
+            <li><a href="../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Elämä täällä</h2>
+            <ul>
+            <li><a href="../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+            <li><a href="../../fi/living/health/">Terveydenhuolto</a></li>
+            <li><a href="../../fi/living/education/">Koulutus ja lapset</a></li>
+            <li><a href="../../fi/living/transport/">Liikenne ja tiet</a></li>
+            <li><a href="../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+            <li><a href="../../fi/living/money/">Työ ja raha</a></li>
+            <li><a href="../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hevoset ja tiet</h2>
+            <ul>
+            <li><a href="../../fi/horses/">Hevoset</a></li>
+            <li><a href="../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+            <li><a href="../../fi/horses/#service">Palvelushevoseläimet</a></li>
+            <li><a href="../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Tämä portaali</h2>
+            <ul>
+            <li><a href="../../fi/about/">Tietoa tästä projektista</a></li>
+            <li><a href="../../fi/search/">Hae portaalista</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../fi/">Etusivu</a>
+    <a href="../../fi/horses/" aria-current="page">Hevoset</a>
+    <a href="../../fi/living/">Elämä</a>
+    <a href="../../fi/gov/">Hallinto</a>
+    <a href="../../fi/gov/law/">Oikeus</a>
+    <a href="../../fi/history/">Historia</a>
+    <a href="../../fi/symbols/">Symbolit</a>
+    <a href="../../fi/about/">Tietoa</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../fi/">Etusivu</a><span>&rsaquo;</span><strong>Hevoset</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Kansallisaarre</p>
+  <h1 class="page-title">Hevoset</h1>
+  <p class="page-standfirst">Jokainen muu tämän portaalin osa voitaisiin selittää mainitsematta hevosia. Mikään siitä ei kuitenkaan olisi tässä muodossa olemassa ilman niitä.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Keisarikunta on nimetty hevosille kuuluvan suojelun mukaan, ja tämä suojelu on vanhin asia sen oikeudessa. Seuraava ei ole tunteilua: se on päättely, jolla keisarikunta ratkaisee, mitä eläimelle saa ja mitä ei saa tehdä, sekä ne merkit, joilla sen tiejärjestelmä tekee tuon ratkaisun näkyväksi.</p>
+    </div>
+    <aside class="marg">
+      <strong>Soveltamisala</strong>
+      Hrossagridilainen oikeus kattaa ponit, aasit, muulit, muuliaasit ja muut hevoseläimet. Muinainen valtion nimi säilyttää hevosen vain edustavana kantanaan.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikla I</p>
+  <h2 id="welfare">Hyvinvointi ja kuolaimeton hallinta</h2>
+  <p class="h2-num">Miksi tavanomaiset kuolaimet on kielletty</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Kuolain on esine, joka asetetaan hevosen suuhun ja yhdistetään ohjaksiin, jolloin ratsastaja tai ajaja hallitsee eläintä suun kautta kohdistuvalla paineella. Suurimmassa osassa hevosmaailmaa tämä on tavanomaista. Hrossagri&#240;issä tavanomaiset kuolaimet on yksinkertaisesti kielletty, ja perustelu kulkee <a href="../gov/#dynamics">viidennen dynamiikan</a> kautta.</p>
+      <p>Koska hevonen luetaan omaksi elämänmuodokseen eikä jonkun omaisuudeksi, tarkastelu ei voi päättyä siihen, mikä on ratsastajalle mukavaa. Valtion on kysyttävä, mitä hevoselle tapahtuu, otetaanko kivun riski, onko olemassa vähemmän tuhoisa vaihtoehto ja voidaanko eläintä hallita turvallisesti ilman laitetta sen suussa. Kun vastaus on myönteinen, ihmisen mukavuus ei riitä perustelemaan lisäriskiä.</p>
+      <p>Hyväksyttyihin kuolaimettomiin päitsiin kuuluvat sidepullit, hackamoret, bosalit, cross-underit ja cordeot. Sen, mikä on laillista, määrää keisarillinen varusteita, hillintävälineitä ja hyvinvointia koskeva koodeksi, ja sitä mitataan keisarillisen varustemittausohjeiston mukaan; tiekäyttö lisää tähän vielä omat vaatimuksensa.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Teurastus.</strong> Hrossagridilainen kulttuuri ja oikeus kohtelevat hevoseläimiä paljon lähempänä seuraeläimiä ja työtovereita kuin tuotantoeläimiä. Muissa yhteiskunnissa on pitkiä perinteitä hevosenlihan syömisessä; keisarikunta ei pidä sitä syynä sietää hevoseläinten lihateollisuutta. Hevosten teurastus on yksi vakavimmista hevoseläinten hyvinvointirikoksista &mdash; ja rikoksen tehnyt ihminen saa silti korkeimmat käytettävissä olevat <em>ei-kuolettavat</em> rangaistukset, koska <a href="../living/justice/">kuolemanrangaistus on ehdottomasti kielletty</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Ei skientologian sääntö</strong>
+      Kahdeksan dynamiikkaa antavat eettisen kehyksen. Johtopäätös &mdash; että kuolaimet on kielletty &mdash; on hrossagridilainen poliittinen päätös, joka on johdettu tuosta kehyksestä sekä hevosten hyvinvointia koskevasta näytöstä.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikla II</p>
+  <h2 id="road-status">Tiestatus yhdellä silmäyksellä</h2>
+  <p class="h2-num">Merkki, jonka jokainen hevoseläin kantaa yleiselle tielle</p>
+
+  <div class="prose">
+    <p>Jokainen yleiselle tielle tuleva hevoseläin kantaa hyväksyttyjä kuolaimettomia päitsiä, joihin on kiinnitetty <strong>kasvomerkki</strong> &mdash; merkkiä kantava frentera tai muserola, jossa on vaihdettava statuslevy ja joka on luettavissa edestä. Merkki on ihmisille osoitettu tieohje. Se ei ole koriste, ei mainos eikä ratsastajan tai ajajan harkinnan korvike.</p>
+    <p>Väri ei ole koskaan ainoa erottava tekijä. Jokaisella statuksella on myös oma reunuksensa, muotonsa tai symbolinsa, jotta järjestelmä pysyy luettavana värisokeille tienkäyttäjille.</p>
+  </div>
+
+  <h3>Tavanomaiset ja rajoittavat statukset</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Valkoinen kenttä</strong>
+          <span class="marker__what">Tavanomainen tiesertifioitu hevoseläin.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Vihreä kenttä</strong>
+          <span class="marker__what">Kokematon hevoseläin, väliaikainen sertifikaatti, koulutusvaihe tai valvottu työ tiellä.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Keltainen kenttä</strong>
+          <span class="marker__what">Varoitus: herkkyys, lisätilan tarve tai kohonnut säikkymisriski.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Valkoinen kenttä, punainen reunus</strong>
+          <span class="marker__what">Ohittaminen rajoitettu. Ohita vain ajajan, ratsastajan tai käsittelijän merkistä.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Punainen kenttä, valkoinen X</strong>
+          <span class="marker__what">Älä ohita. Pysähdy ja odota: käynnissä on vaara tai välitöntä hallintaa vaativa tilanne.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h3>Palvelustatukset</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Sininen, Tievartioston tunnus</strong>
+          <span class="marker__what">Keisarillinen tievartiosto, liikennepartio, liikenteenohjauspalvelu.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Sininen, poliisin kilpi</strong>
+          <span class="marker__what">Poliisipalvelu, mikäli siihen on valtuutus.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Valkoinen, punainen risti</strong>
+          <span class="marker__what">Sairaankuljetus tai valtuutettu lääkinnällinen hätäpalvelu.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Punainen, valkoinen liekki</strong>
+          <span class="marker__what">Palo- tai pelastuspalvelu.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Vihreä, tassu ja kavio</strong>
+          <span class="marker__what">Eläinlääkinnällinen hätäpalvelu.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Sininen, pegasos</strong>
+          <span class="marker__what">Keisarillinen posti, lähetti- tai kuriiripalvelu.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Musta, valkoinen reunus</strong>
+          <span class="marker__what">Hallitsijan kulku, mikäli siihen on laillinen valtuutus.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Musta, jossa kruunu</strong>
+          <span class="marker__what">Valtuutetun keisarillisen hallituksen, ministeriön tai valtion viranomaisen kulku.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Tummanvihreä, tunnusmerkki</strong>
+          <span class="marker__what">Sotilaspalvelu.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="prose">
+    <p style="color:var(--ink-faint);font-size:0.92rem">Nämä piirrokset esittävät vain erottavan kentän, reunuksen ja symbolin. Tarkat väriarvot ja toleranssit julkaisee toimivaltainen tieviranomainen, ja ne todennetaan kalibroidulla mittauksella.</p>
+    <p><a href="road-status/">Merkkien täydellinen standardi</a> &mdash; mitat, havaittavuuskokeet, valaistus, etusijajärjestys, väärennösten torjunta ja rikkomukset.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikla III</p>
+  <h2 id="service">Palvelushevoseläimet</h2>
+  <p class="h2-num">Valinta tehtävän eikä muodin mukaan</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Poliisin, sairaankuljetuksen, vuokra-ajon, kuriiripalvelun, eläinlääkinnän, palokunnan, sotaväen ja hallitsijan palveluksen hevoseläimet valitaan sen perusteella, mihin ne todella pystyvät: kestävyys, palautuminen, rohkeus tiellä, luonne, tyyneys liikenteessä, kyky seisoa paikallaan ja liikkua nopeasti, väkijoukkojen ja valojen sieto sekä laillinen kuolaimeton hallinta.</p>
+      <p>Niitä <em>ei</em> valita puhdasrotuisuuden, näyttävyyden, muodikkuuden tai vaikuttavuuden perusteella. Toimiva pää ja hengitystiet merkitsevät enemmän kuin liioiteltu profiili, ja yksilökohtainen sertifiointi syrjäyttää minkä tahansa rotumerkinnän. Ratsastuspalvelua säännellään erillään valjakkotyöstä keisarillisella ratsupalvelun ja tiepartion koodeksilla.</p>
+    </div>
+    <aside class="marg">
+      <strong>Missä säännöt sijaitsevat</strong>
+      Yleinen hevoseläinten hyvinvointikoodeksi &middot; Varuste-, hillintäväline- ja hyvinvointikoodeksi &middot; Valjakkohevoseläinten koodeksi &middot; Ratsupalvelun ja tiepartion koodeksi &middot; Jalostus- ja rekisterikoodeksi.
+      <br><br>
+      Täydellistä rekisteriä pidetään <a href="../gov/law/">keisarillisen oikeuden</a> alaisuudessa.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keisarikunta</h2>
+      <ul>
+        <li><a href="../../fi/gov/">Hallinto ja oppi</a></li>
+        <li><a href="../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+        <li><a href="../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+        <li><a href="../../fi/gov/law/">Keisarillinen oikeus</a></li>
+        <li><a href="../../fi/history/">Historia</a></li>
+        <li><a href="../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elämä täällä</h2>
+      <ul>
+        <li><a href="../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+        <li><a href="../../fi/living/health/">Terveydenhuolto</a></li>
+        <li><a href="../../fi/living/education/">Koulutus ja lapset</a></li>
+        <li><a href="../../fi/living/transport/">Liikenne ja tiet</a></li>
+        <li><a href="../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+        <li><a href="../../fi/living/money/">Työ ja raha</a></li>
+        <li><a href="../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hevoset ja tiet</h2>
+      <ul>
+        <li><a href="../../fi/horses/">Hevoset</a></li>
+        <li><a href="../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+        <li><a href="../../fi/horses/#service">Palvelushevoseläimet</a></li>
+        <li><a href="../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tämä portaali</h2>
+      <ul>
+        <li><a href="../../fi/about/">Tietoa tästä projektista</a></li>
+        <li><a href="../../fi/search/">Hae portaalista</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Hrossagri&#240;in keisarikunnan lippu" width="120" height="80">
+    <p class="footer__disclaimer">Valitettavasti Hrossagrith on kuvitteellinen maa. Tämä sivusto on maailmanrakennusprojekti, eikä sillä ole mitään yhteyttä mihinkään todelliseen valtioon, hallitukseen tai viralliseen elimeen.</p>
+    <p class="footer__meta">Hrossagri&#240;in keisarikunta &middot; Keisarillinen valtionportaali &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

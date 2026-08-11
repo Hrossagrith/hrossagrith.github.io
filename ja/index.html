@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>フロッサグリーズ帝国 &mdash; 帝国国家ポータル</title>
+<meta name="description" content="フロッサグリーズ帝国の公式ポータル。馬、保健医療、教育、交通、司法、政府、法、歴史および象徴。ワールドビルディングの企画。">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../" data-base="../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../ja/gov/">政府と教義</a></li>
+            <li><a href="../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../ja/gov/law/">帝国法</a></li>
+            <li><a href="../ja/history/">歴史</a></li>
+            <li><a href="../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../ja/living/health/">保健医療</a></li>
+            <li><a href="../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../ja/horses/">馬</a></li>
+            <li><a href="../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../ja/about/">この企画について</a></li>
+            <li><a href="../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../ja/" aria-current="page">ホーム</a>
+    <a href="../ja/horses/">馬</a>
+    <a href="../ja/living/">暮らし</a>
+    <a href="../ja/gov/">政府</a>
+    <a href="../ja/gov/law/">法</a>
+    <a href="../ja/history/">歴史</a>
+    <a href="../ja/symbols/">象徴</a>
+    <a href="../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero__art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="A road running through a stone gate between low hills">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--art-sky-top, #dfe7ee)"/>
+      <stop offset="1" stop-color="var(--art-sky-bottom, #eef1e9)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- Far hills -->
+  <path d="M 0 214 C 120 190, 210 200, 300 210 C 400 221, 470 196, 560 190
+           C 660 183, 740 205, 840 202 C 940 199, 1050 178, 1200 192 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-far, #cfdcd3)"/>
+
+  <!-- Middle hills -->
+  <path d="M 0 250 C 130 232, 240 246, 350 254 C 460 262, 540 244, 660 242
+           C 780 240, 900 258, 1010 252 C 1100 247, 1150 240, 1200 236 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-mid, #b9cdbc)"/>
+
+  <!-- Near ground -->
+  <path d="M 0 288 C 160 278, 320 288, 470 292 C 620 296, 760 286, 900 288
+           C 1020 290, 1120 294, 1200 292 L 1200 340 L 0 340 Z"
+        fill="var(--art-ground, #a8c0ad)"/>
+
+  <!-- The road, narrowing toward the gate -->
+  <path d="M 520 214 L 680 214 L 900 340 L 300 340 Z" fill="var(--art-road, #e6e2d4)"/>
+  <path d="M 598 216 L 602 216 L 612 340 L 588 340 Z" fill="var(--art-road-line, #ddd6c4)"/>
+
+  <!-- Stone gate: the border at which pursuit stops -->
+  <g fill="var(--art-stone, #7d8b84)">
+    <rect x="452" y="96" width="46" height="152" rx="4"/>
+    <rect x="702" y="96" width="46" height="152" rx="4"/>
+    <path d="M 452 96 L 748 96 L 748 132 L 452 132 Z"/>
+    <path d="M 498 132 C 520 132, 540 148, 548 172 L 560 172 C 552 140, 528 120, 498 120 Z"/>
+    <path d="M 702 132 C 680 132, 660 148, 652 172 L 640 172 C 648 140, 672 120, 702 120 Z"/>
+  </g>
+  <g fill="var(--art-stone-dark, #63706a)">
+    <rect x="446" y="86" width="58" height="14" rx="3"/>
+    <rect x="696" y="86" width="58" height="14" rx="3"/>
+    <rect x="440" y="72" width="320" height="16" rx="3"/>
+  </g>
+
+  <!-- Hoofprints along the road -->
+  <g fill="var(--art-hoof, #c8bfa6)">
+    <ellipse cx="566" cy="262" rx="4" ry="5"/>
+    <ellipse cx="578" cy="264" rx="4" ry="5"/>
+    <ellipse cx="546" cy="292" rx="5" ry="6"/>
+    <ellipse cx="560" cy="295" rx="5" ry="6"/>
+    <ellipse cx="520" cy="324" rx="6" ry="7.5"/>
+    <ellipse cx="537" cy="328" rx="6" ry="7.5"/>
+  </g>
+</svg>
+</div>
+  <div class="shell">
+    <div class="hero__panel">
+      <h1>追跡が止まる境界</h1>
+      <p>帝国がここに住む人々のために、そしてその名の由来である動物たちのために行うすべて。</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="shell wrap">
+  <div class="two">
+    <div class="col">
+      <p class="entry">記載 I &middot; 創始の意味</p>
+      <h2>帝国がこの名を負う理由</h2>
+      <p class="h2-num">帝国登録簿に記載</p>
+      <p class="dropcap">フロッサグリーズ（Hrossagri&#240;）は、その馬にちなんで名づけられたのではない。その<span class="native">gri&#240;</span>&mdash;保障された平和、安全通行、助命、庇護&mdash;にちなみ、そしてその庇護が誰に対して負われるのかを定める馬にちなんで名づけられている。この名は他称として始まった。国境を越える商人、伝令、難民、騎手は、追跡がそこで止まらねばならないことを知った。旅人も、その同行者も、そのウマ科動物も、すべて保護の下に入ったのである。</p>
+      <p>馬は戦争のために押収されることも、盗まれることも、徴用されることも、取引に供されることも、馬に依存する人々に対する圧力の手段として用いられることもあり得なかった。外部の者はその状態を<span class="native">hrossagri&#240;</span>と呼び、やがてこの語は国境から道路へ、集落へ、承認された領域へ、そして最後には国そのものへと広がっていった。</p>
+    </div>
+    <aside class="marg">
+      <strong>欄外の注記</strong>
+      この名の最も古い実際的な意味は、追跡が止み保護が始まる境界である&mdash;旅人にとっても、その旅人を運ぶ動物にとっても等しく。
+    </aside>
+  </div>
+
+  <div class="pullquote">
+    <p>人の保護は、その者の馬、移動の手段、生計、あるいは帰路がなお奪われ、虐げられ、消耗させられ、または圧力の手段として用いられ得るところでは、不完全である。</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">記載 II &middot; 部門の登録簿</p>
+  <h2>行政サービスと情報</h2>
+  <p class="h2-num">ここに住む者のために帝国が記録として保持するすべて</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <p class="service__no">第I節</p>
+      <h3><a href="horses/">馬</a></h3>
+      <p>国の宝であり、帝国がこの姿をとっている理由。福祉、ハミなし馬具、道路資格、公務用ウマ科動物。</p>
+      <ul class="service__links"><li><a href="horses/road-status/">道路資格マーカー</a></li><li><a href="horses/#welfare">福祉とハミなし制御</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">第II節</p>
+      <h3><a href="living/health/">保健医療</a></h3>
+      <p>利用の時点で無償、手厚い財源を有し、待機名簿、人員不足および地域格差に抗するよう設計されている。</p>
+      <ul class="service__links"><li><a href="living/health/">帝国が保障するもの</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">第III節</p>
+      <h3><a href="living/education/">教育と子ども</a></h3>
+      <p>あらゆる段階における無償の教育、親の就労にかかわらない無償の保育、そして極めて強固な児童保護。</p>
+      <ul class="service__links"><li><a href="living/education/#childcare">保育</a></li><li><a href="living/education/#protection">児童の保護</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">第IV節</p>
+      <h3><a href="living/transport/">交通と道路</a></h3>
+      <p>馬による道路輸送と鉄道を軸に築かれた国であり、自動車貨物についてはただ一つの狭い例外がある。</p>
+      <ul class="service__links"><li><a href="living/transport/#hrossaway">Hrossaway</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">第V節</p>
+      <h3><a href="living/justice/">司法と警察</a></h3>
+      <p>航空業務並みの警察官の選抜と訓練、原則としての事態鎮静化、そして死刑の絶対的禁止。</p>
+      <ul class="service__links"><li><a href="living/justice/#privacy">プライバシーとサイバー犯罪</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">第VI節</p>
+      <h3><a href="living/money/">労働と金銭</a></h3>
+      <p>所得、資産、譲渡益および高額の相続に対する累進課税。</p>
+      <ul class="service__links"><li><a href="living/money/">課税</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">第VII節</p>
+      <h3><a href="living/citizenship/">市民権と庇護</a></h3>
+      <p>幾世紀にもわたり移住と庇護を通じて統合された多くの民族に由来する、多様な人間の国民。</p>
+      <ul class="service__links"><li><a href="living/citizenship/">庇護と統合</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <p class="service__no">第VIII節</p>
+      <h3><a href="gov/">政府</a></h3>
+      <p>エウダイモノクラシー、八つのダイナミクス、そして一つの憲法の下に統治する対等な二つの王冠。</p>
+      <ul class="service__links"><li><a href="gov/#diarchy">帝国二頭統治</a></li><li><a href="gov/law/">法体系</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <p class="service__no">第IX節</p>
+      <h3><a href="history/">歴史</a></h3>
+      <p>c.&nbsp;1050 BC の渡河危機から、三世紀の馬保障をめぐる争いまで。</p>
+      <ul class="service__links"><li><a href="history/">初期の歴史、c. 1200&ndash;100 BC</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <p class="service__no">第X節</p>
+      <h3><a href="symbols/">名称と象徴</a></h3>
+      <p>正式な表記形、古ノルド語の語源、国旗、そして国獣。</p>
+      <ul class="service__links"><li><a href="symbols/#flag">国旗</a></li></ul>
+    </li>
+  </ul>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <div class="two">
+    <div class="col">
+      <p class="entry">記載 III &middot; 国家</p>
+      <h2>帝国とは何か</h2>
+      <p class="h2-num">人口、憲制および性格</p>
+      <p>現代のフロッサグリーズは<strong>人間の国民</strong>から成る国家であり、しかも極めて多様である。その人口は、幾世紀にもわたり移住と庇護を通じて統合された数多くの民族に由来する。馬およびその他のウマ科動物は、保護される生命であり、伴侶であり、労働の相手であり、帝国の道路交通文化の基礎である。それらは国民ではなく、人間の公職を占めることもない。</p>
+      <p>憲制上、帝国は<a href="gov/">エウダイモノクラシー的二頭制君主国</a>である。対等な二つの王冠、すなわち導く王冠と守る王冠が、多数派がたまたま欲するところによってではなく、生の全幅にわたって何を築き何を破壊するかによって政策を測る哲学の下に統治する。</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>歴史的真実。</strong> 帝国は政治的目的のために自国の歴史を書き換え、消去し、または美化することをしない。自国の成功、失敗、不正義および議論を呼ぶ決定についての記録は正確であることを旨とし、<a href="history/">歴史の部</a>は自らの再構成の限界を隠すのではなく明示する。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>正式な表記形</strong>
+      原語形：<span class="native">Hrossagri&#240;</span><br>
+      国際形：Hrossagrith<br>
+      国民：Hrossagrith（不変化）<br>
+      形容詞：Hrossagrithic<br>
+      発音：HROSS-a-grith
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../ja/gov/">政府と教義</a></li>
+        <li><a href="../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../ja/gov/law/">帝国法</a></li>
+        <li><a href="../ja/history/">歴史</a></li>
+        <li><a href="../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../ja/living/health/">保健医療</a></li>
+        <li><a href="../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../ja/horses/">馬</a></li>
+        <li><a href="../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../ja/about/">この企画について</a></li>
+        <li><a href="../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

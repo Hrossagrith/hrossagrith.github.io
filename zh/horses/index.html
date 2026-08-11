@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>马匹 &mdash; 赫罗萨格里德帝国</title>
+<meta name="description" content="赫罗萨格里德的国之瑰宝：马科动物福利、无衔铁操控、道路状态标记与勤务马科动物。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../zh/" data-i18n="{&quot;light&quot;: &quot;浅色&quot;, &quot;dark&quot;: &quot;深色&quot;, &quot;theme_to_light&quot;: &quot;切换到浅色主题&quot;, &quot;theme_to_dark&quot;: &quot;切换到深色主题&quot;, &quot;search_prompt&quot;: &quot;在上方输入词语或短语，即可搜索本门户的每一个页面。&quot;, &quot;search_running&quot;: &quot;正在搜索…&quot;, &quot;search_none&quot;: &quot;名录中没有条目同时包含全部词语。请减少词语或换用其他词语。&quot;, &quot;search_error&quot;: &quot;无法加载搜索索引。请重试。&quot;, &quot;results_one&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_many&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_none&quot;: &quot;未找到与“{q}”相关的结果&quot;, &quot;expand_all&quot;: &quot;展开全部部分&quot;, &quot;collapse_all&quot;: &quot;收起全部部分&quot;}">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">一个架空世界构建项目</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">搜索本门户</label>
+      <input type="search" id="q" name="q" placeholder="搜索本门户" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <label class="visually-hidden" for="locale">语言</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh" selected>中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="赫罗萨格里德帝国国徽：圆盘之中一只人立的骏鹰" width="360" height="360">
+    <p class="masthead__state">帝国国家门户</p>
+    <p class="masthead__name"><a href="../../zh/">赫罗萨格里德帝国</a></p>
+    <p class="masthead__motto">马匹的庇护之所，以及得到强制维护的和平</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="全部栏目">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        菜单
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../zh/gov/">政府与学说</a></li>
+            <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+            <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+            <li><a href="../../zh/gov/law/">帝国法律</a></li>
+            <li><a href="../../zh/history/">历史</a></li>
+            <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>在此生活</h2>
+            <ul>
+            <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+            <li><a href="../../zh/living/health/">医疗卫生</a></li>
+            <li><a href="../../zh/living/education/">教育与儿童</a></li>
+            <li><a href="../../zh/living/transport/">交通与道路</a></li>
+            <li><a href="../../zh/living/justice/">司法与警务</a></li>
+            <li><a href="../../zh/living/money/">工作与金钱</a></li>
+            <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>马匹与道路</h2>
+            <ul>
+            <li><a href="../../zh/horses/">马匹</a></li>
+            <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+            <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+            <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本门户</h2>
+            <ul>
+            <li><a href="../../zh/about/">关于本项目</a></li>
+            <li><a href="../../zh/search/">搜索本门户</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../zh/">首页</a>
+    <a href="../../zh/horses/" aria-current="page">马匹</a>
+    <a href="../../zh/living/">生活</a>
+    <a href="../../zh/gov/">政府</a>
+    <a href="../../zh/gov/law/">法律</a>
+    <a href="../../zh/history/">历史</a>
+    <a href="../../zh/symbols/">符号</a>
+    <a href="../../zh/about/">关于</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../zh/">首页</a><span>&rsaquo;</span><strong>马匹</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">国之瑰宝</p>
+  <h1 class="page-title">马匹</h1>
+  <p class="page-standfirst">本门户的其他任何部分，都可以不提马匹而加以说明。但若没有马匹，这一切都不会是今天的样子。</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">帝国因应给予马匹的保护而得名，而这份保护是其法律中最古老的事物。下文并非感伤之词：它是帝国据以判定可以和不可以对一只动物做什么的推理，也是其道路系统借以让这一判定得以显现的标记。</p>
+    </div>
+    <aside class="marg">
+      <strong>适用范围</strong>
+      赫罗萨格里德法律涵盖矮种马、驴、马骡、驴骡及其他马科动物。古老的国名仅以马作为其代表性词根。
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">第 I 条</p>
+  <h2 id="welfare">福利与无衔铁操控</h2>
+  <p class="h2-num">为何普通衔铁被禁止</p>
+
+  <div class="two">
+    <div class="col">
+      <p>衔铁是放入马口中并与缰绳相连的器物，使骑手或驭手通过口腔压力来操控这只动物。在马术世界的大部分地方，这毫不足奇。在赫罗萨格里德（Hrossagri&#240;），普通衔铁干脆被禁止，其推理经由<a href="../gov/#dynamics">第五动力</a>展开。</p>
+      <p>由于马被视为其自身独立的生命形式，而非某人的财产，分析便不能止步于对骑手而言什么才方便。国家必须追问：马会遭遇什么，是否有致痛的风险，是否存在破坏性更小的替代办法，以及在口中不放器具的情况下能否安全地操控这只动物。凡答案为肯定之处，人的方便不足以为额外的风险提供正当理由。</p>
+      <p>获准的无衔铁头具包括侧拉笼头、哈卡莫、博萨尔、交叉式笼头与绳圈缰。何者合法，由《帝国马具、约束与福利法典》规定，并依《帝国马具丈量细则》加以衡量；道路使用还会在此之上追加要求。</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>屠宰。</strong> 赫罗萨格里德的文化与法律对待马科动物，远比对待食用牲畜更接近于对待伴侣动物与劳作搭档。其他社会有食用马肉的悠久传统；帝国并不认为这构成容忍马科动物肉类产业的理由。屠宰马匹是最严重的马科动物福利罪行之一 &mdash; 而人类犯罪者仍然只会受到可用的最高<em>非致命</em>刑罚，因为<a href="../living/justice/">死刑受到绝对禁止</a>。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>这不是山达基的规则</strong>
+      八大动力提供了伦理框架。而结论 &mdash; 即禁止衔铁 &mdash; 是赫罗萨格里德依据该框架并结合马匹福利证据所作出的政治决定。
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">第 II 条</p>
+  <h2 id="road-status">道路状态一览</h2>
+  <p class="h2-num">每一只马科动物进入公共道路时所佩带的标记</p>
+
+  <div class="prose">
+    <p>每一只进入公共道路的马科动物，都佩带装有<strong>面部标记</strong>的获准无衔铁头具 &mdash; 即一条带标记的额饰或鼻革，其上装有可更换的状态嵌片，从正面即可读取。该标记是面向人类的道路指示。它不是装饰，不是广告，也不能取代骑手或驭手的判断。</p>
+    <p>颜色从来不是唯一的区分方式。每一种状态还带有各自的边框、形状或符号，使这套系统对色盲的道路使用者依然可读。</p>
+  </div>
+
+  <h3>普通状态与受限状态</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">白色底色</strong>
+          <span class="marker__what">普通的、经道路认证的马科动物。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">绿色底色</strong>
+          <span class="marker__what">缺乏经验的马科动物、临时证书、训练状态，或在监督下进行的道路作业。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">黄色底色</strong>
+          <span class="marker__what">注意：敏感、需要额外空间，或受惊风险较高。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">白色底色，红色边框</strong>
+          <span class="marker__what">超越受限。仅在驭手、骑手或牵引者示意时方可超越。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">红色底色，白色叉形</strong>
+          <span class="marker__what">禁止超越。停下等候：存在正在发生的危险或需要即时控制的情况。</span>
+        </span>
+      </li>
+  </ul>
+
+  <h3>勤务状态</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">蓝色，道路卫队徽章</strong>
+          <span class="marker__what">帝国道路卫队、交通巡逻、道路管制勤务。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">蓝色，警用盾徽</strong>
+          <span class="marker__what">警务勤务，须经授权。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">白色，红十字</strong>
+          <span class="marker__what">救护车或经授权的医疗急救勤务。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">红色，白色火焰</strong>
+          <span class="marker__what">消防或救援勤务。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">绿色，爪与蹄</strong>
+          <span class="marker__what">兽医急救勤务。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">蓝色，飞马</strong>
+          <span class="marker__what">帝国邮政、信使或快递勤务。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">黑色，白色边框</strong>
+          <span class="marker__what">君主通行，须经法律授权。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">黑色，带王冠</strong>
+          <span class="marker__what">经授权的帝国政府、部级或国家机关通行。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">深绿色，徽记</strong>
+          <span class="marker__what">军事勤务。</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="prose">
+    <p style="color:var(--ink-faint);font-size:0.92rem">这些图样仅显示用于区分的底色、边框与符号。确切的颜色数值与公差由主管道路机关公布，并以校准过的测量加以核验。</p>
+    <p><a href="road-status/">完整的标记标准</a> &mdash; 尺寸、观看测试、照明、优先顺序、防伪管控与违法行为。</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">第 III 条</p>
+  <h2 id="service">勤务马科动物</h2>
+  <p class="h2-num">按功能挑选，而非按时尚挑选</p>
+
+  <div class="two">
+    <div class="col">
+      <p>警务、救护、出租、快递、兽医、消防、军事与君主勤务的马科动物，是按其实际能力来挑选的：耐力、恢复力、道路胆量、性情、面对车流的镇定、既能站定不动又能迅速行进的能力、对人群与灯光的耐受，以及合法的无衔铁操控。</p>
+      <p>它们<em>不</em>因纯种、抢眼、时髦或富有戏剧性而被选中。功能正常的头部与气道比夸张的轮廓更重要，个体认证优先于任何品种标签。骑乘勤务与车驾作业分开管理，适用《帝国骑乘勤务与道路巡逻法典》。</p>
+    </div>
+    <aside class="marg">
+      <strong>规则所在之处</strong>
+      《马科动物福利通则法典》 &middot; 《马具、约束与福利法典》 &middot; 《车驾马科动物法典》 &middot; 《骑乘勤务与道路巡逻法典》 &middot; 《繁育与登记法典》。
+      <br><br>
+      完整名录依<a href="../gov/law/">帝国法律</a>保存。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../zh/gov/">政府与学说</a></li>
+        <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+        <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+        <li><a href="../../zh/gov/law/">帝国法律</a></li>
+        <li><a href="../../zh/history/">历史</a></li>
+        <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>在此生活</h2>
+      <ul>
+        <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+        <li><a href="../../zh/living/health/">医疗卫生</a></li>
+        <li><a href="../../zh/living/education/">教育与儿童</a></li>
+        <li><a href="../../zh/living/transport/">交通与道路</a></li>
+        <li><a href="../../zh/living/justice/">司法与警务</a></li>
+        <li><a href="../../zh/living/money/">工作与金钱</a></li>
+        <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>马匹与道路</h2>
+      <ul>
+        <li><a href="../../zh/horses/">马匹</a></li>
+        <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+        <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+        <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本门户</h2>
+      <ul>
+        <li><a href="../../zh/about/">关于本项目</a></li>
+        <li><a href="../../zh/search/">搜索本门户</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="赫罗萨格里德帝国国旗" width="120" height="80">
+    <p class="footer__disclaimer">很遗憾，赫罗萨格里德是一个虚构的国家。本站是一个架空世界构建项目，与任何真实的国家、政府或官方机构均无关联。</p>
+    <p class="footer__meta">赫罗萨格里德帝国 &middot; 帝国国家门户 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

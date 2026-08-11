@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L&rsquo;Empire de Hrossagri&#240; &mdash; Portail impérial de l’État</title>
+<meta name="description" content="Portail officiel de l’Empire de Hrossagrith : chevaux, santé, éducation, transports, justice, gouvernement, droit, histoire et symboles. Un projet de worldbuilding.">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../" data-base="../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../fr/history/">Histoire</a></li>
+            <li><a href="../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../fr/living/health/">Santé</a></li>
+            <li><a href="../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../fr/horses/">Chevaux</a></li>
+            <li><a href="../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../fr/" aria-current="page">Accueil</a>
+    <a href="../fr/horses/">Chevaux</a>
+    <a href="../fr/living/">Vie quotidienne</a>
+    <a href="../fr/gov/">Gouvernement</a>
+    <a href="../fr/gov/law/">Droit</a>
+    <a href="../fr/history/">Histoire</a>
+    <a href="../fr/symbols/">Symboles</a>
+    <a href="../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero__art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="A road running through a stone gate between low hills">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--art-sky-top, #dfe7ee)"/>
+      <stop offset="1" stop-color="var(--art-sky-bottom, #eef1e9)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- Far hills -->
+  <path d="M 0 214 C 120 190, 210 200, 300 210 C 400 221, 470 196, 560 190
+           C 660 183, 740 205, 840 202 C 940 199, 1050 178, 1200 192 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-far, #cfdcd3)"/>
+
+  <!-- Middle hills -->
+  <path d="M 0 250 C 130 232, 240 246, 350 254 C 460 262, 540 244, 660 242
+           C 780 240, 900 258, 1010 252 C 1100 247, 1150 240, 1200 236 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-mid, #b9cdbc)"/>
+
+  <!-- Near ground -->
+  <path d="M 0 288 C 160 278, 320 288, 470 292 C 620 296, 760 286, 900 288
+           C 1020 290, 1120 294, 1200 292 L 1200 340 L 0 340 Z"
+        fill="var(--art-ground, #a8c0ad)"/>
+
+  <!-- The road, narrowing toward the gate -->
+  <path d="M 520 214 L 680 214 L 900 340 L 300 340 Z" fill="var(--art-road, #e6e2d4)"/>
+  <path d="M 598 216 L 602 216 L 612 340 L 588 340 Z" fill="var(--art-road-line, #ddd6c4)"/>
+
+  <!-- Stone gate: the border at which pursuit stops -->
+  <g fill="var(--art-stone, #7d8b84)">
+    <rect x="452" y="96" width="46" height="152" rx="4"/>
+    <rect x="702" y="96" width="46" height="152" rx="4"/>
+    <path d="M 452 96 L 748 96 L 748 132 L 452 132 Z"/>
+    <path d="M 498 132 C 520 132, 540 148, 548 172 L 560 172 C 552 140, 528 120, 498 120 Z"/>
+    <path d="M 702 132 C 680 132, 660 148, 652 172 L 640 172 C 648 140, 672 120, 702 120 Z"/>
+  </g>
+  <g fill="var(--art-stone-dark, #63706a)">
+    <rect x="446" y="86" width="58" height="14" rx="3"/>
+    <rect x="696" y="86" width="58" height="14" rx="3"/>
+    <rect x="440" y="72" width="320" height="16" rx="3"/>
+  </g>
+
+  <!-- Hoofprints along the road -->
+  <g fill="var(--art-hoof, #c8bfa6)">
+    <ellipse cx="566" cy="262" rx="4" ry="5"/>
+    <ellipse cx="578" cy="264" rx="4" ry="5"/>
+    <ellipse cx="546" cy="292" rx="5" ry="6"/>
+    <ellipse cx="560" cy="295" rx="5" ry="6"/>
+    <ellipse cx="520" cy="324" rx="6" ry="7.5"/>
+    <ellipse cx="537" cy="328" rx="6" ry="7.5"/>
+  </g>
+</svg>
+</div>
+  <div class="shell">
+    <div class="hero__panel">
+      <h1>La frontière à laquelle la poursuite s’arrête</h1>
+      <p>Tout ce que l’Empire fait pour les personnes qui vivent ici, et pour les animaux dont il porte le nom.</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="shell wrap">
+  <div class="two">
+    <div class="col">
+      <p class="entry">Entrée I &middot; Le sens fondateur</p>
+      <h2>Pourquoi l’Empire porte ce nom</h2>
+      <p class="h2-num">Consigné au registre impérial</p>
+      <p class="dropcap">Hrossagri&#240; ne tient pas son nom de ses chevaux. Il le tient de son <span class="native">gri&#240;</span> &mdash; paix garantie, sauf-conduit, quartier, sanctuaire &mdash; et des chevaux qui déterminent à qui ce sanctuaire est dû. Le nom est né comme exonyme. Marchands, messagers, réfugiés et cavaliers franchissant la frontière découvraient que la poursuite devait s’arrêter : le voyageur, ses compagnons et ses équidés entraient tous sous protection.</p>
+      <p>Les chevaux ne pouvaient être saisis pour la guerre, volés, réquisitionnés, échangés ou utilisés comme moyen de pression contre les personnes qui dépendaient d’eux. Les étrangers appelaient cet état <span class="native">hrossagri&#240;</span>, et avec le temps le mot s’est propagé de la frontière vers les routes, les établissements, le territoire reconnu et finalement le pays lui-même.</p>
+    </div>
+    <aside class="marg">
+      <strong>Note en marge</strong>
+      Le plus ancien sens pratique du nom : une frontière à laquelle la poursuite s’arrêtait et la protection commençait &mdash; pour le voyageur comme pour l’animal qui le porte.
+    </aside>
+  </div>
+
+  <div class="pullquote">
+    <p>La protection d’une personne est incomplète là où le cheval de cette personne, son moyen de déplacement, son gagne-pain ou son chemin de retour peuvent encore être saisis, maltraités, épuisés ou utilisés comme moyen de pression.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Entrée II &middot; Le registre des sections</p>
+  <h2>Services et informations</h2>
+  <p class="h2-num">Tout ce que l’Empire consigne pour ceux qui vivent ici</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <p class="service__no">Section I</p>
+      <h3><a href="horses/">Chevaux</a></h3>
+      <p>Le trésor national, et la raison pour laquelle l’Empire a la forme qui est la sienne. Bien-être, harnachement sans mors, statut routier, équidés de service.</p>
+      <ul class="service__links"><li><a href="horses/road-status/">Marqueurs de statut routier</a></li><li><a href="horses/#welfare">Bien-être et contrôle sans mors</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">Section II</p>
+      <h3><a href="living/health/">Santé</a></h3>
+      <p>Gratuite au moment du recours, largement financée et conçue contre les listes d’attente, les pénuries de personnel et les inégalités régionales.</p>
+      <ul class="service__links"><li><a href="living/health/">Ce que l’Empire garantit</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">Section III</p>
+      <h3><a href="living/education/">Éducation &amp; enfance</a></h3>
+      <p>Éducation gratuite à tous les niveaux, accueil de la petite enfance gratuit quelle que soit l’activité professionnelle des parents, et une protection de l’enfance exceptionnellement forte.</p>
+      <ul class="service__links"><li><a href="living/education/#childcare">Accueil de la petite enfance</a></li><li><a href="living/education/#protection">Protection des enfants</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">Section IV</p>
+      <h3><a href="living/transport/">Transports &amp; routes</a></h3>
+      <p>Un pays construit autour du transport routier hippomobile et du rail, avec une seule exception étroite pour le fret motorisé.</p>
+      <ul class="service__links"><li><a href="living/transport/#hrossaway">Hrossaway</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">Section V</p>
+      <h3><a href="living/justice/">Justice &amp; police</a></h3>
+      <p>Sélection et formation des policiers au niveau exigé dans l’aviation, désescalade par défaut et interdiction absolue de la peine de mort.</p>
+      <ul class="service__links"><li><a href="living/justice/#privacy">Vie privée et cybercriminalité</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">Section VI</p>
+      <h3><a href="living/money/">Travail &amp; argent</a></h3>
+      <p>Imposition progressive des revenus, de la fortune, des plus-values et des grandes successions.</p>
+      <ul class="service__links"><li><a href="living/money/">Fiscalité</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">Section VII</p>
+      <h3><a href="living/citizenship/">Citoyenneté &amp; refuge</a></h3>
+      <p>Une nation humaine diverse, descendant de nombreux peuples intégrés au fil des siècles par la migration et le refuge.</p>
+      <ul class="service__links"><li><a href="living/citizenship/">Refuge et intégration</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <p class="service__no">Section VIII</p>
+      <h3><a href="gov/">Gouvernement</a></h3>
+      <p>L’eudémonocratie, les Huit Dynamiques et deux Couronnes égales gouvernant sous une seule constitution.</p>
+      <ul class="service__links"><li><a href="gov/#diarchy">La Diarchie impériale</a></li><li><a href="gov/law/">Le corpus juridique</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <p class="service__no">Section IX</p>
+      <h3><a href="history/">Histoire</a></h3>
+      <p>De la Crise de la Traversée de c.&nbsp;1050 av. J.-C. aux litiges sur les garanties équines du troisième siècle.</p>
+      <ul class="service__links"><li><a href="history/">Histoire ancienne, c. 1200&ndash;100 av. J.-C.</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <p class="service__no">Section X</p>
+      <h3><a href="symbols/">Nom &amp; symboles</a></h3>
+      <p>Les formes canoniques, l’étymologie vieux-norroise, le drapeau et l’animal national.</p>
+      <ul class="service__links"><li><a href="symbols/#flag">Le drapeau</a></li></ul>
+    </li>
+  </ul>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <div class="two">
+    <div class="col">
+      <p class="entry">Entrée III &middot; L’État</p>
+      <h2>Ce qu’est l’Empire</h2>
+      <p class="h2-num">Population, constitution et caractère</p>
+      <p>Le Hrossagri&#240; moderne est une <strong>nation humaine</strong>, et une nation très diverse : sa population descend de nombreux peuples intégrés au fil des siècles par la migration et le refuge. Les chevaux et les autres équidés sont des êtres vivants protégés, des compagnons et des partenaires de travail, et le fondement de la culture du transport routier de l’Empire. Ils ne sont pas la population et ne détiennent aucune charge politique humaine.</p>
+      <p>Constitutionnellement, l’Empire est une <a href="gov/">monarchie diarchique eudémonocratique</a> : deux Couronnes égales, la Guidante et la Gardienne, gouvernant selon une philosophie qui juge une politique à ce qu’elle construit et à ce qu’elle détruit dans toute l’étendue de la vie, plutôt qu’à ce qu’une majorité veut à un moment donné.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Vérité historique.</strong> L’Empire ne réécrit pas, n’efface pas et n’édulcore pas son histoire à des fins politiques. Le registre de ses propres réussites, échecs, injustices et décisions controversées se veut exact, et la <a href="history/">section histoire</a> énonce les limites de sa propre reconstruction plutôt que de les dissimuler.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Formes canoniques</strong>
+      Forme native : <span class="native">Hrossagri&#240;</span><br>
+      International : Hrossagrith<br>
+      Gentilé : Hrossagrith (invariable)<br>
+      Adjectif : hrossagridien<br>
+      Prononcé : HROSS-a-grith
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../fr/history/">Histoire</a></li>
+        <li><a href="../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../fr/living/health/">Santé</a></li>
+        <li><a href="../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../fr/horses/">Chevaux</a></li>
+        <li><a href="../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

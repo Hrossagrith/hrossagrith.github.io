@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pferde &mdash; Das Kaiserreich Hrossagri&#240;</title>
+<meta name="description" content="Der nationale Schatz des Kaiserreichs Hrossagrith: Wohl der Equiden, gebisslose Kontrolle, Straßenstatus-Marker und Dienstequiden.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../de/" data-i18n="{&quot;light&quot;: &quot;Hell&quot;, &quot;dark&quot;: &quot;Dunkel&quot;, &quot;theme_to_light&quot;: &quot;Zum hellen Design wechseln&quot;, &quot;theme_to_dark&quot;: &quot;Zum dunklen Design wechseln&quot;, &quot;search_prompt&quot;: &quot;Geben Sie oben ein Wort oder eine Wendung ein, um alle Seiten dieses Portals zu durchsuchen.&quot;, &quot;search_running&quot;: &quot;Suche läuft…&quot;, &quot;search_none&quot;: &quot;Kein Eintrag im Register enthält alle Wörter. Versuchen Sie es mit weniger oder anderen Wörtern.&quot;, &quot;search_error&quot;: &quot;Der Suchindex konnte nicht geladen werden. Bitte versuchen Sie es erneut.&quot;, &quot;results_one&quot;: &quot;{n} Ergebnis für „{q}“&quot;, &quot;results_many&quot;: &quot;{n} Ergebnisse für „{q}“&quot;, &quot;results_none&quot;: &quot;Nichts gefunden für „{q}“&quot;, &quot;expand_all&quot;: &quot;Alle Teile aufklappen&quot;, &quot;collapse_all&quot;: &quot;Alle Teile zuklappen&quot;}">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Ein Worldbuilding-Projekt</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Portal durchsuchen</label>
+      <input type="search" id="q" name="q" placeholder="Portal durchsuchen" autocomplete="off">
+      <button type="submit">Suchen</button>
+    </form>
+    <label class="visually-hidden" for="locale">Sprache</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de" selected>Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dunkel</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Wappen des Kaiserreichs Hrossagri&#240;: ein sich aufbäumender Hippogryph in einem Rundfeld" width="360" height="360">
+    <p class="masthead__state">Kaiserliches Staatsportal</p>
+    <p class="masthead__name"><a href="../../de/">Das Kaiserreich Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Zuflucht der Pferde und der Frieden, der durchgesetzt wird</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle Abschnitte">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menü
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Das Kaiserreich</h2>
+            <ul>
+            <li><a href="../../de/gov/">Regierung und Doktrin</a></li>
+            <li><a href="../../de/gov/#dynamics">Die Acht Dynamiken</a></li>
+            <li><a href="../../de/gov/#diarchy">Die Kaiserliche Diarchie</a></li>
+            <li><a href="../../de/gov/law/">Kaiserliches Recht</a></li>
+            <li><a href="../../de/history/">Geschichte</a></li>
+            <li><a href="../../de/symbols/">Name, Flagge und Symbole</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Das Leben hier</h2>
+            <ul>
+            <li><a href="../../de/living/">Leben in Hrossagri&#240;</a></li>
+            <li><a href="../../de/living/health/">Gesundheit</a></li>
+            <li><a href="../../de/living/education/">Bildung und Kinder</a></li>
+            <li><a href="../../de/living/transport/">Verkehr und Straßen</a></li>
+            <li><a href="../../de/living/justice/">Justiz und Polizei</a></li>
+            <li><a href="../../de/living/money/">Arbeit und Geld</a></li>
+            <li><a href="../../de/living/citizenship/">Staatsbürgerschaft und Zuflucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Pferde und Straßen</h2>
+            <ul>
+            <li><a href="../../de/horses/">Pferde</a></li>
+            <li><a href="../../de/horses/#welfare">Tierwohl und gebisslose Kontrolle</a></li>
+            <li><a href="../../de/horses/#service">Dienstequiden</a></li>
+            <li><a href="../../de/horses/road-status/">Standard für Straßenstatus-Marker</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dieses Portal</h2>
+            <ul>
+            <li><a href="../../de/about/">Über dieses Projekt</a></li>
+            <li><a href="../../de/search/">Portal durchsuchen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../de/">Startseite</a>
+    <a href="../../de/horses/" aria-current="page">Pferde</a>
+    <a href="../../de/living/">Leben</a>
+    <a href="../../de/gov/">Regierung</a>
+    <a href="../../de/gov/law/">Recht</a>
+    <a href="../../de/history/">Geschichte</a>
+    <a href="../../de/symbols/">Symbole</a>
+    <a href="../../de/about/">Über</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../de/">Startseite</a><span>&rsaquo;</span><strong>Pferde</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Nationaler Schatz</p>
+  <h1 class="page-title">Pferde</h1>
+  <p class="page-standfirst">Jeder andere Teil dieses Portals ließe sich erklären, ohne Pferde zu erwähnen. Nichts davon gäbe es in dieser Gestalt ohne sie.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Das Kaiserreich ist nach dem Schutz benannt, der den Pferden geschuldet ist, und dieser Schutz ist das Älteste in seinem Recht. Was folgt, ist keine Empfindsamkeit: Es ist die Begründung, nach der das Kaiserreich entscheidet, was einem Tier angetan werden darf und was nicht, und es sind die Zeichen, mit denen sein Straßensystem diese Entscheidung sichtbar macht.</p>
+    </div>
+    <aside class="marg">
+      <strong>Geltungsbereich</strong>
+      Das hrossagridische Recht erfasst Ponys, Esel, Maultiere, Maulesel und andere Equiden. Der alte Staatsname behält das Pferd nur als seine stellvertretende Wurzel.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikel I</p>
+  <h2 id="welfare">Tierwohl und gebisslose Kontrolle</h2>
+  <p class="h2-num">Warum gewöhnliche Gebisse verboten sind</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Ein Gebiss ist ein Gegenstand, der einem Pferd ins Maul gelegt und mit den Zügeln verbunden wird, sodass der Reiter oder Fahrer das Tier durch Druck im Maul lenkt. In den meisten Teilen der Pferdewelt ist das unauffällig. In Hrossagri&#240; sind gewöhnliche Gebisse schlicht verboten, und die Begründung verläuft über die <a href="../gov/#dynamics">Fünfte Dynamik</a>.</p>
+      <p>Weil das Pferd als eigenständige Lebensform und nicht als Eigentum eines Menschen gilt, kann die Prüfung nicht damit enden, was für den Reiter bequem ist. Der Staat muss fragen, was mit dem Pferd geschieht, ob Schmerz riskiert wird, ob eine weniger zerstörerische Alternative besteht und ob das Tier ohne ein Gerät im Maul sicher gelenkt werden kann. Wo die Antwort ja lautet, rechtfertigt menschliche Bequemlichkeit das zusätzliche Risiko nicht.</p>
+      <p>Zugelassenes gebissloses Zaumzeug umfasst Sidepulls, Hackamores, Bosals, Cross-under-Zäume und Cordeos. Was zulässig ist, bestimmt der Kaiserliche Kodex für Zaumzeug, Zwangsmittel und Tierwohl, gemessen wird es am Kaiserlichen Messverzeichnis für Zaumzeug; die Straßennutzung fügt darüber hinaus weitere Anforderungen hinzu.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Schlachtung.</strong> Die hrossagridische Kultur und das hrossagridische Recht behandeln Equiden weit eher wie Heimtiere und Arbeitspartner als wie Nutztiere. Andere Gesellschaften haben lange Traditionen des Verzehrs von Pferdefleisch; das Kaiserreich sieht darin keinen Grund, eine Equidenfleischindustrie zu dulden. Die Schlachtung von Pferden ist eines der schwersten Verbrechen gegen das Wohl der Equiden &mdash; und der menschliche Täter erhält gleichwohl die höchsten verfügbaren <em>nicht tödlichen</em> Strafen, weil <a href="../living/justice/">die Todesstrafe absolut verboten ist</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Keine Regel der Scientology</strong>
+      Die Acht Dynamiken liefern den ethischen Rahmen. Die Schlussfolgerung &mdash; dass Gebisse verboten sind &mdash; ist eine hrossagridische politische Entscheidung, gezogen aus diesem Rahmen zusammen mit den Belegen zum Wohl der Pferde.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikel II</p>
+  <h2 id="road-status">Der Straßenstatus auf einen Blick</h2>
+  <p class="h2-num">Das Zeichen, das jeder Equide auf eine öffentliche Straße trägt</p>
+
+  <div class="prose">
+    <p>Jeder Equide, der eine öffentliche Straße betritt, trägt zugelassenes gebissloses Zaumzeug mit einem <strong>Gesichtsmarker</strong> &mdash; einer markertragenden Frentera oder Muserola mit auswechselbarem Statuseinsatz, von vorn lesbar. Der Marker ist eine an Menschen gerichtete Straßenanweisung. Er ist keine Zierde, keine Werbung und kein Ersatz für das Urteil des Reiters oder Fahrers.</p>
+    <p>Die Farbe ist niemals das einzige Unterscheidungsmerkmal. Jeder Status trägt zudem eine eigene Umrandung, Form oder ein eigenes Symbol, damit das System für farbenblinde Verkehrsteilnehmer lesbar bleibt.</p>
+  </div>
+
+  <h3>Gewöhnliche und eingeschränkte Statusarten</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Weißes Feld</strong>
+          <span class="marker__what">Gewöhnlicher straßenzertifizierter Equide.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Grünes Feld</strong>
+          <span class="marker__what">Unerfahrener Equide, vorläufiges Zertifikat, Ausbildungsstatus oder beaufsichtigte Straßenarbeit.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Gelbes Feld</strong>
+          <span class="marker__what">Vorsicht: Empfindlichkeit, erhöhter Platzbedarf oder erhöhte Schreckhaftigkeit.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Weißes Feld mit roter Umrandung</strong>
+          <span class="marker__what">Überholen eingeschränkt. Nur auf Zeichen des Fahrers, Reiters oder Führers überholen.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rotes Feld mit weißem X</strong>
+          <span class="marker__what">Überholen verboten. Anhalten und warten: Es besteht eine akute Gefahr oder eine unmittelbare Kontrolllage.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h3>Dienstliche Statusarten</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blau, Emblem der Straßenwache</strong>
+          <span class="marker__what">Kaiserliche Straßenwache, Verkehrsstreife, Verkehrslenkungsdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blau, Polizeischild</strong>
+          <span class="marker__what">Polizeidienst, soweit befugt.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Weiß, rotes Kreuz</strong>
+          <span class="marker__what">Sanitätskutsche oder befugter medizinischer Notdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rot, weiße Flamme</strong>
+          <span class="marker__what">Feuerwehr- oder Rettungsdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Grün, Pfote und Huf</strong>
+          <span class="marker__what">Tierärztlicher Notdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blau, Pegasus</strong>
+          <span class="marker__what">Kaiserliche Post, Boten- oder Kurierdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Schwarz mit weißer Umrandung</strong>
+          <span class="marker__what">Fahrt des Souveräns, soweit gesetzlich befugt.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Schwarz mit Krone</strong>
+          <span class="marker__what">Befugte Fahrt der kaiserlichen Regierung, eines Ministeriums oder einer staatlichen Behörde.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Dunkelgrün, Hoheitszeichen</strong>
+          <span class="marker__what">Militärdienst.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="prose">
+    <p style="color:var(--ink-faint);font-size:0.92rem">Diese Zeichnungen zeigen nur das unterscheidende Feld, die Umrandung und das Symbol. Genaue Farbwerte und Toleranzen werden von der zuständigen Straßenbehörde veröffentlicht und mit kalibrierter Messung überprüft.</p>
+    <p><a href="road-status/">Der vollständige Markerstandard</a> &mdash; Abmessungen, Sichtprüfungen, Beleuchtung, Rangfolge, Fälschungskontrolle und Straftatbestände.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikel III</p>
+  <h2 id="service">Dienstequiden</h2>
+  <p class="h2-num">Auswahl nach Funktion, nicht nach Mode</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Equiden im Dienst von Polizei, Rettungswesen, Droschke, Kurierwesen, Tiermedizin, Feuerwehr, Militär und Souverän werden danach ausgewählt, was sie tatsächlich leisten können: Ausdauer, Erholung, Straßenmut, Temperament, Gelassenheit im Verkehr, die Fähigkeit stillzustehen und sich schnell zu bewegen, Toleranz gegenüber Menschenmengen und Lichtern sowie rechtmäßige gebisslose Kontrolle.</p>
+      <p>Sie werden <em>nicht</em> danach ausgewählt, ob sie reinrassig, auffällig, modisch oder eindrucksvoll sind. Ein funktionsfähiger Kopf und funktionsfähige Atemwege zählen mehr als ein übersteigertes Profil, und die individuelle Zertifizierung geht jeder Rassebezeichnung vor. Der berittene Dienst ist gesondert vom Gespanndienst geregelt, nach dem Kaiserlichen Kodex für berittenen Dienst und Straßenstreife.</p>
+    </div>
+    <aside class="marg">
+      <strong>Wo die Regeln stehen</strong>
+      Allgemeiner Kodex für das Wohl der Equiden &middot; Kodex für Zaumzeug, Zwangsmittel und Tierwohl &middot; Kodex für Gespannequiden &middot; Kodex für berittenen Dienst und Straßenstreife &middot; Kodex für Zucht und Register.
+      <br><br>
+      Das vollständige Register wird nach <a href="../gov/law/">kaiserlichem Recht</a> geführt.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Das Kaiserreich</h2>
+      <ul>
+        <li><a href="../../de/gov/">Regierung und Doktrin</a></li>
+        <li><a href="../../de/gov/#dynamics">Die Acht Dynamiken</a></li>
+        <li><a href="../../de/gov/#diarchy">Die Kaiserliche Diarchie</a></li>
+        <li><a href="../../de/gov/law/">Kaiserliches Recht</a></li>
+        <li><a href="../../de/history/">Geschichte</a></li>
+        <li><a href="../../de/symbols/">Name, Flagge und Symbole</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Das Leben hier</h2>
+      <ul>
+        <li><a href="../../de/living/">Leben in Hrossagri&#240;</a></li>
+        <li><a href="../../de/living/health/">Gesundheit</a></li>
+        <li><a href="../../de/living/education/">Bildung und Kinder</a></li>
+        <li><a href="../../de/living/transport/">Verkehr und Straßen</a></li>
+        <li><a href="../../de/living/justice/">Justiz und Polizei</a></li>
+        <li><a href="../../de/living/money/">Arbeit und Geld</a></li>
+        <li><a href="../../de/living/citizenship/">Staatsbürgerschaft und Zuflucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pferde und Straßen</h2>
+      <ul>
+        <li><a href="../../de/horses/">Pferde</a></li>
+        <li><a href="../../de/horses/#welfare">Tierwohl und gebisslose Kontrolle</a></li>
+        <li><a href="../../de/horses/#service">Dienstequiden</a></li>
+        <li><a href="../../de/horses/road-status/">Standard für Straßenstatus-Marker</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dieses Portal</h2>
+      <ul>
+        <li><a href="../../de/about/">Über dieses Projekt</a></li>
+        <li><a href="../../de/search/">Portal durchsuchen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Flagge des Kaiserreichs Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Leider ist Hrossagrith ein fiktives Land. Diese Website ist ein Worldbuilding-Projekt und steht in keiner Verbindung zu einem realen Staat, einer Regierung oder einer amtlichen Stelle.</p>
+    <p class="footer__meta">Das Kaiserreich Hrossagri&#240; &middot; Kaiserliches Staatsportal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

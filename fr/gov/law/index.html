@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Droit impérial &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
+<meta name="description" content="Le corpus juridique impérial de Hrossagrith : les codes en vigueur, les normes techniques, les formulaires officiels et le droit réservé à la rédaction.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../../../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../../../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../../../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../../../fr/history/">Histoire</a></li>
+            <li><a href="../../../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../../../fr/living/health/">Santé</a></li>
+            <li><a href="../../../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../../../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../../../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../../../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../../../fr/horses/">Chevaux</a></li>
+            <li><a href="../../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../../../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../../../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../../../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../fr/">Accueil</a>
+    <a href="../../../fr/horses/">Chevaux</a>
+    <a href="../../../fr/living/">Vie quotidienne</a>
+    <a href="../../../fr/gov/">Gouvernement</a>
+    <a href="../../../fr/gov/law/" aria-current="page">Droit</a>
+    <a href="../../../fr/history/">Histoire</a>
+    <a href="../../../fr/symbols/">Symboles</a>
+    <a href="../../../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../fr/">Accueil</a><span>&rsaquo;</span><a href="../../../fr/gov/">Gouvernement</a><span>&rsaquo;</span><strong>Droit</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Livre III</p>
+  <h1 class="page-title">Le corpus juridique impérial</h1>
+  <p class="page-standfirst">Les codes en vigueur, les normes techniques qui portent leur détail mesurable, les formulaires officiels qu’ils créent et le droit encore réservé à la rédaction.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Parce que le nom même de l’État garde la mémoire du passage protégé, le bien-être des équidés n’est pas une symbolique décorative. Il découle directement de la Cinquième Dynamique et se tient près du centre du droit impérial. Protéger une personne tout en laissant son cheval ou tout autre équidé être maltraité, saisi, épuisé ou utilisé comme moyen de pression n’est pas une protection véritable, et chacun des actes ci-dessous se lit à l’aune de ce principe.</p>
+    </div>
+    <aside class="marg">
+      <strong>Ordre de lecture</strong>
+      Un code énonce les obligations et les infractions. Une norme porte le détail mesurable et est modifiée plus souvent. Un formulaire est un imprimé dont la présentation est fixée par l’acte qui le crée.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Codes en vigueur</h2>
+  <p class="h2-num">Droit contraignant</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Code général</p>
+        <h3 class="register__title">Code général impérial du bien-être des équidés</h3>
+        <p class="register__note">L’acte principal de l’Empire en matière de bien-être, couvrant les équidés dans tous les contextes plutôt que dans un seul domaine d’activité.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Code sectoriel</p>
+        <h3 class="register__title">Code impérial du bien-être des équidés d’attelage au travail</h3>
+        <p class="register__note">Le bien-être en attelage dans son intégralité : passeports, certification, charge de travail et repos, contrainte météorologique, sécurité des itinéraires, harnais, fixations du harnachement de tête, inserts de statut routier, éclairage, lampes de guidage au sol, voitures médicales d’urgence, contrôle de l’application, infractions et barèmes provisoires.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Code sectoriel</p>
+        <h3 class="register__title">Code impérial du harnachement, de la contention et du bien-être</h3>
+        <p class="register__note">L’équipement placé sur l’animal, et les limites de la contention. Le principe de bien-être de l’Empire, qui n’admet que le sans-mors, y est énoncé.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Code sectoriel</p>
+        <h3 class="register__title">Code impérial de la route et des meneurs</h3>
+        <p class="register__note">La conduite sur la voie publique et les devoirs des meneurs, avec l’exigence universelle que tout équidé s’engageant sur la voie publique affiche son statut routier.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Code sectoriel</p>
+        <h3 class="register__title">Code impérial du service monté et de la patrouille routière</h3>
+        <p class="register__note">Le droit contraignant pour la police montée, la Garde routière montée, les courriers à cheval et les équidés de patrouille &mdash; le service monté, qui n’est pas un travail d’attelage et se régit séparément.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Code sectoriel</p>
+        <h3 class="register__title">Code impérial de l’élevage et du registre</h3>
+        <p class="register__note">La pratique de l’élevage et le registre impérial.</p>
+      </li>
+  </ul>
+
+  <h2>Normes techniques</h2>
+  <p class="h2-num">Seuils, dimensions, couleurs et essais</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Norme</p>
+        <h3 class="register__title">Norme impériale de marquage du statut des équidés sur la voie publique</h3>
+        <p class="register__note">La règle universelle de marquage pour tout équidé sur la voie publique. Le statut est indiqué par un insert interchangeable porté par une frontalière ou une muserolle porte-marqueur, rétroréfléchissant de qualité routière et autoéclairant dans la couleur qui lui est assignée. Aucune peinture, teinture, tonte, marque au fer, colle ni modification de la robe n’est admise.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Norme</p>
+        <h3 class="register__title">Norme impériale de sélection et de race des équidés de service</h3>
+        <p class="register__note">La sélection pour les services de police, d’ambulance, de fiacre, de courrier, vétérinaire, d’incendie, militaire et souverain. L’endurance, la récupération, le courage routier, le tempérament, le calme dans la circulation et le contrôle licite sans mors décident de l’aptitude &mdash; et non l’étiquette de race ou la mode. La certification individuelle prime sur toute étiquette de race.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Norme</p>
+        <h3 class="register__title">Norme impériale de contrainte climatique équine</h3>
+        <p class="register__note">Le temps, l’humidité, la mouillure, le froid, la chaleur, le vent, l’état du sol et les niveaux de suspension, exprimés en seuils de contrainte.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Norme</p>
+        <h3 class="register__title">Norme impériale d’éclairage et de signalisation des voitures hippomobiles</h3>
+        <p class="register__note">Les lanternes de voiture, les avertissements d’urgence, les marqueurs de statut routier éclairés et les lampes de guidage au sol des équidés.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Norme</p>
+        <h3 class="register__title">Norme technique impériale de la voiture médicale d’urgence</h3>
+        <p class="register__note">La vitesse de l’ambulance, les faibles secousses, la suspension, les voies d’urgence, les glideways et les essais.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Barème</p>
+        <h3 class="register__title">Barème impérial de mesure du harnachement</h3>
+        <p class="register__note">La procédure de mesure et les valeurs admises qui étayent le Code du harnachement, de la contention et du bien-être.</p>
+      </li>
+  </ul>
+
+  <h2>Formulaires officiels</h2>
+  <p class="h2-num">Les imprimés délivrés par l’Empire</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Formulaire</p>
+        <h3 class="register__title">Formulaire impérial de passeport d’équidé de travail</h3>
+        <p class="register__note">Le document d’identité porté pour chaque équidé de travail.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">En vigueur</span> &middot; Formulaire</p>
+        <h3 class="register__title">Formulaire impérial de certificat routier et de travail pour équidé d’attelage</h3>
+        <p class="register__note">La certification de l’aptitude au travail routier et d’attelage.</p>
+      </li>
+  </ul>
+
+  <h2>Réservé à la rédaction</h2>
+  <p class="h2-num">Décidé sur le principe, pas encore rédigé</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Prévu</span> &middot; Infrastructure</p>
+        <h3 class="register__title">Droit de l’autorité routière et des infrastructures</h3>
+        <p class="register__note">La construction, l’entretien et le contrôle du réseau routier public, séparés des codes de bien-être qui l’utilisent.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Prévu</span> &middot; Livrée</p>
+        <h3 class="register__title">Norme de livrée et de tenue de service</h3>
+        <p class="register__note">La conception de la livrée de service, actuellement tenue hors des codes de bien-être.</p>
+      </li>
+  </ul>
+
+  <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Note sur ce registre.</strong> Les intitulés et les champs d’application sont tirés du corpus de travail. Les textes intégraux ne sont pas encore publiés sur ce portail ; ils seront ajoutés acte par acte. La norme des marqueurs de statut routier est résumée intégralement à la rubrique <a href="../../horses/road-status/">chevaux</a>.</p></div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../../../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../../../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../../../fr/history/">Histoire</a></li>
+        <li><a href="../../../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../../../fr/living/health/">Santé</a></li>
+        <li><a href="../../../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../../../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../../../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../../../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../../../fr/horses/">Chevaux</a></li>
+        <li><a href="../../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../../../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../../../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../../../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

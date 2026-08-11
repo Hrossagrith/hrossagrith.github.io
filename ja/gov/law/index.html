@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>帝国法 &mdash; フロッサグリーズ帝国</title>
+<meta name="description" content="フロッサグリーズの帝国法体系。効力を有する法典、技術規格、公式書式、そして起草のために留保された法。">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../../../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../../ja/gov/">政府と教義</a></li>
+            <li><a href="../../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../../../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../../../ja/gov/law/">帝国法</a></li>
+            <li><a href="../../../ja/history/">歴史</a></li>
+            <li><a href="../../../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../../../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../../../ja/living/health/">保健医療</a></li>
+            <li><a href="../../../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../../../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../../../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../../../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../../../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../../../ja/horses/">馬</a></li>
+            <li><a href="../../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../../../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../../../ja/about/">この企画について</a></li>
+            <li><a href="../../../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ja/">ホーム</a>
+    <a href="../../../ja/horses/">馬</a>
+    <a href="../../../ja/living/">暮らし</a>
+    <a href="../../../ja/gov/">政府</a>
+    <a href="../../../ja/gov/law/" aria-current="page">法</a>
+    <a href="../../../ja/history/">歴史</a>
+    <a href="../../../ja/symbols/">象徴</a>
+    <a href="../../../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ja/">ホーム</a><span>&rsaquo;</span><a href="../../../ja/gov/">政府</a><span>&rsaquo;</span><strong>法</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第III書</p>
+  <h1 class="page-title">帝国法体系</h1>
+  <p class="page-standfirst">効力を有する法典、その測定可能な細目を担う技術規格、それらが創設する公式書式、そしてなお起草のために留保されている法。</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">国家の名それ自体が保護された通行を記憶しているがゆえに、ウマ科動物の福祉は装飾的な象徴ではない。それは第五ダイナミックから直接に導かれ、帝国法の中心近くに位置する。人を保護しながら、その馬またはその他のウマ科動物が虐げられ、奪われ、酷使され、または圧力の手段として用いられることを許すのは、真の保護ではない。以下のすべての法令はこの原則に照らして読まれる。</p>
+    </div>
+    <aside class="marg">
+      <strong>読む順序</strong>
+      法典は義務と犯罪の構成を定める。規格は測定可能な細目を担い、より頻繁に改められる。書式は、それを創設する法令によって様式が定められた用紙である。
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>効力を有する法典</h2>
+  <p class="h2-num">拘束力ある法</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 一般法典</p>
+        <h3 class="register__title">帝国ウマ科動物福祉一般法典</h3>
+        <p class="register__note">帝国の福祉に関する主たる法令であり、一つの業務分野ではなく、あらゆる場面におけるウマ科動物を対象とする。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 部門法典</p>
+        <h3 class="register__title">帝国使役馬車用ウマ科動物福祉法典</h3>
+        <p class="register__note">馬車における福祉の全体。パスポート、認定、作業量と休息、気象による負担、経路の安全、馬具、頭絡の取付具、道路資格挿入板、照明、地上誘導灯、救急医療馬車、執行、犯罪の構成および暫定規程。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 部門法典</p>
+        <h3 class="register__title">帝国馬具・拘束具・福祉法典</h3>
+        <p class="register__note">動物に装着される用具、および拘束の限界。帝国のハミなしのみを認める福祉原則はここに述べられている。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 部門法典</p>
+        <h3 class="register__title">帝国道路・御者法典</h3>
+        <p class="register__note">公道における行動および御者の義務。ならびに、公道に出るすべてのウマ科動物がその道路資格を表示すべきものとする普遍的要件。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 部門法典</p>
+        <h3 class="register__title">帝国騎乗公務・道路巡察法典</h3>
+        <p class="register__note">騎馬警察、騎乗の道路警備隊、騎乗の伝令および巡察用ウマ科動物に対する拘束力ある法&mdash;馬車の業務ではなく、別個に規律される騎乗の公務。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 部門法典</p>
+        <h3 class="register__title">帝国繁殖・登録法典</h3>
+        <p class="register__note">繁殖の実務および帝国登録簿。</p>
+      </li>
+  </ul>
+
+  <h2>技術規格</h2>
+  <p class="h2-num">閾値、寸法、色彩および試験</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 規格</p>
+        <h3 class="register__title">帝国公道ウマ科動物資格標示規格</h3>
+        <p class="register__note">公道上のすべてのウマ科動物に対する普遍的な標示規則。資格は、マーカー付きのフレンテラまたはムセローラに保持される交換可能な挿入板によって示され、その挿入板は道路等級の再帰反射性を有し、割り当てられた色で自己発光する。塗料、染色、刈込み、焼印、接着剤または被毛の改変は一切許されない。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 規格</p>
+        <h3 class="register__title">帝国公務用ウマ科動物選抜・品種規格</h3>
+        <p class="register__note">警察、救急、辻馬車、配送、獣医、消防、軍務および君主の公務のための選抜。適性を決するのは、持久力、回復力、路上での胆力、気質、交通の中での落ち着き、および適法なハミなし制御であって、品種の標記や流行ではない。個体ごとの認定は品種の標記に優先する。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 規格</p>
+        <h3 class="register__title">帝国馬類気候負担規格</h3>
+        <p class="register__note">気象、湿度、濡れ、寒気、暑熱、風、足場および懸架の水準を、負担の閾値として表したもの。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 規格</p>
+        <h3 class="register__title">帝国馬車照明・信号規格</h3>
+        <p class="register__note">馬車の灯火、緊急の警告、発光する道路資格マーカー、およびウマ科動物用の地上誘導灯。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 規格</p>
+        <h3 class="register__title">帝国救急医療馬車技術規格</h3>
+        <p class="register__note">救急馬車の速度、揺れの抑制、懸架装置、緊急通行帯、グライドウェイおよび試験。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 規程</p>
+        <h3 class="register__title">帝国馬具寸法規程</h3>
+        <p class="register__note">馬具・拘束具・福祉法典を支える測定の手順および許容値。</p>
+      </li>
+  </ul>
+
+  <h2>公式書式</h2>
+  <p class="h2-num">帝国が発行する用紙</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 書式</p>
+        <h3 class="register__title">帝国使役ウマ科動物パスポート書式</h3>
+        <p class="register__note">すべての使役ウマ科動物のために携えられる身分証明の文書。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">効力あり</span> &middot; 書式</p>
+        <h3 class="register__title">帝国馬車用ウマ科動物道路・就業証明書書式</h3>
+        <p class="register__note">道路および馬車の業務に対する適性の証明。</p>
+      </li>
+  </ul>
+
+  <h2>起草のために留保</h2>
+  <p class="h2-num">原則として決定済み、いまだ起草されず</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">予定</span> &middot; 社会基盤</p>
+        <h3 class="register__title">道路管理・社会基盤法</h3>
+        <p class="register__note">公道網の建設、維持および管理であり、これを利用する福祉法典から分離されたもの。</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">予定</span> &middot; 制服</p>
+        <h3 class="register__title">制服・公務服規格</h3>
+        <p class="register__note">公務用制服の意匠。現在は福祉法典の外に置かれている。</p>
+      </li>
+  </ul>
+
+  <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>本登録簿についての注記。</strong> 名称および適用範囲は作業中の法体系から採られている。全文は本ポータルにはまだ公表されておらず、法令ごとに順次追加される。道路資格の規格は<a href="../../horses/road-status/">馬</a>の項に全文が要約されている。</p></div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../../ja/gov/">政府と教義</a></li>
+        <li><a href="../../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../../../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../../../ja/gov/law/">帝国法</a></li>
+        <li><a href="../../../ja/history/">歴史</a></li>
+        <li><a href="../../../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../../../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../../../ja/living/health/">保健医療</a></li>
+        <li><a href="../../../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../../../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../../../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../../../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../../../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../../../ja/horses/">馬</a></li>
+        <li><a href="../../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../../../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../../../ja/about/">この企画について</a></li>
+        <li><a href="../../../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名称と象徴 &mdash; フロッサグリーズ帝国</title>
+<meta name="description" content="正式な表記形、古ノルド語の語源、正しい用法、国旗、そしてフロッサグリーズ帝国の国獣。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../ja/gov/">政府と教義</a></li>
+            <li><a href="../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../../ja/gov/law/">帝国法</a></li>
+            <li><a href="../../ja/history/">歴史</a></li>
+            <li><a href="../../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../../ja/living/health/">保健医療</a></li>
+            <li><a href="../../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../../ja/horses/">馬</a></li>
+            <li><a href="../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../../ja/about/">この企画について</a></li>
+            <li><a href="../../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../ja/">ホーム</a>
+    <a href="../../ja/horses/">馬</a>
+    <a href="../../ja/living/">暮らし</a>
+    <a href="../../ja/gov/">政府</a>
+    <a href="../../ja/gov/law/">法</a>
+    <a href="../../ja/history/">歴史</a>
+    <a href="../../ja/symbols/" aria-current="page">象徴</a>
+    <a href="../../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../ja/">ホーム</a><span>&rsaquo;</span><strong>象徴</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第V書</p>
+  <h1 class="page-title">名称、語源および国の象徴</h1>
+  <p class="page-standfirst">国名は、二つの真正な古ノルド語の要素から、真正な古ノルド語の複合の型によって形成されている。以下は、法的、教育的、外交的および文化的な用途のための正典的な説明である。</p>
+
+  <div class="two">
+    <div class="col">
+      <h2>正式な表記形</h2>
+      <p class="h2-num">第I条 &middot; 名称の書き方</p>
+      <ul>
+        <li>公式の原語名：<span class="native">Hrossagri&#240;</span></li>
+        <li>国際的な綴り：Hrossagrith</li>
+        <li>正式な国名：<span class="native">The Empire of Hrossagri&#240;</span>、日本語ではフロッサグリーズ帝国</li>
+        <li>国民／住民名称：<strong>Hrossagrith</strong>、不変化&mdash;単数の接尾辞も複数の接尾辞もない</li>
+        <li>形容詞および文化的な用語：<strong>Hrossagrithic</strong></li>
+        <li>実用的な英語の発音：<strong>HROSS-a-grith</strong></li>
+      </ul>
+      <p>単数における正しい用法は <em>I am Hrossagrith</em>、集合における正しい用法は <em>the Hrossagrith people</em> である。国際的な、<em>th</em> に基づく形は、<span class="native">&#240;</span> が使えないか入力しにくいところではどこでも用いること。</p>
+
+      <h2>中核的な意味</h2>
+      <p class="h2-num">第II条 &middot; 名称が語ること</p>
+      <p class="dropcap">Hrossagri&#240; とは、馬の庇護、馬の保護、あるいは馬とそれに結ばれた人々のための保護された平和を意味する。中核となる観念は <span class="native">gri&#240;</span> である。すなわち庇護、保障された保護、安全通行、法的不可侵、保護された平和、そして追跡または報復の停止である。この名は、国が単に馬の国であると言おうとするものではない。それは、旅人がその者を運ぶ生きた絆とともに保護されるほどに庇護が現実である場所を意味する。</p>
+
+      <h2>語源</h2>
+      <p class="h2-num">第III条 &middot; 複合語とその二つの要素</p>
+      <p>この名は <span class="native">hross</span> + <span class="native">-a</span> + <span class="native">gri&#240;</span> から成る&mdash;より正確には、属格複数の複合形 <span class="native">hrossa-</span> と名詞 <span class="native">gri&#240;</span> とから成る。内部の <span class="native">-a</span> は装飾ではなく、英語の連結母音でもない。それは <span class="native">hross</span> の属格複数の語尾であり、第一の要素に&ldquo;馬たちの&rdquo;という意味を与える。</p>
+      <p>古ノルド語の複合語は、最後の要素から遡って理解される。主要部は <span class="native">gri&#240;</span> である。すなわちこの名は、馬によって限定された保護の形態、場所または管轄であって&mdash;平和によって修飾された馬ではない。</p>
+
+      <h3>第一の要素：<span class="native">hross</span></h3>
+      <p>古ノルド語の <span class="native">hross</span> は馬を意味する中性名詞であり&mdash;詩的な創作ではなく、ありふれた歴史的な馬の語である。その属格複数は <span class="native">hrossa</span> であり、無変化の単数と複数がいずれも <span class="native">hross</span> という形で現れ得るため、この形は重要である。それが集合的な関係を明示するからである。この名は一頭の馬の保護を意味しない。それは馬を集合的に呼び起こす。</p>
+      <p>この語は古いゲルマン語の一族に属する。古英語の <span class="native">hors</span>、古ザクセン語の <span class="native">hros</span>、古高ドイツ語の <span class="native">hros</span> または <span class="native">ros</span>、ドイツ語の <span class="native">Ross</span>、アイスランド語の <span class="native">hross</span> である。しばしば提案されるより深い再構形はゲルマン祖語の <span class="native">*hruss&#261;</span> であり、走ることに関わるより古い観念と結びつけられることもあるが、この派生は公式の意味として扱うほどには確かでない。確実な意味は、実証されている意味、すなわち馬である。</p>
+
+      <h3>第二の要素：<span class="native">gri&#240;</span></h3>
+      <p>古ノルド語の <span class="native">gri&#240;</span> は、集合的な法概念として用いられる中性名詞である。すなわち平和、慈悲、休戦、助命、保障された安全、安全通行、避難、庇護、ならびに追跡または暴力に対して与えられる保護である。それは受動的な静穏ではなく、承認、約束、慣習または法によって実効あるものとされた平和である&mdash;敵対行為の停止を求める休戦、そうでなければ無防備な者に与えられる助命、危険な地域を通り抜ける安全通行、あるいは押収と報復が禁じられる保障された状態である。</p>
+      <p>ある場所が庇護の地となるのは、そこに <span class="native">gri&#240;</span> が及ぶからである。国は、ただ一つの厩、神殿または避難所にちなんで名づけられているのではなく、それが管轄の全域にわたって課す保護にちなんで名づけられている。</p>
+
+      <h3>国際的な形：<span class="native">grith</span></h3>
+      <p><span class="native">&#240;</span> を <em>th</em> に置き換えることは転写であって、語根の変更ではない。<em>Grith</em> はまた、古ノルド語から借用され、保障された安全、安全通行、庇護および避難を表すのに用いられた、実在の歴史的な英語の語でもある。それは今では古語であり、そのことが国際的な綴りを異例なほど正確なものにしている。この名は <em>-grith</em> と書かれる&mdash;決して <em>-grit</em>、<em>-girth</em>、<em>-griff</em> または <em>-grid</em> ではない。</p>
+
+      <div class="pullquote">
+        <p>この名は、馬に対して、そして馬と不可分の絆を通じて、馬とともに旅し、暮らし、働き、安全を求める人々に対して及ぼされる庇護と、強制し得る保護とを意味する。</p>
+      </div>
+
+      <h2>名称が意味しないもの</h2>
+      <p class="h2-num">第IV条 &middot; 恒常的な訂正</p>
+      <ul>
+        <li>&ldquo;馬の帝国&rdquo;ではない。<em>帝国</em>は正式な称号における国家の形態を述べるものであり、国名そのものには含まれていない。</li>
+        <li>&ldquo;馬の地&rdquo;、&ldquo;馬の王国&rdquo;、&ldquo;馬の厩&rdquo;または&ldquo;馬の牧草地&rdquo;ではない。これらは <span class="native">gri&#240;</span> を落とし、名称を地理に還元する。</li>
+        <li>いずれの方向についても所有の主張ではない。属格は保護の受益者とその及ぶ範囲を示す。</li>
+        <li>&ldquo;馴らされた&rdquo;馬でも&ldquo;従順な馬&rdquo;でもない。<span class="native">Gri&#240;</span> は馬をめぐる法的な環境を規律するのであって、動物の側の服従を述べるものではない。</li>
+        <li>グリフィン、ヒッポグリフ、鹿、牡鹿、角、あるいはいかなる架空の生き物の名称とも関係がない。</li>
+      </ul>
+
+      <h2 id="flag">国旗</h2>
+      <p class="h2-num">第V条 &middot; 三つの帯と国獣</p>
+
+      <figure class="figure">
+        <img src="/assets/flag.jpg" alt="フロッサグリーズ帝国の国旗：淡黄、緑および青の三本の横帯に、前肢を上げる暗色のヒッポグリフを配したもの。" width="1400" height="933">
+        <figcaption>フロッサグリーズ帝国の国旗。国獣を配した三本の横帯。</figcaption>
+      </figure>
+
+      <h2>国獣</h2>
+      <p class="h2-num">第VI条 &middot; ヒッポグリフと、それが語根ではない理由</p>
+      <p>国獣は<strong>ヒッポグリフ</strong>である。それは国名の由来ではない。それは後に、自由、知性、力、尊厳、守護、そして人と動物との絆の象徴として採られた。その馬の半身は、名称がすでに担っていたより古い象徴、すなわち絆、移動、信頼、伴侶であること、配慮の義務、そして家へ帰り得る能力を反響させる。国獣は名称を支えるものであって、その庇護という意味に取って代わるものではない。</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>文献学的な基礎。</strong> この分析は、実証された古ノルド語の名詞 <span class="native">hross</span> とその属格複数、実証された集合名詞 <span class="native">gri&#240;</span> とその法的な諸意味、歴史的な英語の名詞 <em>grith</em>、そして標準的な古ノルド語の属格複合語の形成に基づいている。語根のより深い前史が不確かであるところでは、フロッサグリーズの説明はこれを不確かなものとして明示し、仮説を事実に変えることをしない。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>綴りを変えないこと</strong>
+      Hrossagriff でも、Hrossgriff でも、Hippogriff-land でもない。ヒッポグリフを語源上の出所とするような綴りは、いずれも名称のうち庇護にあたる半分を失わせる。
+      <br><br>
+      <strong>その文字</strong>
+      <span class="native">&#240;</span> はエズと呼ばれる。それは <span class="native">gri&#240;</span> の綴りに属する文字であり、記号の付いた o ではない。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../ja/gov/">政府と教義</a></li>
+        <li><a href="../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../../ja/gov/law/">帝国法</a></li>
+        <li><a href="../../ja/history/">歴史</a></li>
+        <li><a href="../../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../../ja/living/health/">保健医療</a></li>
+        <li><a href="../../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../../ja/horses/">馬</a></li>
+        <li><a href="../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../../ja/about/">この企画について</a></li>
+        <li><a href="../../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

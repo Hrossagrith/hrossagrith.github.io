@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gouvernement &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
+<meta name="description" content="L’eudémonocratie, les Huit Dynamiques, la Couronne Guidante et la Couronne Gardienne, le Parlement et les tribunaux, la succession et les valeurs fondatrices.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../../fr/history/">Histoire</a></li>
+            <li><a href="../../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../../fr/living/health/">Santé</a></li>
+            <li><a href="../../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../../fr/horses/">Chevaux</a></li>
+            <li><a href="../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../fr/">Accueil</a>
+    <a href="../../fr/horses/">Chevaux</a>
+    <a href="../../fr/living/">Vie quotidienne</a>
+    <a href="../../fr/gov/" aria-current="page">Gouvernement</a>
+    <a href="../../fr/gov/law/">Droit</a>
+    <a href="../../fr/history/">Histoire</a>
+    <a href="../../fr/symbols/">Symboles</a>
+    <a href="../../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../fr/">Accueil</a><span>&rsaquo;</span><strong>Gouvernement</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Livre I</p>
+  <h1 class="page-title">L’État et sa doctrine</h1>
+  <p class="page-standfirst">La description constitutionnelle complète de Hrossagri&#240; est celle d’une monarchie diarchique eudémonocratique. L’eudémonocratie répond à la question de savoir pourquoi le pouvoir d’État existe. La diarchie répond à celle de savoir qui le détient.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Un État humain.</strong> Hrossagri&#240; est gouverné par des êtres humains et pour des êtres humains. Ses citoyens, ses monarques, ses fonctionnaires, ses électeurs, ses travailleurs, ses patients et ses passagers sont des personnes. Les chevaux et les autres équidés sont des êtres vivants protégés et des partenaires de travail ; ils ne sont pas la population et ne détiennent aucune charge politique humaine.</p></div>
+
+      <h2>L’eudémonocratie</h2>
+      <p class="h2-num">Article I &middot; La finalité du pouvoir d’État</p>
+      <p class="dropcap">Le nom vient de l’<em>eudaimonia</em>, la notion grecque classique que l’on traduit d’ordinaire à tort par le bonheur. Elle est plus proche de l’<strong>épanouissement</strong> : une vie qui va bien dans son ensemble, plutôt qu’un moment où l’on se sent bien. Une personne peut prendre plaisir à ce qui détruit sa propre vie, et ce qui est désagréable aujourd’hui peut être nécessaire à une vie véritablement bonne dans son ensemble.</p>
+      <p>De là vient le terme hrossagridien : un gouvernement orienté vers l’épanouissement. Mais l’Empire ne se contente pas de copier Aristote. L’eudaimonia classique porte avant tout sur l’épanouissement humain, et Hrossagri&#240; élargit délibérément le cadre en recourant à un schéma éthique en huit parties déjà existant.</p>
+
+      <div class="pullquote">
+        <p>La finalité légitime du pouvoir d’État est de maximiser la survie constructive et l’épanouissement et de minimiser les destructions graves à travers les Huit Dynamiques, en s’appuyant sur les meilleures données disponibles pour déterminer les conséquences réelles des politiques publiques.</p>
+      </div>
+
+      <h2 id="dynamics">Les Huit Dynamiques</h2>
+      <p class="h2-num">Article II &middot; Le cadre éthique et son origine</p>
+      <p>Les Huit Dynamiques ne sont pas une invention hrossagridienne. C’est un concept de la scientologie, qui décrit le principe fondamental de l’existence comme une poussée vers la survie divisée en huit impulsions interconnectées. L’Empire emprunte ce cadre comme schéma éthique ; les conclusions politiques qui en sont tirées lui appartiennent en propre.</p>
+
+      <ol class="dynamics">
+        <li><strong>Soi</strong> &mdash; l’impulsion à survivre en tant qu’individu et à être soi-même.</li>
+        <li><strong>Créativité</strong> &mdash; créer pour l’avenir : la sexualité, la famille, les enfants, leur éducation, la création tournée vers l’avant.</li>
+        <li><strong>Groupes</strong> &mdash; la survie par le groupe ou en tant que groupe, à toute échelle, de la classe d’école à l’État.</li>
+        <li><strong>Humanité</strong> &mdash; l’espèce humaine dans son ensemble, distincte de toute nation particulière.</li>
+        <li><strong>Formes de vie</strong> &mdash; les animaux, les oiseaux, les insectes, les poissons et la végétation ; la vie elle-même.</li>
+        <li><strong>Univers physique</strong> &mdash; la matière, l’énergie, l’espace et le temps.</li>
+        <li><strong>Dynamique spirituelle</strong> &mdash; les êtres spirituels, l’existence spirituelle et la source spirituelle de la vie.</li>
+        <li><strong>Infini</strong> &mdash; l’existence comme infini, associée à Dieu, à l’Être suprême ou au Créateur.</li>
+      </ol>
+
+      <p>Dans le cadre d’origine, les actes qui accroissent la survie sur la majorité des Dynamiques sont tenus pour constructifs, et ceux qui les détruisent ou les nient pour destructeurs. C’est cette partie que Hrossagri&#240; transforme en méthode politique &mdash; et c’est la Cinquième Dynamique qui explique pourquoi <a href="../horses/">un cheval n’est pas compté comme la simple propriété de quelqu’un</a>.</p>
+
+      <h2>Ce que l’eudémonocratie n’est pas</h2>
+      <p class="h2-num">Article III &middot; Quatre contresens persistants</p>
+      <ul>
+        <li><strong>Pas une machine à bonheur.</strong> Le plaisir immédiat n’est pas l’eudaimonia. Une politique est jugée à son effet sur une vie dans la durée, ainsi que sur les familles, les groupes et autrui.</li>
+        <li><strong>Pas une démocratie ordinaire.</strong> Il existe un Parlement, des élections, une opinion publique et le droit de critiquer le gouvernement &mdash; mais la majorité n’est pas le souverain absolu. Si les données indiquent fortement qu’une orientation causera un tort énorme, la réponse peut être non. Cinquante et un pour cent des voix ne transforment pas un acte destructeur en acte constructif.</li>
+        <li><strong>Pas une technocratie.</strong> Les experts établissent et éprouvent les faits. Savoir si un résultat est souhaité, et à quel prix, est une question politique et éthique ; un scientifique ne devient pas monarque du fait d’être scientifique.</li>
+        <li><strong>Pas un simple utilitarisme.</strong> La question n’est pas de savoir quelle somme de bénéfices est la plus grande, mais ce qui est exactement créé et détruit, où, avec quelle gravité, et si le même résultat peut être atteint avec moins de destruction.</li>
+      </ul>
+
+      <h2 id="diarchy">La Diarchie impériale</h2>
+      <p class="h2-num">Article IV &middot; Deux Couronnes, égales en autorité</p>
+      <p>Hrossagri&#240; est gouverné par deux charges permanentes et distinctes, <strong>égales en autorité de gouvernement</strong>. Aucun des deux monarques ne commande à l’autre, ne lui est supérieur en rang, ni ne peut le démettre unilatéralement. Le titulaire de l’une ou l’autre Couronne peut porter le titre d’impératrice ou d’empereur ; la diarchie peut être composée de deux impératrices, de deux empereurs, ou de l’un et de l’autre.</p>
+    </div>
+    <aside class="marg">
+      <strong>Archétypes du troupeau</strong>
+      Les deux Couronnes se comprennent culturellement à travers la jument meneuse qui donne la direction, et l’étalon protecteur qui éclaire la route et garde. Ce sont des symboles de fonction &mdash; non des règles constitutionnelles sur le sexe ou le genre, et aucune restriction pour quelque citoyen que ce soit.
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>La Couronne Guidante</h3>
+      <p>Le gouvernement intérieur, la diplomatie, l’administration civile, l’orientation économique et sociale, les infrastructures et le cap à long terme de l’Empire.</p>
+    </li>
+    <li>
+      <h3>La Couronne Gardienne</h3>
+      <p>La défense, les frontières, la sécurité nationale, la préparation militaire, le renseignement de protection, la protection et la réponse d’urgence, la reconnaissance et la stratégie de protection.</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>La Couronne Guidante n’a de préséance que dans l’ordre cérémoniel, ainsi que dans le cas où une même personne deviendrait simultanément la suivante à pouvoir recevoir une offre légale au titre des deux lignes de succession. Cette préséance ne confère aucun pouvoir de gouvernement supérieur.</p>
+      <p>Il y a un seul État, un seul gouvernement, un seul cabinet, un seul budget national, une seule structure militaire et une seule fonction publique. Aucune des deux Couronnes ne peut créer un gouvernement, un trésor, une armée, un service de renseignement ou une administration concurrents, donner des ordres par la chaîne de commandement de l’autre, ni révoquer les agents de l’autre.</p>
+
+      <h3>Ce qui requiert les deux Couronnes</h3>
+      <p>Chaque Couronne décide des affaires ordinaires dont la finalité prédominante et l’effet juridique direct relèvent de son propre domaine. Une décision devient conjointe lorsqu’elle modifie directement les compétences juridiques ou la chaîne de commandement de l’autre Couronne ; lorsqu’elle engage ou retire une part substantielle des fonds, des effectifs, des infrastructures ou des capacités opérationnelles essentielles communs ; lorsqu’elle crée une obligation nationale contraignante dans les deux domaines ; ou lorsqu’elle produit un effet concret, substantiel et raisonnablement probable sur la sécurité de l’autre Couronne ou sur sa capacité à exercer ses fonctions.</p>
+      <p><strong>C’est l’effet réel qui commande.</strong> Une décision ne peut échapper à l’approbation conjointe en étant divisée en actes plus petits, ni en étant requalifiée de temporaire, d’expérimentale, d’administrative, de secrète, de militaire ou d’assimilable à l’urgence. Les litiges portant sur la qualification &mdash; et non sur le fond politique &mdash; sont soumis à trois juges expérimentés désignés par tirage au sort public et audité.</p>
+
+      <h3 id="deadlock">Blocage</h3>
+      <p>Lorsque les Couronnes sont en désaccord sur une affaire conjointe, aucune ne peut imposer la proposition litigieuse. Une proposition conjointe ordinaire doit être tranchée dans les trente jours, une proposition urgente dans les soixante-douze heures ; si l’accord n’est pas atteint, <strong>la proposition est rejetée</strong>. Le silence, le refus de siéger ou la temporisation ne valent jamais approbation.</p>
+      <p>La situation légale antérieure se poursuit alors &mdash; services publics, préparation défensive, nominations temporaires nécessaires et budget essentiel ajusté uniquement selon une formule objective publiée. Cette règle existe afin que ni une Couronne ni le Parlement ne puissent provoquer un effondrement en laissant filer le temps.</p>
+
+      <h3>Action en situation d’urgence</h3>
+      <p>Lors d’une attaque en cours ou imminente, d’une catastrophe ou de toute autre menace ne souffrant aucun délai, la Couronne Gardienne peut donner des ordres opérationnels immédiats dans son domaine sans attendre l’approbation conjointe. Une menace urgente à l’intérieur du domaine Guidant &mdash; épidémie, défaillance de l’approvisionnement en nourriture, en eau ou en infrastructures, mainmise sur le système financier &mdash; autorise la Couronne Guidante aux mêmes ordres temporaires minimaux. Aucune des deux ne peut modifier la Constitution, l’ordre de succession ou la répartition fondamentale du pouvoir, et aucune ne peut déguiser une simple préférence politique en situation d’urgence. Chaque ordre d’urgence est consigné avec les données qui le fondent et réexaminé au moins toutes les soixante-douze heures.</p>
+
+      <h2>Le Parlement et les tribunaux</h2>
+      <p class="h2-num">Article V &middot; La suprématie de la Couronne à l’intérieur de la constitution</p>
+      <p>Hrossagri&#240; est un État à prédominance de la Couronne, mais <strong>cette suprématie s’exerce à l’intérieur de la Constitution et non en dehors d’elle</strong>. Le Parlement représente le public, débat et rédige les lois, enquête sur les manquements, contrôle l’administration et exerce les pouvoirs délégués. Il ne peut adopter une loi malgré le refus de la Couronne ou des Couronnes dont l’assentiment est requis, et il ne dispose d’aucun pouvoir de passer outre.</p>
+
+      <h2>Succession, régence et destitution</h2>
+      <p class="h2-num">Article VI &middot; Deux lignes, tenues séparées</p>
+      <p>Les deux Couronnes ont des lignes de succession distinctes. Au-delà de la succession héréditaire, une Couronne peut être pourvue par désignation ou par exclusion testamentaire, et une Couronne vacante peut être soumise à une élection nationale au cours de laquelle les candidats prennent des engagements publics. L’acceptation et le refus sont réels : nul n’est tenu d’accepter. Un monarque mineur gouverne par l’intermédiaire d’un conseil de régence dont les pouvoirs sont libérés progressivement selon l’âge, et l’incapacité temporaire, la disparition, le retrait pour raisons médicales, l’abdication et la destitution ont chacun leur procédure définie.</p>
+
+      <h2>Valeurs fondatrices</h2>
+      <p class="h2-num">Article VII &middot; Huit, dans l’ordre consigné</p>
+      <ul>
+        <li>Honnêteté historique</li>
+        <li>Méritocratie</li>
+        <li>Bien-être animal</li>
+        <li>Progrès scientifique</li>
+        <li>Protection de l’environnement</li>
+        <li>Intégration des réfugiés</li>
+        <li>Égalité sociale</li>
+        <li>Gouvernance éthique</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>Le corpus correspondant d’actes contraignants &mdash; codes, normes techniques et formulaires officiels &mdash; est répertorié dans le <a href="law/">registre du droit impérial</a>. Ce que l’État assure aux personnes qui vivent ici est exposé dans <a href="../living/">Vivre en Hrossagri&#240;</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Seuils</strong>
+      Là où la Constitution fixe un seuil parlementaire, celui-ci se calcule sur l’effectif légal complet. Les sièges vacants, les absences et les abstentions ne réduisent pas le dénominateur.
+      <br><br>
+      <strong>Tirage au sort</strong>
+      Les juges et les auditeurs des litiges constitutionnels sont désignés par tirage au sort public et audité à partir de listes professionnelles gelées, tenues par des fonctionnaires permanents.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../../fr/history/">Histoire</a></li>
+        <li><a href="../../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../../fr/living/health/">Santé</a></li>
+        <li><a href="../../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../../fr/horses/">Chevaux</a></li>
+        <li><a href="../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

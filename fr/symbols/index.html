@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nom et symboles &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
+<meta name="description" content="Les formes canoniques, l’étymologie vieux-norroise, l’usage correct, le drapeau et l’animal national de l’Empire de Hrossagrith.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../../fr/history/">Histoire</a></li>
+            <li><a href="../../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../../fr/living/health/">Santé</a></li>
+            <li><a href="../../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../../fr/horses/">Chevaux</a></li>
+            <li><a href="../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../fr/">Accueil</a>
+    <a href="../../fr/horses/">Chevaux</a>
+    <a href="../../fr/living/">Vie quotidienne</a>
+    <a href="../../fr/gov/">Gouvernement</a>
+    <a href="../../fr/gov/law/">Droit</a>
+    <a href="../../fr/history/">Histoire</a>
+    <a href="../../fr/symbols/" aria-current="page">Symboles</a>
+    <a href="../../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../fr/">Accueil</a><span>&rsaquo;</span><strong>Symboles</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Livre V</p>
+  <h1 class="page-title">Nom, étymologie et symbole national</h1>
+  <p class="page-standfirst">Le nom de l’État est formé de deux éléments vieux-norrois authentiques selon un modèle de composition vieux-norrois authentique. Ce qui suit est l’explication canonique pour l’usage juridique, éducatif, diplomatique et culturel.</p>
+
+  <div class="two">
+    <div class="col">
+      <h2>Formes canoniques</h2>
+      <p class="h2-num">Article I &middot; Comment le nom s’écrit</p>
+      <ul>
+        <li>Nom officiel en forme native : <span class="native">Hrossagri&#240;</span></li>
+        <li>Graphie internationale : Hrossagrith</li>
+        <li>Nom officiel de l’État : <span class="native">The Empire of Hrossagri&#240;</span>, en français &mdash; L&rsquo;Empire de Hrossagri&#240;</li>
+        <li>Citoyen / gentilé : <strong>Hrossagrith</strong>, invariable &mdash; sans suffixe de singulier ni de pluriel</li>
+        <li>Adjectif et terme culturel : <strong>hrossagridien</strong></li>
+        <li>Prononciation pratique : <strong>HROSS-a-grith</strong></li>
+      </ul>
+      <p>L’usage correct au singulier est <em>je suis Hrossagrith</em> ; l’usage collectif correct est <em>le peuple Hrossagrith</em>. Employez les formes internationales en <em>th</em> partout où <span class="native">&#240;</span> est indisponible ou difficile à saisir.</p>
+
+      <h2>Sens fondamental</h2>
+      <p class="h2-num">Article II &middot; Ce que dit le nom</p>
+      <p class="dropcap">Hrossagri&#240; signifie sanctuaire des chevaux, protection des chevaux, ou paix protégée pour les chevaux et pour les personnes qui leur sont liées. L’idée centrale est <span class="native">gri&#240;</span> : sanctuaire, protection garantie, sauf-conduit, immunité juridique, paix protégée, et arrêt de la poursuite ou des représailles. Le nom n’entend pas dire que le pays est simplement le pays des chevaux. Il désigne un lieu où le sanctuaire est assez réel pour qu’un voyageur soit protégé en même temps que le lien vivant qui le porte.</p>
+
+      <h2>Étymologie</h2>
+      <p class="h2-num">Article III &middot; Le composé et ses deux éléments</p>
+      <p>Le nom se compose de <span class="native">hross</span> + <span class="native">-a</span> + <span class="native">gri&#240;</span> &mdash; plus précisément, de la forme de composition au génitif pluriel <span class="native">hrossa-</span> et du substantif <span class="native">gri&#240;</span>. Le <span class="native">-a</span> interne n’est ni décoratif ni une voyelle de liaison anglaise : c’est la désinence du génitif pluriel de <span class="native">hross</span>, qui donne au premier élément le sens de &ldquo;des chevaux&rdquo;.</p>
+      <p>Les composés vieux-norrois se comprennent à partir de l’élément final, à rebours. La tête est <span class="native">gri&#240;</span> : le nom désigne une forme, un lieu ou une juridiction de protection, précisée par les chevaux &mdash; et non un cheval précisé par la paix.</p>
+
+      <h3>Le premier élément : <span class="native">hross</span></h3>
+      <p>Le vieux norrois <span class="native">hross</span> est un substantif neutre signifiant cheval &mdash; un mot historique ordinaire pour l’animal, non une invention poétique. Son génitif pluriel est <span class="native">hrossa</span>, et parce que le singulier et le pluriel non fléchis peuvent tous deux se présenter sous la forme <span class="native">hross</span>, cette forme importe : elle rend explicite la relation collective. Le nom ne signifie pas la protection d’un seul cheval. Il invoque les chevaux collectivement.</p>
+      <p>Il appartient à une ancienne famille germanique : vieil anglais <span class="native">hors</span>, vieux saxon <span class="native">hros</span>, vieux haut allemand <span class="native">hros</span> ou <span class="native">ros</span>, allemand <span class="native">Ross</span>, islandais <span class="native">hross</span>. Une reconstruction plus profonde couramment proposée est le proto-germanique <span class="native">*hruss&#261;</span>, parfois rattaché à une idée plus ancienne de course, mais cette dérivation n’est pas assez sûre pour être tenue pour le sens officiel. Le sens assuré est le sens attesté : cheval.</p>
+
+      <h3>Le second élément : <span class="native">gri&#240;</span></h3>
+      <p>Le vieux norrois <span class="native">gri&#240;</span> est un substantif neutre employé comme notion juridique collective : paix, grâce, trêve, quartier, sécurité garantie, sauf-conduit, asile, sanctuaire, et protection accordée contre la poursuite ou la violence. Ce n’est pas une tranquillité passive, mais une paix rendue opérante par la reconnaissance, la promesse, la coutume ou la loi &mdash; une trêve qui impose l’arrêt des hostilités, le quartier accordé à qui serait autrement exposé, le sauf-conduit à travers un territoire dangereux, ou un état garanti dans lequel la saisie et les représailles sont interdites.</p>
+      <p>Un lieu devient sanctuaire parce que <span class="native">gri&#240;</span> s’y applique. Le pays ne tient pas son nom d’une écurie, d’un temple ou d’un refuge particulier, mais de la protection qu’il impose sur toute l’étendue de sa juridiction.</p>
+
+      <h3>La forme internationale : <span class="native">grith</span></h3>
+      <p>Remplacer <span class="native">&#240;</span> par <em>th</em> est une translittération, non un changement de racine. <em>Grith</em> est en outre un mot anglais historique réel, emprunté au vieux norrois et employé pour la sécurité garantie, le sauf-conduit, le sanctuaire et l’asile. Il est aujourd’hui archaïque, ce qui rend la graphie internationale singulièrement exacte. Le nom s’écrit avec <em>-grith</em> &mdash; jamais <em>-grit</em>, <em>-girth</em>, <em>-griff</em> ni <em>-grid</em>.</p>
+
+      <div class="pullquote">
+        <p>Le nom désigne le sanctuaire et la protection opposable étendus aux chevaux et, par les liens qui en sont inséparables, aux personnes qui voyagent, vivent, travaillent et cherchent la sécurité avec eux.</p>
+      </div>
+
+      <h2>Ce que le nom ne signifie pas</h2>
+      <p class="h2-num">Article IV &middot; Corrections permanentes</p>
+      <ul>
+        <li>Pas &ldquo;empire des chevaux&rdquo;. <em>Empire</em> décrit la forme de l’État dans le titre officiel ; le nom du pays ne le contient pas.</li>
+        <li>Pas &ldquo;pays des chevaux&rdquo;, &ldquo;royaume des chevaux&rdquo;, &ldquo;écurie&rdquo; ni &ldquo;pâturage à chevaux&rdquo;. Ces lectures omettent <span class="native">gri&#240;</span> et réduisent le nom à la géographie.</li>
+        <li>Pas une revendication de propriété, dans un sens comme dans l’autre. Le génitif identifie les bénéficiaires et la portée de la protection.</li>
+        <li>Pas &ldquo;apprivoisé&rdquo; ni &ldquo;cheval obéissant&rdquo;. <span class="native">Gri&#240;</span> régit l’environnement juridique autour du cheval ; il ne décrit pas une soumission de l’animal.</li>
+        <li>Sans rapport avec le griffon, l’hippogriffe, le cerf, le daim, les bois ou quelque nom de créature inventée.</li>
+      </ul>
+
+      <h2 id="flag">Le drapeau</h2>
+      <p class="h2-num">Article V &middot; Trois bandes et l’animal national</p>
+
+      <figure class="figure">
+        <img src="/assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240; : trois bandes horizontales, jaune pâle, verte et bleue, chargées d’un hippogriffe sombre cabré." width="1400" height="933">
+        <figcaption>Drapeau de l’Empire de Hrossagri&#240;. Trois bandes horizontales chargées de l’animal national.</figcaption>
+      </figure>
+
+      <h2>Animal national</h2>
+      <p class="h2-num">Article VI &middot; L’hippogriffe, et pourquoi il n’est pas la racine</p>
+      <p>L’animal national est l’<strong>hippogriffe</strong>. Il n’est pas la source du nom du pays. Il a été adopté plus tard comme symbole de liberté, d’intelligence, de force, de dignité, de garde, et du lien entre l’humain et l’animal. La moitié chevaline fait écho à la symbolique plus ancienne que le nom portait déjà : les liens, le mouvement, la confiance, le compagnonnage, le devoir de soin et la capacité de rentrer chez soi. L’animal national soutient le nom ; il ne remplace pas son sens de sanctuaire.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Fondement philologique.</strong> L’analyse repose sur le substantif vieux-norrois attesté <span class="native">hross</span> et son génitif pluriel ; sur le substantif collectif attesté <span class="native">gri&#240;</span> et ses sens juridiques ; sur le substantif anglais historique <em>grith</em> ; et sur la formation vieux-norroise ordinaire des composés au génitif. Là où la préhistoire profonde d’une racine est incertaine, l’explication hrossagridienne la signale comme incertaine plutôt que de convertir une hypothèse en fait.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Ne pas réécrire</strong>
+      Ni Hrossagriff, ni Hrossgriff, ni Hippogriff-land. Toute graphie qui fait de l’hippogriffe la source étymologique perd la moitié du nom consacrée au sanctuaire.
+      <br><br>
+      <strong>La lettre</strong>
+      <span class="native">&#240;</span> se nomme eth. Elle appartient à la graphie de <span class="native">gri&#240;</span>, et ce n’est pas un o accentué.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../../fr/history/">Histoire</a></li>
+        <li><a href="../../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../../fr/living/health/">Santé</a></li>
+        <li><a href="../../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../../fr/horses/">Chevaux</a></li>
+        <li><a href="../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

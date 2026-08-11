@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사법과 치안 &mdash; 흐로사그리드 제국</title>
+<meta name="description" content="항공 모델에 따른 경찰 훈련, 긴장 완화, 사형의 금지, 프라이버시와 사이버 범죄.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../ko/" data-i18n="{&quot;light&quot;: &quot;밝게&quot;, &quot;dark&quot;: &quot;어둡게&quot;, &quot;theme_to_light&quot;: &quot;밝은 테마로 전환&quot;, &quot;theme_to_dark&quot;: &quot;어두운 테마로 전환&quot;, &quot;search_prompt&quot;: &quot;위에 단어나 구절을 입력하면 이 포털의 모든 페이지를 검색한다.&quot;, &quot;search_running&quot;: &quot;검색 중…&quot;, &quot;search_none&quot;: &quot;모든 단어를 포함하는 항목이 등록부에 없다. 단어 수를 줄이거나 다른 단어로 시도할 것.&quot;, &quot;search_error&quot;: &quot;검색 색인을 불러오지 못하였다. 다시 시도할 것.&quot;, &quot;results_one&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_many&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_none&quot;: &quot;“{q}”에 대한 검색 결과가 없습니다&quot;, &quot;expand_all&quot;: &quot;모든 부 펼치기&quot;, &quot;collapse_all&quot;: &quot;모든 부 접기&quot;}">
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">세계관 구축 프로젝트</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">포털 검색</label>
+      <input type="search" id="q" name="q" placeholder="포털 검색" autocomplete="off">
+      <button type="submit">검색</button>
+    </form>
+    <label class="visually-hidden" for="locale">언어</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko" selected>한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">어둡게</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="흐로사그리드 제국의 문장: 원형 문양 안에서 앞발을 든 히포그리프" width="360" height="360">
+    <p class="masthead__state">제국 국가 포털</p>
+    <p class="masthead__name"><a href="../../../ko/">흐로사그리드 제국</a></p>
+    <p class="masthead__motto">말들의 비호, 그리고 강제되는 평화</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="모든 부문">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        메뉴
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>제국</h2>
+            <ul>
+            <li><a href="../../../ko/gov/">정부와 교의</a></li>
+            <li><a href="../../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+            <li><a href="../../../ko/gov/#diarchy">제국 이두정</a></li>
+            <li><a href="../../../ko/gov/law/">제국법</a></li>
+            <li><a href="../../../ko/history/">역사</a></li>
+            <li><a href="../../../ko/symbols/">이름, 국기, 상징</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이곳에서의 삶</h2>
+            <ul>
+            <li><a href="../../../ko/living/">흐로사그리드에서의 삶</a></li>
+            <li><a href="../../../ko/living/health/">보건</a></li>
+            <li><a href="../../../ko/living/education/">교육과 아동</a></li>
+            <li><a href="../../../ko/living/transport/">교통과 도로</a></li>
+            <li><a href="../../../ko/living/justice/">사법과 치안</a></li>
+            <li><a href="../../../ko/living/money/">노동과 금전</a></li>
+            <li><a href="../../../ko/living/citizenship/">시민권과 비호</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>말과 도로</h2>
+            <ul>
+            <li><a href="../../../ko/horses/">말</a></li>
+            <li><a href="../../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+            <li><a href="../../../ko/horses/#service">공무 말과 동물</a></li>
+            <li><a href="../../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이 포털</h2>
+            <ul>
+            <li><a href="../../../ko/about/">이 프로젝트에 대하여</a></li>
+            <li><a href="../../../ko/search/">포털 검색</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ko/">홈</a>
+    <a href="../../../ko/horses/">말</a>
+    <a href="../../../ko/living/" aria-current="page">삶</a>
+    <a href="../../../ko/gov/">정부</a>
+    <a href="../../../ko/gov/law/">법</a>
+    <a href="../../../ko/history/">역사</a>
+    <a href="../../../ko/symbols/">상징</a>
+    <a href="../../../ko/about/">소개</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ko/">홈</a><span>&rsaquo;</span><a href="../../../ko/living/">삶</a><span>&rsaquo;</span><strong>사법과 치안</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">제II권 &middot; 제IV부</p>
+  <h1 class="page-title">사법과 치안</h1>
+  <p class="page-standfirst">항공 모델에 따른 선발과 훈련, 원칙으로서의 긴장 완화, 그리고 공직자에게는 그들이 단속하는 시민보다 더 무거운 형벌.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">흐로사그리드(Hrossagri&#240;)의 경찰 채용과 훈련은 항공에 견줄 만하다. 엄격한 선발, 긴 실무 훈련, 모의 훈련, 반복되는 시험, 심리 평가, 의무적인 재인증이 그것이다. 이 비교는 의도된 것이다. 실수로 사람을 죽일 수 있는 직업은 그러한 직업답게 훈련된다.</p>
+
+      <h2>행위와 책임</h2>
+      <p class="h2-num">그 비대칭은 의도된 것이다</p>
+      <p>긴장 완화가 기본 상태이다. 불필요한 폭력, 부정직, 증거 조작, 차별적 행위 또는 권한의 남용은 독립적인 조사를 부르며, 같은 권한을 남용한 보통의 시민에게 부과되는 것보다 <em>더 무거운</em> 형벌을 부른다.</p>
+
+      <h2>사형</h2>
+      <p class="h2-num">예외 없이 절대적으로 금지된다</p>
+      <p>현대의 법은 인간에 대한 사형을 절대적으로 금지한다 &mdash; 반역, 부패, 동물 학대, 말의 도축, 비상시의 범죄를 포함하여 그러하다. 흐로사그리드는 통상의 사법적 처형을 적법한 민간 형벌로 세운 일이 결코 없다. 다만 내전이나 역사적 위기 동안 위법한 살해나 잔학 행위로서 처형이 일어났을 수는 있다. 역사는 그것을 조용히 덮지 아니하고 정직하게 기록한다.</p>
+      <p>따라서 가장 중대한 말과 동물 복지 범죄에는 가능한 가장 높은 비치사적 형벌이 부과된다. 종신형에 이를 수 있는 자유형, 공직 취임과 동물 보유의 영구한 자격 박탈, 몰수, 원상 회복, 그리고 해당하는 경우 법인의 해산이 그것이다.</p>
+
+      <h2>동의</h2>
+      <p class="h2-num">동의로 정의되고, 예외 없이 적용된다</p>
+      <p>강간에 관한 법은 동의를 기초로 하며, 혼인 관계와 교제 관계 안에서도 똑같이 적용된다. 강압, 취기, 항거 불능, 권한의 남용은 동의를 무효로 만든다. 이러한 사건을 다루는 경찰, 법과학 인력, 검사, 판사는 전문 인증을 갖추어야 한다.</p>
+
+      <h2 id="privacy">프라이버시, 감시, 사이버 범죄</h2>
+      <p class="h2-num">무거운 형벌, 그리고 의도적으로 가혹한 하나의 예외</p>
+      <p>프라이버시 침해와 사이버 범죄에는 유달리 무거운 형벌이 따른다 &mdash; 특히 감시, 스토킹, 신상 털기, 신원 도용, 성적 촬영물의 악용, 데이터베이스 거래, 필수 기반 시설에 대한 공격이 그러하다. 공공 기반 시설은 카메라로 널리 감시되나, 그 영상은 암호화되고, 접근이 기록되며, 보관 기간이 제한되고, 법으로 정한 목적으로만 사용될 수 있다. 얼굴 인식과 개인 추적에는 예외적인 법적 허가가 필요하며, 공직자의 오용은 그 자체로 중대한 프라이버시 범죄이다.</p>
+      <p>그에 반하여 제국은 다크 웹 접근에 관하여 의도적으로 예외적인 제도를 운용한다. 은닉 서비스에 대한 접근이 신뢰할 수 있게 귀속되는 경우, 완성된 범죄에 관한 별도의 증거 없이도 은닉망 보안 조사가 자동으로 개시되며, 조사가 계속되는 동안에는 통상의 프라이버시 보호가 그 사람에 대한 감시를 제한하지 아니한다. 보통의 공개 인터넷에 닿기 위하여 Tor나 VPN, 프록시를 사용한 것만으로는 그 자체가 은닉 서비스 접근의 증거가 되지 아니한다. 모든 공적 접근과 수사 행위는 기록으로 남으며, 이로써 그 예외가 관련 없는 개인적 용도로 돌려질 수 없도록 한다.</p>
+
+      <h2>차별</h2>
+      <p class="h2-num">생각이 아니라 행위</p>
+      <p>인종적 차별과 여성 혐오적 차별, 괴롭힘, 협박, 조직적 위협, 선동은 금지된다. 마음속의 생각은 범죄가 아니다.</p>
+    </div>
+    <aside class="marg">
+      <strong>도로 경비대</strong>
+      기마 도로 순찰은 제국 기마 공무 및 도로 순찰 법전에 따라 별도로 규율되며, 그 말과 동물은 파란 도로 경비대 마커를 지닌다.
+      <br><br>
+      <a href="../../horses/#service">공무 말과 동물</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>제국</h2>
+      <ul>
+        <li><a href="../../../ko/gov/">정부와 교의</a></li>
+        <li><a href="../../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+        <li><a href="../../../ko/gov/#diarchy">제국 이두정</a></li>
+        <li><a href="../../../ko/gov/law/">제국법</a></li>
+        <li><a href="../../../ko/history/">역사</a></li>
+        <li><a href="../../../ko/symbols/">이름, 국기, 상징</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이곳에서의 삶</h2>
+      <ul>
+        <li><a href="../../../ko/living/">흐로사그리드에서의 삶</a></li>
+        <li><a href="../../../ko/living/health/">보건</a></li>
+        <li><a href="../../../ko/living/education/">교육과 아동</a></li>
+        <li><a href="../../../ko/living/transport/">교통과 도로</a></li>
+        <li><a href="../../../ko/living/justice/">사법과 치안</a></li>
+        <li><a href="../../../ko/living/money/">노동과 금전</a></li>
+        <li><a href="../../../ko/living/citizenship/">시민권과 비호</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>말과 도로</h2>
+      <ul>
+        <li><a href="../../../ko/horses/">말</a></li>
+        <li><a href="../../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+        <li><a href="../../../ko/horses/#service">공무 말과 동물</a></li>
+        <li><a href="../../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이 포털</h2>
+      <ul>
+        <li><a href="../../../ko/about/">이 프로젝트에 대하여</a></li>
+        <li><a href="../../../ko/search/">포털 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="흐로사그리드 제국의 국기" width="120" height="80">
+    <p class="footer__disclaimer">안타깝게도 흐로사그리드는 가상의 나라이다. 이 사이트는 세계관 구축 프로젝트이며, 실재하는 어떠한 국가나 정부, 공식 기관과도 관련이 없다.</p>
+    <p class="footer__meta">흐로사그리드 제국 &middot; 제국 국가 포털 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

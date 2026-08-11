@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Styresett &mdash; Keiserriket Hrossagri&#240;</title>
+<meta name="description" content="Eudaimonokrati, De åtte dynamikkene, den Ledende og den Vernende kronen, parlament og domstoler, tronfølge og grunnverdier.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../no/" data-i18n="{&quot;light&quot;: &quot;Lyst&quot;, &quot;dark&quot;: &quot;Mørkt&quot;, &quot;theme_to_light&quot;: &quot;Bytt til lyst tema&quot;, &quot;theme_to_dark&quot;: &quot;Bytt til mørkt tema&quot;, &quot;search_prompt&quot;: &quot;Skriv inn et ord eller uttrykk ovenfor for å søke i alle sidene på portalen.&quot;, &quot;search_running&quot;: &quot;Søker…&quot;, &quot;search_none&quot;: &quot;Ingen oppføring i registeret inneholder alle ordene. Prøv færre eller andre ord.&quot;, &quot;search_error&quot;: &quot;Søkeindeksen kunne ikke lastes. Prøv igjen.&quot;, &quot;results_one&quot;: &quot;{n} treff for «{q}»&quot;, &quot;results_many&quot;: &quot;{n} treff for «{q}»&quot;, &quot;results_none&quot;: &quot;Ingen treff for «{q}»&quot;, &quot;expand_all&quot;: &quot;Utvid alle deler&quot;, &quot;collapse_all&quot;: &quot;Skjul alle deler&quot;}">
+<a class="skip-link" href="#main">Gå til innholdet</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Et verdensbyggingsprosjekt</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Søk i portalen</label>
+      <input type="search" id="q" name="q" placeholder="Søk i portalen" autocomplete="off">
+      <button type="submit">Søk</button>
+    </form>
+    <label class="visually-hidden" for="locale">Språk</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no" selected>Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Mørkt</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Riksvåpenet til Keiserriket Hrossagri&#240;: en steilende hippogriff i en rundel" width="360" height="360">
+    <p class="masthead__state">Keiserlig statsportal</p>
+    <p class="masthead__name"><a href="../../no/">Keiserriket Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Hestenes tilflukt, og freden som håndheves</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle avdelinger">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Meny
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keiserriket</h2>
+            <ul>
+            <li><a href="../../no/gov/">Styresett og doktrine</a></li>
+            <li><a href="../../no/gov/#dynamics">De åtte dynamikkene</a></li>
+            <li><a href="../../no/gov/#diarchy">Det keiserlige diarkiet</a></li>
+            <li><a href="../../no/gov/law/">Keiserlig rett</a></li>
+            <li><a href="../../no/history/">Historie</a></li>
+            <li><a href="../../no/symbols/">Navn, flagg og symboler</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Livet her</h2>
+            <ul>
+            <li><a href="../../no/living/">Livet i Hrossagri&#240;</a></li>
+            <li><a href="../../no/living/health/">Helse</a></li>
+            <li><a href="../../no/living/education/">Utdanning og barn</a></li>
+            <li><a href="../../no/living/transport/">Transport og veier</a></li>
+            <li><a href="../../no/living/justice/">Rettsvesen og politi</a></li>
+            <li><a href="../../no/living/money/">Arbeid og penger</a></li>
+            <li><a href="../../no/living/citizenship/">Statsborgerskap og tilflukt</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hester og veier</h2>
+            <ul>
+            <li><a href="../../no/horses/">Hester</a></li>
+            <li><a href="../../no/horses/#welfare">Velferd og bittløs kontroll</a></li>
+            <li><a href="../../no/horses/#service">Hestedyr i tjeneste</a></li>
+            <li><a href="../../no/horses/road-status/">Standard for veistatusmarkører</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Denne portalen</h2>
+            <ul>
+            <li><a href="../../no/about/">Om dette prosjektet</a></li>
+            <li><a href="../../no/search/">Søk i portalen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../no/">Forsiden</a>
+    <a href="../../no/horses/">Hester</a>
+    <a href="../../no/living/">Livet her</a>
+    <a href="../../no/gov/" aria-current="page">Styresett</a>
+    <a href="../../no/gov/law/">Rett</a>
+    <a href="../../no/history/">Historie</a>
+    <a href="../../no/symbols/">Symboler</a>
+    <a href="../../no/about/">Om</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../no/">Forsiden</a><span>&rsaquo;</span><strong>Styresett</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Bok I</p>
+  <h1 class="page-title">Staten og dens doktrine</h1>
+  <p class="page-standfirst">Den fullstendige forfatningsmessige beskrivelsen av Hrossagri&#240; er et eudaimonokratisk diarkisk monarki. Eudaimonokratiet svarer på hvorfor statsmakten finnes. Diarkiet svarer på hvem som innehar den.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>En menneskelig stat.</strong> Hrossagri&#240; styres av mennesker og for mennesker. Innbyggerne, monarkene, tjenestemennene, velgerne, arbeidstakerne, pasientene og passasjerene er mennesker. Hester og andre hestedyr er vernede levende vesener og arbeidspartnere; de utgjør ikke befolkningen og innehar ingen menneskelige politiske verv.</p></div>
+
+      <h2>Eudaimonokrati</h2>
+      <p class="h2-num">Artikkel I &middot; Statsmaktens formål</p>
+      <p class="dropcap">Navnet kommer fra <em>eudaimonia</em>, den klassiske greske tanken som vanligvis oversettes feilaktig med lykke. Den ligger nærmere <strong>blomstring</strong>: et liv som går godt som helhet, snarere enn et øyeblikk som føles godt. Et menneske kan nyte noe som samtidig ødelegger dets eget liv, og noe som er ubehagelig i dag, kan være nødvendig for et virkelig godt liv sett under ett.</p>
+      <p>Derfra kommer det hrossagridske begrepet: et styre innrettet mot blomstring. Men Keiserriket kopierer ikke Aristoteles uten videre. Klassisk eudaimonia handler først og fremst om menneskelig blomstring, og Hrossagri&#240; utvider bevisst rammen ved hjelp av en eksisterende åttedelt etisk ordning.</p>
+
+      <div class="pullquote">
+        <p>Det legitime formålet med statsmakten er å gjøre den oppbyggende overlevelsen og blomstringen størst mulig og den alvorlige ødeleggelsen minst mulig på tvers av De åtte dynamikkene, og å fastslå de virkelige følgene av et tiltak ut fra det beste tilgjengelige kunnskapsgrunnlaget.</p>
+      </div>
+
+      <h2 id="dynamics">De åtte dynamikkene</h2>
+      <p class="h2-num">Artikkel II &middot; Den etiske rammen, og hvor den kommer fra</p>
+      <p>De åtte dynamikkene er ingen hrossagridsk oppfinnelse. De er et begrep fra scientologien, som beskriver tilværelsens grunnprinsipp som en drift mot overlevelse delt i åtte sammenknyttede drivkrefter. Keiserriket låner denne rammen som sin etiske ordning; de politiske slutningene som trekkes av den, er dets egne.</p>
+
+      <ol class="dynamics">
+        <li><strong>Selvet</strong> &mdash; driften til å overleve som enkeltindivid og til å være seg selv.</li>
+        <li><strong>Skaperkraft</strong> &mdash; å lage noe for framtiden: seksualitet, familie, barn, oppdragelsen av dem, skaping rettet framover.</li>
+        <li><strong>Grupper</strong> &mdash; overlevelse gjennom eller som en gruppe av enhver størrelse, fra en skoleklasse til en stat.</li>
+        <li><strong>Menneskeheten</strong> &mdash; menneskearten som helhet, til forskjell fra en enkelt nasjon.</li>
+        <li><strong>Livsformer</strong> &mdash; dyr, fugler, insekter, fisk og planteliv; livet selv.</li>
+        <li><strong>Det fysiske universet</strong> &mdash; materie, energi, rom og tid.</li>
+        <li><strong>Den åndelige dynamikken</strong> &mdash; åndelige vesener, åndelig tilværelse og livets åndelige kilde.</li>
+        <li><strong>Uendeligheten</strong> &mdash; tilværelsen som uendelighet, forbundet med Gud, Det høyeste vesen eller Skaperen.</li>
+      </ol>
+
+      <p>I den opprinnelige rammen regnes handlinger som øker overlevelsen på tvers av flertallet av dynamikkene, som oppbyggende, og handlinger som ødelegger eller nekter dem, som nedbrytende. Det er denne delen Hrossagri&#240; gjør om til en politisk metode &mdash; og Den femte dynamikken er grunnen til at <a href="../horses/">en hest ikke regnes som bare noens eiendom</a>.</p>
+
+      <h2>Hva eudaimonokrati ikke er</h2>
+      <p class="h2-num">Artikkel III &middot; Fire stående misforståelser</p>
+      <ul>
+        <li><strong>Ikke en lykkemaskin.</strong> Umiddelbar nytelse er ikke eudaimonia. Et tiltak bedømmes etter virkningen på et liv over tid, og på familier, grupper og andre.</li>
+        <li><strong>Ikke vanlig demokrati.</strong> Det finnes et parlament, valg, offentlig meningsdanning og rett til å kritisere myndighetene &mdash; men flertallet er ikke den absolutte suverenen. Dersom kunnskapsgrunnlaget klart tilsier at en kurs vil volde enorm skade, kan svaret være nei. Femtién prosent av stemmene gjør ikke en nedbrytende handling oppbyggende.</li>
+        <li><strong>Ikke teknokrati.</strong> Fagfolk fastslår og etterprøver fakta. Om et utfall er ønsket, og til hvilken pris, er et politisk og etisk spørsmål; en forsker blir ikke monark av å være forsker.</li>
+        <li><strong>Ikke enkel nytteetikk.</strong> Spørsmålet er ikke hvilken sum av gode virkninger som er størst, men hva som nøyaktig skapes og hva som ødelegges, hvor, hvor alvorlig, og om det samme resultatet kan nås med mindre ødeleggelse.</li>
+      </ul>
+
+      <h2 id="diarchy">Det keiserlige diarkiet</h2>
+      <p class="h2-num">Artikkel IV &middot; To kroner, likestilte i myndighet</p>
+      <p>Hrossagri&#240; styres gjennom to faste og atskilte embeter, <strong>likestilte i styringsmyndighet</strong>. Ingen av monarkene kommanderer, står over eller kan ensidig avsette den andre. Den som innehar en av kronene, kan bruke tittelen keiserinne eller keiser; diarkiet kan bestå av to keiserinner, to keisere eller én av hver.</p>
+    </div>
+    <aside class="marg">
+      <strong>Flokkarketyper</strong>
+      De to kronene forstås kulturelt gjennom den ledende hoppa, som avgjør retningen, og den vernende hingsten, som speider og vokter. Dette er symboler på funksjon &mdash; ikke forfatningsregler om kjønn, og ingen begrensning for noen innbygger.
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>Den Ledende kronen</h3>
+      <p>Innenriksstyre, diplomati, sivil forvaltning, økonomisk og sosial retning, infrastruktur og Keiserrikets langsiktige kurs.</p>
+    </li>
+    <li>
+      <h3>Den Vernende kronen</h3>
+      <p>Forsvar, grenser, nasjonal sikkerhet, militær beredskap, vernende etterretning, beredskapsvern og innsats ved kriser, speiding og vernestrategi.</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>Den Ledende kronen har forrang bare i seremoniell rangordning, og der samme person samtidig ville bli den neste med rett til et lovlig tilbud fra begge arvefølgelinjer. Denne forrangen gir ingen større styringsmakt.</p>
+      <p>Det finnes én stat, én regjering, ett statsråd, ett nasjonalbudsjett, én militær struktur og én sivil forvaltning. Ingen av kronene kan opprette en konkurrerende regjering, statskasse, hær, etterretningstjeneste eller forvaltning, gi ordrer gjennom den andres kommandolinje eller avsette den andres tjenestemenn.</p>
+
+      <h3>Hva som krever begge kroner</h3>
+      <p>Hver krone avgjør alminnelige saker der det overveiende formålet og den direkte rettsvirkningen ligger i dens eget område. En avgjørelse blir felles når den direkte endrer den andre kronens rettslige myndighet eller kommandolinje; binder eller trekker bort en vesentlig del av felles midler, personell, infrastruktur eller sentral operativ kapasitet; skaper en bindende nasjonal forpliktelse i begge områder; eller skaper en konkret, vesentlig og rimelig sannsynlig virkning på den andre kronens sikkerhet eller evne til å utføre sine oppgaver.</p>
+      <p><strong>Den faktiske virkningen avgjør.</strong> En avgjørelse kan ikke unndra seg felles godkjenning ved å deles opp i mindre handlinger eller ved å omtales som midlertidig, forsøksmessig, administrativ, hemmelig, militær eller kriselignende. Tvister om klassifisering &mdash; ikke om innholdet i politikken &mdash; går til tre høytstående dommere trukket ved offentlig kontrollert loddtrekning.</p>
+
+      <h3 id="deadlock">Vranglås</h3>
+      <p>Når kronene er uenige i en felles sak, kan ingen av dem tvinge gjennom det omstridte forslaget. Et alminnelig felles forslag må avgjøres innen tretti dager, et hastende innen syttito timer; blir det ikke enighet, <strong>faller forslaget</strong>. Taushet, nekting av å møte eller forhaling regnes aldri som godkjenning.</p>
+      <p>Den tidligere lovlige tilstanden fortsetter da &mdash; offentlige tjenester, forsvarsberedskap, nødvendige midlertidige utnevnelser og et nødvendig budsjett som bare justeres etter en offentliggjort objektiv formel. Dette finnes for at verken en krone eller parlamentet skal kunne framkalle et sammenbrudd ved å la tiden løpe ut.</p>
+
+      <h3>Tiltak i krise</h3>
+      <p>Under et pågående eller nært forestående angrep, en katastrofe eller en annen tidskritisk trussel kan den Vernende kronen gi umiddelbare operative ordrer innenfor sitt område uten å vente på felles godkjenning. En hastende trussel innenfor det Ledende området &mdash; epidemi, svikt i mat-, vann- eller infrastrukturforsyning, overtakelse av finanssystemet &mdash; gir den Ledende kronen de samme minimale midlertidige ordrene. Ingen av dem kan endre Forfatningen, arvefølgen eller den grunnleggende maktfordelingen, og ingen av dem kan kle et alminnelig politisk ønske ut som en krise. Hver kriseordre nedtegnes sammen med sitt kunnskapsgrunnlag og gjennomgås på nytt minst hver syttito timer.</p>
+
+      <h2>Parlamentet og domstolene</h2>
+      <p class="h2-num">Artikkel V &middot; Kronens forrang innenfor forfatningen</p>
+      <p>Hrossagri&#240; er kronedominert, men <strong>kronens forrang finnes innenfor Forfatningen og ikke utenfor den</strong>. Parlamentet representerer allmennheten, drøfter og utformer lover, gransker misligheter, fører tilsyn med forvaltningen og forvalter delegert myndighet. Det kan ikke vedta lov mot nektelse fra den kronen eller de kronene hvis samtykke kreves, og det har ingen adgang til å sette nektelsen til side.</p>
+
+      <h2>Tronfølge, formynderstyre og avsettelse</h2>
+      <p class="h2-num">Artikkel VI &middot; To linjer, holdt atskilt</p>
+      <p>De to kronene har atskilte arvefølgelinjer. Ved siden av arv kan en krone besettes ved utnevnelse eller utelukkelse i testament, og en ledig krone kan gå til nasjonalt valg der kandidatene gir offentlige løfter. Mottakelse og avslag er reelle: ingen er bundet til å ta imot. En umyndig monark styrer gjennom et formynderråd der myndigheten frigis gradvis etter alder, og midlertidig handlingsudyktighet, forsvinning, fratreden av medisinske grunner, tronfrasigelse og avsettelse har hver sin fastsatte framgangsmåte.</p>
+
+      <h2>Grunnverdier</h2>
+      <p class="h2-num">Artikkel VII &middot; Åtte, i den rekkefølgen de er nedtegnet</p>
+      <ul>
+        <li>Historisk ærlighet</li>
+        <li>Meritokrati</li>
+        <li>Dyrevelferd</li>
+        <li>Vitenskapelig framgang</li>
+        <li>Forvaltning av miljøet</li>
+        <li>Integrering av flyktninger</li>
+        <li>Sosial likhet</li>
+        <li>Etisk styring</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>Det tilhørende korpuset av bindende rettsakter &mdash; koder, tekniske standarder og offisielle maler &mdash; er katalogisert i <a href="law/">registeret over keiserlig rett</a>. Hva staten gir dem som bor her, er beskrevet i <a href="../living/">Livet i Hrossagri&#240;</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Terskler</strong>
+      Der Forfatningen fastsetter en parlamentarisk terskel, måles den mot det fulle lovbestemte medlemstallet. Ledige plasser, fravær og avholdne stemmer senker ikke nevneren.
+      <br><br>
+      <strong>Loddtrekning</strong>
+      Dommere og revisorer i forfatningstvister trekkes ved offentlig kontrollert loddtrekning fra fastfrosne yrkeslister som føres av faste embetsmenn.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keiserriket</h2>
+      <ul>
+        <li><a href="../../no/gov/">Styresett og doktrine</a></li>
+        <li><a href="../../no/gov/#dynamics">De åtte dynamikkene</a></li>
+        <li><a href="../../no/gov/#diarchy">Det keiserlige diarkiet</a></li>
+        <li><a href="../../no/gov/law/">Keiserlig rett</a></li>
+        <li><a href="../../no/history/">Historie</a></li>
+        <li><a href="../../no/symbols/">Navn, flagg og symboler</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Livet her</h2>
+      <ul>
+        <li><a href="../../no/living/">Livet i Hrossagri&#240;</a></li>
+        <li><a href="../../no/living/health/">Helse</a></li>
+        <li><a href="../../no/living/education/">Utdanning og barn</a></li>
+        <li><a href="../../no/living/transport/">Transport og veier</a></li>
+        <li><a href="../../no/living/justice/">Rettsvesen og politi</a></li>
+        <li><a href="../../no/living/money/">Arbeid og penger</a></li>
+        <li><a href="../../no/living/citizenship/">Statsborgerskap og tilflukt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hester og veier</h2>
+      <ul>
+        <li><a href="../../no/horses/">Hester</a></li>
+        <li><a href="../../no/horses/#welfare">Velferd og bittløs kontroll</a></li>
+        <li><a href="../../no/horses/#service">Hestedyr i tjeneste</a></li>
+        <li><a href="../../no/horses/road-status/">Standard for veistatusmarkører</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Denne portalen</h2>
+      <ul>
+        <li><a href="../../no/about/">Om dette prosjektet</a></li>
+        <li><a href="../../no/search/">Søk i portalen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Flagget til Keiserriket Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Dessverre er Hrossagrith et fiktivt land. Dette nettstedet er et verdensbyggingsprosjekt og har ingen tilknytning til noen virkelig stat, regjering eller offisiell instans.</p>
+    <p class="footer__meta">Keiserriket Hrossagri&#240; &middot; Keiserlig statsportal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

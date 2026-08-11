@@ -5,6 +5,25 @@
   "use strict";
 
   var root = document.body.getAttribute("data-root") || "";
+  /* `base` reaches the root of the current language; `root` reaches the site
+     root. The search index and every result link are per-language. */
+  var base = document.body.getAttribute("data-base") || root;
+  var text = {};
+  try {
+    text = JSON.parse(document.body.getAttribute("data-i18n") || "{}");
+  } catch (error) { /* fall back to the English wording below */ }
+
+  function say(key, fallback) {
+    return text[key] || fallback;
+  }
+
+  function count(n, query) {
+    var key = n === 0 ? "results_none" : (n === 1 ? "results_one" : "results_many");
+    var fallback = n === 0
+      ? "Nothing found for \u201c{q}\u201d"
+      : (n === 1 ? "{n} result for \u201c{q}\u201d" : "{n} results for \u201c{q}\u201d");
+    return say(key, fallback).replace("{n}", n).replace("{q}", query);
+  }
 
   /* ---------- Language picker ---------- */
 
@@ -42,13 +61,14 @@
     var heading = document.querySelector("[data-search-heading]");
 
     if (!query) {
-      setMessage(container, "Type a word or phrase above to search every page of this portal.");
+      setMessage(container, say("search_prompt",
+        "Type a word or phrase above to search every page of this portal."));
       return;
     }
 
-    setMessage(container, "Searching…");
+    setMessage(container, say("search_running", "Searching\u2026"));
 
-    fetch(root + "search-index.json")
+    fetch(base + "search-index.json")
       .then(function (response) {
         if (!response.ok) {
           throw new Error("index unavailable");
@@ -75,14 +95,13 @@
           });
 
         if (heading) {
-          heading.textContent = hits.length
-            ? hits.length + (hits.length === 1 ? " result for " : " results for ") + "“" + query + "”"
-            : "Nothing found for “" + query + "”";
+          heading.textContent = count(hits.length, query);
         }
 
         container.innerHTML = "";
         if (!hits.length) {
-          setMessage(container, "No entry in the register matches every word. Try fewer or different words.");
+          setMessage(container, say("search_none",
+            "No entry in the register matches every word. Try fewer or different words."));
           return;
         }
         hits.forEach(function (hit) {
@@ -90,7 +109,8 @@
         });
       })
       .catch(function () {
-        setMessage(container, "The search index could not be loaded. Please try again.");
+        setMessage(container, say("search_error",
+          "The search index could not be loaded. Please try again."));
       });
   }
 
@@ -112,7 +132,7 @@
 
     var title = document.createElement("h3");
     var link = document.createElement("a");
-    link.href = root + page.url;
+    link.href = base + page.url;
     link.textContent = page.title;
     title.appendChild(link);
 
@@ -141,14 +161,17 @@
 
   var expandAll = document.querySelector("[data-expand-all]");
   if (expandAll) {
+    /* The parts are served open, so the button starts as a collapse control. */
+    setExpandLabel(document.querySelectorAll("details.part[open]").length ===
+                   document.querySelectorAll("details.part").length);
+
     expandAll.addEventListener("click", function () {
       var parts = document.querySelectorAll("details.part");
       var opening = expandAll.getAttribute("aria-pressed") !== "true";
       for (var i = 0; i < parts.length; i++) {
         parts[i].open = opening;
       }
-      expandAll.setAttribute("aria-pressed", opening ? "true" : "false");
-      expandAll.textContent = opening ? "Collapse all parts" : "Expand all parts";
+      setExpandLabel(opening);
     });
   }
 
@@ -168,4 +191,11 @@
 
   openTarget();
   window.addEventListener("hashchange", openTarget);
+  function setExpandLabel(open) {
+    expandAll.setAttribute("aria-pressed", open ? "true" : "false");
+    expandAll.textContent = open
+      ? say("collapse_all", "Collapse all parts")
+      : say("expand_all", "Expand all parts");
+  }
+
 })();

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名称与符号 &mdash; 赫罗萨格里德帝国</title>
+<meta name="description" content="赫罗萨格里德帝国的规范形式、古诺尔斯语词源、正确用法、国旗与国兽。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../zh/" data-i18n="{&quot;light&quot;: &quot;浅色&quot;, &quot;dark&quot;: &quot;深色&quot;, &quot;theme_to_light&quot;: &quot;切换到浅色主题&quot;, &quot;theme_to_dark&quot;: &quot;切换到深色主题&quot;, &quot;search_prompt&quot;: &quot;在上方输入词语或短语，即可搜索本门户的每一个页面。&quot;, &quot;search_running&quot;: &quot;正在搜索…&quot;, &quot;search_none&quot;: &quot;名录中没有条目同时包含全部词语。请减少词语或换用其他词语。&quot;, &quot;search_error&quot;: &quot;无法加载搜索索引。请重试。&quot;, &quot;results_one&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_many&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_none&quot;: &quot;未找到与“{q}”相关的结果&quot;, &quot;expand_all&quot;: &quot;展开全部部分&quot;, &quot;collapse_all&quot;: &quot;收起全部部分&quot;}">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">一个架空世界构建项目</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">搜索本门户</label>
+      <input type="search" id="q" name="q" placeholder="搜索本门户" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <label class="visually-hidden" for="locale">语言</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh" selected>中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="赫罗萨格里德帝国国徽：圆盘之中一只人立的骏鹰" width="360" height="360">
+    <p class="masthead__state">帝国国家门户</p>
+    <p class="masthead__name"><a href="../../zh/">赫罗萨格里德帝国</a></p>
+    <p class="masthead__motto">马匹的庇护之所，以及得到强制维护的和平</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="全部栏目">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        菜单
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../zh/gov/">政府与学说</a></li>
+            <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+            <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+            <li><a href="../../zh/gov/law/">帝国法律</a></li>
+            <li><a href="../../zh/history/">历史</a></li>
+            <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>在此生活</h2>
+            <ul>
+            <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+            <li><a href="../../zh/living/health/">医疗卫生</a></li>
+            <li><a href="../../zh/living/education/">教育与儿童</a></li>
+            <li><a href="../../zh/living/transport/">交通与道路</a></li>
+            <li><a href="../../zh/living/justice/">司法与警务</a></li>
+            <li><a href="../../zh/living/money/">工作与金钱</a></li>
+            <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>马匹与道路</h2>
+            <ul>
+            <li><a href="../../zh/horses/">马匹</a></li>
+            <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+            <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+            <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本门户</h2>
+            <ul>
+            <li><a href="../../zh/about/">关于本项目</a></li>
+            <li><a href="../../zh/search/">搜索本门户</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../zh/">首页</a>
+    <a href="../../zh/horses/">马匹</a>
+    <a href="../../zh/living/">生活</a>
+    <a href="../../zh/gov/">政府</a>
+    <a href="../../zh/gov/law/">法律</a>
+    <a href="../../zh/history/">历史</a>
+    <a href="../../zh/symbols/" aria-current="page">符号</a>
+    <a href="../../zh/about/">关于</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../zh/">首页</a><span>&rsaquo;</span><strong>符号</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第 V 卷</p>
+  <h1 class="page-title">名称、词源与国家象征</h1>
+  <p class="page-standfirst">国名由两个真实的古诺尔斯语要素、按一种真实的古诺尔斯语复合模式构成。以下是供法律、教育、外交与文化使用的规范解释。</p>
+
+  <div class="two">
+    <div class="col">
+      <h2>规范形式</h2>
+      <p class="h2-num">第 I 条 &middot; 名称如何书写</p>
+      <ul>
+        <li>官方本地写法：<span class="native">Hrossagri&#240;</span></li>
+        <li>国际写法：Hrossagrith</li>
+        <li>正式国名：<span class="native">The Empire of Hrossagri&#240;</span>，中文作赫罗萨格里德帝国</li>
+        <li>国民称谓：<strong>Hrossagrith</strong>，不作变化 &mdash; 没有单数或复数后缀</li>
+        <li>形容词与文化用语：<strong>Hrossagrithic</strong></li>
+        <li>英语实际读音：<strong>HROSS-a-grith</strong></li>
+      </ul>
+      <p>正确的单数用法是 <em>I am Hrossagrith</em>；正确的集体用法是 <em>the Hrossagrith people</em>。一律使用以 <em>th</em> 拼写的国际形式，凡 <span class="native">&#240;</span> 无法使用或难以输入之处皆然。</p>
+
+      <h2>核心含义</h2>
+      <p class="h2-num">第 II 条 &middot; 这个名称说的是什么</p>
+      <p class="dropcap">Hrossagri&#240; 意为马之庇护、马之保护，或为马匹以及与之相系之人所设的受保护的和平。其核心观念是 <span class="native">gri&#240;</span>：庇护、有保障的保护、安全通行、法律豁免、受保护的和平，以及追捕或报复的终止。这个名称并不是要说这个国家不过就是马匹之国。它的意思是：一个庇护足够真实的地方，真实到旅人连同承载他们的那份活的联结一并受到保护。</p>
+
+      <h2>词源</h2>
+      <p class="h2-num">第 III 条 &middot; 这个复合词及其两个要素</p>
+      <p>这个名称由 <span class="native">hross</span> + <span class="native">-a</span> + <span class="native">gri&#240;</span> 构成 &mdash; 更确切地说，由属格复数的复合形式 <span class="native">hrossa-</span> 与名词 <span class="native">gri&#240;</span> 构成。中间的 <span class="native">-a</span> 既不是装饰，也不是英语的连接元音：它是 <span class="native">hross</span> 的属格复数词尾，使第一个要素具有&ldquo;属于马匹&rdquo;的含义。</p>
+      <p>古诺尔斯语的复合词要从末尾的要素向前理解。中心词是 <span class="native">gri&#240;</span>：这个名称指的是一种由马匹加以限定的保护形式、保护之地或保护的管辖 &mdash; 而不是一匹由和平加以限定的马。</p>
+
+      <h3>第一个要素：<span class="native">hross</span></h3>
+      <p>古诺尔斯语的 <span class="native">hross</span> 是一个中性名词，意为马 &mdash; 一个普通的历史性马匹词，而不是诗性的杜撰。它的属格复数是 <span class="native">hrossa</span>；又因为不变格的单数与复数都可以呈现为 <span class="native">hross</span>，那个形式便格外重要：它使集合关系显豁。这个名称并不是指某一匹马的保护。它召唤的是作为整体的马匹。</p>
+      <p>它属于一个古老的日耳曼语词族：古英语 <span class="native">hors</span>、古萨克森语 <span class="native">hros</span>、古高地德语 <span class="native">hros</span> 或 <span class="native">ros</span>、德语 <span class="native">Ross</span>、冰岛语 <span class="native">hross</span>。一种常被提出的更深层重构是原始日耳曼语 <span class="native">*hruss&#261;</span>，有时与一个更古老的奔跑观念相联系，但这一推导还不够确定，不足以当作官方释义。可靠的含义就是有文献佐证的那一个：马。</p>
+
+      <h3>第二个要素：<span class="native">gri&#240;</span></h3>
+      <p>古诺尔斯语的 <span class="native">gri&#240;</span> 是一个中性名词，用作一个集合性的法律概念：和平、慈悯、休战、宽赦、有保障的安全、安全通行、避难、庇护，以及针对追捕或暴力所给予的保护。它不是消极的安宁，而是经由承认、承诺、习惯或法律而被付诸实行的和平 &mdash; 一份要求敌对行动停止的休战，一份给予本无防护之人的宽赦，一次穿越危险地带的安全通行，或一种禁止夺取与报复的受保障状态。</p>
+      <p>一个地方之所以成为庇护之地，是因为 <span class="native">gri&#240;</span> 在那里适用。这个国家并非以某一处马厩、神庙或避难所为名，而是以它在整个管辖范围内所施加的保护为名。</p>
+
+      <h3>国际形式：<span class="native">grith</span></h3>
+      <p>把 <span class="native">&#240;</span> 换成 <em>th</em> 是一种转写，而不是词根的改变。<em>Grith</em> 同时也是一个真实的历史英语词，借自古诺尔斯语，用以指有保障的安全、安全通行、庇护与避难。它如今已属古语，这使得国际写法异常精确。这个名称写作 <em>-grith</em> &mdash; 绝不写作 <em>-grit</em>、<em>-girth</em>、<em>-griff</em> 或 <em>-grid</em>。</p>
+
+      <div class="pullquote">
+        <p>这个名称意味着给予马匹的庇护与可强制执行的保护，并且通过与马匹不可分离的联结，也给予那些与它们一同行路、生活、劳作并寻求安全的人。</p>
+      </div>
+
+      <h2>这个名称不意味着什么</h2>
+      <p class="h2-num">第 IV 条 &middot; 长期有效的更正</p>
+      <ul>
+        <li>不是&ldquo;马之帝国&rdquo;。<em>帝国</em>描述的是正式称号中这个国家的形式；它并不包含在国名之内。</li>
+        <li>不是&ldquo;马匹之地&rdquo;、&ldquo;马之王国&rdquo;、&ldquo;马厩&rdquo;或&ldquo;马匹牧场&rdquo;。这些读法漏掉了 <span class="native">gri&#240;</span>，把名称降格为地理。</li>
+        <li>不是任何一个方向上的所有权主张。属格标明的是保护的受益者与范围。</li>
+        <li>不是&ldquo;被驯服的&rdquo;或&ldquo;顺从的马&rdquo;。<span class="native">Gri&#240;</span> 支配的是马匹周围的法律环境；它并不描述这只动物的服从。</li>
+        <li>与狮鹫、骏鹰、鹿、雄鹿、鹿角或任何杜撰的生物名称无关。</li>
+      </ul>
+
+      <h2 id="flag">国旗</h2>
+      <p class="h2-num">第 V 条 &middot; 三道横带与国兽</p>
+
+      <figure class="figure">
+        <img src="/assets/flag.jpg" alt="赫罗萨格里德帝国国旗：淡黄、绿、蓝三道水平横带，其上有一只人立的深色骏鹰。" width="1400" height="933">
+        <figcaption>赫罗萨格里德帝国国旗。三道水平横带，其上绘有国兽。</figcaption>
+      </figure>
+
+      <h2>国兽</h2>
+      <p class="h2-num">第 VI 条 &middot; 骏鹰，以及它为何不是词根</p>
+      <p>国兽是<strong>骏鹰</strong>。它并不是这个国家名称的来源。它是后来才被采用的，作为自由、智慧、力量、尊严、守护以及人与动物之间联结的象征。其马的一半呼应着这个名称早已承载的更古老的象征意义：联结、行动、信任、伙伴之谊、照护的责任，以及归家的能力。国兽为这个名称提供支撑；它并不取代名称中庇护的含义。</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>语文学依据。</strong> 本分析依据的是有文献佐证的古诺尔斯语名词 <span class="native">hross</span> 及其属格复数；有文献佐证的集合名词 <span class="native">gri&#240;</span> 及其法律含义；历史上的英语名词 <em>grith</em>；以及标准的古诺尔斯语属格复合构词法。凡某个词根更深层的史前情况尚不确定之处，赫罗萨格里德的解释便把它标为不确定，而不是把一项假说转化为事实。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>不得改拼</strong>
+      不是 Hrossagriff，不是 Hrossgriff，也不是 Hippogriff-land。任何使骏鹰成为词源来源的拼写，都会丢失这个名称中属于庇护的那一半。
+      <br><br>
+      <strong>关于这个字母</strong>
+      <span class="native">&#240;</span> 名为 eth。它属于 <span class="native">gri&#240;</span> 的拼写，并不是一个带附加符号的 o。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../zh/gov/">政府与学说</a></li>
+        <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+        <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+        <li><a href="../../zh/gov/law/">帝国法律</a></li>
+        <li><a href="../../zh/history/">历史</a></li>
+        <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>在此生活</h2>
+      <ul>
+        <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+        <li><a href="../../zh/living/health/">医疗卫生</a></li>
+        <li><a href="../../zh/living/education/">教育与儿童</a></li>
+        <li><a href="../../zh/living/transport/">交通与道路</a></li>
+        <li><a href="../../zh/living/justice/">司法与警务</a></li>
+        <li><a href="../../zh/living/money/">工作与金钱</a></li>
+        <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>马匹与道路</h2>
+      <ul>
+        <li><a href="../../zh/horses/">马匹</a></li>
+        <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+        <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+        <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本门户</h2>
+      <ul>
+        <li><a href="../../zh/about/">关于本项目</a></li>
+        <li><a href="../../zh/search/">搜索本门户</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="赫罗萨格里德帝国国旗" width="120" height="80">
+    <p class="footer__disclaimer">很遗憾，赫罗萨格里德是一个虚构的国家。本站是一个架空世界构建项目，与任何真实的国家、政府或官方机构均无关联。</p>
+    <p class="footer__meta">赫罗萨格里德帝国 &middot; 帝国国家门户 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

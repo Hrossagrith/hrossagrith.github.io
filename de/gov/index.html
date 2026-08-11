@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regierung &mdash; Das Kaiserreich Hrossagri&#240;</title>
+<meta name="description" content="Eudaimonokratie, die Acht Dynamiken, die Leitende und die Wachende Krone, Parlament und Gerichte, Thronfolge und grundlegende Werte.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../de/" data-i18n="{&quot;light&quot;: &quot;Hell&quot;, &quot;dark&quot;: &quot;Dunkel&quot;, &quot;theme_to_light&quot;: &quot;Zum hellen Design wechseln&quot;, &quot;theme_to_dark&quot;: &quot;Zum dunklen Design wechseln&quot;, &quot;search_prompt&quot;: &quot;Geben Sie oben ein Wort oder eine Wendung ein, um alle Seiten dieses Portals zu durchsuchen.&quot;, &quot;search_running&quot;: &quot;Suche läuft…&quot;, &quot;search_none&quot;: &quot;Kein Eintrag im Register enthält alle Wörter. Versuchen Sie es mit weniger oder anderen Wörtern.&quot;, &quot;search_error&quot;: &quot;Der Suchindex konnte nicht geladen werden. Bitte versuchen Sie es erneut.&quot;, &quot;results_one&quot;: &quot;{n} Ergebnis für „{q}“&quot;, &quot;results_many&quot;: &quot;{n} Ergebnisse für „{q}“&quot;, &quot;results_none&quot;: &quot;Nichts gefunden für „{q}“&quot;, &quot;expand_all&quot;: &quot;Alle Teile aufklappen&quot;, &quot;collapse_all&quot;: &quot;Alle Teile zuklappen&quot;}">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Ein Worldbuilding-Projekt</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Portal durchsuchen</label>
+      <input type="search" id="q" name="q" placeholder="Portal durchsuchen" autocomplete="off">
+      <button type="submit">Suchen</button>
+    </form>
+    <label class="visually-hidden" for="locale">Sprache</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de" selected>Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dunkel</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Wappen des Kaiserreichs Hrossagri&#240;: ein sich aufbäumender Hippogryph in einem Rundfeld" width="360" height="360">
+    <p class="masthead__state">Kaiserliches Staatsportal</p>
+    <p class="masthead__name"><a href="../../de/">Das Kaiserreich Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Zuflucht der Pferde und der Frieden, der durchgesetzt wird</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle Abschnitte">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menü
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Das Kaiserreich</h2>
+            <ul>
+            <li><a href="../../de/gov/">Regierung und Doktrin</a></li>
+            <li><a href="../../de/gov/#dynamics">Die Acht Dynamiken</a></li>
+            <li><a href="../../de/gov/#diarchy">Die Kaiserliche Diarchie</a></li>
+            <li><a href="../../de/gov/law/">Kaiserliches Recht</a></li>
+            <li><a href="../../de/history/">Geschichte</a></li>
+            <li><a href="../../de/symbols/">Name, Flagge und Symbole</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Das Leben hier</h2>
+            <ul>
+            <li><a href="../../de/living/">Leben in Hrossagri&#240;</a></li>
+            <li><a href="../../de/living/health/">Gesundheit</a></li>
+            <li><a href="../../de/living/education/">Bildung und Kinder</a></li>
+            <li><a href="../../de/living/transport/">Verkehr und Straßen</a></li>
+            <li><a href="../../de/living/justice/">Justiz und Polizei</a></li>
+            <li><a href="../../de/living/money/">Arbeit und Geld</a></li>
+            <li><a href="../../de/living/citizenship/">Staatsbürgerschaft und Zuflucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Pferde und Straßen</h2>
+            <ul>
+            <li><a href="../../de/horses/">Pferde</a></li>
+            <li><a href="../../de/horses/#welfare">Tierwohl und gebisslose Kontrolle</a></li>
+            <li><a href="../../de/horses/#service">Dienstequiden</a></li>
+            <li><a href="../../de/horses/road-status/">Standard für Straßenstatus-Marker</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dieses Portal</h2>
+            <ul>
+            <li><a href="../../de/about/">Über dieses Projekt</a></li>
+            <li><a href="../../de/search/">Portal durchsuchen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../de/">Startseite</a>
+    <a href="../../de/horses/">Pferde</a>
+    <a href="../../de/living/">Leben</a>
+    <a href="../../de/gov/" aria-current="page">Regierung</a>
+    <a href="../../de/gov/law/">Recht</a>
+    <a href="../../de/history/">Geschichte</a>
+    <a href="../../de/symbols/">Symbole</a>
+    <a href="../../de/about/">Über</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../de/">Startseite</a><span>&rsaquo;</span><strong>Regierung</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Buch I</p>
+  <h1 class="page-title">Der Staat und seine Doktrin</h1>
+  <p class="page-standfirst">Die vollständige verfassungsrechtliche Bezeichnung von Hrossagri&#240; lautet eudaimonokratische diarchische Monarchie. Die Eudaimonokratie beantwortet, wozu die Staatsgewalt besteht. Die Diarchie beantwortet, wer sie innehat.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Ein menschlicher Staat.</strong> Hrossagri&#240; wird von Menschen und für Menschen regiert. Seine Bürger, Monarchen, Amtsträger, Wähler, Arbeitnehmer, Patienten und Fahrgäste sind Menschen. Pferde und andere Equiden sind geschützte Lebewesen und Arbeitspartner; sie sind nicht die Bevölkerung, und sie bekleiden kein menschliches politisches Amt.</p></div>
+
+      <h2>Eudaimonokratie</h2>
+      <p class="h2-num">Artikel I &middot; Der Zweck der Staatsgewalt</p>
+      <p class="dropcap">Der Name stammt von der <em>Eudaimonia</em>, dem klassischen griechischen Begriff, der gewöhnlich fälschlich mit Glück übersetzt wird. Er kommt dem <strong>Gedeihen</strong> näher: ein Leben, das im Ganzen gut verläuft, und nicht ein Augenblick, der sich gut anfühlt. Ein Mensch kann etwas genießen und dabei sein eigenes Leben zerstören, und etwas, das heute unangenehm ist, kann für ein wirklich gutes Leben im Ganzen notwendig sein.</p>
+      <p>Daher stammt der hrossagridische Begriff: eine Regierung, die auf das Gedeihen ausgerichtet ist. Doch das Kaiserreich kopiert Aristoteles nicht einfach. Die klassische Eudaimonia handelt in erster Linie vom menschlichen Gedeihen, und Hrossagri&#240; erweitert den Rahmen bewusst mit Hilfe eines bereits bestehenden achtteiligen ethischen Schemas.</p>
+
+      <div class="pullquote">
+        <p>Der rechtmäßige Zweck der Staatsgewalt besteht darin, das konstruktive Überleben und das Gedeihen über die Acht Dynamiken hinweg zu maximieren und schwere Zerstörung möglichst gering zu halten, wobei die tatsächlichen Folgen einer Maßnahme anhand der besten verfügbaren Belege bestimmt werden.</p>
+      </div>
+
+      <h2 id="dynamics">Die Acht Dynamiken</h2>
+      <p class="h2-num">Artikel II &middot; Der ethische Rahmen und seine Herkunft</p>
+      <p>Die Acht Dynamiken sind keine hrossagridische Erfindung. Sie sind ein Begriff der Scientology, die das Grundprinzip des Daseins als einen Drang zum Überleben beschreibt, der sich in acht miteinander verbundene Antriebe gliedert. Das Kaiserreich entlehnt diesen Rahmen als sein ethisches Schema; die daraus gezogenen politischen Schlussfolgerungen sind seine eigenen.</p>
+
+      <ol class="dynamics">
+        <li><strong>Selbst</strong> &mdash; der Drang, als Einzelwesen zu überleben und man selbst zu sein.</li>
+        <li><strong>Kreativität</strong> &mdash; das Schaffen für die Zukunft: Sexualität, Familie, Kinder, ihre Erziehung, nach vorn gerichtetes Hervorbringen.</li>
+        <li><strong>Gruppen</strong> &mdash; das Überleben durch eine Gruppe oder als Gruppe jeder Größe, von der Schulklasse bis zum Staat.</li>
+        <li><strong>Menschheit</strong> &mdash; die menschliche Gattung als Ganzes, im Unterschied zu einer einzelnen Nation.</li>
+        <li><strong>Lebensformen</strong> &mdash; Tiere, Vögel, Insekten, Fische und Pflanzen; das Leben selbst.</li>
+        <li><strong>Physikalisches Universum</strong> &mdash; Materie, Energie, Raum und Zeit.</li>
+        <li><strong>Geistige Dynamik</strong> &mdash; geistige Wesen, geistiges Dasein und der geistige Ursprung des Lebens.</li>
+        <li><strong>Unendlichkeit</strong> &mdash; das Dasein als Unendlichkeit, verbunden mit Gott, dem Höchsten Wesen oder dem Schöpfer.</li>
+      </ol>
+
+      <p>Im Ausgangsrahmen gelten Handlungen, die das Überleben über die Mehrzahl der Dynamiken hinweg vermehren, als konstruktiv, und Handlungen, die sie zerstören oder verneinen, als destruktiv. Genau diesen Teil verwandelt Hrossagri&#240; in eine politische Methode &mdash; und die Fünfte Dynamik ist der Grund, weshalb <a href="../horses/">ein Pferd nicht bloß als das Eigentum eines Menschen gilt</a>.</p>
+
+      <h2>Was die Eudaimonokratie nicht ist</h2>
+      <p class="h2-num">Artikel III &middot; Vier ständige Missverständnisse</p>
+      <ul>
+        <li><strong>Keine Glücksmaschine.</strong> Unmittelbares Vergnügen ist nicht die Eudaimonia. Eine Maßnahme wird nach ihrer Wirkung auf ein Leben im Verlauf der Zeit sowie auf Familien, Gruppen und andere beurteilt.</li>
+        <li><strong>Keine gewöhnliche Demokratie.</strong> Es gibt ein Parlament, Wahlen, eine öffentliche Meinung und das Recht, die Regierung zu kritisieren &mdash; doch die Mehrheit ist nicht der absolute Souverän. Weisen die Belege deutlich darauf hin, dass ein Weg gewaltigen Schaden anrichten wird, kann die Antwort Nein lauten. Einundfünfzig Prozent der Stimmen machen aus einer destruktiven Handlung keine konstruktive.</li>
+        <li><strong>Keine Technokratie.</strong> Fachleute stellen Tatsachen fest und prüfen sie. Ob ein Ergebnis gewollt ist und zu welchem Preis, ist eine politische und ethische Frage; ein Wissenschaftler wird nicht dadurch Monarch, dass er Wissenschaftler ist.</li>
+        <li><strong>Kein schlichter Utilitarismus.</strong> Die Frage ist nicht, welche Summe an Nutzen größer ist, sondern was genau geschaffen und was zerstört wird, wo, wie schwerwiegend und ob dasselbe Ergebnis mit weniger Zerstörung erreicht werden kann.</li>
+      </ul>
+
+      <h2 id="diarchy">Die Kaiserliche Diarchie</h2>
+      <p class="h2-num">Artikel IV &middot; Zwei Kronen, gleich an Autorität</p>
+      <p>Hrossagri&#240; wird durch zwei ständige und getrennte Ämter regiert, die <strong>in der Regierungsgewalt gleichrangig</strong> sind. Kein Monarch befehligt den anderen, steht über ihm oder darf ihn einseitig entlassen. Der Träger einer jeden Krone darf den Titel Kaiserin oder Kaiser führen; die Diarchie kann aus zwei Kaiserinnen, zwei Kaisern oder aus je einer und einem bestehen.</p>
+    </div>
+    <aside class="marg">
+      <strong>Herdenarchetypen</strong>
+      Die beiden Kronen werden kulturell durch die führende Leitstute verstanden, welche die Richtung bestimmt, und durch den schützenden Hengst, der auskundschaftet und bewacht. Das sind Sinnbilder der Funktion &mdash; keine Verfassungsregeln über Geschlecht oder Gender und keine Einschränkung für irgendeinen Bürger.
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>Die Leitende Krone</h3>
+      <p>Innere Regierung, Diplomatie, Zivilverwaltung, wirtschaftliche und soziale Ausrichtung, Infrastruktur und der langfristige Kurs des Kaiserreichs.</p>
+    </li>
+    <li>
+      <h3>Die Wachende Krone</h3>
+      <p>Verteidigung, Grenzen, nationale Sicherheit, militärische Einsatzbereitschaft, schützende Aufklärung, Notfallschutz und Notfallreaktion, Erkundung und Schutzstrategie.</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>Die Leitende Krone hat den Vorrang allein in der zeremoniellen Rangfolge sowie dort, wo dieselbe Person gleichzeitig als Nächste aus beiden Erbfolgelinien Anspruch auf ein rechtmäßiges Angebot erhielte. Dieser Vorrang verleiht keine größere Regierungsgewalt.</p>
+      <p>Es gibt einen Staat, eine Regierung, ein Kabinett, einen Staatshaushalt, eine militärische Struktur und einen öffentlichen Dienst. Keine der Kronen darf eine konkurrierende Regierung, Staatskasse, Streitmacht, Nachrichtendienst oder Verwaltung schaffen, Befehle über die Befehlskette der anderen erteilen oder deren Amtsträger entlassen.</p>
+
+      <h3>Was beide Kronen erfordert</h3>
+      <p>Jede Krone entscheidet gewöhnliche Angelegenheiten, deren vorherrschender Zweck und deren unmittelbare Rechtswirkung in ihrem eigenen Bereich liegen. Eine Entscheidung wird gemeinsam, wenn sie die Rechtsbefugnisse oder die Befehlskette der anderen Krone unmittelbar verändert; wenn sie einen erheblichen Anteil an gemeinsamen Mitteln, gemeinsamem Personal, gemeinsamer Infrastruktur oder wesentlicher Einsatzfähigkeit bindet oder entzieht; wenn sie eine verbindliche nationale Verpflichtung in beiden Bereichen begründet; oder wenn sie eine konkrete, erhebliche und hinreichend wahrscheinliche Wirkung auf die Sicherheit der anderen Krone oder auf deren Fähigkeit zur Erfüllung ihrer Pflichten hervorbringt.</p>
+      <p><strong>Maßgeblich ist die tatsächliche Wirkung.</strong> Eine Entscheidung entzieht sich der gemeinsamen Zustimmung nicht dadurch, dass sie in kleinere Akte zerlegt oder als vorläufig, versuchsweise, verwaltungsintern, geheim, militärisch oder notfallnah umbenannt wird. Streitigkeiten über die Einordnung &mdash; nicht über die Sache selbst &mdash; entscheiden drei ranghohe Richter, die durch öffentliches, geprüftes Los bestimmt werden.</p>
+
+      <h3 id="deadlock">Patt</h3>
+      <p>Sind sich die Kronen in einer gemeinsamen Angelegenheit uneinig, darf keine von ihnen den strittigen Vorschlag durchsetzen. Ein gewöhnlicher gemeinsamer Vorschlag ist binnen dreißig Tagen zu entscheiden, ein dringlicher binnen zweiundsiebzig Stunden; kommt keine Einigung zustande, <strong>scheitert der Vorschlag</strong>. Schweigen, Fernbleiben oder Verzögerung gelten niemals als Zustimmung.</p>
+      <p>Danach gilt der bisherige rechtmäßige Zustand fort &mdash; die öffentlichen Dienste, die Verteidigungsbereitschaft, notwendige vorläufige Ernennungen und ein Grundhaushalt, der allein nach einer veröffentlichten objektiven Formel angepasst wird. Das besteht, damit weder eine Krone noch das Parlament durch bloßes Verstreichenlassen der Zeit einen Zusammenbruch herbeiführen kann.</p>
+
+      <h3>Handeln im Notfall</h3>
+      <p>Bei einem laufenden oder unmittelbar bevorstehenden Angriff, einer Katastrophe oder einer anderen zeitkritischen Bedrohung darf die Wachende Krone in ihrem Bereich sofortige Einsatzbefehle erteilen, ohne die gemeinsame Zustimmung abzuwarten. Eine dringende Bedrohung innerhalb des Leitenden Bereichs &mdash; eine Seuche, der Ausfall der Versorgung mit Nahrung, Wasser oder Infrastruktur, die Inbesitznahme des Finanzsystems &mdash; erlaubt der Leitenden Krone dieselben äußerst begrenzten vorläufigen Anordnungen. Keine von beiden darf die Verfassung, die Thronfolge oder die grundlegende Verteilung der Macht ändern, und keine darf eine gewöhnliche politische Vorliebe als Notfall ausgeben. Jede Notfallanordnung wird samt den ihr zugrunde liegenden Belegen aufgezeichnet und mindestens alle zweiundsiebzig Stunden überprüft.</p>
+
+      <h2>Parlament und Gerichte</h2>
+      <p class="h2-num">Artikel V &middot; Der Vorrang der Krone innerhalb der Verfassung</p>
+      <p>In Hrossagri&#240; überwiegt die Krone, doch <strong>besteht ihr Vorrang innerhalb der Verfassung und nicht außerhalb ihrer</strong>. Das Parlament vertritt die Öffentlichkeit, berät und entwirft Gesetze, untersucht Missstände, überwacht die Verwaltung und übt übertragene Befugnisse aus. Es kann kein Gesetz gegen die Weigerung derjenigen Krone oder derjenigen Kronen erlassen, deren Zustimmung erforderlich ist, und ein Überstimmungsrecht hat es nicht.</p>
+
+      <h2>Thronfolge, Regentschaft und Absetzung</h2>
+      <p class="h2-num">Artikel VI &middot; Zwei Linien, getrennt geführt</p>
+      <p>Die beiden Kronen haben getrennte Erbfolgelinien. Über die Erbfolge hinaus kann eine Krone durch letztwillige Ernennung oder durch letztwilligen Ausschluss besetzt werden, und eine vakante Krone kann einer landesweiten Wahl zufallen, bei der die Bewerber öffentliche Zusagen abgeben. Annahme und Ablehnung sind wirklich: Niemand ist zur Annahme verpflichtet. Ein minderjähriger Monarch regiert durch einen Regentschaftsrat, dessen Befugnisse mit dem Alter schrittweise freigegeben werden, und die vorübergehende Handlungsunfähigkeit, das Verschwinden, der Rücktritt aus gesundheitlichen Gründen, die Abdankung und die Absetzung haben jeweils ihr eigenes festgelegtes Verfahren.</p>
+
+      <h2>Grundlegende Werte</h2>
+      <p class="h2-num">Artikel VII &middot; Acht, in der aufgezeichneten Reihenfolge</p>
+      <ul>
+        <li>Historische Wahrhaftigkeit</li>
+        <li>Meritokratie</li>
+        <li>Tierwohl</li>
+        <li>Wissenschaftlicher Fortschritt</li>
+        <li>Verantwortung für die Umwelt</li>
+        <li>Eingliederung von Flüchtlingen</li>
+        <li>Soziale Gleichheit</li>
+        <li>Ethische Regierungsführung</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>Der zugehörige Bestand verbindlicher Rechtsakte &mdash; Kodizes, technische Standards und amtliche Formulare &mdash; ist im <a href="law/">Register des kaiserlichen Rechts</a> verzeichnet. Was der Staat den hier lebenden Menschen bietet, ist in <a href="../living/">Leben in Hrossagri&#240;</a> dargelegt.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Schwellenwerte</strong>
+      Wo die Verfassung eine parlamentarische Schwelle festlegt, bemisst sie sich an der vollen gesetzlichen Mitgliederzahl. Vakanzen, Abwesenheiten und Enthaltungen mindern den Nenner nicht.
+      <br><br>
+      <strong>Losverfahren</strong>
+      Richter und Prüfer für Verfassungsstreitigkeiten werden durch öffentliches, geprüftes Los aus eingefrorenen Berufslisten bestimmt, die von ständigen Beamten geführt werden.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Das Kaiserreich</h2>
+      <ul>
+        <li><a href="../../de/gov/">Regierung und Doktrin</a></li>
+        <li><a href="../../de/gov/#dynamics">Die Acht Dynamiken</a></li>
+        <li><a href="../../de/gov/#diarchy">Die Kaiserliche Diarchie</a></li>
+        <li><a href="../../de/gov/law/">Kaiserliches Recht</a></li>
+        <li><a href="../../de/history/">Geschichte</a></li>
+        <li><a href="../../de/symbols/">Name, Flagge und Symbole</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Das Leben hier</h2>
+      <ul>
+        <li><a href="../../de/living/">Leben in Hrossagri&#240;</a></li>
+        <li><a href="../../de/living/health/">Gesundheit</a></li>
+        <li><a href="../../de/living/education/">Bildung und Kinder</a></li>
+        <li><a href="../../de/living/transport/">Verkehr und Straßen</a></li>
+        <li><a href="../../de/living/justice/">Justiz und Polizei</a></li>
+        <li><a href="../../de/living/money/">Arbeit und Geld</a></li>
+        <li><a href="../../de/living/citizenship/">Staatsbürgerschaft und Zuflucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pferde und Straßen</h2>
+      <ul>
+        <li><a href="../../de/horses/">Pferde</a></li>
+        <li><a href="../../de/horses/#welfare">Tierwohl und gebisslose Kontrolle</a></li>
+        <li><a href="../../de/horses/#service">Dienstequiden</a></li>
+        <li><a href="../../de/horses/road-status/">Standard für Straßenstatus-Marker</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dieses Portal</h2>
+      <ul>
+        <li><a href="../../de/about/">Über dieses Projekt</a></li>
+        <li><a href="../../de/search/">Portal durchsuchen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Flagge des Kaiserreichs Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Leider ist Hrossagrith ein fiktives Land. Diese Website ist ein Worldbuilding-Projekt und steht in keiner Verbindung zu einem realen Staat, einer Regierung oder einer amtlichen Stelle.</p>
+    <p class="footer__meta">Das Kaiserreich Hrossagri&#240; &middot; Kaiserliches Staatsportal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

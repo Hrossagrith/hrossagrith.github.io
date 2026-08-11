@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hallinto &mdash; Hrossagri&#240;in keisarikunta</title>
+<meta name="description" content="Eudaimonokratia, kahdeksan dynamiikkaa, Ohjaava ja Vartioiva kruunu, parlamentti ja tuomioistuimet, seuraanto sekä perustavat arvot.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../fi/" data-i18n="{&quot;light&quot;: &quot;Vaalea&quot;, &quot;dark&quot;: &quot;Tumma&quot;, &quot;theme_to_light&quot;: &quot;Vaihda vaaleaan teemaan&quot;, &quot;theme_to_dark&quot;: &quot;Vaihda tummaan teemaan&quot;, &quot;search_prompt&quot;: &quot;Kirjoita yllä olevaan kenttään sana tai lause, niin haku kohdistuu portaalin kaikkiin sivuihin.&quot;, &quot;search_running&quot;: &quot;Haetaan…&quot;, &quot;search_none&quot;: &quot;Mikään rekisterin merkintä ei sisällä kaikkia sanoja. Kokeile vähemmillä tai eri sanoilla.&quot;, &quot;search_error&quot;: &quot;Hakuindeksin lataaminen epäonnistui. Yritä uudelleen.&quot;, &quot;results_one&quot;: &quot;{n} tulos haulla ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} tulosta haulla ”{q}”&quot;, &quot;results_none&quot;: &quot;Ei tuloksia haulla ”{q}”&quot;, &quot;expand_all&quot;: &quot;Avaa kaikki osat&quot;, &quot;collapse_all&quot;: &quot;Sulje kaikki osat&quot;}">
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Maailmanrakennusprojekti</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Hae portaalista</label>
+      <input type="search" id="q" name="q" placeholder="Hae portaalista" autocomplete="off">
+      <button type="submit">Hae</button>
+    </form>
+    <label class="visually-hidden" for="locale">Kieli</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi" selected>Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Tumma</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Hrossagri&#240;in keisarikunnan vaakuna: takajaloilleen nouseva hippogriifi pyöreässä kentässä" width="360" height="360">
+    <p class="masthead__state">Keisarillinen valtionportaali</p>
+    <p class="masthead__name"><a href="../../fi/">Hrossagri&#240;in keisarikunta</a></p>
+    <p class="masthead__motto">Hevosten turvapaikka ja rauha, joka pannaan täytäntöön</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Kaikki osastot">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Valikko
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keisarikunta</h2>
+            <ul>
+            <li><a href="../../fi/gov/">Hallinto ja oppi</a></li>
+            <li><a href="../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+            <li><a href="../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+            <li><a href="../../fi/gov/law/">Keisarillinen oikeus</a></li>
+            <li><a href="../../fi/history/">Historia</a></li>
+            <li><a href="../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Elämä täällä</h2>
+            <ul>
+            <li><a href="../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+            <li><a href="../../fi/living/health/">Terveydenhuolto</a></li>
+            <li><a href="../../fi/living/education/">Koulutus ja lapset</a></li>
+            <li><a href="../../fi/living/transport/">Liikenne ja tiet</a></li>
+            <li><a href="../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+            <li><a href="../../fi/living/money/">Työ ja raha</a></li>
+            <li><a href="../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hevoset ja tiet</h2>
+            <ul>
+            <li><a href="../../fi/horses/">Hevoset</a></li>
+            <li><a href="../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+            <li><a href="../../fi/horses/#service">Palvelushevoseläimet</a></li>
+            <li><a href="../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Tämä portaali</h2>
+            <ul>
+            <li><a href="../../fi/about/">Tietoa tästä projektista</a></li>
+            <li><a href="../../fi/search/">Hae portaalista</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../fi/">Etusivu</a>
+    <a href="../../fi/horses/">Hevoset</a>
+    <a href="../../fi/living/">Elämä</a>
+    <a href="../../fi/gov/" aria-current="page">Hallinto</a>
+    <a href="../../fi/gov/law/">Oikeus</a>
+    <a href="../../fi/history/">Historia</a>
+    <a href="../../fi/symbols/">Symbolit</a>
+    <a href="../../fi/about/">Tietoa</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../fi/">Etusivu</a><span>&rsaquo;</span><strong>Hallinto</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Kirja I</p>
+  <h1 class="page-title">Valtio ja sen oppi</h1>
+  <p class="page-standfirst">Hrossagri&#240;in täydellinen valtiosääntöinen määritelmä on eudaimonokraattinen diarkkinen monarkia. Eudaimonokratia vastaa siihen, miksi valtiovalta on olemassa. Diarkia vastaa siihen, kuka sitä pitää hallussaan.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Inhimillinen valtio.</strong> Hrossagri&#240;iä hallitsevat ihmiset ja se on olemassa ihmisiä varten. Sen kansalaiset, monarkit, virkamiehet, äänestäjät, työntekijät, potilaat ja matkustajat ovat ihmisiä. Hevoset ja muut hevoseläimet ovat suojeltuja eläviä olentoja ja työtovereita; ne eivät ole väestö eivätkä hoida mitään inhimillistä poliittista virkaa.</p></div>
+
+      <h2>Eudaimonokratia</h2>
+      <p class="h2-num">Artikla I &middot; Valtiovallan tarkoitus</p>
+      <p class="dropcap">Nimi tulee sanasta <em>eudaimonia</em>, klassisesta kreikkalaisesta käsitteestä, joka tavallisesti käännetään virheellisesti onnellisuudeksi. Se on lähempänä <strong>kukoistusta</strong>: elämää, joka sujuu kokonaisuutena hyvin, eikä hetkeä, joka tuntuu hyvältä. Ihminen voi nauttia jostakin ja samalla tuhota oman elämänsä, ja jokin tänään epämiellyttävä voi olla välttämätöntä aidosti hyvän elämän kannalta kokonaisuutena.</p>
+      <p>Tästä juontuu hrossagridilainen termi: kukoistukseen suuntautunut hallitseminen. Keisarikunta ei kuitenkaan pelkästään kopioi Aristotelesta. Klassinen eudaimonia koskee ensisijaisesti inhimillistä kukoistusta, ja Hrossagri&#240; laajentaa kehystä tietoisesti käyttämällä olemassa olevaa kahdeksanosaista eettistä järjestelmää.</p>
+
+      <div class="pullquote">
+        <p>Valtiovallan oikeutettu tarkoitus on maksimoida rakentava eloonjääminen ja kukoistus sekä minimoida vakava tuho kaikkien Kahdeksan dynamiikan alueella, määrittäen toimintalinjojen todelliset seuraukset parhaan käytettävissä olevan näytön perusteella.</p>
+      </div>
+
+      <h2 id="dynamics">Kahdeksan dynamiikkaa</h2>
+      <p class="h2-num">Artikla II &middot; Eettinen kehys ja sen alkuperä</p>
+      <p>Kahdeksan dynamiikkaa ei ole hrossagridilainen keksintö. Kyse on skientologian käsitteestä, joka kuvaa olemassaolon perusperiaatteen pyrkimyksenä eloonjäämiseen, joka jakautuu kahdeksaan toisiinsa kytkeytyvään vaistomaiseen pyrkimykseen. Keisarikunta lainaa tuon kehyksen eettiseksi järjestelmäkseen; siitä tehdyt poliittiset johtopäätökset ovat sen omia.</p>
+
+      <ol class="dynamics">
+        <li><strong>Itse</strong> &mdash; pyrkimys jäädä eloon yksilönä ja olla oma itsensä.</li>
+        <li><strong>Luovuus</strong> &mdash; tulevaisuutta varten tekeminen: seksi, perhe, lapset, heidän kasvattamisensa, eteenpäin suuntautuva luominen.</li>
+        <li><strong>Ryhmät</strong> &mdash; eloonjääminen ryhmän kautta tai ryhmänä, minkä kokoluokan tahansa, koululuokasta valtioon.</li>
+        <li><strong>Ihmiskunta</strong> &mdash; ihmislaji kokonaisuutena, erotuksena mistään yksittäisestä kansakunnasta.</li>
+        <li><strong>Elämänmuodot</strong> &mdash; eläimet, linnut, hyönteiset, kalat ja kasvillisuus; itse elämä.</li>
+        <li><strong>Fyysinen universumi</strong> &mdash; aine, energia, avaruus ja aika.</li>
+        <li><strong>Henkinen dynamiikka</strong> &mdash; henkiset olennot, henkinen olemassaolo ja elämän henkinen lähde.</li>
+        <li><strong>Äärettömyys</strong> &mdash; olemassaolo äärettömyytenä, joka yhdistetään Jumalaan, Korkeimpaan olentoon tai Luojaan.</li>
+      </ol>
+
+      <p>Lähdekehyksessä toimia, jotka lisäävät eloonjäämistä useimpien dynamiikkojen alueella, pidetään rakentavina, ja toimia, jotka tuhoavat tai kieltävät ne, tuhoavina. Juuri tämän osan Hrossagri&#240; muuntaa poliittiseksi menetelmäksi &mdash; ja viides dynamiikka on syy siihen, miksi <a href="../horses/">hevosta ei lueta pelkästään jonkun omaisuudeksi</a>.</p>
+
+      <h2>Mitä eudaimonokratia ei ole</h2>
+      <p class="h2-num">Artikla III &middot; Neljä pysyvää väärinymmärrystä</p>
+      <ul>
+        <li><strong>Ei onnellisuuskone.</strong> Välitön mielihyvä ei ole eudaimoniaa. Toimintalinjaa arvioidaan sen mukaan, miten se vaikuttaa elämään ajan mittaan sekä perheisiin, ryhmiin ja muihin.</li>
+        <li><strong>Ei tavanomainen demokratia.</strong> On parlamentti, vaalit, yleinen mielipide ja oikeus arvostella hallitusta &mdash; mutta enemmistö ei ole ehdoton suvereeni. Jos näyttö osoittaa vahvasti, että jokin linja aiheuttaa valtavaa vahinkoa, vastaus voi olla ei. Viisikymmentäyksi prosenttia äänistä ei tee tuhoisasta teosta rakentavaa.</li>
+        <li><strong>Ei teknokratia.</strong> Asiantuntijat toteavat ja koettelevat tosiasiat. Se, halutaanko jokin lopputulos ja millä hinnalla, on poliittinen ja eettinen kysymys; tiedemiehestä ei tule monarkkia sillä, että hän on tiedemies.</li>
+        <li><strong>Ei yksinkertainen utilitarismi.</strong> Kysymys ei ole siitä, kumpi hyödyn kokonaissumma on suurempi, vaan siitä, mitä tarkalleen luodaan ja mitä tuhotaan, missä, kuinka vakavasti ja voidaanko sama tulos saavuttaa vähemmällä tuholla.</li>
+      </ul>
+
+      <h2 id="diarchy">Keisarillinen diarkia</h2>
+      <p class="h2-num">Artikla IV &middot; Kaksi kruunua, vallaltaan tasavertaiset</p>
+      <p>Hrossagri&#240;iä hallitaan kahden pysyvän ja erillisen viran kautta, jotka ovat <strong>hallitsemisvallaltaan tasavertaiset</strong>. Kumpikaan monarkki ei komenna toista, ole tätä ylempi eikä voi yksipuolisesti erottaa tätä. Kummankin kruunun haltija voi käyttää keisarinnan tai keisarin arvonimeä; diarkian voi muodostaa kaksi keisarinnaa, kaksi keisaria tai yksi kumpaakin.</p>
+    </div>
+    <aside class="marg">
+      <strong>Lauma-arkkityypit</strong>
+      Kahta kruunua ymmärretään kulttuurisesti ohjaavan johtajatamman kautta, joka määrää suunnan, ja suojelevan orin kautta, joka tiedustelee ja vartioi. Nämä ovat tehtävän symboleja &mdash; eivät valtiosääntöisiä sääntöjä sukupuolesta, eivätkä ne rajoita ketään kansalaista.
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>Ohjaava kruunu</h3>
+      <p>Sisäinen hallinto, diplomatia, siviilihallinto, talouden ja yhteiskunnan suunta, infrastruktuuri sekä keisarikunnan pitkän aikavälin kurssi.</p>
+    </li>
+    <li>
+      <h3>Vartioiva kruunu</h3>
+      <p>Puolustus, rajat, kansallinen turvallisuus, sotilaallinen valmius, suojaava tiedustelu, hätätilasuojelu ja -toiminta, tiedustelupartiointi sekä suojaava strategia.</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>Ohjaavalla kruunulla on etusija vain seremoniallisessa arvojärjestyksessä sekä silloin, kun sama henkilö tulisi samanaikaisesti seuraavaksi oikeutetuksi lailliseen tarjoukseen kummastakin seuraantolinjasta. Tämä etusija ei anna suurempaa hallitsemisvaltaa.</p>
+      <p>Valtio on yksi, hallitus on yksi, ministeristö on yksi, valtion talousarvio on yksi, sotilaallinen rakenne on yksi ja valtion virkakunta on yksi. Kumpikaan kruunu ei saa perustaa kilpailevaa hallitusta, valtiovarainhoitoa, armeijaa, tiedustelupalvelua tai hallintoa, antaa käskyjä toisen komentoketjun kautta eikä erottaa toisen virkamiehiä.</p>
+
+      <h3>Mikä vaatii molemmat kruunut</h3>
+      <p>Kumpikin kruunu ratkaisee tavanomaiset asiat, joiden pääasiallinen tarkoitus ja välitön oikeusvaikutus kuuluvat sen omaan alaan. Päätöksestä tulee yhteinen, kun se välittömästi muuttaa toisen kruunun oikeudellista toimivaltaa tai komentoketjua; sitoo tai poistaa merkittävän osan yhteisistä varoista, henkilöstöstä, infrastruktuurista tai keskeisestä toimintakyvystä; luo sitovan kansallisen velvoitteen kummallakin alalla; tai aiheuttaa konkreettisen, merkittävän ja kohtuullisen todennäköisen vaikutuksen toisen kruunun turvallisuuteen tai sen kykyyn hoitaa tehtäviään.</p>
+      <p><strong>Ratkaisevaa on tosiasiallinen vaikutus.</strong> Päätös ei vapaudu yhteisen hyväksynnän vaatimuksesta sillä, että se jaetaan pienemmiksi toimiksi tai nimetään uudelleen väliaikaiseksi, kokeelliseksi, hallinnolliseksi, salaiseksi, sotilaalliseksi tai hätätilan kaltaiseksi. Luokittelua &mdash; ei toimintalinjaa &mdash; koskevat riidat ratkaisee kolme vanhempaa tuomaria, jotka valitaan julkisella tarkastetulla arvonnalla.</p>
+
+      <h3 id="deadlock">Umpikuja</h3>
+      <p>Kun kruunut ovat yhteisestä asiasta eri mieltä, kumpikaan ei saa pakottaa riidanalaista ehdotusta läpi. Tavanomainen yhteinen ehdotus on ratkaistava kolmenkymmenen päivän kuluessa, kiireellinen seitsemänkymmenenkahden tunnin kuluessa; ellei yksimielisyyttä saavuteta, <strong>ehdotus raukeaa</strong>. Vaikeneminen, saapumisesta kieltäytyminen tai viivyttely ei koskaan käy hyväksynnästä.</p>
+      <p>Tällöin aiempi laillinen tila jatkuu &mdash; julkiset palvelut, puolustusvalmius, välttämättömät väliaikaiset nimitykset ja välttämätön talousarvio, jota mukautetaan vain julkaistun objektiivisen kaavan mukaan. Tämä on olemassa siksi, ettei kruunu eikä parlamentti voi aiheuttaa romahdusta pelkästään aikaa kuluttamalla.</p>
+
+      <h3>Toiminta hätätilassa</h3>
+      <p>Käynnissä olevan tai välittömästi uhkaavan hyökkäyksen, katastrofin tai muun kiireellisen uhkan aikana Vartioiva kruunu voi antaa välittömiä operatiivisia käskyjä omalla alallaan odottamatta yhteistä hyväksyntää. Kiireellinen uhka Ohjaavan kruunun alalla &mdash; epidemia, ruoan, veden tai infrastruktuurin pettäminen, rahoitusjärjestelmän haltuunotto &mdash; antaa Ohjaavalle kruunulle samat vähimmäislaajuiset väliaikaiset käskyvaltuudet. Kumpikaan ei saa muuttaa valtiosääntöä, seuraantoa tai vallan perusjakoa, eikä kumpikaan saa naamioida tavanomaista poliittista mieltymystä hätätilaksi. Jokainen hätätilakäsky kirjataan perusteinaan olevine näyttöineen ja otetaan uudelleen tarkasteltavaksi vähintään seitsemänkymmenenkahden tunnin välein.</p>
+
+      <h2>Parlamentti ja tuomioistuimet</h2>
+      <p class="h2-num">Artikla V &middot; Kruunun ylivalta valtiosäännön sisällä</p>
+      <p>Hrossagri&#240;issä valta painottuu kruunulle, mutta <strong>kruunun ylivalta on olemassa valtiosäännön sisällä eikä sen ulkopuolella</strong>. Parlamentti edustaa kansaa, käy keskustelua laeista ja valmistelee niitä, tutkii väärinkäytöksiä, valvoo hallintoa ja käyttää sille siirrettyä toimivaltaa. Se ei voi säätää lakia sen kruunun tai niiden kruunujen kieltäytymisen yli, joiden suostumus vaaditaan, eikä sillä ole oikeutta kumota tuota kieltäytymistä.</p>
+
+      <h2>Seuraanto, sijaishallinto ja erottaminen</h2>
+      <p class="h2-num">Artikla VI &middot; Kaksi linjaa, pidettyinä erillään</p>
+      <p>Kahdella kruunulla on erilliset seuraantolinjat. Perimyksen lisäksi kruunu voidaan täyttää testamentilla tehtävällä nimeämisellä tai poissulkemisella, ja avoin kruunu voi mennä valtakunnallisiin vaaleihin, joissa ehdokkaat antavat julkisia lupauksia. Hyväksyminen ja kieltäytyminen ovat todellisia: kenenkään ei ole pakko ottaa kruunua vastaan. Alaikäinen monarkki hallitsee sijaishallintoneuvoston kautta, jonka toimivalta vapautuu asteittain iän myötä, ja väliaikaisella toimintakyvyttömyydellä, katoamisella, lääketieteellisillä perusteilla tapahtuvalla vetäytymisellä, luopumisella ja erottamisella on kullakin oma määritelty menettelynsä.</p>
+
+      <h2>Perustavat arvot</h2>
+      <p class="h2-num">Artikla VII &middot; Kahdeksan, kirjatussa järjestyksessä</p>
+      <ul>
+        <li>Historiallinen rehellisyys</li>
+        <li>Meritokratia</li>
+        <li>Eläinten hyvinvointi</li>
+        <li>Tieteellinen edistys</li>
+        <li>Ympäristöstä huolehtiminen</li>
+        <li>Pakolaisten kotouttaminen</li>
+        <li>Sosiaalinen tasa-arvo</li>
+        <li>Eettinen hallinto</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>Vastaava sitovien säädösten kokonaisuus &mdash; koodeksit, tekniset standardit ja viralliset lomakepohjat &mdash; on luetteloitu <a href="law/">keisarillisen oikeuden rekisteriin</a>. Se, mitä valtio tarjoaa täällä asuville, on esitetty osassa <a href="../living/">Elämä Hrossagri&#240;issä</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Kynnysluvut</strong>
+      Siellä missä valtiosääntö asettaa parlamentaarisen kynnysluvun, se lasketaan täydestä lakisääteisestä jäsenmäärästä. Avoimet paikat, poissaolot ja tyhjät äänet eivät pienennä nimittäjää.
+      <br><br>
+      <strong>Arvonta</strong>
+      Valtiosääntöriitojen tuomarit ja tarkastajat valitaan julkisella tarkastetulla arvonnalla jäädytetyistä ammattiluetteloista, joita ylläpitävät vakinaiset virkamiehet.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keisarikunta</h2>
+      <ul>
+        <li><a href="../../fi/gov/">Hallinto ja oppi</a></li>
+        <li><a href="../../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+        <li><a href="../../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+        <li><a href="../../fi/gov/law/">Keisarillinen oikeus</a></li>
+        <li><a href="../../fi/history/">Historia</a></li>
+        <li><a href="../../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elämä täällä</h2>
+      <ul>
+        <li><a href="../../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+        <li><a href="../../fi/living/health/">Terveydenhuolto</a></li>
+        <li><a href="../../fi/living/education/">Koulutus ja lapset</a></li>
+        <li><a href="../../fi/living/transport/">Liikenne ja tiet</a></li>
+        <li><a href="../../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+        <li><a href="../../fi/living/money/">Työ ja raha</a></li>
+        <li><a href="../../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hevoset ja tiet</h2>
+      <ul>
+        <li><a href="../../fi/horses/">Hevoset</a></li>
+        <li><a href="../../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+        <li><a href="../../fi/horses/#service">Palvelushevoseläimet</a></li>
+        <li><a href="../../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tämä portaali</h2>
+      <ul>
+        <li><a href="../../fi/about/">Tietoa tästä projektista</a></li>
+        <li><a href="../../fi/search/">Hae portaalista</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Hrossagri&#240;in keisarikunnan lippu" width="120" height="80">
+    <p class="footer__disclaimer">Valitettavasti Hrossagrith on kuvitteellinen maa. Tämä sivusto on maailmanrakennusprojekti, eikä sillä ole mitään yhteyttä mihinkään todelliseen valtioon, hallitukseen tai viralliseen elimeen.</p>
+    <p class="footer__meta">Hrossagri&#240;in keisarikunta &middot; Keisarillinen valtionportaali &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regering &mdash; Het Keizerrijk Hrossagri&#240;</title>
+<meta name="description" content="Eudaimonocratie, de Acht Dynamieken, de Leidende en de Behoedende Kroon, parlement en rechtbanken, troonopvolging en grondwaarden.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../nl/" data-i18n="{&quot;light&quot;: &quot;Licht&quot;, &quot;dark&quot;: &quot;Donker&quot;, &quot;theme_to_light&quot;: &quot;Overschakelen naar het lichte thema&quot;, &quot;theme_to_dark&quot;: &quot;Overschakelen naar het donkere thema&quot;, &quot;search_prompt&quot;: &quot;Typ hierboven een woord of woordgroep om elke pagina van dit portaal te doorzoeken.&quot;, &quot;search_running&quot;: &quot;Bezig met zoeken…&quot;, &quot;search_none&quot;: &quot;Geen enkel item in het register bevat alle woorden. Probeer minder of andere woorden.&quot;, &quot;search_error&quot;: &quot;De zoekindex kon niet worden geladen. Probeer het opnieuw.&quot;, &quot;results_one&quot;: &quot;{n} resultaat voor “{q}”&quot;, &quot;results_many&quot;: &quot;{n} resultaten voor “{q}”&quot;, &quot;results_none&quot;: &quot;Niets gevonden voor “{q}”&quot;, &quot;expand_all&quot;: &quot;Alle delen uitklappen&quot;, &quot;collapse_all&quot;: &quot;Alle delen inklappen&quot;}">
+<a class="skip-link" href="#main">Naar de inhoud</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Een worldbuildingproject</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Doorzoek het portaal</label>
+      <input type="search" id="q" name="q" placeholder="Doorzoek het portaal" autocomplete="off">
+      <button type="submit">Zoeken</button>
+    </form>
+    <label class="visually-hidden" for="locale">Taal</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl" selected>Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Donker</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Wapen van Het Keizerrijk Hrossagri&#240;: een steigerende hippogrief binnen een rondeel" width="360" height="360">
+    <p class="masthead__state">Keizerlijk Staatsportaal</p>
+    <p class="masthead__name"><a href="../../nl/">Het Keizerrijk Hrossagri&#240;</a></p>
+    <p class="masthead__motto">De toevlucht der paarden, en de vrede die wordt gehandhaafd</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle afdelingen">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Het Keizerrijk</h2>
+            <ul>
+            <li><a href="../../nl/gov/">Regering en doctrine</a></li>
+            <li><a href="../../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+            <li><a href="../../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+            <li><a href="../../nl/gov/law/">Keizerlijk recht</a></li>
+            <li><a href="../../nl/history/">Geschiedenis</a></li>
+            <li><a href="../../nl/symbols/">Naam, vlag en symbolen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Het leven hier</h2>
+            <ul>
+            <li><a href="../../nl/living/">Leven in Hrossagri&#240;</a></li>
+            <li><a href="../../nl/living/health/">Gezondheidszorg</a></li>
+            <li><a href="../../nl/living/education/">Onderwijs en kinderen</a></li>
+            <li><a href="../../nl/living/transport/">Vervoer en wegen</a></li>
+            <li><a href="../../nl/living/justice/">Justitie en politie</a></li>
+            <li><a href="../../nl/living/money/">Werk en geld</a></li>
+            <li><a href="../../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Paarden en wegen</h2>
+            <ul>
+            <li><a href="../../nl/horses/">Paarden</a></li>
+            <li><a href="../../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+            <li><a href="../../nl/horses/#service">Dienstequiden</a></li>
+            <li><a href="../../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dit portaal</h2>
+            <ul>
+            <li><a href="../../nl/about/">Over dit project</a></li>
+            <li><a href="../../nl/search/">Doorzoek het portaal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../nl/">Startpagina</a>
+    <a href="../../nl/horses/">Paarden</a>
+    <a href="../../nl/living/">Leven</a>
+    <a href="../../nl/gov/" aria-current="page">Regering</a>
+    <a href="../../nl/gov/law/">Recht</a>
+    <a href="../../nl/history/">Geschiedenis</a>
+    <a href="../../nl/symbols/">Symbolen</a>
+    <a href="../../nl/about/">Over</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../nl/">Startpagina</a><span>&rsaquo;</span><strong>Regering</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Boek I</p>
+  <h1 class="page-title">De staat en zijn doctrine</h1>
+  <p class="page-standfirst">De volledige staatsrechtelijke omschrijving van Hrossagri&#240; luidt: een eudaimonocratische diarchische monarchie. De eudaimonocratie beantwoordt waarom staatsmacht bestaat. De diarchie beantwoordt wie haar draagt.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Een menselijke staat.</strong> Hrossagri&#240; wordt bestuurd door mensen en ten behoeve van mensen. Zijn burgers, monarchen, ambtsdragers, kiezers, werkenden, patiënten en passagiers zijn mensen. Paarden en andere equiden zijn beschermde levende wezens en werkpartners; zij vormen niet de bevolking en bekleden geen menselijk politiek ambt.</p></div>
+
+      <h2>Eudaimonocratie</h2>
+      <p class="h2-num">Artikel I &middot; Het doel van de staatsmacht</p>
+      <p class="dropcap">De naam komt van <em>eudaimonia</em>, het klassiek-Griekse begrip dat gewoonlijk verkeerd wordt vertaald als geluk. Het ligt dichter bij <strong>bloei</strong>: een leven dat als geheel goed verloopt, en niet een ogenblik dat aangenaam aanvoelt. Iemand kan van iets genieten terwijl hij zijn eigen leven vernietigt, en iets dat vandaag onaangenaam is, kan noodzakelijk zijn voor een werkelijk goed leven in zijn geheel.</p>
+      <p>Daaruit komt de hrossagridische term voort: bestuur dat op bloei is gericht. Maar het Keizerrijk kopieert Aristoteles niet zonder meer. De klassieke eudaimonia gaat in de eerste plaats over menselijke bloei, en Hrossagri&#240; verruimt dat kader bewust met behulp van een bestaande achtdelige ethische ordening.</p>
+
+      <div class="pullquote">
+        <p>Het rechtmatige doel van de staatsmacht is het opbouwende overleven en de bloei te maximaliseren en ernstige vernietiging te minimaliseren over de Acht Dynamieken heen, waarbij de werkelijke gevolgen van beleid worden bepaald met het beste beschikbare bewijsmateriaal.</p>
+      </div>
+
+      <h2 id="dynamics">De Acht Dynamieken</h2>
+      <p class="h2-num">Artikel II &middot; Het ethische kader en waar het vandaan komt</p>
+      <p>De Acht Dynamieken zijn geen hrossagridische uitvinding. Zij zijn een begrip uit Scientology, die het grondbeginsel van het bestaan beschrijft als een drang tot overleven, verdeeld over acht onderling verbonden strevingen. Het Keizerrijk ontleent dat kader als zijn ethische ordening; de politieke gevolgtrekkingen die eruit worden getrokken, zijn de zijne.</p>
+
+      <ol class="dynamics">
+        <li><strong>Zelf</strong> &mdash; de drang om als individu te overleven en zichzelf te zijn.</li>
+        <li><strong>Creativiteit</strong> &mdash; scheppen voor de toekomst: seks, gezin, kinderen, hun opvoeding, schepping die vooruit is gericht.</li>
+        <li><strong>Groepen</strong> &mdash; overleven door of als groep van welke omvang ook, van een schoolklas tot een staat.</li>
+        <li><strong>Mensheid</strong> &mdash; de menselijke soort als geheel, onderscheiden van welke afzonderlijke natie ook.</li>
+        <li><strong>Levensvormen</strong> &mdash; dieren, vogels, insecten, vissen en planten; het leven zelf.</li>
+        <li><strong>Fysiek universum</strong> &mdash; materie, energie, ruimte en tijd.</li>
+        <li><strong>Geestelijke dynamiek</strong> &mdash; geestelijke wezens, geestelijk bestaan en de geestelijke bron van het leven.</li>
+        <li><strong>Oneindigheid</strong> &mdash; het bestaan als oneindigheid, verbonden met God, het Opperwezen of de Schepper.</li>
+      </ol>
+
+      <p>In het oorspronkelijke kader gelden handelingen die het overleven over de meerderheid van de Dynamieken vergroten als opbouwend, en handelingen die deze vernietigen of ontkennen als vernietigend. Juist van dat deel maakt Hrossagri&#240; een politieke methode &mdash; en de Vijfde Dynamiek is de reden waarom <a href="../horses/">een paard niet louter als andermans eigendom geldt</a>.</p>
+
+      <h2>Wat eudaimonocratie niet is</h2>
+      <p class="h2-num">Artikel III &middot; Vier hardnekkige misverstanden</p>
+      <ul>
+        <li><strong>Geen geluksmachine.</strong> Onmiddellijk genot is geen eudaimonia. Een beleid wordt beoordeeld naar zijn uitwerking op een leven in de tijd, en op gezinnen, groepen en anderen.</li>
+        <li><strong>Geen gewone democratie.</strong> Er is een parlement, er zijn verkiezingen, publieke opinie en het recht om de regering te bekritiseren &mdash; maar de meerderheid is niet de volstrekte soeverein. Wanneer het bewijsmateriaal sterk aangeeft dat een koers enorme schade zal aanrichten, kan het antwoord nee luiden. Eenenvijftig procent van de stemmen maakt van een vernietigende handeling geen opbouwende.</li>
+        <li><strong>Geen technocratie.</strong> Deskundigen stellen feiten vast en toetsen ze. Of een uitkomst gewenst is, en tegen welke prijs, is een politieke en ethische vraag; een wetenschapper wordt geen monarch doordat hij wetenschapper is.</li>
+        <li><strong>Geen eenvoudig utilitarisme.</strong> De vraag is niet welk totaal aan baten groter is, maar wat er precies wordt geschapen en wat er wordt vernietigd, waar, hoe ernstig, en of hetzelfde resultaat met minder vernietiging kan worden bereikt.</li>
+      </ul>
+
+      <h2 id="diarchy">De Keizerlijke Diarchie</h2>
+      <p class="h2-num">Artikel IV &middot; Twee Kronen, gelijk in gezag</p>
+      <p>Hrossagri&#240; wordt bestuurd door twee blijvende en gescheiden ambten, <strong>gelijk in bestuursgezag</strong>. Geen van beide monarchen geeft de ander bevelen, staat boven de ander of mag de ander eenzijdig ontslaan. De drager van elk van beide Kronen mag de titel keizerin of keizer voeren; de diarchie kan bestaan uit twee keizerinnen, uit twee keizers of uit één van elk.</p>
+    </div>
+    <aside class="marg">
+      <strong>Kudde-archetypen</strong>
+      De twee Kronen worden cultureel begrepen door de leidende merrie, die de richting bepaalt, en de behoedende hengst, die verkent en bewaakt. Dit zijn symbolen van functie &mdash; geen staatsrechtelijke regels over geslacht of gender, en geen beperking voor welke burger ook.
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>De Leidende Kroon</h3>
+      <p>Binnenlands bestuur, diplomatie, burgerlijk bestuur, economische en sociale richting, infrastructuur en de langetermijnkoers van het Keizerrijk.</p>
+    </li>
+    <li>
+      <h3>De Behoedende Kroon</h3>
+      <p>Defensie, grenzen, nationale veiligheid, militaire paraatheid, beschermende inlichtingen, bescherming en optreden bij noodsituaties, verkenning en beschermende strategie.</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>De Leidende Kroon heeft slechts voorrang in de ceremoniële rangorde, en in het geval dat dezelfde persoon tegelijkertijd als eerstvolgende in aanmerking zou komen voor een rechtmatig aanbod uit beide opvolgingslijnen. Die voorrang verleent geen grotere bestuursmacht.</p>
+      <p>Er is één staat, één regering, één kabinet, één nationale begroting, één militaire structuur en één ambtenarenapparaat. Geen van beide Kronen mag een concurrerende regering, schatkist, krijgsmacht, inlichtingendienst of administratie in het leven roepen, bevelen geven via de bevelsketen van de ander, of de ambtenaren van de ander ontslaan.</p>
+
+      <h3>Wat beide Kronen vereist</h3>
+      <p>Elke Kroon beslist over gewone aangelegenheden waarvan het overheersende doel en het rechtstreekse rechtsgevolg in haar eigen gebied liggen. Een besluit wordt gezamenlijk wanneer het rechtstreeks het rechtsgezag of de bevelsketen van de andere Kroon wijzigt; wanneer het een aanzienlijk deel van gedeeld geld, personeel, infrastructuur of operationele kernvermogens vastlegt of onttrekt; wanneer het een bindende nationale verplichting in beide gebieden schept; of wanneer het een concreet, aanzienlijk en redelijkerwijs waarschijnlijk gevolg heeft voor de veiligheid van de andere Kroon of voor haar vermogen haar taken te vervullen.</p>
+      <p><strong>Het feitelijke gevolg is beslissend.</strong> Een besluit kan zich niet aan de gezamenlijke goedkeuring onttrekken door in kleinere handelingen te worden opgesplitst, of door te worden omgedoopt tot tijdelijk, experimenteel, administratief, geheim, militair of noodgerelateerd. Geschillen over de kwalificatie &mdash; niet over het beleid &mdash; gaan naar drie hoge rechters, aangewezen door openbare, gecontroleerde loting.</p>
+
+      <h3 id="deadlock">Impasse</h3>
+      <p>Wanneer de Kronen het over een gezamenlijke aangelegenheid oneens zijn, mag geen van beide het omstreden voorstel opleggen. Een gewoon gezamenlijk voorstel moet binnen dertig dagen worden afgedaan, een spoedeisend binnen tweeënzeventig uur; wordt geen overeenstemming bereikt, dan <strong>vervalt het voorstel</strong>. Zwijgen, weigeren te verschijnen of vertragen geldt nooit als goedkeuring.</p>
+      <p>Vervolgens blijft de vorige rechtmatige toestand voortduren &mdash; openbare diensten, defensieve paraatheid, noodzakelijke tijdelijke benoemingen en een essentiële begroting die uitsluitend volgens een gepubliceerde objectieve formule wordt bijgesteld. Dit bestaat opdat noch een Kroon noch het parlement een ineenstorting kan bewerkstelligen door de klok te laten aflopen.</p>
+
+      <h3>Optreden bij noodsituaties</h3>
+      <p>Tijdens een lopende of ophanden zijnde aanval, ramp of andere tijdkritieke dreiging mag de Behoedende Kroon binnen haar gebied onmiddellijke operationele bevelen geven zonder de gezamenlijke goedkeuring af te wachten. Een dringende dreiging binnen het gebied van de Leidende Kroon &mdash; een epidemie, het uitvallen van de voedsel- of watervoorziening of van de infrastructuur, de overname van het financiële stelsel &mdash; geeft de Leidende Kroon dezelfde minimale tijdelijke bevelsbevoegdheid. Geen van beide mag de Grondwet, de troonopvolging of de grondverdeling van de macht wijzigen, en geen van beide mag een gewone beleidsvoorkeur vermommen als een noodsituatie. Elk noodbevel wordt met het bijbehorende bewijsmateriaal vastgelegd en ten minste elke tweeënzeventig uur herzien.</p>
+
+      <h2>Parlement en rechtbanken</h2>
+      <p class="h2-num">Artikel V &middot; Voorrang van de Kroon binnen de grondwet</p>
+      <p>Hrossagri&#240; is een staat waarin de Kroon overheerst, maar <strong>die voorrang van de Kroon bestaat binnen de Grondwet en niet daarbuiten</strong>. Het parlement vertegenwoordigt het publiek, bespreekt en ontwerpt wetten, onderzoekt misstanden, houdt toezicht op de administratie en oefent gedelegeerde bevoegdheden uit. Het kan geen wet aannemen tegen de weigering in van de Kroon of de Kronen wier instemming vereist is, en het heeft geen recht van doorbreking.</p>
+
+      <h2>Troonopvolging, regentschap en afzetting</h2>
+      <p class="h2-num">Artikel VI &middot; Twee lijnen, gescheiden gehouden</p>
+      <p>De twee Kronen hebben gescheiden opvolgingslijnen. Naast de erfelijke opvolging kan een Kroon worden vervuld door benoeming of uitsluiting bij testament, en een vacante Kroon kan overgaan op een nationale verkiezing waarin de kandidaten openbare beloften doen. Aanvaarding en weigering zijn werkelijk: niemand is verplicht te aanvaarden. Een minderjarige monarch regeert door middel van een regentschapsraad waarvan het gezag geleidelijk met de leeftijd wordt vrijgegeven, en tijdelijke onbekwaamheid, verdwijning, ontslag om medische redenen, troonsafstand en afzetting hebben elk hun eigen omschreven procedure.</p>
+
+      <h2>Grondwaarden</h2>
+      <p class="h2-num">Artikel VII &middot; Acht, in de opgetekende volgorde</p>
+      <ul>
+        <li>Historische eerlijkheid</li>
+        <li>Meritocratie</li>
+        <li>Dierenwelzijn</li>
+        <li>Wetenschappelijke vooruitgang</li>
+        <li>Zorg voor het milieu</li>
+        <li>Integratie van vluchtelingen</li>
+        <li>Sociale gelijkheid</li>
+        <li>Ethisch bestuur</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>Het bijbehorende geheel van bindende regelingen &mdash; codes, technische normen en officiële formulieren &mdash; is opgetekend in het <a href="law/">register van het keizerlijk recht</a>. Wat de staat biedt aan de mensen die hier wonen, is uiteengezet in <a href="../living/">Leven in Hrossagri&#240;</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Drempels</strong>
+      Waar de Grondwet een parlementaire drempel stelt, wordt deze afgemeten aan het volledige wettelijke ledental. Vacatures, afwezigheden en onthoudingen verlagen de noemer niet.
+      <br><br>
+      <strong>Loting</strong>
+      Rechters en controleurs voor grondwettelijke geschillen worden door openbare, gecontroleerde loting aangewezen uit bevroren beroepslijsten die door vaste ambtenaren worden bijgehouden.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Het Keizerrijk</h2>
+      <ul>
+        <li><a href="../../nl/gov/">Regering en doctrine</a></li>
+        <li><a href="../../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+        <li><a href="../../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+        <li><a href="../../nl/gov/law/">Keizerlijk recht</a></li>
+        <li><a href="../../nl/history/">Geschiedenis</a></li>
+        <li><a href="../../nl/symbols/">Naam, vlag en symbolen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Het leven hier</h2>
+      <ul>
+        <li><a href="../../nl/living/">Leven in Hrossagri&#240;</a></li>
+        <li><a href="../../nl/living/health/">Gezondheidszorg</a></li>
+        <li><a href="../../nl/living/education/">Onderwijs en kinderen</a></li>
+        <li><a href="../../nl/living/transport/">Vervoer en wegen</a></li>
+        <li><a href="../../nl/living/justice/">Justitie en politie</a></li>
+        <li><a href="../../nl/living/money/">Werk en geld</a></li>
+        <li><a href="../../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Paarden en wegen</h2>
+      <ul>
+        <li><a href="../../nl/horses/">Paarden</a></li>
+        <li><a href="../../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+        <li><a href="../../nl/horses/#service">Dienstequiden</a></li>
+        <li><a href="../../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dit portaal</h2>
+      <ul>
+        <li><a href="../../nl/about/">Over dit project</a></li>
+        <li><a href="../../nl/search/">Doorzoek het portaal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Vlag van Het Keizerrijk Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Helaas is Hrossagrith een fictief land. Deze website is een worldbuildingproject en heeft geen enkele band met een werkelijke staat, regering of officiële instantie.</p>
+    <p class="footer__meta">Het Keizerrijk Hrossagri&#240; &middot; Keizerlijk Staatsportaal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

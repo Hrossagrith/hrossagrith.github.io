@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hrossagri&#240;in keisarikunta &mdash; keisarillinen valtionportaali</title>
+<meta name="description" content="Hrossagri&#240;in keisarikunnan virallinen portaali: hevoset, terveydenhuolto, koulutus, liikenne, oikeus, hallinto, laki, historia ja symbolit. Maailmanrakennusprojekti.">
+<link rel="icon" href="../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../" data-base="../fi/" data-i18n="{&quot;light&quot;: &quot;Vaalea&quot;, &quot;dark&quot;: &quot;Tumma&quot;, &quot;theme_to_light&quot;: &quot;Vaihda vaaleaan teemaan&quot;, &quot;theme_to_dark&quot;: &quot;Vaihda tummaan teemaan&quot;, &quot;search_prompt&quot;: &quot;Kirjoita yllä olevaan kenttään sana tai lause, niin haku kohdistuu portaalin kaikkiin sivuihin.&quot;, &quot;search_running&quot;: &quot;Haetaan…&quot;, &quot;search_none&quot;: &quot;Mikään rekisterin merkintä ei sisällä kaikkia sanoja. Kokeile vähemmillä tai eri sanoilla.&quot;, &quot;search_error&quot;: &quot;Hakuindeksin lataaminen epäonnistui. Yritä uudelleen.&quot;, &quot;results_one&quot;: &quot;{n} tulos haulla ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} tulosta haulla ”{q}”&quot;, &quot;results_none&quot;: &quot;Ei tuloksia haulla ”{q}”&quot;, &quot;expand_all&quot;: &quot;Avaa kaikki osat&quot;, &quot;collapse_all&quot;: &quot;Sulje kaikki osat&quot;}">
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Maailmanrakennusprojekti</p>
+    <form class="search" role="search" action="../search/" method="get">
+      <label class="visually-hidden" for="q">Hae portaalista</label>
+      <input type="search" id="q" name="q" placeholder="Hae portaalista" autocomplete="off">
+      <button type="submit">Hae</button>
+    </form>
+    <label class="visually-hidden" for="locale">Kieli</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi" selected>Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Tumma</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../assets/emblem.png"
+         alt="Hrossagri&#240;in keisarikunnan vaakuna: takajaloilleen nouseva hippogriifi pyöreässä kentässä" width="360" height="360">
+    <p class="masthead__state">Keisarillinen valtionportaali</p>
+    <p class="masthead__name"><a href="../fi/">Hrossagri&#240;in keisarikunta</a></p>
+    <p class="masthead__motto">Hevosten turvapaikka ja rauha, joka pannaan täytäntöön</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Kaikki osastot">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Valikko
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keisarikunta</h2>
+            <ul>
+            <li><a href="../fi/gov/">Hallinto ja oppi</a></li>
+            <li><a href="../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+            <li><a href="../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+            <li><a href="../fi/gov/law/">Keisarillinen oikeus</a></li>
+            <li><a href="../fi/history/">Historia</a></li>
+            <li><a href="../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Elämä täällä</h2>
+            <ul>
+            <li><a href="../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+            <li><a href="../fi/living/health/">Terveydenhuolto</a></li>
+            <li><a href="../fi/living/education/">Koulutus ja lapset</a></li>
+            <li><a href="../fi/living/transport/">Liikenne ja tiet</a></li>
+            <li><a href="../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+            <li><a href="../fi/living/money/">Työ ja raha</a></li>
+            <li><a href="../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hevoset ja tiet</h2>
+            <ul>
+            <li><a href="../fi/horses/">Hevoset</a></li>
+            <li><a href="../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+            <li><a href="../fi/horses/#service">Palvelushevoseläimet</a></li>
+            <li><a href="../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Tämä portaali</h2>
+            <ul>
+            <li><a href="../fi/about/">Tietoa tästä projektista</a></li>
+            <li><a href="../fi/search/">Hae portaalista</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../fi/" aria-current="page">Etusivu</a>
+    <a href="../fi/horses/">Hevoset</a>
+    <a href="../fi/living/">Elämä</a>
+    <a href="../fi/gov/">Hallinto</a>
+    <a href="../fi/gov/law/">Oikeus</a>
+    <a href="../fi/history/">Historia</a>
+    <a href="../fi/symbols/">Symbolit</a>
+    <a href="../fi/about/">Tietoa</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero__art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="A road running through a stone gate between low hills">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--art-sky-top, #dfe7ee)"/>
+      <stop offset="1" stop-color="var(--art-sky-bottom, #eef1e9)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- Far hills -->
+  <path d="M 0 214 C 120 190, 210 200, 300 210 C 400 221, 470 196, 560 190
+           C 660 183, 740 205, 840 202 C 940 199, 1050 178, 1200 192 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-far, #cfdcd3)"/>
+
+  <!-- Middle hills -->
+  <path d="M 0 250 C 130 232, 240 246, 350 254 C 460 262, 540 244, 660 242
+           C 780 240, 900 258, 1010 252 C 1100 247, 1150 240, 1200 236 L 1200 340 L 0 340 Z"
+        fill="var(--art-hill-mid, #b9cdbc)"/>
+
+  <!-- Near ground -->
+  <path d="M 0 288 C 160 278, 320 288, 470 292 C 620 296, 760 286, 900 288
+           C 1020 290, 1120 294, 1200 292 L 1200 340 L 0 340 Z"
+        fill="var(--art-ground, #a8c0ad)"/>
+
+  <!-- The road, narrowing toward the gate -->
+  <path d="M 520 214 L 680 214 L 900 340 L 300 340 Z" fill="var(--art-road, #e6e2d4)"/>
+  <path d="M 598 216 L 602 216 L 612 340 L 588 340 Z" fill="var(--art-road-line, #ddd6c4)"/>
+
+  <!-- Stone gate: the border at which pursuit stops -->
+  <g fill="var(--art-stone, #7d8b84)">
+    <rect x="452" y="96" width="46" height="152" rx="4"/>
+    <rect x="702" y="96" width="46" height="152" rx="4"/>
+    <path d="M 452 96 L 748 96 L 748 132 L 452 132 Z"/>
+    <path d="M 498 132 C 520 132, 540 148, 548 172 L 560 172 C 552 140, 528 120, 498 120 Z"/>
+    <path d="M 702 132 C 680 132, 660 148, 652 172 L 640 172 C 648 140, 672 120, 702 120 Z"/>
+  </g>
+  <g fill="var(--art-stone-dark, #63706a)">
+    <rect x="446" y="86" width="58" height="14" rx="3"/>
+    <rect x="696" y="86" width="58" height="14" rx="3"/>
+    <rect x="440" y="72" width="320" height="16" rx="3"/>
+  </g>
+
+  <!-- Hoofprints along the road -->
+  <g fill="var(--art-hoof, #c8bfa6)">
+    <ellipse cx="566" cy="262" rx="4" ry="5"/>
+    <ellipse cx="578" cy="264" rx="4" ry="5"/>
+    <ellipse cx="546" cy="292" rx="5" ry="6"/>
+    <ellipse cx="560" cy="295" rx="5" ry="6"/>
+    <ellipse cx="520" cy="324" rx="6" ry="7.5"/>
+    <ellipse cx="537" cy="328" rx="6" ry="7.5"/>
+  </g>
+</svg>
+</div>
+  <div class="shell">
+    <div class="hero__panel">
+      <h1>Raja, jolla takaa-ajo päättyy</h1>
+      <p>Kaikki, mitä keisarikunta tekee täällä asuvien ihmisten ja niiden eläinten hyväksi, joiden mukaan se on nimetty.</p>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="shell wrap">
+  <div class="two">
+    <div class="col">
+      <p class="entry">Merkintä I &middot; Perustava merkitys</p>
+      <h2>Miksi keisarikunta kantaa tätä nimeä</h2>
+      <p class="h2-num">Merkitty keisarilliseen rekisteriin</p>
+      <p class="dropcap">Hrossagri&#240;in nimi ei tule sen hevosista. Se tulee sen sanasta <span class="native">gri&#240;</span> &mdash; taattu rauha, turvallinen kulku, armo, turvapaikka &mdash; ja niistä hevosista, jotka määrittävät, kenelle turvapaikka kuuluu. Nimi syntyi eksonyyminä. Kauppiaat, sanansaattajat, pakolaiset ja ratsastajat, jotka ylittivät rajan, havaitsivat, että takaa-ajon oli loputtava: matkalainen, hänen seuralaisensa ja hänen hevoseläimensä siirtyivät kaikki suojelun piiriin.</p>
+      <p>Hevosia ei voitu takavarikoida sotaan, varastaa, pakko-ottaa, vaihtaa pois eikä käyttää painostuskeinona niitä ihmisiä vastaan, jotka olivat niistä riippuvaisia. Ulkopuoliset kutsuivat tätä tilaa nimellä <span class="native">hrossagri&#240;</span>, ja aikaa myöten sana kulkeutui rajalta ulospäin teille, asutuksiin, tunnustetulle alueelle ja lopulta itse maahan.</p>
+    </div>
+    <aside class="marg">
+      <strong>Reunahuomautus</strong>
+      Nimen vanhin käytännöllinen merkitys: raja, jolla takaa-ajo päättyi ja suojelu alkoi &mdash; yhtä lailla matkalaisen kuin häntä kantavan eläimen osalta.
+    </aside>
+  </div>
+
+  <div class="pullquote">
+    <p>Ihmisen suojelu on vaillinaista siellä, missä hänen hevosensa, liikkumisvälineensä, toimeentulonsa tai kotimatkansa voidaan yhä ottaa haltuun, pahoinpidellä, uuvuttaa tai käyttää painostuskeinona.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Merkintä II &middot; Osastojen rekisteri</p>
+  <h2>Palvelut ja tiedot</h2>
+  <p class="h2-num">Kaikki, mitä keisarikunta pitää kirjattuna täällä asuvia varten</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <p class="service__no">Osasto I</p>
+      <h3><a href="horses/">Hevoset</a></h3>
+      <p>Kansallisaarre ja syy siihen, miksi keisarikunta on juuri tämän muotoinen. Hyvinvointi, kuolaimeton varustus, tiestatus, palvelushevoseläimet.</p>
+      <ul class="service__links"><li><a href="horses/road-status/">Tiestatusmerkit</a></li><li><a href="horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">Osasto II</p>
+      <h3><a href="living/health/">Terveydenhuolto</a></h3>
+      <p>Maksuton käyttöhetkellä, runsaasti rahoitettu ja suunniteltu jonoja, henkilöstöpulaa ja alueellista eriarvoisuutta vastaan.</p>
+      <ul class="service__links"><li><a href="living/health/">Mitä keisarikunta takaa</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">Osasto III</p>
+      <h3><a href="living/education/">Koulutus &amp; lapset</a></h3>
+      <p>Maksuton koulutus kaikilla asteilla, maksuton varhaiskasvatus riippumatta vanhempien työssäkäynnistä ja poikkeuksellisen vahva lastensuojelu.</p>
+      <ul class="service__links"><li><a href="living/education/#childcare">Varhaiskasvatus</a></li><li><a href="living/education/#protection">Lasten suojelu</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">Osasto IV</p>
+      <h3><a href="living/transport/">Liikenne &amp; tiet</a></h3>
+      <p>Maa, joka on rakennettu hevosvetoisen tieliikenteen ja rautateiden varaan, yhdellä kapealla moottoroidun tavaraliikenteen poikkeuksella.</p>
+      <ul class="service__links"><li><a href="living/transport/#hrossaway">Hrossaway</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">Osasto V</p>
+      <h3><a href="living/justice/">Oikeus &amp; poliisitoimi</a></h3>
+      <p>Ilmailutasoinen poliisin valinta ja koulutus, tilanteen rauhoittaminen lähtökohtana ja kuolemanrangaistuksen ehdoton kielto.</p>
+      <ul class="service__links"><li><a href="living/justice/#privacy">Yksityisyys ja tietoverkkorikollisuus</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">Osasto VI</p>
+      <h3><a href="living/money/">Työ &amp; raha</a></h3>
+      <p>Progressiivinen verotus tuloista, varallisuudesta, luovutusvoitoista ja suurista perinnöistä.</p>
+      <ul class="service__links"><li><a href="living/money/">Verotus</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">Osasto VII</p>
+      <h3><a href="living/citizenship/">Kansalaisuus &amp; turvapaikka</a></h3>
+      <p>Moninainen inhimillinen kansakunta, joka polveutuu monista kansoista, jotka ovat vuosisatojen kuluessa yhdentyneet muuttoliikkeen ja turvapaikan kautta.</p>
+      <ul class="service__links"><li><a href="living/citizenship/">Turvapaikka ja kotoutuminen</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <p class="service__no">Osasto VIII</p>
+      <h3><a href="gov/">Hallinto</a></h3>
+      <p>Eudaimonokratia, kahdeksan dynamiikkaa ja kaksi tasavertaista kruunua, jotka hallitsevat yhden valtiosäännön alaisuudessa.</p>
+      <ul class="service__links"><li><a href="gov/#diarchy">Keisarillinen diarkia</a></li><li><a href="gov/law/">Oikeuskorpus</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <p class="service__no">Osasto IX</p>
+      <h3><a href="history/">Historia</a></h3>
+      <p>Ylityskriisistä c.&nbsp;1050 eKr. kolmannen vuosisadan hevostakuukiistoihin.</p>
+      <ul class="service__links"><li><a href="history/">Varhainen historia, c. 1200&ndash;100 eKr.</a></li></ul>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <p class="service__no">Osasto X</p>
+      <h3><a href="symbols/">Nimi &amp; symbolit</a></h3>
+      <p>Kanoniset muodot, muinaisskandinaavinen etymologia, lippu ja kansalliseläin.</p>
+      <ul class="service__links"><li><a href="symbols/#flag">Lippu</a></li></ul>
+    </li>
+  </ul>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <div class="two">
+    <div class="col">
+      <p class="entry">Merkintä III &middot; Valtio</p>
+      <h2>Mikä keisarikunta on</h2>
+      <p class="h2-num">Väestö, valtiosääntö ja luonne</p>
+      <p>Nykyinen Hrossagri&#240; on <strong>inhimillinen kansakunta</strong> ja hyvin moninainen sellainen: sen väestö polveutuu lukuisista kansoista, jotka ovat vuosisatojen kuluessa yhdentyneet muuttoliikkeen ja turvapaikan kautta. Hevoset ja muut hevoseläimet ovat suojeltuja eläviä olentoja, seuralaisia ja työtovereita sekä keisarikunnan tieliikennekulttuurin perusta. Ne eivät ole väestö eivätkä hoida mitään inhimillistä poliittista virkaa.</p>
+      <p>Valtiosäännöltään keisarikunta on <a href="gov/">eudaimonokraattinen diarkkinen monarkia</a>: kaksi tasavertaista kruunua, Ohjaava ja Vartioiva, jotka hallitsevat sellaisen filosofian mukaisesti, joka mittaa toimintalinjaa sillä, mitä se rakentaa ja mitä se tuhoaa koko elämän laajuudelta, eikä sillä, mitä enemmistö sattuu haluamaan.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Historiallinen totuus.</strong> Keisarikunta ei kirjoita historiaansa uudelleen, pyyhi sitä pois eikä kaunistele sitä poliittisiin tarkoituksiin. Sen kirjaus omista onnistumisistaan, epäonnistumisistaan, vääryyksistään ja kiistanalaisista päätöksistään on tarkoitettu paikkansapitäväksi, ja <a href="history/">historiaosasto</a> ilmoittaa oman rekonstruktionsa rajat sen sijaan, että salaisi ne.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Kanoniset muodot</strong>
+      Alkuperäinen: <span class="native">Hrossagri&#240;</span><br>
+      Kansainvälinen: Hrossagrith<br>
+      Kansalainen: Hrossagrith (taipumaton)<br>
+      Adjektiivi: hrossagridilainen<br>
+      Ääntämys: HROSS-a-grith
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keisarikunta</h2>
+      <ul>
+        <li><a href="../fi/gov/">Hallinto ja oppi</a></li>
+        <li><a href="../fi/gov/#dynamics">Kahdeksan dynamiikkaa</a></li>
+        <li><a href="../fi/gov/#diarchy">Keisarillinen diarkia</a></li>
+        <li><a href="../fi/gov/law/">Keisarillinen oikeus</a></li>
+        <li><a href="../fi/history/">Historia</a></li>
+        <li><a href="../fi/symbols/">Nimi, lippu ja symbolit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Elämä täällä</h2>
+      <ul>
+        <li><a href="../fi/living/">Elämä Hrossagri&#240;issä</a></li>
+        <li><a href="../fi/living/health/">Terveydenhuolto</a></li>
+        <li><a href="../fi/living/education/">Koulutus ja lapset</a></li>
+        <li><a href="../fi/living/transport/">Liikenne ja tiet</a></li>
+        <li><a href="../fi/living/justice/">Oikeus ja poliisitoimi</a></li>
+        <li><a href="../fi/living/money/">Työ ja raha</a></li>
+        <li><a href="../fi/living/citizenship/">Kansalaisuus ja turvapaikka</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hevoset ja tiet</h2>
+      <ul>
+        <li><a href="../fi/horses/">Hevoset</a></li>
+        <li><a href="../fi/horses/#welfare">Hyvinvointi ja kuolaimeton hallinta</a></li>
+        <li><a href="../fi/horses/#service">Palvelushevoseläimet</a></li>
+        <li><a href="../fi/horses/road-status/">Tiestatusmerkkien standardi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tämä portaali</h2>
+      <ul>
+        <li><a href="../fi/about/">Tietoa tästä projektista</a></li>
+        <li><a href="../fi/search/">Hae portaalista</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../assets/flag.jpg" alt="Hrossagri&#240;in keisarikunnan lippu" width="120" height="80">
+    <p class="footer__disclaimer">Valitettavasti Hrossagrith on kuvitteellinen maa. Tämä sivusto on maailmanrakennusprojekti, eikä sillä ole mitään yhteyttä mihinkään todelliseen valtioon, hallitukseen tai viralliseen elimeen.</p>
+    <p class="footer__meta">Hrossagri&#240;in keisarikunta &middot; Keisarillinen valtionportaali &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../assets/theme.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

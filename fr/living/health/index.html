@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santé &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
+<meta name="description" content="Les soins de santé en Hrossagrith : gratuits au moment du recours, fondés sur les données probantes et régulièrement réévalués.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../../../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../../../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../../../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../../../fr/history/">Histoire</a></li>
+            <li><a href="../../../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../../../fr/living/health/">Santé</a></li>
+            <li><a href="../../../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../../../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../../../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../../../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../../../fr/horses/">Chevaux</a></li>
+            <li><a href="../../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../../../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../../../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../../../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../fr/">Accueil</a>
+    <a href="../../../fr/horses/">Chevaux</a>
+    <a href="../../../fr/living/" aria-current="page">Vie quotidienne</a>
+    <a href="../../../fr/gov/">Gouvernement</a>
+    <a href="../../../fr/gov/law/">Droit</a>
+    <a href="../../../fr/history/">Histoire</a>
+    <a href="../../../fr/symbols/">Symboles</a>
+    <a href="../../../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../fr/">Accueil</a><span>&rsaquo;</span><a href="../../../fr/living/">Vie quotidienne</a><span>&rsaquo;</span><strong>Santé</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Livre II &middot; Partie I</p>
+  <h1 class="page-title">Santé</h1>
+  <p class="page-standfirst">Gratuite au moment du recours, largement financée et délibérément conçue contre les défaillances qui font échouer ailleurs la gratuité des soins.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Les soins de santé en Hrossagri&#240; sont gratuits au moment du recours. Cela est facile à proclamer et difficile à assurer ; l’objectif de conception est donc énoncé par la négative : le système est bâti pour prévenir les listes d’attente, les pénuries de personnel et les inégalités régionales, plutôt que pour annoncer un droit et le rationner ensuite en silence.</p>
+
+      <h2>Les données avant les intentions</h2>
+      <p class="h2-num">Pourquoi l’Empire réexamine ce qu’il croit déjà</p>
+      <p>L’éthique décide de ce qui compte comme constructif ; la science établit ce qui se passe réellement. Un traitement n’est pas adopté parce que sa finalité est bonne. Il est adopté parce que la recherche, la réplication, les statistiques, la surveillance des effets indésirables et la comparaison avec les autres solutions disent qu’il fonctionne. Si un médicament ne fonctionne pas, les bonnes intentions n’autorisent pas son emploi.</p>
+      <p>La même règle vaut à rebours du temps. Une recherche nouvelle n’est pas automatiquement meilleure qu’une recherche ancienne, et une excellente étude ancienne qui résiste aux vérifications modernes demeure. Mais une affirmation ancienne n’acquiert aucune immunité permanente du fait d’avoir figuré un siècle durant dans les manuels. Aux vieux dogmes médicaux, aux théories psychologiques et aux normes professionnelles, on pose la même question : cela a-t-il jamais été correctement vérifié ?</p>
+
+      <h2>Les femmes et les enfants</h2>
+      <p class="h2-num">Là où les données historiques sont les plus faibles</p>
+      <p>Une grande part de la littérature médicale a été produite dans des sociétés marquées par un sexisme grave et par une tout autre attitude envers les enfants. Là où les données anciennes ont mal étudié les femmes, l’Empire ne tient pas cela pour regrettable mais définitif. Il finance délibérément la recherche sur la douleur des femmes, les maladies gynécologiques, les maladies cardiovasculaires chez la femme, les effets des médicaments chez la femme, l’autisme et d’autres troubles chez les filles, ainsi que la santé maternelle.</p>
+      <p>Un enfant n’est pas traité comme un adulte en réduction. La recherche doit tenir compte d’un corps et d’un esprit en développement, et la pratique clinique suit la recherche plutôt que la tradition.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>En préparation.</strong> L’organisation des hôpitaux impériaux, des services connexes au domaine vétérinaire, du service d’ambulance et des professions médicales n’est pas encore inscrite au registre. La Norme technique impériale de la voiture médicale d’urgence, qui régit les voitures d’ambulance, est <a href="../../gov/law/">en vigueur</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Connexe</strong>
+      <a href="../../gov/law/">Norme technique impériale de la voiture médicale d’urgence</a> &mdash; vitesse, faibles secousses, suspension, voies d’urgence et essais.
+      <br><br>
+      <strong>Principe</strong>
+      L’éthique dit ce qui importe. La science dit ce qui est vrai. Ni l’une ni l’autre ne se substitue à l’autre.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../../../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../../../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../../../fr/history/">Histoire</a></li>
+        <li><a href="../../../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../../../fr/living/health/">Santé</a></li>
+        <li><a href="../../../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../../../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../../../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../../../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../../../fr/horses/">Chevaux</a></li>
+        <li><a href="../../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../../../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../../../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../../../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

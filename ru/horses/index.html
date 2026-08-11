@@ -21,7 +21,7 @@
 })();
 </script>
 </head>
-<body data-root="../../">
+<body data-root="../../" data-base="../../ru/" data-i18n="{&quot;light&quot;: &quot;Светлая&quot;, &quot;dark&quot;: &quot;Тёмная&quot;, &quot;theme_to_light&quot;: &quot;Переключить на светлую тему&quot;, &quot;theme_to_dark&quot;: &quot;Переключить на тёмную тему&quot;, &quot;search_prompt&quot;: &quot;Введите слово или фразу выше, чтобы искать по всем страницам портала.&quot;, &quot;search_running&quot;: &quot;Идёт поиск…&quot;, &quot;search_none&quot;: &quot;Ни одна запись реестра не содержит все слова. Попробуйте меньше слов или другие.&quot;, &quot;search_error&quot;: &quot;Не удалось загрузить поисковый индекс. Попробуйте ещё раз.&quot;, &quot;results_one&quot;: &quot;{n} результат по запросу «{q}»&quot;, &quot;results_many&quot;: &quot;{n} результатов по запросу «{q}»&quot;, &quot;results_none&quot;: &quot;Ничего не найдено по запросу «{q}»&quot;, &quot;expand_all&quot;: &quot;Развернуть все части&quot;, &quot;collapse_all&quot;: &quot;Свернуть все части&quot;}">
 <a class="skip-link" href="#main">Перейти к содержанию</a>
 
 <div class="utility">
@@ -35,18 +35,18 @@
     <label class="visually-hidden" for="locale">Язык</label>
     <select class="locale" id="locale" data-locale-picker>
       <option value="en">English (UK)</option>
-      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="en-us">English (US)</option>
       <option value="ru" selected>Русский</option>
-      <option value="de" disabled>Deutsch — in preparation</option>
-      <option value="fr" disabled>Français — in preparation</option>
-      <option value="nl" disabled>Nederlands — in preparation</option>
-      <option value="no" disabled>Norsk bokmål — in preparation</option>
-      <option value="sv" disabled>Svenska — in preparation</option>
-      <option value="fi" disabled>Suomi — in preparation</option>
-      <option value="it" disabled>Italiano — in preparation</option>
-      <option value="zh" disabled>中文 — in preparation</option>
-      <option value="ja" disabled>日本語 — in preparation</option>
-      <option value="ko" disabled>한국어 — in preparation</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
     </select>
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
   </div>
@@ -55,8 +55,7 @@
 <header class="masthead">
   <div class="shell masthead__inner">
     <img class="masthead__emblem" src="../../assets/emblem.png"
-         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
-         width="360" height="360">
+         alt="Герб Империи Хроссагрид: вздыбленный гиппогриф в медальоне" width="360" height="360">
     <p class="masthead__state">Имперский государственный портал</p>
     <p class="masthead__name"><a href="../../ru/">Империя Хроссагрид</a></p>
     <p class="masthead__motto">Убежище для лошадей и мир, который обеспечен силой закона</p>
@@ -153,7 +152,7 @@
     <div class="col">
       <p>Трензель — предмет, помещаемый лошади в рот и соединённый с поводьями, так что всадник или возница управляет животным давлением через рот. В большинстве конного мира это обыденность. В Хроссагрид обычные трензели попросту запрещены, и рассуждение идёт через <a href="../gov/#dynamics">Пятую Динамику</a>.</p>
       <p>Поскольку лошадь считается формой жизни сама по себе, а не чьей-то собственностью, анализ не может закончиться на том, что удобно всаднику. Государство обязано спросить, что происходит с лошадью, есть ли риск боли, существует ли менее разрушительная альтернатива и можно ли управлять животным безопасно без устройства во рту. Там, где ответ утвердительный, человеческое удобство не оправдывает дополнительного риска.</p>
-      <p>Разрешённая безтрензельная амуниция включает сайдпуллы, хакаморы, босалы, кросс-андеры и кордео. Что именно законно, устанавливает Имперский кодекс амуниции, средств удержания и благополучия, а измеряется это по Имперскому регламенту обмеров амуниции; дорожное использование добавляет собственные требования.</p>
+      <p>Разрешённая бестрензельная амуниция включает сайдпуллы, хакаморы, босалы, кросс-андеры и кордео. Что именно законно, устанавливает Имперский кодекс амуниции, средств удержания и благополучия, а измеряется это по Имперскому регламенту обмеров амуниции; дорожное использование добавляет собственные требования.</p>
       <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
   <g fill="currentColor">
     <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
@@ -188,7 +187,7 @@
   <p class="h2-num">Знак, который каждое животное выносит на общественную дорогу</p>
 
   <div class="prose">
-    <p>Каждое непарнокопытное, выходящее на общественную дорогу, несёт разрешённую безтрензельную амуницию с <strong>лицевым маркером</strong> — френтерой или мусеролой со сменной вставкой статуса, читаемой спереди. Маркер — это дорожное указание, обращённое к людям. Это не украшение, не реклама и не замена суждению всадника или возницы.</p>
+    <p>Каждое непарнокопытное, выходящее на общественную дорогу, несёт разрешённую бестрензельную амуницию с <strong>лицевым маркером</strong> — френтерой или мусеролой со сменной вставкой статуса, читаемой спереди. Маркер — это дорожное указание, обращённое к людям. Это не украшение, не реклама и не замена суждению всадника или возницы.</p>
     <p>Цвет никогда не является единственным различием: каждый статус несёт также собственную кайму, форму или символ, чтобы система оставалась читаемой для дальтоников.</p>
   </div>
 
@@ -316,7 +315,7 @@
     </div>
     <aside class="marg">
       <strong>Где живут правила</strong>
-      Общий кодекс благополучия непарнокопытных &middot; Кодекс амуниции и средств удержания &middot; Кодекс упряжных животных &middot; Кодекс конной службы и дорожного патруля &middot; Кодекс разведения и реестра.
+      Общий кодекс благополучия непарнокопытных &middot; Кодекс амуниции, средств удержания и благополучия &middot; Кодекс упряжных животных &middot; Кодекс конной службы и дорожного патруля &middot; Кодекс разведения и реестра.
       <br><br>
       Полный реестр ведётся в разделе <a href="../gov/law/">имперского права</a>.
     </aside>
@@ -368,7 +367,7 @@
   <div class="shell footer__bottom">
     <img class="footer__flag" src="../../assets/flag.jpg" alt="Флаг Империи Хроссагрид" width="120" height="80">
     <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу.</p>
-    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
+    <p class="footer__meta">Империя Хроссагрид &middot; Имперский государственный портал &middot; hrossagrith.github.io</p>
   </div>
 </footer>
 

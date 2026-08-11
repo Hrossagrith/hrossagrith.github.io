@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paarden &mdash; Het Keizerrijk Hrossagri&#240;</title>
+<meta name="description" content="De nationale schat van Hrossagrith: welzijn van equiden, bitloze beheersing, wegstatusmarkeringen en dienstequiden.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../nl/" data-i18n="{&quot;light&quot;: &quot;Licht&quot;, &quot;dark&quot;: &quot;Donker&quot;, &quot;theme_to_light&quot;: &quot;Overschakelen naar het lichte thema&quot;, &quot;theme_to_dark&quot;: &quot;Overschakelen naar het donkere thema&quot;, &quot;search_prompt&quot;: &quot;Typ hierboven een woord of woordgroep om elke pagina van dit portaal te doorzoeken.&quot;, &quot;search_running&quot;: &quot;Bezig met zoeken…&quot;, &quot;search_none&quot;: &quot;Geen enkel item in het register bevat alle woorden. Probeer minder of andere woorden.&quot;, &quot;search_error&quot;: &quot;De zoekindex kon niet worden geladen. Probeer het opnieuw.&quot;, &quot;results_one&quot;: &quot;{n} resultaat voor “{q}”&quot;, &quot;results_many&quot;: &quot;{n} resultaten voor “{q}”&quot;, &quot;results_none&quot;: &quot;Niets gevonden voor “{q}”&quot;, &quot;expand_all&quot;: &quot;Alle delen uitklappen&quot;, &quot;collapse_all&quot;: &quot;Alle delen inklappen&quot;}">
+<a class="skip-link" href="#main">Naar de inhoud</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Een worldbuildingproject</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Doorzoek het portaal</label>
+      <input type="search" id="q" name="q" placeholder="Doorzoek het portaal" autocomplete="off">
+      <button type="submit">Zoeken</button>
+    </form>
+    <label class="visually-hidden" for="locale">Taal</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl" selected>Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Donker</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Wapen van Het Keizerrijk Hrossagri&#240;: een steigerende hippogrief binnen een rondeel" width="360" height="360">
+    <p class="masthead__state">Keizerlijk Staatsportaal</p>
+    <p class="masthead__name"><a href="../../nl/">Het Keizerrijk Hrossagri&#240;</a></p>
+    <p class="masthead__motto">De toevlucht der paarden, en de vrede die wordt gehandhaafd</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle afdelingen">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Het Keizerrijk</h2>
+            <ul>
+            <li><a href="../../nl/gov/">Regering en doctrine</a></li>
+            <li><a href="../../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+            <li><a href="../../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+            <li><a href="../../nl/gov/law/">Keizerlijk recht</a></li>
+            <li><a href="../../nl/history/">Geschiedenis</a></li>
+            <li><a href="../../nl/symbols/">Naam, vlag en symbolen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Het leven hier</h2>
+            <ul>
+            <li><a href="../../nl/living/">Leven in Hrossagri&#240;</a></li>
+            <li><a href="../../nl/living/health/">Gezondheidszorg</a></li>
+            <li><a href="../../nl/living/education/">Onderwijs en kinderen</a></li>
+            <li><a href="../../nl/living/transport/">Vervoer en wegen</a></li>
+            <li><a href="../../nl/living/justice/">Justitie en politie</a></li>
+            <li><a href="../../nl/living/money/">Werk en geld</a></li>
+            <li><a href="../../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Paarden en wegen</h2>
+            <ul>
+            <li><a href="../../nl/horses/">Paarden</a></li>
+            <li><a href="../../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+            <li><a href="../../nl/horses/#service">Dienstequiden</a></li>
+            <li><a href="../../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dit portaal</h2>
+            <ul>
+            <li><a href="../../nl/about/">Over dit project</a></li>
+            <li><a href="../../nl/search/">Doorzoek het portaal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../nl/">Startpagina</a>
+    <a href="../../nl/horses/" aria-current="page">Paarden</a>
+    <a href="../../nl/living/">Leven</a>
+    <a href="../../nl/gov/">Regering</a>
+    <a href="../../nl/gov/law/">Recht</a>
+    <a href="../../nl/history/">Geschiedenis</a>
+    <a href="../../nl/symbols/">Symbolen</a>
+    <a href="../../nl/about/">Over</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../nl/">Startpagina</a><span>&rsaquo;</span><strong>Paarden</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Nationale schat</p>
+  <h1 class="page-title">Paarden</h1>
+  <p class="page-standfirst">Elk ander deel van dit portaal zou uit te leggen zijn zonder paarden te noemen. Niets ervan zou in deze vorm bestaan zonder hen.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Het Keizerrijk is genoemd naar de bescherming die aan paarden verschuldigd is, en die bescherming is het oudste dat zijn recht kent. Wat volgt is geen sentiment: het is de redenering waarmee het Keizerrijk beslist wat een dier wel en niet mag worden aangedaan, en het zijn de tekens waarmee zijn wegenstelsel die beslissing zichtbaar maakt.</p>
+    </div>
+    <aside class="marg">
+      <strong>Reikwijdte</strong>
+      Het hrossagridische recht omvat pony&rsquo;s, ezels, muildieren, muilezels en andere equiden. De oude staatsnaam behoudt het paard slechts als zijn representatieve stam.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikel I</p>
+  <h2 id="welfare">Welzijn en bitloze beheersing</h2>
+  <p class="h2-num">Waarom gewone bitten verboden zijn</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Een bit is een voorwerp dat in de mond van een paard wordt gelegd en met de teugels is verbonden, zodat de ruiter of menner het dier bestuurt door druk via de mond. In het grootste deel van de paardenwereld is dat vanzelfsprekend. In Hrossagri&#240; zijn gewone bitten eenvoudigweg verboden, en de redenering loopt via de <a href="../gov/#dynamics">Vijfde Dynamiek</a>.</p>
+      <p>Omdat het paard geldt als een levensvorm op zichzelf en niet als andermans eigendom, kan de afweging niet eindigen bij wat de ruiter uitkomt. De staat moet vragen wat er met het paard gebeurt, of pijn wordt geriskeerd, of er een minder destructief alternatief bestaat en of het dier veilig kan worden bestuurd zonder een voorwerp in zijn mond. Waar het antwoord ja luidt, is menselijk gemak geen rechtvaardiging voor het extra risico.</p>
+      <p>Goedgekeurd bitloos hoofdstel omvat sidepulls, hackamores, bosals, cross-unders en cordeo&rsquo;s. Wat rechtmatig is, wordt vastgesteld door de Keizerlijke Code voor Hoofdstel, Dwangmiddelen en Welzijn en getoetst aan het Keizerlijke Maatschema voor Hoofdstel; gebruik op de weg stelt daarbovenop nadere eisen.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Slacht.</strong> De hrossagridische cultuur en het hrossagridische recht behandelen equiden veel eerder als gezelschapsdieren en werkpartners dan als slachtvee. Andere samenlevingen kennen lange tradities van het eten van paardenvlees; het Keizerrijk ziet daarin geen reden om een equidenvleesindustrie te dulden. Het slachten van paarden is een van de zwaarste misdrijven tegen het welzijn van equiden &mdash; en de menselijke dader krijgt niettemin de hoogste beschikbare <em>niet-dodelijke</em> straffen, omdat <a href="../living/justice/">de doodstraf absoluut verboden is</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Geen regel van Scientology</strong>
+      De Acht Dynamieken leveren het ethische kader. De conclusie &mdash; dat bitten verboden zijn &mdash; is een hrossagridisch politiek besluit, getrokken uit dat kader samen met het bewijsmateriaal over paardenwelzijn.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikel II</p>
+  <h2 id="road-status">Wegstatus in één oogopslag</h2>
+  <p class="h2-num">Het teken dat elke equide meeneemt de openbare weg op</p>
+
+  <div class="prose">
+    <p>Elke equide die de openbare weg betreedt, draagt goedgekeurd bitloos hoofdstel met een <strong>gezichtsmarkering</strong> &mdash; een frentera of muserola met een verwisselbaar statusinzetstuk, van voren leesbaar. De markering is een verkeersaanwijzing gericht tot mensen. Zij is geen versiering, geen reclame en geen vervanging van het oordeel van de ruiter of menner.</p>
+    <p>Kleur is nooit het enige onderscheid. Elke status draagt ook een eigen rand, vorm of symbool, zodat het stelsel leesbaar blijft voor kleurenblinde weggebruikers.</p>
+  </div>
+
+  <h3>Gewone en beperkende statussen</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Wit veld</strong>
+          <span class="marker__what">Gewone equide met wegcertificaat.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Groen veld</strong>
+          <span class="marker__what">Onervaren equide, voorlopig certificaat, opleidingsstatus of begeleid werk op de weg.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Geel veld</strong>
+          <span class="marker__what">Voorzichtig: gevoeligheid, behoefte aan extra ruimte of verhoogd schrikrisico.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Wit veld met rode rand</strong>
+          <span class="marker__what">Inhalen beperkt. Alleen inhalen op teken van de menner, ruiter of begeleider.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rood veld met witte X</strong>
+          <span class="marker__what">Niet inhalen. Stoppen en wachten: er is een actief gevaar of een onmiddellijke beheersingssituatie.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h3>Dienststatussen</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blauw, embleem van de Wegwacht</strong>
+          <span class="marker__what">Keizerlijke Wegwacht, verkeerspatrouille, verkeersleidingsdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blauw, politieschild</strong>
+          <span class="marker__what">Politiedienst, voor zover bevoegd.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Wit, rood kruis</strong>
+          <span class="marker__what">Ziekenwagen of bevoegde medische spoeddienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rood, witte vlam</strong>
+          <span class="marker__what">Brandweer- of reddingsdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Groen, poot en hoef</strong>
+          <span class="marker__what">Veterinaire spoeddienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blauw, pegasus</strong>
+          <span class="marker__what">Keizerlijke post, bode- of koeriersdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Zwart met witte rand</strong>
+          <span class="marker__what">Doorgang van de soeverein, voor zover wettelijk bevoegd.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Zwart met kroon</strong>
+          <span class="marker__what">Bevoegde doorgang van de keizerlijke regering, een ministerie of een staatsorgaan.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Donkergroen, zegelteken</strong>
+          <span class="marker__what">Militaire dienst.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="prose">
+    <p style="color:var(--ink-faint);font-size:0.92rem">Deze tekeningen tonen alleen het onderscheidende veld, de rand en het symbool. Exacte kleurwaarden en toleranties worden gepubliceerd door de bevoegde wegbeheerder en geverifieerd met gekalibreerde meting.</p>
+    <p><a href="road-status/">De volledige markeringsnorm</a> &mdash; afmetingen, zichtproeven, verlichting, voorrangsvolgorde, vervalsingsbestrijding en strafbare feiten.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Artikel III</p>
+  <h2 id="service">Dienstequiden</h2>
+  <p class="h2-num">Selectie op functie, niet op mode</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Equiden in politie-, ambulance-, taxi-, koeriers-, veterinaire, brandweer-, militaire en soevereine dienst worden geselecteerd op wat zij daadwerkelijk kunnen: uithoudingsvermogen, herstel, moed op de weg, temperament, kalmte in het verkeer, het vermogen stil te staan en snel te bewegen, verdraagzaamheid tegenover menigten en lichten, en rechtmatige bitloze beheersing.</p>
+      <p>Zij worden <em>niet</em> geselecteerd op raszuiverheid, opvallendheid, mode of dramatiek. Een functioneel hoofd en functionele luchtwegen wegen zwaarder dan een overdreven profiel, en individuele certificering gaat boven elk rasetiket. Bereden dienst wordt afzonderlijk geregeld van menwerk, onder de Keizerlijke Code voor Bereden Dienst en Wegpatrouille.</p>
+    </div>
+    <aside class="marg">
+      <strong>Waar de regels staan</strong>
+      Algemene Code voor Equidenwelzijn &middot; Code voor Hoofdstel, Dwangmiddelen en Welzijn &middot; Code voor Menequiden &middot; Code voor Bereden Dienst en Wegpatrouille &middot; Code voor Fokkerij en Register.
+      <br><br>
+      Het volledige register wordt gehouden onder <a href="../gov/law/">keizerlijk recht</a>.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Het Keizerrijk</h2>
+      <ul>
+        <li><a href="../../nl/gov/">Regering en doctrine</a></li>
+        <li><a href="../../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+        <li><a href="../../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+        <li><a href="../../nl/gov/law/">Keizerlijk recht</a></li>
+        <li><a href="../../nl/history/">Geschiedenis</a></li>
+        <li><a href="../../nl/symbols/">Naam, vlag en symbolen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Het leven hier</h2>
+      <ul>
+        <li><a href="../../nl/living/">Leven in Hrossagri&#240;</a></li>
+        <li><a href="../../nl/living/health/">Gezondheidszorg</a></li>
+        <li><a href="../../nl/living/education/">Onderwijs en kinderen</a></li>
+        <li><a href="../../nl/living/transport/">Vervoer en wegen</a></li>
+        <li><a href="../../nl/living/justice/">Justitie en politie</a></li>
+        <li><a href="../../nl/living/money/">Werk en geld</a></li>
+        <li><a href="../../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Paarden en wegen</h2>
+      <ul>
+        <li><a href="../../nl/horses/">Paarden</a></li>
+        <li><a href="../../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+        <li><a href="../../nl/horses/#service">Dienstequiden</a></li>
+        <li><a href="../../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dit portaal</h2>
+      <ul>
+        <li><a href="../../nl/about/">Over dit project</a></li>
+        <li><a href="../../nl/search/">Doorzoek het portaal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Vlag van Het Keizerrijk Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Helaas is Hrossagrith een fictief land. Deze website is een worldbuildingproject en heeft geen enkele band met een werkelijke staat, regering of officiële instantie.</p>
+    <p class="footer__meta">Het Keizerrijk Hrossagri&#240; &middot; Keizerlijk Staatsportaal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

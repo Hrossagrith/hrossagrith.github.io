@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>역사 &mdash; 흐로사그리드 제국</title>
+<meta name="description" content="흐로사그리드 사람들의 초기 역사, 기원전 c. 1200-100년: 도하 위기, 비호 협약, 세 경로 협정.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../ko/" data-i18n="{&quot;light&quot;: &quot;밝게&quot;, &quot;dark&quot;: &quot;어둡게&quot;, &quot;theme_to_light&quot;: &quot;밝은 테마로 전환&quot;, &quot;theme_to_dark&quot;: &quot;어두운 테마로 전환&quot;, &quot;search_prompt&quot;: &quot;위에 단어나 구절을 입력하면 이 포털의 모든 페이지를 검색한다.&quot;, &quot;search_running&quot;: &quot;검색 중…&quot;, &quot;search_none&quot;: &quot;모든 단어를 포함하는 항목이 등록부에 없다. 단어 수를 줄이거나 다른 단어로 시도할 것.&quot;, &quot;search_error&quot;: &quot;검색 색인을 불러오지 못하였다. 다시 시도할 것.&quot;, &quot;results_one&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_many&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_none&quot;: &quot;“{q}”에 대한 검색 결과가 없습니다&quot;, &quot;expand_all&quot;: &quot;모든 부 펼치기&quot;, &quot;collapse_all&quot;: &quot;모든 부 접기&quot;}">
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">세계관 구축 프로젝트</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">포털 검색</label>
+      <input type="search" id="q" name="q" placeholder="포털 검색" autocomplete="off">
+      <button type="submit">검색</button>
+    </form>
+    <label class="visually-hidden" for="locale">언어</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko" selected>한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">어둡게</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="흐로사그리드 제국의 문장: 원형 문양 안에서 앞발을 든 히포그리프" width="360" height="360">
+    <p class="masthead__state">제국 국가 포털</p>
+    <p class="masthead__name"><a href="../../ko/">흐로사그리드 제국</a></p>
+    <p class="masthead__motto">말들의 비호, 그리고 강제되는 평화</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="모든 부문">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        메뉴
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>제국</h2>
+            <ul>
+            <li><a href="../../ko/gov/">정부와 교의</a></li>
+            <li><a href="../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+            <li><a href="../../ko/gov/#diarchy">제국 이두정</a></li>
+            <li><a href="../../ko/gov/law/">제국법</a></li>
+            <li><a href="../../ko/history/">역사</a></li>
+            <li><a href="../../ko/symbols/">이름, 국기, 상징</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이곳에서의 삶</h2>
+            <ul>
+            <li><a href="../../ko/living/">흐로사그리드에서의 삶</a></li>
+            <li><a href="../../ko/living/health/">보건</a></li>
+            <li><a href="../../ko/living/education/">교육과 아동</a></li>
+            <li><a href="../../ko/living/transport/">교통과 도로</a></li>
+            <li><a href="../../ko/living/justice/">사법과 치안</a></li>
+            <li><a href="../../ko/living/money/">노동과 금전</a></li>
+            <li><a href="../../ko/living/citizenship/">시민권과 비호</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>말과 도로</h2>
+            <ul>
+            <li><a href="../../ko/horses/">말</a></li>
+            <li><a href="../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+            <li><a href="../../ko/horses/#service">공무 말과 동물</a></li>
+            <li><a href="../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이 포털</h2>
+            <ul>
+            <li><a href="../../ko/about/">이 프로젝트에 대하여</a></li>
+            <li><a href="../../ko/search/">포털 검색</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../ko/">홈</a>
+    <a href="../../ko/horses/">말</a>
+    <a href="../../ko/living/">삶</a>
+    <a href="../../ko/gov/">정부</a>
+    <a href="../../ko/gov/law/">법</a>
+    <a href="../../ko/history/" aria-current="page">역사</a>
+    <a href="../../ko/symbols/">상징</a>
+    <a href="../../ko/about/">소개</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../ko/">홈</a><span>&rsaquo;</span><strong>역사</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">제IV권</p>
+  <h1 class="page-title">초기 역사</h1>
+  <p class="page-standfirst">기원전 c.&nbsp;1200&ndash;100년을 다루는 네 부의 재구성. 이 서술은 바라는 현대의 영토에서 시작하지 아니하며, 증거가 감당할 수 없는 민족적 탄생을 제국에 부여하지도 아니한다.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>역사적 방법.</strong> 이 재구성은 실제의 고고학적 제약과 가상의 흐로사그리드 전승을 결합한 것이다. 고고학은 환경, 기술, 취락 양상과 물자 교환을 제약할 수 있으나, 여기에 기록된 개별 반목, 결정, 연설 또는 동기를 검증할 수는 없다. 남아 있는 전승이 여러 설명 가운데 어느 하나를 가려내지 못하는 경우, 이 서술은 하나의 동기를 확정된 사실로 제시하는 대신 그 불확실성을 그대로 보존한다.</p></div>
+
+
+  <div class="jump">
+    <h2>부로 건너뛰기</h2>
+    <ol>
+      <li><a href="#part-1">제I부 &middot; 기원전 c. 1200&ndash;650년 &mdash; 민족 이전, 그리고 위기</a></li>
+      <li><a href="#part-2">제II부 &middot; 기원전 c. 650&ndash;500년 &mdash; 신뢰할 수 없는 연결망</a></li>
+      <li><a href="#part-3">제III부 &middot; 기원전 c. 500&ndash;300년 &mdash; 갱신, 과도한 확장, 최초의 정치적 말</a></li>
+      <li><a href="#part-4">제IV부 &middot; 기원전 c. 300&ndash;100년 &mdash; 속도, 그리고 그것이 살 수 없었던 것</a></li>
+    </ol>
+  </div>
+
+  <div class="controls">
+    <button type="button" data-expand-all aria-pressed="false">모든 부 펼치기</button>
+  </div>
+
+      <details class="part" id="part-1" open>
+        <summary><span class="part__years">기원전 c. 1200&ndash;650년</span> 제I부</summary>
+        <div class="part__body">
+        <p class="h2-num">민족 이전, 그리고 그들을 만든 위기</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">기원전 c. 1200&ndash;1050년</p>
+          <h3 class="timeline__title">흐로사그리드 사람들 이전</h3>
+          <p>흐로사그리드 사람들도, 국가도, 공통의 정체성도 존재하지 아니한다. 아일랜드 중부 저지대에는 섀넌강 중류, 러프 리, 웨스트미스 중부, 로스코먼 동부, 오펄리 북부 일대에 농경 공동체가 흩어져 있다. 권위는 항구적인 국가가 아니라 가호, 친족 집단, 지역 지도자에게 속한다. 말은 적은 수로 존재하였을 수 있으나 아직 사회나 법이나 통치의 토대는 아니며 &mdash; 훗날 흐로사그리드의 중심부가 되는 지역은 더 부유한 여러 지역 사이에 놓인 하나의 평범한 내륙 지방에 지나지 아니한다.</p>
+          <p class="timeline__status">영역 상태: 협약도 없고, 공유된 영역도 없음.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 1050&ndash;980년</p>
+          <h3 class="timeline__title">도하 위기</h3>
+          <p>최초의 지속적인 분기는 섀넌강 중류의 중요한 도하 지점에 놓인다 &mdash; 이미 실용적인 통로 이상으로서, 계절 교역, 혼인 약정, 의례적 회합, 분쟁 해결, 그리고 가축과 여행자의 이동에 쓰이던 곳이다.</p>
+          <p>훔친 소, 도하 지점의 이용, 오래된 살해를 둘러싼 일련의 분쟁이 반목으로 번진다. 보복은 처음의 가문들을 넘어 퍼지고, 여행자가 습격당하며, 보수가 중단되고, 도하 지점은 쓸 수 없게 된다. 인근의 모두가 손해를 입는다. 가축을 안전하게 이동시킬 수 없고, 상인은 그 경로를 피하며, 고립된 취락은 취약해진다.</p>
+          <p>이후 여러 차례의 회합에서 유력한 가호들은 임시적인 평화 관습을 거듭 되살리고 넓힌다 &mdash; 대략, 회합 기간 중이나 그 승인된 접근로에서 받아들여진 참가자를 죽이거나 붙잡는 것을 금하는 것이다. 그 보호는 좁다. 회합 기간에만, 승인된 장소에서만, 주최자가 받아들인 사람에게만 미친다.</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <details class="part" id="part-2" open>
+        <summary><span class="part__years">기원전 c. 650&ndash;500년</span> 제II부</summary>
+        <div class="part__body">
+        <p class="h2-num">거듭 다시 만들어진, 작고 신뢰할 수 없는 연결망</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">기원전 c. 650&ndash;620년</p>
+          <h3 class="timeline__title">생존과 신뢰할 수 없는 기억</h3>
+          <p>어떤 집단은 도하 지점을 보수하고, 다른 집단은 배를 대기시키며, 또 다른 집단은 자갈 능선 위의 높은 길을 치우고, 또 다른 집단은 꼴을 비축한다. 그 결과는 계획된 도로 체계가 아니라 쓸 만한 경로들의 고르지 못한 연결망이다. 문서 보관소는 없다. 합의는 증인 앞에서 공개적으로 되풀이되고, 주고받은 물건, 담보로 맡긴 가축 또는 널리 알려진 지형지물로 표시된다. 증인은 죽고, 물건은 잃어버리며, 강한 가호는 사람들을 위협하고, 취락마다 같은 약속의 서로 어긋나는 판본을 간직한다.</p>
+          <p>비호 또한 실패한다. 보호받는 여행자가 이따금 강도를 당하거나 살해되며, 때로는 그 주최자와 연결된 사람들에 의하여 그러하다. 비호를 가치 있게 만드는 것은 그것이 결코 깨지지 아니한다는 점이 아니라, 그것을 깨뜨리면 서로 무관한 여러 공동체의 보복을 부르고 앞으로의 교역을 해칠 수 있다는 점이다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 620&ndash;590년</p>
+          <h3 class="timeline__title">장인 가호와 다투어지는 예속</h3>
+          <p>철은 하나의 기술적 전환이 아니라 여러 사람과 여러 경로를 통하여 고르지 못하게 들어온다. 청동은 가치를 유지하며, 협약에는 믿을 만한 제철 산업이 없다. 떠돌이 장인 가호는 그 기술 때문에 선별적으로 받아들여지고, 후원자는 노동이나 물품이나 가르침의 대가로 음식과 보호와 일할 자리를 제공한다 &mdash; 그 양이나 기간이나 동의가 분명히 정하여지지 아니한 경우 거듭 분쟁을 낳는 약정이다.</p>
+          <p>수십 년에 걸쳐 하나의 관습이 굳어진다. 보호 아래 받아들여진 사람은 분쟁이 증인 앞에 놓이기 전에는 동행한 가호 구성원과 분리되거나 보호받는 동물과 필수적인 물건을 빼앗겨서는 아니 된다는 것이다. 강한 후원자는 때로 이를 아예 무시한다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 590&ndash;550년</p>
+          <h3 class="timeline__title">호송 대가 분쟁과 결합된 뒷받침</h3>
+          <p>호송과 배와 망보기를 제공하는 가호들이 더 많은 보상을 요구한다. 그들은 직업 군인이 아니라 목숨을 걸면서 노동과 식량을 돌려 쓰는 농경·목축 가호이다. 유력한 호송 가계가 이미 보호를 약속받은 여행자에게서 추가 대가를 받는다는 혐의를 받자, 주최자들은 그것이 보장을 갈취로 바꾼다고 항의한다. 어느 쪽도 지속적인 승리를 얻지 못한다.</p>
+          <p>대신 남는 것은 오래가는 실천적 교훈이다. 두 종류의 사회적 힘이 <em>모두</em> 뒷받침하는 합의라야 지속된다 &mdash; 증인을 모으고 의무를 협상할 수 있는 사람들, 그리고 호송과 보복과 방어를 조직할 수 있는 사람들이다. 이는 습관이지 이두정이 아니며, 어떠한 공직도 낳지 아니한다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 550&ndash;500년</p>
+          <h3 class="timeline__title">오래가지만 다투어지는 연결망</h3>
+          <p>서로 다른 출신의 가호들이 혼인, 위탁 양육된 아이, 채무, 반목, 장인의 인연으로 이어지지만, 뚜렷한 공통의 정체성은 기록에 남아 있지 아니한다. 어떤 기대는 그것을 낳은 비상 상황보다 오래 남는다. 도움은 갚아지고, 공동으로 관리하는 도하 지점은 예고 없이 막히지 아니하며, 보호받는 손님을 공격하면 피해자와 무관한 공동체의 보복을 부를 수 있다.</p>
+          <p>유력한 관습은 사람에 대한 영구적 소유와 사람을 재산으로 넘기는 일을 계속 배척한다. 구금과 일시적인 인질은 일어나지만, 붙잡힌 이들은 여전히 보호받는 사람이며, 의무가 이행되거나 공식적으로 포기된 때에는 풀려나야 한다.</p>
+          <p>말은 여전히 증거가 빈약하고 사회적으로 제한되어 있으며, 아직 어떠한 정체성의 중심도 아니다. 안전 통행 관습은 가호와 함께 이동하는 동물을, 그 자리에 있는 말을 포함하여 보호한다. 그것을 빼앗기면 보호받는 사람들이 발이 묶이거나 궁핍해질 수 있기 때문이다.</p>
+          <p class="timeline__status">영역 상태: 섀넌강 중류 일대의 취약한 보호 연결망 &mdash; Hrossagri&#240;라는 이름도, 군주도, 두 왕관 가운데 어느 것도, 성문법도, 상비군도, 수도도, 연속된 국경도 없음.</p>
+        </li>
+      </ol>
+
+      <div class="pullquote">
+        <p>보호의 약속은 누군가 그것을 실제로 구현할 수 없는 한 별다른 뜻이 없으며, 승인된 약속 없는 힘은 갈취가 된다.</p>
+      </div>
+
+      </div></details>
+
+      <details class="part" id="part-3" open>
+        <summary><span class="part__years">기원전 c. 500&ndash;300년</span> 제III부</summary>
+        <div class="part__body">
+        <p class="h2-num">갱신, 과도한 확장, 실패, 그리고 최초의 정치적 말</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">기원전 c. 500&ndash;460년</p>
+          <h3 class="timeline__title">중앙 집권 없는 갱신</h3>
+          <p>비호의 관행은 되풀이되는 문제를 풀기 때문에 이어진다. 낯선 이에게는 후원자가, 상인에게는 안전하게 머물 곳이, 주최자에게는 보상이, 이웃에게는 완전히 굴복하지 아니하고 반목을 끝낼 방법이 필요하다. 하나의 계절 회합이 더 정기적인 것이 된다 &mdash; 누군가 수도를 세워서가 아니라, 그 자리에 물과 방목지와 익숙한 접근로가 있고 주최 가호들이 그것이 가져다주는 위신을 두고 겨루기 때문이다. 부족한 해에는 회합이 줄어들거나 옮겨지거나 아예 열리지 아니한다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 460&ndash;420년</p>
+          <h3 class="timeline__title">세 경로 협정</h3>
+          <p>본래의 도하 지점은 좋은 철에는 병목이 되고 나쁜 철에는 취약 지점이 된다. 유력한 가호들은 세 가지 대안, 곧 옛 도하 지점과 상류의 뱃길과 더 단단한 높은 지대를 넘는 동&ndash;서 방향의 길을 이으려 하며, 호송 분담, 배의 수리, 보상, 비상 방목을 조율한다.</p>
+          <p>어느 한 경로도 없어서는 안 될 것이 아니므로, 이는 한동안 작동한다. 그러나 그 성공은 곧 새로운 갈등을 낳는다. 분담은 고르지 아니하고, 가장 붐비는 도하 지점 가까이의 가호들이 더 많은 선물과 위신을 거두며, 분담자들은 무임승차에 대하여 배와 호송을 제 사람들만을 위하여 남겨 두는 것으로 답한다. 협정은 한순간에 무너지지 아니한다 &mdash; 분담이 불규칙해지고, 회합에는 선별적으로 참석하며, 한 세대 안에 공동의 조율은 대체로 실패한다.</p>
+          <p class="timeline__status">영역 상태: 겹치는 약속으로 잠시 이어진 세 경로. 그것들은 결코 하나의 통치되는 관구가 되지 아니한다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 420&ndash;370년</p>
+          <h3 class="timeline__title">꼴의 해와 피난처의 한계</h3>
+          <p>한 세대 안에 닥친 몇 차례의 파괴적인 지역적 계절 &mdash; 물에 잠긴 방목지, 꼴의 부족, 가축의 질병, 끊긴 교역 &mdash; 은 연대가 확정된 기후 사건이 아니라 그럴듯한 복합 충격으로 채택된다. 피난 연결망은 모두를 받아들일 수 없다. 주최자들은 보호를 배급한다. 숙련된 일꾼과 혼인으로 연결된 사람은 후원자 없는 가족보다 받아들여질 가능성이 크다.</p>
+          <p>그 압력은 소유를 금하는 관습의 한계를 드러낸다. 후원자들은 갚지 못한 식량 채무를 기한 없는 노무로 바꾸거나, 약정이 끝난 뒤에도 가호의 어린 구성원을 붙들어 두려 한다. 이 갈등은 노무의 계속에는 증인 앞에서의 갱신이 필요하고 그때 노무를 하여야 할 사람이 자리에 있으며 그 동의가 들려야 한다는, 고르지 못한 규칙을 강화한다 &mdash; 다만 압력은 여전히 동의를 허구로 만들 수 있다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 330&ndash;300년</p>
+          <h3 class="timeline__title">정치적으로 중요한 말 사육</h3>
+          <p>되풀이되는 경로 분쟁이 속도를 값지게 만들기 때문에, 몇몇 부유한 보호 가호들이 방목지와 겨울 꼴과 노동을 차츰 말에게 돌린다. 번식은 두수를 빠르게 늘리지 못한다. 암말은 한 해의 대부분에 걸쳐 새끼를 배고, 살아남은 어린 말도 급한 기수를 태울 수 있기까지 여러 철을 보낸다. 한곳에 모인 무리는 부상이나 질병, 암말의 상실로 한 세대 안에 사라질 수 있다.</p>
+          <p>그럼에도 그 이점은 정치적이다. 말을 탄 전령은 도하 지점에 경고하고, 친족을 부르며, 분쟁에 관한 상대편의 설명보다 먼저 회합에 닿을 수 있다. 그러나 속도가 전언을 참으로 만들지는 아니한다. 나중의 증인이 그것을 뒤집을 수 있고, 주최자는 뒷받침되지 아니한 기마 보고를 조작으로 볼 수 있다.</p>
+          <p class="timeline__status">기원전 c. 300년까지의 영역 상태: 승인된 관습은 늘고, 부유한 가계가 몇몇 생기며, 제철은 고르지 못하다 &mdash; 그리고 여전히 공통의 국명도, 군주도, 왕관도, 상설 의회도, 성문법도, 군대도, 조세도, 화폐도, 도시도, 정해진 국경도 없다.</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <details class="part" id="part-4" open>
+        <summary><span class="part__years">기원전 c. 300&ndash;100년</span> 제IV부</summary>
+        <div class="part__body">
+        <p class="h2-num">속도, 그리고 그것이 살 수 없었던 것</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">기원전 c. 300&ndash;260년</p>
+          <h3 class="timeline__title">먼저 움직이는 일의 대가</h3>
+          <p>기마 전령은 곧바로 정치적 문제를 낳지만, 그 답은 말을 탄 지배 계층이 아니다. 적합한 말은 드물고, 한 마리를 소유하는 것과 그것을 쓸 수 있는 상태로 두는 것은 같지 아니하다. 꼴을 비축하여야 하고, 부상을 관리하여야 하며, 기수는 지형을 익혀야 한다. 젖은 땅, 범람, 어둠, 물을 건너는 일은 속도의 이점을 상당 부분 지워 버린다.</p>
+          <p>더 깊은 변화는 유력한 주최자들이 먼저 도착한 것을 증명으로 삼기를 점점 더 거부한다는 점이다. 전령은 일시적인 예방 조치를 얻어낼 수 있으나, 지속적인 판단은 이름이 밝혀진 증인이나 두 번째 설명을 기다린다 &mdash; 이는 거짓된 이야기를 먼저 세우려고 다투는 데서 얻는 이익을 줄인다.</p>
+        </li>
+        <li>
+          <p class="timeline__period">기원전 c. 260&ndash;220년</p>
+          <h3 class="timeline__title">말 보장 분쟁</h3>
+          <p>말의 압류는 보통의 동물을 잃는 일과 달리 정치적으로 첨예해진다. 대부분의 가호에게 소는 재산이자 식량으로서 여전히 훨씬 더 중요하지만, 상대편의 말을 빼앗는 것은 속도와 위신, 그리고 동맹을 부를 능력을 없애는 일이다. 말이 법적으로 소와 다르다는 일반 법리는 아직 없으며, 연결망 바깥의 공동체는 어떠한 특별한 구분도 인정할 이유를 전혀 보지 못할 수 있다.</p>
+          <p class="timeline__status">영역 상태: 독립적으로 지배되는 땅들 사이에 박혀 있는 보호받는 장소와 경로. 사람은 연속된 관할권에 한 번도 들어가지 아니한 채 승인된 한 주최자에게서 다른 주최자에게로 옮겨 갈 수 있다.</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>이름에 관하여, 그리고 왕관에 관하여.</strong> 이 시기 전체에 걸쳐 <span class="native">Hrossagri&#240;</span>라는 이름은 존재하지 아니한다. 그것은 훨씬 뒤에 고대 노르드어로 된 바깥에서 붙인 명칭으로 나타난다. 의무를 협상하는 사람들과 보호를 조직하는 사람들 사이의 되풀이되는 구분을, 역사가들은 훨씬 뒤에 별개의 위기에서 생겨난 <a href="../gov/#diarchy">이끄는 왕관과 지키는 왕관</a>의 희미한 문화적 선조로만 볼 뿐이다. 끊이지 아니하고 이어진 공직이 그 둘을 잇고 있지는 아니하다.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>여기서 쓰는 이름</strong>
+      초기에 대하여 역사가들은 <em>비호 협약</em>과 <em>협약 공동체</em>라는 현대의 명칭을 쓴다. 당대의 집합적 이름은 남아 있지 아니하다.
+      <br><br>
+      <strong>무엇이 지어낸 것인가</strong>
+      반목과 결정과 제도이다. 고고학은 아니며, 뒷날 이름의 문법도 아니다.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>제국</h2>
+      <ul>
+        <li><a href="../../ko/gov/">정부와 교의</a></li>
+        <li><a href="../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+        <li><a href="../../ko/gov/#diarchy">제국 이두정</a></li>
+        <li><a href="../../ko/gov/law/">제국법</a></li>
+        <li><a href="../../ko/history/">역사</a></li>
+        <li><a href="../../ko/symbols/">이름, 국기, 상징</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이곳에서의 삶</h2>
+      <ul>
+        <li><a href="../../ko/living/">흐로사그리드에서의 삶</a></li>
+        <li><a href="../../ko/living/health/">보건</a></li>
+        <li><a href="../../ko/living/education/">교육과 아동</a></li>
+        <li><a href="../../ko/living/transport/">교통과 도로</a></li>
+        <li><a href="../../ko/living/justice/">사법과 치안</a></li>
+        <li><a href="../../ko/living/money/">노동과 금전</a></li>
+        <li><a href="../../ko/living/citizenship/">시민권과 비호</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>말과 도로</h2>
+      <ul>
+        <li><a href="../../ko/horses/">말</a></li>
+        <li><a href="../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+        <li><a href="../../ko/horses/#service">공무 말과 동물</a></li>
+        <li><a href="../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이 포털</h2>
+      <ul>
+        <li><a href="../../ko/about/">이 프로젝트에 대하여</a></li>
+        <li><a href="../../ko/search/">포털 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="흐로사그리드 제국의 국기" width="120" height="80">
+    <p class="footer__disclaimer">안타깝게도 흐로사그리드는 가상의 나라이다. 이 사이트는 세계관 구축 프로젝트이며, 실재하는 어떠한 국가나 정부, 공식 기관과도 관련이 없다.</p>
+    <p class="footer__meta">흐로사그리드 제국 &middot; 제국 국가 포털 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

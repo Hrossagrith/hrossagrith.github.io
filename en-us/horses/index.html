@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horses &mdash; The Empire of Hrossagri&#240;</title>
+<meta name="description" content="The national treasure of Hrossagrith: equid welfare, bitless control, road-status markers and service equids.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../en-us/" data-i18n="{&quot;light&quot;: &quot;Light&quot;, &quot;dark&quot;: &quot;Dark&quot;, &quot;theme_to_light&quot;: &quot;Switch to light theme&quot;, &quot;theme_to_dark&quot;: &quot;Switch to dark theme&quot;, &quot;search_prompt&quot;: &quot;Type a word or phrase above to search every page of this portal.&quot;, &quot;search_running&quot;: &quot;Searching…&quot;, &quot;search_none&quot;: &quot;No entry in the register matches every word. Try fewer or different words.&quot;, &quot;search_error&quot;: &quot;The search index could not be loaded. Please try again.&quot;, &quot;results_one&quot;: &quot;{n} result for “{q}”&quot;, &quot;results_many&quot;: &quot;{n} results for “{q}”&quot;, &quot;results_none&quot;: &quot;Nothing found for “{q}”&quot;, &quot;expand_all&quot;: &quot;Expand all parts&quot;, &quot;collapse_all&quot;: &quot;Collapse all parts&quot;}">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">A worldbuilding project</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Search the portal</label>
+      <input type="search" id="q" name="q" placeholder="Search the portal" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <label class="visually-hidden" for="locale">Language</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us" selected>English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel" width="360" height="360">
+    <p class="masthead__state">Imperial State Portal</p>
+    <p class="masthead__name"><a href="../../en-us/">The Empire of Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="All sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>The Empire</h2>
+            <ul>
+            <li><a href="../../en-us/gov/">Government and doctrine</a></li>
+            <li><a href="../../en-us/gov/#dynamics">The Eight Dynamics</a></li>
+            <li><a href="../../en-us/gov/#diarchy">The Imperial Diarchy</a></li>
+            <li><a href="../../en-us/gov/law/">Imperial law</a></li>
+            <li><a href="../../en-us/history/">History</a></li>
+            <li><a href="../../en-us/symbols/">Name, flag and symbols</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Living here</h2>
+            <ul>
+            <li><a href="../../en-us/living/">Living in Hrossagri&#240;</a></li>
+            <li><a href="../../en-us/living/health/">Health</a></li>
+            <li><a href="../../en-us/living/education/">Education and children</a></li>
+            <li><a href="../../en-us/living/transport/">Transport and roads</a></li>
+            <li><a href="../../en-us/living/justice/">Justice and policing</a></li>
+            <li><a href="../../en-us/living/money/">Work and money</a></li>
+            <li><a href="../../en-us/living/citizenship/">Citizenship and refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Horses and roads</h2>
+            <ul>
+            <li><a href="../../en-us/horses/">Horses</a></li>
+            <li><a href="../../en-us/horses/#welfare">Welfare and bitless control</a></li>
+            <li><a href="../../en-us/horses/#service">Service equids</a></li>
+            <li><a href="../../en-us/horses/road-status/">Road-status marker standard</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>This portal</h2>
+            <ul>
+            <li><a href="../../en-us/about/">About this project</a></li>
+            <li><a href="../../en-us/search/">Search the portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../en-us/">Home</a>
+    <a href="../../en-us/horses/" aria-current="page">Horses</a>
+    <a href="../../en-us/living/">Living</a>
+    <a href="../../en-us/gov/">Government</a>
+    <a href="../../en-us/gov/law/">Law</a>
+    <a href="../../en-us/history/">History</a>
+    <a href="../../en-us/symbols/">Symbols</a>
+    <a href="../../en-us/about/">About</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../en-us/">Home</a><span>&rsaquo;</span><strong>Horses</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">National treasure</p>
+  <h1 class="page-title">Horses</h1>
+  <p class="page-standfirst">Every other part of this portal could be explained without mentioning horses. None of it would exist in this shape without them.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">The Empire is named for the protection owed to horses, and that protection is the oldest thing in its law. What follows is not sentiment: it is the reasoning by which the Empire decides what may and may not be done to an animal, and the marks by which its road system makes that decision visible.</p>
+    </div>
+    <aside class="marg">
+      <strong>Scope</strong>
+      Hrossagrithic law covers ponies, donkeys, mules, hinnies and other equids. The ancient national name keeps the horse only as its representative root.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Article I</p>
+  <h2 id="welfare">Welfare and bitless control</h2>
+  <p class="h2-num">Why ordinary bits are prohibited</p>
+
+  <div class="two">
+    <div class="col">
+      <p>A bit is an object placed in a horse&rsquo;s mouth and connected to the reins, so that the rider or driver controls the animal by pressure through the mouth. In most of the horse world this is unremarkable. In Hrossagri&#240; ordinary bits are simply banned, and the reasoning runs through the <a href="../gov/#dynamics">Fifth Dynamic</a>.</p>
+      <p>Because the horse counts as a life form in its own right rather than as somebody&rsquo;s property, the analysis cannot end at what is convenient for the rider. The state has to ask what happens to the horse, whether pain is risked, whether a less destructive alternative exists, and whether the animal can be controlled safely without a device in its mouth. Where the answer is yes, human convenience is not enough to justify the additional risk.</p>
+      <p>Approved bitless headgear includes sidepulls, hackamores, bosals, cross-unders and cordeos. What is lawful is set by the Imperial Tack, Restraint and Welfare Code and measured against the Imperial Tack Measurement Schedule; road use adds further requirements on top.</p>
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Slaughter.</strong> Hrossagrithic culture and law treat equids far closer to companion animals and working partners than to food animals. Other societies have long traditions of eating horse meat; the Empire does not regard that as a reason to tolerate an equid-meat industry. Horse slaughter is one of the gravest equid-welfare crimes &mdash; and the human offender still receives the highest available <em>non-lethal</em> penalties, because <a href="../living/justice/">the death penalty is absolutely prohibited</a>.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Not a Scientology rule</strong>
+      The Eight Dynamics supply the ethical frame. The conclusion &mdash; that bits are banned &mdash; is a Hrossagrithic political decision drawn from that frame plus the evidence on equine welfare.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Article II</p>
+  <h2 id="road-status">Road status at a glance</h2>
+  <p class="h2-num">The mark every equid carries onto a public road</p>
+
+  <div class="prose">
+    <p>Every equid entering a public road wears approved bitless headgear fitted with a <strong>Facial Marker</strong> &mdash; a marker-bearing frentera or muserola carrying an interchangeable status insert, readable from the front. The marker is a road instruction addressed to humans. It is not decoration, not advertising, and not a substitute for the judgment of the rider or driver.</p>
+    <p>Color is never the only distinction. Every status also carries its own border, shape or symbol, so that the system stays readable to color-blind road users.</p>
+  </div>
+
+  <h3>Ordinary and restricted statuses</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">White field</strong>
+          <span class="marker__what">Ordinary road-certified equid.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Green field</strong>
+          <span class="marker__what">Green equid, provisional certificate, training status, or supervised road work.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Yellow field</strong>
+          <span class="marker__what">Caution: sensitivity, extra-space requirement, or heightened startle risk.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">White field, red border</strong>
+          <span class="marker__what">Restricted passing. Pass only on the signal of the driver, rider or handler.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Red field, white X</strong>
+          <span class="marker__what">Do not pass. Stop and wait: an active hazard or immediate control condition exists.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h3>Service statuses</h3>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blue, Road Guard emblem</strong>
+          <span class="marker__what">Imperial Road Guard, traffic patrol, road-control service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blue, police shield</strong>
+          <span class="marker__what">Police service, where authorized.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">White, red cross</strong>
+          <span class="marker__what">Ambulance or authorized medical emergency service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Red, white flame</strong>
+          <span class="marker__what">Fire or rescue service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Green, paw and hoof</strong>
+          <span class="marker__what">Veterinary emergency service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blue, pegasus</strong>
+          <span class="marker__what">Imperial post, messenger or courier service.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Black, white border</strong>
+          <span class="marker__what">Sovereign passage, where legally authorized.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Black with crown</strong>
+          <span class="marker__what">Authorized imperial government, ministerial or state authority passage.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Dark green, sigil</strong>
+          <span class="marker__what">Military service.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="prose">
+    <p style="color:var(--ink-faint);font-size:0.92rem">These drawings show the distinguishing field, border and symbol only. Exact color values and tolerances are published by the competent road authority and verified with calibrated measurement.</p>
+    <p><a href="road-status/">The full marker standard</a> &mdash; dimensions, viewing tests, illumination, priority order, counterfeit control and offenses.</p>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">Article III</p>
+  <h2 id="service">Service equids</h2>
+  <p class="h2-num">Selection by function, not by fashion</p>
+
+  <div class="two">
+    <div class="col">
+      <p>Police, ambulance, taxi, courier, veterinary, fire, military and sovereign service equids are selected on what they can actually do: endurance, recovery, road courage, temperament, traffic sanity, the ability to stand still and to move fast, tolerance of crowds and lights, and lawful bitless control.</p>
+      <p>They are <em>not</em> selected for being purebred, flashy, fashionable or dramatic. A functional head and airway matter more than an exaggerated profile, and individual certification overrides any breed label. Ridden service is governed separately from carriage work, under the Imperial Mounted Service and Road Patrol Code.</p>
+    </div>
+    <aside class="marg">
+      <strong>Where the rules live</strong>
+      General Equid Welfare Code &middot; Tack, Restraint and Welfare Code &middot; Carriage Equids Code &middot; Mounted Service and Road Patrol Code &middot; Breeding and Registry Code.
+      <br><br>
+      The full register is kept under <a href="../gov/law/">imperial law</a>.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>The Empire</h2>
+      <ul>
+        <li><a href="../../en-us/gov/">Government and doctrine</a></li>
+        <li><a href="../../en-us/gov/#dynamics">The Eight Dynamics</a></li>
+        <li><a href="../../en-us/gov/#diarchy">The Imperial Diarchy</a></li>
+        <li><a href="../../en-us/gov/law/">Imperial law</a></li>
+        <li><a href="../../en-us/history/">History</a></li>
+        <li><a href="../../en-us/symbols/">Name, flag and symbols</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Living here</h2>
+      <ul>
+        <li><a href="../../en-us/living/">Living in Hrossagri&#240;</a></li>
+        <li><a href="../../en-us/living/health/">Health</a></li>
+        <li><a href="../../en-us/living/education/">Education and children</a></li>
+        <li><a href="../../en-us/living/transport/">Transport and roads</a></li>
+        <li><a href="../../en-us/living/justice/">Justice and policing</a></li>
+        <li><a href="../../en-us/living/money/">Work and money</a></li>
+        <li><a href="../../en-us/living/citizenship/">Citizenship and refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Horses and roads</h2>
+      <ul>
+        <li><a href="../../en-us/horses/">Horses</a></li>
+        <li><a href="../../en-us/horses/#welfare">Welfare and bitless control</a></li>
+        <li><a href="../../en-us/horses/#service">Service equids</a></li>
+        <li><a href="../../en-us/horses/road-status/">Road-status marker standard</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>This portal</h2>
+      <ul>
+        <li><a href="../../en-us/about/">About this project</a></li>
+        <li><a href="../../en-us/search/">Search the portal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Flag of the Empire of Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Unfortunately, Hrossagrith is a fictional country. This site is a worldbuilding project and has no connection to any real state, government, or official body.</p>
+    <p class="footer__meta">The Empire of Hrossagri&#240; &middot; Imperial State Portal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

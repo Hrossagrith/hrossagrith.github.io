@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wegstatusmarkeringen &mdash; Het Keizerrijk Hrossagri&#240;</title>
+<meta name="description" content="De Keizerlijke Norm voor Statusmarkering van Equiden op de Openbare Weg: velden, randen, symbolen, afmetingen, verlichting, voorrang en strafbare feiten.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../nl/" data-i18n="{&quot;light&quot;: &quot;Licht&quot;, &quot;dark&quot;: &quot;Donker&quot;, &quot;theme_to_light&quot;: &quot;Overschakelen naar het lichte thema&quot;, &quot;theme_to_dark&quot;: &quot;Overschakelen naar het donkere thema&quot;, &quot;search_prompt&quot;: &quot;Typ hierboven een woord of woordgroep om elke pagina van dit portaal te doorzoeken.&quot;, &quot;search_running&quot;: &quot;Bezig met zoeken…&quot;, &quot;search_none&quot;: &quot;Geen enkel item in het register bevat alle woorden. Probeer minder of andere woorden.&quot;, &quot;search_error&quot;: &quot;De zoekindex kon niet worden geladen. Probeer het opnieuw.&quot;, &quot;results_one&quot;: &quot;{n} resultaat voor “{q}”&quot;, &quot;results_many&quot;: &quot;{n} resultaten voor “{q}”&quot;, &quot;results_none&quot;: &quot;Niets gevonden voor “{q}”&quot;, &quot;expand_all&quot;: &quot;Alle delen uitklappen&quot;, &quot;collapse_all&quot;: &quot;Alle delen inklappen&quot;}">
+<a class="skip-link" href="#main">Naar de inhoud</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Een worldbuildingproject</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Doorzoek het portaal</label>
+      <input type="search" id="q" name="q" placeholder="Doorzoek het portaal" autocomplete="off">
+      <button type="submit">Zoeken</button>
+    </form>
+    <label class="visually-hidden" for="locale">Taal</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl" selected>Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Donker</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Wapen van Het Keizerrijk Hrossagri&#240;: een steigerende hippogrief binnen een rondeel" width="360" height="360">
+    <p class="masthead__state">Keizerlijk Staatsportaal</p>
+    <p class="masthead__name"><a href="../../../nl/">Het Keizerrijk Hrossagri&#240;</a></p>
+    <p class="masthead__motto">De toevlucht der paarden, en de vrede die wordt gehandhaafd</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle afdelingen">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Het Keizerrijk</h2>
+            <ul>
+            <li><a href="../../../nl/gov/">Regering en doctrine</a></li>
+            <li><a href="../../../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+            <li><a href="../../../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+            <li><a href="../../../nl/gov/law/">Keizerlijk recht</a></li>
+            <li><a href="../../../nl/history/">Geschiedenis</a></li>
+            <li><a href="../../../nl/symbols/">Naam, vlag en symbolen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Het leven hier</h2>
+            <ul>
+            <li><a href="../../../nl/living/">Leven in Hrossagri&#240;</a></li>
+            <li><a href="../../../nl/living/health/">Gezondheidszorg</a></li>
+            <li><a href="../../../nl/living/education/">Onderwijs en kinderen</a></li>
+            <li><a href="../../../nl/living/transport/">Vervoer en wegen</a></li>
+            <li><a href="../../../nl/living/justice/">Justitie en politie</a></li>
+            <li><a href="../../../nl/living/money/">Werk en geld</a></li>
+            <li><a href="../../../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Paarden en wegen</h2>
+            <ul>
+            <li><a href="../../../nl/horses/">Paarden</a></li>
+            <li><a href="../../../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+            <li><a href="../../../nl/horses/#service">Dienstequiden</a></li>
+            <li><a href="../../../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Dit portaal</h2>
+            <ul>
+            <li><a href="../../../nl/about/">Over dit project</a></li>
+            <li><a href="../../../nl/search/">Doorzoek het portaal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../nl/">Startpagina</a>
+    <a href="../../../nl/horses/" aria-current="page">Paarden</a>
+    <a href="../../../nl/living/">Leven</a>
+    <a href="../../../nl/gov/">Regering</a>
+    <a href="../../../nl/gov/law/">Recht</a>
+    <a href="../../../nl/history/">Geschiedenis</a>
+    <a href="../../../nl/symbols/">Symbolen</a>
+    <a href="../../../nl/about/">Over</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../nl/">Startpagina</a><span>&rsaquo;</span><a href="../../../nl/horses/">Paarden</a><span>&rsaquo;</span><strong>Wegstatusmarkeringen</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Boek III &middot; Norm</p>
+  <h1 class="page-title">Statusmarkering van equiden op de openbare weg</h1>
+  <p class="page-standfirst">De definitieve en bindende universele norm voor elke equide op de openbare weg. De Code voor Menequiden kan daarbovenop aanvullende of strengere eisen stellen.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Elke equide die de openbare weg betreedt, draagt goedgekeurd bitloos hoofdstel voor de openbare weg, voorzien van een goedgekeurde <strong>gezichtsmarkering</strong> die het actuele verwisselbare, retroreflecterende en schakelbaar verlichte wegstatusinzetstuk van die equide toont. De markering is een verkeersaanwijzing gericht tot mensen. Zij mag niet worden gebruikt als reclame, als louter versiering, als medische openbaarmaking verder dan noodzakelijk, als schandmerk of als vervanging van het oordeel van de ruiter of menner.</p>
+
+      <h2>Definities</h2>
+      <p class="h2-num">Frentera en muserola</p>
+      <p>Een <strong>frentera</strong> is een frontaal element dat verticaal over het midden van het hoofd loopt, van het bovenste hoofdstel, het kopstuk, de frontriem of de nekstukzone naar het voorhoofd of de neusrug. Zij kan smal, X-vormig, vertakt, breed of paneelachtig zijn. Een element dat zich beperkt tot het kruisen of omsluiten van de neus, zonder verticale verbinding naar boven over het hoofd, is geen frentera.</p>
+      <p>Een <strong>muserola</strong> is een neusriem of neusstuk dat de neus kruist en gewoonlijk omsluit. Zij kan breed, decoratief, afzonderlijk bevestigd of ingebouwd in een rechtmatige beheersende neusriem zijn, en hoeft niet aan de frontriem of het nekstuk te zijn bevestigd.</p>
+      <p>Beide gelden slechts als gezichtsmarkering waar zij een eigen, duidelijk zichtbaar inzetstukveld bieden van voldoende afmeting en contrast voor gebruik op de weg. Een klein sieraad, medaillon, knop of insigne dat het inzetstuk niet zichtbaar kan dragen, voldoet niet.</p>
+    </div>
+    <aside class="marg">
+      <strong>Geen markering op het lichaam</strong>
+      Verf, kleurstof, scheren, brandmerken, lijm, bevestiging aan de manen, bevestiging aan de staart, huidmarkering of wijziging van de vacht mogen niet worden gebruikt om status te tonen. Nooit.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Gewone en beperkende markeringen</h2>
+  <p class="h2-num">Kleur is nooit het enige onderscheid</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Wit veld</strong>
+          <span class="marker__what">Gewone equide met wegcertificaat.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Groen veld</strong>
+          <span class="marker__what">Onervaren equide, voorlopig certificaat, opleidingsstatus of begeleid werk op de weg.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Geel veld</strong>
+          <span class="marker__what">Voorzichtig: gevoeligheid, behoefte aan extra ruimte of verhoogd schrikrisico.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Wit veld met rode rand</strong>
+          <span class="marker__what">Inhalen beperkt. Alleen inhalen op teken van de menner, ruiter of begeleider.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rood veld met witte X</strong>
+          <span class="marker__what">Niet inhalen. Stoppen en wachten: er is een actief gevaar of een onmiddellijke beheersingssituatie.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h2>Dienstmarkeringen</h2>
+  <p class="h2-num">Uitsluitend uitgegeven en geverifieerd via bevoegde kanalen</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blauw, embleem van de Wegwacht</strong>
+          <span class="marker__what">Keizerlijke Wegwacht, verkeerspatrouille, verkeersleidingsdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blauw, politieschild</strong>
+          <span class="marker__what">Politiedienst, voor zover bevoegd.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Wit, rood kruis</strong>
+          <span class="marker__what">Ziekenwagen of bevoegde medische spoeddienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rood, witte vlam</strong>
+          <span class="marker__what">Brandweer- of reddingsdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Groen, poot en hoef</strong>
+          <span class="marker__what">Veterinaire spoeddienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blauw, pegasus</strong>
+          <span class="marker__what">Keizerlijke post, bode- of koeriersdienst.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Zwart met witte rand</strong>
+          <span class="marker__what">Doorgang van de soeverein, voor zover wettelijk bevoegd.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Zwart met kroon</strong>
+          <span class="marker__what">Bevoegde doorgang van de keizerlijke regering, een ministerie of een staatsorgaan.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Donkergroen, zegelteken</strong>
+          <span class="marker__what">Militaire dienst.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <h2>Plaatsing</h2>
+      <p class="h2-num">Voor, opzij en achter</p>
+      <ul>
+        <li><strong>Voor:</strong> het verwisselbare inzetstuk, getoond in een frentera of muserola die de markering draagt.</li>
+        <li><strong>Opzij:</strong> een ronde of anderszins goedgekeurde statusplaat op tuig, borstblad, borsttuig, zadeldek of ander niet-beknellend uitrustingsstuk.</li>
+        <li><strong>Achterste rijtuigbord:</strong> markeringen opgesteld naar de opstelling van het span, zodat weggebruikers de status van elke equide in het span kunnen vaststellen.</li>
+      </ul>
+      <p>Een op de neus bevestigde markering hoort boven het vaste neusbeen te zitten, vrij van het onderste neuskraakbeen en de neusgaten. Waar zij is ingebouwd in een drukdragende neusriem, mogen het venster, de achterplaat, de omranding en de sluitingen de neusriem niet stijver maken, geen harde randen of drukpunten vormen, geen kracht concentreren, de pasvorm of het losmaken niet belemmeren, de werking van teugels of leidsels niet veranderen en de ademhaling niet beperken.</p>
+
+      <h2>Minimumafmetingen</h2>
+      <p class="h2-num">Vrij zichtbaar veld, kleinste afmeting</p>
+      <ul>
+        <li><strong>70&nbsp;mm</strong> voorinzetstuk voor een equide boven 300&nbsp;kg</li>
+        <li><strong>60&nbsp;mm</strong> voor een equide van 100&ndash;300&nbsp;kg</li>
+        <li><strong>50&nbsp;mm</strong> voor een equide onder 100&nbsp;kg</li>
+        <li><strong>90&nbsp;mm</strong> statusplaat opzij</li>
+        <li><strong>120&nbsp;mm</strong> markering op het achterste rijtuigbord</li>
+      </ul>
+      <p>Randen, symbolen en gedeelde velden moeten in verhouding blijven en mogen geen vereist vrij veld onder deze minima brengen.</p>
+
+      <h2>Herkenningsproef</h2>
+      <p class="h2-num">Gemeten, niet beweerd</p>
+      <p>Een markering aan de voorzijde hoort juist te worden herkend door een persoon met gewoon gecorrigeerd gezichtsvermogen op ten minste 50&nbsp;m bij daglicht en 30&nbsp;m bij nacht; markeringen opzij en achter op 60&nbsp;m en 40&nbsp;m. De nachtproef wordt zowel in de gevoede verlichte stand als in de ongevoede retroreflecterende stand doorstaan. De proef omvat het zicht van voren en onder vijftien graden, stapgang en gewone verkeersbeweging, natte omstandigheden, gedeeltelijke beweging van de voorlok, volle en bijna lege accu, en opzettelijk in- en uitschakelen.</p>
+
+      <h2>Verlichting</h2>
+      <p class="h2-num">Herkenningsverlichting, geen zwaailicht</p>
+      <p>Elke goedgekeurde markering werkt zowel in een ongevoede retroreflecterende stand van wegkwaliteit als in een onafhankelijk schakelbare, gelijkmatige zelfverlichte stand die de toegewezen veldkleur, rand, vorm en symbool weergeeft. Verlichting is vereist van zonsondergang tot zonsopgang, in tunnels en telkens wanneer mist, regen, sneeuw, rook, stof of verblinding de herkenning wezenlijk vermindert.</p>
+      <p>De verlichting hoort gelijkmatig te zijn. Zij mag niet knipperen, stroboscopisch werken, pulseren, roteren, zwaaien, van kleur wisselen, een richtingaanwijzer, remlicht, waarschuwingslicht of zwaailicht nabootsen, een bundel op de weg projecteren of dienstdoen als lamp voor grondgeleiding. De verlichting van de statusmarkering is herkenningsverlichting en schept geen voorrang voor hulpdiensten.</p>
+      <p>De lichtbron is diffuus en afgeschermd, zodat vanuit geen van beide oogposities van de equide een rechtstreekse lichtbron zichtbaar is. Het volledige elektrische samenstel is ten minste gelijkwaardig aan IP65. Een gevoede markering blijft volledig retroreflecterend wanneer zij is uitgeschakeld of wanneer de voeding uitvalt, en haar accureserve dekt de geplande reis plus ten minste twee uur.</p>
+
+      <h2>Voorrangsvolgorde</h2>
+      <p class="h2-num">Wanneer meer dan één status van toepassing is</p>
+      <ol>
+        <li>Actief gevaar of stoppen</li>
+        <li>Beperkt inhalen</li>
+        <li>Bevoegde hulpdienst</li>
+        <li>Verkeersleiding door politie of Wegwacht</li>
+        <li>Dracht of medische kwetsbaarheid</li>
+        <li>Gele voorzichtigheid</li>
+        <li>Groene of voorlopige status</li>
+        <li>Gewoon wegcertificaat</li>
+      </ol>
+      <p>Nevenstatussen worden getoond op goedgekeurde markeringen opzij of achter. Een dienststatus mag de status van dracht, groen, voorzichtigheid, beperking, gevaar of schorsing niet uitwissen of verbergen. Decoratieve combinaties, gemengde kleuren, halve symbolen en niet-officiële overlagen zijn verboden.</p>
+
+      <h2>Strafbare feiten</h2>
+      <p class="h2-num">Wat wordt bestraft</p>
+      <p>Het tonen van een onjuiste status; het gebruik van een onleesbare markering; het verbergen van een vereiste status; het tonen van een status van lagere voorrang in plaats van een hogere; het gebruik van een onbevoegd dienstembleem; het wijzigen van een markering tot gelijkenis met een andere status; het rechtstreeks aan het lichaam bevestigen van een markering; het niet inschakelen van de vereiste verlichting; het gebruik van knipperende, pulserende, van kleur wisselende, verblindende of een dienst nabootsende verlichting; of het voortzetten van het weggebruik na uitval van de markering of van de voeding, behoudens rechtstreekse rechtmatige verplaatsing naar een veilige plaats.</p>
+      <p>Onbevoegde vervaardiging, verkoop, uitlening, vertoning, nabootsing, wijziging, verveelvoudiging, bezit met het oog op misleiding of het niet inleveren van een ingetrokken dienstmarkering is eveneens een strafbaar feit. Gewone niet-dienstmarkeringen mogen daarentegen vrij worden vervaardigd, op voorraad gehouden, verkocht en bezeten: bezit alleen is geen strafbaar feit, en het strafbare feit is het onjuist tonen of het wekken van een verkeerde voorstelling.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Beschikbaarheid.</strong> Officiële specificaties van markeringen, hun betekenissen, bevoegde emblemen en publieksgidsen voor herkenning zijn openbaar toegankelijk. De fysieke officiële markeringen en legitimatiebewijzen worden uitsluitend via bevoegde kanalen vervaardigd, uitgegeven en geleverd aan geverifieerde diensten.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Donkere velden</strong>
+      Zwarte, zeer donkergroene en andere donkere dienstvelden dragen een doorlopende witte of zilveren retroreflecterende buitenrand van ten minste een tiende van de kleinste afmeting van de markering, plus een embleem met hoog contrast. Een donker veld zonder die rand, dat embleem en een rechtmatige mogelijkheid tot verlichting is bij nacht niet geldig op de weg.
+      <br><br>
+      <strong>Keuring</strong>
+      Commerciële, openbare, dienst-, verhuur-, vracht-, ceremoniële, spoed- en overheidsmarkeringen ondergaan vóór elke werkdag een vastgelegde controle en ten minste elke zes maanden een formele keuring.
+      <br><br>
+      <strong>Als zij uitvalt</strong>
+      Stop op de eerste veilige plaats en reinig, ontbloot, herstel, laad op, repareer of vervang. Een handgeschreven briefje, een lint, verf op het lichaam, een telefoonscherm of een gewone lamp is geen vervanging.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Het Keizerrijk</h2>
+      <ul>
+        <li><a href="../../../nl/gov/">Regering en doctrine</a></li>
+        <li><a href="../../../nl/gov/#dynamics">De Acht Dynamieken</a></li>
+        <li><a href="../../../nl/gov/#diarchy">De Keizerlijke Diarchie</a></li>
+        <li><a href="../../../nl/gov/law/">Keizerlijk recht</a></li>
+        <li><a href="../../../nl/history/">Geschiedenis</a></li>
+        <li><a href="../../../nl/symbols/">Naam, vlag en symbolen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Het leven hier</h2>
+      <ul>
+        <li><a href="../../../nl/living/">Leven in Hrossagri&#240;</a></li>
+        <li><a href="../../../nl/living/health/">Gezondheidszorg</a></li>
+        <li><a href="../../../nl/living/education/">Onderwijs en kinderen</a></li>
+        <li><a href="../../../nl/living/transport/">Vervoer en wegen</a></li>
+        <li><a href="../../../nl/living/justice/">Justitie en politie</a></li>
+        <li><a href="../../../nl/living/money/">Werk en geld</a></li>
+        <li><a href="../../../nl/living/citizenship/">Burgerschap en toevlucht</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Paarden en wegen</h2>
+      <ul>
+        <li><a href="../../../nl/horses/">Paarden</a></li>
+        <li><a href="../../../nl/horses/#welfare">Welzijn en bitloze beheersing</a></li>
+        <li><a href="../../../nl/horses/#service">Dienstequiden</a></li>
+        <li><a href="../../../nl/horses/road-status/">Norm voor wegstatusmarkeringen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dit portaal</h2>
+      <ul>
+        <li><a href="../../../nl/about/">Over dit project</a></li>
+        <li><a href="../../../nl/search/">Doorzoek het portaal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Vlag van Het Keizerrijk Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Helaas is Hrossagrith een fictief land. Deze website is een worldbuildingproject en heeft geen enkele band met een werkelijke staat, regering of officiële instantie.</p>
+    <p class="footer__meta">Het Keizerrijk Hrossagri&#240; &middot; Keizerlijk Staatsportaal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

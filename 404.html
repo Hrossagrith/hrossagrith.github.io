@@ -21,7 +21,7 @@
 })();
 </script>
 </head>
-<body data-root="/">
+<body data-root="/" data-base="/" data-i18n="{&quot;light&quot;: &quot;Light&quot;, &quot;dark&quot;: &quot;Dark&quot;, &quot;theme_to_light&quot;: &quot;Switch to light theme&quot;, &quot;theme_to_dark&quot;: &quot;Switch to dark theme&quot;, &quot;search_prompt&quot;: &quot;Type a word or phrase above to search every page of this portal.&quot;, &quot;search_running&quot;: &quot;Searching…&quot;, &quot;search_none&quot;: &quot;No entry in the register matches every word. Try fewer or different words.&quot;, &quot;search_error&quot;: &quot;The search index could not be loaded. Please try again.&quot;, &quot;results_one&quot;: &quot;{n} result for “{q}”&quot;, &quot;results_many&quot;: &quot;{n} results for “{q}”&quot;, &quot;results_none&quot;: &quot;Nothing found for “{q}”&quot;, &quot;expand_all&quot;: &quot;Expand all parts&quot;, &quot;collapse_all&quot;: &quot;Collapse all parts&quot;}">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <div class="utility">
@@ -35,18 +35,18 @@
     <label class="visually-hidden" for="locale">Language</label>
     <select class="locale" id="locale" data-locale-picker>
       <option value="en" selected>English (UK)</option>
-      <option value="en-us" disabled>English (US) — in preparation</option>
+      <option value="en-us">English (US)</option>
       <option value="ru">Русский</option>
-      <option value="de" disabled>Deutsch — in preparation</option>
-      <option value="fr" disabled>Français — in preparation</option>
-      <option value="nl" disabled>Nederlands — in preparation</option>
-      <option value="no" disabled>Norsk bokmål — in preparation</option>
-      <option value="sv" disabled>Svenska — in preparation</option>
-      <option value="fi" disabled>Suomi — in preparation</option>
-      <option value="it" disabled>Italiano — in preparation</option>
-      <option value="zh" disabled>中文 — in preparation</option>
-      <option value="ja" disabled>日本語 — in preparation</option>
-      <option value="ko" disabled>한국어 — in preparation</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
     </select>
     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
   </div>
@@ -55,8 +55,7 @@
 <header class="masthead">
   <div class="shell masthead__inner">
     <img class="masthead__emblem" src="/assets/emblem.png"
-         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel"
-         width="360" height="360">
+         alt="Emblem of the Empire of Hrossagri&#240;: a rearing hippogriff within a roundel" width="360" height="360">
     <p class="masthead__state">Imperial State Portal</p>
     <p class="masthead__name"><a href="/">The Empire of Hrossagri&#240;</a></p>
     <p class="masthead__motto">Horses&rsquo; sanctuary, and the peace that is enforced</p>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marqueurs de statut routier &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
+<meta name="description" content="La Norme impériale de marquage du statut des équidés sur la voie publique : champs, bordures, symboles, dimensions, éclairage, priorité et infractions.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../../../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../../../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../../../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../../../fr/history/">Histoire</a></li>
+            <li><a href="../../../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../../../fr/living/health/">Santé</a></li>
+            <li><a href="../../../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../../../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../../../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../../../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../../../fr/horses/">Chevaux</a></li>
+            <li><a href="../../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../../../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../../../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../../../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../fr/">Accueil</a>
+    <a href="../../../fr/horses/" aria-current="page">Chevaux</a>
+    <a href="../../../fr/living/">Vie quotidienne</a>
+    <a href="../../../fr/gov/">Gouvernement</a>
+    <a href="../../../fr/gov/law/">Droit</a>
+    <a href="../../../fr/history/">Histoire</a>
+    <a href="../../../fr/symbols/">Symboles</a>
+    <a href="../../../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../fr/">Accueil</a><span>&rsaquo;</span><a href="../../../fr/horses/">Chevaux</a><span>&rsaquo;</span><strong>Marqueurs de statut routier</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Livre III &middot; Norme</p>
+  <h1 class="page-title">Marquage du statut des équidés sur la voie publique</h1>
+  <p class="page-standfirst">La norme universelle définitive et contraignante pour tout équidé circulant sur la voie publique. Le Code d’attelage peut y ajouter des exigences supplémentaires ou plus strictes.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Tout équidé s’engageant sur la voie publique doit porter un harnachement de tête sans mors homologué pour la route, muni d’un <strong>marqueur facial</strong> homologué présentant l’insert de statut routier interchangeable, rétroréfléchissant et à éclairage commutable en cours de validité pour cet équidé. Le marqueur est une instruction routière adressée aux êtres humains. Il ne doit pas être utilisé comme publicité, comme simple décoration, comme divulgation médicale au-delà du nécessaire, comme marque d’infamie, ni comme substitut au jugement du cavalier ou du meneur.</p>
+
+      <h2>Définitions</h2>
+      <p class="h2-num">Frontalière et muserolle</p>
+      <p>Une <strong>frontalière</strong> est un élément frontal descendant verticalement au milieu de la face depuis la partie supérieure de la bride, de la têtière, du frontal ou de la zone de la nuque vers le front ou le chanfrein. Elle peut être étroite, en X, ramifiée, large ou en forme de panneau. Un élément qui se borne à traverser ou à entourer le nez, sans liaison faciale verticale supérieure, n’est pas une frontalière.</p>
+      <p>Une <strong>muserolle</strong> est une bande ou une pièce nasale traversant le nez et l’entourant ordinairement. Elle peut être large, décorative, montée séparément ou intégrée à une muserolle de contrôle licite, et n’a pas à être fixée au frontal ou à la têtière.</p>
+      <p>L’une comme l’autre ne vaut marqueur facial que si elle offre un champ d’insert dédié, clairement visible, de taille et de contraste suffisants pour l’usage routier. Un petit ornement, un médaillon, un clou ou un écusson incapable de porter l’insert de façon visible ne convient pas.</p>
+    </div>
+    <aside class="marg">
+      <strong>Aucun marquage sur le corps</strong>
+      Aucune peinture, teinture, tonte, marque au fer, colle, attache à la crinière, attache à la queue, marque cutanée ou modification de la robe ne peut servir à indiquer le statut. Jamais.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Marqueurs ordinaires et restrictifs</h2>
+  <p class="h2-num">La couleur n’est jamais la seule distinction</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Champ blanc</strong>
+          <span class="marker__what">Équidé ordinaire certifié pour la route.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Champ vert</strong>
+          <span class="marker__what">Équidé inexpérimenté, certificat provisoire, statut d’apprentissage ou travail routier sous surveillance.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Champ jaune</strong>
+          <span class="marker__what">Prudence : sensibilité, besoin d’espace supplémentaire ou risque accru d’effroi.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Champ blanc, bordure rouge</strong>
+          <span class="marker__what">Dépassement restreint. Ne dépasser que sur signal du meneur, du cavalier ou de l’accompagnateur.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Champ rouge, X blanc</strong>
+          <span class="marker__what">Dépassement interdit. S’arrêter et attendre : il existe un danger actif ou une nécessité de contrôle immédiat.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h2>Marqueurs de service</h2>
+  <p class="h2-num">Délivrés et vérifiés uniquement par des canaux autorisés</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Bleu, emblème de la Garde routière</strong>
+          <span class="marker__what">Garde routière impériale, patrouille de circulation, service de régulation routière.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Bleu, écusson de police</strong>
+          <span class="marker__what">Service de police, là où il y est habilité.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Blanc, croix rouge</strong>
+          <span class="marker__what">Ambulance ou service médical d’urgence habilité.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Rouge, flamme blanche</strong>
+          <span class="marker__what">Service d’incendie ou de secours.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Vert, patte et sabot</strong>
+          <span class="marker__what">Service vétérinaire d’urgence.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Bleu, pégase</strong>
+          <span class="marker__what">Poste impériale, service de messagerie ou de courrier.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Noir, bordure blanche</strong>
+          <span class="marker__what">Passage du souverain, là où il est légalement autorisé.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Noir avec couronne</strong>
+          <span class="marker__what">Passage autorisé du gouvernement impérial, d’un ministère ou d’une autorité de l’État.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">Vert foncé, insigne</strong>
+          <span class="marker__what">Service militaire.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <h2>Emplacement</h2>
+      <p class="h2-num">Avant, côté et arrière</p>
+      <ul>
+        <li><strong>Avant :</strong> l’insert interchangeable, présenté dans une frontalière ou une muserolle porte-marqueur.</li>
+        <li><strong>Côté :</strong> une plaque de statut ronde ou homologuée sur le harnais, la bricole, le collier de chasse, le tapis de selle ou tout autre équipement non contentif.</li>
+        <li><strong>Panneau arrière de voiture :</strong> des marqueurs disposés selon la formation de l’attelage, afin que les usagers de la route puissent identifier le statut de chaque équidé d’un attelage.</li>
+      </ul>
+      <p>Un marqueur monté sur le nez doit se placer au-dessus de l’os nasal stable, à l’écart des cartilages nasaux inférieurs et des naseaux. Lorsqu’il est intégré à une muserolle exerçant une pression, rien dans la fenêtre, le support, la bordure ou les attaches ne peut rigidifier la muserolle, créer des arêtes dures ou des points de pression, concentrer les efforts, nuire à l’ajustement ou au dégagement, modifier l’action des rênes ou des guides, ni restreindre la respiration.</p>
+
+      <h2>Dimensions minimales</h2>
+      <p class="h2-num">Champ visible net, plus petite dimension</p>
+      <ul>
+        <li><strong>70&nbsp;mm</strong> pour l’insert avant d’un équidé de plus de 300&nbsp;kg</li>
+        <li><strong>60&nbsp;mm</strong> pour un équidé de 100&ndash;300&nbsp;kg</li>
+        <li><strong>50&nbsp;mm</strong> pour un équidé de moins de 100&nbsp;kg</li>
+        <li><strong>90&nbsp;mm</strong> pour la plaque de statut latérale</li>
+        <li><strong>120&nbsp;mm</strong> pour le marqueur du panneau arrière de voiture</li>
+      </ul>
+      <p>Les bordures, les symboles et les champs divisés doivent rester proportionnés et ne peuvent réduire aucun champ net exigé en deçà de ces minima.</p>
+
+      <h2>Essai de reconnaissance</h2>
+      <p class="h2-num">Mesuré, et non affirmé</p>
+      <p>Un marqueur avant doit être correctement identifié par une personne ayant une vision ordinaire corrigée à 50&nbsp;m au moins de jour et à 30&nbsp;m de nuit ; les marqueurs latéraux et arrière, à 60&nbsp;m et 40&nbsp;m. L’essai de nuit est réussi à la fois en mode éclairé sous alimentation et en mode rétroréfléchissant sans alimentation. L’essai comprend des vues de face et à quinze degrés de décalage, le pas et le déplacement routier ordinaire, les conditions humides, le mouvement partiel du toupet, les états de batterie pleine et faible, ainsi que l’allumage et l’extinction délibérés.</p>
+
+      <h2>Éclairage</h2>
+      <p class="h2-num">Éclairage d’identification, non éclairage d’urgence</p>
+      <p>Tout marqueur homologué fonctionne à la fois en mode rétroréfléchissant de qualité routière sans alimentation et en mode auto-éclairé fixe, commutable indépendamment, reproduisant la couleur de champ, la bordure, la forme et le symbole qui lui sont assignés. L’éclairage est obligatoire du coucher au lever du soleil, dans les tunnels, et chaque fois que le brouillard, la pluie, la neige, la fumée, la poussière ou l’éblouissement réduisent sensiblement la reconnaissance.</p>
+      <p>L’éclairage doit être fixe. Il ne doit pas clignoter, stroboscoper, pulser, tourner, balayer, alterner les couleurs, imiter un feu de direction, de freinage, de détresse ou d’urgence, projeter un faisceau sur la route, ni servir de lampe de guidage au sol. L’éclairage du marqueur de statut est un éclairage d’identification et ne crée aucune priorité d’urgence.</p>
+      <p>L’émetteur est diffusé et masqué de sorte qu’aucune source lumineuse directe ne soit visible depuis l’une ou l’autre position oculaire de l’équidé. L’ensemble électrique complet est au moins équivalent à IP65. Un marqueur alimenté reste pleinement rétroréfléchissant lorsqu’il est éteint ou en cas de défaillance de l’alimentation, et sa réserve de batterie couvre le trajet prévu plus deux heures au minimum.</p>
+
+      <h2>Ordre de priorité</h2>
+      <p class="h2-num">Lorsque plusieurs statuts s’appliquent</p>
+      <ol>
+        <li>Danger actif ou arrêt</li>
+        <li>Dépassement restreint</li>
+        <li>Service d’urgence habilité</li>
+        <li>Police ou régulation de la circulation par la Garde routière</li>
+        <li>Gestation ou vulnérabilité médicale</li>
+        <li>Prudence jaune</li>
+        <li>Statut vert ou provisoire</li>
+        <li>Certification routière ordinaire</li>
+      </ol>
+      <p>Les statuts secondaires figurent sur des marqueurs latéraux ou arrière homologués. Un statut de service ne doit effacer ni dissimuler un statut de gestation, vert, de prudence, restreint, de danger ou de suspension. Les combinaisons décoratives, les couleurs mélangées, les demi-symboles et les superpositions non officielles sont interdits.</p>
+
+      <h2>Infractions</h2>
+      <p class="h2-num">Ce qui est puni</p>
+      <p>Afficher un statut faux ; utiliser un marqueur illisible ; dissimuler un statut obligatoire ; afficher un statut de priorité inférieure au lieu d’un statut supérieur ; utiliser un emblème de service non autorisé ; modifier un marqueur pour le faire ressembler à un autre statut ; fixer un marqueur directement sur le corps ; ne pas activer l’éclairage exigé ; utiliser un éclairage clignotant, pulsé, changeant de couleur, éblouissant ou imitant un service ; ou poursuivre l’usage de la route après une défaillance du marqueur ou de son alimentation, sauf déplacement direct et licite vers un lieu sûr.</p>
+      <p>La fabrication, la vente, le prêt, l’affichage, l’imitation, la modification, la duplication non autorisés, la détention à des fins de tromperie ou le défaut de restitution d’un marqueur de service révoqué constituent également des infractions. Les marqueurs ordinaires, non de service, peuvent en revanche être librement fabriqués, stockés, vendus et détenus : la seule détention n’est pas une infraction, l’infraction étant l’affichage faux ou la représentation trompeuse.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Disponibilité.</strong> Les spécifications officielles des marqueurs, leurs significations, les emblèmes autorisés et les guides de reconnaissance destinés au public sont accessibles à tous. Les marqueurs officiels physiques et les titres correspondants ne sont fabriqués, délivrés et fournis que par des canaux autorisés, à des services vérifiés.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Champs sombres</strong>
+      Le noir, le vert très foncé et les autres champs de service sombres portent une bordure extérieure rétroréfléchissante continue, blanche ou argentée, d’une largeur au moins égale au dixième de la plus petite dimension du marqueur, ainsi qu’un emblème très contrasté. Un champ sombre dépourvu de cette bordure, de cet emblème et de la capacité d’éclairage licite n’est pas valable sur route de nuit.
+      <br><br>
+      <strong>Inspection</strong>
+      Les marqueurs commerciaux, publics, de service, de location, de fret, cérémoniels, d’urgence et gouvernementaux font l’objet d’une vérification enregistrée avant chaque journée de travail et d’une inspection formelle au moins tous les six mois.
+      <br><br>
+      <strong>En cas de défaillance</strong>
+      S’arrêter au premier endroit sûr et nettoyer, dégager, corriger, recharger, réparer ou remplacer. Une note manuscrite, un ruban, de la peinture sur le corps, un écran de téléphone ou une lampe ordinaire n’en sont pas des substituts.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../../../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../../../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../../../fr/history/">Histoire</a></li>
+        <li><a href="../../../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../../../fr/living/health/">Santé</a></li>
+        <li><a href="../../../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../../../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../../../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../../../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../../../fr/horses/">Chevaux</a></li>
+        <li><a href="../../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../../../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../../../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../../../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Histoire &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
+<meta name="description" content="Histoire ancienne du peuple hrossagridien, c. 1200-100 av. J.-C. : la Crise de la Traversée, le Pacte du Sanctuaire, l’Accord des Trois Routes.">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../fr/" data-i18n="{&quot;light&quot;: &quot;Clair&quot;, &quot;dark&quot;: &quot;Sombre&quot;, &quot;theme_to_light&quot;: &quot;Passer au thème clair&quot;, &quot;theme_to_dark&quot;: &quot;Passer au thème sombre&quot;, &quot;search_prompt&quot;: &quot;Saisissez ci-dessus un mot ou une expression pour rechercher dans toutes les pages de ce portail.&quot;, &quot;search_running&quot;: &quot;Recherche en cours…&quot;, &quot;search_none&quot;: &quot;Aucune entrée du registre ne contient tous les mots. Essayez avec moins de mots ou avec d’autres mots.&quot;, &quot;search_error&quot;: &quot;L’index de recherche n’a pas pu être chargé. Veuillez réessayer.&quot;, &quot;results_one&quot;: &quot;{n} résultat pour « {q} »&quot;, &quot;results_many&quot;: &quot;{n} résultats pour « {q} »&quot;, &quot;results_none&quot;: &quot;Aucun résultat pour « {q} »&quot;, &quot;expand_all&quot;: &quot;Développer toutes les parties&quot;, &quot;collapse_all&quot;: &quot;Réduire toutes les parties&quot;}">
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un projet de worldbuilding</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">Rechercher dans le portail</label>
+      <input type="search" id="q" name="q" placeholder="Rechercher dans le portail" autocomplete="off">
+      <button type="submit">Rechercher</button>
+    </form>
+    <label class="visually-hidden" for="locale">Langue</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr" selected>Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Sombre</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="Emblème de l’Empire de Hrossagri&#240; : un hippogriffe cabré dans un rondeau" width="360" height="360">
+    <p class="masthead__state">Portail impérial de l’État</p>
+    <p class="masthead__name"><a href="../../fr/">L&rsquo;Empire de Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Le sanctuaire des chevaux, et la paix que l’on fait respecter</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Toutes les sections">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L’Empire</h2>
+            <ul>
+            <li><a href="../../fr/gov/">Gouvernement et doctrine</a></li>
+            <li><a href="../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+            <li><a href="../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+            <li><a href="../../fr/gov/law/">Droit impérial</a></li>
+            <li><a href="../../fr/history/">Histoire</a></li>
+            <li><a href="../../fr/symbols/">Nom, drapeau et symboles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivre ici</h2>
+            <ul>
+            <li><a href="../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+            <li><a href="../../fr/living/health/">Santé</a></li>
+            <li><a href="../../fr/living/education/">Éducation et enfance</a></li>
+            <li><a href="../../fr/living/transport/">Transports et routes</a></li>
+            <li><a href="../../fr/living/justice/">Justice et police</a></li>
+            <li><a href="../../fr/living/money/">Travail et argent</a></li>
+            <li><a href="../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Chevaux et routes</h2>
+            <ul>
+            <li><a href="../../fr/horses/">Chevaux</a></li>
+            <li><a href="../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+            <li><a href="../../fr/horses/#service">Équidés de service</a></li>
+            <li><a href="../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Ce portail</h2>
+            <ul>
+            <li><a href="../../fr/about/">À propos de ce projet</a></li>
+            <li><a href="../../fr/search/">Rechercher dans le portail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../fr/">Accueil</a>
+    <a href="../../fr/horses/">Chevaux</a>
+    <a href="../../fr/living/">Vie quotidienne</a>
+    <a href="../../fr/gov/">Gouvernement</a>
+    <a href="../../fr/gov/law/">Droit</a>
+    <a href="../../fr/history/" aria-current="page">Histoire</a>
+    <a href="../../fr/symbols/">Symboles</a>
+    <a href="../../fr/about/">À propos</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../fr/">Accueil</a><span>&rsaquo;</span><strong>Histoire</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Livre IV</p>
+  <h1 class="page-title">Histoire ancienne</h1>
+  <p class="page-standfirst">Quatre parties reconstituées couvrant c.&nbsp;1200&ndash;100 av. J.-C. Le récit ne commence pas par un territoire moderne souhaité, et il n’accorde pas à l’Empire une naissance nationale que les sources ne peuvent porter.</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Méthode historique.</strong> Cette reconstitution associe de véritables contraintes archéologiques à une tradition hrossagridienne fictive. L’archéologie peut contraindre les milieux, les techniques, les formes de peuplement et les échanges matériels ; elle ne peut vérifier les vendettas, les décisions, les discours ou les motifs particuliers consignés ici. Là où la tradition conservée ne permet pas de départager plusieurs explications, le récit préserve cette incertitude plutôt que de présenter un motif comme un fait établi.</p></div>
+
+
+  <div class="jump">
+    <h2>Aller à une partie</h2>
+    <ol>
+      <li><a href="#part-1">Partie I &middot; c. 1200&ndash;650 av. J.-C. &mdash; avant le peuple, et la crise</a></li>
+      <li><a href="#part-2">Partie II &middot; c. 650&ndash;500 av. J.-C. &mdash; le réseau peu fiable</a></li>
+      <li><a href="#part-3">Partie III &middot; c. 500&ndash;300 av. J.-C. &mdash; renouveau, surextension, premiers chevaux politiques</a></li>
+      <li><a href="#part-4">Partie IV &middot; c. 300&ndash;100 av. J.-C. &mdash; la vitesse, et ce qu’elle ne pouvait acheter</a></li>
+    </ol>
+  </div>
+
+  <div class="controls">
+    <button type="button" data-expand-all aria-pressed="false">Développer toutes les parties</button>
+  </div>
+
+      <details class="part" id="part-1" open>
+        <summary><span class="part__years">c. 1200&ndash;650 av. J.-C.</span> Partie I</summary>
+        <div class="part__body">
+        <p class="h2-num">Avant le peuple, et la crise qui l’a fait naître</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 1200&ndash;1050 av. J.-C.</p>
+          <h3 class="timeline__title">Avant le peuple hrossagridien</h3>
+          <p>Il n’existe ni peuple, ni État, ni identité commune hrossagridiens. Les basses terres du centre de l’Irlande abritent des communautés agricoles dispersées autour du moyen Shannon, du Lough Ree, du centre du Westmeath, de l’est du Roscommon et du nord de l’Offaly. L’autorité appartient aux maisonnées, aux groupes de parenté et aux chefs locaux plutôt qu’à des États permanents. Des chevaux sont peut-être présents en petit nombre, mais ils ne sont pas encore le fondement de la société, du droit ou du gouvernement &mdash; et la région qui deviendra plus tard le cœur hrossagridien n’est qu’une région intérieure ordinaire parmi plusieurs autres plus riches.</p>
+          <p class="timeline__status">Statut territorial : pas de Pacte, pas de territoire commun.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 1050&ndash;980 av. J.-C.</p>
+          <h3 class="timeline__title">La Crise de la Traversée</h3>
+          <p>La première divergence durable est située à une traversée importante du moyen Shannon &mdash; déjà davantage qu’un itinéraire pratique, elle sert aux échanges saisonniers, aux arrangements matrimoniaux, aux assemblées rituelles, au règlement des différends et au déplacement du bétail et des voyageurs.</p>
+          <p>Une succession de différends au sujet de bovins volés, de l’accès à la traversée et de meurtres anciens s’élargit en vendetta. Les représailles débordent les familles d’origine ; des voyageurs sont attaqués, les réparations cessent et la traversée devient impraticable. Tout le voisinage en souffre : le bétail ne peut plus être déplacé en sécurité, les marchands évitent l’itinéraire, les établissements isolés deviennent vulnérables.</p>
+          <p>Au fil de plusieurs assemblées ultérieures, des maisonnées influentes rétablissent et étendent à plusieurs reprises une coutume de paix temporaire &mdash; en gros, l’interdiction de tuer ou de saisir un participant admis pendant une assemblée ou sur ses abords reconnus. La protection est étroite : seulement pendant l’assemblée, seulement dans les lieux reconnus, seulement pour les personnes que les hôtes acceptent.</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <details class="part" id="part-2" open>
+        <summary><span class="part__years">c. 650&ndash;500 av. J.-C.</span> Partie II</summary>
+        <div class="part__body">
+        <p class="h2-num">Un réseau restreint et peu fiable, sans cesse recréé</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 650&ndash;620 av. J.-C.</p>
+          <h3 class="timeline__title">La survie et une mémoire peu fiable</h3>
+          <p>Un groupe répare une traversée, un autre tient des barques prêtes, un autre dégage les sentiers hauts sur les crêtes de gravier, un autre encore emmagasine du fourrage. Il en résulte un réseau inégal d’itinéraires praticables, et non un système routier planifié. Il n’existe pas d’archive écrite : les accords sont répétés publiquement devant témoins et scellés par des objets échangés, du bétail donné en gage ou des repères reconnus. Les témoins meurent, les objets se perdent, les maisonnées puissantes intimident, et les établissements conservent des versions incompatibles d’une même promesse.</p>
+          <p>Le sanctuaire aussi connaît des défaillances. Des voyageurs protégés sont parfois dépouillés ou tués, parfois par des proches de leurs propres hôtes. Ce qui fait la valeur du sanctuaire n’est pas qu’il ne soit jamais rompu, mais que sa rupture puisse attirer les représailles de plusieurs communautés sans lien entre elles et nuire au commerce futur.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 620&ndash;590 av. J.-C.</p>
+          <h3 class="timeline__title">Maisonnées artisanes et dépendance contestée</h3>
+          <p>Le fer arrive de façon inégale, par plusieurs personnes et plusieurs itinéraires plutôt que par un unique changement technique ; le bronze conserve sa valeur et il n’existe pas d’industrie du fer fiable au sein du Pacte. Les maisonnées artisanes itinérantes sont accueillies de façon sélective pour leurs savoir-faire, et les répondants fournissent nourriture, protection et lieu de travail en échange de main-d’œuvre, de biens ou d’enseignement &mdash; des arrangements qui suscitent sans cesse des différends lorsque le montant, la durée ou le consentement n’ont jamais été clairement établis.</p>
+          <p>Au fil des décennies, une coutume se renforce : une personne admise sous protection ne doit pas être séparée des membres de sa maisonnée qui l’accompagnent, ni privée des animaux protégés et des objets essentiels, avant que le différend ne soit porté devant témoins. Des répondants puissants l’ignorent parfois purement et simplement.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 590&ndash;550 av. J.-C.</p>
+          <h3 class="timeline__title">Différends sur le paiement des escortes et appui conjoint</h3>
+          <p>Les maisonnées qui fournissent escortes, barques et guetteurs exigent une compensation plus élevée. Ce ne sont pas des soldats de métier, mais des maisonnées agricoles et pastorales qui détournent du travail et de la nourriture tout en risquant des vies. Lorsqu’un lignage d’escorteurs influent est accusé de percevoir des paiements supplémentaires auprès de voyageurs auxquels la protection a déjà été promise, les hôtes objectent que cela transforme une garantie en extorsion. Aucun des deux camps n’obtient de victoire durable.</p>
+          <p>Ce qui en ressort est une leçon pratique durable : les accords adossés aux <em>deux</em> formes de pouvoir social tiennent &mdash; ceux qui savent réunir des témoins et négocier des obligations, et ceux qui savent organiser escortes, représailles et défense. C’est une habitude, non une diarchie, et elle ne crée aucune charge.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 550&ndash;500 av. J.-C.</p>
+          <h3 class="timeline__title">Un réseau durable mais contesté</h3>
+          <p>Des maisonnées d’origines diverses sont reliées par des mariages, des enfants placés en nourrice, des dettes, des vendettas et des liens artisanaux, mais aucune identité commune claire n’est conservée par les sources. Certaines attentes survivent aux urgences qui les ont fait naître : l’aide se rend, les traversées entretenues en commun ne sont pas obstruées sans avertissement, et s’en prendre à un hôte protégé peut attirer les représailles de communautés sans lien avec la victime.</p>
+          <p>Des coutumes influentes continuent de rejeter la propriété permanente d’êtres humains et la cession de personnes comme biens. La détention et les otages temporaires existent, mais les personnes retenues demeurent des personnes protégées, qui doivent être libérées lorsque l’obligation est remplie ou formellement abandonnée.</p>
+          <p>Les chevaux restent mal attestés et socialement limités, et ne sont encore centraux pour aucune identité. Les coutumes de sauf-conduit protègent les animaux qui voyagent avec une maisonnée, y compris les chevaux présents, parce que leur saisie peut immobiliser ou ruiner des personnes protégées.</p>
+          <p class="timeline__status">Statut territorial : un fragile réseau de protection autour du moyen Shannon &mdash; sans le nom Hrossagri&#240;, sans monarque, sans l’une ni l’autre Couronne, sans droit écrit, sans armée permanente, sans capitale et sans frontière continue.</p>
+        </li>
+      </ol>
+
+      <div class="pullquote">
+        <p>Une promesse de protection ne vaut guère si nul ne peut la rendre matériellement réelle, tandis que la force sans promesse reconnue devient extorsion.</p>
+      </div>
+
+      </div></details>
+
+      <details class="part" id="part-3" open>
+        <summary><span class="part__years">c. 500&ndash;300 av. J.-C.</span> Partie III</summary>
+        <div class="part__body">
+        <p class="h2-num">Renouveau, surextension, échec, et les premiers chevaux politiques</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 500&ndash;460 av. J.-C.</p>
+          <h3 class="timeline__title">Renouveau sans centralisation</h3>
+          <p>Les pratiques de sanctuaire se maintiennent parce qu’elles résolvent des problèmes récurrents : les étrangers ont besoin de répondants, les marchands de haltes sûres, les hôtes de compensations, et les voisins de moyens de mettre fin à une vendetta sans capituler entièrement. Une assemblée saisonnière devient plus régulière &mdash; non parce que quelqu’un fonde une capitale, mais parce que son emplacement dispose d’eau, de pâturage et d’abords familiers, et parce que les maisonnées hôtes se disputent le prestige qu’elle apporte. Les années de disette, elle se réduit, se déplace ou est abandonnée.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 460&ndash;420 av. J.-C.</p>
+          <h3 class="timeline__title">L’Accord des Trois Routes</h3>
+          <p>La traversée d’origine devient un goulet d’étranglement dans les bonnes saisons et un point de rupture dans les mauvaises. Des maisonnées influentes tentent de relier trois solutions de rechange : l’ancienne traversée, un passage en barque en amont et un chemin est&ndash;ouest sur des hauteurs plus fermes, en coordonnant les contributions d’escorte, la réparation des barques, les compensations et le pâturage de secours.</p>
+          <p>Cela fonctionne un temps, parce qu’aucune route n’est indispensable. Son succès engendre ensuite de nouveaux conflits : les contributions sont inégales, les maisonnées proches de la traversée la plus fréquentée recueillent davantage de dons et de prestige, et les contributeurs répondent au resquillage en réservant barques et escortes aux leurs. L’accord ne s’effondre pas en un instant &mdash; les contributions deviennent irrégulières, on ne se rend aux assemblées que de façon sélective, et en une génération la coordination commune a pour l’essentiel échoué.</p>
+          <p class="timeline__status">Statut territorial : trois routes brièvement reliées par des promesses qui se recouvrent. Elles ne deviennent jamais un district administré unique.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 420&ndash;370 av. J.-C.</p>
+          <h3 class="timeline__title">Les années de fourrage et les limites du refuge</h3>
+          <p>Plusieurs saisons locales désastreuses en l’espace d’une génération &mdash; pâturages inondés, pénurie de fourrage, maladies du bétail, échanges interrompus &mdash; sont retenues comme un choc composite plausible plutôt que comme un événement climatique daté. Le réseau de refuge ne peut accueillir tout le monde. Les hôtes rationnent la protection : les travailleurs qualifiés et les personnes disposant d’alliances matrimoniales ont plus de chances d’être admis que les familles sans appui.</p>
+          <p>La pression met au jour les limites de la coutume interdisant la propriété d’autrui. Des répondants tentent de convertir des dettes alimentaires impayées en service sans terme, ou de retenir les plus jeunes membres d’une maisonnée après l’expiration d’un accord. Le conflit renforce une règle appliquée inégalement : la poursuite du service exige un renouvellement devant témoins, la personne dont on attend le service étant présente et son assentiment entendu &mdash; même si la pression peut encore faire de cet assentiment une fiction.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 330&ndash;300 av. J.-C.</p>
+          <h3 class="timeline__title">Un élevage de chevaux politiquement significatif</h3>
+          <p>Quelques maisonnées de protection fortunées détournent peu à peu le pâturage, le fourrage d’hiver et la main-d’œuvre au profit des chevaux, parce que les différends répétés sur les routes rendent la vitesse précieuse. L’élevage n’accroît pas rapidement le cheptel : une jument porte un poulain la plus grande partie d’une année, et un jeune cheval qui survit consomme plusieurs saisons avant de pouvoir porter un cavalier pressé. Une concentration d’animaux peut disparaître en une génération par blessure, par maladie ou par la perte d’une jument.</p>
+          <p>L’avantage est néanmoins politique. Un messager monté peut avertir une traversée, convoquer des parents ou atteindre une assemblée avant la version adverse d’un différend. Mais la vitesse ne rend pas un message vrai : des témoins venus plus tard peuvent le contredire, et les hôtes peuvent tenir un rapport monté non corroboré pour une manipulation.</p>
+          <p class="timeline__status">Statut territorial à c. 300 av. J.-C. : davantage de coutumes reconnues, quelques lignages fortunés, un travail du fer inégal &mdash; et toujours aucun nom national commun, aucun monarque, aucune Couronne, aucune assemblée permanente, aucun droit écrit, aucune armée, aucun impôt, aucune monnaie, aucune ville et aucune frontière fixe.</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <details class="part" id="part-4" open>
+        <summary><span class="part__years">c. 300&ndash;100 av. J.-C.</span> Partie IV</summary>
+        <div class="part__body">
+        <p class="h2-num">La vitesse, et ce qu’elle ne pouvait acheter</p>
+
+      <ol class="timeline">
+        <li>
+          <p class="timeline__period">c. 300&ndash;260 av. J.-C.</p>
+          <h3 class="timeline__title">Le prix d’agir le premier</h3>
+          <p>Les messagers montés créent un problème politique immédiat, et la réponse n’est pas une classe dirigeante à cheval. Les chevaux adaptés sont rares, et en posséder un n’équivaut pas à le maintenir utilisable : il faut emmagasiner du fourrage, soigner les blessures, et les cavaliers doivent apprendre le terrain. Les sols détrempés, les crues, l’obscurité et les passages d’eau effacent une grande part de l’avantage de vitesse.</p>
+          <p>Le changement plus profond est que les hôtes importants refusent de plus en plus de tenir la première arrivée pour une preuve. Un messager peut obtenir des précautions temporaires, mais une décision durable attend des témoins nommés ou un second récit &mdash; ce qui réduit l’intérêt de courir pour imposer d’abord une version fausse.</p>
+        </li>
+        <li>
+          <p class="timeline__period">c. 260&ndash;220 av. J.-C.</p>
+          <h3 class="timeline__title">Les litiges sur les garanties équines</h3>
+          <p>La saisie d’un cheval prend une charge politique que n’a pas la perte d’un animal ordinaire. Les bovins demeurent bien plus importants pour la plupart des maisonnées comme richesse et comme nourriture, mais prendre le cheval d’un rival lui ôte la vitesse, le prestige et la capacité de convoquer des alliés. Il n’existe encore aucune doctrine générale selon laquelle les chevaux seraient juridiquement différents du bétail, et les communautés extérieures au réseau peuvent ne voir aucune raison de reconnaître la moindre distinction particulière.</p>
+          <p class="timeline__status">Statut territorial : des lieux et des routes protégés enchâssés dans des terres contrôlées de façon indépendante. Une personne peut aller d’un hôte reconnu à un autre sans jamais entrer dans une juridiction continue.</p>
+        </li>
+      </ol>
+
+      </div></details>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Sur le nom, et sur les Couronnes.</strong> Tout au long de cette période, le nom <span class="native">Hrossagri&#240;</span> n’existe pas ; il apparaît bien plus tard comme un exonyme vieux-norrois. La distinction récurrente entre ceux qui négocient des obligations et ceux qui organisent la protection n’est tenue par les historiens que pour un lointain ancêtre culturel des <a href="../gov/#diarchy">Couronnes Guidante et Gardienne</a>, qui naissent bien plus tard de crises distinctes. Aucune charge ininterrompue ne les relie.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>Les noms employés ici</strong>
+      Pour la période ancienne, les historiens emploient les appellations modernes <em>Pacte du Sanctuaire</em> et <em>communautés du Pacte</em>. Aucun nom collectif contemporain des faits n’a survécu.
+      <br><br>
+      <strong>Ce qui est inventé</strong>
+      Les vendettas, les décisions et les institutions. Ni l’archéologie, ni la grammaire du nom postérieur.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L’Empire</h2>
+      <ul>
+        <li><a href="../../fr/gov/">Gouvernement et doctrine</a></li>
+        <li><a href="../../fr/gov/#dynamics">Les Huit Dynamiques</a></li>
+        <li><a href="../../fr/gov/#diarchy">La Diarchie impériale</a></li>
+        <li><a href="../../fr/gov/law/">Droit impérial</a></li>
+        <li><a href="../../fr/history/">Histoire</a></li>
+        <li><a href="../../fr/symbols/">Nom, drapeau et symboles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivre ici</h2>
+      <ul>
+        <li><a href="../../fr/living/">Vivre en Hrossagri&#240;</a></li>
+        <li><a href="../../fr/living/health/">Santé</a></li>
+        <li><a href="../../fr/living/education/">Éducation et enfance</a></li>
+        <li><a href="../../fr/living/transport/">Transports et routes</a></li>
+        <li><a href="../../fr/living/justice/">Justice et police</a></li>
+        <li><a href="../../fr/living/money/">Travail et argent</a></li>
+        <li><a href="../../fr/living/citizenship/">Citoyenneté et refuge</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chevaux et routes</h2>
+      <ul>
+        <li><a href="../../fr/horses/">Chevaux</a></li>
+        <li><a href="../../fr/horses/#welfare">Bien-être et contrôle sans mors</a></li>
+        <li><a href="../../fr/horses/#service">Équidés de service</a></li>
+        <li><a href="../../fr/horses/road-status/">Norme des marqueurs de statut routier</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ce portail</h2>
+      <ul>
+        <li><a href="../../fr/about/">À propos de ce projet</a></li>
+        <li><a href="../../fr/search/">Rechercher dans le portail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="Drapeau de l’Empire de Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Malheureusement, Hrossagrith est un pays fictif. Ce site est un projet de worldbuilding et n’a aucun lien avec un État, un gouvernement ou un organisme officiel réel.</p>
+    <p class="footer__meta">L&rsquo;Empire de Hrossagri&#240; &middot; Portail impérial de l’État &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

@@ -303,6 +303,9 @@ body {
   letter-spacing: 0.1em;
   color: var(--ink-faint);
   padding-top: 1rem;
+  /* Compounds such as the Dutch "Wegstatusmarkeringen" must not push the
+     page sideways on a narrow phone. */
+  overflow-wrap: break-word;
 }
 
 .crumb a {

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>도로 통행 상태 마커 &mdash; 흐로사그리드 제국</title>
+<meta name="description" content="제국 공도 말과 동물 통행 상태 표시 표준: 바탕, 테두리, 기호, 치수, 조명, 우선순위, 위반 행위.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../ko/" data-i18n="{&quot;light&quot;: &quot;밝게&quot;, &quot;dark&quot;: &quot;어둡게&quot;, &quot;theme_to_light&quot;: &quot;밝은 테마로 전환&quot;, &quot;theme_to_dark&quot;: &quot;어두운 테마로 전환&quot;, &quot;search_prompt&quot;: &quot;위에 단어나 구절을 입력하면 이 포털의 모든 페이지를 검색한다.&quot;, &quot;search_running&quot;: &quot;검색 중…&quot;, &quot;search_none&quot;: &quot;모든 단어를 포함하는 항목이 등록부에 없다. 단어 수를 줄이거나 다른 단어로 시도할 것.&quot;, &quot;search_error&quot;: &quot;검색 색인을 불러오지 못하였다. 다시 시도할 것.&quot;, &quot;results_one&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_many&quot;: &quot;“{q}” 검색 결과 {n}건&quot;, &quot;results_none&quot;: &quot;“{q}”에 대한 검색 결과가 없습니다&quot;, &quot;expand_all&quot;: &quot;모든 부 펼치기&quot;, &quot;collapse_all&quot;: &quot;모든 부 접기&quot;}">
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">세계관 구축 프로젝트</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">포털 검색</label>
+      <input type="search" id="q" name="q" placeholder="포털 검색" autocomplete="off">
+      <button type="submit">검색</button>
+    </form>
+    <label class="visually-hidden" for="locale">언어</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko" selected>한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">어둡게</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="흐로사그리드 제국의 문장: 원형 문양 안에서 앞발을 든 히포그리프" width="360" height="360">
+    <p class="masthead__state">제국 국가 포털</p>
+    <p class="masthead__name"><a href="../../../ko/">흐로사그리드 제국</a></p>
+    <p class="masthead__motto">말들의 비호, 그리고 강제되는 평화</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="모든 부문">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        메뉴
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>제국</h2>
+            <ul>
+            <li><a href="../../../ko/gov/">정부와 교의</a></li>
+            <li><a href="../../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+            <li><a href="../../../ko/gov/#diarchy">제국 이두정</a></li>
+            <li><a href="../../../ko/gov/law/">제국법</a></li>
+            <li><a href="../../../ko/history/">역사</a></li>
+            <li><a href="../../../ko/symbols/">이름, 국기, 상징</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이곳에서의 삶</h2>
+            <ul>
+            <li><a href="../../../ko/living/">흐로사그리드에서의 삶</a></li>
+            <li><a href="../../../ko/living/health/">보건</a></li>
+            <li><a href="../../../ko/living/education/">교육과 아동</a></li>
+            <li><a href="../../../ko/living/transport/">교통과 도로</a></li>
+            <li><a href="../../../ko/living/justice/">사법과 치안</a></li>
+            <li><a href="../../../ko/living/money/">노동과 금전</a></li>
+            <li><a href="../../../ko/living/citizenship/">시민권과 비호</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>말과 도로</h2>
+            <ul>
+            <li><a href="../../../ko/horses/">말</a></li>
+            <li><a href="../../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+            <li><a href="../../../ko/horses/#service">공무 말과 동물</a></li>
+            <li><a href="../../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>이 포털</h2>
+            <ul>
+            <li><a href="../../../ko/about/">이 프로젝트에 대하여</a></li>
+            <li><a href="../../../ko/search/">포털 검색</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ko/">홈</a>
+    <a href="../../../ko/horses/" aria-current="page">말</a>
+    <a href="../../../ko/living/">삶</a>
+    <a href="../../../ko/gov/">정부</a>
+    <a href="../../../ko/gov/law/">법</a>
+    <a href="../../../ko/history/">역사</a>
+    <a href="../../../ko/symbols/">상징</a>
+    <a href="../../../ko/about/">소개</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ko/">홈</a><span>&rsaquo;</span><a href="../../../ko/horses/">말</a><span>&rsaquo;</span><strong>도로 통행 상태 마커</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">제III권 &middot; 표준</p>
+  <h1 class="page-title">공도 말과 동물의 통행 상태 표시</h1>
+  <p class="page-standfirst">공도에 나서는 모든 말과 동물에게 적용되는 최종적이고 구속력 있는 보편 표준. 마차 법전은 그 위에 추가적이거나 더 엄격한 요건을 부과할 수 있다.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">공도에 들어서는 모든 말과 동물은 그 말과 동물의 현재 도로 통행 상태를 나타내는 교체 가능한 재귀반사식이자 전환 점등식 표시판을 끼운 승인된 <strong>안면 마커</strong>가 부착된, 승인된 공도용 재갈 없는 머리 장구를 착용한다. 마커는 사람을 향한 도로상의 지시이다. 마커는 광고로, 장식만으로, 필요를 넘어서는 의학적 공개로, 낙인 표시로, 또는 기수나 마부의 판단을 대신하는 것으로 사용될 수 없다.</p>
+
+      <h2>정의</h2>
+      <p class="h2-num">프렌테라와 무세롤라</p>
+      <p><strong>프렌테라</strong>는 굴레의 윗부분, 두락, 이마끈 또는 정수리 부위에서 이마나 콧등을 향하여 얼굴 한가운데를 세로로 내려오는 전면 부품이다. 좁은 형태, X자 형태, 갈라진 형태, 넓은 형태 또는 판 형태일 수 있다. 코를 가로지르거나 감싸는 데에 그치고 얼굴 위쪽으로의 세로 연결이 없는 부품은 프렌테라가 아니다.</p>
+      <p><strong>무세롤라</strong>는 코를 가로질러 지나가며 통상 코를 감싸는 코끈 또는 코 부품이다. 넓거나, 장식적이거나, 별도로 장착되거나, 적법한 제어용 코끈에 통합되어 있을 수 있으며, 이마끈이나 정수리끈에 부착될 필요는 없다.</p>
+      <p>둘 중 어느 것이든, 도로에서의 사용에 충분한 크기와 대비를 갖춘 전용의 뚜렷이 보이는 표시판 면을 제공하는 경우에만 안면 마커로 인정된다. 표시판을 눈에 띄게 지닐 수 없는 작은 장식물, 메달, 징 또는 배지는 인정되지 아니한다.</p>
+    </div>
+    <aside class="marg">
+      <strong>몸에 하는 표시의 금지</strong>
+      도료, 염색, 털 깎기, 낙인, 접착제, 갈기 부착물, 꼬리 부착물, 피부 표시 또는 털의 변형은 상태를 나타내기 위하여 사용될 수 없다. 어떠한 경우에도 그러하다.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>일반 마커와 제한 마커</h2>
+  <p class="h2-num">색은 결코 유일한 구분 수단이 아니다</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">흰 바탕</strong>
+          <span class="marker__what">도로 인증을 받은 일반 말과 동물.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">녹색 바탕</strong>
+          <span class="marker__what">미숙한 말과 동물, 임시 인증, 훈련 중 상태 또는 감독 아래의 도로 작업.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">노란 바탕</strong>
+          <span class="marker__what">주의: 민감성, 추가 공간의 필요 또는 높아진 놀람 위험.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">흰 바탕에 붉은 테두리</strong>
+          <span class="marker__what">추월 제한. 마부, 기수 또는 취급자의 신호가 있을 때에만 추월할 것.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">붉은 바탕에 흰 X</strong>
+          <span class="marker__what">추월 금지. 정지하여 대기할 것: 현존하는 위험 또는 즉각적인 제어 상황이 있음.</span>
+        </span>
+      </li>
+  </ul>
+
+  <h2>공무 마커</h2>
+  <p class="h2-num">오직 권한이 부여된 경로를 통해서만 발급되고 검증된다</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">파랑, 도로 경비대 표장</strong>
+          <span class="marker__what">제국 도로 경비대, 교통 순찰, 도로 통제 업무.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">파랑, 경찰 방패</strong>
+          <span class="marker__what">권한이 부여된 경우의 경찰 업무.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">흰색, 붉은 십자</strong>
+          <span class="marker__what">구급 마차 또는 권한이 부여된 응급 의료 업무.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">빨강, 흰 불꽃</strong>
+          <span class="marker__what">소방 또는 구조 업무.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">초록, 발과 발굽</strong>
+          <span class="marker__what">수의 응급 업무.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">파랑, 페가수스</strong>
+          <span class="marker__what">제국 우편, 전령 또는 배송 업무.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">검정에 흰 테두리</strong>
+          <span class="marker__what">법적으로 권한이 부여된 경우의 주권자 통행.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">검정에 왕관</strong>
+          <span class="marker__what">권한이 부여된 제국 정부, 부처 또는 국가 기관의 통행.</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">짙은 초록, 인장 문양</strong>
+          <span class="marker__what">군 업무.</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <h2>부착 위치</h2>
+      <p class="h2-num">앞면, 측면, 후면</p>
+      <ul>
+        <li><strong>앞면:</strong> 마커를 지닌 프렌테라 또는 무세롤라에 표시하는 교체 가능한 표시판.</li>
+        <li><strong>측면:</strong> 마구, 가슴걸이, 가슴받이, 안장깔개 또는 그 밖의 구속하지 아니하는 장비에 부착하는 둥근 형태 또는 승인된 상태 표시판.</li>
+        <li><strong>후면 마차 표시판:</strong> 열의 편성에 맞추어 배열한 마커. 도로 이용자가 한 마차에 매인 각 말과 동물의 상태를 식별할 수 있도록 한다.</li>
+      </ul>
+      <p>코에 장착하는 마커는 단단한 코뼈 위에 놓이고, 아래쪽 코 연골과 콧구멍을 피하여야 한다. 압력을 받는 코끈에 통합하는 경우, 창, 뒷받침, 테두리 또는 잠금장치의 어떠한 부분도 코끈을 더 뻣뻣하게 하거나, 단단한 모서리나 압력점을 만들거나, 힘을 집중시키거나, 착용 상태나 풀림을 저해하거나, 고삐와 마차 고삐의 작용을 바꾸거나, 호흡을 제한할 수 없다.</p>
+
+      <h2>최소 치수</h2>
+      <p class="h2-num">선명하게 보이는 면의 최단 치수</p>
+      <ul>
+        <li><strong>70&nbsp;mm</strong> 전면 표시판, 체중 300&nbsp;kg을 넘는 말과 동물</li>
+        <li><strong>60&nbsp;mm</strong> 체중 100&ndash;300&nbsp;kg의 말과 동물</li>
+        <li><strong>50&nbsp;mm</strong> 체중 100&nbsp;kg 미만의 말과 동물</li>
+        <li><strong>90&nbsp;mm</strong> 측면 상태 표시판</li>
+        <li><strong>120&nbsp;mm</strong> 후면 마차 표시판 마커</li>
+      </ul>
+      <p>테두리, 기호 및 분할된 면은 비율을 지켜야 하며, 요구되는 선명한 면을 이 최소치 아래로 줄일 수 없다.</p>
+
+      <h2>시인 시험</h2>
+      <p class="h2-num">주장이 아니라 측정으로 확인한다</p>
+      <p>전면 마커는 통상적인 교정 시력을 지닌 사람이 주간에는 50&nbsp;m 이상, 야간에는 30&nbsp;m 이상에서 올바르게 식별할 수 있어야 하며, 측면과 후면 마커는 각각 60&nbsp;m와 40&nbsp;m에서 그러하여야 한다. 야간 시험은 전원을 사용하는 점등 방식과 전원을 사용하지 아니하는 재귀반사 방식 모두에서 합격하여야 한다. 시험에는 정면 및 십오 도 비껴본 시야, 보통 걸음과 통상적인 도로 주행, 젖은 조건, 앞갈기가 일부 흔들리는 상태, 배터리가 충분한 상태와 부족한 상태, 그리고 의도적인 점등과 소등이 포함된다.</p>
+
+      <h2>조명</h2>
+      <p class="h2-num">긴급 조명이 아니라 식별 조명</p>
+      <p>승인된 모든 마커는 전원을 사용하지 아니하는 도로 등급의 재귀반사 방식과, 지정된 바탕색, 테두리, 형태 및 기호를 그대로 재현하는 독립 전환식 정상 자체 발광 방식 모두로 작동한다. 조명은 일몰부터 일출까지, 터널 안에서, 그리고 안개, 비, 눈, 연기, 먼지 또는 눈부심이 식별을 현저히 저해하는 모든 경우에 의무이다.</p>
+      <p>조명은 일정하여야 한다. 조명은 점멸하거나, 섬광을 내거나, 맥동하거나, 회전하거나, 훑고 지나가거나, 색을 번갈아 바꾸거나, 방향 지시등, 제동등, 비상등 또는 긴급등을 흉내 내거나, 도로에 빔을 투사하거나, 지면 유도등으로 작동할 수 없다. 상태 마커의 조명은 식별 조명이며 어떠한 긴급 우선권도 발생시키지 아니한다.</p>
+      <p>발광부는 확산 처리되고 차폐되어, 말과 동물의 어느 쪽 눈 위치에서도 직접적인 광원이 보이지 아니한다. 전기 조립체 전체는 최소한 IP65에 상당하는 보호 등급을 갖춘다. 전원을 사용하는 마커는 꺼져 있을 때나 전원이 끊겼을 때에도 완전한 재귀반사 성능을 유지하며, 그 배터리 예비 용량은 계획된 여정에 더하여 2시간 이상을 감당한다.</p>
+
+      <h2>우선순위</h2>
+      <p class="h2-num">둘 이상의 상태가 함께 적용되는 경우</p>
+      <ol>
+        <li>현존하는 위험 또는 정지</li>
+        <li>추월 제한</li>
+        <li>권한이 부여된 응급 업무</li>
+        <li>경찰 또는 도로 경비대의 교통 통제</li>
+        <li>임신 또는 의학적 취약 상태</li>
+        <li>노란색 주의</li>
+        <li>녹색 또는 임시 상태</li>
+        <li>일반 도로 인증</li>
+      </ol>
+      <p>부차적 상태는 승인된 측면 또는 후면 마커에 표시한다. 공무 상태는 임신, 녹색, 주의, 제한, 위험 또는 자격 정지 상태를 지우거나 가릴 수 없다. 장식적 결합, 뒤섞은 색, 반쪽 기호 및 비공식 덧씌움은 금지된다.</p>
+
+      <h2>위반 행위</h2>
+      <p class="h2-num">무엇이 처벌되는가</p>
+      <p>거짓 상태의 표시, 판독할 수 없는 마커의 사용, 의무적 상태의 은폐, 더 높은 우선순위 대신 더 낮은 우선순위 상태의 표시, 권한 없는 공무 표장의 사용, 다른 상태와 비슷해 보이도록 마커를 변조하는 행위, 마커를 몸에 직접 부착하는 행위, 의무적인 조명을 켜지 아니하는 행위, 점멸하거나 맥동하거나 색이 변하거나 눈부시거나 공무용을 흉내 내는 조명의 사용, 마커 또는 전원이 고장 난 뒤에도 도로 이용을 계속하는 행위. 다만 안전한 곳으로 곧바로 이동하는 적법한 경우는 제외한다.</p>
+      <p>권한 없는 제조, 판매, 대여, 전시, 모방, 변조, 복제, 기망 목적의 소지, 또는 취소된 공무 마커의 미반납도 마찬가지로 위반 행위이다. 반면 공무용이 아닌 일반 마커는 자유롭게 제조, 비축, 판매 및 소지할 수 있다. 소지 그 자체는 위반 행위가 아니며, 처벌되는 것은 거짓 표시 또는 오인을 초래하는 표시이다.</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>이용 가능성.</strong> 공식 마커의 규격, 의미, 권한이 부여된 표장 및 일반 식별 안내서는 누구나 이용할 수 있다. 실물 공식 마커와 증명서는 오직 권한이 부여된 경로를 통하여 검증된 기관에만 제조, 발급, 공급된다.</p></div>
+    </div>
+    <aside class="marg">
+      <strong>어두운 바탕</strong>
+      검정, 매우 짙은 초록 및 그 밖의 어두운 공무 바탕에는 마커 최단 치수의 10분의 1 이상 되는 연속된 흰색 또는 은색 재귀반사 외곽 테두리와 대비가 높은 표장을 함께 둔다. 그러한 테두리와 표장, 그리고 적법한 조명 기능을 갖추지 아니한 어두운 바탕은 야간의 도로에서 유효하지 아니하다.
+      <br><br>
+      <strong>점검</strong>
+      상업용, 공공용, 공무용, 대여용, 화물용, 의전용, 긴급용 및 정부용 마커는 매 근무일 전에 기록으로 남기는 확인을 받고, 적어도 6개월마다 정식 점검을 받는다.
+      <br><br>
+      <strong>고장이 났을 때</strong>
+      처음 만나는 안전한 장소에 정차하여 닦거나, 가린 것을 걷어내거나, 바로잡거나, 충전하거나, 수리하거나, 교체할 것. 손으로 쓴 쪽지, 리본, 몸에 칠한 도료, 휴대전화 화면 또는 보통의 조명은 대체물이 되지 아니한다.
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>제국</h2>
+      <ul>
+        <li><a href="../../../ko/gov/">정부와 교의</a></li>
+        <li><a href="../../../ko/gov/#dynamics">여덟 다이내믹</a></li>
+        <li><a href="../../../ko/gov/#diarchy">제국 이두정</a></li>
+        <li><a href="../../../ko/gov/law/">제국법</a></li>
+        <li><a href="../../../ko/history/">역사</a></li>
+        <li><a href="../../../ko/symbols/">이름, 국기, 상징</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이곳에서의 삶</h2>
+      <ul>
+        <li><a href="../../../ko/living/">흐로사그리드에서의 삶</a></li>
+        <li><a href="../../../ko/living/health/">보건</a></li>
+        <li><a href="../../../ko/living/education/">교육과 아동</a></li>
+        <li><a href="../../../ko/living/transport/">교통과 도로</a></li>
+        <li><a href="../../../ko/living/justice/">사법과 치안</a></li>
+        <li><a href="../../../ko/living/money/">노동과 금전</a></li>
+        <li><a href="../../../ko/living/citizenship/">시민권과 비호</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>말과 도로</h2>
+      <ul>
+        <li><a href="../../../ko/horses/">말</a></li>
+        <li><a href="../../../ko/horses/#welfare">복지와 재갈 없는 제어</a></li>
+        <li><a href="../../../ko/horses/#service">공무 말과 동물</a></li>
+        <li><a href="../../../ko/horses/road-status/">도로 통행 상태 마커 표준</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>이 포털</h2>
+      <ul>
+        <li><a href="../../../ko/about/">이 프로젝트에 대하여</a></li>
+        <li><a href="../../../ko/search/">포털 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="흐로사그리드 제국의 국기" width="120" height="80">
+    <p class="footer__disclaimer">안타깝게도 흐로사그리드는 가상의 나라이다. 이 사이트는 세계관 구축 프로젝트이며, 실재하는 어떠한 국가나 정부, 공식 기관과도 관련이 없다.</p>
+    <p class="footer__meta">흐로사그리드 제국 &middot; 제국 국가 포털 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

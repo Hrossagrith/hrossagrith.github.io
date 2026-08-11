@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kejserlig rätt &mdash; Kejsardömet Hrossagri&#240;</title>
+<meta name="description" content="Hrossagriths kejserliga rättskorpus: gällande koder, tekniska standarder, officiella mallar och rätt som är reserverad för utformning.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../sv/" data-i18n="{&quot;light&quot;: &quot;Ljust&quot;, &quot;dark&quot;: &quot;Mörkt&quot;, &quot;theme_to_light&quot;: &quot;Byt till ljust tema&quot;, &quot;theme_to_dark&quot;: &quot;Byt till mörkt tema&quot;, &quot;search_prompt&quot;: &quot;Skriv in ett ord eller uttryck ovan för att söka på alla sidor i portalen.&quot;, &quot;search_running&quot;: &quot;Söker…&quot;, &quot;search_none&quot;: &quot;Ingen post i registret innehåller alla orden. Prova med färre eller andra ord.&quot;, &quot;search_error&quot;: &quot;Sökindexet kunde inte laddas. Försök igen.&quot;, &quot;results_one&quot;: &quot;{n} träff för ”{q}”&quot;, &quot;results_many&quot;: &quot;{n} träffar för ”{q}”&quot;, &quot;results_none&quot;: &quot;Inga träffar för ”{q}”&quot;, &quot;expand_all&quot;: &quot;Expandera alla delar&quot;, &quot;collapse_all&quot;: &quot;Komprimera alla delar&quot;}">
+<a class="skip-link" href="#main">Hoppa till innehållet</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Ett worldbuildingprojekt</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Sök i portalen</label>
+      <input type="search" id="q" name="q" placeholder="Sök i portalen" autocomplete="off">
+      <button type="submit">Sök</button>
+    </form>
+    <label class="visually-hidden" for="locale">Språk</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv" selected>Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Mörkt</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Kejsardömet Hrossagri&#240;s emblem: en stegrande hippogriff i en rundel" width="360" height="360">
+    <p class="masthead__state">Kejserliga statsportalen</p>
+    <p class="masthead__name"><a href="../../../sv/">Kejsardömet Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Hästarnas fristad, och freden som upprätthålls</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alla avdelningar">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Meny
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Kejsardömet</h2>
+            <ul>
+            <li><a href="../../../sv/gov/">Statsstyre och doktrin</a></li>
+            <li><a href="../../../sv/gov/#dynamics">De Åtta Dynamikerna</a></li>
+            <li><a href="../../../sv/gov/#diarchy">Den kejserliga diarkin</a></li>
+            <li><a href="../../../sv/gov/law/">Kejserlig rätt</a></li>
+            <li><a href="../../../sv/history/">Historia</a></li>
+            <li><a href="../../../sv/symbols/">Namn, flagga och symboler</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Livet här</h2>
+            <ul>
+            <li><a href="../../../sv/living/">Att leva i Hrossagri&#240;</a></li>
+            <li><a href="../../../sv/living/health/">Hälso- och sjukvård</a></li>
+            <li><a href="../../../sv/living/education/">Utbildning och barn</a></li>
+            <li><a href="../../../sv/living/transport/">Transport och vägar</a></li>
+            <li><a href="../../../sv/living/justice/">Rättsväsende och polis</a></li>
+            <li><a href="../../../sv/living/money/">Arbete och pengar</a></li>
+            <li><a href="../../../sv/living/citizenship/">Medborgarskap och fristad</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hästar och vägar</h2>
+            <ul>
+            <li><a href="../../../sv/horses/">Hästar</a></li>
+            <li><a href="../../../sv/horses/#welfare">Välfärd och bettlös styrning</a></li>
+            <li><a href="../../../sv/horses/#service">Tjänstehästdjur</a></li>
+            <li><a href="../../../sv/horses/road-status/">Standard för vägstatusmarkörer</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Denna portal</h2>
+            <ul>
+            <li><a href="../../../sv/about/">Om detta projekt</a></li>
+            <li><a href="../../../sv/search/">Sök i portalen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../sv/">Startsida</a>
+    <a href="../../../sv/horses/">Hästar</a>
+    <a href="../../../sv/living/">Livet här</a>
+    <a href="../../../sv/gov/">Statsstyre</a>
+    <a href="../../../sv/gov/law/" aria-current="page">Rätt</a>
+    <a href="../../../sv/history/">Historia</a>
+    <a href="../../../sv/symbols/">Symboler</a>
+    <a href="../../../sv/about/">Om</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../sv/">Startsida</a><span>&rsaquo;</span><a href="../../../sv/gov/">Statsstyre</a><span>&rsaquo;</span><strong>Rätt</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Bok III</p>
+  <h1 class="page-title">Den kejserliga rättskorpusen</h1>
+  <p class="page-standfirst">Gällande koder, de tekniska standarder som bär deras mätbara detaljer, de officiella mallar som de skapar, och den rätt som ännu är reserverad för utformning.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Eftersom statens eget namn bär minnet av skyddad färd är hästdjurens välfärd ingen dekorativ symbolik. Den följer direkt av den Femte Dynamiken och ligger nära den kejserliga rättens mitt. Att skydda en person men samtidigt låta dennes häst eller annat hästdjur misshandlas, tas i beslag, överansträngas eller användas som påtryckningsmedel är inte verkligt skydd, och varje instrument nedan läses mot den principen.</p>
+    </div>
+    <aside class="marg">
+      <strong>Läsordning</strong>
+      En kod anger skyldigheter och överträdelser. En standard bär de mätbara detaljerna och ändras oftare. En mall är ett formulär vars utformning är fastställd av det instrument som skapar den.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Gällande koder</h2>
+  <p class="h2-num">Bindande rätt</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Allmän kod</p>
+        <h3 class="register__title">Allmänna kejserliga koden för hästdjurs välfärd</h3>
+        <p class="register__note">Kejsardömets huvudsakliga välfärdsinstrument, som omfattar hästdjur i varje sammanhang snarare än i ett enda slags arbete.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorskod</p>
+        <h3 class="register__title">Kejserliga koden för arbetande vagnshästdjurs välfärd</h3>
+        <p class="register__note">Vagnsvälfärden i sin helhet: pass, certifiering, arbetsbörda och vila, väderbelastning, ruttsäkerhet, seldon, fästen för huvudutrustning, insatser för vägstatus, belysning, markvägledningslampor, medicinska akutvagnar, tillsyn, överträdelser och interimsscheman.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorskod</p>
+        <h3 class="register__title">Kejserliga koden för utrustning, tvångsmedel och välfärd</h3>
+        <p class="register__note">Utrustning som placeras på djuret, och gränserna för tvångsmedel. Kejsardömets princip om enbart bettlös välfärd anges här.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorskod</p>
+        <h3 class="register__title">Kejserliga koden för vägar och kuskar</h3>
+        <p class="register__note">Uppträdande på allmän väg och kuskarnas skyldigheter, med det allmängiltiga kravet att varje hästdjur som beträder allmän väg visar sin vägstatus.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorskod</p>
+        <h3 class="register__title">Kejserliga koden för ridtjänst och vägpatrull</h3>
+        <p class="register__note">Bindande rätt för beriden polis, den beridna Vägvakten, ridande kurirer och patrullhästdjur &mdash; ridtjänst, som inte är körarbete och regleras separat.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorskod</p>
+        <h3 class="register__title">Kejserliga koden för avel och register</h3>
+        <p class="register__note">Avelspraxis och det kejserliga registret.</p>
+      </li>
+  </ul>
+
+  <h2>Tekniska standarder</h2>
+  <p class="h2-num">Trösklar, mått, färger och provning</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Kejserliga standarden för statusmarkering av hästdjur på allmän väg</h3>
+        <p class="register__note">Den allmängiltiga markeringsregeln för varje hästdjur på allmän väg. Statusen visas av en utbytbar insats som hålls i en markörbärande frentera eller muserola, retroreflekterande av vägklass och självlysande i sin tilldelade färg. Färg, färgning, klippning, brännmärkning, lim eller ändring av pälsen är inte tillåtna.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Kejserliga standarden för urval och ras hos tjänstehästdjur</h3>
+        <p class="register__note">Urval för polis-, ambulans-, taxi-, kurir-, veterinär-, brand-, militär- och suveräntjänst. Uthållighet, återhämtning, vägmod, temperament, trafikförnuft och laglig bettlös styrning avgör lämpligheten &mdash; inte rasbeteckning eller mode. Individuell certifiering går före rasbeteckning.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Kejserliga standarden för klimatbelastning på hästar</h3>
+        <p class="register__note">Väder, luftfuktighet, väta, kyla, värme, vind, underlag och fjädringsnivåer, uttryckta som belastningströsklar.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Kejserliga standarden för vagnsbelysning och signalering</h3>
+        <p class="register__note">Vagnslyktor, nödvarningar, belysta vägstatusmarkörer och markvägledningslampor för hästdjur.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Kejserliga tekniska standarden för medicinska akutvagnar</h3>
+        <p class="register__note">Ambulansens hastighet, låg skakning, fjädring, utryckningsfiler, glidvägar och provning.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Schema</p>
+        <h3 class="register__title">Kejserliga mätschemat för utrustning</h3>
+        <p class="register__note">Mätförfarande och tillåtna värden till stöd för koden för utrustning, tvångsmedel och välfärd.</p>
+      </li>
+  </ul>
+
+  <h2>Officiella mallar</h2>
+  <p class="h2-num">Formulär som Kejsardömet utfärdar</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Mall</p>
+        <h3 class="register__title">Kejserliga mallen för pass för arbetande hästdjur</h3>
+        <p class="register__note">Den identitetshandling som medförs för varje arbetande hästdjur.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Mall</p>
+        <h3 class="register__title">Kejserliga mallen för väg- och arbetsintyg för vagnshästdjur</h3>
+        <p class="register__note">Intyg om lämplighet för väg- och vagnsarbete.</p>
+      </li>
+  </ul>
+
+  <h2>Reserverat för utformning</h2>
+  <p class="h2-num">Principiellt beslutat, ännu inte skrivet</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Planerad</span> &middot; Infrastruktur</p>
+        <h3 class="register__title">Väghållnings- och infrastrukturrätt</h3>
+        <p class="register__note">Byggande, underhåll och styrning av det allmänna vägnätet, skilt från de välfärdskoder som använder det.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Planerad</span> &middot; Livré</p>
+        <h3 class="register__title">Standard för livré och tjänstedräkt</h3>
+        <p class="register__note">Utformningen av tjänstelivré, som för närvarande hålls utanför välfärdskoderna.</p>
+      </li>
+  </ul>
+
+  <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Anmärkning om detta register.</strong> Titlar och tillämpningsområde är hämtade ur den arbetande korpusen. Fullständiga texter är ännu inte publicerade på denna portal; de kommer att läggas till instrument för instrument. Standarden för vägstatus sammanfattas i sin helhet under <a href="../../horses/road-status/">hästar</a>.</p></div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Kejsardömet</h2>
+      <ul>
+        <li><a href="../../../sv/gov/">Statsstyre och doktrin</a></li>
+        <li><a href="../../../sv/gov/#dynamics">De Åtta Dynamikerna</a></li>
+        <li><a href="../../../sv/gov/#diarchy">Den kejserliga diarkin</a></li>
+        <li><a href="../../../sv/gov/law/">Kejserlig rätt</a></li>
+        <li><a href="../../../sv/history/">Historia</a></li>
+        <li><a href="../../../sv/symbols/">Namn, flagga och symboler</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Livet här</h2>
+      <ul>
+        <li><a href="../../../sv/living/">Att leva i Hrossagri&#240;</a></li>
+        <li><a href="../../../sv/living/health/">Hälso- och sjukvård</a></li>
+        <li><a href="../../../sv/living/education/">Utbildning och barn</a></li>
+        <li><a href="../../../sv/living/transport/">Transport och vägar</a></li>
+        <li><a href="../../../sv/living/justice/">Rättsväsende och polis</a></li>
+        <li><a href="../../../sv/living/money/">Arbete och pengar</a></li>
+        <li><a href="../../../sv/living/citizenship/">Medborgarskap och fristad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hästar och vägar</h2>
+      <ul>
+        <li><a href="../../../sv/horses/">Hästar</a></li>
+        <li><a href="../../../sv/horses/#welfare">Välfärd och bettlös styrning</a></li>
+        <li><a href="../../../sv/horses/#service">Tjänstehästdjur</a></li>
+        <li><a href="../../../sv/horses/road-status/">Standard för vägstatusmarkörer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Denna portal</h2>
+      <ul>
+        <li><a href="../../../sv/about/">Om detta projekt</a></li>
+        <li><a href="../../../sv/search/">Sök i portalen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Kejsardömet Hrossagri&#240;s flagga" width="120" height="80">
+    <p class="footer__disclaimer">Tyvärr är Hrossagrith ett fiktivt land. Denna webbplats är ett worldbuildingprojekt och har ingen som helst koppling till någon verklig stat, regering eller officiell instans.</p>
+    <p class="footer__meta">Kejsardömet Hrossagri&#240; &middot; Kejserliga statsportalen &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

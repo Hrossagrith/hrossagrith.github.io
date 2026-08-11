@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giustizia e polizia &mdash; L&rsquo;Impero di Hrossagri&#240;</title>
+<meta name="description" content="Addestramento della polizia secondo il modello aeronautico, de-escalation, divieto della pena di morte, riservatezza e criminalità informatica.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../it/" data-i18n="{&quot;light&quot;: &quot;Chiaro&quot;, &quot;dark&quot;: &quot;Scuro&quot;, &quot;theme_to_light&quot;: &quot;Passa al tema chiaro&quot;, &quot;theme_to_dark&quot;: &quot;Passa al tema scuro&quot;, &quot;search_prompt&quot;: &quot;Digitare qui sopra una parola o una frase per cercare in tutte le pagine di questo portale.&quot;, &quot;search_running&quot;: &quot;Ricerca in corso…&quot;, &quot;search_none&quot;: &quot;Nessuna voce del registro contiene tutte le parole. Provare con meno parole o con parole diverse.&quot;, &quot;search_error&quot;: &quot;Non è stato possibile caricare l&amp;rsquo;indice di ricerca. Riprovare.&quot;, &quot;results_one&quot;: &quot;{n} risultato per «{q}»&quot;, &quot;results_many&quot;: &quot;{n} risultati per «{q}»&quot;, &quot;results_none&quot;: &quot;Nessun risultato per «{q}»&quot;, &quot;expand_all&quot;: &quot;Espandi tutte le parti&quot;, &quot;collapse_all&quot;: &quot;Comprimi tutte le parti&quot;}">
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Un progetto di worldbuilding</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Cerca nel portale</label>
+      <input type="search" id="q" name="q" placeholder="Cerca nel portale" autocomplete="off">
+      <button type="submit">Cerca</button>
+    </form>
+    <label class="visually-hidden" for="locale">Lingua</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it" selected>Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Scuro</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Emblema dell&rsquo;Impero di Hrossagri&#240;: un ippogrifo rampante entro un tondo" width="360" height="360">
+    <p class="masthead__state">Portale Statale Imperiale</p>
+    <p class="masthead__name"><a href="../../../it/">L&rsquo;Impero di Hrossagri&#240;</a></p>
+    <p class="masthead__motto">L&rsquo;asilo dei cavalli e la pace che viene fatta rispettare</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Tutte le sezioni">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>L&rsquo;Impero</h2>
+            <ul>
+            <li><a href="../../../it/gov/">Governo e dottrina</a></li>
+            <li><a href="../../../it/gov/#dynamics">Le Otto Dinamiche</a></li>
+            <li><a href="../../../it/gov/#diarchy">La Diarchia Imperiale</a></li>
+            <li><a href="../../../it/gov/law/">Diritto imperiale</a></li>
+            <li><a href="../../../it/history/">Storia</a></li>
+            <li><a href="../../../it/symbols/">Nome, bandiera e simboli</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Vivere qui</h2>
+            <ul>
+            <li><a href="../../../it/living/">Vivere in Hrossagri&#240;</a></li>
+            <li><a href="../../../it/living/health/">Sanità</a></li>
+            <li><a href="../../../it/living/education/">Istruzione e infanzia</a></li>
+            <li><a href="../../../it/living/transport/">Trasporti e strade</a></li>
+            <li><a href="../../../it/living/justice/">Giustizia e polizia</a></li>
+            <li><a href="../../../it/living/money/">Lavoro e denaro</a></li>
+            <li><a href="../../../it/living/citizenship/">Cittadinanza e asilo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Cavalli e strade</h2>
+            <ul>
+            <li><a href="../../../it/horses/">Cavalli</a></li>
+            <li><a href="../../../it/horses/#welfare">Benessere e controllo senza morso</a></li>
+            <li><a href="../../../it/horses/#service">Equidi di servizio</a></li>
+            <li><a href="../../../it/horses/road-status/">Standard dei marcatori di stato stradale</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Questo portale</h2>
+            <ul>
+            <li><a href="../../../it/about/">Informazioni sul progetto</a></li>
+            <li><a href="../../../it/search/">Cerca nel portale</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../it/">Pagina iniziale</a>
+    <a href="../../../it/horses/">Cavalli</a>
+    <a href="../../../it/living/" aria-current="page">Vita</a>
+    <a href="../../../it/gov/">Governo</a>
+    <a href="../../../it/gov/law/">Diritto</a>
+    <a href="../../../it/history/">Storia</a>
+    <a href="../../../it/symbols/">Simboli</a>
+    <a href="../../../it/about/">Informazioni</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../it/">Pagina iniziale</a><span>&rsaquo;</span><a href="../../../it/living/">Vita</a><span>&rsaquo;</span><strong>Giustizia e polizia</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Libro II &middot; Parte IV</p>
+  <h1 class="page-title">Giustizia e polizia</h1>
+  <p class="page-standfirst">Selezione e addestramento secondo il modello aeronautico, de-escalation come regola e pene per i funzionari più severe di quelle previste per i cittadini che essi sorvegliano.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Il reclutamento e l&rsquo;addestramento della polizia in Hrossagri&#240; sono paragonabili a quelli dell&rsquo;aeronautica: selezione rigorosa, lunga formazione pratica, simulazioni, esami periodici, valutazione psicologica e ricertificazione obbligatoria. Il paragone è deliberato. Una professione che può uccidere per errore viene addestrata come tale.</p>
+
+      <h2>Condotta e responsabilità</h2>
+      <p class="h2-num">L&rsquo;asimmetria è intenzionale</p>
+      <p>La de-escalation è la regola. Qualsiasi violenza non necessaria, disonestà, manipolazione delle prove, condotta discriminatoria o abuso di autorità comporta un&rsquo;indagine indipendente e pene <em>più severe</em> di quelle inflitte a un cittadino comune che abusi del medesimo potere.</p>
+
+      <h2>La pena di morte</h2>
+      <p class="h2-num">Vietata in modo assoluto, senza eccezioni</p>
+      <p>Il diritto moderno vieta in modo assoluto la pena di morte per gli esseri umani &mdash; compresi i casi di alto tradimento, corruzione, crudeltà verso gli animali, macellazione dei cavalli e reati commessi in circostanze d&rsquo;emergenza. Hrossagri&#240; non ha mai istituito l&rsquo;esecuzione giudiziaria ordinaria come legittima pena civile, benché possano essersi verificate esecuzioni durante la guerra civile o crisi storiche, quali uccisioni illegali o atrocità. La storia le registra onestamente anziché in sordina.</p>
+      <p>I più gravi reati contro il benessere degli equidi comportano perciò le più alte pene non letali disponibili: potenzialmente l&rsquo;ergastolo, l&rsquo;interdizione perpetua dai pubblici uffici e dalla custodia di animali, la confisca, la restituzione e lo scioglimento dell&rsquo;ente ove applicabile.</p>
+
+      <h2>Il consenso</h2>
+      <p class="h2-num">Definito dal consenso, applicato senza esenzioni</p>
+      <p>La disciplina dello stupro è fondata sul consenso e si applica allo stesso modo nel matrimonio e nelle relazioni. La coercizione, l&rsquo;alterazione da alcol o droghe, l&rsquo;incapacità e l&rsquo;abuso di autorità invalidano il consenso. Gli agenti di polizia, il personale forense, i pubblici ministeri e i giudici che trattano tali casi devono possedere una certificazione specialistica.</p>
+
+      <h2 id="privacy">Riservatezza, sorveglianza e criminalità informatica</h2>
+      <p class="h2-num">Pene severissime, e un&rsquo;eccezione deliberatamente severa</p>
+      <p>Le violazioni della riservatezza e i reati informatici comportano pene eccezionalmente severe &mdash; in particolare la sorveglianza, lo stalking, la divulgazione di dati personali, il furto d&rsquo;identità, l&rsquo;abuso di immagini intime, il traffico di banche dati e gli attacchi alle infrastrutture essenziali. L&rsquo;infrastruttura pubblica è ampiamente sorvegliata da telecamere, ma le riprese sono cifrate, gli accessi registrati, la conservazione limitata nel tempo e l&rsquo;impiego ammesso soltanto per finalità definite dalla legge; il riconoscimento facciale e il tracciamento di singole persone richiedono un&rsquo;autorizzazione legale eccezionale, e l&rsquo;abuso da parte di un funzionario costituisce esso stesso un grave reato contro la riservatezza.</p>
+      <p>A fronte di ciò, l&rsquo;Impero applica un regime deliberatamente eccezionale per l&rsquo;accesso al dark web. Un accesso a servizi nascosti attribuito in modo affidabile apre automaticamente un&rsquo;Indagine di sicurezza sulle reti oscure, senza necessità di prove distinte di un reato consumato, e le ordinarie tutele della riservatezza non limitano il monitoraggio di quella persona per tutto il tempo in cui l&rsquo;indagine è attiva. Il mero uso di Tor, di una VPN o di un proxy per raggiungere l&rsquo;internet pubblico ordinario non costituisce di per sé prova dell&rsquo;accesso a servizi nascosti. Ogni accesso ufficiale e ogni atto d&rsquo;indagine resta registrato, affinché l&rsquo;eccezione non possa essere volta a usi personali estranei.</p>
+
+      <h2>Discriminazione</h2>
+      <p class="h2-num">La condotta, non il pensiero</p>
+      <p>La discriminazione razziale e misogina, le molestie, le minacce, l&rsquo;intimidazione organizzata e l&rsquo;istigazione sono vietate. I pensieri privati non sono reati.</p>
+    </div>
+    <aside class="marg">
+      <strong>Guardia Stradale</strong>
+      Il pattugliamento stradale montato è disciplinato separatamente dal Codice imperiale del servizio montato e del pattugliamento stradale; i suoi equidi portano il marcatore blu della Guardia Stradale.
+      <br><br>
+      <a href="../../horses/#service">Equidi di servizio</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>L&rsquo;Impero</h2>
+      <ul>
+        <li><a href="../../../it/gov/">Governo e dottrina</a></li>
+        <li><a href="../../../it/gov/#dynamics">Le Otto Dinamiche</a></li>
+        <li><a href="../../../it/gov/#diarchy">La Diarchia Imperiale</a></li>
+        <li><a href="../../../it/gov/law/">Diritto imperiale</a></li>
+        <li><a href="../../../it/history/">Storia</a></li>
+        <li><a href="../../../it/symbols/">Nome, bandiera e simboli</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Vivere qui</h2>
+      <ul>
+        <li><a href="../../../it/living/">Vivere in Hrossagri&#240;</a></li>
+        <li><a href="../../../it/living/health/">Sanità</a></li>
+        <li><a href="../../../it/living/education/">Istruzione e infanzia</a></li>
+        <li><a href="../../../it/living/transport/">Trasporti e strade</a></li>
+        <li><a href="../../../it/living/justice/">Giustizia e polizia</a></li>
+        <li><a href="../../../it/living/money/">Lavoro e denaro</a></li>
+        <li><a href="../../../it/living/citizenship/">Cittadinanza e asilo</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Cavalli e strade</h2>
+      <ul>
+        <li><a href="../../../it/horses/">Cavalli</a></li>
+        <li><a href="../../../it/horses/#welfare">Benessere e controllo senza morso</a></li>
+        <li><a href="../../../it/horses/#service">Equidi di servizio</a></li>
+        <li><a href="../../../it/horses/road-status/">Standard dei marcatori di stato stradale</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Questo portale</h2>
+      <ul>
+        <li><a href="../../../it/about/">Informazioni sul progetto</a></li>
+        <li><a href="../../../it/search/">Cerca nel portale</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Bandiera dell&rsquo;Impero di Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Purtroppo Hrossagrith è un paese immaginario. Questo sito è un progetto di worldbuilding e non ha alcun legame con uno Stato, un governo o un ente ufficiale reali.</p>
+    <p class="footer__meta">L&rsquo;Impero di Hrossagri&#240; &middot; Portale Statale Imperiale &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

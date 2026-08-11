@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keiserlig rett &mdash; Keiserriket Hrossagri&#240;</title>
+<meta name="description" content="Det keiserlige rettskorpuset i Hrossagrith: koder i kraft, tekniske standarder, offisielle maler, og rett som er holdt av til utforming.">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../no/" data-i18n="{&quot;light&quot;: &quot;Lyst&quot;, &quot;dark&quot;: &quot;Mørkt&quot;, &quot;theme_to_light&quot;: &quot;Bytt til lyst tema&quot;, &quot;theme_to_dark&quot;: &quot;Bytt til mørkt tema&quot;, &quot;search_prompt&quot;: &quot;Skriv inn et ord eller uttrykk ovenfor for å søke i alle sidene på portalen.&quot;, &quot;search_running&quot;: &quot;Søker…&quot;, &quot;search_none&quot;: &quot;Ingen oppføring i registeret inneholder alle ordene. Prøv færre eller andre ord.&quot;, &quot;search_error&quot;: &quot;Søkeindeksen kunne ikke lastes. Prøv igjen.&quot;, &quot;results_one&quot;: &quot;{n} treff for «{q}»&quot;, &quot;results_many&quot;: &quot;{n} treff for «{q}»&quot;, &quot;results_none&quot;: &quot;Ingen treff for «{q}»&quot;, &quot;expand_all&quot;: &quot;Utvid alle deler&quot;, &quot;collapse_all&quot;: &quot;Skjul alle deler&quot;}">
+<a class="skip-link" href="#main">Gå til innholdet</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Et verdensbyggingsprosjekt</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">Søk i portalen</label>
+      <input type="search" id="q" name="q" placeholder="Søk i portalen" autocomplete="off">
+      <button type="submit">Søk</button>
+    </form>
+    <label class="visually-hidden" for="locale">Språk</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no" selected>Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Mørkt</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Riksvåpenet til Keiserriket Hrossagri&#240;: en steilende hippogriff i en rundel" width="360" height="360">
+    <p class="masthead__state">Keiserlig statsportal</p>
+    <p class="masthead__name"><a href="../../../no/">Keiserriket Hrossagri&#240;</a></p>
+    <p class="masthead__motto">Hestenes tilflukt, og freden som håndheves</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="Alle avdelinger">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Meny
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>Keiserriket</h2>
+            <ul>
+            <li><a href="../../../no/gov/">Styresett og doktrine</a></li>
+            <li><a href="../../../no/gov/#dynamics">De åtte dynamikkene</a></li>
+            <li><a href="../../../no/gov/#diarchy">Det keiserlige diarkiet</a></li>
+            <li><a href="../../../no/gov/law/">Keiserlig rett</a></li>
+            <li><a href="../../../no/history/">Historie</a></li>
+            <li><a href="../../../no/symbols/">Navn, flagg og symboler</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Livet her</h2>
+            <ul>
+            <li><a href="../../../no/living/">Livet i Hrossagri&#240;</a></li>
+            <li><a href="../../../no/living/health/">Helse</a></li>
+            <li><a href="../../../no/living/education/">Utdanning og barn</a></li>
+            <li><a href="../../../no/living/transport/">Transport og veier</a></li>
+            <li><a href="../../../no/living/justice/">Rettsvesen og politi</a></li>
+            <li><a href="../../../no/living/money/">Arbeid og penger</a></li>
+            <li><a href="../../../no/living/citizenship/">Statsborgerskap og tilflukt</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hester og veier</h2>
+            <ul>
+            <li><a href="../../../no/horses/">Hester</a></li>
+            <li><a href="../../../no/horses/#welfare">Velferd og bittløs kontroll</a></li>
+            <li><a href="../../../no/horses/#service">Hestedyr i tjeneste</a></li>
+            <li><a href="../../../no/horses/road-status/">Standard for veistatusmarkører</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Denne portalen</h2>
+            <ul>
+            <li><a href="../../../no/about/">Om dette prosjektet</a></li>
+            <li><a href="../../../no/search/">Søk i portalen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../no/">Forsiden</a>
+    <a href="../../../no/horses/">Hester</a>
+    <a href="../../../no/living/">Livet her</a>
+    <a href="../../../no/gov/">Styresett</a>
+    <a href="../../../no/gov/law/" aria-current="page">Rett</a>
+    <a href="../../../no/history/">Historie</a>
+    <a href="../../../no/symbols/">Symboler</a>
+    <a href="../../../no/about/">Om</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../no/">Forsiden</a><span>&rsaquo;</span><a href="../../../no/gov/">Styresett</a><span>&rsaquo;</span><strong>Rett</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">Bok III</p>
+  <h1 class="page-title">Det keiserlige rettskorpuset</h1>
+  <p class="page-standfirst">Koder i kraft, de tekniske standardene som bærer de målbare enkelthetene i dem, de offisielle malene de skaper, og retten som fortsatt er holdt av til utforming.</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">Fordi selve statsnavnet minnes vernet ferd, er hestedyrs velferd ingen pyntesymbolikk. Den følger direkte av Den femte dynamikken og ligger nær kjernen i keiserlig rett. Å verne et menneske og samtidig tillate at vedkommendes hest eller annet hestedyr mishandles, beslaglegges, utmattes eller brukes som pressmiddel, er ikke virkelig vern, og hver rettsakt nedenfor leses mot dette prinsippet.</p>
+    </div>
+    <aside class="marg">
+      <strong>Leserekkefølge</strong>
+      En kode fastsetter plikter og straffbare forhold. En standard bærer de målbare enkelthetene og endres oftere. En mal er et skjema hvis utforming er fastsatt av rettsakten som skaper den.
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>Koder i kraft</h2>
+  <p class="h2-num">Bindende rett</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Alminnelig kode</p>
+        <h3 class="register__title">Alminnelig keiserlig kode for hestedyrs velferd</h3>
+        <p class="register__note">Keiserrikets viktigste velferdsrettsakt, som omfatter hestedyr i alle sammenhenger og ikke bare i én arbeidsgren.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorkode</p>
+        <h3 class="register__title">Keiserlig kode for velferd for kjørende hestedyr i arbeid</h3>
+        <p class="register__note">Kjørevelferd i sin helhet: pass, sertifisering, arbeidsmengde og hvile, værbelastning, rutesikkerhet, seletøy, fester på hodelaget, statusinnsatser for vei, belysning, lamper for bakkeveiledning, medisinske nødvogner, håndheving, straffbare forhold og midlertidige regelverk.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorkode</p>
+        <h3 class="register__title">Keiserlig kode for hodelag, kontrollmidler og velferd</h3>
+        <p class="register__note">Utstyret som legges på dyret, og grensene for tvangsmidler. Keiserrikets velferdsprinsipp om utelukkende bittløs bruk er fastsatt her.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorkode</p>
+        <h3 class="register__title">Keiserlig kode for vei og kusk</h3>
+        <p class="register__note">Atferd på offentlig vei og kuskens plikter, med det allmenne kravet om at hvert hestedyr som går ut på offentlig vei, viser sin veistatus.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorkode</p>
+        <h3 class="register__title">Keiserlig kode for ridende tjeneste og veipatrulje</h3>
+        <p class="register__note">Bindende rett for ridende politi, den ridende Veivakten, ridende bud og patruljehestedyr &mdash; ridende tjeneste, som ikke er kjørearbeid og reguleres atskilt.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Sektorkode</p>
+        <h3 class="register__title">Keiserlig kode for avl og register</h3>
+        <p class="register__note">Avlspraksis og det keiserlige registeret.</p>
+      </li>
+  </ul>
+
+  <h2>Tekniske standarder</h2>
+  <p class="h2-num">Terskler, mål, farger og prøving</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Keiserlig standard for statusmerking av hestedyr på offentlig vei</h3>
+        <p class="register__note">Den allmenne merkeregelen for hvert hestedyr på offentlig vei. Status vises med en utskiftbar innsats som holdes i en markørbærende frentera eller muserola, retrorefleksiv i veiklasse og selvlysende i sin tildelte farge. Maling, farging, klipping, brennmerking, lim eller endring av pelsen er ikke tillatt.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Keiserlig standard for utvelgelse og rase for hestedyr i tjeneste</h3>
+        <p class="register__note">Utvelgelse til politi-, ambulanse-, drosje-, kurer-, veterinær-, brann-, militær- og suverentjeneste. Utholdenhet, restitusjon, veimot, temperament, ro i trafikken og lovlig bittløs kontroll avgjør skikketheten &mdash; ikke rasebetegnelse eller mote. Individuell sertifisering går foran rasebetegnelsen.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Keiserlig standard for klimatisk belastning på hester</h3>
+        <p class="register__note">Vær, luftfuktighet, væte, kulde, varme, vind, underlag og nivåer for arbeidsstans, uttrykt som belastningsterskler.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Keiserlig standard for belysning og signalgivning på vogner</h3>
+        <p class="register__note">Vognlykter, nødvarsler, opplyste veistatusmarkører og lamper for bakkeveiledning av hestedyr.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Standard</p>
+        <h3 class="register__title">Keiserlig teknisk standard for medisinske nødvogner</h3>
+        <p class="register__note">Ambulansefart, lav risting, fjæring, felt for utrykning, glidebaner og prøving.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Register</p>
+        <h3 class="register__title">Keiserlig måleregister for hodelag</h3>
+        <p class="register__note">Målemåte og tillatte verdier som underbygger Koden for hodelag, kontrollmidler og velferd.</p>
+      </li>
+  </ul>
+
+  <h2>Offisielle maler</h2>
+  <p class="h2-num">Skjemaer utstedt av Keiserriket</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Mal</p>
+        <h3 class="register__title">Keiserlig mal for pass for hestedyr i arbeid</h3>
+        <p class="register__note">Legitimasjonsdokumentet som følger hvert hestedyr i arbeid.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--in-force">I kraft</span> &middot; Mal</p>
+        <h3 class="register__title">Keiserlig mal for vei- og arbeidsbevis for kjørende hestedyr</h3>
+        <p class="register__note">Bevis for skikkethet til vei- og kjørearbeid.</p>
+      </li>
+  </ul>
+
+  <h2>Holdt av til utforming</h2>
+  <p class="h2-num">Avgjort i prinsippet, ennå ikke skrevet</p>
+  <ul class="register">
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Planlagt</span> &middot; Infrastruktur</p>
+        <h3 class="register__title">Veimyndighets- og infrastrukturrett</h3>
+        <p class="register__note">Bygging, vedlikehold og kontroll av det offentlige veinettet, atskilt fra velferdskodene som bruker det.</p>
+      </li>
+      <li>
+        <p class="register__meta"><span class="tag tag--planned">Planlagt</span> &middot; Livré</p>
+        <h3 class="register__title">Standard for livré og tjenesteantrekk</h3>
+        <p class="register__note">Utformingen av tjenestelivré, som foreløpig holdes utenfor velferdskodene.</p>
+      </li>
+  </ul>
+
+  <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>Merknad til dette registeret.</strong> Titler og virkeområde er hentet fra arbeidskorpuset. Fullstendige tekster er ennå ikke offentliggjort på denne portalen; de vil bli lagt til rettsakt for rettsakt. Veistatusstandarden er gjengitt i sin helhet under <a href="../../horses/road-status/">hester</a>.</p></div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>Keiserriket</h2>
+      <ul>
+        <li><a href="../../../no/gov/">Styresett og doktrine</a></li>
+        <li><a href="../../../no/gov/#dynamics">De åtte dynamikkene</a></li>
+        <li><a href="../../../no/gov/#diarchy">Det keiserlige diarkiet</a></li>
+        <li><a href="../../../no/gov/law/">Keiserlig rett</a></li>
+        <li><a href="../../../no/history/">Historie</a></li>
+        <li><a href="../../../no/symbols/">Navn, flagg og symboler</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Livet her</h2>
+      <ul>
+        <li><a href="../../../no/living/">Livet i Hrossagri&#240;</a></li>
+        <li><a href="../../../no/living/health/">Helse</a></li>
+        <li><a href="../../../no/living/education/">Utdanning og barn</a></li>
+        <li><a href="../../../no/living/transport/">Transport og veier</a></li>
+        <li><a href="../../../no/living/justice/">Rettsvesen og politi</a></li>
+        <li><a href="../../../no/living/money/">Arbeid og penger</a></li>
+        <li><a href="../../../no/living/citizenship/">Statsborgerskap og tilflukt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hester og veier</h2>
+      <ul>
+        <li><a href="../../../no/horses/">Hester</a></li>
+        <li><a href="../../../no/horses/#welfare">Velferd og bittløs kontroll</a></li>
+        <li><a href="../../../no/horses/#service">Hestedyr i tjeneste</a></li>
+        <li><a href="../../../no/horses/road-status/">Standard for veistatusmarkører</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Denne portalen</h2>
+      <ul>
+        <li><a href="../../../no/about/">Om dette prosjektet</a></li>
+        <li><a href="../../../no/search/">Søk i portalen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="Flagget til Keiserriket Hrossagri&#240;" width="120" height="80">
+    <p class="footer__disclaimer">Dessverre er Hrossagrith et fiktivt land. Dette nettstedet er et verdensbyggingsprosjekt og har ingen tilknytning til noen virkelig stat, regjering eller offisiell instans.</p>
+    <p class="footer__meta">Keiserriket Hrossagri&#240; &middot; Keiserlig statsportal &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>

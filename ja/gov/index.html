@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>政府 &mdash; フロッサグリーズ帝国</title>
+<meta name="description" content="エウダイモノクラシー、八つのダイナミクス、導く王冠と守る王冠、議会と裁判所、継承、そして基礎的価値。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../ja/gov/">政府と教義</a></li>
+            <li><a href="../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../../ja/gov/law/">帝国法</a></li>
+            <li><a href="../../ja/history/">歴史</a></li>
+            <li><a href="../../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../../ja/living/health/">保健医療</a></li>
+            <li><a href="../../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../../ja/horses/">馬</a></li>
+            <li><a href="../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../../ja/about/">この企画について</a></li>
+            <li><a href="../../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../ja/">ホーム</a>
+    <a href="../../ja/horses/">馬</a>
+    <a href="../../ja/living/">暮らし</a>
+    <a href="../../ja/gov/" aria-current="page">政府</a>
+    <a href="../../ja/gov/law/">法</a>
+    <a href="../../ja/history/">歴史</a>
+    <a href="../../ja/symbols/">象徴</a>
+    <a href="../../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../ja/">ホーム</a><span>&rsaquo;</span><strong>政府</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第I書</p>
+  <h1 class="page-title">国家とその教義</h1>
+  <p class="page-standfirst">フロッサグリーズ（Hrossagri&#240;）の完全な憲制上の定義は、エウダイモノクラシー的二頭制君主国である。エウダイモノクラシーは国家権力がなぜ存在するのかに答える。二頭統治はそれを誰が保持するのかに答える。</p>
+
+  <div class="two">
+    <div class="col">
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>人間の国家。</strong> フロッサグリーズは人間によって、人間のために統治される。その市民、君主、官吏、有権者、労働者、患者および乗客は人である。馬およびその他のウマ科動物は保護される生命であり労働の相手であって、国民ではなく、人間の政治的公職を占めることもない。</p></div>
+
+      <h2>エウダイモノクラシー</h2>
+      <p class="h2-num">第I条 &middot; 国家権力の目的</p>
+      <p class="dropcap">この名称は<em>エウダイモニア</em>に由来する。通常は幸福と誤って訳される古典ギリシアの観念である。それは<strong>繁栄</strong>により近い。すなわち、心地よく感じられる一瞬ではなく、全体として良く運んでいる生である。人は自らの生を破壊しながら何かを享受し得るのであり、今日不快であるものが、全体として真に良い生のために必要であることもあり得る。</p>
+      <p>そこからフロッサグリーズの用語が生じる。すなわち繁栄に向けられた統治である。しかし帝国は単にアリストテレスを模倣するのではない。古典的なエウダイモニアは第一に人間の繁栄を論じるものであり、フロッサグリーズは既存の八部構成の倫理的図式を用いて、意図的にその枠を広げている。</p>
+
+      <div class="pullquote">
+        <p>国家権力の正当な目的は、八つのダイナミクスの全体にわたって建設的な生存と繁栄を最大化し、重大な破壊を最小化することにあり、その際、政策の現実の帰結は入手可能な最良の証拠によって判定される。</p>
+      </div>
+
+      <h2 id="dynamics">八つのダイナミクス</h2>
+      <p class="h2-num">第II条 &middot; 倫理的枠組みと、その出所</p>
+      <p>八つのダイナミクスはフロッサグリーズの発明ではない。これはサイエントロジーに由来する概念であり、サイエントロジーは存在の基本原理を、八つの相互に結びついた衝動に分かたれた生存への衝迫として説明する。帝国はその枠組みを自らの倫理的図式として借用する。そこから引き出される政治的結論は帝国自身のものである。</p>
+
+      <ol class="dynamics">
+        <li><strong>自己</strong> &mdash; 個体として生存し、自らであろうとする衝動。</li>
+        <li><strong>創造性</strong> &mdash; 未来のために作ること。性、家族、子ども、その養育、前方に向けられた創造。</li>
+        <li><strong>集団</strong> &mdash; 学級から国家に至るあらゆる規模の集団を通じて、または集団として生存すること。</li>
+        <li><strong>人類</strong> &mdash; いずれか一つの国民とは区別される、全体としての人という種。</li>
+        <li><strong>生命形態</strong> &mdash; 動物、鳥、昆虫、魚および植物。生命そのもの。</li>
+        <li><strong>物質宇宙</strong> &mdash; 物質、エネルギー、空間および時間。</li>
+        <li><strong>霊的ダイナミック</strong> &mdash; 霊的存在、霊的な実在、および生命の霊的源泉。</li>
+        <li><strong>無限</strong> &mdash; 無限としての存在。神、至高存在または創造主と結びつけられる。</li>
+      </ol>
+
+      <p>元の枠組みにおいては、ダイナミクスの大多数にわたって生存を増大させる行為は建設的と見なされ、それらを破壊しまたは否認する行為は破壊的と見なされる。フロッサグリーズが政治的方法へと転じるのはこの部分であり&mdash;そして<a href="../horses/">馬が単に何者かの所有物として数えられるのではない</a>のは、第五ダイナミックのゆえである。</p>
+
+      <h2>エウダイモノクラシーでないもの</h2>
+      <p class="h2-num">第III条 &middot; 四つの根強い誤読</p>
+      <ul>
+        <li><strong>幸福製造機ではない。</strong> 目先の快はエウダイモニアではない。政策は、時間を通じた一つの生に対する、また家族、集団および他者に対する効果によって判定される。</li>
+        <li><strong>通常の民主制ではない。</strong> 議会、選挙、世論および政府を批判する権利は存在する&mdash;しかし多数派が絶対の主権者であるのではない。ある方針が甚大な害をもたらすことを証拠が強く示すのであれば、答えは否であり得る。五十一パーセントの票が、破壊的な行為を建設的な行為に変えることはない。</li>
+        <li><strong>テクノクラシーではない。</strong> 専門家は事実を確定し検証する。ある帰結が望まれるか、またいかなる代価においてかは、政治的かつ倫理的な問いである。科学者は科学者であることによって君主となるのではない。</li>
+        <li><strong>単純な功利主義ではない。</strong> 問われるのは、いずれの利益の総和が大きいかではなく、正確に何が創造され何が破壊されるのか、どこで、どれほど重大に、そして同じ結果をより少ない破壊によって達し得るか否かである。</li>
+      </ul>
+
+      <h2 id="diarchy">帝国二頭統治</h2>
+      <p class="h2-num">第IV条 &middot; 二つの王冠、権威において対等</p>
+      <p>フロッサグリーズは、<strong>統治権限において対等</strong>な、恒久的かつ別個の二つの公職を通じて統治される。いずれの君主も他方に命令せず、他方の上位に立たず、他方を単独で罷免することもできない。いずれの王冠の保持者も女帝または皇帝の称号を用い得る。二頭統治は二人の女帝、二人の皇帝、またはそれぞれ一人ずつから成り得る。</p>
+    </div>
+    <aside class="marg">
+      <strong>群れの原型</strong>
+      二つの王冠は文化的に、方向を定める先導の牝馬と、偵察し守護する牡馬を通じて理解される。これらは機能の象徴であって&mdash;性別またはジェンダーに関する憲制上の規則ではなく、いかなる市民をも制約しない。
+    </aside>
+  </div>
+
+  <ul class="split">
+    <li>
+      <h3>導く王冠</h3>
+      <p>内政、外交、民政、経済的および社会的な方向づけ、社会基盤、そして帝国の長期的な針路。</p>
+    </li>
+    <li>
+      <h3>守る王冠</h3>
+      <p>防衛、国境、国家安全保障、軍の即応、防護のための情報活動、緊急時の防護および対応、偵察、そして防護の戦略。</p>
+    </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <p>導く王冠が上位に立つのは、儀礼上の席次においてのみであり、また同一の人物が両方の継承系統から適法な提示を受ける次順位者に同時になる場合においてのみである。この上位性はより大きな統治権力を与えるものではない。</p>
+      <p>国家は一つ、政府は一つ、内閣は一つ、国家予算は一つ、軍の機構は一つ、官吏の組織は一つである。いずれの王冠も、対抗する政府、国庫、軍、情報機関または行政機構を設けることはできず、他方の指揮系統を通じて命令を発し、または他方の官吏を罷免することもできない。</p>
+
+      <h3>両方の王冠を要する事項</h3>
+      <p>各王冠は、その主たる目的および直接の法的効果が自らの所管に属する通常の事項を決する。決定が共同のものとなるのは、それが他方の王冠の法的権限もしくは指揮系統を直接に変更する場合、共有される資金、人員、社会基盤もしくは中核的な運用能力の相当部分を拘束もしくは剥奪する場合、双方の所管において拘束力ある国家的義務を生じさせる場合、または他方の王冠の安全もしくはその任務遂行の能力に対して具体的、実質的かつ相当程度に蓋然的な影響を生じさせる場合である。</p>
+      <p><strong>決するのは現実の効果である。</strong> 決定は、より小さな行為に分割することによって、または一時的、実験的、行政的、秘密、軍事的もしくは緊急に準ずるものと呼び替えることによって、共同の承認を免れることはできない。分類をめぐる争いは&mdash;政策の当否をめぐる争いではない&mdash;公開の監査を伴う抽選によって選ばれる三名の上級裁判官に付される。</p>
+
+      <h3 id="deadlock">膠着</h3>
+      <p>共同の事項について両王冠の意見が一致しないときは、いずれの王冠も争いのある提案を押し通すことはできない。通常の共同提案は三十日以内に、緊急のものは七十二時間以内に決せられねばならない。合意に至らないときは、<strong>提案は成立しない</strong>。沈黙、出席の拒否または遅延が承認と見なされることは決してない。</p>
+      <p>その場合、従前の適法な状態が継続する&mdash;公共の役務、防衛の即応、必要な臨時の任命、および公表された客観的な算式によってのみ調整される必須の予算である。これは、王冠も議会も、時間切れを作り出すことによって崩壊を人為的に生じさせ得ないようにするために存在する。</p>
+
+      <h3>緊急時の行動</h3>
+      <p>現に行われているか差し迫った攻撃、災害その他時を争う脅威に際しては、守る王冠は共同の承認を待つことなく、自らの所管において直ちに作戦上の命令を発することができる。導く王冠の所管の内部における緊急の脅威&mdash;疫病、食糧、水もしくは社会基盤の破綻、金融制度の掌握&mdash;は、導く王冠に同じ最小限の臨時の命令を許す。いずれの王冠も、憲法、継承または権力の基本的配分を改めることはできず、いずれも通常の政策上の選好を緊急事態と偽ることはできない。すべての緊急命令は、その根拠となる証拠とともに記録され、少なくとも七十二時間ごとに再検討される。</p>
+
+      <h2>議会と裁判所</h2>
+      <p class="h2-num">第V条 &middot; 憲法の内部における王冠の優位</p>
+      <p>フロッサグリーズは王冠が優越する国家であるが、<strong>王冠の優位は憲法の外ではなく、その内部において存在する</strong>。議会は公衆を代表し、法律を討議し起草し、非違を調査し、行政を監督し、委任された権限を執行する。議会は、その同意を要する王冠の拒否に反して法律を制定することはできず、これを覆す権限を有しない。</p>
+
+      <h2>継承、摂政および罷免</h2>
+      <p class="h2-num">第VI条 &middot; 二つの系統、別個に保たれる</p>
+      <p>二つの王冠は別個の継承系統を有する。血統による継承のほか、王冠は遺言による指名または除外によって充たされることがあり、空位の王冠は、候補者が公然と約束を行う全国選挙に付されることがある。受諾と拒否は現実のものである。何人も受諾を義務づけられない。未成年の君主は、年齢に応じて段階的に権限が解かれる摂政会議を通じて統治し、一時的な無能力、失踪、医学上の理由による退任、譲位および罷免は、それぞれ固有の定められた手続を有する。</p>
+
+      <h2>基礎的価値</h2>
+      <p class="h2-num">第VII条 &middot; 八つ、記録された順序で</p>
+      <ul>
+        <li>歴史的誠実</li>
+        <li>能力主義</li>
+        <li>動物の福祉</li>
+        <li>科学の進歩</li>
+        <li>環境の管理責任</li>
+        <li>難民の統合</li>
+        <li>社会的平等</li>
+        <li>倫理的統治</li>
+      </ul>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p>これに対応する拘束力ある法令の体系&mdash;法典、技術規格および公式書式&mdash;は、<a href="law/">帝国法の登録簿</a>に収録されている。ここに住む人々のために国家が提供するものは、<a href="../living/">フロッサグリーズでの暮らし</a>に述べられている。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>可決基準</strong>
+      憲法が議会の可決基準を定めるところでは、それは法定の総員に対して測られる。欠員、欠席および棄権が分母を下げることはない。
+      <br><br>
+      <strong>抽選</strong>
+      憲制上の争いのための裁判官および監査人は、常任の官吏が管理する凍結された専門家名簿から、公開の監査を伴う抽選によって選ばれる。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../ja/gov/">政府と教義</a></li>
+        <li><a href="../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../../ja/gov/law/">帝国法</a></li>
+        <li><a href="../../ja/history/">歴史</a></li>
+        <li><a href="../../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../../ja/living/health/">保健医療</a></li>
+        <li><a href="../../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../../ja/horses/">馬</a></li>
+        <li><a href="../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../../ja/about/">この企画について</a></li>
+        <li><a href="../../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

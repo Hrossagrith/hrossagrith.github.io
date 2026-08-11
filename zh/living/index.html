@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在赫罗萨格里德生活 &mdash; 赫罗萨格里德帝国</title>
+<meta name="description" content="赫罗萨格里德帝国的医疗卫生、教育、交通、司法、工作与公民身份。">
+<link rel="icon" href="../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../" data-base="../../zh/" data-i18n="{&quot;light&quot;: &quot;浅色&quot;, &quot;dark&quot;: &quot;深色&quot;, &quot;theme_to_light&quot;: &quot;切换到浅色主题&quot;, &quot;theme_to_dark&quot;: &quot;切换到深色主题&quot;, &quot;search_prompt&quot;: &quot;在上方输入词语或短语，即可搜索本门户的每一个页面。&quot;, &quot;search_running&quot;: &quot;正在搜索…&quot;, &quot;search_none&quot;: &quot;名录中没有条目同时包含全部词语。请减少词语或换用其他词语。&quot;, &quot;search_error&quot;: &quot;无法加载搜索索引。请重试。&quot;, &quot;results_one&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_many&quot;: &quot;找到 {n} 条与“{q}”相关的结果&quot;, &quot;results_none&quot;: &quot;未找到与“{q}”相关的结果&quot;, &quot;expand_all&quot;: &quot;展开全部部分&quot;, &quot;collapse_all&quot;: &quot;收起全部部分&quot;}">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">一个架空世界构建项目</p>
+    <form class="search" role="search" action="../../search/" method="get">
+      <label class="visually-hidden" for="q">搜索本门户</label>
+      <input type="search" id="q" name="q" placeholder="搜索本门户" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <label class="visually-hidden" for="locale">语言</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh" selected>中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../assets/emblem.png"
+         alt="赫罗萨格里德帝国国徽：圆盘之中一只人立的骏鹰" width="360" height="360">
+    <p class="masthead__state">帝国国家门户</p>
+    <p class="masthead__name"><a href="../../zh/">赫罗萨格里德帝国</a></p>
+    <p class="masthead__motto">马匹的庇护之所，以及得到强制维护的和平</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="全部栏目">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        菜单
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../zh/gov/">政府与学说</a></li>
+            <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+            <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+            <li><a href="../../zh/gov/law/">帝国法律</a></li>
+            <li><a href="../../zh/history/">历史</a></li>
+            <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>在此生活</h2>
+            <ul>
+            <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+            <li><a href="../../zh/living/health/">医疗卫生</a></li>
+            <li><a href="../../zh/living/education/">教育与儿童</a></li>
+            <li><a href="../../zh/living/transport/">交通与道路</a></li>
+            <li><a href="../../zh/living/justice/">司法与警务</a></li>
+            <li><a href="../../zh/living/money/">工作与金钱</a></li>
+            <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>马匹与道路</h2>
+            <ul>
+            <li><a href="../../zh/horses/">马匹</a></li>
+            <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+            <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+            <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本门户</h2>
+            <ul>
+            <li><a href="../../zh/about/">关于本项目</a></li>
+            <li><a href="../../zh/search/">搜索本门户</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../zh/">首页</a>
+    <a href="../../zh/horses/">马匹</a>
+    <a href="../../zh/living/" aria-current="page">生活</a>
+    <a href="../../zh/gov/">政府</a>
+    <a href="../../zh/gov/law/">法律</a>
+    <a href="../../zh/history/">历史</a>
+    <a href="../../zh/symbols/">符号</a>
+    <a href="../../zh/about/">关于</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../zh/">首页</a><span>&rsaquo;</span><strong>生活</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第 II 卷</p>
+  <h1 class="page-title">在赫罗萨格里德生活</h1>
+  <p class="page-standfirst">帝国为生活在其保护之下的人们所提供、所要求并加以保障的一切。</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">下列各部分源自一条原则，而不是源自一份政策清单。在赫罗萨格里德（Hrossagri&#240;），国家权力的正当目的，是依据关于一项决定实际会造成什么后果的最佳可得证据，使存在在生命的全部广度上尽可能富有建设性、尽可能少地具有破坏性。免费医疗、免费教育与严格的儿童保护并非慷慨：它们是这条原则被诚实地加以适用时所产生的结果。</p>
+    </div>
+    <aside class="marg">
+      <strong>这源自何处</strong>
+      关于幸福政制、八大动力与两顶王冠，见<a href="../gov/">国家及其学说</a>。
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <p class="entry">分部名录</p>
+  <h2>本卷各部分</h2>
+  <p class="h2-num">六个部分，每一部分在名录中单独保存</p>
+
+  <ul class="services">
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-health"></use></svg>
+      <p class="service__no">第 I 部分</p>
+      <h3><a href="health/">医疗卫生</a></h3>
+      <p>就诊时免费，投入充足，并针对候诊名单、人手不足和地区不平等而设计。</p>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-education"></use></svg>
+      <p class="service__no">第 II 部分</p>
+      <h3><a href="education/">教育与儿童</a></h3>
+      <p>各级教育一律免费，托育服务不论父母是否就业均免费，并有格外强力的儿童保护。</p>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-transport"></use></svg>
+      <p class="service__no">第 III 部分</p>
+      <h3><a href="transport/">交通与道路</a></h3>
+      <p>马车道路运输、铁路，以及名为 Hrossaway 的唯一一项狭窄机动货运例外。</p>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-justice"></use></svg>
+      <p class="service__no">第 IV 部分</p>
+      <h3><a href="justice/">司法与警务</a></h3>
+      <p>按航空模式进行的警察选拔与训练，以降级处置为默认做法，并绝对禁止死刑。</p>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-money"></use></svg>
+      <p class="service__no">第 V 部分</p>
+      <h3><a href="money/">工作与金钱</a></h3>
+      <p>对所得、财富、资本利得和大额遗产实行累进征税。</p>
+    </li>
+    <li class="service">
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-citizenship"></use></svg>
+      <p class="service__no">第 VI 部分</p>
+      <h3><a href="citizenship/">公民身份与庇护</a></h3>
+      <p>一个多元的人类国族，源自数百年间通过迁徙与庇护融合而来的众多民族。</p>
+    </li>
+  </ul>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../zh/gov/">政府与学说</a></li>
+        <li><a href="../../zh/gov/#dynamics">八大动力</a></li>
+        <li><a href="../../zh/gov/#diarchy">帝国二元君主制</a></li>
+        <li><a href="../../zh/gov/law/">帝国法律</a></li>
+        <li><a href="../../zh/history/">历史</a></li>
+        <li><a href="../../zh/symbols/">名称、国旗与符号</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>在此生活</h2>
+      <ul>
+        <li><a href="../../zh/living/">在赫罗萨格里德生活</a></li>
+        <li><a href="../../zh/living/health/">医疗卫生</a></li>
+        <li><a href="../../zh/living/education/">教育与儿童</a></li>
+        <li><a href="../../zh/living/transport/">交通与道路</a></li>
+        <li><a href="../../zh/living/justice/">司法与警务</a></li>
+        <li><a href="../../zh/living/money/">工作与金钱</a></li>
+        <li><a href="../../zh/living/citizenship/">公民身份与庇护</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>马匹与道路</h2>
+      <ul>
+        <li><a href="../../zh/horses/">马匹</a></li>
+        <li><a href="../../zh/horses/#welfare">福利与无衔铁操控</a></li>
+        <li><a href="../../zh/horses/#service">勤务马科动物</a></li>
+        <li><a href="../../zh/horses/road-status/">道路状态标记标准</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本门户</h2>
+      <ul>
+        <li><a href="../../zh/about/">关于本项目</a></li>
+        <li><a href="../../zh/search/">搜索本门户</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../assets/flag.jpg" alt="赫罗萨格里德帝国国旗" width="120" height="80">
+    <p class="footer__disclaimer">很遗憾，赫罗萨格里德是一个虚构的国家。本站是一个架空世界构建项目，与任何真实的国家、政府或官方机构均无关联。</p>
+    <p class="footer__meta">赫罗萨格里德帝国 &middot; 帝国国家门户 &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../assets/theme.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

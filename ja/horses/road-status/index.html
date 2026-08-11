@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>道路資格マーカー &mdash; フロッサグリーズ帝国</title>
+<meta name="description" content="帝国公道ウマ科動物資格標示規格。地色、縁、記号、寸法、照明、優先順位および罰則。">
+<link rel="icon" href="../../../assets/flag-mark.jpg">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../ja/" data-i18n="{&quot;light&quot;: &quot;ライト&quot;, &quot;dark&quot;: &quot;ダーク&quot;, &quot;theme_to_light&quot;: &quot;ライトテーマに切り替える&quot;, &quot;theme_to_dark&quot;: &quot;ダークテーマに切り替える&quot;, &quot;search_prompt&quot;: &quot;本ポータルのすべてのページを検索するには、上の欄に語または語句を入力すること。&quot;, &quot;search_running&quot;: &quot;検索中…&quot;, &quot;search_none&quot;: &quot;すべての語を含む項目は登録簿にない。語を減らすか、別の語で試すこと。&quot;, &quot;search_error&quot;: &quot;検索索引を読み込めなかった。再度試すこと。&quot;, &quot;results_one&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_many&quot;: &quot;「{q}」の検索結果 {n} 件&quot;, &quot;results_none&quot;: &quot;「{q}」に一致するものはない&quot;, &quot;expand_all&quot;: &quot;すべての部を展開&quot;, &quot;collapse_all&quot;: &quot;すべての部を折りたたむ&quot;}">
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">ワールドビルディングの企画</p>
+    <form class="search" role="search" action="../../../search/" method="get">
+      <label class="visually-hidden" for="q">ポータル内を検索</label>
+      <input type="search" id="q" name="q" placeholder="ポータル内を検索" autocomplete="off">
+      <button type="submit">検索</button>
+    </form>
+    <label class="visually-hidden" for="locale">言語</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="en">English (UK)</option>
+      <option value="en-us">English (US)</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="no">Norsk bokmål</option>
+      <option value="sv">Svenska</option>
+      <option value="fi">Suomi</option>
+      <option value="it">Italiano</option>
+      <option value="zh">中文</option>
+      <option value="ja" selected>日本語</option>
+      <option value="ko">한국어</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">ダーク</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="フロッサグリーズ帝国の紋章：円形地の中で前肢を上げるヒッポグリフ" width="360" height="360">
+    <p class="masthead__state">帝国国家ポータル</p>
+    <p class="masthead__name"><a href="../../../ja/">フロッサグリーズ帝国</a></p>
+    <p class="masthead__motto">馬の庇護所、そして強制される平和</p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="shell nav__inner">
+    <details class="menu">
+      <summary class="menu__button" aria-label="すべての部門">
+        <span class="menu__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        メニュー
+      </summary>
+      <div class="menu__panel">
+        <div class="shell menu__grid">
+          <div>
+            <h2>帝国</h2>
+            <ul>
+            <li><a href="../../../ja/gov/">政府と教義</a></li>
+            <li><a href="../../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+            <li><a href="../../../ja/gov/#diarchy">帝国二頭統治</a></li>
+            <li><a href="../../../ja/gov/law/">帝国法</a></li>
+            <li><a href="../../../ja/history/">歴史</a></li>
+            <li><a href="../../../ja/symbols/">名称、国旗および象徴</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>ここでの暮らし</h2>
+            <ul>
+            <li><a href="../../../ja/living/">フロッサグリーズでの暮らし</a></li>
+            <li><a href="../../../ja/living/health/">保健医療</a></li>
+            <li><a href="../../../ja/living/education/">教育と子ども</a></li>
+            <li><a href="../../../ja/living/transport/">交通と道路</a></li>
+            <li><a href="../../../ja/living/justice/">司法と警察</a></li>
+            <li><a href="../../../ja/living/money/">労働と金銭</a></li>
+            <li><a href="../../../ja/living/citizenship/">市民権と庇護</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>馬と道路</h2>
+            <ul>
+            <li><a href="../../../ja/horses/">馬</a></li>
+            <li><a href="../../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+            <li><a href="../../../ja/horses/#service">公務用ウマ科動物</a></li>
+            <li><a href="../../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>本ポータル</h2>
+            <ul>
+            <li><a href="../../../ja/about/">この企画について</a></li>
+            <li><a href="../../../ja/search/">ポータル内を検索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+    <a href="../../../ja/">ホーム</a>
+    <a href="../../../ja/horses/" aria-current="page">馬</a>
+    <a href="../../../ja/living/">暮らし</a>
+    <a href="../../../ja/gov/">政府</a>
+    <a href="../../../ja/gov/law/">法</a>
+    <a href="../../../ja/history/">歴史</a>
+    <a href="../../../ja/symbols/">象徴</a>
+    <a href="../../../ja/about/">概要</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ja/">ホーム</a><span>&rsaquo;</span><a href="../../../ja/horses/">馬</a><span>&rsaquo;</span><strong>道路資格マーカー</strong></div>
+
+<main id="main" class="shell wrap">
+  <p class="entry">第III書 &middot; 規格</p>
+  <h1 class="page-title">公道ウマ科動物の資格標示</h1>
+  <p class="page-standfirst">公道に出るすべてのウマ科動物に適用される、最終的かつ拘束力を有する普遍規格。馬車法典は、これに加えて追加のまたはより厳格な要件を課すことができる。</p>
+
+  <div class="two">
+    <div class="col">
+      <p class="dropcap">公道に出るすべてのウマ科動物は、当該個体の現在の道路資格を示す交換可能な再帰反射式かつ切替式発光の挿入板を備えた、認可済みの<strong>顔面マーカー</strong>を装着した認可済みの公道用ハミなし頭絡を着けなければならない。マーカーは人間に向けられた道路上の指示である。広告として、単なる装飾として、必要を超えた医学的開示として、恥辱の標示として、または騎乗者もしくは御者の判断に代わるものとして用いてはならない。</p>
+
+      <h2>定義</h2>
+      <p class="h2-num">フレンテラとムセローラ</p>
+      <p><strong>フレンテラ</strong>とは、上部の頭絡、頭部装具、額革または頂部から額または鼻梁に向かって、顔面の中央を垂直に下る前面の部材をいう。細いもの、X字形のもの、分岐したもの、幅広のもの、または板状のものがあり得る。鼻を横切りまたは取り巻くにとどまり、上方への垂直の顔面接続を有しない部材は、フレンテラではない。</p>
+      <p><strong>ムセローラ</strong>とは、鼻を横切り、通常は鼻を取り巻く鼻革または鼻当てをいう。幅広のもの、装飾的なもの、別途取り付けられるもの、または適法な制御用鼻革に組み込まれたものがあり得るほか、額革または頂革に接続することを要しない。</p>
+      <p>いずれも、道路での使用に十分な大きさと対比を備えた、専用かつ明瞭に視認できる挿入板の領域を提供する場合に限り、顔面マーカーとして認められる。挿入板を視認可能な形で担うことができない小さな装飾、メダリオン、鋲または記章は、これに当たらない。</p>
+    </div>
+    <aside class="marg">
+      <strong>身体への標示の禁止</strong>
+      塗料、染色、刈り込み、焼印、接着剤、たてがみへの取付け、尾への取付け、皮膚への標示または被毛の改変を資格の表示に用いてはならない。いかなる場合も。
+    </aside>
+  </div>
+
+  <svg class="ornament" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+
+  <h2>通常および制限のマーカー</h2>
+  <p class="h2-num">色が唯一の区別であることは決してない</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ordinary.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">白地</strong>
+          <span class="marker__what">道路認定を受けた通常のウマ科動物。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/green.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">緑地</strong>
+          <span class="marker__what">未熟な個体、仮認定、訓練中の状態、または監督下での路上作業。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/caution.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">黄地</strong>
+          <span class="marker__what">注意：敏感さ、追加の空間の必要、または驚愕の危険が高い状態。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/restricted.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">白地に赤縁</strong>
+          <span class="marker__what">追い越し制限。御者、騎乗者または取扱者の合図があるときにのみ追い越すこと。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/stop.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">赤地に白のX</strong>
+          <span class="marker__what">追い越し禁止。停止して待機すること。現に危険が存在するか、直ちに制御を要する状態にある。</span>
+        </span>
+      </li>
+  </ul>
+
+  <h2>公務のマーカー</h2>
+  <p class="h2-num">発行および検証は権限を有する経路を通じてのみ行われる</p>
+  <ul class="markers">
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/road-guard.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">青地、道路警備隊の紋章</strong>
+          <span class="marker__what">帝国道路警備隊、交通巡察、道路管理業務。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/police.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">青地、警察の盾</strong>
+          <span class="marker__what">警察業務。権限を有する場合に限る。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/ambulance.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">白地、赤十字</strong>
+          <span class="marker__what">救急馬車または認可された救急医療業務。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/fire.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">赤地、白の炎</strong>
+          <span class="marker__what">消防または救助業務。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/vet.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">緑地、肉球と蹄</strong>
+          <span class="marker__what">獣医の緊急業務。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/post.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">青地、ペガサス</strong>
+          <span class="marker__what">帝国郵便、伝令または配送業務。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/sovereign.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">黒地に白縁</strong>
+          <span class="marker__what">君主の通行。法律上の権限を有する場合に限る。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/imperial.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">黒地に王冠</strong>
+          <span class="marker__what">権限を有する帝国政府、省庁または国家機関の通行。</span>
+        </span>
+      </li>
+      <li class="marker">
+        <img class="marker__disc" src="/assets/markers/military.png" alt="" width="256" height="256" loading="lazy" decoding="async">
+        <span>
+          <strong class="marker__name">深緑地、軍章</strong>
+          <span class="marker__what">軍務。</span>
+        </span>
+      </li>
+  </ul>
+
+  <div class="two">
+    <div class="col">
+      <h2>装着位置</h2>
+      <p class="h2-num">前面、側面および後面</p>
+      <ul>
+        <li><strong>前面：</strong>マーカーを担うフレンテラまたはムセローラに表示される交換可能な挿入板。</li>
+        <li><strong>側面：</strong>馬具、胸繋、胸帯、鞍下敷その他の拘束を伴わない装備に付す円形または認可済みの資格板。</li>
+        <li><strong>後部馬車板：</strong>道路利用者が一つの列繋における各個体の資格を識別できるよう、繋ぎの編成に合わせて配置されたマーカー。</li>
+      </ul>
+      <p>鼻部に取り付けるマーカーは、下部の鼻軟骨および鼻孔を避け、堅固な鼻骨の上に位置しなければならない。圧のかかる鼻革に組み込む場合、窓、裏当て、縁取りまたは留具のいずれについても、鼻革を硬くし、硬い縁または圧点を生じさせ、力を集中させ、装着または解放を損ない、手綱もしくは引き手の作用を変え、または呼吸を妨げるものであってはならない。</p>
+
+      <h2>最小寸法</h2>
+      <p class="h2-num">明瞭な視認領域、最短の寸法</p>
+      <ul>
+        <li>体重 300&nbsp;kg を超えるウマ科動物の前面挿入板は<strong>70&nbsp;mm</strong></li>
+        <li>体重 100&ndash;300&nbsp;kg のウマ科動物は<strong>60&nbsp;mm</strong></li>
+        <li>体重 100&nbsp;kg 未満のウマ科動物は<strong>50&nbsp;mm</strong></li>
+        <li>側面の資格板は<strong>90&nbsp;mm</strong></li>
+        <li>後部馬車板のマーカーは<strong>120&nbsp;mm</strong></li>
+      </ul>
+      <p>縁、記号および分割された領域は均衡を保たねばならず、要求される明瞭な領域をこれらの最小値未満に減じてはならない。</p>
+
+      <h2>識別試験</h2>
+      <p class="h2-num">主張ではなく、測定による</p>
+      <p>前面のマーカーは、通常の矯正視力を有する者により、昼間は 50&nbsp;m 以上、夜間は 30&nbsp;m 以上の距離で正しく識別されなければならない。側面および後面のマーカーはそれぞれ 60&nbsp;m および 40&nbsp;m とする。夜間試験は、給電による発光状態と無給電の再帰反射状態の双方において合格することを要する。試験には、正面および十五度の斜め方向からの視認、常歩および通常の道路上の運動、湿潤条件、前髪の部分的な動き、電池の満充電状態および低充電状態、ならびに意図的な点消灯が含まれる。</p>
+
+      <h2>発光</h2>
+      <p class="h2-num">緊急灯ではなく、識別のための灯火</p>
+      <p>認可済みのマーカーはいずれも、無給電の道路等級の再帰反射状態と、独立して切り替えられる、割り当てられた地色、縁、形状および記号を再現する定常の自己発光状態との双方で機能する。発光は、日没から日の出まで、隧道内、ならびに霧、雨、雪、煙、塵または眩光により識別が著しく低下するときは常に義務づけられる。</p>
+      <p>発光は定常でなければならない。点滅、閃光、明滅、回転、走査、色の交替を行い、方向指示灯、制動灯、危険警告灯もしくは緊急灯を模し、路面に光束を投射し、または地上誘導灯として機能してはならない。資格マーカーの発光は識別のための灯火であり、緊急の優先権を生じさせない。</p>
+      <p>発光体は拡散され遮蔽され、いずれの眼の位置からも直接の光源が見えないようにする。電気組立体は全体として IP65 相当以上とする。給電式のマーカーは、消灯時および給電が失われたときも完全な再帰反射性を保ち、電池の余力は予定される行程に加えて二時間以上を賄う。</p>
+
+      <h2>優先順位</h2>
+      <p class="h2-num">二以上の資格が当てはまる場合</p>
+      <ol>
+        <li>現に存在する危険または停止</li>
+        <li>追い越し制限</li>
+        <li>権限を有する救急業務</li>
+        <li>警察または道路警備隊による交通整理</li>
+        <li>妊娠または医学上の脆弱性</li>
+        <li>黄の注意</li>
+        <li>緑または仮の資格</li>
+        <li>通常の道路認定</li>
+      </ol>
+      <p>従たる資格は、認可済みの側面または後面のマーカーに表示する。公務の資格は、妊娠、緑、注意、制限、危険または停止処分の資格を消去し、または隠蔽してはならない。装飾的な組合せ、混色、記号の一部分および非公式の重ね表示は禁止される。</p>
+
+      <h2>違反</h2>
+      <p class="h2-num">何が処罰されるか</p>
+      <p>虚偽の資格を表示すること、判読できないマーカーを用いること、義務づけられた資格を隠すこと、より高い優先順位の資格に代えてより低いものを表示すること、権限のない公務章を用いること、他の資格に似せてマーカーを改変すること、マーカーを身体に直接取り付けること、義務づけられた発光を作動させないこと、点滅する、明滅する、変色する、眩惑する、または公務を模した発光を用いること、あるいはマーカーもしくは給電の故障の後に、安全な場所への直接かつ適法な移動を除いて道路の使用を続けること。</p>
+      <p>権限のない製造、販売、貸与、表示、模造、改変、複製、欺罔目的での所持、または取り消された公務マーカーの返納の懈怠も、同様に違反となる。これに対し、公務以外の通常のマーカーは自由に製造し、在庫し、販売し、所持することができる。所持それ自体は違反ではなく、違反となるのは虚偽の表示または誤認させる行為である。</p>
+
+      <div class="notice"><svg class="seal" viewBox="0 0 120 120" role="presentation">
+  <g fill="currentColor">
+    <path d="M60 2 l7.5 6.6 9.8-2.6 4.7 9 10.1 1.2 1.2 10.1 9 4.7-2.6 9.8 6.6 7.5
+             -6.6 7.5 2.6 9.8-9 4.7-1.2 10.1-10.1 1.2-4.7 9-9.8-2.6L60 118
+             l-7.5-6.6-9.8 2.6-4.7-9-10.1-1.2-1.2-10.1-9-4.7 2.6-9.8L13.7 72
+             l6.6-7.5-2.6-9.8 9-4.7 1.2-10.1 10.1-1.2 4.7-9 9.8 2.6z" opacity="0.16"/>
+  </g>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <g fill="currentColor" transform="translate(24,20) scale(0.48)">
+    <path fill-rule="evenodd" d="M 70 32 C 64 40, 56 52, 49 65 C 42 78, 37 90, 35 99
+      C 34 104, 35 109, 38 112 C 41 115, 46 116, 50 114 L 54 118
+      C 58 121, 64 120, 68 116 C 72 112, 75 107, 77 102 C 80 106, 83 112, 86 120
+      L 92 140 L 116 140 C 114 124, 110 108, 104 93 C 98 77, 90 60, 80 46
+      C 77 41, 73 36, 70 32 Z M 72 64 a 4 2.8 0 1 0 8 0 a 4 2.8 0 1 0 -8 0 Z"/>
+    <path d="M 70 32 C 68 25, 67 16, 68 10 C 68 7, 72 6, 74 9 C 78 16, 80 24, 80 32 Z"/>
+    <path d="M 72 34 C 76 28, 82 21, 86 17 C 88 15, 91 17, 90 20 C 87 28, 82 38, 79 46 Z"/>
+  </g>
+</svg>
+<p><strong>入手可能性。</strong> マーカーの公式仕様、その意味、権限ある公務章および一般向けの識別手引きは公開されている。物理的な公式マーカーおよび証明書そのものは、権限を有する経路を通じて確認済みの業務に対してのみ製造、発行および供給される。</p></div>
+    </div>
+    <aside class="marg">
+      <strong>暗色の地</strong>
+      黒、極めて濃い緑その他の暗色の公務用の地には、マーカーの最短寸法の十分の一以上の幅を有する連続した白色または銀色の再帰反射式の外縁と、高い対比の紋章を併せて付す。当該外縁、紋章および適法な発光能力を欠く暗色の地は、夜間の道路において有効ではない。
+      <br><br>
+      <strong>点検</strong>
+      商業用、公共用、公務用、貸出用、貨物用、儀礼用、緊急用および政府用のマーカーは、各就業日の前に記録される点検を受け、少なくとも六か月ごとに正式な検査を受ける。
+      <br><br>
+      <strong>不具合が生じた場合</strong>
+      最初の安全な場所で停止し、清掃、覆いの除去、修正、充電、修理または交換を行うこと。手書きの書付、リボン、身体への塗装、電話の画面または通常の灯火は、これに代わるものではない。
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__top">
+    <div>
+      <h2>帝国</h2>
+      <ul>
+        <li><a href="../../../ja/gov/">政府と教義</a></li>
+        <li><a href="../../../ja/gov/#dynamics">八つのダイナミクス</a></li>
+        <li><a href="../../../ja/gov/#diarchy">帝国二頭統治</a></li>
+        <li><a href="../../../ja/gov/law/">帝国法</a></li>
+        <li><a href="../../../ja/history/">歴史</a></li>
+        <li><a href="../../../ja/symbols/">名称、国旗および象徴</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>ここでの暮らし</h2>
+      <ul>
+        <li><a href="../../../ja/living/">フロッサグリーズでの暮らし</a></li>
+        <li><a href="../../../ja/living/health/">保健医療</a></li>
+        <li><a href="../../../ja/living/education/">教育と子ども</a></li>
+        <li><a href="../../../ja/living/transport/">交通と道路</a></li>
+        <li><a href="../../../ja/living/justice/">司法と警察</a></li>
+        <li><a href="../../../ja/living/money/">労働と金銭</a></li>
+        <li><a href="../../../ja/living/citizenship/">市民権と庇護</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>馬と道路</h2>
+      <ul>
+        <li><a href="../../../ja/horses/">馬</a></li>
+        <li><a href="../../../ja/horses/#welfare">福祉とハミなし制御</a></li>
+        <li><a href="../../../ja/horses/#service">公務用ウマ科動物</a></li>
+        <li><a href="../../../ja/horses/road-status/">道路資格マーカー規格</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>本ポータル</h2>
+      <ul>
+        <li><a href="../../../ja/about/">この企画について</a></li>
+        <li><a href="../../../ja/search/">ポータル内を検索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.jpg" alt="フロッサグリーズ帝国の国旗" width="120" height="80">
+    <p class="footer__disclaimer">残念ながら、フロッサグリーズ（Hrossagrith）は架空の国である。本サイトはワールドビルディングの企画であり、実在のいかなる国家、政府または公的機関とも関係を持たない。</p>
+    <p class="footer__meta">フロッサグリーズ帝国 &middot; 帝国国家ポータル &middot; hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+</body>
+</html>
