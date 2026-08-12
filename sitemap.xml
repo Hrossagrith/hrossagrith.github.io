@@ -68,6 +68,12 @@
   <url><loc>https://hrossagrith.github.io/en-us/about/</loc></url>
   <url><loc>https://hrossagrith.github.io/en-us/search/</loc></url>
   <url><loc>https://hrossagrith.github.io/en-us/gov/law/marking/</loc></url>
+  <url><loc>https://hrossagrith.github.io/en-us/gov/law/ambulance/</loc></url>
+  <url><loc>https://hrossagrith.github.io/en-us/gov/law/lighting/</loc></url>
+  <url><loc>https://hrossagrith.github.io/en-us/gov/law/tack-measurement/</loc></url>
+  <url><loc>https://hrossagrith.github.io/en-us/gov/law/service-equids/</loc></url>
+  <url><loc>https://hrossagrith.github.io/en-us/gov/law/work-certificate/</loc></url>
+  <url><loc>https://hrossagrith.github.io/en-us/gov/law/passport/</loc></url>
   <url><loc>https://hrossagrith.github.io/de/</loc></url>
   <url><loc>https://hrossagrith.github.io/de/horses/</loc></url>
   <url><loc>https://hrossagrith.github.io/de/horses/road-status/</loc></url>
@@ -180,6 +186,9 @@
   <url><loc>https://hrossagrith.github.io/sv/gov/law/ambulance/</loc></url>
   <url><loc>https://hrossagrith.github.io/sv/gov/law/lighting/</loc></url>
   <url><loc>https://hrossagrith.github.io/sv/gov/law/tack-measurement/</loc></url>
+  <url><loc>https://hrossagrith.github.io/sv/gov/law/service-equids/</loc></url>
+  <url><loc>https://hrossagrith.github.io/sv/gov/law/work-certificate/</loc></url>
+  <url><loc>https://hrossagrith.github.io/sv/gov/law/passport/</loc></url>
   <url><loc>https://hrossagrith.github.io/fi/</loc></url>
   <url><loc>https://hrossagrith.github.io/fi/horses/</loc></url>
   <url><loc>https://hrossagrith.github.io/fi/horses/road-status/</loc></url>
@@ -243,6 +252,12 @@
   <url><loc>https://hrossagrith.github.io/zh/about/</loc></url>
   <url><loc>https://hrossagrith.github.io/zh/search/</loc></url>
   <url><loc>https://hrossagrith.github.io/zh/gov/law/marking/</loc></url>
+  <url><loc>https://hrossagrith.github.io/zh/gov/law/ambulance/</loc></url>
+  <url><loc>https://hrossagrith.github.io/zh/gov/law/lighting/</loc></url>
+  <url><loc>https://hrossagrith.github.io/zh/gov/law/tack-measurement/</loc></url>
+  <url><loc>https://hrossagrith.github.io/zh/gov/law/service-equids/</loc></url>
+  <url><loc>https://hrossagrith.github.io/zh/gov/law/work-certificate/</loc></url>
+  <url><loc>https://hrossagrith.github.io/zh/gov/law/passport/</loc></url>
   <url><loc>https://hrossagrith.github.io/ja/</loc></url>
   <url><loc>https://hrossagrith.github.io/ja/horses/</loc></url>
   <url><loc>https://hrossagrith.github.io/ja/horses/road-status/</loc></url>
@@ -260,6 +275,12 @@
   <url><loc>https://hrossagrith.github.io/ja/about/</loc></url>
   <url><loc>https://hrossagrith.github.io/ja/search/</loc></url>
   <url><loc>https://hrossagrith.github.io/ja/gov/law/marking/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ja/gov/law/ambulance/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ja/gov/law/lighting/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ja/gov/law/tack-measurement/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ja/gov/law/service-equids/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ja/gov/law/work-certificate/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ja/gov/law/passport/</loc></url>
   <url><loc>https://hrossagrith.github.io/ko/</loc></url>
   <url><loc>https://hrossagrith.github.io/ko/horses/</loc></url>
   <url><loc>https://hrossagrith.github.io/ko/horses/road-status/</loc></url>
@@ -277,4 +298,10 @@
   <url><loc>https://hrossagrith.github.io/ko/about/</loc></url>
   <url><loc>https://hrossagrith.github.io/ko/search/</loc></url>
   <url><loc>https://hrossagrith.github.io/ko/gov/law/marking/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ko/gov/law/ambulance/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ko/gov/law/lighting/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ko/gov/law/tack-measurement/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ko/gov/law/service-equids/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ko/gov/law/work-certificate/</loc></url>
+  <url><loc>https://hrossagrith.github.io/ko/gov/law/passport/</loc></url>
 </urlset>
