@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hrossagrith.github.io/sitemap.xml
