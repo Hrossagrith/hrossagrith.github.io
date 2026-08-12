@@ -1,9 +1,55 @@
-# hrossagrith.github.io
+# Hrossagrith — Imperial State Portal
 
-Imperial State Portal of the Empire of Hrossagrið — a worldbuilding project.
+**Live site: <https://hrossagrith.github.io/>**
 
-Hrossagrith is a fictional country. This site has no connection to any real
-state, government, or official body.
+The state portal of **Hrossagrith** (native spelling *Hrossagrið*), the Empire
+of Hrossagrith — a worldbuilding project published as a government website.
+Available in thirteen languages.
+
+> Unfortunately, Hrossagrith is a fictional country. This site is a
+> worldbuilding project and has no connection to any real state, government, or
+> official body.
+
+## What is Hrossagrith?
+
+Hrossagrith is an invented country whose name means *horses' sanctuary*: from
+Old Norse `hross` ("horse", genitive plural `hrossa-`) and `grið` ("guaranteed
+peace, quarter, safe conduct, sanctuary"). The name began as a Viking-Age
+insult and was reclaimed. The portal documents the Empire's government, its
+law, its history, and the equid-welfare rules the country is built around.
+
+Read more: [the name and its origin](https://hrossagrith.github.io/symbols/) ·
+[government and doctrine](https://hrossagrith.github.io/gov/) ·
+[the imperial legal corpus](https://hrossagrith.github.io/gov/law/) ·
+[horses](https://hrossagrith.github.io/horses/) ·
+[early history](https://hrossagrith.github.io/history/)
+
+## Languages
+
+| | | |
+|---|---|---|
+| [Русский](https://hrossagrith.github.io/ru/) | [English (UK)](https://hrossagrith.github.io/) | [English (US)](https://hrossagrith.github.io/en-us/) |
+| [Deutsch](https://hrossagrith.github.io/de/) | [Français](https://hrossagrith.github.io/fr/) | [Nederlands](https://hrossagrith.github.io/nl/) |
+| [Norsk bokmål](https://hrossagrith.github.io/no/) | [Svenska](https://hrossagrith.github.io/sv/) | [Suomi](https://hrossagrith.github.io/fi/) |
+| [Italiano](https://hrossagrith.github.io/it/) | [中文](https://hrossagrith.github.io/zh/) | [日本語](https://hrossagrith.github.io/ja/) |
+| [한국어](https://hrossagrith.github.io/ko/) | | |
+
+## Published instruments
+
+The full text of the Empire's legal corpus is published, not merely summarised:
+
+- [General Imperial Equid Welfare Code](https://hrossagrith.github.io/gov/law/welfare/)
+- [Imperial Tack, Restraint, and Welfare Code](https://hrossagrith.github.io/gov/law/tack/)
+- [Imperial Code for the Welfare of Working Carriage Equids](https://hrossagrith.github.io/gov/law/carriage/)
+- [Imperial Road and Driver Code](https://hrossagrith.github.io/gov/law/road/)
+- [Imperial Equine Climatic Burden Standard](https://hrossagrith.github.io/gov/law/climate/)
+- [Imperial Public-Road Equid Status Marking Standard](https://hrossagrith.github.io/gov/law/marking/)
+- [Imperial Emergency Medical Carriage Technical Standard](https://hrossagrith.github.io/gov/law/ambulance/)
+- [Imperial Carriage Lighting and Signalling Standard](https://hrossagrith.github.io/gov/law/lighting/)
+- [Imperial Tack Measurement Schedule](https://hrossagrith.github.io/gov/law/tack-measurement/)
+- [Imperial Service Equid Selection and Breed Standard](https://hrossagrith.github.io/gov/law/service-equids/)
+- [Imperial Carriage Equid Road and Work Certificate Template](https://hrossagrith.github.io/gov/law/work-certificate/)
+- [Imperial Working Equid Passport Template](https://hrossagrith.github.io/gov/law/passport/)
 
 ## Structure
 
@@ -14,26 +60,21 @@ horses/road-status/     the public-road equid status marking standard
 living/                 book II: what the Empire provides
   health/ education/ transport/ justice/ money/ citizenship/
 gov/                    book I: the state and its doctrine
-gov/law/                book III: the imperial legal corpus
-history/                book IV: early history, c. 1200-100 BC
+gov/law/                book III: the imperial legal corpus, and every full text
+history/                book IV: early history, c. 1200-220 BC
 symbols/                book V: name, etymology, flag, national animal
 about/                  colophon and disclaimer
-404.html                not-found page
-assets/style.css        shared stylesheet, light and dark themes
-assets/theme.js         theme toggle (logic only, no markup)
-assets/icons.svg        sprite: section icons, state mark, horse head
-assets/hero.svg         banner illustration
-assets/ornament.svg     section divider
-assets/seal.svg         seal used on official notices
-assets/flag.jpg         flag of the Empire
-.nojekyll               serve files as-is, no Jekyll processing
+search/                 client-side search over the whole portal
+<locale>/               the same tree, in each of the twelve other languages
+assets/                 one stylesheet, two scripts, the flag, the emblem, the markers
+sitemap.xml             every canonical page
 ```
 
-All artwork except the flag is original vector drawing made for this site.
-No third-party photographs are used.
+The site is plain static HTML with no build step in the repository, no
+framework and no third-party scripts. `payload/site.tar.gz` is unpacked by a
+GitHub Actions workflow, which then commits the result.
 
-## Editing
+## Reuse
 
-Plain static HTML. No build step, no dependencies. Edit a file, commit, and
-GitHub Pages republishes within a minute. Each page carries its own copy of
-the masthead, navigation and footer.
+The setting, names, texts, flag and artwork of Hrossagrith are the work of
+their author. Please do not republish them as your own.
