@@ -976,6 +976,20 @@ li {
   letter-spacing: 0.1em;
 }
 
+html[lang^="ru"] [data-ru-restricted] {
+  display: none !important;
+}
+
+.footer__legal {
+  max-width: var(--measure);
+  margin: 1.25rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(194, 160, 82, 0.22);
+  color: rgba(179, 168, 130, 0.78);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
 /* ================= Small screens ================= */
 
 @media (max-width: 900px) {

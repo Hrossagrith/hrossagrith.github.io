@@ -40,6 +40,34 @@
     });
   }
 
+
+  /* ---------- Russian locale safeguards ---------- */
+
+  var isRussianLocale =
+    (document.documentElement.lang || "").toLowerCase().indexOf("ru") === 0 ||
+    /^\/ru(?:\/|$)/.test(window.location.pathname);
+
+  if (isRussianLocale) {
+    /* Authors can explicitly mark material that must not be rendered in the
+       Russian edition without maintaining a separate JavaScript branch. */
+    var restricted = document.querySelectorAll("[data-ru-restricted]");
+    for (var r = 0; r < restricted.length; r++) {
+      restricted[r].remove();
+    }
+
+    /* Keep the notice at the literal bottom of the rendered page. */
+    var footerBottom = document.querySelector(".footer__bottom");
+    if (footerBottom && !footerBottom.querySelector(".footer__legal")) {
+      var legal = document.createElement("p");
+      legal.className = "footer__legal";
+      legal.textContent =
+        "Правовая оговорка (русская версия). Хроссагрид — вымышленный художественный проект. " +
+        "Материалы не являются официальными документами, юридической консультацией или призывом к каким-либо действиям. " +
+        "Содержание русскоязычной версии может быть сокращено или адаптировано с учётом применимых требований законодательства Российской Федерации.";
+      footerBottom.appendChild(legal);
+    }
+  }
+
   /* ---------- Search ---------- */
 
   var results = document.querySelector("[data-search-results]");
