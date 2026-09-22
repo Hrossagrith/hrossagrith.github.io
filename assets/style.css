@@ -976,6 +976,10 @@ li {
   letter-spacing: 0.1em;
 }
 
+html[lang^="ru"] [data-ru-restricted] {
+  display: none !important;
+}
+
 .footer__legal {
   max-width: var(--measure);
   margin: 1.25rem 0 0;
