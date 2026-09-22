@@ -25,45 +25,199 @@
     return say(key, fallback).replace("{n}", n).replace("{q}", query);
   }
 
-  /* ---------- Language picker ---------- */
+  /* ---------- Locale selection ---------- */
+
+  var localePrefix = /^\/(en-us|ru|de|fr|nl|no|sv|fi|it|zh|ja|ko)(\/|$)/;
+  var supportedLocales = {
+    "en": true,
+    "en-us": true,
+    "ru": true,
+    "de": true,
+    "fr": true,
+    "nl": true,
+    "no": true,
+    "sv": true,
+    "fi": true,
+    "it": true,
+    "zh": true,
+    "ja": true,
+    "ko": true
+  };
+
+  function rememberLocale(code) {
+    try {
+      window.localStorage.setItem("hrossagrith-locale", code);
+    } catch (error) { /* storage unavailable */ }
+  }
+
+  function rememberedLocale() {
+    try {
+      var saved = window.localStorage.getItem("hrossagrith-locale");
+      return supportedLocales[saved] ? saved : "";
+    } catch (error) {
+      return "";
+    }
+  }
+
+  function localeFromLanguage(tag) {
+    if (!tag) {
+      return "";
+    }
+    var normal = String(tag).toLowerCase().replace("_", "-");
+    if (normal === "en-us" || normal.indexOf("en-us-") === 0) {
+      return "en-us";
+    }
+    var primary = normal.split("-")[0];
+    if (primary === "nb" || primary === "nn") {
+      return "no";
+    }
+    return supportedLocales[primary] ? primary : "";
+  }
+
+  function localeFromBrowser() {
+    var languages = navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || navigator.userLanguage || ""];
+    for (var i = 0; i < languages.length; i++) {
+      var code = localeFromLanguage(languages[i]);
+      if (code) {
+        return code;
+      }
+    }
+    return "";
+  }
+
+  function localeFromTimeZone() {
+    var zone = "";
+    try {
+      zone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    } catch (error) { /* old browser */ }
+
+    var zones = {
+      "Europe/London": "en",
+      "America/New_York": "en-us",
+      "America/Detroit": "en-us",
+      "America/Chicago": "en-us",
+      "America/Denver": "en-us",
+      "America/Phoenix": "en-us",
+      "America/Los_Angeles": "en-us",
+      "America/Anchorage": "en-us",
+      "Pacific/Honolulu": "en-us",
+
+      "Europe/Kaliningrad": "ru",
+      "Europe/Moscow": "ru",
+      "Europe/Kirov": "ru",
+      "Europe/Astrakhan": "ru",
+      "Europe/Samara": "ru",
+      "Europe/Saratov": "ru",
+      "Europe/Ulyanovsk": "ru",
+      "Europe/Volgograd": "ru",
+      "Asia/Yekaterinburg": "ru",
+      "Asia/Omsk": "ru",
+      "Asia/Novosibirsk": "ru",
+      "Asia/Barnaul": "ru",
+      "Asia/Tomsk": "ru",
+      "Asia/Novokuznetsk": "ru",
+      "Asia/Krasnoyarsk": "ru",
+      "Asia/Irkutsk": "ru",
+      "Asia/Chita": "ru",
+      "Asia/Yakutsk": "ru",
+      "Asia/Khandyga": "ru",
+      "Asia/Vladivostok": "ru",
+      "Asia/Ust-Nera": "ru",
+      "Asia/Magadan": "ru",
+      "Asia/Sakhalin": "ru",
+      "Asia/Srednekolymsk": "ru",
+      "Asia/Kamchatka": "ru",
+      "Asia/Anadyr": "ru",
+
+      "Europe/Berlin": "de",
+      "Europe/Vienna": "de",
+      "Europe/Paris": "fr",
+      "Europe/Amsterdam": "nl",
+      "Europe/Oslo": "no",
+      "Europe/Stockholm": "sv",
+      "Europe/Helsinki": "fi",
+      "Europe/Rome": "it",
+      "Asia/Shanghai": "zh",
+      "Asia/Urumqi": "zh",
+      "Asia/Tokyo": "ja",
+      "Asia/Seoul": "ko"
+    };
+    return zones[zone] || "";
+  }
+
+  function pathForLocale(code, path) {
+    var bare = path.replace(localePrefix, "/");
+    return code === "en" ? bare : "/" + code + bare;
+  }
+
+  function autoSelectLocale() {
+    /* An explicit locale in the URL is respected. Otherwise a saved manual
+       choice wins over automatic selection. */
+    if (localePrefix.test(window.location.pathname)) {
+      return;
+    }
+
+    var code = rememberedLocale() || localeFromTimeZone() || localeFromBrowser();
+    if (!code || code === "en") {
+      return;
+    }
+
+    var target = pathForLocale(code, window.location.pathname);
+    if (target === window.location.pathname) {
+      return;
+    }
+
+    /* Deep links are redirected only when the translated counterpart exists. */
+    fetch(target, { method: "HEAD", cache: "no-store" })
+      .then(function (response) {
+        if (response.ok) {
+          window.location.replace(target + window.location.search + window.location.hash);
+        }
+      })
+      .catch(function () { /* stay on the current language */ });
+  }
+
+  autoSelectLocale();
 
   var picker = document.querySelector("[data-locale-picker]");
   if (picker) {
     picker.addEventListener("change", function () {
       var code = picker.value;
-      if (!code) {
+      if (!supportedLocales[code]) {
         return;
       }
-      /* Strip the current locale prefix, then apply the chosen one. */
-      var path = window.location.pathname.replace(/^\/(en-us|ru|de|fr|nl|no|sv|fi|it|zh|ja|ko)(\/|$)/, "/");
-      window.location.pathname = code === "en" ? path : "/" + code + path;
+      rememberLocale(code);
+      var path = pathForLocale(code, window.location.pathname);
+      window.location.pathname = path;
     });
   }
 
 
-  /* ---------- Russian locale safeguards ---------- */
+  /* ---------- Regional content policy ---------- */
 
-  var isRussianLocale =
-    (document.documentElement.lang || "").toLowerCase().indexOf("ru") === 0 ||
-    /^\/ru(?:\/|$)/.test(window.location.pathname);
+  var pageLanguage = (document.documentElement.lang || "").toLowerCase().split("-")[0];
+  var regionalPolicy = {
+    "ru": "restricted"
+  };
 
-  if (isRussianLocale) {
-    /* Authors can explicitly mark material that must not be rendered in the
-       Russian edition without maintaining a separate JavaScript branch. */
-    var restricted = document.querySelectorAll("[data-ru-restricted]");
+  if (regionalPolicy[pageLanguage] === "restricted") {
+    document.documentElement.setAttribute("data-regional-policy", "restricted");
+
+    var restricted = document.querySelectorAll("[data-region-restricted]");
     for (var r = 0; r < restricted.length; r++) {
       restricted[r].remove();
     }
 
-    /* Keep the notice at the literal bottom of the rendered page. */
     var footerBottom = document.querySelector(".footer__bottom");
     if (footerBottom && !footerBottom.querySelector(".footer__legal")) {
       var legal = document.createElement("p");
       legal.className = "footer__legal";
       legal.textContent =
-        "Правовая оговорка (русская версия). Хроссагрид — вымышленный художественный проект. " +
+        "Правовая оговорка. Хроссагрид — вымышленный художественный проект. " +
         "Материалы не являются официальными документами, юридической консультацией или призывом к каким-либо действиям. " +
-        "Содержание русскоязычной версии может быть сокращено или адаптировано с учётом применимых требований законодательства Российской Федерации.";
+        "Содержание портала может быть сокращено или адаптировано с учётом применимых требований законодательства.";
       footerBottom.appendChild(legal);
     }
   }
