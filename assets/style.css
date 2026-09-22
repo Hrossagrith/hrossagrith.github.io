@@ -161,6 +161,14 @@ body {
   margin: 0;
 }
 
+.hrossagrith-clock {
+  margin: 0;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+  color: var(--deep-ink);
+}
+
 .search-link {
   font-family: var(--label);
   font-size: 0.68rem;
@@ -245,10 +253,7 @@ body {
 }
 
 .masthead__motto {
-  margin: 0.7rem 0 0;
-  font-style: italic;
-  color: var(--deep-muted);
-  font-size: 1rem;
+  display: none !important;
 }
 
 .masthead__rule {
@@ -1006,6 +1011,20 @@ html[lang^="ru"] [data-region-restricted] {
 @media (max-width: 720px) {
   body {
     font-size: 17.5px;
+  }
+
+  .utility__inner {
+    flex-wrap: wrap;
+    gap: 0.45rem 0.7rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .hrossagrith-clock {
+    order: 5;
+    width: 100%;
+    text-align: center;
+    font-size: 0.66rem;
   }
 
   .shell {
