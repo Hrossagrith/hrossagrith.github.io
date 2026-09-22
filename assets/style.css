@@ -976,7 +976,7 @@ li {
   letter-spacing: 0.1em;
 }
 
-html[lang^="ru"] [data-ru-restricted] {
+html[lang^="ru"] [data-region-restricted] {
   display: none !important;
 }
 
