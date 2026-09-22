@@ -153,13 +153,13 @@
   }
 
   function autoSelectLocale() {
-    /* An explicit locale in the URL is respected. A saved manual choice also
-       wins over automatic selection. */
-    if (localePrefix.test(window.location.pathname) || rememberedLocale()) {
+    /* An explicit locale in the URL is respected. Otherwise a saved manual
+       choice wins over automatic selection. */
+    if (localePrefix.test(window.location.pathname)) {
       return;
     }
 
-    var code = localeFromTimeZone() || localeFromBrowser();
+    var code = rememberedLocale() || localeFromTimeZone() || localeFromBrowser();
     if (!code || code === "en") {
       return;
     }
