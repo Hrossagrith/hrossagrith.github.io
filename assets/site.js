@@ -195,6 +195,72 @@
   }
 
 
+  /* ---------- Hrossagrith state display ---------- */
+
+  var HROSSAGRITH_STANDARDS = {
+    timeZone: "Europe/Dublin",
+    dateOrder: "DMY",
+    datePattern: "DD/MM/YYYY",
+    hourCycle: "h23",
+    units: "metric"
+  };
+
+  /* The old horse-centred slogan is retired across every locale/version. */
+  var oldMottos = document.querySelectorAll(".masthead__motto");
+  for (var m = 0; m < oldMottos.length; m++) {
+    oldMottos[m].remove();
+  }
+
+  var utilityInner = document.querySelector(".utility__inner");
+  if (utilityInner && !utilityInner.querySelector(".hrossagrith-clock")) {
+    var clock = document.createElement("p");
+    clock.className = "hrossagrith-clock";
+    clock.setAttribute(
+      "title",
+      "Hrossagrith time · Europe/Dublin · DD/MM/YYYY · 24-hour clock · metric standards"
+    );
+
+    var note = utilityInner.querySelector(".utility__note");
+    if (note && note.nextSibling) {
+      utilityInner.insertBefore(clock, note.nextSibling);
+    } else if (note) {
+      utilityInner.appendChild(clock);
+    } else {
+      utilityInner.insertBefore(clock, utilityInner.firstChild);
+    }
+
+    var hrossagrithFormatter = new Intl.DateTimeFormat("en-GB", {
+      timeZone: HROSSAGRITH_STANDARDS.timeZone,
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: HROSSAGRITH_STANDARDS.hourCycle
+    });
+
+    function updateHrossagrithClock() {
+      var values = {};
+      var parts = hrossagrithFormatter.formatToParts(new Date());
+      for (var p = 0; p < parts.length; p++) {
+        if (parts[p].type !== "literal") {
+          values[parts[p].type] = parts[p].value;
+        }
+      }
+
+      clock.textContent =
+        "Hrossagrith · " +
+        values.day + "/" + values.month + "/" + values.year +
+        " · " +
+        values.hour + ":" + values.minute + ":" + values.second;
+    }
+
+    updateHrossagrithClock();
+    window.setInterval(updateHrossagrithClock, 1000);
+  }
+
+
   /* ---------- Regional content policy ---------- */
 
   var pageLanguage = (document.documentElement.lang || "").toLowerCase().split("-")[0];
