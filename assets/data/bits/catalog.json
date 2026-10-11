@@ -1,0 +1,869 @@
+{
+  "version": 1,
+  "notes": {
+    "en": "Structural catalogue for the bit-mechanics register. Every number under `model` is a modelling parameter with its justification in text.json (section `model_params`). Lengths in millimetres, forces in newtons.",
+    "ru": "Структурный каталог реестра механики удил. Каждое число в `model` — параметр модели; обоснование в text.json (раздел `model_params`). Длины в миллиметрах, силы в ньютонах."
+  },
+
+  "groups": [
+    {
+      "id": "snaffle",
+      "name": { "en": "Snaffle — direct action", "ru": "Трензели — прямое действие" },
+      "summary": {
+        "en": "The rein attaches at the level of the mouthpiece. No lever, no multiplication: the mouth receives the rein force, redistributed by the cheek and the mouthpiece.",
+        "ru": "Повод крепится на уровне грызла. Нет рычага и нет умножения: рот получает силу повода, перераспределённую щёчкой и грызлом."
+      }
+    },
+    {
+      "id": "leverage",
+      "name": { "en": "Leverage — curb and gag", "ru": "Рычажные — мундштучные и гаги" },
+      "summary": {
+        "en": "The rein acts below or through the mouthpiece. A curb multiplies the rein force against a chin chain; a gag redirects it upward along the cheekpiece.",
+        "ru": "Повод действует ниже грызла или через него. Мундштук умножает силу повода, опираясь на подбородную цепочку; гаг перенаправляет её вверх вдоль нащёчного ремня."
+      }
+    }
+  ],
+
+  "subgroups": [
+    { "id": "ring", "group": "snaffle", "name": { "en": "Ring cheeks", "ru": "Кольцевые щёчки" } },
+    { "id": "fixed", "group": "snaffle", "name": { "en": "Fixed and guided cheeks", "ru": "Фиксированные и направляющие щёчки" } },
+    { "id": "curb", "group": "leverage", "name": { "en": "Curb (chin chain)", "ru": "Мундштучные (с подбородной цепочкой)" } },
+    { "id": "gag", "group": "leverage", "name": { "en": "Gag (no chain)", "ru": "Гаги (без цепочки)" } }
+  ],
+
+  "cheeks": [
+    {
+      "id": "loose-ring",
+      "group": "snaffle", "subgroup": "ring",
+      "name": { "en": "Loose ring snaffle", "ru": "Трензель с подвижными кольцами" },
+      "aka": { "en": ["Free ring", "O-ring", "Wire ring"], "ru": ["Круглые кольца", "Свободные кольца"] },
+      "mechanism": "direct",
+      "model": {
+        "ring_through_mouthpiece": true,
+        "lip_pinch": 0.6,
+        "pull_through_guard": 0.3,
+        "ride_up_guard": 0.0,
+        "lateral_guidance": 0.2,
+        "poll_transfer": 0.10,
+        "mobility": 1.0,
+        "stop": "tissue",
+        "signal_clarity": 0.9,
+        "ring_diameter": 70
+      }
+    },
+    {
+      "id": "eggbutt",
+      "group": "snaffle", "subgroup": "ring",
+      "name": { "en": "Eggbutt snaffle", "ru": "Трензель «империал» (эггбат)" },
+      "aka": { "en": ["Egg-butt", "Barrel head", "Olive head (Olivenkopf)"], "ru": ["Империал", "Оливковые кольца"] },
+      "mechanism": "direct",
+      "model": {
+        "ring_through_mouthpiece": false,
+        "lip_pinch": 0.0,
+        "pull_through_guard": 0.6,
+        "ride_up_guard": 0.15,
+        "lateral_guidance": 0.4,
+        "poll_transfer": 0.05,
+        "mobility": 0.4,
+        "stop": "tissue",
+        "signal_clarity": 0.9,
+        "ring_diameter": 65
+      }
+    },
+    {
+      "id": "d-ring",
+      "group": "snaffle", "subgroup": "ring",
+      "name": { "en": "D-ring snaffle", "ru": "Трензель с D-образными кольцами" },
+      "aka": { "en": ["Dee ring", "Hunter D"], "ru": ["Дэ-кольца"] },
+      "mechanism": "direct",
+      "model": {
+        "ring_through_mouthpiece": false,
+        "lip_pinch": 0.0,
+        "pull_through_guard": 0.8,
+        "ride_up_guard": 0.15,
+        "lateral_guidance": 0.6,
+        "poll_transfer": 0.05,
+        "mobility": 0.35,
+        "stop": "tissue",
+        "signal_clarity": 0.9,
+        "ring_diameter": 65
+      }
+    },
+    {
+      "id": "full-cheek",
+      "group": "snaffle", "subgroup": "fixed",
+      "name": { "en": "Full cheek snaffle", "ru": "Трензель с усиками" },
+      "aka": { "en": ["Full-cheek", "Tom Thumb (Australian usage)"], "ru": ["Фулл-чик", "С усами"] },
+      "mechanism": "direct",
+      "options": [
+        { "id": "keepers", "name": { "en": "Bit keepers", "ru": "Держатели усиков" },
+          "values": [
+            { "id": "with", "name": { "en": "With keepers", "ru": "С держателями" }, "ride_up_guard": 0.7, "poll_transfer": 0.05 },
+            { "id": "without", "name": { "en": "Without keepers", "ru": "Без держателей" }, "ride_up_guard": 0.2, "poll_transfer": 0.03 }
+          ], "default": "with" }
+      ],
+      "model": {
+        "ring_through_mouthpiece": false,
+        "lip_pinch": 0.0,
+        "pull_through_guard": 1.0,
+        "ride_up_guard": 0.7,
+        "lateral_guidance": 0.9,
+        "poll_transfer": 0.05,
+        "mobility": 0.2,
+        "stop": "suspension",
+        "signal_clarity": 0.9,
+        "cheek_length": 150,
+        "snag_hazard": 0.5
+      }
+    },
+    {
+      "id": "half-cheek",
+      "group": "snaffle", "subgroup": "fixed",
+      "name": { "en": "Half cheek snaffle", "ru": "Трензель с полуусиками" },
+      "aka": { "en": ["Half spoon", "Spoon cheek"], "ru": ["Полуусы", "Ложка"] },
+      "mechanism": "direct",
+      "model": {
+        "ring_through_mouthpiece": false,
+        "lip_pinch": 0.0,
+        "pull_through_guard": 0.8,
+        "ride_up_guard": 0.1,
+        "lateral_guidance": 0.6,
+        "poll_transfer": 0.04,
+        "mobility": 0.3,
+        "stop": "tissue",
+        "signal_clarity": 0.9,
+        "cheek_length": 75,
+        "snag_hazard": 0.2
+      }
+    },
+    {
+      "id": "fulmer",
+      "group": "snaffle", "subgroup": "fixed",
+      "name": { "en": "Fulmer snaffle", "ru": "Фулмер (усики с подвижными кольцами)" },
+      "aka": { "en": ["Australian loose ring cheek"], "ru": ["Австралийский трензель"] },
+      "mechanism": "direct",
+      "options": [
+        { "id": "keepers", "name": { "en": "Bit keepers", "ru": "Держатели усиков" },
+          "values": [
+            { "id": "with", "name": { "en": "With keepers", "ru": "С держателями" }, "ride_up_guard": 0.6 },
+            { "id": "without", "name": { "en": "Without keepers", "ru": "Без держателей" }, "ride_up_guard": 0.15 }
+          ], "default": "with" }
+      ],
+      "model": {
+        "ring_through_mouthpiece": true,
+        "lip_pinch": 0.4,
+        "pull_through_guard": 1.0,
+        "ride_up_guard": 0.6,
+        "lateral_guidance": 0.9,
+        "poll_transfer": 0.06,
+        "mobility": 0.8,
+        "stop": "suspension",
+        "signal_clarity": 0.85,
+        "cheek_length": 150,
+        "snag_hazard": 0.5
+      }
+    },
+    {
+      "id": "baucher",
+      "group": "snaffle", "subgroup": "fixed",
+      "name": { "en": "Baucher (hanging cheek) snaffle", "ru": "Баушер (трензель Боше, на подвесе)" },
+      "aka": { "en": ["Hanging cheek", "Drop cheek", "B-ring", "Fillis (with arched jointed mouth)"], "ru": ["Боше", "Висячая щёчка", "Филлис"] },
+      "mechanism": "direct",
+      "model": {
+        "ring_through_mouthpiece": false,
+        "lip_pinch": 0.0,
+        "pull_through_guard": 0.8,
+        "ride_up_guard": 0.85,
+        "lateral_guidance": 0.5,
+        "poll_transfer": 0.0,
+        "mobility": 0.15,
+        "stop": "suspension",
+        "signal_clarity": 0.95,
+        "purchase": 25
+      }
+    },
+    {
+      "id": "scorrier",
+      "group": "snaffle", "subgroup": "fixed",
+      "name": { "en": "Scorrier (Cornish) snaffle", "ru": "Скорриер (корнуоллский трензель)" },
+      "aka": { "en": ["Cornish snaffle", "Scourier", "Double-ring snaffle"], "ru": ["Четырёхколечный трензель"] },
+      "mechanism": "direct",
+      "model": {
+        "ring_through_mouthpiece": true,
+        "lip_pinch": 0.7,
+        "pull_through_guard": 1.0,
+        "ride_up_guard": 0.3,
+        "lateral_guidance": 1.0,
+        "cheek_squeeze": 0.8,
+        "poll_transfer": 0.08,
+        "mobility": 0.6,
+        "stop": "tissue",
+        "signal_clarity": 0.7
+      }
+    },
+
+    {
+      "id": "weymouth-fixed",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Weymouth, fixed cheek", "ru": "Мундштук с неподвижной щёчкой" },
+      "aka": { "en": ["Curb bit", "Dressage Weymouth"], "ru": ["Мундштук", "Веймут"] },
+      "mechanism": "curb",
+      "double_bridle": true,
+      "options": [
+        { "id": "shank", "name": { "en": "Lower shank (lever arm)", "ru": "Нижнее плечо (рычаг)" },
+          "values": [
+            { "id": "short", "name": { "en": "Short, 50 mm (Tom Thumb)", "ru": "Короткое, 50 мм (Том Тамб)" }, "shank": 50 },
+            { "id": "standard", "name": { "en": "Standard, 70 mm", "ru": "Стандартное, 70 мм" }, "shank": 70 },
+            { "id": "long", "name": { "en": "Long, 100 mm (dressage maximum)", "ru": "Длинное, 100 мм (максимум для выездки)" }, "shank": 100 }
+          ], "default": "standard" },
+        { "id": "chain", "name": { "en": "Curb chain adjustment", "ru": "Регулировка цепочки" },
+          "values": [
+            { "id": "tight", "name": { "en": "Tight (engages at ~25°)", "ru": "Туго (срабатывает при ~25°)" }, "chain_engage_deg": 25 },
+            { "id": "standard", "name": { "en": "Standard (engages at ~45°)", "ru": "Стандарт (срабатывает при ~45°)" }, "chain_engage_deg": 45 },
+            { "id": "loose", "name": { "en": "Loose (engages at ~65°)", "ru": "Слабо (срабатывает при ~65°)" }, "chain_engage_deg": 65 }
+          ], "default": "standard" }
+      ],
+      "model": {
+        "purchase": 35, "shank": 70, "chain": true, "chain_engage_deg": 45,
+        "mouthpiece_rotates_with_shank": true,
+        "lip_pinch": 0.1, "pull_through_guard": 1.0, "ride_up_guard": 0.9,
+        "lateral_guidance": 0.3, "mobility": 0.1,
+        "stop": "chain", "signal_clarity": 0.8
+      }
+    },
+    {
+      "id": "weymouth-sliding",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Weymouth, sliding cheek", "ru": "Мундштук с подвижной щёчкой" },
+      "aka": { "en": ["Sliding mouth Weymouth"], "ru": ["Скользящий мундштук"] },
+      "mechanism": "curb",
+      "double_bridle": true,
+      "options": [
+        { "id": "shank", "name": { "en": "Lower shank (lever arm)", "ru": "Нижнее плечо (рычаг)" },
+          "values": [
+            { "id": "short", "name": { "en": "Short, 50 mm", "ru": "Короткое, 50 мм" }, "shank": 50 },
+            { "id": "standard", "name": { "en": "Standard, 70 mm", "ru": "Стандартное, 70 мм" }, "shank": 70 },
+            { "id": "long", "name": { "en": "Long, 100 mm", "ru": "Длинное, 100 мм" }, "shank": 100 }
+          ], "default": "standard" },
+        { "id": "chain", "name": { "en": "Curb chain adjustment", "ru": "Регулировка цепочки" },
+          "values": [
+            { "id": "tight", "name": { "en": "Tight (~25°)", "ru": "Туго (~25°)" }, "chain_engage_deg": 25 },
+            { "id": "standard", "name": { "en": "Standard (~45°)", "ru": "Стандарт (~45°)" }, "chain_engage_deg": 45 },
+            { "id": "loose", "name": { "en": "Loose (~65°)", "ru": "Слабо (~65°)" }, "chain_engage_deg": 65 }
+          ], "default": "standard" }
+      ],
+      "model": {
+        "purchase": 35, "shank": 70, "chain": true, "chain_engage_deg": 45,
+        "mouthpiece_rotates_with_shank": true, "mouthpiece_slide": 10,
+        "lip_pinch": 0.15, "pull_through_guard": 1.0, "ride_up_guard": 0.8,
+        "lateral_guidance": 0.3, "mobility": 0.3,
+        "stop": "chain", "signal_clarity": 0.7
+      }
+    },
+    {
+      "id": "banbury",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Banbury", "ru": "Мундштук Банбери" },
+      "aka": { "en": ["Banbury curb"], "ru": ["Банбери"] },
+      "mechanism": "curb",
+      "double_bridle": true,
+      "options": [
+        { "id": "chain", "name": { "en": "Curb chain adjustment", "ru": "Регулировка цепочки" },
+          "values": [
+            { "id": "tight", "name": { "en": "Tight (~25°)", "ru": "Туго (~25°)" }, "chain_engage_deg": 25 },
+            { "id": "standard", "name": { "en": "Standard (~45°)", "ru": "Стандарт (~45°)" }, "chain_engage_deg": 45 },
+            { "id": "loose", "name": { "en": "Loose (~65°)", "ru": "Слабо (~65°)" }, "chain_engage_deg": 65 }
+          ], "default": "standard" }
+      ],
+      "model": {
+        "purchase": 35, "shank": 70, "chain": true, "chain_engage_deg": 45,
+        "mouthpiece_rotates_with_shank": false, "independent_sides": true, "mouthpiece_slide": 8,
+        "lip_pinch": 0.1, "pull_through_guard": 1.0, "ride_up_guard": 0.8,
+        "lateral_guidance": 0.5, "mobility": 0.4,
+        "stop": "chain", "signal_clarity": 0.7
+      }
+    },
+    {
+      "id": "pelham",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Pelham", "ru": "Пелям" },
+      "aka": { "en": ["Hartwell (ported)", "Cambridge (ported mullen)"], "ru": ["Пелям Хартвелл (с портом)"] },
+      "mechanism": "curb",
+      "options": [
+        { "id": "reins", "name": { "en": "Rein arrangement", "ru": "Схема поводьев" },
+          "values": [
+            { "id": "two", "name": { "en": "Two reins (snaffle + curb)", "ru": "Два повода (трензельный + мундштучный)" }, "rein_mode": "two" },
+            { "id": "roundings", "name": { "en": "Roundings (one rein to both rings)", "ru": "Раундинги (один повод на оба кольца)" }, "rein_mode": "roundings" },
+            { "id": "curb-only", "name": { "en": "Curb rein only", "ru": "Только мундштучный повод" }, "rein_mode": "curb" }
+          ], "default": "two" },
+        { "id": "shank", "name": { "en": "Lower shank", "ru": "Нижнее плечо" },
+          "values": [
+            { "id": "short", "name": { "en": "Short, 45 mm", "ru": "Короткое, 45 мм" }, "shank": 45 },
+            { "id": "standard", "name": { "en": "Standard, 60 mm", "ru": "Стандартное, 60 мм" }, "shank": 60 },
+            { "id": "long", "name": { "en": "Long, 75 mm", "ru": "Длинное, 75 мм" }, "shank": 75 }
+          ], "default": "standard" }
+      ],
+      "model": {
+        "purchase": 35, "shank": 60, "chain": true, "chain_engage_deg": 45, "rein_mode": "two",
+        "mouthpiece_rotates_with_shank": true,
+        "lip_pinch": 0.2, "pull_through_guard": 1.0, "ride_up_guard": 0.6,
+        "lateral_guidance": 0.5, "mobility": 0.2,
+        "stop": "chain", "signal_clarity": 0.75
+      }
+    },
+    {
+      "id": "rugby-pelham",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Rugby pelham", "ru": "Пелям «Регби»" },
+      "aka": { "en": ["Pelham with independent snaffle ring"], "ru": ["Пелям с независимым трензельным кольцом"] },
+      "mechanism": "curb",
+      "options": [
+        { "id": "reins", "name": { "en": "Rein arrangement", "ru": "Схема поводьев" },
+          "values": [
+            { "id": "two", "name": { "en": "Two reins", "ru": "Два повода" }, "rein_mode": "two" },
+            { "id": "curb-only", "name": { "en": "Curb rein only", "ru": "Только мундштучный повод" }, "rein_mode": "curb" }
+          ], "default": "two" }
+      ],
+      "model": {
+        "purchase": 35, "shank": 60, "chain": true, "chain_engage_deg": 45, "rein_mode": "two",
+        "mouthpiece_rotates_with_shank": true, "independent_snaffle_ring": true,
+        "lip_pinch": 0.25, "pull_through_guard": 1.0, "ride_up_guard": 0.6,
+        "lateral_guidance": 0.5, "mobility": 0.3,
+        "stop": "chain", "signal_clarity": 0.85
+      }
+    },
+    {
+      "id": "scamperdale-pelham",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Scamperdale pelham", "ru": "Пелям «Скампердейл»" },
+      "aka": { "en": ["Pelham with set-back shanks"], "ru": ["Пелям с отогнутыми щёчками"] },
+      "mechanism": "curb",
+      "options": [
+        { "id": "reins", "name": { "en": "Rein arrangement", "ru": "Схема поводьев" },
+          "values": [
+            { "id": "two", "name": { "en": "Two reins", "ru": "Два повода" }, "rein_mode": "two" },
+            { "id": "roundings", "name": { "en": "Roundings", "ru": "Раундинги" }, "rein_mode": "roundings" },
+            { "id": "curb-only", "name": { "en": "Curb rein only", "ru": "Только мундштучный повод" }, "rein_mode": "curb" }
+          ], "default": "two" }
+      ],
+      "model": {
+        "purchase": 35, "shank": 60, "chain": true, "chain_engage_deg": 45, "rein_mode": "two",
+        "mouthpiece_rotates_with_shank": true, "shanks_set_back": true,
+        "lip_pinch": 0.05, "pull_through_guard": 1.0, "ride_up_guard": 0.6,
+        "lateral_guidance": 0.4, "mobility": 0.2,
+        "stop": "chain", "signal_clarity": 0.75
+      }
+    },
+    {
+      "id": "kimblewick",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Kimblewick, plain D", "ru": "Кимблвик без прорезей" },
+      "aka": { "en": ["Kimberwick (US)", "Spanish snaffle"], "ru": ["Кимбервик", "Испанский трензель"] },
+      "mechanism": "curb",
+      "model": {
+        "purchase": 25, "shank": 25, "shank_floating": true, "chain": true, "chain_engage_deg": 45, "rein_mode": "curb",
+        "mouthpiece_rotates_with_shank": true,
+        "lip_pinch": 0.05, "pull_through_guard": 0.9, "ride_up_guard": 0.5,
+        "lateral_guidance": 0.6, "mobility": 0.3,
+        "stop": "chain", "signal_clarity": 0.6
+      }
+    },
+    {
+      "id": "kimblewick-uxeter",
+      "group": "leverage", "subgroup": "curb",
+      "name": { "en": "Kimblewick, Uxeter (slotted)", "ru": "Кимблвик Аксетер (с прорезями)" },
+      "aka": { "en": ["Slotted Kimblewick"], "ru": ["Кимблвик с прорезями"] },
+      "mechanism": "curb",
+      "options": [
+        { "id": "slot", "name": { "en": "Rein slot", "ru": "Прорезь для повода" },
+          "values": [
+            { "id": "upper", "name": { "en": "Upper slot", "ru": "Верхняя прорезь" }, "shank": 15 },
+            { "id": "lower", "name": { "en": "Lower slot", "ru": "Нижняя прорезь" }, "shank": 35 }
+          ], "default": "lower" }
+      ],
+      "model": {
+        "purchase": 25, "shank": 35, "chain": true, "chain_engage_deg": 45, "rein_mode": "curb",
+        "mouthpiece_rotates_with_shank": true,
+        "lip_pinch": 0.05, "pull_through_guard": 0.9, "ride_up_guard": 0.5,
+        "lateral_guidance": 0.6, "mobility": 0.2,
+        "stop": "chain", "signal_clarity": 0.75
+      }
+    },
+
+    {
+      "id": "balding-gag",
+      "group": "leverage", "subgroup": "gag",
+      "name": { "en": "Balding gag (loose ring, sliding)", "ru": "Гаг Балдинг (подвижные кольца, скользящий)" },
+      "aka": { "en": ["Loose ring gag", "Running gag"], "ru": ["Скользящий гаг с круглыми кольцами"] },
+      "mechanism": "gag-slide",
+      "options": [
+        { "id": "stops", "name": { "en": "Cheek stops", "ru": "Стопоры на ремне" },
+          "values": [
+            { "id": "none", "name": { "en": "No stops", "ru": "Без стопоров" }, "slide_limit": 0 },
+            { "id": "fitted", "name": { "en": "Rubber stops fitted", "ru": "Резиновые стопоры" }, "slide_limit": 25 }
+          ], "default": "none" }
+      ],
+      "model": {
+        "ring_through_mouthpiece": true, "lip_pinch": 0.6, "pull_through_guard": 0.3,
+        "ride_up_guard": 0.0, "slide_limit": 0, "cord_friction": 0.4,
+        "lateral_guidance": 0.2, "mobility": 1.0,
+        "stop": "none", "signal_clarity": 0.6, "ring_diameter": 70
+      }
+    },
+    {
+      "id": "cheltenham-gag",
+      "group": "leverage", "subgroup": "gag",
+      "name": { "en": "Cheltenham gag (eggbutt, sliding)", "ru": "Гаг Челтнем (империал, скользящий)" },
+      "aka": { "en": ["Eggbutt gag", "Round ring gag"], "ru": ["Гаг с фиксированными кольцами"] },
+      "mechanism": "gag-slide",
+      "options": [
+        { "id": "stops", "name": { "en": "Cheek stops", "ru": "Стопоры на ремне" },
+          "values": [
+            { "id": "none", "name": { "en": "No stops", "ru": "Без стопоров" }, "slide_limit": 0 },
+            { "id": "fitted", "name": { "en": "Rubber stops fitted", "ru": "Резиновые стопоры" }, "slide_limit": 25 }
+          ], "default": "none" }
+      ],
+      "model": {
+        "ring_through_mouthpiece": false, "lip_pinch": 0.0, "pull_through_guard": 0.6,
+        "ride_up_guard": 0.0, "slide_limit": 0, "cord_friction": 0.4,
+        "lateral_guidance": 0.4, "mobility": 0.6,
+        "stop": "none", "signal_clarity": 0.65, "ring_diameter": 65
+      }
+    },
+    {
+      "id": "nelson-gag",
+      "group": "leverage", "subgroup": "gag",
+      "name": { "en": "Nelson gag (full cheek, sliding)", "ru": "Гаг Нельсон (с усиками, скользящий)" },
+      "aka": { "en": ["Full cheek gag"], "ru": ["Гаг с усиками"] },
+      "mechanism": "gag-slide",
+      "options": [
+        { "id": "stops", "name": { "en": "Cheek stops", "ru": "Стопоры на ремне" },
+          "values": [
+            { "id": "none", "name": { "en": "No stops", "ru": "Без стопоров" }, "slide_limit": 0 },
+            { "id": "fitted", "name": { "en": "Rubber stops fitted", "ru": "Резиновые стопоры" }, "slide_limit": 25 }
+          ], "default": "none" }
+      ],
+      "model": {
+        "ring_through_mouthpiece": false, "lip_pinch": 0.0, "pull_through_guard": 1.0,
+        "ride_up_guard": 0.0, "slide_limit": 0, "cord_friction": 0.4,
+        "lateral_guidance": 0.9, "mobility": 0.5,
+        "stop": "none", "signal_clarity": 0.65, "cheek_length": 150, "snag_hazard": 0.5
+      }
+    },
+    {
+      "id": "dutch-gag",
+      "group": "leverage", "subgroup": "gag",
+      "name": { "en": "Dutch gag (ring stack)", "ru": "Голландский гаг (трензель с кольцами)" },
+      "aka": { "en": ["Continental gag", "Bubble bit", "Pessoa gag", "Elevator", "2/3/4-ring gag"], "ru": ["Континентальный гаг", "Трензель с дополнительными кольцами", "Элеватор"] },
+      "mechanism": "gag-lever",
+      "options": [
+        { "id": "ring", "name": { "en": "Rein ring", "ru": "Кольцо для повода" },
+          "values": [
+            { "id": "r1", "name": { "en": "Large ring (snaffle position)", "ru": "Большое кольцо (трензельная позиция)" }, "shank": 0 },
+            { "id": "r2", "name": { "en": "Second ring", "ru": "Второе кольцо" }, "shank": 35 },
+            { "id": "r3", "name": { "en": "Third ring", "ru": "Третье кольцо" }, "shank": 70 },
+            { "id": "r4", "name": { "en": "Fourth ring", "ru": "Четвёртое кольцо" }, "shank": 105 }
+          ], "default": "r2" },
+        { "id": "strap", "name": { "en": "Curb strap", "ru": "Подбородный ремешок" },
+          "values": [
+            { "id": "none", "name": { "en": "None (as sold)", "ru": "Нет (как продаётся)" }, "chain": false },
+            { "id": "fitted", "name": { "en": "Leather curb strap fitted", "ru": "Кожаный ремешок добавлен" }, "chain": true, "chain_engage_deg": 45 }
+          ], "default": "none" }
+      ],
+      "model": {
+        "purchase": 30, "shank": 35, "chain": false, "rein_mode": "curb",
+        "mouthpiece_rotates_with_shank": true,
+        "lip_pinch": 0.1, "pull_through_guard": 0.8, "ride_up_guard": 0.0,
+        "lateral_guidance": 0.5, "mobility": 0.3,
+        "stop": "cheekpiece", "signal_clarity": 0.6
+      }
+    },
+    {
+      "id": "american-gag",
+      "group": "leverage", "subgroup": "gag",
+      "name": { "en": "American gag (sliding shank)", "ru": "Американский гаг (скользящая щёчка)" },
+      "aka": { "en": ["Elevator gag", "Sliding cheek gag"], "ru": ["Гаг-элеватор"] },
+      "mechanism": "gag-lever",
+      "model": {
+        "purchase": 40, "shank": 60, "chain": false, "rein_mode": "curb", "mouthpiece_slide": 30,
+        "mouthpiece_rotates_with_shank": false,
+        "lip_pinch": 0.15, "pull_through_guard": 0.8, "ride_up_guard": 0.0,
+        "lateral_guidance": 0.4, "mobility": 0.5,
+        "stop": "cheekpiece", "signal_clarity": 0.5
+      }
+    },
+    {
+      "id": "wilkie",
+      "group": "leverage", "subgroup": "gag",
+      "name": { "en": "Wilkie (Beval) slotted ring", "ru": "Уилки (Бивал), кольцо с прорезями" },
+      "aka": { "en": ["Beval", "Wilkie snaffle"], "ru": ["Бивал"] },
+      "mechanism": "gag-lever",
+      "model": {
+        "purchase": 15, "shank": 15, "chain": false, "rein_mode": "curb",
+        "mouthpiece_rotates_with_shank": true,
+        "lip_pinch": 0.05, "pull_through_guard": 0.7, "ride_up_guard": 0.2,
+        "lateral_guidance": 0.5, "mobility": 0.3,
+        "stop": "cheekpiece", "signal_clarity": 0.8
+      }
+    }
+  ],
+
+  "mouthpiece_families": [
+    { "id": "unjointed", "name": { "en": "Unjointed", "ru": "Цельные" } },
+    { "id": "single", "name": { "en": "Single-jointed", "ru": "С одним сочленением" } },
+    { "id": "double", "name": { "en": "Double-jointed", "ru": "С двумя сочленениями" } },
+    { "id": "multi", "name": { "en": "Multi-link", "ru": "Многозвенные" } },
+    { "id": "special", "name": { "en": "Special purpose", "ru": "Специальные" } }
+  ],
+
+  "mouthpieces": [
+    {
+      "id": "mullen", "family": "unjointed",
+      "name": { "en": "Mullen mouth (curved bar)", "ru": "Цельное изогнутое грызло («мулен»)" },
+      "aka": { "en": ["Half-moon"], "ru": ["Полумесяц"] },
+      "model": { "d": 16, "d_range": [12, 22], "joints": 0, "contact_fraction": 1.0, "edge": 0.9, "conform": 0.8,
+        "share": { "tongue": 0.65, "bars": 0.35 }, "palate": 0.05, "tongue_pinch": 0.0, "link_pinch": 0.0,
+        "concentration": 1.0, "mouthing": 0.3, "flex": 0.0 }
+    },
+    {
+      "id": "straight-bar", "family": "unjointed",
+      "name": { "en": "Straight bar", "ru": "Прямое грызло («штанга»)" },
+      "aka": { "en": ["Unjointed straight"], "ru": ["Прямая штанга"] },
+      "model": { "d": 16, "d_range": [12, 22], "joints": 0, "contact_fraction": 1.0, "edge": 1.0, "conform": 0.3,
+        "share": { "tongue": 0.45, "bars": 0.55 }, "palate": 0.05, "tongue_pinch": 0.0, "link_pinch": 0.0,
+        "concentration": 1.0, "mouthing": 0.2, "flex": 0.0 }
+    },
+    {
+      "id": "ported", "family": "unjointed",
+      "name": { "en": "Ported mouth", "ru": "Грызло с портом" },
+      "aka": { "en": ["Cambridge mouth (ported mullen)", "Tongue-relief"], "ru": ["Кембридж", "С освобождением языка"] },
+      "options": [
+        { "id": "port", "name": { "en": "Port height", "ru": "Высота порта" },
+          "values": [
+            { "id": "low", "name": { "en": "Low (≤ 20 mm)", "ru": "Низкий (≤ 20 мм)" }, "port_height": 15, "share": { "tongue": 0.40, "bars": 0.60 }, "palate": 0.10 },
+            { "id": "medium", "name": { "en": "Medium (20–35 mm)", "ru": "Средний (20–35 мм)" }, "port_height": 28, "share": { "tongue": 0.30, "bars": 0.70 }, "palate": 0.30 },
+            { "id": "high", "name": { "en": "High (> 35 mm)", "ru": "Высокий (> 35 мм)" }, "port_height": 40, "share": { "tongue": 0.15, "bars": 0.85 }, "palate": 0.60 }
+          ], "default": "low" }
+      ],
+      "model": { "d": 16, "d_range": [12, 20], "joints": 0, "contact_fraction": 1.0, "edge": 1.1, "conform": 0.4, "port_height": 15,
+        "share": { "tongue": 0.40, "bars": 0.60 }, "palate": 0.10, "tongue_pinch": 0.0, "link_pinch": 0.0,
+        "concentration": 1.0, "mouthing": 0.2, "flex": 0.0 }
+    },
+    {
+      "id": "ported-barrel", "family": "unjointed",
+      "name": { "en": "Ported barrel (independent sides)", "ru": "Грызло с портом и центральной втулкой" },
+      "aka": { "en": ["Comfort snaffle (Myler-type)", "Low port barrel"], "ru": ["Комфорт-грызло (тип Myler)"] },
+      "model": { "d": 14, "d_range": [12, 18], "joints": 0, "contact_fraction": 1.0, "edge": 0.95, "conform": 0.6, "port_height": 10,
+        "independent_sides": true,
+        "share": { "tongue": 0.50, "bars": 0.50 }, "palate": 0.08, "tongue_pinch": 0.1, "link_pinch": 0.0,
+        "concentration": 1.0, "mouthing": 0.3, "flex": 0.0 }
+    },
+    {
+      "id": "flexible-mullen", "family": "unjointed",
+      "name": { "en": "Flexible mullen (rubber / synthetic)", "ru": "Гибкое цельное грызло (резина / пластик)" },
+      "aka": { "en": ["Rubber mullen", "Happy Mouth / Nathe type (brands)"], "ru": ["Резиновое грызло", "Пластиковое грызло"] },
+      "model": { "d": 18, "d_range": [14, 22], "joints": 0, "contact_fraction": 1.0, "edge": 0.75, "conform": 1.0,
+        "share": { "tongue": 0.75, "bars": 0.25 }, "palate": 0.03, "tongue_pinch": 0.0, "link_pinch": 0.0,
+        "concentration": 1.0, "mouthing": 0.4, "flex": 1.0, "chew_damage": 0.6 }
+    },
+
+    {
+      "id": "single-joint", "family": "single",
+      "name": { "en": "Single joint, smooth", "ru": "Одно сочленение, гладкое" },
+      "aka": { "en": ["Broken mouth", "Jointed snaffle"], "ru": ["Обычное двухзвенное грызло"] },
+      "model": { "d": 16, "d_range": [10, 20], "joints": 1, "contact_fraction": 1.0, "edge": 1.0, "conform": 0.5,
+        "share": { "tongue": 0.55, "bars": 0.45 }, "palate": 0.35, "tongue_pinch": 0.6, "link_pinch": 0.1,
+        "concentration": 0.6, "mouthing": 0.5, "flex": 0.0 }
+    },
+    {
+      "id": "slow-twist", "family": "single",
+      "name": { "en": "Slow twist", "ru": "Витое грызло (редкая закрутка)" },
+      "aka": { "en": ["Twisted mouth"], "ru": ["Слоу-твист"] },
+      "model": { "d": 14, "d_range": [10, 18], "joints": 1, "contact_fraction": 0.7, "edge": 1.4, "conform": 0.5,
+        "share": { "tongue": 0.55, "bars": 0.45 }, "palate": 0.35, "tongue_pinch": 0.65, "link_pinch": 0.1,
+        "concentration": 0.6, "mouthing": 0.3, "flex": 0.0 }
+    },
+    {
+      "id": "corkscrew", "family": "single",
+      "name": { "en": "Corkscrew", "ru": "«Штопор»" },
+      "aka": { "en": ["Fast twist"], "ru": ["Частая закрутка"] },
+      "model": { "d": 12, "d_range": [9, 16], "joints": 1, "contact_fraction": 0.55, "edge": 1.7, "conform": 0.5,
+        "share": { "tongue": 0.55, "bars": 0.45 }, "palate": 0.35, "tongue_pinch": 0.7, "link_pinch": 0.1,
+        "concentration": 0.6, "mouthing": 0.2, "flex": 0.0 }
+    },
+    {
+      "id": "twisted-wire", "family": "single",
+      "name": { "en": "Single twisted wire", "ru": "Витая проволока (одиночная)" },
+      "aka": { "en": ["Twisted wire snaffle"], "ru": ["Проволочное грызло"] },
+      "model": { "d": 5, "d_range": [3, 7], "joints": 1, "contact_fraction": 0.45, "edge": 2.0, "conform": 0.5,
+        "share": { "tongue": 0.50, "bars": 0.50 }, "palate": 0.35, "tongue_pinch": 0.8, "link_pinch": 0.2,
+        "concentration": 0.6, "mouthing": 0.1, "flex": 0.0 }
+    },
+    {
+      "id": "double-twisted-wire", "family": "single",
+      "name": { "en": "Double twisted wire", "ru": "Двойная витая проволока" },
+      "aka": { "en": ["Double wire"], "ru": ["Двойная проволока"] },
+      "model": { "d": 4, "d_range": [3, 6], "joints": 2, "two_strands": true, "contact_fraction": 0.5, "edge": 2.3, "conform": 0.6,
+        "share": { "tongue": 0.50, "bars": 0.50 }, "palate": 0.30, "tongue_pinch": 0.9, "link_pinch": 0.3,
+        "concentration": 0.6, "mouthing": 0.1, "flex": 0.0 }
+    },
+    {
+      "id": "serrated", "family": "single",
+      "name": { "en": "Serrated (Scorrier mouth)", "ru": "Зазубренное грызло (тип Скорриер)" },
+      "aka": { "en": ["Ridged mouth"], "ru": ["Рифлёное грызло"] },
+      "model": { "d": 12, "d_range": [10, 16], "joints": 1, "contact_fraction": 0.5, "edge": 1.6, "conform": 0.5,
+        "share": { "tongue": 0.50, "bars": 0.50 }, "palate": 0.35, "tongue_pinch": 0.65, "link_pinch": 0.1,
+        "concentration": 0.6, "mouthing": 0.2, "flex": 0.0 }
+    },
+    {
+      "id": "roller-jointed", "family": "single",
+      "name": { "en": "Single joint with rollers (cherry roller / Magenis)", "ru": "Одно сочленение с роликами («вишнёвые» ролики / Магенис)" },
+      "aka": { "en": ["Cherry roller", "Copper roller", "Magenis (squared cannons)"], "ru": ["Роликовое грызло", "Магенис"] },
+      "model": { "d": 16, "d_range": [12, 20], "joints": 1, "contact_fraction": 0.8, "edge": 1.15, "conform": 0.5,
+        "share": { "tongue": 0.55, "bars": 0.45 }, "palate": 0.3, "tongue_pinch": 0.55, "link_pinch": 0.2,
+        "concentration": 0.6, "mouthing": 0.9, "flex": 0.0 }
+    },
+    {
+      "id": "ported-jointed", "family": "single",
+      "name": { "en": "Arched single joint (Fillis mouth)", "ru": "Одно сочленение с аркой (грызло Филлис)" },
+      "aka": { "en": ["Fillis mouth", "Jointed port"], "ru": ["Филлис"] },
+      "model": { "d": 16, "d_range": [12, 18], "joints": 1, "contact_fraction": 1.0, "edge": 1.0, "conform": 0.5, "port_height": 15,
+        "share": { "tongue": 0.40, "bars": 0.60 }, "palate": 0.3, "tongue_pinch": 0.4, "link_pinch": 0.1,
+        "concentration": 0.7, "mouthing": 0.4, "flex": 0.0 }
+    },
+
+    {
+      "id": "french-link", "family": "double",
+      "name": { "en": "French link (flat plate)", "ru": "Французское звено (плоская пластина)" },
+      "aka": { "en": ["Flat centre link", "Figure-eight plate"], "ru": ["Восьмёрка с пластиной"] },
+      "model": { "d": 16, "d_range": [10, 20], "joints": 2, "contact_fraction": 1.0, "edge": 0.85, "conform": 0.8, "plate": true,
+        "share": { "tongue": 0.60, "bars": 0.40 }, "palate": 0.08, "tongue_pinch": 0.3, "link_pinch": 0.15,
+        "concentration": 0.95, "mouthing": 0.5, "flex": 0.0, "plate_tilt_sensitive": true }
+    },
+    {
+      "id": "dr-bristol", "family": "double",
+      "name": { "en": "Dr. Bristol (angled plate)", "ru": "«Доктор Бристоль» (пластина под углом)" },
+      "aka": { "en": ["Angled centre plate"], "ru": ["Наклонная пластина"] },
+      "model": { "d": 14, "d_range": [10, 18], "joints": 2, "contact_fraction": 1.0, "edge": 1.5, "conform": 0.7, "plate": true,
+        "share": { "tongue": 0.65, "bars": 0.35 }, "palate": 0.08, "tongue_pinch": 0.5, "link_pinch": 0.15,
+        "concentration": 0.6, "mouthing": 0.3, "flex": 0.0 }
+    },
+    {
+      "id": "lozenge", "family": "double",
+      "name": { "en": "Lozenge (oval link)", "ru": "Грызло с «конфеткой» (овальное звено)" },
+      "aka": { "en": ["Peanut", "Bean", "Oval link"], "ru": ["Восьмёрка с конфеткой", "Орешек"] },
+      "model": { "d": 16, "d_range": [10, 20], "joints": 2, "contact_fraction": 1.0, "edge": 0.9, "conform": 0.8,
+        "share": { "tongue": 0.60, "bars": 0.40 }, "palate": 0.08, "tongue_pinch": 0.25, "link_pinch": 0.15,
+        "concentration": 0.9, "mouthing": 0.55, "flex": 0.0 }
+    },
+    {
+      "id": "angled-lozenge", "family": "double",
+      "name": { "en": "Angled lozenge (45°, anatomically curved)", "ru": "Наклонная «конфетка» (45°, анатомический изгиб)" },
+      "aka": { "en": ["KK Ultra type", "Tranz angled lozenge type (brands)"], "ru": ["Тип KK Ultra", "Тип Tranz (бренды)"] },
+      "model": { "d": 16, "d_range": [12, 18], "joints": 2, "contact_fraction": 1.0, "edge": 0.85, "conform": 0.9,
+        "share": { "tongue": 0.60, "bars": 0.40 }, "palate": 0.05, "tongue_pinch": 0.2, "link_pinch": 0.1,
+        "concentration": 0.95, "mouthing": 0.55, "flex": 0.0 }
+    },
+    {
+      "id": "ball-link", "family": "double",
+      "name": { "en": "Ball link", "ru": "Грызло с шариком" },
+      "aka": { "en": ["Ball centre"], "ru": ["Шарик в центре"] },
+      "model": { "d": 16, "d_range": [12, 18], "joints": 2, "contact_fraction": 1.0, "edge": 1.0, "conform": 0.75,
+        "share": { "tongue": 0.60, "bars": 0.40 }, "palate": 0.08, "tongue_pinch": 0.3, "link_pinch": 0.15,
+        "concentration": 0.75, "mouthing": 0.55, "flex": 0.0 }
+    },
+    {
+      "id": "barrel", "family": "double",
+      "name": { "en": "Barrel / rotary centre (independent sides)", "ru": "Центральная втулка (независимые стороны)" },
+      "aka": { "en": ["Roller barrel", "Rotary link"], "ru": ["Бочонок", "Поворотная втулка"] },
+      "model": { "d": 16, "d_range": [12, 18], "joints": 2, "contact_fraction": 1.0, "edge": 0.9, "conform": 0.7, "independent_sides": true,
+        "share": { "tongue": 0.55, "bars": 0.45 }, "palate": 0.05, "tongue_pinch": 0.1, "link_pinch": 0.05,
+        "concentration": 0.95, "mouthing": 0.5, "flex": 0.0 }
+    },
+
+    {
+      "id": "waterford", "family": "multi",
+      "name": { "en": "Waterford", "ru": "Ватерфорд" },
+      "aka": { "en": ["Ball chain mouth"], "ru": ["Шариковое многозвенное грызло"] },
+      "model": { "d": 18, "d_range": [14, 20], "joints": 6, "contact_fraction": 0.6, "edge": 1.0, "conform": 0.9,
+        "share": { "tongue": 0.65, "bars": 0.35 }, "palate": 0.1, "tongue_pinch": 0.2, "link_pinch": 0.35,
+        "concentration": 0.8, "mouthing": 0.9, "flex": 0.5 }
+    },
+    {
+      "id": "chain", "family": "multi",
+      "name": { "en": "Chain mouth", "ru": "Цепное грызло" },
+      "aka": { "en": ["Bicycle chain mouth"], "ru": ["Цепь"] },
+      "model": { "d": 8, "d_range": [6, 10], "joints": 12, "contact_fraction": 0.35, "edge": 1.5, "conform": 1.0,
+        "share": { "tongue": 0.60, "bars": 0.40 }, "palate": 0.1, "tongue_pinch": 0.6, "link_pinch": 0.6,
+        "concentration": 0.8, "mouthing": 0.3, "flex": 0.8 }
+    },
+
+    {
+      "id": "keys", "family": "special",
+      "name": { "en": "Mouthing bit with keys", "ru": "Трензель для заездки с «ключиками»" },
+      "aka": { "en": ["Breaking bit", "Key bit", "Players"], "ru": ["Грызло с подвесками"] },
+      "model": { "d": 16, "d_range": [14, 18], "joints": 0, "contact_fraction": 1.0, "edge": 1.0, "conform": 0.3, "keys": true,
+        "share": { "tongue": 0.50, "bars": 0.50 }, "palate": 0.05, "tongue_pinch": 0.0, "link_pinch": 0.1,
+        "concentration": 1.0, "mouthing": 1.0, "flex": 0.0 }
+    }
+  ],
+
+  "materials": [
+    { "id": "stainless", "name": { "en": "Stainless steel", "ru": "Нержавеющая сталь" }, "friction": 0.3, "salivation": 0.2, "nickel": true },
+    { "id": "sweet-iron", "name": { "en": "Sweet iron (cold-rolled steel)", "ru": "«Сладкое железо»" }, "friction": 0.35, "salivation": 0.6, "nickel": false },
+    { "id": "copper-alloy", "name": { "en": "Copper alloy (Aurigan / Sensogan type)", "ru": "Медный сплав (тип Aurigan / Sensogan)" }, "friction": 0.3, "salivation": 0.7, "nickel": false },
+    { "id": "german-silver", "name": { "en": "German silver (nickel silver)", "ru": "Нейзильбер" }, "friction": 0.3, "salivation": 0.5, "nickel": true },
+    { "id": "titanium", "name": { "en": "Titanium", "ru": "Титан" }, "friction": 0.3, "salivation": 0.2, "nickel": false },
+    { "id": "synthetic", "name": { "en": "Rubber / thermoplastic", "ru": "Резина / термопластик" }, "friction": 0.6, "salivation": 0.3, "nickel": false }
+  ],
+
+  "postures": [
+    { "id": "above", "theta": 20, "name": { "en": "Above the vertical, nose out", "ru": "Выше вертикали, нос вперёд" } },
+    { "id": "correct", "theta": 45, "name": { "en": "Poll highest, nose slightly in front of the vertical", "ru": "Затылок — высшая точка, нос чуть впереди вертикали" } },
+    { "id": "vertical", "theta": 70, "name": { "en": "On the vertical", "ru": "На вертикали" } },
+    { "id": "btv", "theta": 95, "name": { "en": "Behind the vertical", "ru": "За вертикалью" } }
+  ],
+
+  "mouth": {
+    "bit_space": 14, "bit_space_range": [5, 22],
+    "tongue_thickness": 16,
+    "tongue_contact_width": 30,
+    "bar_width": 12,
+    "bar_mucosa": 1.5,
+    "tongue_indent": 5,
+    "lip_contact_length": 15,
+    "lip_indent": 3,
+    "chin_area_chain": 240,
+    "chin_area_guarded": 900,
+    "poll_area": 2400,
+    "mouth_width": 131,
+    "commissure_to_premolar": 25
+  },
+
+  "thresholds_kpa": {
+    "pain_free_upper": 100,
+    "face_ppt": 232,
+    "hand_ppt": 445,
+    "capillary_closure": 4.3
+  },
+
+  "defaults": {
+    "rein_tension": 20,
+    "rein_tension_range": [5, 150],
+    "curb_rein_share": 0.5,
+    "posture": "vertical",
+    "material": "stainless",
+    "chin_guard": false
+  },
+
+  "weights": {
+    "peak_pressure": 0.35,
+    "stop": 0.15,
+    "pinch_edges": 0.15,
+    "extra_forces": 0.10,
+    "palate": 0.05,
+    "signal": 0.05,
+    "bit_space": 0.10,
+    "release": 0.05
+  },
+
+  "validity": {
+    "default": "exists",
+    "common": {
+      "loose-ring": ["single-joint", "french-link", "lozenge", "angled-lozenge", "mullen", "waterford", "slow-twist", "ball-link", "barrel"],
+      "eggbutt": ["single-joint", "french-link", "lozenge", "angled-lozenge", "mullen", "flexible-mullen", "ported-barrel", "roller-jointed"],
+      "d-ring": ["single-joint", "french-link", "lozenge", "mullen", "flexible-mullen", "slow-twist", "corkscrew", "roller-jointed", "ported"],
+      "full-cheek": ["single-joint", "french-link", "lozenge", "mullen", "flexible-mullen", "slow-twist", "corkscrew", "twisted-wire", "keys", "dr-bristol"],
+      "half-cheek": ["single-joint", "mullen", "french-link", "straight-bar"],
+      "fulmer": ["single-joint", "french-link", "lozenge", "mullen"],
+      "baucher": ["single-joint", "french-link", "lozenge", "angled-lozenge", "mullen", "ported-jointed", "ported-barrel", "flexible-mullen"],
+      "scorrier": ["serrated", "slow-twist"],
+      "weymouth-fixed": ["ported", "mullen", "straight-bar", "ported-barrel"],
+      "weymouth-sliding": ["ported", "mullen", "straight-bar"],
+      "banbury": ["mullen"],
+      "pelham": ["mullen", "flexible-mullen", "single-joint", "ported", "french-link", "lozenge", "waterford", "roller-jointed"],
+      "rugby-pelham": ["mullen", "single-joint", "ported"],
+      "scamperdale-pelham": ["mullen", "straight-bar", "ported"],
+      "kimblewick": ["ported", "mullen", "single-joint", "french-link", "flexible-mullen"],
+      "kimblewick-uxeter": ["ported", "mullen", "single-joint", "french-link", "lozenge", "slow-twist"],
+      "balding-gag": ["single-joint", "lozenge", "waterford", "roller-jointed", "french-link", "flexible-mullen", "slow-twist"],
+      "cheltenham-gag": ["single-joint", "lozenge", "waterford", "french-link", "roller-jointed"],
+      "nelson-gag": ["single-joint", "lozenge", "waterford", "french-link"],
+      "dutch-gag": ["single-joint", "lozenge", "french-link", "waterford", "mullen", "flexible-mullen", "roller-jointed", "slow-twist", "ported-barrel"],
+      "american-gag": ["single-joint", "lozenge", "waterford", "french-link", "mullen"],
+      "wilkie": ["single-joint", "lozenge", "french-link", "waterford", "mullen", "flexible-mullen"]
+    },
+    "rare": {
+      "loose-ring": ["chain", "ported", "keys", "serrated"],
+      "eggbutt": ["chain", "ported", "keys", "serrated", "twisted-wire", "double-twisted-wire"],
+      "d-ring": ["chain", "keys", "serrated", "ported-jointed"],
+      "full-cheek": ["chain", "ported", "serrated", "ported-jointed"],
+      "half-cheek": ["chain", "ported", "keys", "waterford", "ported-jointed", "ported-barrel", "ball-link", "barrel", "angled-lozenge", "dr-bristol", "roller-jointed", "corkscrew", "twisted-wire", "double-twisted-wire", "serrated"],
+      "fulmer": ["chain", "ported", "keys", "waterford", "ported-jointed", "ported-barrel", "dr-bristol", "corkscrew", "twisted-wire", "double-twisted-wire", "serrated", "roller-jointed"],
+      "baucher": ["chain", "keys", "serrated", "twisted-wire", "double-twisted-wire", "corkscrew", "dr-bristol"],
+      "weymouth-fixed": ["single-joint", "lozenge", "french-link", "flexible-mullen", "angled-lozenge", "barrel"],
+      "weymouth-sliding": ["single-joint", "lozenge", "french-link", "flexible-mullen", "ported-barrel"],
+      "pelham": ["dr-bristol", "slow-twist", "corkscrew", "twisted-wire", "ported-jointed", "ball-link", "barrel", "angled-lozenge", "serrated", "ported-barrel"],
+      "rugby-pelham": ["french-link", "lozenge", "flexible-mullen", "waterford", "slow-twist", "roller-jointed", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported-jointed", "ported-barrel", "straight-bar"],
+      "scamperdale-pelham": ["single-joint", "french-link", "lozenge", "flexible-mullen", "waterford", "roller-jointed", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported-jointed", "ported-barrel", "slow-twist"],
+      "kimblewick": ["waterford", "lozenge", "slow-twist", "roller-jointed", "straight-bar", "ported-barrel", "angled-lozenge", "ball-link", "barrel", "dr-bristol", "corkscrew", "ported-jointed"],
+      "kimblewick-uxeter": ["waterford", "roller-jointed", "straight-bar", "ported-barrel", "angled-lozenge", "ball-link", "barrel", "dr-bristol", "corkscrew", "ported-jointed", "flexible-mullen"],
+      "balding-gag": ["mullen", "straight-bar", "corkscrew", "twisted-wire", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported", "ported-jointed", "ported-barrel", "chain", "double-twisted-wire", "serrated"],
+      "cheltenham-gag": ["mullen", "flexible-mullen", "straight-bar", "slow-twist", "corkscrew", "twisted-wire", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported", "ported-jointed", "ported-barrel", "chain", "double-twisted-wire", "serrated"],
+      "nelson-gag": ["mullen", "flexible-mullen", "straight-bar", "slow-twist", "corkscrew", "twisted-wire", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported", "ported-jointed", "ported-barrel", "chain", "double-twisted-wire", "serrated", "roller-jointed"],
+      "dutch-gag": ["straight-bar", "corkscrew", "twisted-wire", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported", "ported-jointed", "chain", "double-twisted-wire", "serrated"],
+      "american-gag": ["flexible-mullen", "straight-bar", "slow-twist", "corkscrew", "twisted-wire", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported", "ported-jointed", "ported-barrel", "chain", "double-twisted-wire", "serrated", "roller-jointed"],
+      "wilkie": ["straight-bar", "slow-twist", "corkscrew", "twisted-wire", "dr-bristol", "ball-link", "barrel", "angled-lozenge", "ported", "ported-jointed", "ported-barrel", "chain", "double-twisted-wire", "serrated", "roller-jointed"]
+    },
+    "theoretical": {
+      "weymouth-fixed": ["waterford", "slow-twist", "corkscrew", "twisted-wire", "double-twisted-wire", "serrated", "roller-jointed", "dr-bristol", "ball-link", "ported-jointed"],
+      "weymouth-sliding": ["waterford", "slow-twist", "corkscrew", "twisted-wire", "double-twisted-wire", "serrated", "roller-jointed", "dr-bristol", "ball-link", "ported-jointed", "angled-lozenge", "barrel"],
+      "rugby-pelham": ["corkscrew", "twisted-wire", "double-twisted-wire", "serrated", "chain"],
+      "scamperdale-pelham": ["corkscrew", "twisted-wire", "double-twisted-wire", "serrated", "chain"],
+      "pelham": ["double-twisted-wire", "chain"],
+      "kimblewick": ["twisted-wire", "double-twisted-wire", "serrated", "chain"],
+      "kimblewick-uxeter": ["twisted-wire", "double-twisted-wire", "serrated", "chain"],
+      "scorrier": ["single-joint", "mullen", "straight-bar", "french-link", "lozenge", "angled-lozenge", "ball-link", "barrel", "waterford", "corkscrew", "twisted-wire", "double-twisted-wire", "roller-jointed", "ported", "ported-jointed", "ported-barrel", "flexible-mullen", "dr-bristol", "chain"]
+    },
+    "invalid": {
+      "banbury": ["straight-bar", "ported", "ported-barrel", "flexible-mullen", "single-joint", "slow-twist", "corkscrew", "twisted-wire", "double-twisted-wire", "serrated", "roller-jointed", "ported-jointed", "french-link", "dr-bristol", "lozenge", "angled-lozenge", "ball-link", "barrel", "waterford", "chain", "keys"],
+      "weymouth-fixed": ["keys", "chain"],
+      "weymouth-sliding": ["keys", "chain"],
+      "pelham": ["keys"],
+      "rugby-pelham": ["keys"],
+      "scamperdale-pelham": ["keys"],
+      "kimblewick": ["keys"],
+      "kimblewick-uxeter": ["keys"],
+      "balding-gag": ["keys"],
+      "cheltenham-gag": ["keys"],
+      "nelson-gag": ["keys"],
+      "dutch-gag": ["keys"],
+      "american-gag": ["keys"],
+      "wilkie": ["keys"],
+      "scorrier": ["keys"]
+    }
+  },
+
+  "pairings": [
+    { "cheek": "baucher", "mouth": "ported-jointed", "name": { "en": "Fillis snaffle", "ru": "Трензель Филлис" } },
+    { "cheek": "pelham", "mouth": "ported", "name": { "en": "Hartwell / Cambridge pelham", "ru": "Пелям Хартвелл / Кембридж" } },
+    { "cheek": "pelham", "mouth": "mullen", "name": { "en": "Mullen pelham", "ru": "Пелям с прямым грызлом" } },
+    { "cheek": "pelham", "mouth": "flexible-mullen", "name": { "en": "Rubber pelham", "ru": "Резиновый пелям" } },
+    { "cheek": "pelham", "mouth": "single-joint", "name": { "en": "Jointed pelham", "ru": "Пелям с сочленением" } },
+    { "cheek": "d-ring", "mouth": "ported", "name": { "en": "Hanoverian type (ported D, often with rollers)", "ru": "Ганноверский тип (D с портом, часто с роликами)" } },
+    { "cheek": "scorrier", "mouth": "serrated", "name": { "en": "Classic Scorrier / Cornish snaffle", "ru": "Классический Скорриер" } },
+    { "cheek": "loose-ring", "mouth": "roller-jointed", "name": { "en": "Magenis / cherry roller loose ring", "ru": "Магенис / роликовый трензель" } },
+    { "cheek": "kimblewick", "mouth": "ported", "name": { "en": "Classic Kimblewick", "ru": "Классический кимблвик" } },
+    { "cheek": "weymouth-fixed", "mouth": "ported", "name": { "en": "Standard dressage Weymouth", "ru": "Стандартный выездковый мундштук" } },
+    { "cheek": "banbury", "mouth": "mullen", "name": { "en": "Banbury (the only form it exists in)", "ru": "Банбери (единственная существующая форма)" } },
+    { "cheek": "balding-gag", "mouth": "roller-jointed", "name": { "en": "Cherry roller gag", "ru": "Гаг с «вишнёвыми» роликами" } },
+    { "cheek": "balding-gag", "mouth": "waterford", "name": { "en": "Waterford gag", "ru": "Гаг Ватерфорд" } },
+    { "cheek": "dutch-gag", "mouth": "flexible-mullen", "name": { "en": "Rubber Dutch gag", "ru": "Резиновый голландский гаг" } },
+    { "cheek": "dutch-gag", "mouth": "waterford", "name": { "en": "Waterford Dutch gag", "ru": "Голландский гаг Ватерфорд" } },
+    { "cheek": "full-cheek", "mouth": "french-link", "name": { "en": "Full cheek French link (plate held at an angle by keepers)", "ru": "Французское звено с усиками (пластина фиксируется под углом держателями)" } },
+    { "cheek": "full-cheek", "mouth": "keys", "name": { "en": "Classic mouthing bit", "ru": "Классический трензель для заездки" } },
+    { "cheek": "eggbutt", "mouth": "angled-lozenge", "name": { "en": "Common modern dressage snaffle", "ru": "Распространённый современный выездковый трензель" } },
+    { "cheek": "loose-ring", "mouth": "angled-lozenge", "name": { "en": "Common modern dressage snaffle", "ru": "Распространённый современный выездковый трензель" } },
+    { "cheek": "loose-ring", "mouth": "twisted-wire", "name": { "en": "Twisted wire loose ring", "ru": "Проволочный трензель с подвижными кольцами" } }
+  ]
+}

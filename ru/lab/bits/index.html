@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Реестр механики удил — Империя Хроссагрид</title>
+<meta name="description" content="Рабочий реестр английских верховых удил: каждая щёчка с каждым грызлом, физика каждого сочетания и что оно делает с лошадью.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/bits.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../" data-base="../../../ru/" data-lang="ru" data-bits-page="chooser" data-bits-data="../../../assets/data/bits/" data-bits-dossier="dossier/" data-i18n="{&quot;light&quot;: &quot;Светлая&quot;, &quot;dark&quot;: &quot;Тёмная&quot;, &quot;theme_to_light&quot;: &quot;Переключить на светлую тему&quot;, &quot;theme_to_dark&quot;: &quot;Переключить на тёмную тему&quot;}">
+<a class="skip-link" href="#main">К содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <a class="search-link" href="../../../ru/search/">Найти</a>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru" selected>Русский</option>
+      <option value="en">English (UK)</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../assets/emblem.png"
+         alt="Эмблема Империи Хроссагрид: вздыбленный гиппогриф в круге" width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../../../ru/">Империя Хроссагрид</a></p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Основная навигация">
+  <div class="shell nav__inner">
+    <a href="../../../ru/">Главная</a>
+    <a href="../../../ru/horses/">Лошади</a>
+    <a href="../../../ru/gov/law/tack/">Кодекс амуниции</a>
+    <a href="./" aria-current="page">Реестр удил</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../ru/">Главная</a><span>›</span><a href="../../../ru/horses/">Лошади</a><span>›</span><strong>Реестр механики удил</strong></div>
+
+<main id="main" class="shell wrap bits">
+  <p class="entry">Рабочий реестр · не связан ссылками с порталом</p>
+  <h1 class="page-title">Реестр механики удил</h1>
+  <p class="bits-alt">Bit mechanics register</p>
+  <p class="page-standfirst">Каждая английская верховая щёчка с каждым грызлом. Выберите группу, щёчку и грызло; реестр откроет досье именно на это сочетание: силы, куда они ложатся во рту, останавливает ли их что-нибудь и чему лошадь от них учится.</p>
+
+  <p class="bits-note">Досье построены на одной механической модели, каждый параметр которой опубликован на странице досье и может быть там изменён. Давления — расчётные оценки, сопоставленные с измеренными натяжениями повода и с болевыми порогами давления у человека. Вестерн и скаковые удила вне охвата. Ничто здесь не является рекомендацией применять удила: в Хроссагриде обычные удила запрещены, а реестр существует, чтобы показать, почему механика имеет значение.</p>
+
+  <section class="bits-step" data-step="group">
+    <h2 class="bits-step__title"><span class="bits-step__num">1</span> Выберите группу</h2>
+    <p class="bits-step__hint">Прямое действие или рычаг. Это самое большое различие между любыми двумя удилами.</p>
+    <div class="bits-choices bits-choices--groups" data-choices="group"></div>
+  </section>
+
+  <section class="bits-step" data-step="cheek" hidden>
+    <h2 class="bits-step__title"><span class="bits-step__num">2</span> Выберите щёчку</h2>
+    <p class="bits-step__hint">Щёчка решает, как сила повода доходит до грызла, что её останавливает и могут ли удила быть протянуты в рот или подняты.</p>
+    <div class="bits-choices" data-choices="cheek"></div>
+  </section>
+
+  <section class="bits-step" data-step="mouth" hidden>
+    <h2 class="bits-step__title"><span class="bits-step__num">3</span> Выберите грызло</h2>
+    <p class="bits-step__hint">Грызло решает, как эта сила распределяется между языком, дёснами, губами и нёбом.</p>
+    <p class="bits-legend"><span data-legend="common">Распространено: выпускается и широко продаётся</span><span data-legend="exists">Существует: выпускается, встречается реже</span><span data-legend="rare">Редко: встречается, выпускается редко</span><span data-legend="theoretical">Теоретически: можно изготовить, не продаётся</span><span data-legend="invalid">Невозможно: части не сочетаются</span></p>
+    <div class="bits-choices" data-choices="mouth"></div>
+  </section>
+
+  <section class="bits-result" data-result hidden>
+    <p><strong data-field="selection"></strong></p>
+    <p class="bits-alt" data-field="selection-alt"></p>
+    <p data-field="selection-note"></p>
+    <p><a class="bits-button" data-dossier-link href="dossier/">Открыть досье</a></p>
+  </section>
+
+  <section class="bits-matrix">
+    <h2>Вся матрица одним взглядом</h2>
+    <p class="page-standfirst">Каждая щёчка (строки) против каждого грызла (столбцы). Оттенок — индекс нагрузки при опорных условиях: 20 Н на каждый повод, голова на вертикали, толщины из каталога. Темнее — тяжелее для лошади. Нажмите на ячейку, чтобы открыть досье.</p>
+    <div class="bits-matrix__scroll">
+      <table class="bits-matrix__table" data-matrix>
+        <caption class="visually-hidden">Индекс нагрузки для каждого сочетания щёчки и грызла</caption>
+        <thead><tr><th scope="col"></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="bits-matrix__legend"><span><i style="background:var(--viz-seq-1)"></i>легче всего</span><span><i style="background:var(--viz-seq-2)"></i></span><span><i style="background:var(--viz-seq-3)"></i></span><span><i style="background:var(--viz-seq-4)"></i></span><span><i style="background:var(--viz-seq-5)"></i>тяжелее всего</span><span><i style="border:1px dashed var(--rule)"></i>невозможно</span><span><i style="background:var(--viz-seq-3);opacity:.45"></i>только теоретически</span></p>
+  </section>
+
+  <section>
+    <h2>Два края реестра</h2>
+    <p class="page-standfirst">Вычислено той же моделью при опорных условиях по всем сочетаниям, которые действительно выпускаются.</p>
+    <div class="bits-extremes" data-extremes></div>
+  </section>
+
+  <div class="bits-empty" data-loading>Реестр загружается…</div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../assets/flag.png" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу. :(</p>
+    <p class="footer__meta">Империя Хроссагрид · Имперский государственный портал · hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<template id="tpl-choice">
+  <button type="button" class="bits-choice" data-choice>
+    <span class="bits-choice__name"></span>
+    <span class="bits-choice__alt"></span>
+    <span class="bits-choice__aka"></span>
+    <span class="bits-choice__badge"></span>
+  </button>
+</template>
+<template id="tpl-subhead"><h3 class="bits-subhead"></h3></template>
+<template id="tpl-matrix-col"><th scope="col"><span></span></th></template>
+<template id="tpl-matrix-row"><tr><th scope="row"></th></tr></template>
+<template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="visually-hidden"></span></a></td></template>
+<template id="tpl-extreme">
+  <article class="bits-extreme">
+    <p class="bits-extreme__kicker"></p>
+    <h3><a></a></h3>
+    <p class="bits-alt"></p>
+    <p class="bits-extreme__meta"></p>
+  </article>
+</template>
+
+<script src="../../../assets/theme.js"></script>
+<script src="../../../assets/site.js"></script>
+<script src="../../../assets/bits-model.js"></script>
+<script src="../../../assets/bits.js"></script>
+</body>
+</html>
