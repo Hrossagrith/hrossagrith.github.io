@@ -81,10 +81,12 @@
 
   <section class="bits-hero" aria-labelledby="hero-label">
     <div>
-      <p class="bits-hero__label" id="hero-label">Индекс нагрузки при текущих настройках</p>
+      <p class="bits-hero__label" id="hero-label">Индекс вреда при текущих настройках</p>
       <p class="bits-hero__value"><span data-field="index">–</span><span class="bits-hero__unit">/ 100 · меньше — мягче</span></p>
+      <p class="bits-hero__class"><span class="bits-class" data-field="class-badge"></span></p>
+      <p class="bits-hero__def" data-field="class-def"></p>
     </div>
-    <p class="bits-hero__text">При опорных условиях это сочетание занимает место <strong data-field="rank">–</strong> из <strong data-field="rank-total">–</strong> выпускаемых сочетаний, от самого мягкого. Пиковое расчётное давление сейчас: <strong data-field="peak">–</strong> — ткань: <strong data-field="peak-site">–</strong>. <span data-field="peak-verdict"></span></p>
+    <p class="bits-hero__text">При опорных условиях (20 Н на каждый повод, голова на вертикали) это сочетание относится к классу <span class="bits-class" data-field="class-ref"></span> и занимает место <strong data-field="rank">–</strong> из <strong data-field="rank-total">–</strong> выпускаемых сочетаний, от самого мягкого. Пиковое расчётное давление сейчас: <strong data-field="peak">–</strong> — ткань: <strong data-field="peak-site">–</strong>. <span data-field="peak-verdict"></span></p>
     <div class="bits-meter" aria-hidden="true"><div class="bits-meter__fill" data-meter></div></div>
   </section>
 
@@ -494,25 +496,25 @@
     </table>
   </section>
 
-  <!-- Figure G: index -->
+  <!-- Figure G: harm index and class -->
   <section class="bits-figure" aria-labelledby="fig-g">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура G</span></div>
-    <h2 id="fig-g">Как устроен индекс нагрузки</h2>
-    <p class="bits-figure__lede">Восемь составляющих, каждая 0–100, с весами и суммой. Веса опубликованы в каталоге, и индекс хорош ровно настолько, насколько они; аргумент — составляющие, а не итог.</p>
-    <svg viewBox="0 0 640 330" role="img" aria-labelledby="fig-g-title">
-      <title id="fig-g-title">Составляющие индекса нагрузки</title>
-      <g data-comp="peak_pressure"><text x="250" y="36" text-anchor="end">Пиковое давление</text><text class="w viz-small viz-muted" x="256" y="36"></text><rect x="300" y="24" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="36"></text></g>
-      <g data-comp="stop"><text x="250" y="72" text-anchor="end">Отсутствие стопа</text><text class="w viz-small viz-muted" x="256" y="72"></text><rect x="300" y="60" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="72"></text></g>
-      <g data-comp="pinch_edges"><text x="250" y="108" text-anchor="end">Защемление, кромки, шипы</text><text class="w viz-small viz-muted" x="256" y="108"></text><rect x="300" y="96" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="108"></text></g>
-      <g data-comp="extra_forces"><text x="250" y="144" text-anchor="end">Нагрузка на подбородок, челюсть, нос и затылок</text><text class="w viz-small viz-muted" x="256" y="144"></text><rect x="300" y="132" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="144"></text></g>
-      <g data-comp="palate"><text x="250" y="180" text-anchor="end">Риск для нёба</text><text class="w viz-small viz-muted" x="256" y="180"></text><rect x="300" y="168" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="180"></text></g>
-      <g data-comp="signal"><text x="250" y="216" text-anchor="end">Неоднозначность сигнала</text><text class="w viz-small viz-muted" x="256" y="216"></text><rect x="300" y="204" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="216"></text></g>
-      <g data-comp="bit_space"><text x="250" y="252" text-anchor="end">Теснота во рту</text><text class="w viz-small viz-muted" x="256" y="252"></text><rect x="300" y="240" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="252"></text></g>
-      <g data-comp="release"><text x="250" y="288" text-anchor="end">Неотпускание</text><text class="w viz-small viz-muted" x="256" y="288"></text><rect x="300" y="276" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="288"></text></g>
-      <line x1="300" y1="16" x2="300" y2="300" class="viz-axis"/>
-      <text x="300" y="320" class="viz-muted viz-small">0</text>
-      <text x="600" y="320" text-anchor="end" class="viz-muted viz-small">100 · тяжелее всего</text>
+    <h2 id="fig-g">Как построены индекс вреда и класс</h2>
+    <p class="bits-figure__lede">Три части, каждая 0–100. Боль сейчас: насколько расчётные давления стоят выше болевых порогов — на худшей ткани и в среднем по всем нагруженным тканям. Ожидаемая травма: вероятные поражения из фигуры F, каждое взвешенное по тяжести (разорванный угол губ или повреждение кости дёсен весят больше, чем потёртость подбородка). Потеря контроля: нет механического стопа, нет отпускания, двусмысленный сигнал. Веса опубликованы в каталоге. Класс — не среднее: это худшее из прочтения боли, худшего риска поражения и конструкции, поэтому одна ожидаемая травма переводит сочетание в красный класс, что бы ни говорило остальное.</p>
+    <svg viewBox="0 0 640 230" role="img" aria-labelledby="fig-g-title">
+      <title id="fig-g-title">Три части индекса вреда</title>
+      <g data-part="pain"><text x="250" y="40" text-anchor="end">Боль сейчас</text><text class="w viz-small viz-muted" x="256" y="40"></text><rect x="300" y="28" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="40"></text></g>
+      <g data-part="injury"><text x="250" y="90" text-anchor="end">Ожидаемая травма</text><text class="w viz-small viz-muted" x="256" y="90"></text><rect x="300" y="78" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="90"></text></g>
+      <g data-part="control"><text x="250" y="140" text-anchor="end">Потеря контроля</text><text class="w viz-small viz-muted" x="256" y="140"></text><rect x="300" y="128" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="140"></text><text class="sub viz-small viz-muted" x="300" y="164"></text></g>
+      <line x1="300" y1="20" x2="300" y2="172" class="viz-axis"/>
+      <text x="300" y="190" class="viz-muted viz-small">0</text>
+      <text x="600" y="190" text-anchor="end" class="viz-muted viz-small">100 · худшее</text>
+      <text id="fg-formula" x="20" y="216"></text>
     </svg>
+    <ul class="bits-statements">
+      <li data-say="class-why"><span class="bits-class" data-field="class-name"></span> <span data-field="class-why"></span></li>
+    </ul>
+    <p class="bits-legend-row bits-legend-row--classes"><span><i class="is-c0"></i>Давление без боли</span><span><i class="is-c1"></i>Дискомфорт</span><span><i class="is-c2"></i>Боль при обычном натяжении</span><span><i class="is-c3"></i>Ожидаемая травма</span><span><i class="is-c4"></i>Боль — сам механизм</span></p>
   </section>
 
   <!-- Prose from the content file -->

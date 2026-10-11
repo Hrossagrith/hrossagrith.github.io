@@ -98,15 +98,15 @@
 
   <section class="bits-matrix">
     <h2>Вся матрица одним взглядом</h2>
-    <p class="page-standfirst">Каждая щёчка (строки, сгруппированные по механизму) против каждого грызла (столбцы). Оттенок — индекс нагрузки при опорных условиях: 20 Н на каждый повод, голова на вертикали, каталожные диаметры. Темнее — тяжелее для лошади. Нажмите на ячейку, чтобы открыть досье.</p>
+    <p class="page-standfirst">Каждая щёчка (строки, сгруппированные по механизму) против каждого грызла (столбцы) при опорных условиях: 20 Н на каждый повод, голова на вертикали, каталожные диаметры. Цвет — класс вреда, худшее из трёх прочтений: где пиковое давление стоит относительно болевых порогов, какое самое серьёзное поражение ожидает модель и является ли боль механизмом устройства. Число — индекс вреда, 0–100, который к тому же взвешивает ожидаемые травмы по их тяжести. Нажмите на ячейку, чтобы открыть досье.</p>
     <div class="bits-matrix__scroll">
       <table class="bits-matrix__table" data-matrix>
-        <caption class="visually-hidden">Индекс нагрузки для каждого сочетания щёчки и грызла</caption>
+        <caption class="visually-hidden">Класс и индекс вреда для каждого сочетания щёчки и грызла</caption>
         <thead><tr><th scope="col"></th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
-    <p class="bits-matrix__legend"><span><i style="background:var(--viz-seq-1)"></i>легче всего</span><span><i style="background:var(--viz-seq-2)"></i></span><span><i style="background:var(--viz-seq-3)"></i></span><span><i style="background:var(--viz-seq-4)"></i></span><span><i style="background:var(--viz-seq-5)"></i>тяжелее всего</span><span><i style="border:1px dashed var(--rule)"></i>невозможно</span><span><i style="background:var(--viz-seq-3);opacity:.45"></i>только теоретически</span></p>
+    <p class="bits-matrix__legend"><span><i class="is-c0"></i>Давление без боли: каждая ткань ниже 100 кПа, поражение не вероятно</span><span><i class="is-c1"></i>Дискомфорт: между безболезненной границей и лицевым порогом, либо поражение возможно</span><span><i class="is-c2"></i>Боль при обычном натяжении: выше лицевого порога, либо серьёзное поражение вероятно</span><span><i class="is-c3"></i>Ожидаемая травма: выше порога кисти, либо поражение ожидаемо</span><span><i class="is-c4"></i>Боль — сам механизм: нёбные лопатки, шипы, режущие поверхности, «ножницы»</span><span><i style="border:1px dashed var(--rule)"></i>невозможно</span><span><i class="is-c2" style="opacity:.45"></i>только теоретически</span></p>
   </section>
 
   <section>
@@ -143,12 +143,13 @@
 <template id="tpl-tag"><span class="bits-tag"></span></template>
 <template id="tpl-matrix-col"><th scope="col"><span></span></th></template>
 <template id="tpl-matrix-row"><tr><th scope="row"></th></tr></template>
-<template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="visually-hidden"></span></a></td></template>
+<template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="bits-cell__num" aria-hidden="true"></span><span class="visually-hidden"></span></a></td></template>
 <template id="tpl-extreme">
   <article class="bits-extreme">
     <p class="bits-extreme__kicker"></p>
     <h3><a></a></h3>
     <p class="bits-alt"></p>
+    <p><span class="bits-class"></span></p>
     <p class="bits-extreme__meta"></p>
   </article>
 </template>

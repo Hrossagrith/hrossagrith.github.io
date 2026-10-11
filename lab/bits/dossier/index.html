@@ -81,10 +81,12 @@
 
   <section class="bits-hero" aria-labelledby="hero-label">
     <div>
-      <p class="bits-hero__label" id="hero-label">Burden index at the current settings</p>
+      <p class="bits-hero__label" id="hero-label">Harm index at the current settings</p>
       <p class="bits-hero__value"><span data-field="index">–</span><span class="bits-hero__unit">/ 100 &middot; lower is kinder</span></p>
+      <p class="bits-hero__class"><span class="bits-class" data-field="class-badge"></span></p>
+      <p class="bits-hero__def" data-field="class-def"></p>
     </div>
-    <p class="bits-hero__text">At the reference condition this combination ranks <strong data-field="rank">–</strong> of <strong data-field="rank-total">–</strong> manufactured combinations, kindest first. Peak modelled pressure now: <strong data-field="peak">–</strong> on the <strong data-field="peak-site">–</strong>. <span data-field="peak-verdict"></span></p>
+    <p class="bits-hero__text">At the reference condition (20&nbsp;N each rein, head on the vertical) this combination is in the class <span class="bits-class" data-field="class-ref"></span> and ranks <strong data-field="rank">–</strong> of <strong data-field="rank-total">–</strong> manufactured combinations, kindest first. Peak modelled pressure now: <strong data-field="peak">–</strong> on the <strong data-field="peak-site">–</strong>. <span data-field="peak-verdict"></span></p>
     <div class="bits-meter" aria-hidden="true"><div class="bits-meter__fill" data-meter></div></div>
   </section>
 
@@ -494,25 +496,25 @@
     </table>
   </section>
 
-  <!-- Figure G: index -->
+  <!-- Figure G: harm index and class -->
   <section class="bits-figure" aria-labelledby="fig-g">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure G</span></div>
-    <h2 id="fig-g">How the burden index is built</h2>
-    <p class="bits-figure__lede">Eight components, each 0–100, weighted and summed. The weights are published in the catalogue and the index is only as good as they are; the components, not the total, are the argument.</p>
-    <svg viewBox="0 0 640 330" role="img" aria-labelledby="fig-g-title">
-      <title id="fig-g-title">Component scores of the burden index</title>
-      <g data-comp="peak_pressure"><text x="250" y="36" text-anchor="end">Peak pressure</text><text class="w viz-small viz-muted" x="256" y="36"></text><rect x="300" y="24" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="36"></text></g>
-      <g data-comp="stop"><text x="250" y="72" text-anchor="end">Absence of a stop</text><text class="w viz-small viz-muted" x="256" y="72"></text><rect x="300" y="60" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="72"></text></g>
-      <g data-comp="pinch_edges"><text x="250" y="108" text-anchor="end">Pinching, edges, prongs</text><text class="w viz-small viz-muted" x="256" y="108"></text><rect x="300" y="96" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="108"></text></g>
-      <g data-comp="extra_forces"><text x="250" y="144" text-anchor="end">Chin, jaw, nose and poll loading</text><text class="w viz-small viz-muted" x="256" y="144"></text><rect x="300" y="132" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="144"></text></g>
-      <g data-comp="palate"><text x="250" y="180" text-anchor="end">Palate risk</text><text class="w viz-small viz-muted" x="256" y="180"></text><rect x="300" y="168" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="180"></text></g>
-      <g data-comp="signal"><text x="250" y="216" text-anchor="end">Ambiguity of the signal</text><text class="w viz-small viz-muted" x="256" y="216"></text><rect x="300" y="204" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="216"></text></g>
-      <g data-comp="bit_space"><text x="250" y="252" text-anchor="end">Crowding of the mouth</text><text class="w viz-small viz-muted" x="256" y="252"></text><rect x="300" y="240" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="252"></text></g>
-      <g data-comp="release"><text x="250" y="288" text-anchor="end">Failure to release</text><text class="w viz-small viz-muted" x="256" y="288"></text><rect x="300" y="276" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="288"></text></g>
-      <line x1="300" y1="16" x2="300" y2="300" class="viz-axis"/>
-      <text x="300" y="320" class="viz-muted viz-small">0</text>
-      <text x="600" y="320" text-anchor="end" class="viz-muted viz-small">100 · heaviest</text>
+    <h2 id="fig-g">How the harm index and the class are built</h2>
+    <p class="bits-figure__lede">Three parts, each 0–100. Pain now: how far the modelled pressures stand above the pain thresholds, on the worst tissue and on average over every loaded tissue. Injury expected: the likely lesions of Figure F, each weighted by how serious it is (a torn commissure or bone damage of the bars counts for more than a chin gall). Loss of control: no mechanical stop, no release, an ambiguous signal. The weights are published in the catalogue. The class is not an average: it is the worst of the pain reading, the worst lesion risk and the design, so one expected injury puts a combination in the red whatever the rest says.</p>
+    <svg viewBox="0 0 640 230" role="img" aria-labelledby="fig-g-title">
+      <title id="fig-g-title">The three parts of the harm index</title>
+      <g data-part="pain"><text x="250" y="40" text-anchor="end">Pain now</text><text class="w viz-small viz-muted" x="256" y="40"></text><rect x="300" y="28" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="40"></text></g>
+      <g data-part="injury"><text x="250" y="90" text-anchor="end">Injury expected</text><text class="w viz-small viz-muted" x="256" y="90"></text><rect x="300" y="78" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="90"></text></g>
+      <g data-part="control"><text x="250" y="140" text-anchor="end">Loss of control</text><text class="w viz-small viz-muted" x="256" y="140"></text><rect x="300" y="128" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="140"></text><text class="sub viz-small viz-muted" x="300" y="164"></text></g>
+      <line x1="300" y1="20" x2="300" y2="172" class="viz-axis"/>
+      <text x="300" y="190" class="viz-muted viz-small">0</text>
+      <text x="600" y="190" text-anchor="end" class="viz-muted viz-small">100 · worst</text>
+      <text id="fg-formula" x="20" y="216"></text>
     </svg>
+    <ul class="bits-statements">
+      <li data-say="class-why"><span class="bits-class" data-field="class-name"></span> <span data-field="class-why"></span></li>
+    </ul>
+    <p class="bits-legend-row bits-legend-row--classes"><span><i class="is-c0"></i>Pressure without pain</span><span><i class="is-c1"></i>Discomfort</span><span><i class="is-c2"></i>Pain at ordinary tension</span><span><i class="is-c3"></i>Injury expected</span><span><i class="is-c4"></i>Pain is the mechanism</span></p>
   </section>
 
   <!-- Prose from the content file -->

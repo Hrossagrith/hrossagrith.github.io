@@ -45,8 +45,8 @@
    "ru": "Место {rank} из {total} выпускаемых сочетаний, от самого мягкого"
   },
   "index_short": {
-   "en": "index",
-   "ru": "индекс"
+   "en": "harm index",
+   "ru": "индекс вреда"
   },
   "rank_short": {
    "en": "rank {rank}",
@@ -555,6 +555,146 @@
   "risk_why_behaviour_high": {
    "en": "Peak {peak} on the {site}, or a lifting or conflicting signal: gaping, head tossing, tongue over the bit and head shaking are the documented responses.",
    "ru": "Пик {peak} — ткань: {site}, либо поднимающий или противоречивый сигнал: открывание рта, мотание головой, язык поверх удил и тряска головой — задокументированные ответы."
+  },
+  "class_0": {
+   "en": "Pressure without pain",
+   "ru": "Давление без боли"
+  },
+  "class_1": {
+   "en": "Discomfort",
+   "ru": "Дискомфорт"
+  },
+  "class_2": {
+   "en": "Pain at ordinary tension",
+   "ru": "Боль при обычном натяжении"
+  },
+  "class_3": {
+   "en": "Injury expected",
+   "ru": "Ожидаемая травма"
+  },
+  "class_4": {
+   "en": "Pain is the mechanism",
+   "ru": "Боль — сам механизм"
+  },
+  "class_def_0": {
+   "en": "Every tissue below the 100 kPa pain-free bound and no lesion more than possible.",
+   "ru": "Каждая ткань ниже безболезненной границы 100 кПа, и ни одно поражение не более чем возможно."
+  },
+  "class_def_1": {
+   "en": "Peak between the pain-free bound and the facial pain threshold, or a lesion possible.",
+   "ru": "Пик между безболезненной границей и лицевым болевым порогом, либо поражение возможно."
+  },
+  "class_def_2": {
+   "en": "Peak above the facial pain threshold (232 kPa), or a serious lesion likely.",
+   "ru": "Пик выше лицевого болевого порога (232 кПа), либо серьёзное поражение вероятно."
+  },
+  "class_def_3": {
+   "en": "Peak above the hand pain threshold (445 kPa), or a lesion expected at this setting.",
+   "ru": "Пик выше порога боли кисти (445 кПа), либо поражение ожидаемо при этих настройках."
+  },
+  "class_def_4": {
+   "en": "The device works by hurting: a palate spoon, prongs, a cutting surface or a scissor mouth.",
+   "ru": "Устройство работает болью: нёбная лопатка, шипы, режущая поверхность или «ножницы»."
+  },
+  "class_why_pain_0": {
+   "en": "Peak {peak} on the {site}: below the pain-free bound.",
+   "ru": "Пик {peak} — ткань: {site}; ниже безболезненной границы."
+  },
+  "class_why_pain_1": {
+   "en": "Peak {peak} on the {site}: above the pain-free bound, below the facial threshold.",
+   "ru": "Пик {peak} — ткань: {site}; выше безболезненной границы, ниже лицевого порога."
+  },
+  "class_why_pain_2": {
+   "en": "Peak {peak} on the {site}: above the human facial pain threshold.",
+   "ru": "Пик {peak} — ткань: {site}; выше лицевого болевого порога человека."
+  },
+  "class_why_pain_3": {
+   "en": "Peak {peak} on the {site}: above the pain threshold of the human hand.",
+   "ru": "Пик {peak} — ткань: {site}; выше болевого порога кисти человека."
+  },
+  "class_why_injury_0": {
+   "en": "No lesion is likely at this setting.",
+   "ru": "Ни одно поражение не вероятно при этих настройках."
+  },
+  "class_why_injury_1": {
+   "en": "Worst lesion risk: {risk}, {level}.",
+   "ru": "Худший риск поражения: {risk}, {level}."
+  },
+  "class_why_injury_2": {
+   "en": "Worst lesion risk: {risk}, {level}; a serious lesion, so it sets the class.",
+   "ru": "Худший риск поражения: {risk}, {level}; поражение серьёзное, поэтому оно задаёт класс."
+  },
+  "class_why_injury_3": {
+   "en": "Worst lesion risk: {risk}, {level}; one expected lesion is enough for the red class.",
+   "ru": "Худший риск поражения: {risk}, {level}; одного ожидаемого поражения достаточно для красного класса."
+  },
+  "class_why_design_palate": {
+   "en": "Design: the mouthpiece is built to press the palate.",
+   "ru": "Конструкция: грызло создано давить на нёбо."
+  },
+  "class_why_design_prongs": {
+   "en": "Design: bristles or prongs against the cheek.",
+   "ru": "Конструкция: щетина или шипы у щеки."
+  },
+  "class_why_design_scissor": {
+   "en": "Design: the cannons cross and pinch the tongue.",
+   "ru": "Конструкция: плечи грызла перекрещиваются и защемляют язык."
+  },
+  "class_why_design_edge": {
+   "en": "Design: a cutting surface (edge factor at or above the catalogue's limit).",
+   "ru": "Конструкция: режущая поверхность (коэффициент кромки не ниже каталожного предела)."
+  },
+  "risk_name_commissure": {
+   "en": "tearing of the corners of the mouth",
+   "ru": "разрывы углов губ"
+  },
+  "risk_name_bars": {
+   "en": "bruising and bone damage of the bars",
+   "ru": "ушибы и повреждение кости дёсен"
+  },
+  "risk_name_tongue": {
+   "en": "tongue lacerations",
+   "ru": "разрывы языка"
+  },
+  "risk_name_palate": {
+   "en": "palate ulceration",
+   "ru": "изъязвление нёба"
+  },
+  "risk_name_chin": {
+   "en": "chin-groove galls",
+   "ru": "потёртости подбородочной ямки"
+  },
+  "risk_name_cheek_teeth": {
+   "en": "cheek ulcers against the teeth",
+   "ru": "язвы щеки о зубы"
+  },
+  "risk_name_pinch": {
+   "en": "pinched lip or tongue",
+   "ru": "защемление губы или языка"
+  },
+  "risk_name_jaw": {
+   "en": "bruising of the lower jaw",
+   "ru": "ушибы нижней челюсти"
+  },
+  "risk_name_nose": {
+   "en": "nasal-bone pressure sores",
+   "ru": "потёртости носовой кости"
+  },
+  "risk_name_airway": {
+   "en": "tongue restraint and airway interference",
+   "ru": "ограничение языка и помеха дыханию"
+  },
+  "risk_name_behaviour": {
+   "en": "pain behaviour",
+   "ru": "болевое поведение"
+  },
+  "control_sub": {
+   "en": "stop {stop} · release {release} · signal {signal}",
+   "ru": "стоп {stop} · отпускание {release} · сигнал {signal}"
+  },
+  "index_formula": {
+   "en": "index = {wp} × pain + {wi} × injury + {wc} × control = {index}",
+   "ru": "индекс = {wp} × боль + {wi} × травма + {wc} × контроль = {index}"
   }
  },
  "model_params": [
