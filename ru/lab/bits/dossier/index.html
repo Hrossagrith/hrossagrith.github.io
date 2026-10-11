@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Досье удил — Империя Хроссагрид</title>
+<meta name="description" content="Механика, давления, стопы и влияние на постав головы одного сочетания щёчки и грызла.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="../../../../assets/flag-mark.png">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<link rel="stylesheet" href="../../../../assets/bits.css">
+<script>
+/* Resolve the theme before first paint: stored choice first, system preference
+   otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
+(function () {
+  var stored = null;
+  try {
+    stored = window.localStorage.getItem("hrossagrid-theme");
+  } catch (error) { /* storage unavailable */ }
+  var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = (stored === "dark" || stored === "light") ? stored : (dark ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body data-root="../../../../" data-base="../../../../ru/" data-lang="ru" data-bits-page="dossier" data-bits-data="../../../../assets/data/bits/" data-bits-chooser="../" data-i18n="{&quot;light&quot;: &quot;Светлая&quot;, &quot;dark&quot;: &quot;Тёмная&quot;, &quot;theme_to_light&quot;: &quot;Переключить на светлую тему&quot;, &quot;theme_to_dark&quot;: &quot;Переключить на тёмную тему&quot;}">
+<a class="skip-link" href="#main">К содержанию</a>
+
+<div class="utility">
+  <div class="shell utility__inner">
+    <p class="utility__note">Проект по конструированию мира</p>
+    <a class="search-link" href="../../../../ru/search/">Найти</a>
+    <label class="visually-hidden" for="locale">Язык</label>
+    <select class="locale" id="locale" data-locale-picker>
+      <option value="ru" selected>Русский</option>
+      <option value="en">English (UK)</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Тёмная</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <img class="masthead__emblem" src="../../../../assets/emblem.png"
+         alt="Эмблема Империи Хроссагрид: вздыбленный гиппогриф в круге" width="360" height="360">
+    <p class="masthead__state">Имперский государственный портал</p>
+    <p class="masthead__name"><a href="../../../../ru/">Империя Хроссагрид</a></p>
+    <svg class="masthead__rule" viewBox="0 0 400 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M4 12 H150"/><path d="M250 12 H396"/></g><g fill="currentColor"><path d="M200 3 L209 12 L200 21 L191 12 Z"/><path d="M172 8 L178 12 L172 16 L166 12 Z" opacity="0.75"/><path d="M228 8 L234 12 L228 16 L222 12 Z" opacity="0.75"/><circle cx="152" cy="12" r="2"/><circle cx="248" cy="12" r="2"/></g></svg>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Основная навигация">
+  <div class="shell nav__inner">
+    <a href="../../../../ru/">Главная</a>
+    <a href="../../../../ru/horses/">Лошади</a>
+    <a href="../../../../ru/gov/law/tack/">Кодекс амуниции</a>
+    <a href="../">Реестр удил</a>
+  </div>
+</nav>
+
+<div class="shell crumb"><a href="../../../../ru/">Главная</a><span>›</span><a href="../../../../ru/horses/">Лошади</a><span>›</span><a href="../">Реестр механики удил</a><span>›</span><strong data-field="crumb">Досье</strong></div>
+
+<main id="main" class="shell wrap bits bits-dossier">
+  <p class="entry"><span data-field="group-name">Досье</span> · <span data-field="subgroup-name"></span></p>
+  <h1 class="page-title" data-field="title">Выберите сочетание</h1>
+  <p class="bits-alt" data-field="title-alt"></p>
+  <p class="page-standfirst" data-field="aka"></p>
+  <p class="bits-badges">
+    <span class="bits-badge" data-field="validity" hidden></span>
+    <span class="bits-badge bits-badge--pairing" data-field="pairing" hidden></span>
+    <span class="bits-badge" data-field="double-bridle" hidden>Применяется в двойном оголовье вместе с бридоном</span>
+  </p>
+  <p class="bits-print-url" data-print-url></p>
+
+  <div class="bits-empty" data-missing hidden>
+    <p>Сочетание не выбрано. <a href="../">Вернитесь в реестр</a> и выберите щёчку и грызло.</p>
+  </div>
+
+  <div data-dossier hidden>
+
+  <section class="bits-hero" aria-labelledby="hero-label">
+    <div>
+      <p class="bits-hero__label" id="hero-label">Индекс нагрузки при текущих настройках</p>
+      <p class="bits-hero__value"><span data-field="index">–</span><span class="bits-hero__unit">/ 100 · меньше — мягче</span></p>
+    </div>
+    <p class="bits-hero__text">При опорных условиях это сочетание занимает место <strong data-field="rank">–</strong> из <strong data-field="rank-total">–</strong> выпускаемых сочетаний, от самого мягкого. Пиковое расчётное давление сейчас: <strong data-field="peak">–</strong> — ткань: <strong data-field="peak-site">–</strong>. <span data-field="peak-verdict"></span></p>
+    <div class="bits-meter" aria-hidden="true"><div class="bits-meter__fill" data-meter></div></div>
+  </section>
+
+  <form class="bits-controls" data-controls aria-label="Настройки модели">
+    <label>
+      <span>Натяжение, каждый повод</span>
+      <input type="range" name="F" min="5" max="150" step="1" value="20">
+      <output data-out="F">20 Н</output>
+    </label>
+    <label>
+      <span>Постав головы</span>
+      <select name="posture"></select>
+    </label>
+    <label>
+      <span>Толщина грызла</span>
+      <input type="range" name="d" min="3" max="22" step="1" value="16">
+      <output data-out="d">16 мм</output>
+    </label>
+    <label>
+      <span>Место для удил в этом рту</span>
+      <input type="range" name="space" min="5" max="22" step="1" value="14">
+      <output data-out="space">14 мм</output>
+    </label>
+    <label data-show="curb-share" hidden>
+      <span>Мундштучный повод, доля натяжения</span>
+      <input type="range" name="curbShare" min="0" max="1" step="0.05" value="0.5">
+      <output data-out="curbShare">50 %</output>
+    </label>
+    <label class="bits-check" data-show="chain" hidden>
+      <input type="checkbox" name="guard">
+      <span>Резиновая или кожаная накладка на цепочке</span>
+    </label>
+    <div class="bits-control" data-options="cheek"></div>
+    <div class="bits-control" data-options="mouth"></div>
+    <div class="bits-controls__actions">
+      <button type="button" class="bits-button bits-button--ghost" data-reset>Сбросить</button>
+      <button type="button" class="bits-button" data-print>Сохранить в PDF</button>
+    </div>
+  </form>
+
+  <!-- Figure A: free-body diagram -->
+  <section class="bits-figure" aria-labelledby="fig-a">
+    <div class="bits-figure__head"><span class="bits-figure__num">Фигура A</span></div>
+    <h2 id="fig-a">Куда уходит сила повода</h2>
+    <p class="bits-figure__lede">Силовая схема одной стороны удил, нарисованная в голове лошади. Повод тянет к руке; цепочка, нащёчный ремень и рот отвечают, пока силы не уравновесятся. Длина стрелки пропорциональна силе. Голова нарисована в выбранном поставе, поэтому повод всегда идёт горизонтально к всаднику.</p>
+    <svg viewBox="0 0 640 440" role="img" aria-labelledby="fig-a-title">
+      <title id="fig-a-title">Силовая схема удил при выбранном поставе головы</title>
+      <defs>
+        <path id="fa-silhouette" d="M-30 46 C-42 20 -52 -40 -56 -120 C-58 -170 -46 -205 -30 -235 L-20 -292 L-8 -282 L10 -280 L35 -225 C70 -200 95 -170 92 -120 C90 -70 88 -30 60 20 C52 36 30 48 0 52 C-12 54 -22 52 -30 46 Z"/>
+        <marker id="fa-head-rein" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--rein"/></marker>
+        <marker id="fa-head-chain" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--chain"/></marker>
+        <marker id="fa-head-poll" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--poll"/></marker>
+        <marker id="fa-head-reaction" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--reaction"/></marker>
+      </defs>
+      <line id="fa-handline" x1="300" y1="280" x2="620" y2="280" class="viz-grid"/>
+      <text x="618" y="272" text-anchor="end" class="viz-muted">к руке всадника →</text>
+      <g id="fa-world" transform="translate(300 280) scale(0.82)">
+        <g id="fa-head">
+          <use href="#fa-silhouette" class="viz-head"/>
+          <path d="M-34 14 L0 0" class="viz-axis" stroke-width="2"/>
+          <ellipse cx="-4" cy="-150" rx="6" ry="4" style="fill:var(--viz-ink)"/>
+          <line id="fa-cheekpiece" x1="0" y1="0" x2="-4" y2="-236" class="viz-strap"/>
+          <path id="fa-shank" d="" class="viz-metal" fill="none" stroke-width="5" stroke-linecap="round"/>
+          <path id="fa-chain" d="" class="viz-chainline"/>
+          <circle id="fa-bit" cx="0" cy="0" r="7" class="viz-metal"/>
+          <line id="fa-arrow-rein" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--rein" marker-end="url(#fa-head-rein)"/>
+          <line id="fa-arrow-rein2" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--rein" marker-end="url(#fa-head-rein)"/>
+          <line id="fa-arrow-chain" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--chain" marker-end="url(#fa-head-chain)"/>
+          <line id="fa-arrow-poll" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--poll" marker-end="url(#fa-head-poll)"/>
+          <line id="fa-arrow-reaction" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--reaction" marker-end="url(#fa-head-reaction)"/>
+        </g>
+      </g>
+      <text id="fa-l-rein" x="0" y="0"></text>
+      <text id="fa-l-rein2" x="0" y="0"></text>
+      <text id="fa-l-chain" x="0" y="0"></text>
+      <text id="fa-l-poll" x="0" y="0"></text>
+      <text id="fa-l-reaction" x="0" y="0"></text>
+      <text id="fa-l-posture" x="20" y="28" class="viz-muted"></text>
+      <text id="fa-l-amp" x="20" y="410"></text>
+      <text id="fa-l-rho" x="20" y="430" class="viz-muted"></text>
+    </svg>
+    <p class="bits-legend-row"><span><i class="is-rein"></i>F, натяжение повода на сторону <span data-field="legend-F"></span></span><span><i class="is-chain"></i>C, цепочка или ремешок <span data-field="legend-C"></span></span><span><i class="is-poll"></i>T, нащёчный ремень к затылку <span data-field="legend-T"></span></span><span><i class="is-reaction"></i>R, ответ рта <span data-field="legend-R"></span></span></p>
+    <ul class="bits-statements">
+      <li data-say="direct-sum">У щёчки нет рычага. Два повода вместе передают <span data-field="press-total"></span> на язык и дёсны и <span data-field="lip-total"></span> вверх, в углы губ; ничто не умножается, только перераспределяется.</li>
+      <li data-say="curb-sum" data-tone="warn">Нижнее плечо длиннее верхнего в <span data-field="lever-ratio"></span> раза. Когда цепочка срабатывает при <span data-field="rho"></span>°, цепочка несёт <span data-field="chain-force"></span> на сторону, поэтому рот получает <span data-field="press-total"></span> вниз и назад: <span data-field="amplification"></span>× того, что дал бы повод сам по себе. Подбородная ямка зажата с силой <span data-field="chin-force"></span>.</li>
+      <li data-say="gag-lever-sum" data-tone="warn">Цепочки нет, поэтому вращение не останавливает ничто, кроме нащёчного ремня. Стопка колец поворачивается примерно до <span data-field="rho"></span>°, и грызло протаскивается на <span data-field="lift"></span> вверх по лицу, прежде чем его остановят губы. Затем нащёчный ремень тянет с силой <span data-field="cheek-force"></span> на сторону, и всё это приходится на углы губ: <span data-field="lip-total"></span> всего.</li>
+      <li data-say="gag-slide-sum" data-tone="warn">Нащёчный ремень проходит через кольцо, как верёвка через блок. Верхняя ветвь тянет к затылку с силой <span data-field="cheek-force"></span> на сторону (остальное съедает трение о кольцо); вместе с поводом это поднимает удила с силой <span data-field="lip-total"></span> в углы губ, примерно <span data-field="amplification"></span>× подъёмной силы обычного трензеля при этом поставе.</li>
+      <li data-say="poll">Затылок получает <span data-field="poll-force"></span> вниз (<span data-field="poll-kpa"></span> на затылочный ремень). <span data-field="poll-note"></span></li>
+    </ul>
+  </section>
+
+  <!-- Figure B: cross-section -->
+  <section class="bits-figure" aria-labelledby="fig-b">
+    <div class="bits-figure__head"><span class="bits-figure__num">Фигура B</span></div>
+    <h2 id="fig-b">Куда это ложится во рту</h2>
+    <p class="bits-figure__lede">Поперечное сечение рта в беззубом крае, в масштабе по хельсинкским измерениям (средняя ширина рта 131 мм, 28,9 мм от нёба до дёсен, язык толщиной 16 мм, 1–2 мм слизистой над костью дёсен). Грызло нарисовано в заданной толщине. Заливка показывает расчётное давление на каждую ткань; числа — кПа.</p>
+    <svg viewBox="0 0 480 330" role="img" aria-labelledby="fig-b-title">
+      <title id="fig-b-title">Сечение рта с грызлом в масштабе</title>
+      <path id="fb-cheeks" d="M60 200 C60 60 160 40 240 40 C320 40 420 60 420 200 C420 280 330 310 240 310 C150 310 60 280 60 200 Z" class="viz-tissue"/>
+      <path id="fb-skull" d="M72 150 C96 70 170 50 240 50 C310 50 384 70 408 150 L384 150 C360 90 300 72 240 72 C180 72 120 90 96 150 Z" class="viz-bone"/>
+      <path id="fb-cavity" d="M96 150 C120 90 180 72 240 72 C300 72 360 90 384 150 C390 190 360 220 330 236 L150 236 C120 220 90 190 96 150 Z" style="fill:var(--viz-surface);stroke:none"/>
+      <path id="fb-palate" d="M96 150 C120 90 180 72 240 72 C300 72 360 90 384 150" class="viz-bone" fill="none" stroke-width="8" stroke-linecap="round"/>
+      <path id="fb-mandible" d="M150 300 C150 240 190 220 212 170 L268 170 C290 220 330 240 330 300 Z" class="viz-bone"/>
+      <path id="fb-bar-l" d="M198 172 C204 152 222 152 226 172 Z" class="viz-bone" style="stroke-width:1.5"/>
+      <path id="fb-bar-r" d="M254 172 C258 152 276 152 282 172 Z" class="viz-bone" style="stroke-width:1.5"/>
+      <ellipse id="fb-tongue" cx="240" cy="160" rx="44" ry="19" class="viz-tissue" style="fill:var(--viz-tissue-2)"/>
+      <rect id="fb-zone-tongue" x="196" y="120" width="88" height="10" rx="4" class="viz-zone"/>
+      <circle id="fb-zone-bar-l" cx="212" cy="158" r="9" class="viz-zone"/>
+      <circle id="fb-zone-bar-r" cx="268" cy="158" r="9" class="viz-zone"/>
+      <circle id="fb-zone-lip-l" cx="78" cy="140" r="12" class="viz-zone"/>
+      <circle id="fb-zone-lip-r" cx="402" cy="140" r="12" class="viz-zone"/>
+      <ellipse id="fb-zone-palate" cx="240" cy="80" rx="30" ry="8" class="viz-zone"/>
+      <g id="fb-mouthpiece">
+        <rect id="fb-bar" x="70" y="120" width="340" height="38" rx="19" class="viz-metal"/>
+        <path id="fb-port" d="" class="viz-metal"/>
+        <rect id="fb-cannon-l" x="70" y="120" width="170" height="38" rx="19" class="viz-metal"/>
+        <rect id="fb-cannon-r" x="240" y="120" width="170" height="38" rx="19" class="viz-metal"/>
+        <rect id="fb-link" x="210" y="124" width="60" height="30" rx="12" class="viz-metal"/>
+        <g id="fb-balls"><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/></g>
+        <g id="fb-keys"><rect width="6" height="30" rx="3" class="viz-metal"/><rect width="6" height="30" rx="3" class="viz-metal"/><rect width="6" height="30" rx="3" class="viz-metal"/></g>
+        <circle id="fb-ring-l" cx="60" cy="139" r="6" class="viz-metal"/>
+        <circle id="fb-ring-r" cx="420" cy="139" r="6" class="viz-metal"/>
+      </g>
+      <text x="240" y="30" text-anchor="middle" class="viz-muted">нёбо</text>
+      <text x="240" y="294" text-anchor="middle" class="viz-muted viz-small">нижняя челюсть</text>
+      <text id="fb-l-tongue" x="240" y="212" text-anchor="middle"></text>
+      <text id="fb-l-bar-l" x="160" y="186" text-anchor="end"></text>
+      <text id="fb-l-bar-r" x="320" y="186" text-anchor="start"></text>
+      <text id="fb-l-lip-l" x="12" y="300" text-anchor="start" class="viz-small"></text>
+      <text id="fb-l-lip-r" x="468" y="300" text-anchor="end" class="viz-small"></text>
+      <text id="fb-l-palate" x="300" y="46" text-anchor="start" class="viz-small"></text>
+      <text id="fb-l-scale" x="12" y="322" class="viz-muted viz-small"></text>
+      <text id="fb-l-fit" x="468" y="322" text-anchor="end" class="viz-muted viz-small"></text>
+    </svg>
+    <ul class="bits-statements">
+      <li data-say="fit-tight" data-tone="warn">Проверка толщины: <span data-field="total-thickness"></span> металла в пространстве, измеренном в <span data-field="bit-space"></span>. Язык сжат ещё до набора повода; модель добавляет <span data-field="fit-pct"></span> к нагрузке на язык за это.</li>
+      <li data-say="fit-ok" data-tone="good">Проверка толщины: <span data-field="total-thickness"></span> в пространстве <span data-field="bit-space"></span> . Грызло помещается, не стесняя язык в покое.</li>
+      <li data-say="nutcracker" data-tone="warn">Одно сочленение: под натяжением два плеча складываются буквой V. Шарнир уходит в язык (рентген при 25 Н показывает вдавливание языка, а не удар в нёбо), язык стискивается между плечами, а концы плечей ложатся на дёсны под углом. Контакт с нёбом становится вероятным при высокой руке или слишком широких удилах (индекс риска <span data-field="palate"></span>).</li>
+      <li data-say="double-joint">Два сочленения: центральное звено лежит на языке, а плечи следуют его бокам; всё грызло опускается на язык, а не поднимается к нёбу. Давление распределяется, но не исчезает.</li>
+      <li data-say="plate-tilt" data-tone="warn">Плоская пластина мягка, только пока лежит плоско. Фиксированные щёчки в держателях или повёрнутая щёчка наклоняют пластину так, что в язык врезается её ребро: так французское звено во рту превращается в «Доктора Бристоля».</li>
+      <li data-say="unjointed">Цельное: штанга не складывается, поэтому нагрузка делится между языком (который она сжимает) и двумя краями дёсен (где она ложится на тонкую слизистую над костью). По финским данным по рысакам у лошадей с цельными удилами больше повреждений дёсен, чем с сочленёнными.</li>
+      <li data-say="port" data-tone="warn">Порт разгружает язык и отдаёт эту нагрузку дёснам. При повороте щёчки (мундштучное действие) порт качается вверх; средний или высокий порт достигает нёба при <span data-field="rho"></span>° поворота (индекс риска <span data-field="palate"></span>).</li>
+      <li data-say="textured" data-tone="bad">Рельефная поверхность: лишь <span data-field="contact-pct"></span> поверхности касается ткани, а рёбра концентрируют нагрузку (фактор ребра <span data-field="edge"></span>). Тонкое грызло к тому же вдавливается глубже, прежде чем его остановит кость, поэтому полоска контакта на дёснах у́же.</li>
+      <li data-say="multilink">Много звеньев: грызло обвисает по языку, и на него нельзя опереться, но каждое звено — маленький контакт, а зазоры между звеньями могут захватить ткань языка или губы.</li>
+      <li data-say="keys">Ключики свисают со штанги и побуждают жевать. Сама штанга прямая; ключики добавляют движение, а не снимают давление.</li>
+    </ul>
+  </section>
+
+  <!-- Figure C: pressures -->
+  <section class="bits-figure" aria-labelledby="fig-c">
+    <div class="bits-figure__head"><span class="bits-figure__num">Фигура C</span></div>
+    <h2 id="fig-c">Давление на каждую ткань против болевых порогов</h2>
+    <p class="bits-figure__lede">Расчётное контактное давление при текущих настройках. Две опорные линии — верхняя граница давлений повода, признанных безболезненными по сравнению с человеческими порогами (~100 кПа), и болевой порог давления на лицо человека (232 кПа). Ткани на кости (дёсны, подбородная ямка) самые чувствительные; губы самые терпимые, но и наименее защищённые от разрывов.</p>
+    <svg viewBox="0 0 640 270" role="img" aria-labelledby="fig-c-title">
+      <title id="fig-c-title">Давление на язык, дёсны, губы, подбородок и затылок в сравнении с болевыми порогами</title>
+      <g id="fc-grid"></g>
+      <line x1="200" y1="20" x2="200" y2="222" class="viz-axis"/>
+      <line id="fc-th-free" x1="0" y1="20" x2="0" y2="222" class="viz-threshold"/>
+      <line id="fc-th-face" x1="0" y1="20" x2="0" y2="222" class="viz-threshold"/>
+      <text id="fc-th-free-l" x="0" y="14" text-anchor="middle" class="viz-small viz-muted">без боли ≈ 100</text>
+      <text id="fc-th-face-l" x="0" y="14" text-anchor="middle" class="viz-small viz-muted">порог лица 232</text>
+      <g data-row="bars"><text x="190" y="46" text-anchor="end">Дёсны (на кости)</text><rect data-bar="bars" x="200" y="32" width="0" height="20" rx="0" class="viz-bar"/><text data-val="bars" x="0" y="46"></text></g>
+      <g data-row="tongue"><text x="190" y="86" text-anchor="end">Язык</text><rect data-bar="tongue" x="200" y="72" width="0" height="20" class="viz-bar"/><text data-val="tongue" x="0" y="86"></text></g>
+      <g data-row="lips"><text x="190" y="126" text-anchor="end">Углы губ</text><rect data-bar="lips" x="200" y="112" width="0" height="20" class="viz-bar"/><text data-val="lips" x="0" y="126"></text></g>
+      <g data-row="chin"><text x="190" y="166" text-anchor="end">Подбородная ямка</text><rect data-bar="chin" x="200" y="152" width="0" height="20" class="viz-bar"/><text data-val="chin" x="0" y="166"></text></g>
+      <g data-row="poll"><text x="190" y="206" text-anchor="end">Затылок</text><rect data-bar="poll" x="200" y="192" width="0" height="20" class="viz-bar"/><text data-val="poll" x="0" y="206"></text></g>
+      <g id="fc-axis-labels"></g>
+      <text x="200" y="250" class="viz-muted viz-small">0 кПа</text>
+      <text id="fc-axis-max" x="600" y="250" text-anchor="end" class="viz-muted viz-small"></text>
+    </svg>
+    <table class="bits-table">
+      <thead><tr><th scope="col">Ткань</th><th scope="col">Нагрузка</th><th scope="col">Площадь контакта</th><th scope="col">Давление</th><th scope="col">Оценка</th></tr></thead>
+      <tbody data-pressure-table>
+        <tr data-tissue="bars"><td>Дёсны, каждая сторона</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="tongue"><td>Язык</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="lips"><td>Угол губ, каждая сторона</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="chin"><td>Подбородная ямка</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="poll"><td>Затылок</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+      </tbody>
+    </table>
+    <ul class="bits-statements">
+      <li data-say="tension-context">Контекст для <span data-field="F"></span> на повод: у лошадей под всадником измерены средние максимумы около 17 Н (шаг), 23 Н (рысь) и 36 Н (галоп), с зарегистрированными пиками 43, 51 и 104 Н; лошади без всадника выбирают 6–10 Н и учатся избегать большего. Сдвиньте ползунок повода к пикам, чтобы увидеть, чего стоит миг сопротивления.</li>
+      <li data-say="sustained" data-tone="warn">Любое из этих давлений намного выше ~4 кПа, при которых закрываются капилляры. Удерживаемое минутами, а не мгновениями, оно делает ткань под грызлом ишемичной, какие бы это ни были удила.</li>
+    </ul>
+  </section>
+
+  <!-- Figure D: stops -->
+  <section class="bits-figure" aria-labelledby="fig-d">
+    <div class="bits-figure__head"><span class="bits-figure__num">Фигура D</span></div>
+    <h2 id="fig-d">Есть ли стоп, или оно едет дальше?</h2>
+    <p class="bits-figure__lede">Два разных вопроса. Ограничивает ли что-то механически, как далеко удила сдвинутся во рту, когда всадник тянет сильнее, и ограничивает ли что-то силу? Цепочка останавливает поворот щёчки, но не передаваемую ею силу; фиксированная щёчка не даёт грызлу подниматься; подвижное кольцо или скользящий гаг не имеют никакого стопа до углов губ и первых коренных зубов.</p>
+    <svg viewBox="0 0 640 262" role="img" aria-labelledby="fig-d-title">
+      <title id="fig-d-title">Как далеко грызло может подняться во рту и что его останавливает</title>
+      <text x="20" y="30" class="viz-muted">Подъём грызла к коренным зубам</text>
+      <line x1="60" y1="90" x2="560" y2="90" class="viz-axis" stroke-width="2"/>
+      <line x1="60" y1="80" x2="60" y2="100" class="viz-axis"/>
+      <text x="60" y="118" text-anchor="start" class="viz-small viz-muted">покой в углу рта</text>
+      <line x1="560" y1="80" x2="560" y2="100" class="viz-axis"/>
+      <text x="560" y="118" text-anchor="end" class="viz-small viz-muted">первый коренной зуб · ~25 мм</text>
+      <rect id="fd-travel" x="60" y="86" width="0" height="8" rx="4" class="viz-bar"/>
+      <circle id="fd-bit" cx="60" cy="90" r="11" class="viz-metal"/>
+      <line id="fd-stop" x1="60" y1="66" x2="60" y2="114" class="viz-threshold" stroke-width="3"/>
+      <text id="fd-stop-label" x="60" y="56" text-anchor="middle"></text>
+      <text id="fd-lift-label" x="60" y="146" text-anchor="middle" class="viz-small"></text>
+      <text x="20" y="185" class="viz-muted">Стоп вращения</text>
+      <text id="fd-rot-label" x="230" y="185"></text>
+      <text x="20" y="218" class="viz-muted">Защита от протягивания</text>
+      <rect x="230" y="208" width="200" height="10" rx="5" class="viz-bar--dim viz-bar"/>
+      <rect id="fd-guard-bar" x="230" y="208" width="0" height="10" rx="5" class="viz-bar"/>
+      <text id="fd-guard-label" x="230" y="246" class="viz-small"></text>
+    </svg>
+    <ul class="bits-statements">
+      <li data-say="stop-suspension" data-tone="good">Грызло висит на фиксированной щёчке, поэтому не может подняться в углы губ: эту составляющую берёт оголовье. Сама сила не ограничена; всадник по-прежнему может приложить к языку и дёснам любое давление.</li>
+      <li data-say="stop-tissue" data-tone="warn">Ничто механически не мешает удилам подниматься. При тяге вверх они скользят, пока не растянутся углы губ, а при достаточной силе или широких удилах — пока щека не будет прижата к первому нижнему коренному зубу. Стоп — это губа.</li>
+      <li data-say="stop-chain">Цепочка — жёсткий стоп для вращения: после примерно <span data-field="rho"></span>° щёчка перестаёт поворачиваться. Для силы это не стоп. После этого угла каждый лишний ньютон на поводе превращается в <span data-field="amplification"></span> ньютона на язык и дёсны и пропорциональное сжатие подбородка.</li>
+      <li data-say="stop-cheekpiece" data-tone="bad">Цепочки нет: вращение останавливает только натяжение нащёчного ремня, и грызло проходит <span data-field="lift"></span> вверх по лицу, чтобы туда добраться. Механического предела до углов губ нет; подбородный ремешок его добавил бы.</li>
+      <li data-say="stop-none" data-tone="bad">У скользящего гага нет никакого стопа, если на нащёчные ремни не надеты стопоры. Удила поднимаются, пока всадник тянет, вплоть до коренных зубов, и весь подъём принимают углы губ.</li>
+      <li data-say="stops-fitted">Резиновые стопоры на ремнях ограничивают скольжение примерно до <span data-field="lift"></span>.</li>
+      <li data-say="pull-through" data-tone="warn">При сильном одностороннем поводе кольцо может быть втянуто в рот (защита от протягивания <span data-field="guard-pct"></span>). Исследование на кадаврах показало, что одностороннее натяжение сильнее всего смещает трензель с подвижными кольцами.</li>
+      <li data-say="lip-pinch" data-tone="warn">Кольцо проходит через грызло: складка губы в углу рта может попасть в зазор и защемиться при повороте кольца. Резиновые накладки убирают это ценой толщины.</li>
+    </ul>
+  </section>
+
+  <!-- Figure E: head carriage -->
+  <section class="bits-figure" aria-labelledby="fig-e">
+    <div class="bits-figure__head"><span class="bits-figure__num">Фигура E</span></div>
+    <h2 id="fig-e">Чему лошадь учится о своей голове</h2>
+    <p class="bits-figure__lede">Одно и то же натяжение повода при неуступающей руке в четырёх поставах головы. Столбец — пиковое давление, которое лошадь ощущает в каждом. Лошадь движется к тому поставу, где больнее меньше; этот столбец — собственный уклон устройства, до всякого обучения. Геометрический выход — сдвинуть рот к руке (закрутиться за вертикаль) — ослабляет любой повод и общ для всех удил: только своевременность отпускания решает, будет ли он вознаграждён.</p>
+    <svg viewBox="0 0 640 320" role="img" aria-labelledby="fig-e-title">
+      <title id="fig-e-title">Пиковое давление в четырёх поставах головы</title>
+      <g data-posture="above" transform="translate(80 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(70)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Выше вертикали</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">нос вперёд</text></g>
+      <g data-posture="correct" transform="translate(230 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(45)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Затылок — высшая точка</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">нос чуть впереди</text></g>
+      <g data-posture="vertical" transform="translate(380 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(20)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">На вертикали</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle"></text></g>
+      <g data-posture="btv" transform="translate(530 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(-5)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">За вертикалью</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">закручена</text></g>
+      <line x1="40" y1="270" x2="600" y2="270" class="viz-axis"/>
+      <text id="fe-bias" x="320" y="24" text-anchor="middle"></text>
+    </svg>
+    <ul class="bits-statements">
+      <li data-say="bias-above" data-tone="warn">Меньше всего боли при носе вперёд. При удерживающей руке это сочетание учит лошадь уходить выше повода: с подъёмом головы нагрузка уходит с дёсен и языка в углы губ, где больнее меньше. Правильному поставу оно не учит; оно учит уходу вверх.</li>
+      <li data-say="bias-correct" data-tone="good">Меньше всего боли при высоком затылке и носе чуть впереди вертикали. Из четырёх поставов это устройство причиняет меньше всего боли в том, который всадники называют правильным, так что оно не борется с правильной рамкой. Научить ей оно всё равно не может: это делает только отпускание.</li>
+      <li data-say="bias-vertical">Меньше всего боли при голове на вертикали. Устройство близко к нейтральному; окажется ли лошадь правильной или закрученной, целиком зависит от того, когда уступит рука.</li>
+      <li data-say="bias-btv" data-tone="bad">Меньше всего боли за вертикалью. Устройство само вознаграждает закручивание: когда лошадь поджимает нос, нагрузки спадают. Лошадь, уже идущую за вертикалью, это сочетание при удерживающей руке загонит ещё дальше.</li>
+      <li data-say="curb-head" data-tone="warn">Мундштучное действие добавляет два указания вниз: подбородок назад и затылок вниз. Оба снимаются сдачей в затылке и опусканием головы: механический уклон любого мундштука — к вертикали, а затем за неё.</li>
+      <li data-say="gag-head" data-tone="warn">Действие гага поднимает углы губ к затылку. Подъём снимается поднятием головы и раскрытием горла, поэтому уклон — выше вертикали; малая затылочная составляющая говорит обратное, потому гаги и описывают как дающие лошади два указания сразу.</li>
+      <li data-say="btv-horse">Для лошади, уже идущей за вертикалью: это сочетание <span data-field="btv-verdict"></span>. Надёжное средство — рука, а не металл: отпускать, когда нос идёт вперёд, и никогда — когда назад.</li>
+    </ul>
+  </section>
+
+  <!-- Figure F: index -->
+  <section class="bits-figure" aria-labelledby="fig-f">
+    <div class="bits-figure__head"><span class="bits-figure__num">Фигура F</span></div>
+    <h2 id="fig-f">Как устроен индекс нагрузки</h2>
+    <p class="bits-figure__lede">Восемь составляющих, каждая 0–100, с весами и суммой. Веса опубликованы в каталоге, и индекс хорош ровно настолько, насколько они; аргумент — составляющие, а не итог.</p>
+    <svg viewBox="0 0 640 330" role="img" aria-labelledby="fig-f-title">
+      <title id="fig-f-title">Составляющие индекса нагрузки</title>
+      <g data-comp="peak_pressure"><text x="250" y="36" text-anchor="end">Пиковое давление</text><text class="w viz-small viz-muted" x="256" y="36"></text><rect x="300" y="24" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="36"></text></g>
+      <g data-comp="stop"><text x="250" y="72" text-anchor="end">Отсутствие стопа</text><text class="w viz-small viz-muted" x="256" y="72"></text><rect x="300" y="60" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="72"></text></g>
+      <g data-comp="pinch_edges"><text x="250" y="108" text-anchor="end">Защемление и рёбра</text><text class="w viz-small viz-muted" x="256" y="108"></text><rect x="300" y="96" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="108"></text></g>
+      <g data-comp="extra_forces"><text x="250" y="144" text-anchor="end">Нагрузка на подбородок и затылок</text><text class="w viz-small viz-muted" x="256" y="144"></text><rect x="300" y="132" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="144"></text></g>
+      <g data-comp="palate"><text x="250" y="180" text-anchor="end">Риск для нёба</text><text class="w viz-small viz-muted" x="256" y="180"></text><rect x="300" y="168" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="180"></text></g>
+      <g data-comp="signal"><text x="250" y="216" text-anchor="end">Неоднозначность сигнала</text><text class="w viz-small viz-muted" x="256" y="216"></text><rect x="300" y="204" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="216"></text></g>
+      <g data-comp="bit_space"><text x="250" y="252" text-anchor="end">Теснота во рту</text><text class="w viz-small viz-muted" x="256" y="252"></text><rect x="300" y="240" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="252"></text></g>
+      <g data-comp="release"><text x="250" y="288" text-anchor="end">Неотпускание</text><text class="w viz-small viz-muted" x="256" y="288"></text><rect x="300" y="276" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="288"></text></g>
+      <line x1="300" y1="16" x2="300" y2="300" class="viz-axis"/>
+      <text x="300" y="320" class="viz-muted viz-small">0</text>
+      <text x="600" y="320" text-anchor="end" class="viz-muted viz-small">100 · тяжелее всего</text>
+    </svg>
+  </section>
+
+  <!-- Prose from the content file -->
+  <section class="bits-prose" data-prose="cheek">
+    <p class="entry">Щёчка</p>
+    <h2 data-field="cheek-name"></h2>
+    <p class="bits-alt" data-field="cheek-name-alt"></p>
+    <h3>Механика</h3><p data-text="cheek.mechanics"></p>
+    <h3>Стопы и режимы отказа</h3><p data-text="cheek.stop"></p>
+    <h3>Постав головы</h3><p data-text="cheek.head"></p>
+    <h3>Оценка благополучия</h3><p data-text="cheek.welfare"></p>
+  </section>
+
+  <section class="bits-prose" data-prose="mouth">
+    <p class="entry">Грызло</p>
+    <h2 data-field="mouth-name"></h2>
+    <p class="bits-alt" data-field="mouth-name-alt"></p>
+    <h3>Механика</h3><p data-text="mouth.mechanics"></p>
+    <h3>По тканям</h3><p data-text="mouth.tissue"></p>
+    <h3>Оценка благополучия</h3><p data-text="mouth.welfare"></p>
+  </section>
+
+  <section class="bits-prose" data-prose="interaction">
+    <p class="entry">Сочетание</p>
+    <h2>Как взаимодействуют эта щёчка и это грызло</h2>
+    <p data-text="pairing" hidden></p>
+    <ul class="bits-statements" data-interactions></ul>
+    <p class="bits-empty" data-no-interactions hidden>Для этой пары не записано особого взаимодействия сверх двух механизмов, описанных выше.</p>
+  </section>
+
+  <section class="bits-prose" data-prose="verdict">
+    <p class="entry">Вердикт</p>
+    <h2>Что это значит для лошади</h2>
+    <ul class="bits-statements">
+      <li data-say="v-reference">При опорных условиях (20 Н на каждый повод, голова на вертикали) пиковое давление — <span data-field="ref-peak"></span> — ткань: <span data-field="ref-site"></span>; <span data-field="ref-verdict"></span></li>
+      <li data-say="v-kind" data-tone="good">В этом реестре оно среди самых мягких. Оно всё равно работает давлением и его отпусканием: лошадь просят найти положение, в котором дискомфорт прекращается, и рот — та структура, которая несёт эту просьбу.</li>
+      <li data-say="v-mid" data-tone="warn">В этом реестре оно посередине: не создано, чтобы причинять боль, но имеет хотя бы один механизм (перечислен выше), который концентрирует нагрузку или убирает стоп.</li>
+      <li data-say="v-harsh" data-tone="bad">В этом реестре оно среди самых жёстких. Его конструкция опирается на боль или её убедительную угрозу, и при измеренных натяжениях повода оно превышает болевой порог лица человека хотя бы на одной ткани.</li>
+      <li data-say="v-rplus">Любые удила, включая эти, работают отрицательным подкреплением: прикладывается неприятное давление и снимается, когда лошадь подчиняется. Реестр измеряет, насколько оно неприятно, насколько точно его можно снять и защищает ли что-нибудь лошадь, когда рука его не снимает.</li>
+      <li data-say="v-lift" data-tone="bad">Без механического стопа против подъёма единственная защита углов губ — сдержанность всадника. В миг испуга или сопротивления её нет.</li>
+      <li data-say="v-chain" data-tone="warn">Подбородная ямка — кожа на кости. Голая цепочка при этой настройке даёт <span data-field="chin-kpa"></span>; накладка распределяет это примерно до четверти.</li>
+    </ul>
+  </section>
+
+  <section class="bits-prose" data-prose="model">
+    <p class="entry">Модель</p>
+    <h2>Что принято и откуда это взято</h2>
+    <p>Всё выше следует из статического равновесия и простой контактной модели. Вывод и каждый параметр опубликованы, чтобы любое число можно было проверить или изменить.</p>
+    <h3>Силы</h3>
+    <p>Каждая щёчка рассматривается как жёсткий рычаг с осью в грызле. Повод тянет за нижнее плечо длиной <em>s</em> с натяжением <em>F</em> под углом <em>θ</em> к голове; цепочка (если есть) тянет за верхнее плечо длиной <em>p</em>. Баланс моментов после поворота щёчки на <em>ρ</em>:</p>
+    <p class="bits-formula">F · s · sin(θ + ρ) = C · p · cos ρ + T · p · sin ρ</p>
+    <p>При цепочке нащёчный ремень несёт 15 % момента, а цепочка — остальное, как показывают прямые измерения сил Кросса и соавторов. Без цепочки ремень несёт всё, и щёчка поворачивается, пока губы не остановят подъём грызла. У скользящего гага ремень — шнур через блок: ветвь к затылку несёт <em>F·e<sup>−μπ/2</sup></em>. Ткани получают векторную сумму сил повода, цепочки и ремня: составляющая к нижней челюсти ложится на язык и дёсны, составляющая к затылку — на углы губ (за вычетом того, что берёт фиксированная щёчка).</p>
+    <h3>Давления</h3>
+    <p>Грызло радиуса <em>r</em> , вдавленное в ткань на глубину <em>δ</em> , касается полоски шириной <em>2√(2rδ − δ²)</em>. На дёснах глубина ограничена 1,5 мм слизистой над костью; на языке принято 5 мм. Ширина, умноженная на длину контакта и на долю поверхности, которая действительно касается (меньше единицы у витых, зазубренных и многозвенных), — это площадь контакта; нагрузка, делённая на неё и умноженная на фактор ребра для рёбер и наклонных пластин, — давление. Пороги взяты из сравнения давлений повода с болевыми порогами давления у человека.</p>
+    <table class="bits-table" data-params>
+      <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th><th scope="col">Основание</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <h3>Границы</h3>
+    <p>Статика, две координаты, одна лошадь средних размеров. Динамические пики, несимметричный повод, движение языка, слюна и собственное напряжение лошади не моделируются. Веса индекса — суждения и показаны как таковые. Модель ранжирует механизмы друг относительно друга; травму конкретной лошади она не предсказывает.</p>
+  </section>
+
+  <section class="bits-prose bits-sources" data-prose="sources">
+    <p class="entry">Источники</p>
+    <h2>Использованные измерения и исследования</h2>
+    <ol data-sources></ol>
+  </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__bottom">
+    <img class="footer__flag" src="../../../../assets/flag.png" alt="Флаг Империи Хроссагрид" width="120" height="80">
+    <p class="footer__disclaimer">К сожалению, Хроссагрид — вымышленная страна. Этот сайт — проект по конструированию мира и не имеет отношения ни к одному реальному государству, правительству или официальному органу. :(</p>
+    <p class="footer__meta">Империя Хроссагрид · Имперский государственный портал · hrossagrith.github.io</p>
+  </div>
+</footer>
+
+<template id="tpl-option">
+  <label><span></span><select></select></label>
+</template>
+<template id="tpl-param-row"><tr><th scope="row"></th><td class="num"></td><td></td></tr></template>
+<template id="tpl-source"><li><span></span> <a target="_blank" rel="noopener"></a></li></template>
+<template id="tpl-interaction"><li></li></template>
+<template id="tpl-axis-tick"><g><line class="viz-grid"/><text class="viz-muted viz-small" text-anchor="middle"></text></g></template>
+
+<script src="../../../../assets/theme.js"></script>
+<script src="../../../../assets/site.js"></script>
+<script src="../../../../assets/bits-model.js"></script>
+<script src="../../../../assets/bits.js"></script>
+</body>
+</html>

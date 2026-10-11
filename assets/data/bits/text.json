@@ -1,0 +1,1783 @@
+{
+ "ui": {
+  "unit_N": {
+   "en": "N",
+   "ru": "Н"
+  },
+  "unit_kPa": {
+   "en": "kPa",
+   "ru": "кПа"
+  },
+  "unit_mm": {
+   "en": "mm",
+   "ru": "мм"
+  },
+  "unit_mm2": {
+   "en": "mm²",
+   "ru": "мм²"
+  },
+  "load_error": {
+   "en": "The register data could not be loaded. Reload the page.",
+   "ru": "Данные реестра не загрузились. Обновите страницу."
+  },
+  "validity_common": {
+   "en": "Common",
+   "ru": "Распространено"
+  },
+  "validity_exists": {
+   "en": "Exists",
+   "ru": "Существует"
+  },
+  "validity_rare": {
+   "en": "Rare",
+   "ru": "Редко"
+  },
+  "validity_theoretical": {
+   "en": "Theoretical",
+   "ru": "Теоретически"
+  },
+  "validity_invalid": {
+   "en": "Impossible",
+   "ru": "Невозможно"
+  },
+  "rank_line": {
+   "en": "Rank {rank} of {total} manufactured combinations, kindest first",
+   "ru": "Место {rank} из {total} выпускаемых сочетаний, от самого мягкого"
+  },
+  "index_short": {
+   "en": "index",
+   "ru": "индекс"
+  },
+  "rank_short": {
+   "en": "rank {rank}",
+   "ru": "место {rank}"
+  },
+  "kindest_made": {
+   "en": "Kindest of everything that is made",
+   "ru": "Самое мягкое из всего, что выпускается"
+  },
+  "kindest_common": {
+   "en": "Kindest of the common bits",
+   "ru": "Самое мягкое из распространённых"
+  },
+  "harshest_common": {
+   "en": "Harshest of the common bits",
+   "ru": "Самое жёсткое из распространённых"
+  },
+  "harshest_made": {
+   "en": "Harshest of everything that is made",
+   "ru": "Самое жёсткое из всего, что выпускается"
+  },
+  "extreme_meta": {
+   "en": "Index {index} · rank {rank} of {total} · peak {peak} on the {site}",
+   "ru": "Индекс {index} · место {rank} из {total} · пик {peak}: {site}"
+  },
+  "tissue_bars": {
+   "en": "bars",
+   "ru": "дёсны (беззубый край)"
+  },
+  "tissue_tongue": {
+   "en": "tongue",
+   "ru": "язык"
+  },
+  "tissue_lips": {
+   "en": "corners of the mouth",
+   "ru": "углы губ"
+  },
+  "tissue_chin": {
+   "en": "chin groove",
+   "ru": "подбородная ямка"
+  },
+  "tissue_poll": {
+   "en": "poll",
+   "ru": "затылок"
+  },
+  "peak_good": {
+   "en": "That is below the band found pain-free in the human comparison.",
+   "ru": "Это ниже полосы, которую в сравнении с человеком сочли безболезненной."
+  },
+  "peak_warning": {
+   "en": "That is above the pain-free band and below the human facial pain threshold: discomfort, not yet acute pain.",
+   "ru": "Это выше безболезненной полосы, но ниже болевого порога лица человека: дискомфорт, ещё не острая боль."
+  },
+  "peak_serious": {
+   "en": "That exceeds the human facial pressure-pain threshold.",
+   "ru": "Это превышает болевой порог давления на лицо человека."
+  },
+  "peak_critical": {
+   "en": "That exceeds the human pressure-pain threshold of the hand as well: acute pain by any mammalian standard.",
+   "ru": "Это превышает и болевой порог кисти человека: острая боль по любой меркe для млекопитающих."
+  },
+  "level_good": {
+   "en": "below pain-free bound",
+   "ru": "ниже безболезненной границы"
+  },
+  "level_warning": {
+   "en": "discomfort",
+   "ru": "дискомфорт"
+  },
+  "level_serious": {
+   "en": "above facial threshold",
+   "ru": "выше порога лица"
+  },
+  "level_critical": {
+   "en": "above hand threshold",
+   "ru": "выше порога кисти"
+  },
+  "poll_note_baucher": {
+   "en": "Measured with sensors on rein and cheekpiece, the hanging cheek lowers cheekpiece tension at 0–30 N of rein rather than raising it: there is no lever, so there is no poll pressure to speak of.",
+   "ru": "По измерениям датчиками на поводе и нащёчном ремне подвесная щёчка при 0–30 Н на поводе снижает натяжение ремня, а не повышает: рычага нет, значит нет и заметного давления на затылок."
+  },
+  "poll_note_loose": {
+   "en": "A loose ring passes a little rein tension to the cheekpiece because the ring turns like a small pulley; the measured transfer is modest.",
+   "ru": "Подвижное кольцо передаёт немного натяжения на нащёчный ремень, поворачиваясь как маленький шкив; измеренная передача невелика."
+  },
+  "poll_note_direct": {
+   "en": "A fixed-ring snaffle passes almost nothing to the poll.",
+   "ru": "Трензель с фиксированными кольцами почти ничего не передаёт на затылок."
+  },
+  "poll_note_curb": {
+   "en": "With a chain the restoring moment goes to the chin; direct measurements show the poll receives only a small share.",
+   "ru": "При цепочке восстанавливающий момент уходит на подбородок; прямые измерения показывают, что затылку достаётся лишь малая доля."
+  },
+  "poll_note_gag_slide": {
+   "en": "The cord to the poll carries the rein tension less friction; this is one of the few designs where the poll load is real.",
+   "ru": "Шнур к затылку несёт натяжение повода за вычетом трения; это одна из немногих конструкций, где нагрузка на затылок реальна."
+  },
+  "poll_note_gag_lever": {
+   "en": "Without a chain the cheekpiece is the only thing resisting rotation, so it tightens until the mouthpiece has risen as far as the lips allow.",
+   "ru": "Без цепочки вращению сопротивляется только нащёчный ремень, поэтому он натягивается до тех пор, пока грызло не поднимется настолько, насколько позволят губы."
+  },
+  "snaffle_rein": {
+   "en": "snaffle rein",
+   "ru": "трензельный повод"
+  },
+  "amp_line": {
+   "en": "Onto tongue and bars: {press} total, {amp}× the rein component in that direction",
+   "ru": "На язык и дёсны: {press} всего, {amp}× составляющей повода в этом направлении"
+  },
+  "rho_line": {
+   "en": "shank rotation ρ = {rho}°",
+   "ru": "поворот щёчки ρ = {rho}°"
+  },
+  "palate_risk": {
+   "en": "palate risk {r}",
+   "ru": "риск для нёба {r}"
+  },
+  "scale_line": {
+   "en": "to scale: 1 mm = {px} px · mouthpiece {d}",
+   "ru": "в масштабе: 1 мм = {px} px · грызло {d}"
+  },
+  "fit_line": {
+   "en": "tongue left {mm} of its {full}",
+   "ru": "языку осталось {mm} из {full}"
+  },
+  "stop_suspension": {
+   "en": "fixed cheek holds it here",
+   "ru": "фиксированная щёчка держит здесь"
+  },
+  "stop_chain": {
+   "en": "shank stops at {rho}°; mouthpiece does not rise",
+   "ru": "щёчка останавливается при {rho}°; грызло не поднимается"
+  },
+  "stop_cheekpiece": {
+   "en": "cheekpiece taut after {mm}",
+   "ru": "нащёчный ремень натянется через {mm}"
+  },
+  "stop_fitted": {
+   "en": "rubber stop at {mm}",
+   "ru": "резиновый стопор на {mm}"
+  },
+  "stop_none": {
+   "en": "no stop before the cheek teeth",
+   "ru": "до коренных зубов стопора нет"
+  },
+  "stop_tissue": {
+   "en": "stretch of the lip · the only stop",
+   "ru": "растяжение губы · единственный стоп"
+  },
+  "lift_line": {
+   "en": "modelled rise at this tension: {mm}",
+   "ru": "расчётный подъём при этом натяжении: {mm}"
+  },
+  "rot_chain": {
+   "en": "chain engages at {rho}°: rotation stops, force does not",
+   "ru": "цепочка срабатывает при {rho}°: вращение останавливается, сила — нет"
+  },
+  "rot_gag_lever": {
+   "en": "none: rotates to {rho}° until the lips stop it",
+   "ru": "нет: вращается до {rho}°, пока не остановят губы"
+  },
+  "rot_pulley": {
+   "en": "not applicable: the ring is a pulley, the bit slides",
+   "ru": "не применимо: кольцо — шкив, удила скользят"
+  },
+  "rot_direct": {
+   "en": "not applicable: no lever",
+   "ru": "не применимо: рычага нет"
+  },
+  "guard_full": {
+   "en": "ring cannot be pulled into the mouth",
+   "ru": "кольцо нельзя протянуть в рот"
+  },
+  "guard_part": {
+   "en": "partial: a hard one-sided pull can still draw the ring in",
+   "ru": "частично: сильный односторонний повод всё же может втянуть кольцо"
+  },
+  "guard_none": {
+   "en": "ring can be pulled through on a one-sided pull",
+   "ru": "при одностороннем поводе кольцо протягивается в рот"
+  },
+  "bias_line": {
+   "en": "Least pain under a holding hand: {posture}",
+   "ru": "Меньше всего боли при неуступающей руке: {posture}"
+  },
+  "btv_above": {
+   "en": "pushes the other way, by making the corners of the mouth the cheapest place to carry the load; that is not a correction, it is a different pain",
+   "ru": "толкает в обратную сторону, делая углы губ самым «дешёвым» местом для нагрузки; это не исправление, а другая боль"
+  },
+  "btv_correct": {
+   "en": "does not reward curling under a holding hand; it is the least bad option this register has for such a horse",
+   "ru": "не вознаграждает закручивание при неуступающей руке; для такой лошади это наименее плохой вариант в реестре"
+  },
+  "btv_vertical": {
+   "en": "is close to neutral and will follow the hand",
+   "ru": "близко к нейтральному и будет следовать за рукой"
+  },
+  "btv_btv": {
+   "en": "will push it further behind the vertical",
+   "ru": "загонит её ещё дальше за вертикаль"
+  },
+  "ref_good": {
+   "en": "below the pain-free band.",
+   "ru": "ниже безболезненной полосы."
+  },
+  "ref_warning": {
+   "en": "above the pain-free band, below the facial pain threshold.",
+   "ru": "выше безболезненной полосы, ниже болевого порога лица."
+  },
+  "ref_serious": {
+   "en": "above the human facial pain threshold.",
+   "ru": "выше болевого порога лица человека."
+  },
+  "ref_critical": {
+   "en": "above the human hand pain threshold.",
+   "ru": "выше болевого порога кисти человека."
+  },
+  "lips_short": {
+   "en": "lips",
+   "ru": "губы"
+  }
+ },
+ "model_params": [
+  {
+   "group": "mouth",
+   "key": "mouth_width",
+   "label": {
+    "en": "Mouth width",
+    "ru": "Ширина рта"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Mean of 554 horses and ponies, range 95–165 (Helsinki oral dimensions study, 2022).",
+    "ru": "Среднее по 554 лошадям и пони, диапазон 95–165 (хельсинкское исследование размеров рта, 2022)."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "bit_space",
+   "label": {
+    "en": "Bit space above the tongue",
+    "ru": "Пространство для удил над языком"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Mean 14.0, range 5–22 (same study): the room for a mouthpiece without compressing the tongue.",
+    "ru": "Среднее 14,0, диапазон 5–22 (то же исследование): место для грызла без сжатия языка."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "tongue_thickness",
+   "label": {
+    "en": "Tongue thickness",
+    "ru": "Толщина языка"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Mean 15.8, range 9–22, measured in 79 horses (same study).",
+    "ru": "Среднее 15,8, диапазон 9–22, измерено у 79 лошадей (то же исследование)."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "tongue_contact_width",
+   "label": {
+    "en": "Tongue width under the mouthpiece",
+    "ru": "Ширина языка под грызлом"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Modelling assumption: lower jaw width at the interdental space is 29.5 mm on average; the tongue fills it and bulges slightly over the bars.",
+    "ru": "Допущение модели: ширина нижней челюсти в беззубом крае в среднем 29,5 мм; язык заполняет её и слегка нависает над дёснами."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "bar_width",
+   "label": {
+    "en": "Bar crest width, each side",
+    "ru": "Ширина гребня десны, каждая сторона"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Modelling assumption from mandible anatomy: the mouthpiece crosses a ridge roughly 10–15 mm wide.",
+    "ru": "Допущение модели по анатомии нижней челюсти: грызло пересекает гребень шириной примерно 10–15 мм."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "bar_mucosa",
+   "label": {
+    "en": "Mucosa over the bone of the bars",
+    "ru": "Слизистая над костью десны"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "1–2 mm (Helsinki study). It limits how deep a mouthpiece can sink before bone stops it, so thin mouthpieces touch along a narrow strip.",
+    "ru": "1–2 мм (хельсинкское исследование). Ограничивает глубину вдавливания до кости, поэтому тонкое грызло касается узкой полоской."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "tongue_indent",
+   "label": {
+    "en": "Indentation into the tongue",
+    "ru": "Вдавливание в язык"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Modelling assumption consistent with radiographs at 25 N, where the tongue indents under the mouthpiece rather than the palate being touched.",
+    "ru": "Допущение модели, согласующееся с рентгенограммами при 25 Н: язык вдавливается под грызлом, а нёбо не касается."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "lip_contact_length",
+   "label": {
+    "en": "Lip contact length, each corner",
+    "ru": "Длина контакта с губой, каждый угол"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Modelling assumption: the fold of the commissure that bears on the mouthpiece and ring.",
+    "ru": "Допущение модели: складка угла рта, опирающаяся на грызло и кольцо."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "lip_indent",
+   "label": {
+    "en": "Indentation into the lip",
+    "ru": "Вдавливание в губу"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Modelling assumption; the lip is soft but thin.",
+    "ru": "Допущение модели; губа мягкая, но тонкая."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "chin_area_chain",
+   "label": {
+    "en": "Chain contact in the chin groove",
+    "ru": "Контакт цепочки в подбородной ямке"
+   },
+   "unit": {
+    "en": "mm²",
+    "ru": "мм²"
+   },
+   "basis": {
+    "en": "A flat-lying double-link chain about 8 mm wide over 30 mm of groove.",
+    "ru": "Плоско лежащая двойная цепочка шириной около 8 мм на 30 мм ямки."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "chin_area_guarded",
+   "label": {
+    "en": "Chain contact with a rubber or leather guard",
+    "ru": "Контакт цепочки с резиновой или кожаной накладкой"
+   },
+   "unit": {
+    "en": "mm²",
+    "ru": "мм²"
+   },
+   "basis": {
+    "en": "A guard roughly 25 × 36 mm.",
+    "ru": "Накладка примерно 25 × 36 мм."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "poll_area",
+   "label": {
+    "en": "Headpiece contact on the poll",
+    "ru": "Контакт затылочного ремня"
+   },
+   "unit": {
+    "en": "mm²",
+    "ru": "мм²"
+   },
+   "basis": {
+    "en": "A 40 mm headpiece over 60 mm of poll.",
+    "ru": "Ремень 40 мм на 60 мм затылка."
+   }
+  },
+  {
+   "group": "mouth",
+   "key": "commissure_to_premolar",
+   "label": {
+    "en": "Travel from the corner of the mouth to the first cheek tooth",
+    "ru": "Путь от угла рта до первого коренного зуба"
+   },
+   "unit": {
+    "en": "mm",
+    "ru": "мм"
+   },
+   "basis": {
+    "en": "Modelling assumption; cadaver work shows bits that are too wide reach the first lower cheek tooth.",
+    "ru": "Допущение модели; работа на кадаврах показывает, что слишком широкие удила достигают первого нижнего коренного зуба."
+   }
+  },
+  {
+   "group": "thresholds",
+   "key": "pain_free_upper",
+   "label": {
+    "en": "Upper bound of pressures found pain-free",
+    "ru": "Верхняя граница безболезненных давлений"
+   },
+   "unit": {
+    "en": "kPa",
+    "ru": "кПа"
+   },
+   "basis": {
+    "en": "The lowest reported rein pressures (91–108 kPa) were the only ones judged likely pain-free against human thresholds (Musial & Weiss 2025).",
+    "ru": "Лишь самые низкие опубликованные давления повода (91–108 кПа) сочли вероятно безболезненными по человеческим порогам (Musial & Weiss 2025)."
+   }
+  },
+  {
+   "group": "thresholds",
+   "key": "face_ppt",
+   "label": {
+    "en": "Human pressure-pain threshold, face",
+    "ru": "Болевой порог давления у человека, лицо"
+   },
+   "unit": {
+    "en": "kPa",
+    "ru": "кПа"
+   },
+   "basis": {
+    "en": "Musial & Weiss 2025.",
+    "ru": "Musial & Weiss 2025."
+   }
+  },
+  {
+   "group": "thresholds",
+   "key": "hand_ppt",
+   "label": {
+    "en": "Human pressure-pain threshold, hand",
+    "ru": "Болевой порог давления у человека, кисть"
+   },
+   "unit": {
+    "en": "kPa",
+    "ru": "кПа"
+   },
+   "basis": {
+    "en": "Musial & Weiss 2025.",
+    "ru": "Musial & Weiss 2025."
+   }
+  },
+  {
+   "group": "thresholds",
+   "key": "capillary_closure",
+   "label": {
+    "en": "Capillary closing pressure",
+    "ru": "Давление закрытия капилляров"
+   },
+   "unit": {
+    "en": "kPa",
+    "ru": "кПа"
+   },
+   "basis": {
+    "en": "Classic value of about 32 mmHg (Landis 1930); sustained pressure above it makes tissue ischaemic.",
+    "ru": "Классическое значение около 32 мм рт. ст. (Landis 1930); длительное давление выше него делает ткань ишемичной."
+   }
+  },
+  {
+   "group": "defaults",
+   "key": "rein_tension",
+   "label": {
+    "en": "Reference rein tension, each rein",
+    "ru": "Опорное натяжение, каждый повод"
+   },
+   "unit": {
+    "en": "N",
+    "ru": "Н"
+   },
+   "basis": {
+    "en": "Between the ridden walk mean maximum (16.5 N) and trot (23.2 N) of Egenvall et al. 2019.",
+    "ru": "Между средними максимумами под всадником на шагу (16,5 Н) и рыси (23,2 Н) по Egenvall et al. 2019."
+   }
+  },
+  {
+   "group": "defaults",
+   "key": "curb_rein_share",
+   "label": {
+    "en": "Curb rein as a share of the rein tension",
+    "ru": "Доля мундштучного повода в натяжении"
+   },
+   "unit": {
+    "en": "",
+    "ru": ""
+   },
+   "digits": 2,
+   "basis": {
+    "en": "Riders hold the curb rein lighter than the snaffle or bradoon rein; measurements in a double bridle found the curb force below the bradoon force.",
+    "ru": "Мундштучный повод держат легче трензельного; измерения в двойном оголовье показали силу на мундштуке ниже, чем на бридоне."
+   }
+  }
+ ],
+ "sources": [
+  {
+   "text": "Tuomola K., Mäki-Kihniä N., Kujala-Wirth M., Mykkänen A., Valros A. (2019). Oral lesions in the bit area in Finnish trotters after a race: lesion evaluation, scoring, and occurrence. Frontiers in Veterinary Science 6:206. 84 % of 261 trotters had lesions in the bit area.",
+   "url": "https://www.frontiersin.org/articles/10.3389/fvets.2019.00206/full"
+  },
+  {
+   "text": "Tuomola K. et al. (2021). Risk factors for bit-related lesions in Finnish trotting horses. Equine Veterinary Journal 53(6). Bar lesions more frequent with unjointed than jointed mouthpieces.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8518388/"
+  },
+  {
+   "text": "Tuomola K. et al. (2021). Bit-related lesions in event horses after a cross-country test. Frontiers in Veterinary Science 8:651160.",
+   "url": "https://www.frontiersin.org/articles/10.3389/fvets.2021.651160/full"
+  },
+  {
+   "text": "Oral dimensions related to bit size in adult horses and ponies (2022). Frontiers in Veterinary Science 9:879048. Mouth width 131 mm, interdental height 28.9 mm, tongue 15.8 mm, bit space 14.0 mm (means).",
+   "url": "https://www.frontiersin.org/articles/10.3389/fvets.2022.879048/full"
+  },
+  {
+   "text": "Manfredi J., Clayton H. M., Rosenstein D. (2005). Radiographic study of bit position within the horse's oral cavity. Equine and Comparative Exercise Physiology 2(3):195–201. Six bits, rein tension 25 ± 5 N.",
+   "url": "https://doi.org/10.1079/ECP200564"
+  },
+  {
+   "text": "Pollaris E. et al. (2025). Factors influencing the intra-oral movement of the bit: a cadaveric study. Animals 15(18):2648. Unilateral tension and oversize bits increase displacement; loose ring moves most.",
+   "url": "https://www.mdpi.com/2076-2615/15/18/2648"
+  },
+  {
+   "text": "Cross G. H., Cheung M. K. P., Honey T. J., Pau M. K., Senior K. J. (2017). Application of a dual force sensor system to characterize the intrinsic operation of horse bridles and bits. Journal of Equine Veterinary Science 48:129–135. Lever and pulley bits transfer much less to the poll than ideal levers predict; the mouth is a floating fulcrum; the chain diverts the load to the chin.",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0737080615300459"
+  },
+  {
+   "text": "Benoist C., Cross G. (2016). Assessment of poll pressure induced by a Baucher / hanging cheek snaffle. Industry study (Neue Schule), reported in Horse & Hound: cheekpiece tension falls under 0–30 N of rein.",
+   "url": "https://www.horseandhound.co.uk/news/hanging-cheek-snaffle-relieves-poll-pressure-599602"
+  },
+  {
+   "text": "Kau S., Potz I. K., Pospisil K., Sellke L., Schramel J. P., Peham C. (2020). Bit type exerts an influence on self-controlled rein tension in unridden horses. Scientific Reports 10:2420.",
+   "url": "https://www.nature.com/articles/s41598-020-59400-w"
+  },
+  {
+   "text": "Egenvall A., Clayton H. M., Eisersiö M., Roepstorff L., Byström A. (2019). Voluntary rein tension in horses when moving unridden in a dressage frame compared with ridden tests of the same horses. Animals 9(6):321. Ridden mean maxima 16.5 / 23.2 / 35.9 N at walk / trot / canter; unridden 7.5 N.",
+   "url": "https://doi.org/10.3390/ani9060321"
+  },
+  {
+   "text": "Clayton H. M., Singleton W. H., Lanovaz J. L., Cloud G. L. (2005). Strain gauge measurement of rein tension during riding: a pilot study. Equine and Comparative Exercise Physiology 2:203–205. Peaks of 43, 51 and 104 N at walk, trot and canter.",
+   "url": "https://www.cambridge.org/core/journals/equine-and-comparative-exercise-physiology/article/abs/strain-gauge-measurement-of-rein-tension-during-riding-a-pilot-study/2B1EF77B40DC91D45AF5189B673CD301"
+  },
+  {
+   "text": "Christensen J. W., Zharkikh T. L., Antoine A., Malmkvist J. (2011). Rein tension acceptance in young horses in a voluntary test situation. Equine Veterinary Journal 43(2):223–228. Peak about 10 N on day one, then learned avoidance.",
+   "url": "https://doi.org/10.1111/j.2042-3306.2010.00151.x"
+  },
+  {
+   "text": "Musial F., Weiss U. (2025). What if horses were humans? Comparing rein tension and bit pressures to human pressure pain thresholds. Animals 15(20):2989. Face 232 kPa, hand 445 kPa, foot 536 kPa.",
+   "url": "https://doi.org/10.3390/ani15202989"
+  },
+  {
+   "text": "Mellor D. J. (2020). Mouth pain in horses: physiological foundations, behavioural indices, welfare implications, and a suggested solution. Animals 10(4):572.",
+   "url": "https://doi.org/10.3390/ani10040572"
+  },
+  {
+   "text": "Uldahl M., Clayton H. M. (2019). Lesions associated with the use of bits, nosebands, spurs and whips in Danish competition horses. Equine Veterinary Journal 51(2):154–162.",
+   "url": "https://doi.org/10.1111/evj.12827"
+  },
+  {
+   "text": "Björnsdóttir S., Frey R., Kristjansson T., Lundström T. (2014). Bit-related lesions in Icelandic competition horses. Acta Veterinaria Scandinavica 56:40.",
+   "url": "https://doi.org/10.1186/s13028-014-0040-8"
+  },
+  {
+   "text": "Comparison of rein forces and pressure beneath the noseband and headpiece of a snaffle bridle and a double bridle (2025). Animals 15(7):1058. Curb force below bradoon force; each bit of the double bridle carried less than the single snaffle.",
+   "url": "https://www.mdpi.com/2076-2615/15/7/1058"
+  },
+  {
+   "text": "Landis E. M. (1930). Micro-injection studies of capillary blood pressure in human skin. Heart 15:209–228. Capillary pressure about 32 mmHg (classic value).",
+   "url": ""
+  },
+  {
+   "text": "Wikipedia and manufacturer catalogues (Sprenger, Neue Schule, Myler, Bombers) for naming, dimensions and construction of cheeks and mouthpieces; checked against each other, not used for any force figure.",
+   "url": "https://en.wikipedia.org/wiki/Bit_ring"
+  }
+ ],
+ "pairings": {
+  "baucher|ported-jointed": {
+   "en": "This is the Fillis snaffle proper: a hanging cheek with a single-jointed mouthpiece arched over the tongue. The arch gives tongue room, so the cannons bear more on the bars; the fixed cheek stops the arch from rotating and the mouthpiece from riding up. Kinder to the tongue than a plain jointed Baucher, harder on the bars.",
+   "ru": "Это и есть собственно трензель Филлис: подвесная щёчка с одночленным грызлом, выгнутым аркой над языком. Арка даёт языку место, поэтому плечи грызла сильнее ложатся на дёсны; фиксированная щёчка не даёт арке поворачиваться, а грызлу — подниматься. Мягче к языку, чем обычный сочленённый Баушер, жёстче к дёснам."
+  },
+  "pelham|ported": {
+   "en": "Hartwell (Cambridge) pelham. The port spares the tongue and sends the multiplied curb force to the bars; as the shank rotates to the chain the port tips towards the palate. Low ports stay clear; medium and high ones do not.",
+   "ru": "Пелям Хартвелл (Кембридж). Порт щадит язык и направляет умноженную мундштучную силу на дёсны; при повороте щёчки до цепочки порт наклоняется к нёбу. Низкий порт не доходит; средний и высокий — доходят."
+  },
+  "pelham|mullen": {
+   "en": "The classic mullen pelham: the most even way a curb force can be delivered, which is why it is the default pelham for strong horses with sensitive mouths. Even is not gentle: the force is still multiplied.",
+   "ru": "Классический пелям с цельным изогнутым грызлом: самый равномерный способ передать мундштучную силу, поэтому это пелям по умолчанию для сильных лошадей с чувствительным ртом. Равномерно — не значит мягко: сила всё равно умножена."
+  },
+  "pelham|flexible-mullen": {
+   "en": "The rubber pelham of the hunting field. The rubber bar compresses and spreads the load, but it is 18–20 mm thick, crowds a small mouth, and is chewed through; under the curb's multiplied force a worn rubber bar can expose its steel core.",
+   "ru": "Резиновый пелям охотничьего поля. Резиновая штанга сжимается и распределяет нагрузку, но при толщине 18–20 мм теснит маленький рот и прогрызается; под умноженной силой мундштука изношенная резина может обнажить стальной сердечник."
+  },
+  "pelham|single-joint": {
+   "en": "Jointed pelham. The chain multiplies the rein and the joint concentrates it: the cannons fold into the tongue while the shanks rotate, and the hinge is dragged downward and backward by the chain. Among the pelhams this is the one most often reported to make horses gape.",
+   "ru": "Пелям с сочленением. Цепочка умножает повод, а сочленение концентрирует: плечи складываются в язык при повороте щёчек, а шарнир цепочка тянет вниз и назад. Среди пелямов именно этот чаще других заставляет лошадь раскрывать рот."
+  },
+  "d-ring|ported": {
+   "en": "The Hanoverian pattern: a ported mouth on a fixed D, usually with rollers on the cannons. The D stops lateral pull-through, the port loads the bars and the rollers invite the tongue to move. A snaffle with a curb's mouthpiece.",
+   "ru": "Ганноверская схема: грызло с портом на фиксированной D-щёчке, обычно с роликами на плечах. D не даёт протянуть удила вбок, порт нагружает дёсны, ролики побуждают язык двигаться. Трензель с мундштучным грызлом."
+  },
+  "scorrier|serrated": {
+   "en": "The Scorrier as made: inner rings on the cheekpieces squeeze the cheeks inward when either rein is used, and the serrated cannons grip rather than slide. Built for a horse that was pulling a cart or a hunt follower who could not stop; nothing about it is designed around the mouth.",
+   "ru": "Скорриер, каким его делают: внутренние кольца на нащёчных ремнях сжимают щёки внутрь при любом поводе, а зазубренные плечи цепляются, а не скользят. Создан для лошади, тянущей повозку, или всадника на охоте, который не мог остановиться; ничто в нём не рассчитано на рот."
+  },
+  "loose-ring|roller-jointed": {
+   "en": "Cherry roller or Magenis loose ring. The rollers keep the tongue busy and stop the horse setting its jaw against a fixed surface; the squared cannons of the Magenis add an edge to the bars. A busy mouth is not a comfortable one.",
+   "ru": "«Вишнёвые» ролики или Магенис с подвижными кольцами. Ролики занимают язык и мешают лошади упереться челюстью в неподвижную поверхность; квадратные в сечении плечи Магениса добавляют грань на дёснах. Занятый рот — не значит удобный."
+  },
+  "kimblewick|ported": {
+   "en": "The classic Kimblewick: a ported curb mouth on a D with a short purchase and a chain. Mild as curbs go because the lever arm is a ring radius, but the port rotates towards the palate like any curb's, and the rein slides so the action changes with the hand height.",
+   "ru": "Классический кимблвик: мундштучное грызло с портом на D-кольце с коротким верхним плечом и цепочкой. Мягкий по мундштучным меркам — плечо рычага равно радиусу кольца, но порт поворачивается к нёбу, как у любого мундштука, а повод скользит, и действие меняется с высотой руки."
+  },
+  "weymouth-fixed|ported": {
+   "en": "The standard dressage Weymouth: a low port on a fixed cheek, always alongside a bradoon. Two mouthpieces share a 14 mm space; the direct force sensors of Cross and colleagues recorded the curb and bradoon mouthpieces interfering with each other, so the 'independent' action of the double bridle is partly fictional.",
+   "ru": "Стандартный выездковый мундштук: низкий порт на неподвижной щёчке, всегда вместе с бридоном. Два грызла делят пространство в 14 мм; датчики Кросса и соавторов зафиксировали взаимное задевание мундштучного и трензельного грызла, так что «независимое» действие двойного оголовья отчасти фикция."
+  },
+  "banbury|mullen": {
+   "en": "The Banbury exists only in this form: a tapered round bar passing through the cheeks so each shank turns on its own. One rein can act without the other, and the mouthpiece cannot be rotated onto the palate; the bar rolling on the tongue is its own irritation.",
+   "ru": "Банбери существует только в таком виде: сужающаяся круглая штанга проходит сквозь щёчки, и каждая щёчка поворачивается сама по себе. Один повод может действовать без другого, а грызло нельзя повернуть на нёбо; но штанга, катающаяся по языку, раздражает сама."
+  },
+  "balding-gag|roller-jointed": {
+   "en": "The cherry roller gag of the show jumping warm-up: a sliding gag with a jointed roller mouth. The pulley lifts the rollers into the corners of the mouth; nothing stops the rise but the lips.",
+   "ru": "Роликовый гаг разминочного поля конкура: скользящий гаг с сочленённым роликовым грызлом. Шкив тянет ролики в углы губ; подъём не останавливает ничто, кроме губ."
+  },
+  "balding-gag|waterford": {
+   "en": "The Waterford gag. Riders choose it because the horse cannot lean on a chain of balls; the gag then drags that chain into the corners of the mouth with the rein tension plus the cord tension.",
+   "ru": "Гаг Ватерфорд. Его выбирают, потому что на цепочку шариков лошадь не может опереться; гаг же тянет эту цепочку в углы губ силой повода плюс натяжение шнура."
+  },
+  "dutch-gag|flexible-mullen": {
+   "en": "The 'soft' Dutch gag. The rubber bar is the kindest mouthpiece this cheek can carry, and the cheek still lifts it 20–25 mm up the face on the lower rings. The softness is in the wrong place.",
+   "ru": "«Мягкий» голландский гаг. Резиновая штанга — самое мягкое грызло, какое может нести эта щёчка, и щёчка всё равно поднимает его на 20–25 мм вверх по лицу на нижних кольцах. Мягкость не там, где нужно."
+  },
+  "dutch-gag|waterford": {
+   "en": "A Waterford on a ring stack: the links are rotated with the stack and lifted into the corners of the mouth. Common in jumping; one of the harder manufactured gags on the lips.",
+   "ru": "Ватерфорд на стопке колец: звенья поворачиваются вместе со стопкой и поднимаются в углы губ. Распространён в конкуре; один из самых жёстких для губ среди выпускаемых гагов."
+  },
+  "full-cheek|french-link": {
+   "en": "With keepers, the fixed cheek holds the mouthpiece at a set angle. A French link that lies flat on a loose ring is held tilted here, and its edge, not its face, meets the tongue: the kindest double joint becomes a Dr. Bristol in effect.",
+   "ru": "С держателями фиксированная щёчка удерживает грызло под заданным углом. Французское звено, которое на подвижных кольцах лежит плоско, здесь зафиксировано с наклоном, и языка касается его ребро, а не плоскость: самое мягкое двойное сочленение по действию становится «Доктором Бристолем»."
+  },
+  "full-cheek|keys": {
+   "en": "The classic mouthing bit for young horses: a straight bar with keys, full cheeks so it cannot be pulled through, keepers so it hangs still. The keys teach the horse to mouth the bit; the straight bar lies on the bars. A training tool whose purpose is habituation to a foreign object.",
+   "ru": "Классический трензель для заездки: прямая штанга с ключиками, усики, чтобы не протянуть, держатели, чтобы висел неподвижно. Ключики приучают лошадь жевать удила; прямая штанга ложится на дёсны. Инструмент, чья цель — привыкание к постороннему предмету."
+  },
+  "eggbutt|angled-lozenge": {
+   "en": "The common modern dressage snaffle: fixed oval rings, no pinch, an anatomically curved double joint with the lozenge angled forward. Among snaffles this is close to the best distribution of a direct force; it is still a direct force on the tongue and bars.",
+   "ru": "Распространённый современный выездковый трензель: фиксированные овальные кольца без защемления, анатомически изогнутое двойное сочленение с наклонной «конфеткой». Среди трензелей это почти лучшее распределение прямой силы; это всё ещё прямая сила на язык и дёсны."
+  },
+  "loose-ring|angled-lozenge": {
+   "en": "The same mouthpiece on loose rings: more movement, more mouthing, and the ring's hole at the corner of the lip. The lozenge itself is among the kindest centres; the ring decides the rest.",
+   "ru": "То же грызло на подвижных кольцах: больше движения, больше жевания и отверстие кольца у угла губы. Сама «конфетка» — одно из самых мягких центральных звеньев; остальное решает кольцо."
+  },
+  "loose-ring|twisted-wire": {
+   "en": "A 4–5 mm twisted wire on loose rings. The thinnest manufactured mouthpiece on the most mobile cheek: the wire indents to the bone of the bars along a strip a few millimetres wide, the ridges concentrate the load further, and the ring can pinch the lip. At ordinary contact this exceeds every pain threshold in the model.",
+   "ru": "Витая проволока 4–5 мм на подвижных кольцах. Самое тонкое выпускаемое грызло на самой подвижной щёчке: проволока вдавливается до кости дёсен полоской в несколько миллиметров, ребра дополнительно концентрируют нагрузку, а кольцо может защемить губу. При обычном контакте это превышает все болевые пороги модели."
+  }
+ },
+ "interactions": [
+  {
+   "when": {
+    "mechanisms": [
+     "gag-slide"
+    ],
+    "joints": 1
+   },
+   "tone": "bad",
+   "text": {
+    "en": "Pulley plus single joint: as the bit is lifted, the hinge is pulled upward and the cannons hang from it in an inverted V, so their outer ends dig into the corners of the mouth and the tongue is squeezed between them from above. The lift turns the nutcracker upside down.",
+    "ru": "Шкив плюс одно сочленение: при подъёме шарнир тянется вверх, плечи висят на нём перевёрнутой буквой V, их наружные концы врезаются в углы губ, а язык сжимается между ними сверху. Подъём переворачивает «щипцы для орехов»."
+   }
+  },
+  {
+   "when": {
+    "mechanisms": [
+     "gag-slide",
+     "gag-lever"
+    ],
+    "families": [
+     "multi"
+    ]
+   },
+   "tone": "warn",
+   "text": {
+    "en": "A linked mouthpiece on a lifting cheek: the links cannot be leaned on, which is why it is chosen, and are dragged one after another into the corner of the lip as the bit rises.",
+    "ru": "Многозвенное грызло на поднимающей щёчке: на звенья нельзя опереться — за это его и выбирают, — и они одно за другим затягиваются в угол губы по мере подъёма удил."
+   }
+  },
+  {
+   "when": {
+    "suspended": true,
+    "plate": true
+   },
+   "tone": "warn",
+   "text": {
+    "en": "A fixed cheek holds the centre plate at an angle. Lying flat the plate is the kindest link; held on edge it is the harshest. Check the plate's resting angle with the keepers fastened.",
+    "ru": "Фиксированная щёчка удерживает центральную пластину под углом. Лёжа плоско, пластина — самое мягкое звено; поставленная на ребро — самое жёсткое. Проверьте угол пластины при застёгнутых держателях."
+   }
+  },
+  {
+   "when": {
+    "chain": true,
+    "joints": 1
+   },
+   "tone": "bad",
+   "text": {
+    "en": "Chain plus single joint: the rotation that tightens the chain also folds the two cannons, so the multiplied force arrives at the tongue through the hinge and at the bars through two angled cannon ends. The joint then rises as the shanks turn, bringing the palate into play.",
+    "ru": "Цепочка плюс одно сочленение: поворот, натягивающий цепочку, одновременно складывает оба плеча, и умноженная сила приходит на язык через шарнир, а на дёсны — через два наклонённых конца плечей. Затем при повороте щёчек шарнир поднимается, и в дело вступает нёбо."
+   }
+  },
+  {
+   "when": {
+    "chain": true,
+    "mouths": [
+     "ported",
+     "ported-jointed"
+    ]
+   },
+   "tone": "warn",
+   "text": {
+    "en": "The port rotates with the shank. At the chain's engagement angle a low port still clears the palate; a medium or high port does not, and a loose chain lets it travel further.",
+    "ru": "Порт поворачивается вместе со щёчкой. При угле срабатывания цепочки низкий порт ещё не достигает нёба; средний и высокий достигают, а слабая цепочка позволяет пройти дальше."
+   }
+  },
+  {
+   "when": {
+    "chain": true,
+    "mouths": [
+     "mullen",
+     "flexible-mullen",
+     "straight-bar"
+    ]
+   },
+   "text": {
+    "en": "An unjointed bar on a curb: the multiplied force is at least spread across the whole tongue and both bars rather than concentrated at a hinge. This is the least bad way to deliver a curb.",
+    "ru": "Цельная штанга на мундштуке: умноженная сила хотя бы распределяется по всему языку и обоим краям дёсен, а не концентрируется в шарнире. Это наименее плохой способ подать мундштучное действие."
+   }
+  },
+  {
+   "when": {
+    "chain": true,
+    "textured": true
+   },
+   "tone": "bad",
+   "text": {
+    "en": "A textured or thin mouthpiece under a lever: the lever multiplies the force and the texture concentrates it. Two multipliers on the same tissue.",
+    "ru": "Рельефное или тонкое грызло под рычагом: рычаг умножает силу, рельеф её концентрирует. Два множителя на одной ткани."
+   }
+  },
+  {
+   "when": {
+    "ring_through": true,
+    "textured": true
+   },
+   "tone": "bad",
+   "text": {
+    "en": "A loose ring on a thin or textured mouthpiece: the hole in the mouthpiece end is wide relative to the thin bar, so the lip fold enters it easily and is pinched as the ring rotates.",
+    "ru": "Подвижное кольцо на тонком или рельефном грызле: отверстие на конце грызла широко относительно тонкой штанги, складка губы легко входит в него и защемляется при вращении кольца."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "loose-ring"
+    ],
+    "joints": 1
+   },
+   "tone": "warn",
+   "text": {
+    "en": "The most mobile cheek on the most mobile mouthpiece: in the cadaver study this pairing moved the most of all under one-sided rein tension, towards the first cheek tooth.",
+    "ru": "Самая подвижная щёчка на самом подвижном грызле: в исследовании на кадаврах эта пара смещалась больше всех при одностороннем натяжении повода — к первому коренному зубу."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "eggbutt",
+     "d-ring",
+     "half-cheek"
+    ],
+    "joints": 1
+   },
+   "text": {
+    "en": "Fixed rings take the lip pinch out of the single joint and reduce how far it slides; they do nothing about the fold of the cannons on the tongue.",
+    "ru": "Фиксированные кольца убирают защемление губы одиночным сочленением и уменьшают его скольжение; на складывание плечей на языке они не влияют."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "dutch-gag",
+     "american-gag"
+    ],
+    "chain": false,
+    "joints": 1
+   },
+   "tone": "bad",
+   "text": {
+    "en": "The ring stack rotates with the mouthpiece and has no chain to stop it. The single joint is therefore rotated as well as lifted: the hinge swings upward towards the palate while the whole mouthpiece rides into the corners of the mouth.",
+    "ru": "Стопка колец поворачивается вместе с грызлом, и цепочки, которая бы её остановила, нет. Поэтому одиночное сочленение не только поднимается, но и поворачивается: шарнир уходит вверх к нёбу, а всё грызло въезжает в углы губ."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "dutch-gag"
+    ],
+    "chain": true
+   },
+   "tone": "warn",
+   "text": {
+    "en": "With a curb strap the ring stack stops rotating and starts multiplying: the Dutch gag becomes a pelham with a short purchase. The lift disappears and the chin and bars take the multiplied load instead.",
+    "ru": "С подбородным ремешком стопка колец перестаёт вращаться и начинает умножать: голландский гаг превращается в пелям с коротким верхним плечом. Подъём исчезает, а умноженную нагрузку получают подбородок и дёсны."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "banbury"
+    ]
+   },
+   "text": {
+    "en": "The Banbury's mouthpiece turns in the cheeks, so the shank rotation is not transmitted to it and it cannot be tipped onto the palate; each rein also works its own side, which is the design's purpose and its ambiguity.",
+    "ru": "Грызло Банбери вращается в щёчках, поэтому поворот щёчки на него не передаётся и его нельзя наклонить на нёбо; к тому же каждый повод работает со своей стороной — в этом и замысел конструкции, и её неоднозначность."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "weymouth-fixed",
+     "weymouth-sliding",
+     "banbury"
+    ]
+   },
+   "tone": "warn",
+   "text": {
+    "en": "Always one of two mouthpieces. The bradoon above it adds its own direct load and its own 12 mm of thickness; the two were recorded physically interfering with each other under rein tension.",
+    "ru": "Всегда одно из двух грызл. Бридон над ним добавляет свою прямую нагрузку и свои 12 мм толщины; зафиксировано, что под натяжением повода они физически задевают друг друга."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "weymouth-fixed",
+     "weymouth-sliding"
+    ],
+    "joints": 1
+   },
+   "tone": "bad",
+   "text": {
+    "en": "A jointed Weymouth is made but seldom: the chain multiplies the rein, the joint concentrates it, and the bradoon beside it leaves no room for the hinge to sink into the tongue. The concentration goes to the bars.",
+    "ru": "Сочленённый мундштук делают, но редко: цепочка умножает повод, сочленение концентрирует, а бридон рядом не оставляет шарниру места, чтобы уйти в язык. Концентрация уходит на дёсны."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "full-cheek",
+     "fulmer",
+     "nelson-gag"
+    ],
+    "textured": true
+   },
+   "tone": "warn",
+   "text": {
+    "en": "Full cheeks keep the bit still, which is a virtue with a smooth mouthpiece and a vice with a textured one: the ridges are held in one place on the bars instead of being allowed to roll off.",
+    "ru": "Усики удерживают удила неподвижно — достоинство при гладком грызле и недостаток при рельефном: ребра удерживаются на одном месте дёсен, вместо того чтобы соскальзывать."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "half-cheek"
+    ]
+   },
+   "text": {
+    "en": "The half cheek comes from driving, where a lower spoon stops pull-through without catching on the harness. On a riding horse it offers the full cheek's guard against pull-through with half its guidance and no suspension.",
+    "ru": "Полуусик пришёл из упряжи, где нижняя «ложка» не даёт протянуть удила и не цепляется за сбрую. На верховой лошади он даёт защиту усиков от протягивания при половине их направляющего действия и без подвеса."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "scorrier"
+    ]
+   },
+   "tone": "bad",
+   "text": {
+    "en": "The inner rings run on the cheekpieces, so any rein tension also squeezes the horse's cheeks inward against its own teeth. The mouthpiece's effect is added to this, whatever it is.",
+    "ru": "Внутренние кольца идут по нащёчным ремням, поэтому любое натяжение повода ещё и сжимает щёки лошади внутрь, к её же зубам. Действие грызла добавляется к этому, каким бы оно ни было."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "wilkie"
+    ]
+   },
+   "text": {
+    "en": "The Wilkie's slots give it a lever arm of about one ring radius with no chain. The rotation is stopped quickly by the cheekpiece, so the lift is small; it is the mildest of the lifting cheeks and still a lifting cheek.",
+    "ru": "Прорези Уилки дают плечо рычага около радиуса кольца без цепочки. Нащёчный ремень быстро останавливает поворот, поэтому подъём невелик; это самая мягкая из поднимающих щёчек, но всё же поднимающая."
+   }
+  },
+  {
+   "when": {
+    "cheeks": [
+     "american-gag"
+    ]
+   },
+   "tone": "bad",
+   "text": {
+    "en": "The American gag both rotates and slides: the mouthpiece runs up the shank as the rein is taken, then the shank itself rotates against the cheekpiece. Two lifts in series, no chain.",
+    "ru": "Американский гаг и вращается, и скользит: грызло ползёт вверх по щёчке при наборе повода, затем сама щёчка поворачивается против нащёчного ремня. Два подъёма подряд, без цепочки."
+   }
+  },
+  {
+   "when": {
+    "mouths": [
+     "keys"
+    ]
+   },
+   "text": {
+    "en": "Keys are for a young horse learning to carry a foreign object; they add nothing to control and are a hazard on any cheek that rotates or lifts.",
+    "ru": "Ключики — для молодой лошади, которая учится носить посторонний предмет; к управлению они ничего не добавляют и опасны на любой щёчке, которая поворачивается или поднимается."
+   }
+  },
+  {
+   "when": {
+    "mouths": [
+     "chain"
+    ]
+   },
+   "tone": "bad",
+   "text": {
+    "en": "A chain mouthpiece drapes over the tongue and bites into whatever it is pulled against. Every link is an edge and every gap a pinch; it is banned in most disciplines for that reason.",
+    "ru": "Цепное грызло обвисает по языку и впивается во всё, к чему его тянут. Каждое звено — ребро, каждый зазор — защемление; по этой причине оно запрещено в большинстве дисциплин."
+   }
+  },
+  {
+   "when": {
+    "mouths": [
+     "flexible-mullen"
+    ],
+    "chain": true
+   },
+   "tone": "warn",
+   "text": {
+    "en": "Rubber under a lever: the bar compresses and spreads the multiplied force, but it also wears and is chewed; inspect for exposed core, because a curb delivers the full multiplied load to whatever is left.",
+    "ru": "Резина под рычагом: штанга сжимается и распределяет умноженную силу, но изнашивается и прогрызается; проверяйте на обнажённый сердечник, потому что мундштук отдаёт всю умноженную нагрузку тому, что осталось."
+   }
+  },
+  {
+   "when": {
+    "mouths": [
+     "waterford"
+    ],
+    "mechanisms": [
+     "direct"
+    ]
+   },
+   "text": {
+    "en": "On a direct cheek the Waterford's balls settle over the tongue and no single point carries the load; it is kind in a quiet hand and becomes a row of small pressure points under a strong one.",
+    "ru": "На прямой щёчке шарики Ватерфорда укладываются по языку, и ни одна точка не несёт нагрузку одна; он мягок в спокойной руке и становится рядом мелких точек давления в сильной."
+   }
+  },
+  {
+   "when": {
+    "mouths": [
+     "dr-bristol"
+    ],
+    "mechanisms": [
+     "direct"
+    ]
+   },
+   "tone": "warn",
+   "text": {
+    "en": "The angled plate is designed to press its edge into the tongue when the rein is taken. On a direct cheek its action depends entirely on which way round it is fitted and how the horse carries its head.",
+    "ru": "Наклонная пластина создана, чтобы при наборе повода вдавливать ребро в язык. На прямой щёчке её действие целиком зависит от того, какой стороной она надета и как лошадь несёт голову."
+   }
+  },
+  {
+   "when": {
+    "mouths": [
+     "ported-barrel",
+     "barrel"
+    ],
+    "chain": true
+   },
+   "text": {
+    "en": "Independent sides under a curb: one rein can rotate its shank without the other, and the barrel stops the mouthpiece folding. The tongue relief of the port is kept; the chain's multiplication is not reduced.",
+    "ru": "Независимые стороны под мундштуком: один повод может повернуть свою щёчку без другой, а втулка не даёт грызлу складываться. Освобождение языка портом сохраняется; умножение цепочкой не уменьшается."
+   }
+  }
+ ],
+ "cheeks": {
+  "loose-ring": {
+   "mechanics": {
+    "en": "A round ring passes through a hole in the end of the mouthpiece, so ring and mouthpiece turn independently. Rein and cheekpiece both attach to the same ring: the rein force reaches the mouthpiece at its own level, with no lever arm, and the ring can rotate to follow the rein wherever the hand goes. Because the ring turns in the hole, a share of the rein tension is passed along the ring to the cheekpiece in a pulley-like way; direct force measurements found this transfer small but real. The mouthpiece is free to slide and tilt, which is why riders describe the bit as mobile and encouraging the horse to mouth it.",
+    "ru": "Круглое кольцо проходит через отверстие на конце грызла, поэтому кольцо и грызло вращаются независимо. Повод и нащёчный ремень крепятся к одному кольцу: сила повода приходит к грызлу на его уровне, без плеча рычага, а кольцо поворачивается вслед за поводом, куда бы ни пошла рука. Поскольку кольцо вращается в отверстии, часть натяжения повода передаётся по кольцу на нащёчный ремень как через шкив; прямые измерения нашли эту передачу небольшой, но реальной. Грызло свободно скользит и наклоняется — поэтому всадники называют такой трензель подвижным и побуждающим лошадь жевать."
+   },
+   "stop": {
+    "en": "Nothing in the cheek stops the mouthpiece rising into the corners of the mouth; only the stretch of the lip does. The ring is 65–70 mm across, which keeps it outside the mouth under even tension, but a hard one-sided pull on a bit that is a little wide draws the ring into the mouth: in the cadaver study this cheek moved furthest of all. The hole through which the ring passes is the known pinch point: the fold of the lip at the commissure enters the gap and is nipped as the ring turns. Rubber bit guards remove the pinch and add 6–8 mm of thickness.",
+    "ru": "Ничто в щёчке не мешает грызлу подниматься в углы губ; останавливает только растяжение губы. Кольцо диаметром 65–70 мм при ровном натяжении остаётся снаружи рта, но сильный односторонний повод на чуть широких удилах втягивает кольцо в рот: в исследовании на кадаврах эта щёчка смещалась больше всех. Отверстие, через которое проходит кольцо, — известное место защемления: складка губы в углу рта входит в зазор и прищипывается при вращении кольца. Резиновые накладки убирают защемление и добавляют 6–8 мм толщины."
+   },
+   "head": {
+    "en": "A direct cheek has no bias of its own beyond where the pressure lands. With the head on the vertical the rein presses the mouthpiece into tongue and bars; with the nose out it slides the bit up into the lips. The horse that cannot get release from the hand finds the lips hurt less than the bars and goes above the bit, or finds the slack by curling. The mobility of the ring adds noise to the signal: small hand movements produce small, meaningless movements of the mouthpiece.",
+    "ru": "У прямой щёчки нет собственного уклона, кроме того, куда ложится давление. При голове на вертикали повод вдавливает грызло в язык и дёсны; при носе вперёд — поднимает удила в губы. Лошадь, не получающая отпускания от руки, обнаруживает, что губам больнее меньше, чем дёснам, и уходит выше повода — или находит слабину, закручиваясь. Подвижность кольца добавляет шум к сигналу: малые движения руки дают малые бессмысленные движения грызла."
+   },
+   "welfare": {
+    "en": "The kindest thing about it is the absence of a lever; the unkindest are the pinch at the hole and the lack of any stop. With a smooth, well-fitted mouthpiece and a quiet hand it is one of the least harmful arrangements in the register. With a textured mouthpiece, a bit that is too wide, or a rider who uses one rein hard, the same cheek becomes a device for pinching lips and dragging metal towards the cheek teeth.",
+    "ru": "Самое мягкое в нём — отсутствие рычага; самое жёсткое — защемление у отверстия и отсутствие какого-либо стопа. С гладким, хорошо подобранным грызлом и спокойной рукой это одно из наименее вредных устройств реестра. С рельефным грызлом, слишком широкими удилами или всадником, работающим одним поводом, та же щёчка превращается в устройство для защемления губ и затягивания металла к коренным зубам."
+   }
+  },
+  "eggbutt": {
+   "mechanics": {
+    "en": "The ring is fixed to a barrel-shaped end of the mouthpiece: there is no hole for a lip to enter and the mouthpiece cannot rotate relative to the ring. The rein still acts at the mouthpiece's own level, so there is no lever; what changes is stability. The oval shape sits against the lips with a broad face, and the fixed joint means the mouthpiece keeps the angle the rein gives it. The transfer to the cheekpiece is smaller than with a loose ring because nothing turns.",
+    "ru": "Кольцо жёстко соединено с бочкообразным концом грызла: отверстия, куда могла бы войти губа, нет, и грызло не вращается относительно кольца. Повод по-прежнему действует на уровне грызла, рычага нет; меняется устойчивость. Овал прилегает к губам широкой стороной, а неподвижное соединение означает, что грызло сохраняет угол, который задаёт повод. Передача на нащёчный ремень меньше, чем у подвижного кольца, потому что ничто не вращается."
+   },
+   "stop": {
+    "en": "No pinch; the broad oval also resists being pulled into the mouth better than a round loose ring, though a hard one-sided pull can still draw it in. Against riding up it offers only a little: the fixed ring tilts rather than letting the mouthpiece spin, so the bit rises a little less readily than a loose ring, but the lip remains the stop.",
+    "ru": "Защемления нет; широкий овал также лучше круглого подвижного кольца сопротивляется втягиванию в рот, хотя сильный односторонний повод всё же может его втянуть. Против подъёма даёт немного: фиксированное кольцо наклоняется, а не позволяет грызлу проворачиваться, поэтому удила поднимаются чуть менее охотно, чем с подвижным кольцом, но стопом остаётся губа."
+   },
+   "head": {
+    "en": "As for any direct cheek: the load migrates between bars, tongue and lips with the angle of the head, and the horse under a holding hand chooses the tissue that hurts least. The eggbutt's steadiness makes the signal cleaner than a loose ring's, which is a virtue for a young horse and no protection against a bad hand.",
+    "ru": "Как у любой прямой щёчки: нагрузка переходит между дёснами, языком и губами с углом головы, и лошадь при неуступающей руке выбирает ткань, которой больнее меньше. Устойчивость империала делает сигнал чище, чем у подвижного кольца — достоинство для молодой лошади и никакая защита от плохой руки."
+   },
+   "welfare": {
+    "en": "A loose ring without its pinch and with less noise. Everything else is decided by the mouthpiece, its thickness, and the rider.",
+    "ru": "Подвижное кольцо без защемления и с меньшим шумом. Всё остальное решают грызло, его толщина и всадник."
+   }
+  },
+  "d-ring": {
+   "mechanics": {
+    "en": "A fixed ring shaped as a D, its straight side along the horse's cheek. Mechanically an eggbutt with a longer flat bearing surface: when one rein is used, the straight bar of the D presses against the side of the face and pushes the head round, so some of the steering comes from the outside of the face rather than from inside the mouth. No lever; no pinch.",
+    "ru": "Фиксированное кольцо в форме буквы D, прямой стороной вдоль щеки лошади. Механически — империал с более длинной плоской опорной поверхностью: при работе одним поводом прямая часть D прижимается к боковой поверхности лица и поворачивает голову, так что часть поворота идёт снаружи лица, а не изнутри рта. Рычага нет; защемления нет."
+   },
+   "stop": {
+    "en": "The long flat side makes pull-through unlikely; the cheek would have to pass the whole D through the mouth. Riding up is limited only by the lip, as with every ring cheek.",
+    "ru": "Длинная плоская сторона делает протягивание маловероятным: в рот пришлось бы протянуть весь D. Подъём ограничивает только губа, как у любой кольцевой щёчки."
+   },
+   "head": {
+    "en": "Direct action, so no intrinsic bias. The outside-of-face pressure on turns is a mild, less painful cue than the same force inside the mouth, which is the one welfare argument for the shape.",
+    "ru": "Прямое действие, собственного уклона нет. Давление снаружи лица на поворотах — мягкий, менее болезненный сигнал, чем та же сила внутри рта; это единственный аргумент благополучия в пользу формы."
+   },
+   "welfare": {
+    "en": "Among the gentler cheeks: no pinch, little pull-through, some of the steering taken by the face. The ported-with-rollers version sold as Hanoverian is another matter and is judged under its mouthpiece.",
+    "ru": "Среди более мягких щёчек: без защемления, почти без протягивания, часть поворота берёт лицо. Вариант с портом и роликами, продаваемый как ганноверский, — другое дело, и он оценивается по своему грызлу."
+   }
+  },
+  "full-cheek": {
+   "mechanics": {
+    "en": "Fixed rings with a straight arm above and below, about 150 mm overall, lying along the face. The arms do two things: on a one-sided rein the opposite arm presses the face and turns the head, and with keepers (small leather loops on the cheekpieces holding the upper arms) the whole bit is suspended at a fixed angle. Suspended, it behaves much like a hanging cheek: the mouthpiece cannot rotate or rise freely, and the component of rein force that would lift it goes into the bridle instead. Without keepers the arms are free and the cheek is simply a large eggbutt with guidance.",
+    "ru": "Фиксированные кольца с прямым усиком сверху и снизу, всего около 150 мм, лежащие вдоль лица. Усики делают две вещи: при одностороннем поводе противоположный усик давит на лицо и поворачивает голову, а с держателями (кожаные петельки на нащёчных ремнях, удерживающие верхние усики) весь трензель подвешен под фиксированным углом. В подвешенном виде он ведёт себя почти как подвесная щёчка: грызло не может свободно поворачиваться и подниматься, а составляющая силы повода, которая бы его поднимала, уходит в оголовье. Без держателей усики свободны, и щёчка — просто большой империал с направляющим действием."
+   },
+   "stop": {
+    "en": "Pull-through is impossible. With keepers the rise into the corners of the mouth is largely stopped, the best stop a direct cheek offers. Without keepers the lower arm can swing forward and jab the lip or catch on a rein, a strap or another horse; the arms are also the part of a bit most often involved in a hang-up accident.",
+    "ru": "Протягивание невозможно. С держателями подъём в углы губ в основном остановлен — лучший стоп среди прямых щёчек. Без держателей нижний усик может качнуться вперёд и ткнуть губу или зацепиться за повод, ремень или другую лошадь; усики — та часть удил, которая чаще всего участвует в несчастных случаях с зацепом."
+   },
+   "head": {
+    "en": "Suspended, the mouthpiece stays where the bridle puts it and the pressure stays on tongue and bars at every head angle, so the lips never become the cheap escape. That removes the incentive to come above the bit; it does not create a correct carriage. The horse's remaining escape is the geometric one: towards the hand.",
+    "ru": "В подвешенном виде грызло остаётся там, где его поставило оголовье, и давление при любом угле головы остаётся на языке и дёснах, так что губы никогда не становятся дешёвым выходом. Это убирает стимул уходить выше повода; правильного постава это не создаёт. Оставшийся выход для лошади — геометрический: к руке."
+   },
+   "welfare": {
+    "en": "With keepers and a smooth mouthpiece one of the two kindest cheeks in the register, for the same reason as the Baucher: the bit cannot pinch, cannot pull through and cannot ride up. Its hazards are outside the mouth: the arms catch things. With a textured mouthpiece the stability becomes a liability, because the ridges are held still on the bars.",
+    "ru": "С держателями и гладким грызлом — одна из двух самых мягких щёчек реестра, по той же причине, что и Баушер: удила не могут защемить, протянуться и подняться. Его опасности снаружи рта: усики цепляются. С рельефным грызлом устойчивость становится недостатком, потому что рёбра удерживаются на одном месте дёсен."
+   }
+  },
+  "half-cheek": {
+   "mechanics": {
+    "en": "A fixed ring with one arm only, usually the lower, flattened into a spoon. Inherited from driving bits, where an upper arm would foul the harness. The spoon stops the ring passing into the mouth and gives a little lateral guidance on the lower lip; there is no upper arm to hold in a keeper, so there is no suspension.",
+    "ru": "Фиксированное кольцо с одним усиком, обычно нижним, расплющенным в «ложку». Унаследован от упряжных удил, где верхний усик мешал бы сбруе. Ложка не даёт кольцу пройти в рот и немного направляет за нижнюю губу; верхнего усика, который можно держать в петле, нет, поэтому нет и подвеса."
+   },
+   "stop": {
+    "en": "Good against pull-through, nothing against riding up. The lower spoon can press into the lower lip when the bit is lifted by the rein.",
+    "ru": "Хорош против протягивания, никак — против подъёма. Нижняя ложка может вдавливаться в нижнюю губу, когда повод поднимает удила."
+   },
+   "head": {
+    "en": "Direct action, no bias. The spoon's bearing on the lower lip under lift adds a small discomfort to the above-the-bit escape, which is not the same as teaching a carriage.",
+    "ru": "Прямое действие, уклона нет. Опора ложки на нижнюю губу при подъёме добавляет небольшой дискомфорт к уходу выше повода, что не то же самое, что обучение поставу."
+   },
+   "welfare": {
+    "en": "An eggbutt with pull-through protection and a spoon that can bruise the lower lip. Neutral.",
+    "ru": "Империал с защитой от протягивания и ложкой, способной ушибить нижнюю губу. Нейтрален."
+   }
+  },
+  "fulmer": {
+   "mechanics": {
+    "en": "Full cheek arms fixed to the mouthpiece, but the rein ring is loose and passes through the mouthpiece end as on a loose ring snaffle. The rider gets the lateral guidance and, with keepers, the suspension of the full cheek, while the rein keeps the mobility of a loose ring. The ring's rotation in the hole reintroduces the pinch point the full cheek had removed.",
+    "ru": "Усики жёстко соединены с грызлом, но кольцо для повода подвижное и проходит через конец грызла, как у трензеля с подвижными кольцами. Всадник получает направляющее действие и, с держателями, подвес усиков, а повод сохраняет подвижность свободного кольца. Вращение кольца в отверстии возвращает место защемления, которое усики убрали."
+   },
+   "stop": {
+    "en": "Pull-through impossible; with keepers the rise is largely stopped. The lip pinch at the ring hole is present and, because the arms hold the mouthpiece still while the ring turns, the fold of the lip is more exposed to it than on a plain loose ring.",
+    "ru": "Протягивание невозможно; с держателями подъём в основном остановлен. Защемление губы у отверстия кольца присутствует и, поскольку усики держат грызло неподвижно, пока кольцо вращается, складка губы открыта ему больше, чем на обычном подвижном кольце."
+   },
+   "head": {
+    "en": "Suspended like the full cheek, so the lips are not the cheap escape and the device is neutral between the remaining carriages.",
+    "ru": "Подвешен, как и усики, поэтому губы не являются дешёвым выходом, и устройство нейтрально между остальными поставами."
+   },
+   "welfare": {
+    "en": "The full cheek's stability with the loose ring's pinch: slightly worse than the full cheek on every count except the rider's feel.",
+    "ru": "Устойчивость усиков с защемлением подвижного кольца: немного хуже усиков по всем статьям, кроме ощущения в руке у всадника."
+   }
+  },
+  "baucher": {
+   "mechanics": {
+    "en": "The cheekpiece attaches to a small ring at the top of a short fixed arm, about 25 mm above the mouthpiece; the rein attaches to a larger ring around the mouthpiece itself. The rein therefore acts through the mouthpiece's own axis with no lever arm, and the mouthpiece hangs from the bridle rather than resting on the tongue by its weight. The persistent claim that the arm produces poll pressure fails on the geometry: the arm is above the pivot and the rein is at the pivot, so there is no moment to transmit. Sensors on rein and cheekpiece confirmed it: cheekpiece tension fell, not rose, as rein tension went from 0 to 30 N, because the backward pull of the rein slackens the hanging arm. What the arm does do is fix the angle of the mouthpiece and stop it rotating, sliding or riding up.",
+    "ru": "Нащёчный ремень крепится к маленькому кольцу на вершине короткого фиксированного усика, примерно на 25 мм выше грызла; повод — к большему кольцу вокруг самого грызла. Поэтому повод действует через собственную ось грызла без плеча рычага, и грызло висит на оголовье, а не лежит на языке своим весом. Упорное утверждение, будто усик создаёт давление на затылок, не выдерживает геометрии: усик выше точки опоры, а повод в точке опоры, так что передавать момент нечему. Датчики на поводе и ремне это подтвердили: при натяжении повода от 0 до 30 Н натяжение ремня падало, а не росло, потому что тяга повода назад ослабляет висящий усик. Что усик делает — так фиксирует угол грызла и не даёт ему вращаться, скользить и подниматься."
+   },
+   "stop": {
+    "en": "The best stop a snaffle has against riding up: the mouthpiece is held at the height the bridle sets, so the component of rein force that would drive it into the corners of the mouth is carried by the cheekpiece instead. No ring hole, so no pinch. The fixed ring resists pull-through about as well as an eggbutt. Force onto tongue and bars is, as with every snaffle, unlimited.",
+    "ru": "Лучший стоп против подъёма среди трензелей: грызло удерживается на высоте, заданной оголовьем, поэтому составляющую силы повода, которая загоняла бы его в углы губ, несёт нащёчный ремень. Отверстия кольца нет — нет и защемления. Фиксированное кольцо сопротивляется протягиванию примерно как империал. Сила на язык и дёсны, как у любого трензеля, ничем не ограничена."
+   },
+   "head": {
+    "en": "Riders say it encourages flexion; the physics says it keeps the mouthpiece still and keeps the pressure on tongue and bars at every head angle, so the horse cannot escape upward into its lips. The horse that stops going above the bit looks as if it is flexing. The device is neutral between the remaining carriages; the hand decides.",
+    "ru": "Всадники говорят, что он побуждает к сдаче в затылке; физика говорит, что он держит грызло неподвижно и оставляет давление на языке и дёснах при любом угле головы, так что лошадь не может уйти вверх, в губы. Лошадь, перестающая уходить выше повода, выглядит так, будто сдаёт в затылке. Между остальными поставами устройство нейтрально; решает рука."
+   },
+   "welfare": {
+    "en": "With a smooth mouthpiece of adequate thickness this is the kindest cheek in the register: no lever, no pinch, no riding up, a clean signal, and the mouthpiece released the instant the rein is. It is still a bit; the pressure it delivers to the tongue and bars is exactly the rein tension, redistributed.",
+    "ru": "С гладким грызлом достаточной толщины это самая мягкая щёчка реестра: ни рычага, ни защемления, ни подъёма, чистый сигнал, и грызло отпускает в тот же миг, что и повод. Это всё ещё удила; давление, которое они передают на язык и дёсны, — ровно натяжение повода, перераспределённое."
+   }
+  },
+  "scorrier": {
+   "mechanics": {
+    "en": "Four rings. The inner pair passes through slots in the mouthpiece and carries the cheekpieces; the outer pair carries the reins. When a rein is taken, the inner rings are pulled against the sides of the face and squeeze the cheeks inward onto the teeth, while the mouthpiece, usually serrated, acts inside. It was built for horses that pulled in harness or on the hunting field, and it works by adding a second pain outside the mouth to the one inside.",
+    "ru": "Четыре кольца. Внутренняя пара проходит через прорези в грызле и несёт нащёчные ремни; наружная пара несёт поводья. При наборе повода внутренние кольца притягиваются к бокам лица и сжимают щёки внутрь, на зубы, а грызло, обычно зазубренное, действует внутри. Он создан для лошадей, тянувших в упряжи или на охоте, и работает, добавляя к боли внутри рта вторую — снаружи."
+   },
+   "stop": {
+    "en": "Nothing stops the rise but the lip, and the inner rings running through the mouthpiece are two more pinch points for the lip fold. Pull-through is impossible because the rings are paired.",
+    "ru": "Подъём не останавливает ничто, кроме губы, а внутренние кольца, идущие через грызло, — ещё два места защемления складки губы. Протягивание невозможно, потому что кольца парные."
+   },
+   "head": {
+    "en": "Strong lateral action and a cheek squeeze that is relieved by yielding the head sideways and down. Its bias is towards giving to the rein in any direction, which in practice means behind it.",
+    "ru": "Сильное боковое действие и сжатие щёк, которое снимается уступкой головы вбок и вниз. Его уклон — уступать поводу в любом направлении, что на практике означает за повод."
+   },
+   "welfare": {
+    "en": "A device whose purpose is to hurt more than an ordinary snaffle so that a horse that has learned to ignore pain will stop. Every mechanism in it adds pain somewhere. It belongs in the harshest group of the register with any mouthpiece.",
+    "ru": "Устройство, чья цель — причинять больше боли, чем обычный трензель, чтобы остановилась лошадь, научившаяся игнорировать боль. Каждый его механизм добавляет боль где-нибудь. С любым грызлом он входит в самую жёсткую группу реестра."
+   }
+  },
+  "weymouth-fixed": {
+   "mechanics": {
+    "en": "A curb bit for a double bridle. The mouthpiece is fixed to a cheek that has an upper arm (purchase) to the cheekpiece and a lower arm (shank) to the rein, with a chain from the purchase hooks under the chin. The rein on the shank rotates the cheek about the mouthpiece; the chain tightens and stops the rotation; from then on the rein moment is balanced by chain tension, and the mouthpiece is pressed down onto the bars and tongue with the rein force plus most of the chain force. With a 70 mm shank and 35 mm purchase the chain carries about twice the curb rein and the mouth about three times it. Because the mouthpiece is fixed to the cheek, it rotates by the same angle: a port tips towards the palate. The dressage limit is a 100 mm lever arm.",
+    "ru": "Мундштук для двойного оголовья. Грызло жёстко соединено со щёчкой, у которой верхнее плечо к нащёчному ремню и нижнее плечо к поводу, а от крючков верхнего плеча под подбородок идёт цепочка. Повод на нижнем плече поворачивает щёчку вокруг грызла; цепочка натягивается и останавливает поворот; с этого момента момент повода уравновешивается натяжением цепочки, и грызло прижимается к дёснам и языку силой повода плюс большей частью силы цепочки. При нижнем плече 70 мм и верхнем 35 мм цепочка несёт примерно вдвое больше мундштучного повода, а рот — примерно втрое. Поскольку грызло жёстко соединено со щёчкой, оно поворачивается на тот же угол: порт наклоняется к нёбу. Предел для выездки — плечо 100 мм."
+   },
+   "stop": {
+    "en": "The chain is a hard stop for rotation and no stop for force. Once engaged every extra newton on the rein is multiplied onto tongue, bars and chin. A loose chain lets the cheek rotate further, which shortens the chain's lever arm, raises the multiplication and brings the port closer to the palate; a tight chain engages at the lightest touch and never fully releases. The mouthpiece cannot ride up or pull through.",
+    "ru": "Цепочка — жёсткий стоп для вращения и никакой стоп для силы. После срабатывания каждый лишний ньютон на поводе умножается на язык, дёсны и подбородок. Слабая цепочка позволяет щёчке повернуться дальше, что укорачивает плечо цепочки, повышает умножение и приближает порт к нёбу; тугая цепочка срабатывает при лёгком касании и никогда полностью не отпускает. Грызло не может подняться или протянуться."
+   },
+   "head": {
+    "en": "Two downward instructions: the chain pulls the chin back and the mouthpiece presses the bars; the poll receives a little. All are relieved by flexing at the poll and dropping the head, so the mechanical bias of every curb is towards the vertical and, held, behind it. The curb is the one device in the register whose bias is unambiguous.",
+    "ru": "Два указания вниз: цепочка тянет подбородок назад, а грызло давит на дёсны; затылку достаётся немного. Всё это снимается сдачей в затылке и опусканием головы, поэтому механический уклон любого мундштука — к вертикали и, при удержании, за неё. Мундштук — единственное устройство реестра, чей уклон однозначен."
+   },
+   "welfare": {
+    "en": "A force multiplier applied to the most sensitive surfaces in the mouth and to the skin over the bone of the chin, worn together with a second bit in a space measured at 14 mm. The literature's direct force measurements show the two mouthpieces interfering with each other. In skilled hands the curb rein is held light; the register models what happens when it is not.",
+    "ru": "Умножитель силы, приложенный к самым чувствительным поверхностям рта и к коже над костью подбородка, носимый вместе со вторым грызлом в пространстве, измеренном в 14 мм. Прямые измерения сил в литературе показывают, что два грызла задевают друг друга. В умелых руках мундштучный повод держат легко; реестр моделирует, что происходит, когда это не так."
+   }
+  },
+  "weymouth-sliding": {
+   "mechanics": {
+    "en": "As the fixed-cheek Weymouth, but the cheek passes through a slot in the mouthpiece end, so the mouthpiece can slide about 10 mm up and down the cheek and the cheek can rotate a little before the mouthpiece follows. Riders describe the action as softer because it is less immediate; mechanically the lever ratio and the chain are unchanged, and the delay is spent moving the mouthpiece in the mouth.",
+    "ru": "Как мундштук с неподвижной щёчкой, но щёчка проходит через прорезь на конце грызла, поэтому грызло может скользить примерно на 10 мм вверх-вниз по щёчке, а щёчка — немного повернуться, прежде чем грызло последует за ней. Всадники называют действие более мягким, потому что оно менее мгновенное; механически отношение плеч и цепочка не изменились, а задержка расходуется на перемещение грызла во рту."
+   },
+   "stop": {
+    "en": "The chain stops the rotation as before. The sliding joint adds movement where the lip meets the cheek and is a small pinch point; the mouthpiece settling at different heights makes the port's position relative to the palate less predictable.",
+    "ru": "Цепочка останавливает вращение, как и прежде. Скользящее соединение добавляет движение там, где губа встречается со щёчкой, и является небольшим местом защемления; грызло, оседающее на разной высоте, делает положение порта относительно нёба менее предсказуемым."
+   },
+   "head": {
+    "en": "The same two downward instructions as any curb, delivered with a slight lag.",
+    "ru": "Те же два указания вниз, что и у любого мундштука, с небольшим запаздыванием."
+   },
+   "welfare": {
+    "en": "Marginally more movement in the mouth and a small pinch point in exchange for a less abrupt onset. Same multiplier, same chin.",
+    "ru": "Чуть больше движения во рту и небольшое место защемления в обмен на менее резкое начало действия. Тот же множитель, тот же подбородок."
+   }
+  },
+  "banbury": {
+   "mechanics": {
+    "en": "The mouthpiece is a tapered round bar that passes through the cheeks and can both rotate in them and slide a little. Each shank therefore turns independently when its rein is used, and the mouthpiece itself is never rotated by the shanks: there is no port, and could not be, because a port would need a fixed orientation. The chain and lever ratio are those of a Weymouth.",
+    "ru": "Грызло — сужающаяся круглая штанга, которая проходит сквозь щёчки и может в них как вращаться, так и немного скользить. Поэтому каждая щёчка поворачивается независимо при работе своим поводом, а само грызло щёчки никогда не поворачивают: порта нет и быть не может, потому что порту нужна фиксированная ориентация. Цепочка и отношение плеч — как у мундштука."
+   },
+   "stop": {
+    "en": "The chain stops the rotation. The bar rolling in the cheeks is a movement across the tongue and bars under full curb load, and the passage through the cheeks is a pinch point.",
+    "ru": "Цепочка останавливает вращение. Штанга, катающаяся в щёчках, — это движение по языку и дёснам под полной мундштучной нагрузкой, а проход через щёчки — место защемления."
+   },
+   "head": {
+    "en": "A curb's downward bias, with the added ability to apply it to one side only. One-sided curb action asks for a lateral flexion with a multiplied force.",
+    "ru": "Уклон мундштука вниз, с добавленной возможностью приложить его только с одной стороны. Одностороннее мундштучное действие требует бокового сгибания умноженной силой."
+   },
+   "welfare": {
+    "en": "The only curb that cannot be tipped onto the palate, bought at the price of a mouthpiece that rolls under load and a lateral curb action. Rare, and rightly so.",
+    "ru": "Единственный мундштук, который нельзя наклонить на нёбо, — ценой грызла, катающегося под нагрузкой, и бокового мундштучного действия. Редок, и заслуженно."
+   }
+  },
+  "pelham": {
+   "mechanics": {
+    "en": "A curb cheek with a rein ring at the mouthpiece as well as at the end of the shank, so one bit can be ridden on two reins: the upper rein acts directly like a snaffle, the lower rein acts through the shank and chain like a Weymouth. Roundings, leather loops joining the two rings for a single rein, split the rein force between the two attachment points by geometry and give neither action cleanly. The shank is usually shorter than a Weymouth's and the mouthpiece is wider in range: mullen, jointed, ported, rubber.",
+    "ru": "Мундштучная щёчка с кольцом для повода и у грызла, и на конце нижнего плеча, поэтому на одних удилах можно ехать на двух поводьях: верхний действует напрямую, как трензель, нижний — через плечо и цепочку, как мундштук. Раундинги, кожаные петли, соединяющие оба кольца для одного повода, делят силу повода между двумя точками крепления по геометрии и не дают чисто ни одного из действий. Нижнее плечо обычно короче, чем у мундштука, а выбор грызла шире: цельное, сочленённое, с портом, резиновое."
+   },
+   "stop": {
+    "en": "The chain stops the rotation and multiplies the lower rein. The snaffle ring sits against the lip and, because the shank is fixed to the mouthpiece, the ring is dragged round as the shank rotates: a pinch and a chafe at the corner of the mouth that a Weymouth does not have. With roundings the horse receives a mixture whose proportions depend on the hand's height.",
+    "ru": "Цепочка останавливает вращение и умножает нижний повод. Трензельное кольцо прилегает к губе и, поскольку плечо жёстко соединено с грызлом, кольцо тащится по кругу при повороте плеча: защемление и натирание угла рта, которых у мундштука нет. С раундингами лошадь получает смесь, пропорции которой зависят от высоты руки."
+   },
+   "head": {
+    "en": "On two reins the rider can choose between a direct and a downward instruction; on roundings the horse receives both at once in uncertain proportion. The curb part biases towards the vertical and behind it; the snaffle part is neutral. The result under a holding hand is a horse that comes behind the bit and cannot find a clean release.",
+    "ru": "На двух поводьях всадник может выбирать между прямым указанием и указанием вниз; на раундингах лошадь получает оба сразу в неопределённой пропорции. Мундштучная часть склоняет к вертикали и за неё; трензельная нейтральна. Итог при неуступающей руке — лошадь, уходящая за повод и не находящая чистого отпускания."
+   },
+   "welfare": {
+    "en": "A compromise that gives the horse the worst of each half: a curb's multiplication with a snaffle ring chafing the lips, and on roundings an ambiguous signal. Its one honest use is as a milder substitute for a double bridle in a mouth that has no room for two bits.",
+    "ru": "Компромисс, дающий лошади худшее от каждой половины: умножение мундштука с трензельным кольцом, натирающим губы, а на раундингах — неоднозначный сигнал. Его единственное честное применение — более мягкая замена двойного оголовья во рту, где нет места двум грызлам."
+   }
+  },
+  "rugby-pelham": {
+   "mechanics": {
+    "en": "A pelham whose snaffle ring is not on the shank but on a separate loose ring joined to the mouthpiece end by a short link. The snaffle rein therefore acts on the mouthpiece without rotating the shank, so the two actions are genuinely separate, and the loose snaffle ring behaves like a loose ring snaffle's, including its hole.",
+    "ru": "Пелям, у которого трензельное кольцо не на плече, а на отдельном подвижном кольце, соединённом с концом грызла коротким звеном. Поэтому трензельный повод действует на грызло, не поворачивая плечо, и два действия действительно разделены, а подвижное трензельное кольцо ведёт себя как у трензеля с подвижными кольцами, включая отверстие."
+   },
+   "stop": {
+    "en": "Chain stop on the curb rein; the loose snaffle ring reintroduces a pinch point and the independence of the two reins means the snaffle rein can lift the mouthpiece while the curb rein presses it down.",
+    "ru": "Стоп цепочкой на мундштучном поводе; подвижное трензельное кольцо возвращает место защемления, а независимость двух поводьев означает, что трензельный повод может поднимать грызло, пока мундштучный давит его вниз."
+   },
+   "head": {
+    "en": "Cleaner than a plain pelham: the horse receives the instruction the rider chose. The curb instruction remains a downward one.",
+    "ru": "Чище обычного пеляма: лошадь получает то указание, которое выбрал всадник. Мундштучное указание остаётся указанием вниз."
+   },
+   "welfare": {
+    "en": "The pelham made honest, with a loose ring's pinch as the price. For a rider who truly uses two reins it is the better pelham; for one who does not it is pointless.",
+    "ru": "Пелям, сделанный честным, с защемлением подвижного кольца в качестве цены. Для всадника, действительно работающего двумя поводьями, это лучший пелям; для того, кто этого не делает, он бессмыслен."
+   }
+  },
+  "scamperdale-pelham": {
+   "mechanics": {
+    "en": "A pelham whose mouthpiece ends are bent backward before meeting the cheeks, so the shanks stand off the face by a centimetre or two and do not chafe the lips as they rotate. Otherwise a standard pelham, usually with an unjointed mouthpiece.",
+    "ru": "Пелям, у которого концы грызла отогнуты назад перед соединением со щёчками, так что щёчки отстоят от лица на сантиметр-два и не натирают губы при поворотe. В остальном обычный пелям, обычно с цельным грызлом."
+   },
+   "stop": {
+    "en": "Chain stop on the curb rein. The set-back cheeks remove the lip chafe that other pelhams have; the bend in the mouthpiece puts a corner against the inside of the lip instead.",
+    "ru": "Стоп цепочкой на мундштучном поводе. Отогнутые щёчки убирают натирание губ, свойственное другим пелямам; изгиб грызла вместо этого ставит угол к внутренней стороне губы."
+   },
+   "head": {
+    "en": "As the pelham: a downward curb instruction mixed with a direct one in whatever proportion the rein arrangement gives.",
+    "ru": "Как пелям: указание вниз от мундштука, смешанное с прямым в той пропорции, какую даёт схема поводьев."
+   },
+   "welfare": {
+    "en": "A pelham designed around one specific injury, the chafed lip, and a sensible one. The multiplication and the chin are unchanged.",
+    "ru": "Пелям, спроектированный вокруг одной конкретной травмы — натёртой губы, и разумно. Умножение и подбородок не изменились."
+   }
+  },
+  "kimblewick": {
+   "mechanics": {
+    "en": "A D-shaped cheek with the mouthpiece fixed to the upper part of the D, a small eye above it for the cheekpiece, and a chain. The rein runs free on the D. When the hand is low the rein slides to the bottom of the D and acts about one ring radius below the mouthpiece: a lever arm roughly equal to the short purchase, so the mouth receives about twice the rein and the chin about the same as the rein. When the hand is raised the rein slides up to the level of the mouthpiece and the lever vanishes. The action therefore changes with the height of the hand, which is the design's intent and its ambiguity.",
+    "ru": "D-образная щёчка, грызло закреплено в верхней части D, маленькая проушина над ним для нащёчного ремня, и цепочка. Повод свободно ходит по D. При низкой руке повод соскальзывает к низу D и действует примерно на радиус кольца ниже грызла: плечо рычага примерно равно короткому верхнему плечу, поэтому рот получает около двойного повода, а подбородок — около одного. При поднятой руке повод поднимается к уровню грызла, и рычаг исчезает. Поэтому действие меняется с высотой руки — в этом и замысел конструкции, и её неоднозначность."
+   },
+   "stop": {
+    "en": "The chain stops the rotation. The D's flat side guards against pull-through. Because the rein position is not fixed, the horse cannot predict whether the next contact is a snaffle or a curb one.",
+    "ru": "Цепочка останавливает вращение. Плоская сторона D защищает от протягивания. Поскольку положение повода не зафиксировано, лошадь не может предсказать, будет ли следующий контакт трензельным или мундштучным."
+   },
+   "head": {
+    "en": "A curb's downward bias in a mild dose, switched on and off by the hand. For a child or novice, who is the usual rider of this bit, the switching is not deliberate.",
+    "ru": "Уклон мундштука вниз в мягкой дозе, включаемый и выключаемый рукой. Для ребёнка или новичка — обычного всадника этих удил — переключение не является осознанным."
+   },
+   "welfare": {
+    "en": "The mildest chain bit in the register, and the least predictable. Its lever is short enough that the chin pressure stays below the facial threshold at ordinary contact with a guard fitted; without one it does not.",
+    "ru": "Самые мягкие удила с цепочкой в реестре и самые непредсказуемые. Рычаг достаточно короток, чтобы давление на подбородок при обычном контакте оставалось ниже порога лица при надетой накладке; без неё — нет."
+   }
+  },
+  "kimblewick-uxeter": {
+   "mechanics": {
+    "en": "A Kimblewick with two slots in the D so that the rein is fixed in either an upper or a lower position. Upper slot: a lever arm of about 15 mm against a 25 mm purchase, barely more than a snaffle. Lower slot: about 35 mm, a ratio near 1.4, so the mouth receives about two and a half times the rein and the chin about one and a half. The action no longer depends on the hand's height, which makes it stronger and more honest than the plain Kimblewick.",
+    "ru": "Кимблвик с двумя прорезями в D, чтобы повод был закреплён либо в верхнем, либо в нижнем положении. Верхняя прорезь: плечо рычага около 15 мм против верхнего плеча 25 мм, едва больше трензеля. Нижняя прорезь: около 35 мм, отношение около 1,4, поэтому рот получает примерно в два с половиной раза больше повода, а подбородок — примерно в полтора. Действие больше не зависит от высоты руки, что делает его сильнее и честнее, чем у обычного кимблвика."
+   },
+   "stop": {
+    "en": "Chain stop; D against pull-through; the mouthpiece rotates with the D so a port tips towards the palate at the engagement angle.",
+    "ru": "Стоп цепочкой; D против протягивания; грызло поворачивается вместе с D, поэтому порт наклоняется к нёбу при угле срабатывания."
+   },
+   "head": {
+    "en": "A curb's downward bias, mild in the upper slot and distinct in the lower.",
+    "ru": "Уклон мундштука вниз: мягкий в верхней прорези и отчётливый в нижней."
+   },
+   "welfare": {
+    "en": "A short pelham on one rein. Predictable, which counts for something, and a chain on the chin, which counts against.",
+    "ru": "Короткий пелям на одном поводе. Предсказуем, что чего-то стоит, и цепочка на подбородке, что идёт в минус."
+   }
+  },
+  "balding-gag": {
+   "mechanics": {
+    "en": "The cheekpiece is a cord or rolled leather that passes through holes in the top and bottom of a loose ring and continues down to the rein. The ring is a pulley: taking the rein pulls the cord through, and the bit slides up the cord towards the poll. The force on the ring is the vector sum of the two strands, the rein strand and the strand to the poll; at ordinary head angles that sum is 1.3–1.6 times the rein tension, directed up and back into the corners of the mouth. The strand to the poll loads the headpiece with roughly half the rein tension after friction. The ring also turns in the mouthpiece as a loose ring does.",
+    "ru": "Нащёчный ремень — шнур или скрученная кожа, проходящая через отверстия сверху и снизу подвижного кольца и идущая дальше вниз к поводу. Кольцо — шкив: набор повода протягивает шнур, и удила скользят вверх по шнуру к затылку. Сила на кольце — векторная сумма двух ветвей, поводной и идущей к затылку; при обычных углах головы эта сумма составляет 1,3–1,6 натяжения повода и направлена вверх и назад, в углы губ. Ветвь к затылку нагружает затылочный ремень примерно половиной натяжения повода после трения. Кольцо также вращается в грызле, как подвижное."
+   },
+   "stop": {
+    "en": "None. The bit rises as long as the rider pulls, until the corners of the mouth stop it or the cord runs out at the cheek teeth, unless rubber stops are fitted to the cord to limit the slide. The loose ring's pinch is present. Pull-through protection is poor because the ring is round and free.",
+    "ru": "Нет. Удила поднимаются, пока всадник тянет, до тех пор, пока их не остановят углы губ или шнур не кончится у коренных зубов, — если на шнур не надеты резиновые стопоры, ограничивающие скольжение. Защемление подвижного кольца присутствует. Защита от протягивания слаба, потому что кольцо круглое и свободное."
+   },
+   "head": {
+    "en": "The lift is relieved by raising the head and opening the angle of the throat, so the bias is above the vertical; the small poll load says the opposite. The horse receives two instructions, head up from the lips and head down from the poll, and most horses answer the louder one, the lips.",
+    "ru": "Подъём снимается поднятием головы и раскрытием угла горла, поэтому уклон — выше вертикали; небольшая нагрузка на затылок говорит обратное. Лошадь получает два указания: голову вверх от губ и голову вниз от затылка, и большинство лошадей отвечают на более громкое — губы."
+   },
+   "welfare": {
+    "en": "A device whose whole action is on the corners of the mouth, with no stop and a pinch. It is used on horses that lean down and pull because it makes the lips hurt until the head comes up. Of all the cheeks in the register it is the one whose harm is least limited by anything but the rider.",
+    "ru": "Устройство, всё действие которого приходится на углы губ, без стопа и с защемлением. Его применяют на лошадях, которые тянут вниз и тащат, потому что оно делает губам больно, пока голова не поднимется. Из всех щёчек реестра это та, чей вред менее всего ограничен чем-либо, кроме всадника."
+   }
+  },
+  "cheltenham-gag": {
+   "mechanics": {
+    "en": "A sliding gag on fixed oval rings: the same cord through the ring and the same pulley action as the Balding, without the ring turning in the mouthpiece. The eggbutt ends keep the mouthpiece steady as it slides.",
+    "ru": "Скользящий гаг на фиксированных овальных кольцах: тот же шнур через кольцо и то же действие шкива, что у Балдинга, но кольцо не вращается в грызле. Концы-империалы держат грызло устойчиво при скольжении."
+   },
+   "stop": {
+    "en": "None, unless stops are fitted. No lip pinch at the ring. The oval rings resist pull-through somewhat better than round ones.",
+    "ru": "Нет, если не надеты стопоры. Защемления губы у кольца нет. Овальные кольца несколько лучше круглых сопротивляются протягиванию."
+   },
+   "head": {
+    "en": "The gag's upward bias, as for the Balding.",
+    "ru": "Уклон гага вверх, как у Балдинга."
+   },
+   "welfare": {
+    "en": "The Balding without the pinch; the lift into the lips and the absence of a stop are unchanged.",
+    "ru": "Балдинг без защемления; подъём в губы и отсутствие стопа не изменились."
+   }
+  },
+  "nelson-gag": {
+   "mechanics": {
+    "en": "A sliding gag on full cheek arms. The pulley lift of the gag is combined with the lateral guidance of the arms; keepers cannot be used, because the bit must be free to slide, so there is no suspension.",
+    "ru": "Скользящий гаг на усиках. Подъём шкива сочетается с направляющим действием усиков; держатели применить нельзя, потому что удила должны свободно скользить, так что подвеса нет."
+   },
+   "stop": {
+    "en": "None against rising, unless stops are fitted; full protection against pull-through. The arms move up the face with the bit and can catch.",
+    "ru": "Против подъёма — нет, если не надеты стопоры; полная защита от протягивания. Усики движутся вверх по лицу вместе с удилами и могут цепляться."
+   },
+   "head": {
+    "en": "The gag's upward bias, with a strong steering cue from the arms.",
+    "ru": "Уклон гага вверх с сильным сигналом поворота от усиков."
+   },
+   "welfare": {
+    "en": "As the Cheltenham, with the arms' guidance added and their snag hazard.",
+    "ru": "Как Челтнем, с добавленным направляющим действием усиков и их риском зацепа."
+   }
+  },
+  "dutch-gag": {
+   "mechanics": {
+    "en": "A stack of rings: a large ring at the mouthpiece and two or three smaller rings below it, with a small ring above for the cheekpiece. With the rein on the large ring it is a snaffle. With the rein on a lower ring the stack becomes a lever with a 30 mm purchase and a 35, 70 or 105 mm lower arm, but there is no chain. Nothing stops the rotation except the cheekpiece going taut, and the cheekpiece's lever arm is tiny until the stack has swung a long way. So the stack rotates towards the rein, the mouthpiece fixed to it is dragged upward along the face by about 20–25 mm, and only then does the cheekpiece carry the moment. Direct force measurements of such bits show much less poll load than an ideal lever would give, because the mouth moves instead of acting as a fixed pivot. The result is not a multiplication of force but a lift of the mouthpiece into the corners of the mouth, with the mouthpiece rotated through the same angle as the stack.",
+    "ru": "Стопка колец: большое кольцо у грызла и два-три меньших под ним, с маленьким кольцом сверху для нащёчного ремня. При поводе на большом кольце это трензель. При поводе на нижнем кольце стопка становится рычагом с верхним плечом 30 мм и нижним 35, 70 или 105 мм, но цепочки нет. Вращение не останавливает ничто, кроме натяжения нащёчного ремня, а плечо ремня ничтожно, пока стопка не повернётся далеко. Поэтому стопка поворачивается к поводу, закреплённое на ней грызло тащится вверх по лицу примерно на 20–25 мм, и только тогда ремень несёт момент. Прямые измерения сил на таких удилах показывают гораздо меньшую нагрузку на затылок, чем дал бы идеальный рычаг, потому что рот перемещается, а не служит неподвижной опорой. Итог — не умножение силы, а подъём грызла в углы губ, причём грызло повёрнуто на тот же угол, что и стопка."
+   },
+   "stop": {
+    "en": "No stop before the corners of the mouth. The cheekpiece halts the rotation only after the lift has happened. Adding a curb strap converts the cheek into a short pelham: rotation stops at the strap, the lift disappears, and the force is multiplied onto bars and chin instead. Pull-through is unlikely because of the ring size.",
+    "ru": "До углов губ стопа нет. Нащёчный ремень останавливает вращение только после того, как подъём уже случился. Добавление подбородного ремешка превращает щёчку в короткий пелям: вращение останавливается на ремешке, подъём исчезает, а сила вместо этого умножается на дёсны и подбородок. Протягивание маловероятно из-за размера колец."
+   },
+   "head": {
+    "en": "A lift relieved by raising the head, plus a rotated mouthpiece. The lower the ring, the more rotation before the cheekpiece bites and the more lift. Riders use it to raise a horse that leans; the horse learns that the lips stop hurting when the head comes up and the mouth opens.",
+    "ru": "Подъём, снимаемый поднятием головы, плюс повёрнутое грызло. Чем ниже кольцо, тем больше поворот до того, как ремень вступит, и тем больше подъём. Всадники применяют его, чтобы поднять лошадь, которая ложится на повод; лошадь узнаёт, что губы перестают болеть, когда голова поднимается, а рот открывается."
+   },
+   "welfare": {
+    "en": "Sold as a milder alternative to a pelham, it is a different mechanism: a lift of the whole mouthpiece into the corners of the mouth with the mouthpiece turned on its side. Its reputation for mildness comes from the measured absence of strong poll pressure; the same measurements show where the force went instead.",
+    "ru": "Продаётся как более мягкая альтернатива пеляму, но это другой механизм: подъём всего грызла в углы губ с грызлом, повёрнутым на бок. Репутация мягкости происходит из измеренного отсутствия сильного давления на затылок; те же измерения показывают, куда ушла сила."
+   }
+  },
+  "american-gag": {
+   "mechanics": {
+    "en": "A long cheek with the cheekpiece at its top and the rein at its bottom; the mouthpiece is not fixed but slides on the cheek between stops. Taking the rein first slides the mouthpiece up the cheek, then rotates the cheek against the cheekpiece. There is no chain. It is a sliding gag and a ring-stack gag in series, which is why it is strong.",
+    "ru": "Длинная щёчка с нащёчным ремнём сверху и поводом снизу; грызло не закреплено, а скользит по щёчке между стопорами. Набор повода сначала поднимает грызло по щёчке, затем поворачивает щёчку против нащёчного ремня. Цепочки нет. Это скользящий гаг и гаг-стопка колец, соединённые последовательно, — потому он и сильный."
+   },
+   "stop": {
+    "en": "The slide has end stops on the cheek; the rotation is stopped only by the cheekpiece. Total rise can exceed 30 mm. The sliding joint is a pinch point for the lip.",
+    "ru": "У скольжения есть концевые стопоры на щёчке; вращение останавливает только нащёчный ремень. Общий подъём может превышать 30 мм. Скользящее соединение — место защемления губы."
+   },
+   "head": {
+    "en": "Strongly upward: both mechanisms lift.",
+    "ru": "Сильно вверх: оба механизма поднимают."
+   },
+   "welfare": {
+    "en": "Two lifts, no stop, a pinch: among the harshest cheeks in the register with any mouthpiece.",
+    "ru": "Два подъёма, без стопа, защемление: с любым грызлом — среди самых жёстких щёчек реестра."
+   }
+  },
+  "wilkie": {
+   "mechanics": {
+    "en": "A fixed ring with two small slots or loops: the cheekpiece attaches to the upper one, the rein to the lower. The lever arms are each about a ring radius, 15 mm, and there is no chain. Taking the rein rotates the ring a little until the cheekpiece tightens; the mouthpiece is lifted a few millimetres and the poll receives a small load. Measurements and the geometry agree that the effect is small; its designer denies that it is a gag at all.",
+    "ru": "Фиксированное кольцо с двумя маленькими прорезями или петлями: к верхней крепится нащёчный ремень, к нижней — повод. Плечи рычага — примерно по радиусу кольца, 15 мм, цепочки нет. Набор повода немного поворачивает кольцо, пока не натянется ремень; грызло поднимается на несколько миллиметров, затылок получает небольшую нагрузку. Измерения и геометрия согласны, что эффект мал; его конструктор вообще отрицает, что это гаг."
+   },
+   "stop": {
+    "en": "Rotation stopped early by the cheekpiece; a lift of a few millimetres; good pull-through protection from the fixed ring; no pinch.",
+    "ru": "Вращение рано останавливает нащёчный ремень; подъём на несколько миллиметров; хорошая защита от протягивания фиксированным кольцом; защемления нет."
+   },
+   "head": {
+    "en": "A faint upward bias from the small lift, a faint downward one from the poll: nearly neutral.",
+    "ru": "Слабый уклон вверх от небольшого подъёма, слабый вниз от затылка: почти нейтрально."
+   },
+   "welfare": {
+    "en": "The mildest of the lifting cheeks, popular for ponies and children for that reason. Judged by its numbers it is an eggbutt with a small lift added.",
+    "ru": "Самая мягкая из поднимающих щёчек, популярная для пони и детей именно поэтому. По своим числам это империал с небольшим добавленным подъёмом."
+   }
+  }
+ },
+ "mouthpieces": {
+  "mullen": {
+   "mechanics": {
+    "en": "One unjointed bar with a gentle forward curve. It cannot fold, so the rein force is divided between the tongue, which the curve follows, and the two bars, where the ends of the curve come down. The curve keeps most of the load on the tongue and leaves the bars with the remainder; nothing moves inside the mouth when the rein is taken, and nothing pinches.",
+    "ru": "Одна цельная штанга с мягким изгибом вперёд. Она не складывается, поэтому сила повода делится между языком, по которому идёт изгиб, и двумя краями дёсен, куда опускаются концы изгиба. Изгиб оставляет бо́льшую часть нагрузки на языке, а дёснам — остаток; при наборе повода внутри рта ничто не движется и ничто не защемляет."
+   },
+   "tissue": {
+    "en": "Tongue: a broad, even load over the whole width; the tongue is compressed but not squeezed from the sides. Bars: the curve's ends bear on them along a strip whose width depends on the bar's thickness, 16 mm giving about 9 mm of contact. Lips: only what rides up. Palate: untouched.",
+    "ru": "Язык: широкая ровная нагрузка по всей ширине; язык сжимается, но не стискивается с боков. Дёсны: концы изгиба ложатся на них полоской, ширина которой зависит от толщины штанги — 16 мм дают около 9 мм контакта. Губы: только то, что поднимается. Нёбо: не затронуто."
+   },
+   "welfare": {
+    "en": "The most even distribution of a direct force the register has, which is why it heads the ranking on the two suspended cheeks. Its weakness is that it cannot be moved by the tongue and offers the horse nothing to do with its mouth; some horses lean on it, and leaning is a horse pressing its own tongue.",
+    "ru": "Самое равномерное распределение прямой силы в реестре, поэтому оно возглавляет рейтинг на двух подвесных щёчках. Его слабость — его нельзя сдвинуть языком, и оно не даёт лошади ничем занять рот; некоторые лошади на него ложатся, а лечь — значит самой давить на свой язык."
+   }
+  },
+  "straight-bar": {
+   "mechanics": {
+    "en": "An unjointed bar with no curve. Because it is straight, it meets the tongue at its highest point and the bars only after the tongue has been compressed; the load then bridges onto the bars, and the Finnish trotter data show more bar lesions with unjointed bits than with jointed ones.",
+    "ru": "Цельная штанга без изгиба. Поскольку она прямая, она касается языка в его высшей точке, а дёсен — только после того, как язык сжат; тогда нагрузка перекидывается на дёсны, и финские данные по рысакам показывают больше повреждений дёсен с цельными удилами, чем с сочленёнными."
+   },
+   "tissue": {
+    "en": "Tongue: compressed in the middle. Bars: more load than under a mullen, over the same narrow strip of mucosa over bone. Lips: as any unjointed bar. Palate: untouched.",
+    "ru": "Язык: сжат посередине. Дёсны: больше нагрузки, чем под изогнутой штангой, на той же узкой полоске слизистой над костью. Губы: как у любой цельной штанги. Нёбо: не затронуто."
+   },
+   "welfare": {
+    "en": "A mullen without its one virtue. Mostly met in mouthing bits and driving bits.",
+    "ru": "Изогнутая штанга без своего единственного достоинства. Встречается в основном в трензелях для заездки и упряжных удилах."
+   }
+  },
+  "ported": {
+   "mechanics": {
+    "en": "An unjointed bar with an arch in the middle for the tongue. The arch removes load from the tongue and sends it to the bars; the higher the port, the more complete the transfer. On a direct cheek the port stays where it is put; on a rotating cheek it swings towards the palate by the shank's angle, and a medium or high port reaches it. It is the standard mouthpiece of the Weymouth and the Kimblewick.",
+    "ru": "Цельная штанга с аркой посередине для языка. Арка снимает нагрузку с языка и переносит её на дёсны; чем выше порт, тем полнее перенос. На прямой щёчке порт остаётся там, где его поставили; на поворачивающейся щёчке он качается к нёбу на угол поворота, и средний или высокий порт до него доходит. Это стандартное грызло мундштука и кимблвика."
+   },
+   "tissue": {
+    "en": "Tongue: relieved in proportion to the port height, which the horse usually welcomes. Bars: carry most of the load, over bone, with the port's shoulders adding an edge. Palate: safe with a low port on a snaffle; at risk with a medium or high port on any curb, and with a loose chain on all of them.",
+    "ru": "Язык: разгружен пропорционально высоте порта, что лошадь обычно приветствует. Дёсны: несут бо́льшую часть нагрузки, над костью, а плечи порта добавляют ребро. Нёбо: безопасно при низком порте на трензеле; под угрозой при среднем или высоком порте на любом мундштуке и при слабой цепочке на всех."
+   },
+   "welfare": {
+    "en": "Trades tongue comfort for bar loading. The tongue is soft and recovers; the bars are a millimetre or two of gum over bone and do not. Acceptable with a low port on a cheek that does not rotate; the standard dressage curb's low port is tolerable only because the curb rein is held light.",
+    "ru": "Обменивает комфорт языка на нагрузку дёсен. Язык мягок и восстанавливается; дёсны — миллиметр-два десны над костью, и они не восстанавливаются. Приемлем с низким портом на не поворачивающейся щёчке; низкий порт стандартного выездкового мундштука терпим лишь потому, что мундштучный повод держат легко."
+   }
+  },
+  "ported-barrel": {
+   "mechanics": {
+    "en": "Two short cannons joined by a central barrel that lets each side rotate independently, with a low port formed by the shape of the cannons. The mouthpiece does not fold, so there is no squeeze of the tongue; one rein can tilt its side without moving the other; the low port gives a little tongue room. A design of the Myler type.",
+    "ru": "Два коротких плеча, соединённые центральной втулкой, позволяющей каждой стороне вращаться независимо, с низким портом, образованным формой плечей. Грызло не складывается, поэтому язык не стискивается; один повод может наклонить свою сторону, не двигая другую; низкий порт даёт языку немного места. Конструкция типа Myler."
+   },
+   "tissue": {
+    "en": "Tongue and bars share the load about equally; the independent sides mean a one-sided rein loads one bar rather than folding the mouthpiece. Palate: the port is low. Lips: a rotating cannon end near the corner of the mouth.",
+    "ru": "Язык и дёсны делят нагрузку примерно поровну; независимые стороны означают, что односторонний повод нагружает одну десну, а не складывает грызло. Нёбо: порт низкий. Губы: вращающийся конец плеча у угла рта."
+   },
+   "welfare": {
+    "en": "A thoughtful compromise: the stability of an unjointed bar with independent sides. Thinner than most, at 14 mm, which narrows the contact on the bars.",
+    "ru": "Продуманный компромисс: устойчивость цельной штанги с независимыми сторонами. Тоньше большинства — 14 мм, — что сужает контакт на дёснах."
+   }
+  },
+  "flexible-mullen": {
+   "mechanics": {
+    "en": "A curved bar of rubber or thermoplastic over a steel or nylon core, 18–20 mm thick. It bends to the shape of the tongue and spreads the load over more of it than a steel mullen can; the material is warm and has high friction, so the bar does not slide across the tongue.",
+    "ru": "Изогнутая штанга из резины или термопластика на стальном или нейлоновом сердечнике, толщиной 18–20 мм. Она изгибается по форме языка и распределяет нагрузку по большей его части, чем способна стальная; материал тёплый и с высоким трением, поэтому штанга не скользит по языку."
+   },
+   "tissue": {
+    "en": "Tongue: the broadest contact in the register, three quarters of the load. Bars: least loaded of any mouthpiece, because the bar wraps the tongue rather than bridging. Palate: untouched. Thickness: 18–20 mm in a mouth with 14 mm of room compresses the tongue at rest, and small mouths cannot close on it.",
+    "ru": "Язык: самый широкий контакт в реестре, три четверти нагрузки. Дёсны: нагружены меньше, чем под любым другим грызлом, потому что штанга обхватывает язык, а не перекидывается через него. Нёбо: не затронуто. Толщина: 18–20 мм во рту с 14 мм места сжимают язык в покое, а маленький рот на них не закрывается."
+   },
+   "welfare": {
+    "en": "The kindest contact surface and the worst fit; which wins depends on the mouth. Rubber is chewed through and a worn bar exposes its core; check it. Pointless on any cheek that lifts, since the lift lands on the lips, not the tongue.",
+    "ru": "Самая мягкая поверхность контакта и худшая посадка; что перевесит, зависит от рта. Резину прогрызают, и изношенная штанга обнажает сердечник — проверяйте. Бессмысленно на любой поднимающей щёчке, потому что подъём приходится на губы, а не на язык."
+   }
+  },
+  "single-joint": {
+   "mechanics": {
+    "en": "Two cannons hinged in the middle. Pulled from both ends, they fold into a V around the tongue: the hinge sinks into the tongue, the tongue is squeezed between the cannons, and the cannon ends bear on the bars at an angle. The classic claim that the hinge strikes the palate was tested radiographically at 25 N and the tongue indented instead; palate contact needs a high hand, a bit that is too wide, or a mouth with a low palate. The mechanical advantage of the fold concentrates the same total force onto a smaller area: the register models the tongue contact as 60 % of an unjointed bar's.",
+    "ru": "Два плеча на шарнире посередине. При тяге с обоих концов они складываются буквой V вокруг языка: шарнир уходит в язык, язык стискивается между плечами, а концы плечей ложатся на дёсны под углом. Классическое утверждение, что шарнир бьёт в нёбо, проверили рентгеном при 25 Н — вместо этого вдавливался язык; контакт с нёбом требует высокой руки, слишком широких удил или рта с низким нёбом. Механическое преимущество складывания концентрирует ту же суммарную силу на меньшей площади: модель принимает контакт с языком за 60 % от цельной штанги."
+   },
+   "tissue": {
+    "en": "Tongue: a concentrated load at the hinge and a lateral squeeze from the cannons. Bars: angled contact from the cannon ends, narrower than a straight bar's. Lips: the cannon ends pull inward at the corners. Palate: at risk under a high hand or an oversize bit.",
+    "ru": "Язык: концентрированная нагрузка в шарнире и боковое стискивание плечами. Дёсны: наклонный контакт концов плечей, уже, чем у прямой штанги. Губы: концы плечей тянут внутрь в углах. Нёбо: под угрозой при высокой руке или слишком широких удилах."
+   },
+   "welfare": {
+    "en": "The commonest mouthpiece in the world and, among smooth ones, the least kind: it turns a push into a pinch. Thick, correctly sized and on a steady cheek it is tolerable; thin, wide or on a lever it is not.",
+    "ru": "Самое распространённое грызло в мире и среди гладких — наименее мягкое: оно превращает нажатие в щипок. Толстое, правильно подобранное по размеру и на устойчивой щёчке оно терпимо; тонкое, широкое или на рычаге — нет."
+   }
+  },
+  "slow-twist": {
+   "mechanics": {
+    "en": "A single-jointed mouthpiece whose cannons are twisted along their length into a shallow spiral, so the surface meets the tissue in ridges rather than as a smooth cylinder. The ridges carry the load on perhaps 70 % of the surface and their edges raise the local pressure further. Everything said of the single joint applies, multiplied.",
+    "ru": "Одночленное грызло, плечи которого скручены по длине в пологую спираль, так что поверхность касается ткани рёбрами, а не гладким цилиндром. Рёбра несут нагрузку примерно на 70 % поверхности, а их грани дополнительно повышают местное давление. Всё сказанное об одиночном сочленении относится и сюда, умноженное."
+   },
+   "tissue": {
+    "en": "Tongue and bars: the single joint's distribution with ridges pressed into it; the bars, with a millimetre of mucosa, take the ridges on bone. Lips: ridges turning in the corner of the mouth as the bit moves.",
+    "ru": "Язык и дёсны: распределение одиночного сочленения с вдавленными в него рёбрами; дёсны с миллиметром слизистой принимают рёбра на кость. Губы: рёбра, поворачивающиеся в углу рта при движении удил."
+   },
+   "welfare": {
+    "en": "Built to hurt more than a smooth joint so that a horse that ignores the smooth joint will not ignore this. Illegal in dressage; common in jumping warm-ups.",
+    "ru": "Создано, чтобы причинять больше боли, чем гладкое сочленение, — чтобы лошадь, игнорирующая гладкое, не проигнорировала это. Запрещено в выездке; распространено на разминке конкура."
+   }
+  },
+  "corkscrew": {
+   "mechanics": {
+    "en": "A single joint with a tight, deep twist: more ridges, sharper, on a thinner bar. Contact falls to about half the surface and the edge factor rises accordingly.",
+    "ru": "Одиночное сочленение с частой глубокой закруткой: больше рёбер, острее, на более тонкой штанге. Контакт падает примерно до половины поверхности, а фактор ребра соответственно растёт."
+   },
+   "tissue": {
+    "en": "As the slow twist, with every figure worse. The thinner bar also indents deeper before the bone of the bars stops it, narrowing the contact strip.",
+    "ru": "Как у редкой закрутки, но каждая цифра хуже. Более тонкая штанга также вдавливается глубже, прежде чем её остановит кость дёсен, сужая полоску контакта."
+   },
+   "welfare": {
+    "en": "A twisted wire with a little more metal. No argument for it exists except that a horse has been taught to ignore everything milder.",
+    "ru": "Витая проволока с чуть большим количеством металла. Аргументов в его пользу нет, кроме того, что лошадь научили игнорировать всё более мягкое."
+   }
+  },
+  "twisted-wire": {
+   "mechanics": {
+    "en": "A single-jointed mouthpiece made of a 4–5 mm wire twisted into a spiral. The thin section indents fully to the bone of the bars along a strip only 3–4 mm wide, the ridges halve the contact again, and the edges of the twist concentrate what is left. At 20 N on each rein the model puts the bars above 700 kPa, three times the human facial pain threshold.",
+    "ru": "Одночленное грызло из проволоки 4–5 мм, скрученной в спираль. Тонкое сечение вдавливается до кости дёсен полоской всего 3–4 мм, рёбра ещё вдвое уменьшают контакт, а грани скрутки концентрируют оставшееся. При 20 Н на каждом поводе модель даёт на дёснах больше 700 кПа — втрое выше болевого порога лица человека."
+   },
+   "tissue": {
+    "en": "Bars: cut, not pressed; the wire reaches bone. Tongue: a wire pressed into it along a line, with the hinge in the middle. Lips: the wire at the corners with the ring's hole beside it.",
+    "ru": "Дёсны: режет, а не давит; проволока доходит до кости. Язык: проволока, вдавленная линией, с шарниром посередине. Губы: проволока в углах рядом с отверстием кольца."
+   },
+   "welfare": {
+    "en": "Among the two or three harshest mouthpieces made. Its use is a statement that the horse's pain is the mechanism.",
+    "ru": "Одно из двух-трёх самых жёстких выпускаемых грызл. Его применение — заявление, что боль лошади и есть механизм."
+   }
+  },
+  "double-twisted-wire": {
+   "mechanics": {
+    "en": "Two thin twisted wires side by side, each with its own joint, offset so that the joints do not coincide. Two lines of contact instead of one, each thinner than a single wire, and two hinges that fold independently so the tongue is caught between four cannon halves.",
+    "ru": "Две тонкие витые проволоки рядом, каждая со своим сочленением, смещённые так, чтобы шарниры не совпадали. Две линии контакта вместо одной, каждая тоньше одиночной проволоки, и два независимо складывающихся шарнира, так что язык зажат между четырьмя половинами плечей."
+   },
+   "tissue": {
+    "en": "Bars: two wires to the bone. Tongue: pinched twice, in two places. Lips: two wires and two hinges at the corners.",
+    "ru": "Дёсны: две проволоки до кости. Язык: защемлён дважды, в двух местах. Губы: две проволоки и два шарнира в углах."
+   },
+   "welfare": {
+    "en": "The harshest mouthpiece in the register on every cheek it is modelled on.",
+    "ru": "Самое жёсткое грызло реестра на любой щёчке, на которой оно смоделировано."
+   }
+  },
+  "serrated": {
+   "mechanics": {
+    "en": "A single-jointed mouthpiece with transverse ridges or teeth cut into the cannons, the mouthpiece of the Scorrier. The ridges grip rather than slide and halve the contact area; their edges are square rather than spiral.",
+    "ru": "Одночленное грызло с поперечными рёбрами или зубцами, нарезанными на плечах, — грызло Скорриера. Рёбра цепляются, а не скользят, и вдвое уменьшают площадь контакта; их грани квадратные, а не спиральные."
+   },
+   "tissue": {
+    "en": "Bars and tongue: square-edged ridges pressed in along the length of each cannon. Lips: the same at the corners.",
+    "ru": "Дёсны и язык: рёбра с квадратными гранями, вдавленные по длине каждого плеча. Губы: то же в углах."
+   },
+   "welfare": {
+    "en": "A device for a horse that bolts in harness, carried over into riding. Harsh with any cheek.",
+    "ru": "Устройство для лошади, несущей в упряжи, перенесённое в верховую езду. Жёстко с любой щёчкой."
+   }
+  },
+  "roller-jointed": {
+   "mechanics": {
+    "en": "A single joint whose cannons carry loose rollers, round (cherry) or set in squared cannons (Magenis). The rollers turn under the tongue, giving the horse something to move and preventing it from setting its jaw against a fixed surface. The load is carried on the crowns of the rollers, so contact is about 80 % of a smooth bar's, and the squared cannons of the Magenis add an edge.",
+    "ru": "Одиночное сочленение, плечи которого несут свободные ролики — круглые («вишнёвые») или вставленные в квадратные плечи (Магенис). Ролики вращаются под языком, давая лошади что двигать и не позволяя упереться челюстью в неподвижную поверхность. Нагрузка несётся на гребнях роликов, так что контакт — около 80 % гладкой штанги, а квадратные плечи Магениса добавляют ребро."
+   },
+   "tissue": {
+    "en": "Tongue: constant small movement under load, which the horse answers with constant small movement of its own. Bars: roller crowns, or squared edges on the Magenis. Lips: rollers turning at the corner.",
+    "ru": "Язык: постоянное мелкое движение под нагрузкой, на которое лошадь отвечает постоянным мелким движением своим. Дёсны: гребни роликов или квадратные грани у Магениса. Губы: ролики, вращающиеся в углу."
+   },
+   "welfare": {
+    "en": "Chosen for horses that lean or set their jaw; what it does is keep the tongue from ever resting. A busy mouth is a mouth that is never released.",
+    "ru": "Выбирают для лошадей, которые ложатся на повод или упираются челюстью; что оно делает — не даёт языку никогда отдохнуть. Занятый рот — рот, который никогда не отпускают."
+   }
+  },
+  "ported-jointed": {
+   "mechanics": {
+    "en": "A single joint whose cannons rise in an arch over the tongue before meeting at the hinge: the Fillis mouth. The arch gives the tongue room, so more of the load goes to the bars, and the hinge sits higher in the mouth, nearer the palate, than a plain joint's.",
+    "ru": "Одиночное сочленение, плечи которого поднимаются аркой над языком, прежде чем сойтись в шарнире: грызло Филлис. Арка даёт языку место, поэтому больше нагрузки уходит на дёсны, а шарнир сидит во рту выше, ближе к нёбу, чем у обычного сочленения."
+   },
+   "tissue": {
+    "en": "Tongue: relieved. Bars: loaded more than under a plain joint. Palate: the raised hinge needs less lift to reach it. Lips: as a single joint.",
+    "ru": "Язык: разгружен. Дёсны: нагружены больше, чем под обычным сочленением. Нёбо: поднятому шарниру нужно меньше подъёма, чтобы его достичь. Губы: как у одиночного сочленения."
+   },
+   "welfare": {
+    "en": "Only sensible on the hanging cheek it was designed for, which holds the arch at a fixed angle; anywhere else the arch wanders.",
+    "ru": "Имеет смысл только на подвесной щёчке, для которой создано, — она держит арку под фиксированным углом; где-либо ещё арка гуляет."
+   }
+  },
+  "french-link": {
+   "mechanics": {
+    "en": "Two cannons joined by a flat figure-of-eight plate. The two joints let the mouthpiece fold around the tongue instead of into it, and the plate lies flat on the tongue, so the whole mouthpiece moves down onto the tongue rather than up towards the palate when the rein is taken; radiographs and the cadaver study both show this. The plate's kindness depends on its lying flat: any cheek that fixes the mouthpiece's angle, or any rotation of a shank, can tilt the plate so its edge presses the tongue.",
+    "ru": "Два плеча, соединённые плоской пластиной в форме восьмёрки. Два сочленения позволяют грызлу складываться вокруг языка, а не в него, а пластина лежит на языке плоско, так что при наборе повода всё грызло опускается на язык, а не поднимается к нёбу; это показывают и рентгенограммы, и исследование на кадаврах. Мягкость пластины зависит от того, лежит ли она плоско: любая щёчка, фиксирующая угол грызла, или любой поворот плеча могут наклонить пластину так, что языка коснётся её ребро."
+   },
+   "tissue": {
+    "en": "Tongue: the plate's face, broad and flat, plus the cannons along its sides; the tongue is pressed down, not pinched. Bars: the cannon ends, nearly straight. Palate: clear. Lips: two small joints near the corners can nip.",
+    "ru": "Язык: плоскость пластины, широкая и ровная, плюс плечи вдоль его боков; язык прижимается вниз, а не защемляется. Дёсны: концы плечей, почти прямые. Нёбо: свободно. Губы: два маленьких сочленения у углов могут прищипнуть."
+   },
+   "welfare": {
+    "en": "Kind when flat, harsh when tilted, and the rider cannot see which it is. On loose rings it lies flat; on fixed cheeks check it.",
+    "ru": "Мягко, когда лежит плоско, жёстко, когда наклонено, и всадник не видит, что из двух. На подвижных кольцах лежит плоско; на фиксированных щёчках — проверяйте."
+   }
+  },
+  "dr-bristol": {
+   "mechanics": {
+    "en": "A French link whose plate is longer, rectangular, and set at an angle to the cannons, so that when the rein is taken the plate's edge, not its face, is pressed into the tongue. It is the French link's failure mode made deliberate. Fitted the other way round the plate lies flatter and the bit is milder, which is why opinions of it differ so much.",
+    "ru": "Французское звено, пластина которого длиннее, прямоугольна и поставлена под углом к плечам, так что при наборе повода в язык вдавливается ребро пластины, а не плоскость. Это сделанный намеренно режим отказа французского звена. Надетое другой стороной, пластина лежит ровнее и удила мягче — поэтому мнения о нём так расходятся."
+   },
+   "tissue": {
+    "en": "Tongue: a long edge pressed across it; the register models this with the single joint's concentration and a raised edge factor. Bars: as a French link. Palate: clear.",
+    "ru": "Язык: длинное ребро, вдавленное поперёк; модель принимает концентрацию одиночного сочленения и повышенный фактор ребра. Дёсны: как у французского звена. Нёбо: свободно."
+   },
+   "welfare": {
+    "en": "A tongue bit. It is chosen for horses that lean on the tongue and it works by making the tongue hurt.",
+    "ru": "Удила на язык. Их выбирают для лошадей, ложащихся на язык, и работают они, причиняя боль языку."
+   }
+  },
+  "lozenge": {
+   "mechanics": {
+    "en": "Two cannons joined by a rounded oval link. As the French link, the mouthpiece folds around the tongue and settles onto it; the rounded link has no edge to tilt onto the tongue, so it keeps its character on fixed cheeks and under rotation better than a plate does.",
+    "ru": "Два плеча, соединённые округлым овальным звеном. Как и у французского звена, грызло складывается вокруг языка и ложится на него; у округлого звена нет ребра, которым оно могло бы наклониться на язык, поэтому оно сохраняет свой характер на фиксированных щёчках и при повороте лучше, чем пластина."
+   },
+   "tissue": {
+    "en": "Tongue: the link's rounded underside and the cannons along its sides. Bars: nearly straight cannon ends. Palate: clear. Lips: two small joints near the corners.",
+    "ru": "Язык: округлая нижняя сторона звена и плечи вдоль его боков. Дёсны: почти прямые концы плечей. Нёбо: свободно. Губы: два маленьких сочленения у углов."
+   },
+   "welfare": {
+    "en": "The safe choice among jointed mouthpieces: no edge, no nutcracker, no sensitivity to angle. It still delivers the whole rein force to tongue and bars.",
+    "ru": "Надёжный выбор среди сочленённых грызл: ни ребра, ни щипцов, ни чувствительности к углу. Оно всё равно передаёт всю силу повода на язык и дёсны."
+   }
+  },
+  "angled-lozenge": {
+   "mechanics": {
+    "en": "A lozenge whose cannons are curved to the shape of the tongue and whose link is set forward at about 45°, so that when the rein is taken the link lies flat along the tongue instead of across it, and the cannons follow the tongue's sides. The design of the Sprenger KK Ultra and Neue Schule Tranz families. The curve spreads the contact; the angle removes the link's tendency to stand up under tension.",
+    "ru": "«Конфетка», плечи которой изогнуты по форме языка, а звено повёрнуто вперёд примерно на 45°, так что при наборе повода звено ложится вдоль языка, а не поперёк, а плечи следуют его бокам. Конструкция семейств Sprenger KK Ultra и Neue Schule Tranz. Изгиб распределяет контакт; угол убирает склонность звена вставать под натяжением."
+   },
+   "tissue": {
+    "en": "Tongue: the broadest contact of any jointed mouthpiece. Bars: curved cannons lying along rather than across. Palate: clear. Lips: as a lozenge.",
+    "ru": "Язык: самый широкий контакт среди сочленённых грызл. Дёсны: изогнутые плечи, лежащие вдоль, а не поперёк. Нёбо: свободно. Губы: как у «конфетки»."
+   },
+   "welfare": {
+    "en": "As kind as a jointed mouthpiece has been made; on a hanging cheek it is within a point of the mullen in the ranking. It is the shape to choose when a horse must carry a jointed bit.",
+    "ru": "Насколько мягким удалось сделать сочленённое грызло; на подвесной щёчке оно в пределах одного балла от цельного в рейтинге. Это та форма, которую стоит выбрать, если лошадь должна нести сочленённые удила."
+   }
+  },
+  "ball-link": {
+   "mechanics": {
+    "en": "Two cannons joined by a sphere. A lozenge with a smaller footprint: the ball concentrates the centre load into a point on the tongue rather than a short bar, and allows the cannons to swivel more freely.",
+    "ru": "Два плеча, соединённые шаром. «Конфетка» с меньшим отпечатком: шар концентрирует центральную нагрузку в точку на языке, а не в короткий отрезок, и позволяет плечам свободнее поворачиваться."
+   },
+   "tissue": {
+    "en": "Tongue: a point load at the centre. Bars and lips: as a lozenge.",
+    "ru": "Язык: точечная нагрузка в центре. Дёсны и губы: как у «конфетки»."
+   },
+   "welfare": {
+    "en": "Between the lozenge and the Dr. Bristol in effect: no edge, but a small centre.",
+    "ru": "По действию между «конфеткой» и «Доктором Бристолем»: без ребра, но с маленьким центром."
+   }
+  },
+  "barrel": {
+   "mechanics": {
+    "en": "Two cannons meeting in a central barrel or rotary sleeve, so that each side can rotate independently but the mouthpiece cannot fold. The horse gets the independent sides of a jointed bit without the nutcracker, and a one-sided rein moves one cannon only.",
+    "ru": "Два плеча, сходящиеся в центральной втулке или поворотной муфте, так что каждая сторона вращается независимо, но грызло не складывается. Лошадь получает независимые стороны сочленённых удил без щипцов, а односторонний повод двигает только одно плечо."
+   },
+   "tissue": {
+    "en": "Tongue: the barrel's rounded underside, no squeeze. Bars: cannon ends under a one-sided rein. Palate: clear.",
+    "ru": "Язык: округлая нижняя сторона втулки, без стискивания. Дёсны: концы плечей под односторонним поводом. Нёбо: свободно."
+   },
+   "welfare": {
+    "en": "A sound idea: the fold is the single joint's main fault and the barrel removes it. Otherwise a smooth mouthpiece of ordinary thickness.",
+    "ru": "Здравая идея: складывание — главный порок одиночного сочленения, и втулка его убирает. В остальном — гладкое грызло обычной толщины."
+   }
+  },
+  "waterford": {
+   "mechanics": {
+    "en": "A chain of six to nine ball-shaped links. The mouthpiece drapes over the tongue and follows its shape; it has no fixed surface the horse can lean on, which is its purpose. Each ball is a small contact and the load is carried on the crowns of the balls, so the contact fraction is about 60 %; between the balls are gaps that can take a fold of tongue or lip.",
+    "ru": "Цепь из шести-девяти шарообразных звеньев. Грызло обвисает по языку и следует его форме; у него нет неподвижной поверхности, на которую лошадь могла бы лечь, — в этом его назначение. Каждый шарик — маленький контакт, и нагрузка несётся на гребнях шариков, так что доля контакта около 60 %; между шариками зазоры, в которые может попасть складка языка или губы."
+   },
+   "tissue": {
+    "en": "Tongue: many small contacts in a quiet hand, a row of pressure points in a strong one. Bars: whichever balls lie on them. Lips: links at the corners, with gaps. Palate: clear.",
+    "ru": "Язык: много мелких контактов в спокойной руке, ряд точек давления — в сильной. Дёсны: те шарики, что на них лежат. Губы: звенья в углах, с зазорами. Нёбо: свободно."
+   },
+   "welfare": {
+    "en": "Honest in a snaffle and a light hand; its common use is on gags for strong horses, where the chain is dragged into the lips. The 18 mm thickness crowds small mouths.",
+    "ru": "Честен в трензеле и лёгкой руке; обычно же его применяют на гагах для сильных лошадей, где цепь затягивается в губы. Толщина 18 мм теснит маленькие рты."
+   }
+  },
+  "chain": {
+   "mechanics": {
+    "en": "A length of chain, sometimes a bicycle chain, between the rings. It conforms to anything and bites into anything; every link has edges and every gap pinches. Thin, flexible, and banned in most disciplines.",
+    "ru": "Отрезок цепи, иногда велосипедной, между кольцами. Облегает всё и впивается во всё; у каждого звена грани, каждый зазор щиплет. Тонкое, гибкое и запрещённое в большинстве дисциплин."
+   },
+   "tissue": {
+    "en": "Everything it touches, in lines a few millimetres wide, with pinching between links.",
+    "ru": "Всё, чего касается, полосками в несколько миллиметров, с защемлением между звеньями."
+   },
+   "welfare": {
+    "en": "A mouthpiece whose severity is its only feature.",
+    "ru": "Грызло, чья жёсткость — единственное его свойство."
+   }
+  },
+  "keys": {
+   "mechanics": {
+    "en": "A straight bar with two or three short metal keys hanging from its centre. The keys dangle onto the tongue and move whenever the horse moves its mouth, inviting it to chew and mouth the bit; this is the mouthing bit for young horses being introduced to carrying a bit. The bar itself is an unjointed straight bar and loads the mouth as one.",
+    "ru": "Прямая штанга с двумя-тремя короткими металлическими ключиками, свисающими с её середины. Ключики болтаются на языке и движутся при каждом движении рта, побуждая жевать и обрабатывать удила; это трензель для заездки молодых лошадей, которых приучают носить удила. Сама штанга — цельная прямая и нагружает рот как таковая."
+   },
+   "tissue": {
+    "en": "Tongue: the bar and the moving keys. Bars: the straight bar's bridging load. Lips: nothing special. Palate: clear.",
+    "ru": "Язык: штанга и движущиеся ключики. Дёсны: перекидная нагрузка прямой штанги. Губы: ничего особенного. Нёбо: свободно."
+   },
+   "welfare": {
+    "en": "A habituation tool, not a control tool. The keys are a hazard on any cheek that rotates or lifts and have no place on a lever.",
+    "ru": "Инструмент привыкания, а не управления. Ключики опасны на любой щёчке, которая поворачивается или поднимается, и им не место на рычаге."
+   }
+  }
+ }
+}
