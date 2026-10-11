@@ -98,15 +98,15 @@
 
   <section class="bits-matrix">
     <h2>The whole matrix at a glance</h2>
-    <p class="page-standfirst">Every cheek (rows, grouped by mechanism) against every mouthpiece (columns). The shade is the burden index at the reference condition: 20&nbsp;N on each rein, head on the vertical, catalogue diameters. Darker is heavier on the horse. Click a cell to open its dossier.</p>
+    <p class="page-standfirst">Every cheek (rows, grouped by mechanism) against every mouthpiece (columns), at the reference condition: 20&nbsp;N on each rein, head on the vertical, catalogue diameters. The colour is the harm class, which is the worst of three readings: where the peak pressure stands against the pain thresholds, the most serious lesion the model expects, and whether pain is the device's mechanism. The number is the harm index, 0–100, which also weighs the expected injuries by their severity. Click a cell to open its dossier.</p>
     <div class="bits-matrix__scroll">
       <table class="bits-matrix__table" data-matrix>
-        <caption class="visually-hidden">Burden index for every cheek and mouthpiece combination</caption>
+        <caption class="visually-hidden">Harm class and harm index for every cheek and mouthpiece combination</caption>
         <thead><tr><th scope="col"></th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
-    <p class="bits-matrix__legend"><span><i style="background:var(--viz-seq-1)"></i>lightest</span><span><i style="background:var(--viz-seq-2)"></i></span><span><i style="background:var(--viz-seq-3)"></i></span><span><i style="background:var(--viz-seq-4)"></i></span><span><i style="background:var(--viz-seq-5)"></i>heaviest</span><span><i style="border:1px dashed var(--rule)"></i>impossible</span><span><i style="background:var(--viz-seq-3);opacity:.45"></i>theoretical only</span></p>
+    <p class="bits-matrix__legend"><span><i class="is-c0"></i>Pressure without pain: every tissue under 100&nbsp;kPa, no lesion likely</span><span><i class="is-c1"></i>Discomfort: between the pain-free bound and the facial threshold, or a lesion possible</span><span><i class="is-c2"></i>Pain at ordinary tension: above the facial threshold, or a serious lesion likely</span><span><i class="is-c3"></i>Injury expected: above the hand threshold, or a lesion expected</span><span><i class="is-c4"></i>Pain is the mechanism: palate spoons, prongs, cutting surfaces, scissor mouths</span><span><i style="border:1px dashed var(--rule)"></i>impossible</span><span><i class="is-c2" style="opacity:.45"></i>theoretical only</span></p>
   </section>
 
   <section>
@@ -143,12 +143,13 @@
 <template id="tpl-tag"><span class="bits-tag"></span></template>
 <template id="tpl-matrix-col"><th scope="col"><span></span></th></template>
 <template id="tpl-matrix-row"><tr><th scope="row"></th></tr></template>
-<template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="visually-hidden"></span></a></td></template>
+<template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="bits-cell__num" aria-hidden="true"></span><span class="visually-hidden"></span></a></td></template>
 <template id="tpl-extreme">
   <article class="bits-extreme">
     <p class="bits-extreme__kicker"></p>
     <h3><a></a></h3>
     <p class="bits-alt"></p>
+    <p><span class="bits-class"></span></p>
     <p class="bits-extreme__meta"></p>
   </article>
 </template>

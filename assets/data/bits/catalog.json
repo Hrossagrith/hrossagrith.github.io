@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "notes": {
   "en": "Structural catalogue for the bit-mechanics register. Every number under `model` is a modelling parameter with its justification in text.json (section `model_params`). Lengths in millimetres, forces in newtons.",
   "ru": "Структурный каталог реестра механики удил. Каждое число в `model` — параметр модели; обоснование в text.json (раздел `model_params`). Длины в миллиметрах, силы в ньютонах."
@@ -5582,16 +5582,6 @@
   "material": "stainless",
   "chin_guard": false
  },
- "weights": {
-  "peak_pressure": 0.35,
-  "stop": 0.15,
-  "pinch_edges": 0.15,
-  "extra_forces": 0.1,
-  "palate": 0.05,
-  "signal": 0.05,
-  "bit_space": 0.1,
-  "release": 0.05
- },
  "validity": {
   "default": "exists",
   "common": {
@@ -8445,5 +8435,69 @@
     "ru": "Запрещённые и «подпольные»"
    }
   }
- ]
+ ],
+ "harm": {
+  "note": "Harm index = weights.pain * pain + weights.injury * injury + weights.control * control, each part 0-100. The class is the worst of the pain, injury and design readings, never an average.",
+  "weights": {
+   "pain": 0.4,
+   "injury": 0.4,
+   "control": 0.2
+  },
+  "pain_curve": [
+   [
+    0,
+    0
+   ],
+   [
+    100,
+    0.25
+   ],
+   [
+    232,
+    0.55
+   ],
+   [
+    445,
+    0.85
+   ],
+   [
+    890,
+    1
+   ]
+  ],
+  "pain_mix": {
+   "peak": 0.7,
+   "average": 0.3
+  },
+  "injury_severity": {
+   "commissure": 1,
+   "bars": 1.2,
+   "tongue": 1.2,
+   "palate": 0.9,
+   "chin": 0.5,
+   "cheek_teeth": 0.7,
+   "pinch": 0.5,
+   "jaw": 1,
+   "nose": 0.9,
+   "airway": 1,
+   "behaviour": 0.4
+  },
+  "injury_mix": {
+   "worst": 0.55,
+   "sum": 0.45,
+   "sum_gain": 2.5
+  },
+  "control_weights": {
+   "stop": 0.5,
+   "release": 0.3,
+   "signal": 0.2
+  },
+  "class_rules": {
+   "exclude": [
+    "behaviour"
+   ],
+   "severity_for_class_2": 0.7,
+   "design_edge": 1.9
+  }
+ }
 }

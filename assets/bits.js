@@ -390,20 +390,12 @@
       var note = ui("validity_" + status, status);
       if (pair) { note += " · " + t(pair.name); }
       var rank = rankOf(state.cheek, state.mouth);
-      if (rank.rank) {
-        note += " · " + fill(ui("rank_line", "Rank {rank} of {total}, kindest first"), { rank: rank.rank, total: rank.total });
+      if (rank.row) {
+        note += " · " + ui("class_" + rank.row.harmClass, "") + " · " + fill(ui("rank_line", "Rank {rank} of {total}, kindest first"), { rank: rank.rank, total: rank.total });
       }
       field("selection-note", note);
       var link = result.querySelector("[data-dossier-link]");
       link.setAttribute("href", dossierUrl(dossierBase, state.cheek, state.mouth));
-    }
-
-    function bin(composite) {
-      if (composite < 12) { return 1; }
-      if (composite < 18) { return 2; }
-      if (composite < 28) { return 3; }
-      if (composite < 42) { return 4; }
-      return 5;
     }
 
     function renderMatrix() {
@@ -444,17 +436,18 @@
               cell.classList.add("bits-cell--invalid");
               cell.removeAttribute("href");
               cell.setAttribute("aria-disabled", "true");
-              cell.querySelector("span").textContent = label + ": " + ui("validity_invalid", "impossible");
+              cell.querySelector(".visually-hidden").textContent = label + ": " + ui("validity_invalid", "impossible");
             } else {
               var row = lookup[cheek.id + "|" + mouth.id];
-              cell.classList.add("bits-cell--" + bin(row.composite));
+              cell.classList.add("bits-cell--c" + row.harmClass);
               if (status === "theoretical") { cell.classList.add("bits-cell--theoretical"); }
               cell.setAttribute("href", dossierUrl(dossierBase, cheek.id, mouth.id));
               var rank = rankLookup[cheek.id + "|" + mouth.id];
-              var title = label + " — " + ui("index_short", "index") + " " + num(row.composite, 1);
+              var title = label + " — " + ui("class_" + row.harmClass, "") + " · " + ui("index_short", "index") + " " + num(row.composite, 0);
               if (rank) { title += ", " + fill(ui("rank_short", "rank {rank}"), { rank: rank }); }
               cell.setAttribute("title", title);
-              cell.querySelector("span").textContent = title;
+              cell.querySelector(".bits-cell__num").textContent = num(row.composite, 0);
+              cell.querySelector(".visually-hidden").textContent = title;
             }
             tr.appendChild(td);
           });
@@ -472,8 +465,11 @@
       link.textContent = t(cheek.name) + " × " + t(mouth.name);
       link.setAttribute("href", dossierUrl(dossierBase, cheek.id, mouth.id));
       node.querySelector(".bits-alt").textContent = ta(cheek.name) + " × " + ta(mouth.name);
+      var badge = node.querySelector(".bits-class");
+      badge.textContent = ui("class_" + row.harmClass, "");
+      badge.setAttribute("data-class", String(row.harmClass));
       node.querySelector(".bits-extreme__meta").textContent = fill(ui("extreme_meta", "Index {index} · rank {rank} of {total} · peak {peak} on the {site}"), {
-        index: num(row.composite, 1), rank: row.rank, total: total,
+        index: num(row.composite, 0), rank: row.rank, total: total,
         peak: kPa(row.peak), site: ui("tissue_" + row.peakSite, row.peakSite)
       });
       return node;
@@ -969,7 +965,7 @@
       figureD(res);
       figureE(land);
       figureF(risks, res);
-      figureG(sc);
+      figureG(sc, res);
       statements(res, land, sc, ref);
       updateUrl();
     }
@@ -993,15 +989,25 @@
     }
 
     function renderHero(res, sc, rank) {
-      field("index", num(sc.composite, 1));
+      field("index", num(sc.composite, 0));
       field("rank", rank.rank ? String(rank.rank) : "—");
       field("rank-total", String(rank.total));
       field("peak", kPa(res.pressures.peak));
       field("peak-site", ui("tissue_" + res.pressures.peakSite, res.pressures.peakSite));
       field("peak-verdict", ui("peak_" + levelOf(res.pressures.peak), ""));
+      var cls = sc.harm.cls;
+      var badge = document.querySelector('[data-field="class-badge"]');
+      badge.textContent = ui("class_" + cls, "");
+      badge.setAttribute("data-class", String(cls));
+      field("class-def", ui("class_def_" + cls, ""));
+      var refBadge = document.querySelector('[data-field="class-ref"]');
+      if (refBadge && rank.row) {
+        refBadge.textContent = ui("class_" + rank.row.harmClass, "");
+        refBadge.setAttribute("data-class", String(rank.row.harmClass));
+      }
       var meter = document.querySelector("[data-meter]");
       meter.style.width = Math.min(100, sc.composite) + "%";
-      meter.setAttribute("data-level", sc.composite < 15 ? "good" : sc.composite < 30 ? "warning" : sc.composite < 45 ? "serious" : "critical");
+      meter.setAttribute("data-class", String(cls));
     }
 
     function restraintKind(ch) {
@@ -1843,21 +1849,44 @@
       }
     }
 
-    /* ---------- Figure G: index components ---------- */
+    /* ---------- Figure G: harm index and class ---------- */
 
-    function figureG(sc) {
-      var w = CATALOG.weights;
-      for (var key in sc.components) {
-        if (!Object.prototype.hasOwnProperty.call(sc.components, key)) { continue; }
-        var g = document.querySelector('[data-comp="' + key + '"]');
+    function figureG(sc, res) {
+      var H = CATALOG.harm;
+      var parts = { pain: H.weights.pain, injury: H.weights.injury, control: H.weights.control };
+      for (var key in parts) {
+        if (!Object.prototype.hasOwnProperty.call(parts, key)) { continue; }
+        var g = document.querySelector('[data-part="' + key + '"]');
         if (!g) { continue; }
         var value = sc.components[key];
         attrs(g.querySelector("rect"), { width: value * 3, rx: value > 2 ? 4 : 0 });
         var v = g.querySelector(".v");
         attrs(v, { x: 300 + value * 3 + 6 });
         v.textContent = num(value, 0);
-        g.querySelector(".w").textContent = "× " + num(w[key], 2);
+        g.querySelector(".w").textContent = "× " + num(parts[key], 1);
       }
+      var sub = document.querySelector('[data-part="control"] .sub');
+      if (sub) {
+        sub.textContent = fill(ui("control_sub", "stop {stop} · release {release} · signal {signal}"), { stop: num(sc.sub.stop, 0), release: num(sc.sub.release, 0), signal: num(sc.sub.signal, 0) });
+      }
+      el("fg-formula").textContent = fill(ui("index_formula", "index = {wp} × pain + {wi} × injury + {wc} × control = {index}"), {
+        wp: num(H.weights.pain, 1), wi: num(H.weights.injury, 1), wc: num(H.weights.control, 1), index: num(sc.composite, 0)
+      });
+      var harm = sc.harm;
+      var reasons = [];
+      reasons.push(fill(ui("class_why_pain_" + harm.painIdx, ""), { peak: kPa(harm.peak), site: ui("tissue_" + res.pressures.peakSite, res.pressures.peakSite) }));
+      if (harm.worstRisk) {
+        reasons.push(fill(ui("class_why_injury_" + harm.injuryIdx, ""), { risk: ui("risk_name_" + harm.worstRisk.id, harm.worstRisk.id), level: ui("risk_level_" + harm.worstRisk.level, String(harm.worstRisk.level)) }));
+      } else {
+        reasons.push(ui("class_why_injury_0", ""));
+      }
+      if (harm.design) {
+        reasons.push(ui("class_why_design_" + harm.design, ""));
+      }
+      field("class-name", ui("class_" + harm.cls, ""));
+      field("class-why", reasons.join(" "));
+      var nameNode = document.querySelector('[data-field="class-name"]');
+      if (nameNode) { nameNode.setAttribute("data-class", String(harm.cls)); }
     }
 
     /* ---------- Conditional statements ---------- */
@@ -1936,9 +1965,9 @@
       field("ref-peak", kPa(ref.result.pressures.peak));
       field("ref-site", ui("tissue_" + ref.result.pressures.peakSite, ref.result.pressures.peakSite));
       field("ref-verdict", ui("ref_" + levelOf(ref.result.pressures.peak), ""));
-      say("v-kind", ref.composite < 15);
-      say("v-mid", ref.composite >= 15 && ref.composite < 35);
-      say("v-harsh", ref.composite >= 35);
+      say("v-kind", ref.harm.cls <= 1);
+      say("v-mid", ref.harm.cls === 2);
+      say("v-harsh", ref.harm.cls >= 3);
       say("v-rplus", true);
       say("v-lift", ch.stop === "none" || ch.stop === "cheekpiece");
       say("v-chain", !!ch.chain && !ch.rigid_ring && !res.inputs.chinGuard && f.chain > 0);

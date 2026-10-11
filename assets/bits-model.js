@@ -549,28 +549,93 @@
     return out;
   }
 
-  /* ---------- Scores ---------- */
+  /* ---------- Harm index and harm class ---------- */
 
   function clamp01(x) {
     return Math.max(0, Math.min(1, x));
   }
 
-  /* Component scores 0–100, higher = heavier burden on the horse. Evaluated at
-     the catalogue's reference condition unless overridden. */
+  /* Piecewise-linear reading of a pressure against the pain thresholds:
+     the curve's knots are catalogue data (kPa, 0–1). */
+  function painCurve(curve, kpa) {
+    if (kpa <= curve[0][0]) { return curve[0][1]; }
+    for (var i = 1; i < curve.length; i++) {
+      if (kpa <= curve[i][0]) {
+        var x0 = curve[i - 1][0], y0 = curve[i - 1][1], x1 = curve[i][0], y1 = curve[i][1];
+        return y0 + (y1 - y0) * (kpa - x0) / (x1 - x0);
+      }
+    }
+    return curve[curve.length - 1][1];
+  }
+
+  /* Harm class 0–4: the worst of three readings, never an average.
+       pain:   where the peak pressure stands against the thresholds
+       injury: the worst lesion risk of injuryRisks (behaviour excluded)
+       design: devices whose mechanism is pain (palate spoons, prongs,
+               cutting surfaces, scissor mouths)
+     Returns the class and the readings that produced it. */
+  function harmClass(catalog, res, risks) {
+    var th = catalog.thresholds_kpa;
+    var rules = catalog.harm.class_rules;
+    var peak = res.pressures.peak;
+    var painIdx = peak < th.pain_free_upper ? 0 : peak < th.face_ppt ? 1 : peak < th.hand_ppt ? 2 : 3;
+    var injuryIdx = 0;
+    var worst = null;
+    for (var i = 0; i < risks.length; i++) {
+      var r = risks[i];
+      if (rules.exclude.indexOf(r.id) !== -1) { continue; }
+      var sev = catalog.harm.injury_severity[r.id] || 0.5;
+      var idx = r.level >= 3 ? 3 : r.level === 2 ? (sev >= rules.severity_for_class_2 ? 2 : 1) : r.level;
+      if (idx > injuryIdx || (idx === injuryIdx && worst && sev > (catalog.harm.injury_severity[worst.id] || 0.5))) {
+        injuryIdx = idx;
+        worst = r;
+      }
+    }
+    var mp = res.mp;
+    var ch = res.ch;
+    var design = null;
+    if (mp.palate_by_design) { design = "palate"; }
+    else if (ch.cheek_prongs) { design = "prongs"; }
+    else if (mp.scissor) { design = "scissor"; }
+    else if ((mp.edge || 1) >= rules.design_edge) { design = "edge"; }
+    var cls = Math.max(painIdx, injuryIdx, design ? 4 : 0);
+    return { cls: cls, painIdx: painIdx, injuryIdx: injuryIdx, worstRisk: worst, design: design, peak: peak };
+  }
+
+  /* Harm index 0–100 and its three parts, evaluated at the catalogue's
+     reference condition unless overridden. Higher = more harm. */
   function scores(catalog, cheekId, mouthId, settings) {
     var local = clone(settings || {});
     if (local.reinTension == null) { local.reinTension = catalog.defaults.rein_tension; }
     if (local.theta == null) { local.theta = thetaOf(catalog, catalog.defaults.posture); }
     var res = compute(catalog, cheekId, mouthId, local);
     if (!res) { return null; }
-    var cheek = res.cheek;
     var ch = res.ch;
     var mp = res.mp;
-    var th = catalog.thresholds_kpa;
+    var H = catalog.harm;
     var mech = res.mechanism;
+    var p = res.pressures;
 
-    var peakScore = 100 * clamp01((res.pressures.peak - 50) / 450);
+    /* Pain now: the worst tissue, and the average over every loaded tissue. */
+    var loaded = ["bars", "tongue", "lips", "chin", "jaw", "cheek", "nose"].filter(function (t) { return p[t] > 0.5; });
+    var avg = 0;
+    for (var i = 0; i < loaded.length; i++) { avg += painCurve(H.pain_curve, p[loaded[i]]); }
+    avg = loaded.length ? avg / loaded.length : 0;
+    var pain = 100 * clamp01(H.pain_mix.peak * painCurve(H.pain_curve, p.peak) + H.pain_mix.average * avg);
 
+    /* Injury expected: each likely lesion weighted by its severity. */
+    var risks = injuryRisks(catalog, res);
+    var maxTerm = 0, sum = 0, sumW = 0, wMax = 0;
+    for (var j = 0; j < risks.length; j++) {
+      var w = H.injury_severity[risks[j].id] || 0.5;
+      maxTerm = Math.max(maxTerm, w * risks[j].level);
+      sum += w * risks[j].level;
+      sumW += w;
+      wMax = Math.max(wMax, w);
+    }
+    var injury = 100 * clamp01(H.injury_mix.worst * (wMax > 0 ? maxTerm / (3 * wMax) : 0) + H.injury_mix.sum * Math.min(1, H.injury_mix.sum_gain * (sumW > 0 ? sum / (3 * sumW) : 0)));
+
+    /* Loss of control: no stop, no release, an ambiguous signal. */
     var stopTable = { none: 100, bone: 95, cheekpiece: 85, tissue: 70, suspension: 30, chain: 20 };
     var stopScore = stopTable[ch.stop] != null ? stopTable[ch.stop] : 70;
     if (ch.stop === "none" && (ch.slide_limit || 0) > 0) { stopScore = 75; }
@@ -578,19 +643,9 @@
     if (ch.rigid_ring) { stopScore = Math.min(100, stopScore + 25); }
     if (mech === "check") { stopScore = 100; }
 
-    var edgeScore = clamp01((mp.edge - 0.75) / 1.5);
-    var pinchScore = 100 * (0.35 * (ch.lip_pinch || 0) + 0.3 * (mp.tongue_pinch || 0) + 0.2 * edgeScore + 0.1 * (mp.link_pinch || 0) + (ch.cheek_prongs ? 0.3 : 0) + 0.1 * (ch.cheek_squeeze || 0));
-    pinchScore = Math.min(100, pinchScore);
-
-    var extraScore = 100 * clamp01(0.5 * clamp01(res.pressures.chin / th.face_ppt) + 0.2 * clamp01(res.pressures.poll / 30) + 0.4 * clamp01(Math.max(res.pressures.jaw, res.pressures.cheek, res.pressures.nose) / th.face_ppt));
-
-    var palateScore = 100 * res.palate;
-
     var conflicting = (mech === "gag-slide" || mech === "gag-lever" || mech === "gag-curb") ? 0.25 : 0;
     if (mech === "check") { conflicting = 0.5; }
     var signalScore = 100 * clamp01(1 - (ch.signal_clarity || 0.8) + conflicting);
-
-    var spaceScore = 100 * clamp01((res.totalThickness - res.inputs.bitSpace) / 10);
 
     var releaseTable = { direct: 0.95, curb: 0.7, "gag-slide": 0.8, "gag-lever": 0.75, "gag-curb": 0.65, "jaw-ring": 0.6, combination: 0.7, check: 0.0 };
     var release = releaseTable[mech] != null ? releaseTable[mech] : 0.8;
@@ -601,23 +656,19 @@
     if ((ch.bit_mass_kg || 0) > 0.4) { release -= 0.1; }
     var releaseScore = 100 * clamp01(1 - release);
 
-    var w = catalog.weights;
-    var composite =
-      w.peak_pressure * peakScore +
-      w.stop * stopScore +
-      w.pinch_edges * pinchScore +
-      w.extra_forces * extraScore +
-      w.palate * palateScore +
-      w.signal * signalScore +
-      w.bit_space * spaceScore +
-      w.release * releaseScore;
+    var cw = H.control_weights;
+    var control = cw.stop * stopScore + cw.release * releaseScore + cw.signal * signalScore;
+
+    var hw = H.weights;
+    var composite = hw.pain * pain + hw.injury * injury + hw.control * control;
+    var cls = harmClass(catalog, res, risks);
 
     return {
-      components: {
-        peak_pressure: peakScore, stop: stopScore, pinch_edges: pinchScore, extra_forces: extraScore,
-        palate: palateScore, signal: signalScore, bit_space: spaceScore, release: releaseScore
-      },
+      components: { pain: pain, injury: injury, control: control },
+      sub: { stop: stopScore, release: releaseScore, signal: signalScore },
       composite: composite,
+      harm: cls,
+      risks: risks,
       result: res
     };
   }
@@ -636,7 +687,7 @@
           continue;
         }
         var sc = scores(catalog, cheekId, mouthId, settings);
-        rows.push({ cheek: cheekId, mouth: mouthId, validity: v, composite: sc.composite, components: sc.components, peak: sc.result.pressures.peak, peakSite: sc.result.pressures.peakSite, group: catalog.cheeks[i].group, tags: catalog.cheeks[i].tags || [] });
+        rows.push({ cheek: cheekId, mouth: mouthId, validity: v, composite: sc.composite, components: sc.components, harmClass: sc.harm.cls, peak: sc.result.pressures.peak, peakSite: sc.result.pressures.peakSite, group: catalog.cheeks[i].group, tags: catalog.cheeks[i].tags || [] });
       }
     }
     rows.sort(function (a, b) { return a.composite - b.composite; });
@@ -660,6 +711,8 @@
     compute: compute,
     landscape: landscape,
     injuryRisks: injuryRisks,
+    harmClass: harmClass,
+    painCurve: painCurve,
     scores: scores,
     rankAll: rankAll,
     thetaOf: thetaOf,
