@@ -10,6 +10,16 @@
    stretched out, ≈ 70° with the head on the vertical, > 90° behind the vertical.
    Rotations of a shank are measured by rho: the lower arm swings towards +ŷ.
 
+   Mechanisms (classification by what the parts do, never by the name):
+     direct       rein at the mouthpiece, no lever
+     curb         lever against a chin restraint (chain, strap or rigid ring)
+     gag-lever    lever with no chin restraint (ring stack, sliding shank)
+     gag-slide    cheekpiece through the ring: a pulley
+     gag-curb     pulley rein and curb rein on one bit
+     jaw-ring     ring, bar or cage around the lower jaw
+     combination  part of the force routed to nose, chin or jaw plates
+     check        constant lift from a harness check rein
+
    Lengths in millimetres, forces in newtons, pressures in kilopascals.
    Every number that is an assumption is read from the catalogue, never typed
    here, so the page can show it and the user can change it. */
@@ -25,11 +35,12 @@
   "use strict";
 
   var DEG = Math.PI / 180;
+  var G = 9.81;
 
   /* ---------- Catalogue helpers ---------- */
 
   function byId(list, id) {
-    for (var i = 0; i < list.length; i++) {
+    for (var i = 0; i < (list || []).length; i++) {
       if (list[i].id === id) {
         return list[i];
       }
@@ -113,6 +124,10 @@
     return { moment: moment, T: T, C: C };
   }
 
+  /* Direction of the chain from the purchase ring towards the chin groove,
+     and of the cheekpiece towards the poll, in the head frame. */
+  var CHAIN_DIR = { x: -0.27, y: 0.96 };
+
   /* ---------- Main computation ---------- */
 
   function compute(catalog, cheekId, mouthId, settings) {
@@ -126,54 +141,73 @@
     var mp = resolve(mouthpiece, settings.mouthOptions);
     var mouth = catalog.mouth;
     var defaults = catalog.defaults;
+    var mechanism = cheek.mechanism;
 
     var F = settings.reinTension != null ? settings.reinTension : defaults.rein_tension;
     var theta = settings.theta != null ? settings.theta : thetaOf(catalog, defaults.posture);
+    if (mechanism === "check") {
+      /* A check rein runs up the face to the harness saddle: the lift is along
+         the head whatever the carriage, and the force is the horse's own push. */
+      theta = 15;
+    }
     var d = settings.diameter != null ? settings.diameter : mp.d;
     var bitSpace = settings.bitSpace != null ? settings.bitSpace : mouth.bit_space;
-    var chinGuard = settings.chinGuard != null ? settings.chinGuard : defaults.chin_guard;
+    var chinGuard = settings.chinGuard != null ? settings.chinGuard : (ch.chin_guarded != null ? ch.chin_guarded : defaults.chin_guard);
     var curbShare = settings.curbReinShare != null ? settings.curbReinShare : defaults.curb_rein_share;
-
     var bitWidth = settings.bitWidth != null ? settings.bitWidth : mouth.mouth_width + 5;
-    var mechanism = cheek.mechanism;
     var r = d / 2;
     var doubleBridle = !!cheek.double_bridle;
 
-    /* Rein split between a direct (snaffle) action and a lever action. */
+    /* Shares of the rein force that never reach the mouthpiece (combination bits). */
+    var shareNose = ch.share_nose || 0;
+    var shareChinStrap = ch.share_chin || 0;
+    var shareJaw = ch.share_jaw || 0;
+    var mouthFraction = Math.max(0, 1 - shareNose - shareChinStrap - shareJaw);
+
+    /* Rein split between a direct action and a lever action, per side. */
     var Fdirect = 0;
     var Flever = 0;
-    if (mechanism === "direct") {
+    var Fpulley = 0;
+    var mode = ch.rein_mode || "curb";
+    if (mechanism === "direct" || mechanism === "jaw-ring" || mechanism === "check") {
       Fdirect = F;
     } else if (mechanism === "gag-slide") {
-      Fdirect = 0;
-      Flever = F;
+      Fpulley = F;
+    } else if (mechanism === "gag-curb") {
+      Fpulley = F;
+      Flever = F * curbShare;
+    } else if (mechanism === "combination") {
+      if ((ch.shank || 0) > 0 && ch.chain) {
+        Flever = F * mouthFraction;
+      } else {
+        Fdirect = F * mouthFraction;
+      }
     } else if (doubleBridle) {
       /* In a double bridle the bradoon carries the direct rein; the curb rein
          is held lighter. Only the curb's own load is modelled here. */
-      Fdirect = 0;
       Flever = F * curbShare;
+    } else if (mode === "two") {
+      Fdirect = F;
+      Flever = F * curbShare;
+    } else if (mode === "roundings") {
+      Fdirect = F * 0.5;
+      Flever = F * 0.5;
     } else {
-      var mode = ch.rein_mode || "curb";
-      if (mode === "two") {
-        Fdirect = F;
-        Flever = F * curbShare;
-      } else if (mode === "roundings") {
-        Fdirect = F * 0.5;
-        Flever = F * 0.5;
-      } else {
-        Fdirect = 0;
-        Flever = F;
-      }
+      Flever = F;
+    }
+    if (Flever > 0 && (ch.shank || 0) === 0 && mechanism !== "gag-curb") {
+      /* A rein on a ring at mouthpiece level has no lever arm: direct action. */
+      Fdirect += Flever;
+      Flever = 0;
     }
 
     /* Per-side force components acting on the bit body, head frame. */
     var sumX = 0;   /* +x̂ : towards the poll, i.e. up into the commissures */
     var sumY = 0;   /* +ŷ : towards the mandible, i.e. onto tongue and bars */
-    var C = 0;      /* chain tension per side */
+    var C = 0;      /* chain (or rigid ring) tension per side */
     var T = 0;      /* cheekpiece tension per side */
     var rho = 0;    /* shank rotation reached */
     var leverRatio = 0;
-    var amplification = 1;
     var liftMm = 0;
     var cordUp = 0;
 
@@ -182,27 +216,23 @@
 
     var s = ch.shank || 0;
     var p = ch.purchase || 0;
+    var hasChainLever = (mechanism === "curb" || mechanism === "gag-curb" || ((mechanism === "gag-lever" || mechanism === "combination") && ch.chain)) && s > 0 && p > 0;
 
-    if (mechanism === "curb" || (mechanism === "gag-lever" && ch.chain)) {
+    if (hasChainLever) {
       if (ch.shank_floating) {
         /* Plain Kimblewick: the rein slides on the D. A high hand carries it
            up to the mouthpiece and the lever vanishes. */
         s = s * Math.min(1, Math.max(0.15, theta / 60));
       }
-      leverRatio = p > 0 ? s / p : 0;
+      leverRatio = s / p;
       rho = ch.chain_engage_deg || 45;
       var lambda = 0.15;
       var bal = shankBalance(Flever, theta, s, p, rho, lambda, Math.cos(rho * DEG));
       C = bal.C;
-      T = bal.T;
-      /* Chain pulls from the purchase ring towards the chin groove:
-         mostly +ŷ, slightly −x̂. */
-      var chainDirX = -0.27;
-      var chainDirY = 0.96;
-      sumX += Flever * Math.cos(theta * DEG) + C * chainDirX + T;
-      sumY += Flever * Math.sin(theta * DEG) + C * chainDirY;
-      amplification = Flever > 0 ? (Flever * Math.sin(theta * DEG) + C * chainDirY) / (Flever * Math.sin(theta * DEG)) : 1;
-    } else if (mechanism === "gag-lever") {
+      T += bal.T;
+      sumX += Flever * Math.cos(theta * DEG) + C * CHAIN_DIR.x + bal.T;
+      sumY += Flever * Math.sin(theta * DEG) + C * CHAIN_DIR.y;
+    } else if (mechanism === "gag-lever" || (mechanism === "combination" && s > 0)) {
       /* Ring stack or sliding shank without a chain. Nothing stops the
          rotation except the cheekpiece, so the shank swings until the lips
          stop the mouthpiece rising: a floating fulcrum. */
@@ -210,80 +240,136 @@
       var travel = (settings.lipTravel != null ? settings.lipTravel : mouth.commissure_to_premolar) + (ch.mouthpiece_slide || 0);
       var rhoLip = p > 0 && travel < p ? Math.acos(1 - travel / p) / DEG : 90;
       var rhoAlign = 180 - theta - 5;
-      rho = Math.max(5, Math.min(rhoLip, rhoAlign, 80));
-      if (s > 0) {
-        var balG = shankBalance(Flever, theta, s, p, rho, 1.0, 0);
-        T = balG.T;
+      rho = Math.max(5, Math.min(rhoLip, rhoAlign, ch.rho_max || 80));
+      var Fl = Flever > 0 ? Flever : Fdirect;
+      if (s > 0 && p > 0) {
+        var balG = shankBalance(Fl, theta, s, p, rho, 1.0, 0);
+        T += balG.T;
+        sumX += Fl * Math.cos(theta * DEG) + balG.T;
+        sumY += Fl * Math.sin(theta * DEG);
+        if (Flever === 0) {
+          /* The force was already added as direct above; undo the duplicate. */
+          sumX -= Fdirect * Math.cos(theta * DEG);
+          sumY -= Fdirect * Math.sin(theta * DEG);
+        }
       } else {
         rho = 0;
-        T = 0;
       }
-      liftMm = p * (1 - Math.cos(rho * DEG));
-      sumX += Flever * Math.cos(theta * DEG) + T;
-      sumY += Flever * Math.sin(theta * DEG);
-      amplification = 1;
-    } else if (mechanism === "gag-slide") {
+      liftMm = Math.min(mouth.commissure_to_premolar + 5, p * (1 - Math.cos(rho * DEG)) + (ch.mouthpiece_slide || 0) * 0.5);
+    }
+
+    if (Fpulley > 0) {
       /* The cheekpiece cord runs through the ring to the rein: the ring is a
-         pulley. The upper segment pulls towards the poll with the rein
+         pulley. The upper strand pulls towards the poll with the rein
          tension reduced by friction over the quarter wrap. */
       var mu = ch.cord_friction || 0.4;
-      cordUp = Flever * Math.exp(-mu * Math.PI / 2);
-      T = cordUp;
-      sumX += Flever * Math.cos(theta * DEG) + cordUp;
-      sumY += Flever * Math.sin(theta * DEG);
-      amplification = Math.sqrt(1 + Math.pow(cordUp / Flever, 2) + 2 * (cordUp / Flever) * Math.cos(theta * DEG));
+      cordUp = Fpulley * Math.exp(-mu * Math.PI / 2);
+      T += cordUp;
+      sumX += Fpulley * Math.cos(theta * DEG) + cordUp;
+      sumY += Fpulley * Math.sin(theta * DEG);
       var limit = ch.slide_limit || 0;
-      liftMm = limit > 0 ? limit : mouth.commissure_to_premolar;
+      liftMm = Math.max(liftMm, limit > 0 ? limit : mouth.commissure_to_premolar);
     }
+
+    if (mechanism === "check") {
+      liftMm = Math.min(mouth.commissure_to_premolar, 6 + F / 4);
+    }
+
+    /* Amplification: force onto tongue and bars compared with the rein's own
+       component in that direction. */
+    var reinPress = (Fdirect + Flever + Fpulley) * Math.sin(theta * DEG);
+    var amplification = reinPress > 0 ? Math.max(0, sumY) / reinPress : 1;
 
     /* Suspension by a fixed cheek takes part of the upward component before
        the lips do. */
     var guard = ch.ride_up_guard || 0;
-    var lipPerSide = Math.max(0, sumX) * (1 - guard);
+    var lipPerSide = Math.max(0, sumX) * (1 - guard) + (ch.held_high || 0) * 6;
     var bridlePerSide = Math.max(0, sumX) * guard + (ch.poll_transfer || 0) * F;
-    var pressTotal = 2 * Math.max(0, sumY);
+    var restingWeight = 0.5 * (ch.bit_mass_kg || 0) * G;
+    var pressTotal = 2 * Math.max(0, sumY) + restingWeight;
     var pressTowardPalate = 2 * Math.max(0, -sumY);
 
     /* ---------- Tissue loads and pressures ---------- */
 
     var share = mp.share;
-    var totalThickness = d + (doubleBridle ? 12 : 0);
+    var secondBarD = ch.second_bar_d || 0;
+    var totalThickness = d + (doubleBridle ? 12 : 0) + secondBarD;
     /* Static crowding of the tongue: half of the excess thickness ratio is
        taken as an added load factor (the tongue is already compressed before
        any rein tension arrives). */
     var fit = 1 + 0.5 * Math.max(0, totalThickness / bitSpace - 1);
 
-    var tongueLoad = pressTotal * share.tongue * fit;
-    var barLoadPerSide = (pressTotal * share.bars) / 2;
+    var mainFraction = 1 - (ch.second_bar_share || 0);
+    var tongueLoad = pressTotal * mainFraction * share.tongue * fit;
+    var barLoadPerSide = (pressTotal * mainFraction * share.bars) / 2;
 
     var conformFactor = 0.6 + 0.4 * (mp.conform || 0.5);
     var tongueArea = chord(r, mouth.tongue_indent) * mouth.tongue_contact_width * conformFactor * (mp.concentration || 1) * (mp.contact_fraction || 1);
     if (mp.plate) {
       tongueArea += 120 * (mp.edge < 1.2 ? 1 : 0.4);
     }
+    if (mp.plate_under) {
+      tongueArea += 400;
+    }
     var barArea = chord(r, mouth.bar_mucosa) * mouth.bar_width * (mp.contact_fraction || 1);
     var lipArea = chord(r, mouth.lip_indent) * mouth.lip_contact_length * (mp.contact_fraction || 1);
 
     var edge = mp.edge || 1;
+    if (ch.free_pivot) {
+      /* A mouthpiece that pivots freely on its ring presents its edge to the
+         tongue when the lead is pulled. */
+      edge = edge * (1 + 0.6 * (ch.pivot_factor != null ? ch.pivot_factor : 1));
+    }
     var kPa = 1000; /* N/mm² -> kPa */
 
     var pTongue = tongueArea > 0 ? (tongueLoad / tongueArea) * edge * kPa : 0;
     var pBar = barArea > 0 ? (barLoadPerSide / barArea) * edge * kPa : 0;
     var pLip = lipArea > 0 ? (lipPerSide / lipArea) * edge * kPa : 0;
 
-    var chinLoad = 1.8 * C;
-    var chinArea = chinGuard ? mouth.chin_area_guarded : mouth.chin_area_chain;
+    /* A second thin bar (Norton pattern) takes its share on a narrow strip. */
+    var pSecond = 0;
+    if (secondBarD > 0) {
+      var r2 = secondBarD / 2;
+      var secondLoadPerSide = (pressTotal * (ch.second_bar_share || 0) * 0.5) / 2;
+      var secondArea = chord(r2, mouth.bar_mucosa) * mouth.bar_width * 0.5;
+      pSecond = secondArea > 0 ? (secondLoadPerSide / secondArea) * 1.6 * kPa : 0;
+      pBar = Math.max(pBar, pSecond);
+    }
+
+    var chinLoad = 1.8 * C + shareChinStrap * 2 * F;
+    var chinArea = ch.chin_area || (chinGuard ? mouth.chin_area_guarded : mouth.chin_area_chain);
     var pChin = chinLoad / chinArea * kPa;
 
     var pollLoad = 2 * T + 2 * bridlePerSide * 0.3;
     var pPoll = pollLoad / mouth.poll_area * kPa;
 
+    /* Outside of the face: cheek squeeze (four-ring bits, burrs, lugging plates)
+       and jaw clamps (rings, cages, side bars, spoons). */
+    var cheekLoad = (ch.cheek_squeeze || 0) * F;
+    var cheekArea = ch.cheek_prongs ? 40 : 300;
+    var pCheek = cheekLoad / cheekArea * kPa;
+
+    var jawLoad = 0;
+    if (mechanism === "jaw-ring") {
+      jawLoad = (ch.jaw_clamp || 0.6) * 2 * F;
+    }
+    if (ch.jaw_plates) {
+      jawLoad += 0.5 * F;
+    }
+    jawLoad += shareJaw * 2 * F;
+    var jawArea = ch.jaw_area || 200;
+    var pJaw = jawLoad / jawArea * kPa;
+
+    var noseLoad = shareNose * 2 * F;
+    var noseArea = ch.nose_area || 800;
+    var pNose = noseLoad / noseArea * kPa;
+
     /* Palate: a risk index, not a pressure. */
     var palate = mp.palate || 0;
-    if (ch.mouthpiece_rotates_with_shank && (mechanism === "curb" || mechanism === "gag-lever")) {
+    if (ch.mouthpiece_rotates_with_shank && (hasChainLever || mechanism === "gag-lever")) {
       palate = Math.min(1, palate * Math.min(1.6, Math.pow(Math.max(rho, 10) / 45, 1.5)));
     }
-    if (mechanism === "direct" || mechanism === "gag-slide") {
+    if (mechanism === "direct" || mechanism === "gag-slide" || mechanism === "jaw-ring" || mechanism === "combination") {
       /* A high hand lifts a jointed mouthpiece; a bit wider than the mouth
          lets the joint rise further towards the palate. */
       var oversize = Math.max(0, (bitWidth - mouth.mouth_width - 5) / 20);
@@ -292,9 +378,21 @@
     if (pressTowardPalate > 0) {
       palate = Math.min(1, palate + pressTowardPalate / (4 * F));
     }
+    if (mp.palate_by_design) {
+      palate = Math.max(palate, mechanism === "check" ? 1 : 0.9);
+    }
 
-    var peak = Math.max(pTongue, pBar, pLip, pChin);
-    var peakSite = peak === pBar ? "bars" : peak === pTongue ? "tongue" : peak === pLip ? "lips" : "chin";
+    var pressures = { tongue: pTongue, bars: pBar, lips: pLip, chin: pChin, poll: pPoll, cheek: pCheek, jaw: pJaw, nose: pNose, secondBar: pSecond };
+    var peak = 0;
+    var peakSite = "tongue";
+    ["bars", "tongue", "lips", "chin", "jaw", "cheek", "nose"].forEach(function (site) {
+      if (pressures[site] > peak) {
+        peak = pressures[site];
+        peakSite = site;
+      }
+    });
+    pressures.peak = peak;
+    pressures.peakSite = peakSite;
 
     /* ---------- Stop analysis ---------- */
 
@@ -305,26 +403,30 @@
       pullThroughGuard: ch.pull_through_guard || 0,
       rideUpGuard: guard,
       rotationStop: !!ch.chain,
+      rigidRing: !!ch.rigid_ring,
       rotationDeg: rho,
       forceBounded: false
     };
 
-    var result = {
+    return {
       cheek: cheek,
       mouthpiece: mouthpiece,
       ch: ch,
       mp: mp,
+      mechanism: mechanism,
       inputs: { F: F, theta: theta, d: d, bitSpace: bitSpace, bitWidth: bitWidth, chinGuard: chinGuard, curbShare: curbShare, doubleBridle: doubleBridle },
       forces: {
-        Fdirect: Fdirect, Flever: Flever,
+        Fdirect: Fdirect, Flever: Flever, Fpulley: Fpulley,
         chain: C, cheekpiece: T, cordUp: cordUp,
         sumX: sumX, sumY: sumY,
         pressTotal: pressTotal, lipPerSide: lipPerSide, bridlePerSide: bridlePerSide,
-        chinLoad: chinLoad, pollLoad: pollLoad,
-        leverRatio: leverRatio, amplification: amplification, rho: rho, liftMm: liftMm
+        chinLoad: chinLoad, pollLoad: pollLoad, cheekLoad: cheekLoad, jawLoad: jawLoad, noseLoad: noseLoad,
+        restingWeight: restingWeight,
+        leverRatio: leverRatio, amplification: amplification, rho: rho, liftMm: liftMm,
+        hasChainLever: hasChainLever
       },
-      areas: { tongue: tongueArea, bar: barArea, lip: lipArea, chin: chinArea, poll: mouth.poll_area },
-      pressures: { tongue: pTongue, bars: pBar, lips: pLip, chin: pChin, poll: pPoll, peak: peak, peakSite: peakSite },
+      areas: { tongue: tongueArea, bar: barArea, lip: lipArea, chin: chinArea, poll: mouth.poll_area, cheek: cheekArea, jaw: jawArea, nose: noseArea },
+      pressures: pressures,
       palate: palate,
       fit: fit,
       totalThickness: totalThickness,
@@ -332,7 +434,6 @@
       validity: validity(catalog, cheekId, mouthId),
       pairing: pairing(catalog, cheekId, mouthId)
     };
-    return result;
   }
 
   function thetaOf(catalog, postureId) {
@@ -365,6 +466,89 @@
     return { postures: out, bias: best ? best.id : null };
   }
 
+  /* ---------- Injury risks ---------- */
+
+  function levelFor(kpa, th) {
+    if (kpa >= th.hand_ppt) { return 3; }
+    if (kpa >= th.face_ppt) { return 2; }
+    if (kpa >= th.pain_free_upper) { return 1; }
+    return 0;
+  }
+
+  /* Likely issues for the horse, each with a level 0–3 and the sources that
+     describe the lesion or mechanism. Levels are read from the model's own
+     pressures and flags; the sources are catalogue ids in text.json. */
+  function injuryRisks(catalog, res) {
+    var th = catalog.thresholds_kpa;
+    var ch = res.ch;
+    var mp = res.mp;
+    var p = res.pressures;
+    var f = res.forces;
+    var mech = res.mechanism;
+    var out = [];
+
+    function add(id, level, sources, value) {
+      out.push({ id: id, level: Math.max(0, Math.min(3, Math.round(level))), sources: sources, value: value });
+    }
+
+    var noStop = ch.stop === "none" || ch.stop === "cheekpiece" || ch.stop === "tissue";
+    var lipLevel = levelFor(p.lips, th);
+    if (noStop && f.liftMm >= 15) { lipLevel = Math.max(lipLevel, 2); }
+    if (ch.stop === "none" && f.liftMm >= 20 && p.lips >= th.pain_free_upper) { lipLevel = 3; }
+    add("commissure", lipLevel, ["tuomola2019", "uldahl2019", "tuomola2021event"], p.lips);
+
+    var barLevel = levelFor(p.bars, th);
+    if ((mp.contact_fraction || 1) < 0.9 && barLevel < 3) { barLevel += 1; }
+    if (mp.joints === 0 && !mp.port_height && barLevel < 3 && p.bars >= th.pain_free_upper) { barLevel += 0.5; }
+    add("bars", barLevel, ["tuomola2021", "bjornsdottir2014", "mellor2020"], p.bars);
+
+    var tongueLevel = levelFor(p.tongue, th);
+    var sharp = (mp.edge || 1) >= 1.3 || mp.two_strands || mp.scissor;
+    if (sharp) { tongueLevel = Math.max(tongueLevel, p.tongue >= th.pain_free_upper ? 2 : 1); }
+    if (mp.tongue_pinch >= 0.8 && tongueLevel < 3) { tongueLevel += 0.5; }
+    add("tongue", tongueLevel, ["tuomola2019", "manfredi2005", "chifney_hh"], p.tongue);
+
+    var palateLevel = res.palate >= 0.7 ? 3 : res.palate >= 0.4 ? 2 : res.palate >= 0.2 ? 1 : 0;
+    add("palate", palateLevel, ["manfredi2005", "spade_wiki", "critdavis"], res.palate);
+
+    var chinLevel = levelFor(p.chin, th);
+    if (ch.rigid_ring && chinLevel < 3) { chinLevel += 1; }
+    add("chin", f.chinLoad > 0 ? chinLevel : 0, ["cross2017", "met_ringbit"], p.chin);
+
+    var cheekLevel = 0;
+    if (p.cheek > 0) { cheekLevel = levelFor(p.cheek, th); }
+    if (ch.cheek_prongs) { cheekLevel = Math.max(cheekLevel, 2); }
+    if ((ch.pull_through_guard || 0) < 0.5) { cheekLevel = Math.max(cheekLevel, 1); }
+    if (f.liftMm >= 20 && noStop) { cheekLevel = Math.max(cheekLevel, 2); }
+    add("cheek_teeth", cheekLevel, ["pollaris2025", "hrnz_burrs", "bergh_burr"], p.cheek);
+
+    var trapLevel = (mp.link_pinch || 0) >= 0.5 ? 2 : (mp.link_pinch || 0) >= 0.25 ? 1 : 0;
+    if (ch.ring_through_mouthpiece && (ch.lip_pinch || 0) >= 0.4) { trapLevel = Math.max(trapLevel, 1 + Math.round(ch.lip_pinch)); }
+    add("pinch", trapLevel, ["pollaris2025", "bitguard_wiki"], ch.lip_pinch || 0);
+
+    if (mech === "jaw-ring" || p.jaw > 0) {
+      var jawLevel = Math.max(levelFor(p.jaw, th), mech === "jaw-ring" ? 2 : 1);
+      if (ch.free_pivot && (ch.pivot_factor == null || ch.pivot_factor >= 0.8)) { jawLevel = 3; }
+      add("jaw", jawLevel, ["chifney_hh", "houghton_forum", "dexter_wiki"], p.jaw);
+    }
+
+    if (p.nose > 0) {
+      add("nose", Math.max(1, levelFor(p.nose, th)), ["myler_hh", "norton_hh"], p.nose);
+    }
+
+    var airway = 0;
+    if ((mp.tongue_restraint || 0) >= 0.5) { airway = 2; }
+    if (mech === "check") { airway = Math.max(airway, 2); }
+    if (mp.palate_by_design && mech === "check") { airway = 3; }
+    if (airway > 0) { add("airway", airway, ["overcheck_wiki", "wtp_sellers", "critdavis"], mp.tongue_restraint || 0); }
+
+    var behaviour = p.peak >= th.hand_ppt ? 3 : p.peak >= th.face_ppt ? 2 : 1;
+    if (mech === "gag-slide" || mech === "gag-lever" || mech === "gag-curb") { behaviour = Math.max(behaviour, 2); }
+    add("behaviour", behaviour, ["dyson2018", "manfredi2010", "christensen2011"], p.peak);
+
+    return out;
+  }
+
   /* ---------- Scores ---------- */
 
   function clamp01(x) {
@@ -383,31 +567,38 @@
     var ch = res.ch;
     var mp = res.mp;
     var th = catalog.thresholds_kpa;
+    var mech = res.mechanism;
 
     var peakScore = 100 * clamp01((res.pressures.peak - 50) / 450);
 
-    var stopTable = { none: 100, cheekpiece: 85, tissue: 70, suspension: 30, chain: 20 };
+    var stopTable = { none: 100, bone: 95, cheekpiece: 85, tissue: 70, suspension: 30, chain: 20 };
     var stopScore = stopTable[ch.stop] != null ? stopTable[ch.stop] : 70;
     if (ch.stop === "none" && (ch.slide_limit || 0) > 0) { stopScore = 75; }
     if ((ch.pull_through_guard || 0) < 0.5) { stopScore = Math.min(100, stopScore + 10); }
+    if (ch.rigid_ring) { stopScore = Math.min(100, stopScore + 25); }
+    if (mech === "check") { stopScore = 100; }
 
     var edgeScore = clamp01((mp.edge - 0.75) / 1.5);
-    var pinchScore = 100 * (0.4 * (ch.lip_pinch || 0) + 0.3 * (mp.tongue_pinch || 0) + 0.2 * edgeScore + 0.1 * (mp.link_pinch || 0));
+    var pinchScore = 100 * (0.35 * (ch.lip_pinch || 0) + 0.3 * (mp.tongue_pinch || 0) + 0.2 * edgeScore + 0.1 * (mp.link_pinch || 0) + (ch.cheek_prongs ? 0.3 : 0) + 0.1 * (ch.cheek_squeeze || 0));
+    pinchScore = Math.min(100, pinchScore);
 
-    var extraScore = 100 * (0.7 * clamp01(res.pressures.chin / th.face_ppt) + 0.3 * clamp01(res.pressures.poll / 30));
+    var extraScore = 100 * clamp01(0.5 * clamp01(res.pressures.chin / th.face_ppt) + 0.2 * clamp01(res.pressures.poll / 30) + 0.4 * clamp01(Math.max(res.pressures.jaw, res.pressures.cheek, res.pressures.nose) / th.face_ppt));
 
     var palateScore = 100 * res.palate;
 
-    var conflicting = (cheek.mechanism === "gag-slide" || cheek.mechanism === "gag-lever") ? 0.25 : 0;
+    var conflicting = (mech === "gag-slide" || mech === "gag-lever" || mech === "gag-curb") ? 0.25 : 0;
+    if (mech === "check") { conflicting = 0.5; }
     var signalScore = 100 * clamp01(1 - (ch.signal_clarity || 0.8) + conflicting);
 
     var spaceScore = 100 * clamp01((res.totalThickness - res.inputs.bitSpace) / 10);
 
-    var releaseTable = { direct: 0.95, curb: 0.7, "gag-slide": 0.8, "gag-lever": 0.75 };
-    var release = releaseTable[cheek.mechanism] || 0.8;
+    var releaseTable = { direct: 0.95, curb: 0.7, "gag-slide": 0.8, "gag-lever": 0.75, "gag-curb": 0.65, "jaw-ring": 0.6, combination: 0.7, check: 0.0 };
+    var release = releaseTable[mech] != null ? releaseTable[mech] : 0.8;
     if (ch.chain_engage_deg && ch.chain_engage_deg < 35) { release -= 0.2; }
     if (ch.rein_mode === "roundings") { release -= 0.15; }
     if (mp.keys) { release -= 0.1; }
+    if ((ch.held_high || 0) > 0) { release -= 0.3 * ch.held_high; }
+    if ((ch.bit_mass_kg || 0) > 0.4) { release -= 0.1; }
     var releaseScore = 100 * clamp01(1 - release);
 
     var w = catalog.weights;
@@ -431,8 +622,8 @@
     };
   }
 
-  /* Every combination, ranked kindest first. `filter` may exclude validity
-     classes (for example ["invalid", "theoretical"]). */
+  /* Every combination, ranked kindest first. `exclude` lists validity
+     classes to leave out (for example ["invalid", "theoretical"]). */
   function rankAll(catalog, settings, exclude) {
     exclude = exclude || ["invalid"];
     var rows = [];
@@ -445,7 +636,7 @@
           continue;
         }
         var sc = scores(catalog, cheekId, mouthId, settings);
-        rows.push({ cheek: cheekId, mouth: mouthId, validity: v, composite: sc.composite, components: sc.components, peak: sc.result.pressures.peak, peakSite: sc.result.pressures.peakSite });
+        rows.push({ cheek: cheekId, mouth: mouthId, validity: v, composite: sc.composite, components: sc.components, peak: sc.result.pressures.peak, peakSite: sc.result.pressures.peakSite, group: catalog.cheeks[i].group, tags: catalog.cheeks[i].tags || [] });
       }
     }
     rows.sort(function (a, b) { return a.composite - b.composite; });
@@ -468,6 +659,7 @@
     shankBalance: shankBalance,
     compute: compute,
     landscape: landscape,
+    injuryRisks: injuryRisks,
     scores: scores,
     rankAll: rankAll,
     thetaOf: thetaOf,
