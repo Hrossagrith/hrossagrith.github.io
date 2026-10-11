@@ -16,6 +16,7 @@
   var M = window.BitModel;
   var CATALOG = null;
   var TEXT = null;
+  var IMAGES = null;
   var REFERENCE_RANK = null;
   var SVG_NS = "http://www.w3.org/2000/svg";
 
@@ -195,6 +196,35 @@
     return { rank: null, total: rows.length, row: null };
   }
 
+  function photoOf(kind, id) {
+    return IMAGES && IMAGES[kind] ? IMAGES[kind][id] || null : null;
+  }
+
+  function imageUrl(photo) {
+    return dataBase.replace(/data\/bits\/$/, "img/bits/") + photo.file;
+  }
+
+  /* Fill one photo figure: image, caption, source link, author and licence. */
+  function showPhoto(figure, photo, altText) {
+    if (!figure) { return false; }
+    if (!photo) { show(figure, false); return false; }
+    var img = figure.querySelector("img");
+    img.setAttribute("src", imageUrl(photo));
+    img.setAttribute("alt", altText || "");
+    if (photo.width && photo.height) { img.setAttribute("width", photo.width); img.setAttribute("height", photo.height); }
+    setText("[data-photo-caption]", photo.caption ? t(photo.caption) : "", figure);
+    var source = figure.querySelector("[data-photo-source]");
+    if (source) { source.setAttribute("href", photo.source || "#"); }
+    setText("[data-photo-author]", photo.author || "", figure);
+    var license = figure.querySelector("[data-photo-license]");
+    if (license) {
+      license.textContent = photo.license || "";
+      if (photo.license_url) { license.setAttribute("href", photo.license_url); } else { license.removeAttribute("href"); }
+    }
+    show(figure, true);
+    return true;
+  }
+
   function sourceIndex(id) {
     var list = TEXT.sources || [];
     for (var i = 0; i < list.length; i++) {
@@ -212,10 +242,16 @@
     });
   }
 
-  Promise.all([load("catalog.json"), load("text.json")])
+  /* Photographs are optional: the register works without the images file. */
+  function loadImages() {
+    return load("images.json").catch(function () { return null; });
+  }
+
+  Promise.all([load("catalog.json"), load("text.json"), loadImages()])
     .then(function (files) {
       CATALOG = files[0];
       TEXT = files[1];
+      IMAGES = files[2];
       var loading = document.querySelector("[data-loading]");
       if (loading) { loading.remove(); }
       if (page === "chooser") {
@@ -246,8 +282,15 @@
     var result = document.querySelector("[data-result]");
     var dossierBase = body.getAttribute("data-bits-dossier") || "dossier/";
 
-    function choice(entity, badgeText, badgeClass) {
+    function choice(entity, badgeText, badgeClass, kind) {
       var node = clone("tpl-choice");
+      var photo = kind ? photoOf(kind, entity.id) : null;
+      var img = node.querySelector(".bits-choice__img");
+      if (img && photo) {
+        img.setAttribute("src", imageUrl(photo));
+        img.setAttribute("alt", t(entity.name));
+        show(img, true);
+      }
       node.querySelector(".bits-choice__name").textContent = t(entity.name);
       node.querySelector(".bits-choice__alt").textContent = ta(entity.name);
       node.querySelector(".bits-choice__aka").textContent = entity.summary ? t(entity.summary) : akaText(entity);
@@ -338,7 +381,7 @@
         head.textContent = t(sg.name);
         container.appendChild(head);
         cheeks.forEach(function (cheek) {
-          var node = choice(cheek);
+          var node = choice(cheek, "", "", "cheeks");
           node.addEventListener("click", function () {
             state.cheek = cheek.id;
             state.mouth = null;
@@ -364,7 +407,7 @@
         container.appendChild(head);
         CATALOG.mouthpieces.filter(function (m) { return m.family === family.id; }).forEach(function (mouth) {
           var status = M.validity(CATALOG, state.cheek, mouth.id);
-          var node = choice(mouth, ui("validity_" + status, status), status);
+          var node = choice(mouth, ui("validity_" + status, status), status, "mouthpieces");
           if (status === "invalid") {
             node.setAttribute("disabled", "");
           } else {
@@ -827,6 +870,7 @@
     renderInteractions();
     renderParams();
     renderSources();
+    renderPhotos();
 
     /* ---------- Controls ---------- */
 
@@ -1972,6 +2016,19 @@
       say("v-lift", ch.stop === "none" || ch.stop === "cheekpiece");
       say("v-chain", !!ch.chain && !ch.rigid_ring && !res.inputs.chinGuard && f.chain > 0);
       say("v-banned", (cheek.tags || []).indexOf("underground") !== -1 || !!mouth.restricted);
+    }
+
+    /* ---------- Photographs ---------- */
+
+    function renderPhotos() {
+      var holder = document.querySelector("[data-photos]");
+      if (!holder) { return; }
+      var shown = 0;
+      if (showPhoto(holder.querySelector('[data-photo="cheek"]'), photoOf("cheeks", cheekId), t(cheek.name))) { shown++; }
+      if (showPhoto(holder.querySelector('[data-photo="mouth"]'), photoOf("mouthpieces", mouthId), t(mouth.name))) { shown++; }
+      if (showPhoto(holder.querySelector('[data-photo="pair"]'), photoOf("pairings", cheekId + "|" + mouthId), title)) { shown++; }
+      show(holder, shown > 0);
+      show(document.querySelector("[data-no-photos]"), shown === 0);
     }
 
     /* ---------- Interaction notes, parameters, sources ---------- */
