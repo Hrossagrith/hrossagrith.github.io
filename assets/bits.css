@@ -237,6 +237,20 @@
   cursor: not-allowed;
 }
 
+.bits-choice__img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  background: var(--paper);
+  border: 1px solid var(--rule-soft);
+  border-radius: 4px;
+  margin-bottom: 0.3rem;
+}
+
+.bits-choice__img[hidden] {
+  display: none;
+}
+
 .bits-choice__name {
   font-family: var(--display);
   font-size: 1.1rem;
@@ -979,6 +993,58 @@
 
 .bits-table td.num a {
   color: inherit;
+}
+
+.bits-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.2rem;
+}
+
+.bits-photo {
+  margin: 0;
+  border: 1px solid var(--rule-soft);
+  border-radius: 6px;
+  background: var(--paper-2);
+  padding: 0.6rem;
+}
+
+.bits-photo img {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  background: var(--paper);
+  border-radius: 4px;
+}
+
+.bits-photo figcaption {
+  font-family: var(--label);
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.bits-photo__label {
+  display: block;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+.bits-photo__credit {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+}
+
+.bits-empty--small {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  margin: 0 0 1.2rem;
 }
 
 .bits-legend-row {
