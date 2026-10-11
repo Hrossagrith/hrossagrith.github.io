@@ -390,21 +390,51 @@
 }
 
 .bits-matrix__table thead th {
-  vertical-align: bottom;
-  white-space: nowrap;
-  padding: 0 0 0.3rem;
+  position: relative;
+  width: 30px;
+  height: 11rem;
+  padding: 0;
+  overflow: hidden;
 }
 
 .bits-matrix__table thead th > span {
-  display: inline-block;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  max-height: 11rem;
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  width: 11rem;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 30px;
-  width: 30px;
   text-align: left;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+}
+
+.bits-matrix__table thead th:first-child {
+  width: auto;
+  height: auto;
+}
+
+/* Row labels stay in view while the cells scroll sideways. */
+.bits-matrix__table tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--paper);
+  max-width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bits-matrix__group th {
+  position: static;
+}
+
+.bits-matrix__scroll {
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .bits-matrix__table td {
@@ -431,6 +461,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   font-size: 0.66rem;
   font-variant-numeric: tabular-nums;
   color: var(--class-ink-light);
@@ -1120,6 +1152,15 @@
 
   .bits-matrix__table thead th {
     height: 8rem;
+  }
+
+  .bits-matrix__table thead th > span {
+    width: 8rem;
+  }
+
+  .bits-matrix__table tbody th {
+    max-width: 9rem;
+    font-size: 0.66rem;
   }
 }
 
