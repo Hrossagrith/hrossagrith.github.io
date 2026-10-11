@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Реестр механики удил — Империя Хроссагрид</title>
-<meta name="description" content="Рабочий реестр английских верховых удил: каждая щёчка с каждым грызлом, физика каждого сочетания и что оно делает с лошадью.">
+<meta name="description" content="Рабочий реестр удил всех дисциплин: каждая щёчка с каждым грызлом, классификация по механизму, физика каждого сочетания и что оно делает с лошадью.">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="icon" href="../../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../../assets/style.css">
@@ -64,20 +64,22 @@
   <p class="entry">Рабочий реестр · не связан ссылками с порталом</p>
   <h1 class="page-title">Реестр механики удил</h1>
   <p class="bits-alt">Bit mechanics register</p>
-  <p class="page-standfirst">Каждая английская верховая щёчка с каждым грызлом. Выберите группу, щёчку и грызло; реестр откроет досье именно на это сочетание: силы, куда они ложатся во рту, останавливает ли их что-нибудь и чему лошадь от них учится.</p>
+  <p class="page-standfirst">Каждая щёчка с каждым грызлом из всех дисциплин: выездка, конкур, скачки, упряжь, вестерн, вакеро, саддлсит, работа в руках и удила, которые запрещены или продаются тихо. Выберите механизм, щёчку и грызло; реестр откроет досье именно на это сочетание: силы, куда они ложатся во рту, останавливает ли их что-нибудь, что вероятнее всего будет травмировано и чему лошадь из этого учится.</p>
 
-  <p class="bits-note">Досье построены на одной механической модели, каждый параметр которой опубликован на странице досье и может быть там изменён. Давления — расчётные оценки, сопоставленные с измеренными натяжениями повода и с болевыми порогами давления у человека. Вестерн и скаковые удила вне охвата. Ничто здесь не является рекомендацией применять удила: в Хроссагриде обычные удила запрещены, а реестр существует, чтобы показать, почему механика имеет значение.</p>
+  <p class="bits-note">Досье построены на одной механической модели, каждый параметр которой опубликован на странице досье и может быть там изменён. Давления — расчётные оценки, сопоставленные с измеренными натяжениями повода и с болевыми порогами человека. Удила классифицированы по тому, что делают их части, а не по названию: сочленённое грызло на плечах — мундштук, как бы его ни назвал магазин. Ничто здесь не является рекомендацией использовать удила: в Хроссагриде обычные удила запрещены, и реестр существует, чтобы показать, почему механика важна.</p>
 
   <section class="bits-step" data-step="group">
-    <h2 class="bits-step__title"><span class="bits-step__num">1</span> Выберите группу</h2>
-    <p class="bits-step__hint">Прямое действие или рычаг. Это самое большое различие между любыми двумя удилами.</p>
+    <h2 class="bits-step__title"><span class="bits-step__num">1</span> Выберите механизм</h2>
+    <p class="bits-step__hint">Прямое действие, рычаг против подбородка, рычаг без упора, блок, то и другое сразу, кольцо вокруг челюсти, разделение на нос или чек от упряжи. Это самое большое различие между любыми двумя удилами, и читается оно по деталям, а не по названию.</p>
     <div class="bits-choices bits-choices--groups" data-choices="group"></div>
   </section>
 
   <section class="bits-step" data-step="cheek" hidden>
     <h2 class="bits-step__title"><span class="bits-step__num">2</span> Выберите щёчку</h2>
-    <p class="bits-step__hint">Щёчка решает, как сила повода доходит до грызла, что её останавливает и могут ли удила быть протянуты в рот или подняты.</p>
+    <p class="bits-step__hint">Щёчка решает, как сила повода доходит до грызла, что её останавливает и могут ли удила протащиться через рот, подняться или зажать челюсть. Фильтруйте по тому, где щёчка применяется; механика от дисциплины не меняется.</p>
+    <div class="bits-filters" role="group" aria-label="Filter by discipline" data-filters></div>
     <div class="bits-choices" data-choices="cheek"></div>
+    <p class="bits-empty" data-no-cheeks hidden>Ни одна щёчка этого механизма не применяется в выбранной дисциплине.</p>
   </section>
 
   <section class="bits-step" data-step="mouth" hidden>
@@ -96,7 +98,7 @@
 
   <section class="bits-matrix">
     <h2>Вся матрица одним взглядом</h2>
-    <p class="page-standfirst">Каждая щёчка (строки) против каждого грызла (столбцы). Оттенок — индекс нагрузки при опорных условиях: 20 Н на каждый повод, голова на вертикали, толщины из каталога. Темнее — тяжелее для лошади. Нажмите на ячейку, чтобы открыть досье.</p>
+    <p class="page-standfirst">Каждая щёчка (строки, сгруппированные по механизму) против каждого грызла (столбцы). Оттенок — индекс нагрузки при опорных условиях: 20 Н на каждый повод, голова на вертикали, каталожные диаметры. Темнее — тяжелее для лошади. Нажмите на ячейку, чтобы открыть досье.</p>
     <div class="bits-matrix__scroll">
       <table class="bits-matrix__table" data-matrix>
         <caption class="visually-hidden">Индекс нагрузки для каждого сочетания щёчки и грызла</caption>
@@ -109,8 +111,10 @@
 
   <section>
     <h2>Два края реестра</h2>
-    <p class="page-standfirst">Вычислено той же моделью при опорных условиях по всем сочетаниям, которые действительно выпускаются.</p>
+    <p class="page-standfirst">Вычислено той же моделью при опорных условиях по всем сочетаниям, которые действительно выпускаются. Первая пара отвечает на вопрос, ради которого реестр создан: какое устройство причиняет меньше всего боли, всё же склоняя лошадь к правильному поставу, и какое — больше всего.</p>
     <div class="bits-extremes" data-extremes></div>
+    <h3 class="bits-subhead">Самые жёсткие по механизму</h3>
+    <div class="bits-extremes bits-extremes--compact" data-extremes-groups></div>
   </section>
 
   <div class="bits-empty" data-loading>Реестр загружается…</div>
@@ -129,10 +133,14 @@
     <span class="bits-choice__name"></span>
     <span class="bits-choice__alt"></span>
     <span class="bits-choice__aka"></span>
+    <span class="bits-choice__tags"></span>
     <span class="bits-choice__badge"></span>
   </button>
 </template>
 <template id="tpl-subhead"><h3 class="bits-subhead"></h3></template>
+<template id="tpl-filter"><button type="button" class="bits-filter" data-filter aria-pressed="false"></button></template>
+<template id="tpl-matrix-group"><tr class="bits-matrix__group"><th scope="rowgroup"></th></tr></template>
+<template id="tpl-tag"><span class="bits-tag"></span></template>
 <template id="tpl-matrix-col"><th scope="col"><span></span></th></template>
 <template id="tpl-matrix-row"><tr><th scope="row"></th></tr></template>
 <template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="visually-hidden"></span></a></td></template>

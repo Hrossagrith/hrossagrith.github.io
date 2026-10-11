@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bit mechanics register &mdash; The Empire of Hrossagri&#240;</title>
-<meta name="description" content="A working register of English riding bits: every cheek with every mouthpiece, the physics of each combination, and what it does to the horse.">
+<meta name="description" content="A working register of horse bits across every discipline: every cheek with every mouthpiece, classified by mechanism, with the physics of each combination and what it does to the horse.">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="icon" href="../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../assets/style.css">
@@ -64,20 +64,22 @@
   <p class="entry">Working register &middot; not linked from the portal</p>
   <h1 class="page-title">Bit mechanics register</h1>
   <p class="bits-alt">Реестр механики удил</p>
-  <p class="page-standfirst">Every English riding cheek with every mouthpiece. Pick a group, a cheek and a mouthpiece; the register opens a dossier on that exact combination: the forces, where they land in the mouth, whether anything stops them, and what the horse learns from them.</p>
+  <p class="page-standfirst">Every cheek with every mouthpiece, from every discipline: dressage, jumping, racing, harness, western, vaquero, saddle seat, leading in hand, and the bits that are banned or sold quietly. Pick a mechanism, a cheek and a mouthpiece; the register opens a dossier on that exact combination: the forces, where they land in the mouth, whether anything stops them, what is likely to be injured, and what the horse learns from them.</p>
 
-  <p class="bits-note">The dossiers are built from one mechanical model whose every parameter is published on the dossier page and can be changed there. Pressures are modelled estimates, compared with measured rein tensions and with human pressure-pain thresholds. Western and racing bits are outside the scope. Nothing here is a recommendation to use a bit: in Hrossagri&#240; ordinary bits are prohibited, and the register exists to show why the mechanics matter.</p>
+  <p class="bits-note">The dossiers are built from one mechanical model whose every parameter is published on the dossier page and can be changed there. Pressures are modelled estimates, compared with measured rein tensions and with human pressure-pain thresholds. Bits are classified by what their parts do, never by what they are called: a jointed mouthpiece on shanks is a curb whatever the shop calls it. Nothing here is a recommendation to use a bit: in Hrossagri&#240; ordinary bits are prohibited, and the register exists to show why the mechanics matter.</p>
 
   <section class="bits-step" data-step="group">
-    <h2 class="bits-step__title"><span class="bits-step__num">1</span> Choose the group</h2>
-    <p class="bits-step__hint">Direct action, or a lever. This is the single largest difference between any two bits.</p>
+    <h2 class="bits-step__title"><span class="bits-step__num">1</span> Choose the mechanism</h2>
+    <p class="bits-step__hint">Direct action, a lever against the chin, a lever against nothing, a pulley, both at once, a ring around the jaw, a split to the nose, or a check from the harness. This is the single largest difference between any two bits, and it is read from the parts, not the name.</p>
     <div class="bits-choices bits-choices--groups" data-choices="group"></div>
   </section>
 
   <section class="bits-step" data-step="cheek" hidden>
     <h2 class="bits-step__title"><span class="bits-step__num">2</span> Choose the cheek</h2>
-    <p class="bits-step__hint">The cheek decides how the rein force reaches the mouthpiece, what stops it, and whether the bit can be pulled through or ridden up.</p>
+    <p class="bits-step__hint">The cheek decides how the rein force reaches the mouthpiece, what stops it, and whether the bit can be pulled through, ridden up, or clamped on the jaw. Filter by where the cheek is used; the mechanics do not change with the discipline.</p>
+    <div class="bits-filters" role="group" aria-label="Filter by discipline" data-filters></div>
     <div class="bits-choices" data-choices="cheek"></div>
+    <p class="bits-empty" data-no-cheeks hidden>No cheek of this mechanism is used in the chosen discipline.</p>
   </section>
 
   <section class="bits-step" data-step="mouth" hidden>
@@ -96,7 +98,7 @@
 
   <section class="bits-matrix">
     <h2>The whole matrix at a glance</h2>
-    <p class="page-standfirst">Every cheek (rows) against every mouthpiece (columns). The shade is the burden index at the reference condition: 20&nbsp;N on each rein, head on the vertical, catalogue diameters. Darker is heavier on the horse. Click a cell to open its dossier.</p>
+    <p class="page-standfirst">Every cheek (rows, grouped by mechanism) against every mouthpiece (columns). The shade is the burden index at the reference condition: 20&nbsp;N on each rein, head on the vertical, catalogue diameters. Darker is heavier on the horse. Click a cell to open its dossier.</p>
     <div class="bits-matrix__scroll">
       <table class="bits-matrix__table" data-matrix>
         <caption class="visually-hidden">Burden index for every cheek and mouthpiece combination</caption>
@@ -109,8 +111,10 @@
 
   <section>
     <h2>The two ends of the register</h2>
-    <p class="page-standfirst">Computed from the same model, at the reference condition, over every combination that is actually made.</p>
+    <p class="page-standfirst">Computed from the same model, at the reference condition, over every combination that is actually made. The first pair answers the question the register was built for: which arrangement hurts least while still biasing the horse towards a correct carriage, and which hurts most.</p>
     <div class="bits-extremes" data-extremes></div>
+    <h3 class="bits-subhead">Harshest by mechanism</h3>
+    <div class="bits-extremes bits-extremes--compact" data-extremes-groups></div>
   </section>
 
   <div class="bits-empty" data-loading>Loading the register&hellip;</div>
@@ -129,10 +133,14 @@
     <span class="bits-choice__name"></span>
     <span class="bits-choice__alt"></span>
     <span class="bits-choice__aka"></span>
+    <span class="bits-choice__tags"></span>
     <span class="bits-choice__badge"></span>
   </button>
 </template>
 <template id="tpl-subhead"><h3 class="bits-subhead"></h3></template>
+<template id="tpl-filter"><button type="button" class="bits-filter" data-filter aria-pressed="false"></button></template>
+<template id="tpl-matrix-group"><tr class="bits-matrix__group"><th scope="rowgroup"></th></tr></template>
+<template id="tpl-tag"><span class="bits-tag"></span></template>
 <template id="tpl-matrix-col"><th scope="col"><span></span></th></template>
 <template id="tpl-matrix-row"><tr><th scope="row"></th></tr></template>
 <template id="tpl-matrix-cell"><td><a class="bits-cell"><span class="visually-hidden"></span></a></td></template>

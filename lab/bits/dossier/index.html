@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bit dossier &mdash; The Empire of Hrossagri&#240;</title>
-<meta name="description" content="Mechanics, pressures, stops and head-carriage effects of one cheek and mouthpiece combination.">
+<meta name="description" content="Mechanics, pressures, stops, likely injuries and head-carriage effects of one cheek and mouthpiece combination.">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="icon" href="../../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../../assets/style.css">
@@ -69,6 +69,7 @@
     <span class="bits-badge" data-field="validity" hidden></span>
     <span class="bits-badge bits-badge--pairing" data-field="pairing" hidden></span>
     <span class="bits-badge" data-field="double-bridle" hidden>Used in a double bridle with a bradoon</span>
+    <span class="bits-badge" data-field="tags" hidden></span>
   </p>
   <p class="bits-print-url" data-print-url></p>
 
@@ -89,11 +90,11 @@
 
   <form class="bits-controls" data-controls aria-label="Model settings">
     <label>
-      <span>Rein tension, each rein</span>
+      <span data-field="force-label">Rein tension, each rein</span>
       <input type="range" name="F" min="5" max="150" step="1" value="20">
       <output data-out="F">20 N</output>
     </label>
-    <label>
+    <label data-show="posture">
       <span>Head carriage</span>
       <select name="posture"></select>
     </label>
@@ -124,6 +125,98 @@
     </div>
   </form>
 
+  <!-- Figure 0: the bit itself -->
+  <section class="bits-figure" aria-labelledby="fig-0">
+    <div class="bits-figure__head"><span class="bits-figure__num">Figure 0</span></div>
+    <h2 id="fig-0">The bit itself</h2>
+    <p class="bits-figure__lede">Left: the cheek seen from the side of the horse's face, drawn to scale from the catalogue dimensions, with the rein and bridle attachment points, the chin restraint and the lever arms marked. Right: the mouthpiece seen from the front, with its joints, links, port, texture and set thickness.</p>
+    <svg viewBox="0 0 640 380" role="img" aria-labelledby="fig-0-title">
+      <title id="fig-0-title">Side view of the cheek and front view of the mouthpiece, to scale</title>
+      <defs>
+        <pattern id="pat-twist" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="viz-pattern-line"/></pattern>
+        <pattern id="pat-corkscrew" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" class="viz-pattern-line"/></pattern>
+        <pattern id="pat-wire" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(60)"><line x1="0" y1="0" x2="0" y2="4" class="viz-pattern-line"/></pattern>
+        <pattern id="pat-serrated" patternUnits="userSpaceOnUse" width="7" height="7"><line x1="0" y1="0" x2="0" y2="7" class="viz-pattern-line"/></pattern>
+        <pattern id="pat-square" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" class="viz-pattern-line"/><line x1="0" y1="0" x2="10" y2="0" class="viz-pattern-line"/></pattern>
+        <pattern id="pat-saw" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M0 8 L4 0 L8 8 Z" class="viz-pattern-fill"/></pattern>
+        <pattern id="pat-rope" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(30)"><line x1="0" y1="0" x2="0" y2="10" class="viz-pattern-line" stroke-width="2"/></pattern>
+        <pattern id="pat-burr" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="1.2" class="viz-pattern-fill"/></pattern>
+      </defs>
+      <text x="20" y="28" class="viz-muted">Cheek, side view</text>
+      <text x="360" y="28" class="viz-muted">Mouthpiece, front view</text>
+      <line x1="330" y1="40" x2="330" y2="340" class="viz-grid"/>
+      <g id="f0-side" transform="translate(150 190)">
+        <line id="f0-cheekstrap" x1="0" y1="0" x2="0" y2="-150" class="viz-strap"/>
+        <path id="f0-cord" d="" class="viz-strap" stroke-dasharray="6 4"/>
+        <circle id="f0-ring" cx="0" cy="0" r="28" class="viz-metal-outline"/>
+        <ellipse id="f0-egg" cx="0" cy="0" rx="22" ry="27" class="viz-metal-outline"/>
+        <path id="f0-dee" d="" class="viz-metal-outline"/>
+        <rect id="f0-arm" x="-3" y="-60" width="6" height="120" rx="3" class="viz-metal"/>
+        <path id="f0-hanger" d="" class="viz-metal" fill="none" stroke-width="5" stroke-linecap="round"/>
+        <circle id="f0-hanger-ring" cx="0" cy="-22" r="7" class="viz-metal-outline"/>
+        <path id="f0-shank" d="" class="viz-metal" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle id="f0-purchase-ring" cx="0" cy="-28" r="7" class="viz-metal-outline"/>
+        <circle id="f0-rein-ring" cx="0" cy="56" r="8" class="viz-metal-outline"/>
+        <circle id="f0-snaffle-ring" cx="0" cy="0" r="22" class="viz-metal-outline"/>
+        <g id="f0-stack"><circle cx="0" cy="0" r="24" class="viz-metal-outline"/><circle cx="0" cy="28" r="9" class="viz-metal-outline"/><circle cx="0" cy="56" r="9" class="viz-metal-outline"/><circle cx="0" cy="84" r="9" class="viz-metal-outline"/><circle cx="0" cy="-32" r="7" class="viz-metal-outline"/></g>
+        <g id="f0-slots"><rect x="-3" y="20" width="6" height="12" rx="2" class="viz-slot"/><rect x="-3" y="44" width="6" height="12" rx="2" class="viz-slot"/></g>
+        <path id="f0-chain" d="" class="viz-chainline"/>
+        <line id="f0-bottom-bar" x1="0" y1="0" x2="0" y2="0" class="viz-metal" stroke-width="4"/>
+        <ellipse id="f0-jawring" cx="36" cy="22" rx="30" ry="22" class="viz-metal-outline"/>
+        <path id="f0-cage" d="" class="viz-metal" fill="none" stroke-width="4" stroke-linejoin="round"/>
+        <path id="f0-spoons" d="" class="viz-metal"/>
+        <rect id="f0-sidebar" x="-4" y="-10" width="8" height="40" rx="3" class="viz-metal"/>
+        <circle id="f0-burr" cx="0" cy="0" r="18" class="viz-burr"/>
+        <rect id="f0-plate" x="-4" y="-30" width="8" height="60" rx="2" class="viz-metal"/>
+        <path id="f0-noselink" d="" class="viz-strap"/>
+        <path id="f0-chinstrap" d="" class="viz-strap"/>
+        <path id="f0-horseshoe" d="" class="viz-metal" fill="none" stroke-width="6" stroke-linecap="round"/>
+        <path id="f0-check" d="" class="viz-strap"/>
+        <circle id="f0-mouth-end" cx="0" cy="0" r="5" class="viz-metal"/>
+        <line id="f0-dim-p" x1="0" y1="0" x2="0" y2="0" class="viz-dim"/>
+        <line id="f0-dim-s" x1="0" y1="0" x2="0" y2="0" class="viz-dim"/>
+        <text id="f0-dim-p-t" x="0" y="0" class="viz-small viz-muted"></text>
+        <text id="f0-dim-s-t" x="0" y="0" class="viz-small viz-muted"></text>
+        <text id="f0-l-rein" x="0" y="0" class="viz-small"></text>
+        <text id="f0-l-bridle" x="0" y="0" class="viz-small"></text>
+        <text id="f0-l-restraint" x="0" y="0" class="viz-small"></text>
+      </g>
+      <g id="f0-mouth" transform="translate(485 190)">
+        <rect id="f0-bar" x="-100" y="-10" width="200" height="20" rx="10" class="viz-metal"/>
+        <path id="f0-port" d="" class="viz-metal" fill="none" stroke-linecap="round"/>
+        <rect id="f0-cannon-l" x="-100" y="-10" width="90" height="20" rx="10" class="viz-metal"/>
+        <rect id="f0-cannon-r" x="10" y="-10" width="90" height="20" rx="10" class="viz-metal"/>
+        <rect id="f0-cannon-l2" x="-100" y="-10" width="90" height="20" rx="10" class="viz-metal"/>
+        <rect id="f0-cannon-r2" x="10" y="-10" width="90" height="20" rx="10" class="viz-metal"/>
+        <rect id="f0-link" x="-15" y="-8" width="30" height="16" rx="8" class="viz-metal"/>
+        <g id="f0-balls"><circle r="10" class="viz-metal"/><circle r="10" class="viz-metal"/><circle r="10" class="viz-metal"/><circle r="10" class="viz-metal"/><circle r="10" class="viz-metal"/><circle r="10" class="viz-metal"/><circle r="10" class="viz-metal"/></g>
+        <g id="f0-rollers"><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/></g>
+        <g id="f0-keys"><rect width="5" height="26" rx="2" class="viz-metal"/><rect width="5" height="26" rx="2" class="viz-metal"/><rect width="5" height="26" rx="2" class="viz-metal"/></g>
+        <path id="f0-spade" d="" class="viz-metal"/>
+        <circle id="f0-cricket" cx="0" cy="0" r="6" class="viz-metal-outline"/>
+        <rect id="f0-tongueplate" x="-30" y="6" width="60" height="8" rx="3" class="viz-metal-outline"/>
+        <rect id="f0-texture" x="-100" y="-10" width="200" height="20" rx="10" class="viz-texture"/>
+        <circle id="f0-ring-l" cx="-110" cy="0" r="7" class="viz-metal-outline"/>
+        <circle id="f0-ring-r" cx="110" cy="0" r="7" class="viz-metal-outline"/>
+        <line id="f0-dim-w" x1="-100" y1="60" x2="100" y2="60" class="viz-dim"/>
+        <text id="f0-dim-w-t" x="0" y="78" text-anchor="middle" class="viz-small viz-muted"></text>
+        <line id="f0-dim-d" x1="120" y1="-10" x2="120" y2="10" class="viz-dim"/>
+        <text id="f0-dim-d-t" x="128" y="4" class="viz-small viz-muted"></text>
+        <text id="f0-mouth-caption" x="0" y="100" text-anchor="middle" class="viz-small viz-muted"></text>
+      </g>
+      <text id="f0-caption" x="20" y="360" class="viz-small viz-muted"></text>
+    </svg>
+    <ul class="bits-statements">
+      <li data-say="draw-direct">Rein and bridle both attach at the level of the mouthpiece: there is no lever arm, and the drawing has no purchase or shank to dimension.</li>
+      <li data-say="draw-curb">Purchase <span data-field="dim-p"></span> above the mouthpiece, lever arm <span data-field="dim-s"></span> below it: a ratio of <span data-field="lever-ratio"></span>. The restraint under the jaw is a <span data-field="restraint-kind"></span>.</li>
+      <li data-say="draw-gag-lever">Lever arm <span data-field="dim-s"></span> below the mouthpiece and nothing under the jaw: the stack or shank can rotate until the cheekpiece stops it.</li>
+      <li data-say="draw-gag-slide">The cheekpiece is drawn passing through the ring to the rein: the ring is a pulley and the mouthpiece slides along the cord.</li>
+      <li data-say="draw-jaw-ring">The ring or cage drawn below the mouthpiece passes through the mouth and around the lower jaw.</li>
+      <li data-say="draw-combination">Straps or plates drawn beside the cheek carry part of the rein force to the nose or the sides of the jaw.</li>
+      <li data-say="draw-check">The strap drawn rising from the bit is the check rein to the harness saddle; there are no reins on this bit at all.</li>
+    </ul>
+  </section>
+
   <!-- Figure A: free-body diagram -->
   <section class="bits-figure" aria-labelledby="fig-a">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure A</span></div>
@@ -132,7 +225,7 @@
     <svg viewBox="0 0 640 440" role="img" aria-labelledby="fig-a-title">
       <title id="fig-a-title">Free-body diagram of the bit at the chosen head carriage</title>
       <defs>
-        <path id="fa-silhouette" d="M-30 46 C-42 20 -52 -40 -56 -120 C-58 -170 -46 -205 -30 -235 L-20 -292 L-8 -282 L10 -280 L35 -225 C70 -200 95 -170 92 -120 C90 -70 88 -30 60 20 C52 36 30 48 0 52 C-12 54 -22 52 -30 46 Z"/>
+        <path id="fa-silhouette" d="M-6 26 C-20 28 -30 26 -38 18 C-48 8 -50 -10 -54 -40 C-60 -90 -64 -150 -60 -210 C-57 -245 -50 -262 -36 -280 L-24 -342 L-6 -334 L10 -288 C24 -276 36 -262 52 -236 C76 -200 100 -160 112 -118 C116 -92 112 -70 100 -46 C86 -18 60 0 40 16 C32 24 26 36 16 40 C6 42 -2 34 -6 26 Z"/>
         <marker id="fa-head-rein" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--rein"/></marker>
         <marker id="fa-head-chain" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--chain"/></marker>
         <marker id="fa-head-poll" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="viz-arrowhead--poll"/></marker>
@@ -143,11 +236,15 @@
       <g id="fa-world" transform="translate(300 280) scale(0.82)">
         <g id="fa-head">
           <use href="#fa-silhouette" class="viz-head"/>
-          <path d="M-34 14 L0 0" class="viz-axis" stroke-width="2"/>
-          <ellipse cx="-4" cy="-150" rx="6" ry="4" style="fill:var(--viz-ink)"/>
-          <line id="fa-cheekpiece" x1="0" y1="0" x2="-4" y2="-236" class="viz-strap"/>
+          <path d="M-38 16 C-26 10 -12 4 0 0" class="viz-axis" fill="none" stroke-width="2"/>
+          <path d="M-50 -4 C-46 -10 -40 -8 -42 -2" class="viz-axis" fill="none" stroke-width="2"/>
+          <ellipse cx="-30" cy="-192" rx="7" ry="5" style="fill:var(--viz-ink)"/>
+          <line id="fa-cheekpiece" x1="0" y1="0" x2="14" y2="-256" class="viz-strap"/>
           <path id="fa-shank" d="" class="viz-metal" fill="none" stroke-width="5" stroke-linecap="round"/>
           <path id="fa-chain" d="" class="viz-chainline"/>
+          <path id="fa-nose" d="" class="viz-strap"/>
+          <path id="fa-check" d="" class="viz-strap"/>
+          <ellipse id="fa-jawring" cx="0" cy="0" rx="0" ry="0" class="viz-metal-outline" style="stroke-width:3"/>
           <circle id="fa-bit" cx="0" cy="0" r="7" class="viz-metal"/>
           <line id="fa-arrow-rein" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--rein" marker-end="url(#fa-head-rein)"/>
           <line id="fa-arrow-rein2" x1="0" y1="0" x2="0" y2="0" class="viz-arrow viz-arrow--rein" marker-end="url(#fa-head-rein)"/>
@@ -165,12 +262,18 @@
       <text id="fa-l-amp" x="20" y="410"></text>
       <text id="fa-l-rho" x="20" y="430" class="viz-muted"></text>
     </svg>
-    <p class="bits-legend-row"><span><i class="is-rein"></i>F, rein tension per side <span data-field="legend-F"></span></span><span><i class="is-chain"></i>C, chain or strap <span data-field="legend-C"></span></span><span><i class="is-poll"></i>T, cheekpiece to the poll <span data-field="legend-T"></span></span><span><i class="is-reaction"></i>R, the mouth pushes back <span data-field="legend-R"></span></span></p>
+    <p class="bits-legend-row"><span><i class="is-rein"></i>F, rein tension per side <span data-field="legend-F"></span></span><span><i class="is-chain"></i>C, chain, strap or ring <span data-field="legend-C"></span></span><span><i class="is-poll"></i>T, cheekpiece to the poll <span data-field="legend-T"></span></span><span><i class="is-reaction"></i>R, the mouth pushes back <span data-field="legend-R"></span></span></p>
     <ul class="bits-statements">
       <li data-say="direct-sum">The cheek has no lever. The two reins together deliver <span data-field="press-total"></span> onto tongue and bars and <span data-field="lip-total"></span> upward into the corners of the mouth; nothing is multiplied, only redistributed.</li>
-      <li data-say="curb-sum" data-tone="warn">The lower arm is <span data-field="lever-ratio"></span> times the upper arm. Once the chain engages at <span data-field="rho"></span>° the chain carries <span data-field="chain-force"></span> per side, so the mouth receives <span data-field="press-total"></span> downward and backward: <span data-field="amplification"></span>× what the rein alone would give. The chin groove is clamped with <span data-field="chin-force"></span>.</li>
+      <li data-say="curb-sum" data-tone="warn">The lower arm is <span data-field="lever-ratio"></span> times the upper arm. Once the restraint engages at <span data-field="rho"></span>° it carries <span data-field="chain-force"></span> per side, so the mouth receives <span data-field="press-total"></span> downward and backward: <span data-field="amplification"></span>× what the rein alone would give. The chin is clamped with <span data-field="chin-force"></span>.</li>
       <li data-say="gag-lever-sum" data-tone="warn">There is no chain, so nothing stops the rotation except the cheekpiece. The ring stack swings to about <span data-field="rho"></span>° and the mouthpiece is dragged <span data-field="lift"></span> up the face before the lips stop it. The cheekpiece then pulls with <span data-field="cheek-force"></span> per side, all of it landing on the corners of the mouth: <span data-field="lip-total"></span> in total.</li>
-      <li data-say="gag-slide-sum" data-tone="warn">The cheekpiece runs through the ring like a rope over a pulley. The upper strand pulls towards the poll with <span data-field="cheek-force"></span> per side (friction over the ring takes the rest); together with the rein this lifts the bit with <span data-field="lip-total"></span> into the corners of the mouth, about <span data-field="amplification"></span>× a plain snaffle's upward pull at this carriage.</li>
+      <li data-say="gag-slide-sum" data-tone="warn">The cheekpiece runs through the ring like a rope over a pulley. The upper strand pulls towards the poll with <span data-field="cheek-force"></span> per side (friction over the ring takes the rest); together with the rein this lifts the bit with <span data-field="lip-total"></span> into the corners of the mouth.</li>
+      <li data-say="gag-curb-sum" data-tone="bad">Two mechanisms on one mouthpiece. The gag rein lifts the bit through the cord with <span data-field="lip-total"></span> into the corners of the mouth; the curb rein rotates the shank until the chain engages and presses <span data-field="press-total"></span> onto tongue and bars. The horse receives lift and clamp at once.</li>
+      <li data-say="jaw-ring-sum" data-tone="bad">The reins (or lead) act at the mouthpiece as in a snaffle, <span data-field="press-total"></span> onto tongue and bars, and the ring around the jaw turns that pull into a clamp: <span data-field="jaw-force"></span> on the bone of the lower jaw with no restraint but bone.</li>
+      <li data-say="combination-sum">Of each rein's <span data-field="F"></span>, only <span data-field="mouth-share"></span> reaches the mouthpiece; the rest goes to the nose (<span data-field="nose-force"></span>), the chin strap and the sides of the jaw. The mouth receives <span data-field="press-total"></span> in total.</li>
+      <li data-say="check-sum" data-tone="bad">There are no reins. The check strap holds the bit up the face with whatever force the horse exerts by trying to lower its head, here <span data-field="F"></span> per side, and that force never releases while the horse is in harness. <span data-field="lip-total"></span> rests on the corners of the mouth.</li>
+      <li data-say="second-bar" data-tone="bad">A second, thin bar (<span data-field="second-d"></span>) shares the mouth: it takes <span data-field="second-share"></span> of the load on a strip a few millimetres wide, and the model's bar pressure is that bar's.</li>
+      <li data-say="weight">The bit's own mass (<span data-field="bit-mass"></span>) rests on the tongue before any rein is taken: <span data-field="rest-weight"></span> of standing load.</li>
       <li data-say="poll">The poll receives <span data-field="poll-force"></span> downward (<span data-field="poll-kpa"></span> over the headpiece). <span data-field="poll-note"></span></li>
     </ul>
   </section>
@@ -186,35 +289,54 @@
       <path id="fb-skull" d="M72 150 C96 70 170 50 240 50 C310 50 384 70 408 150 L384 150 C360 90 300 72 240 72 C180 72 120 90 96 150 Z" class="viz-bone"/>
       <path id="fb-cavity" d="M96 150 C120 90 180 72 240 72 C300 72 360 90 384 150 C390 190 360 220 330 236 L150 236 C120 220 90 190 96 150 Z" style="fill:var(--viz-surface);stroke:none"/>
       <path id="fb-palate" d="M96 150 C120 90 180 72 240 72 C300 72 360 90 384 150" class="viz-bone" fill="none" stroke-width="8" stroke-linecap="round"/>
+      <path id="fb-palate-ridges" d="M150 112 C180 100 300 100 330 112 M130 128 C170 114 310 114 350 128 M118 142 C165 128 315 128 362 142" class="viz-axis" fill="none"/>
       <path id="fb-mandible" d="M150 300 C150 240 190 220 212 170 L268 170 C290 220 330 240 330 300 Z" class="viz-bone"/>
       <path id="fb-bar-l" d="M198 172 C204 152 222 152 226 172 Z" class="viz-bone" style="stroke-width:1.5"/>
       <path id="fb-bar-r" d="M254 172 C258 152 276 152 282 172 Z" class="viz-bone" style="stroke-width:1.5"/>
+      <path id="fb-tooth-l" d="M112 150 L116 180 L128 182 L132 150 Z" class="viz-bone" opacity="0.5"/>
+      <path id="fb-tooth-r" d="M348 150 L352 182 L364 180 L368 150 Z" class="viz-bone" opacity="0.5"/>
       <ellipse id="fb-tongue" cx="240" cy="160" rx="44" ry="19" class="viz-tissue" style="fill:var(--viz-tissue-2)"/>
+      <path id="fb-tongue-line" d="M240 146 L240 176" class="viz-axis" fill="none"/>
       <rect id="fb-zone-tongue" x="196" y="120" width="88" height="10" rx="4" class="viz-zone"/>
       <circle id="fb-zone-bar-l" cx="212" cy="158" r="9" class="viz-zone"/>
       <circle id="fb-zone-bar-r" cx="268" cy="158" r="9" class="viz-zone"/>
       <circle id="fb-zone-lip-l" cx="78" cy="140" r="12" class="viz-zone"/>
       <circle id="fb-zone-lip-r" cx="402" cy="140" r="12" class="viz-zone"/>
       <ellipse id="fb-zone-palate" cx="240" cy="80" rx="30" ry="8" class="viz-zone"/>
+      <circle id="fb-zone-jaw-l" cx="150" cy="262" r="12" class="viz-zone"/>
+      <circle id="fb-zone-jaw-r" cx="330" cy="262" r="12" class="viz-zone"/>
+      <circle id="fb-zone-cheek-l" cx="100" cy="190" r="12" class="viz-zone"/>
+      <circle id="fb-zone-cheek-r" cx="380" cy="190" r="12" class="viz-zone"/>
       <g id="fb-mouthpiece">
         <rect id="fb-bar" x="70" y="120" width="340" height="38" rx="19" class="viz-metal"/>
         <path id="fb-port" d="" class="viz-metal"/>
         <rect id="fb-cannon-l" x="70" y="120" width="170" height="38" rx="19" class="viz-metal"/>
         <rect id="fb-cannon-r" x="240" y="120" width="170" height="38" rx="19" class="viz-metal"/>
+        <rect id="fb-cannon-l2" x="70" y="120" width="170" height="38" rx="19" class="viz-metal"/>
+        <rect id="fb-cannon-r2" x="240" y="120" width="170" height="38" rx="19" class="viz-metal"/>
         <rect id="fb-link" x="210" y="124" width="60" height="30" rx="12" class="viz-metal"/>
         <g id="fb-balls"><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/><circle r="20" class="viz-metal"/></g>
+        <g id="fb-rollers"><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/><circle r="7" class="viz-metal-outline"/></g>
         <g id="fb-keys"><rect width="6" height="30" rx="3" class="viz-metal"/><rect width="6" height="30" rx="3" class="viz-metal"/><rect width="6" height="30" rx="3" class="viz-metal"/></g>
+        <path id="fb-spade" d="" class="viz-metal"/>
+        <circle id="fb-cricket" cx="0" cy="0" r="6" class="viz-metal-outline"/>
+        <rect id="fb-tongueplate" x="-30" y="6" width="60" height="8" rx="3" class="viz-metal-outline"/>
+        <rect id="fb-texture" x="70" y="120" width="340" height="38" rx="19" class="viz-texture"/>
         <circle id="fb-ring-l" cx="60" cy="139" r="6" class="viz-metal"/>
         <circle id="fb-ring-r" cx="420" cy="139" r="6" class="viz-metal"/>
       </g>
       <text x="240" y="30" text-anchor="middle" class="viz-muted">palate</text>
       <text x="240" y="294" text-anchor="middle" class="viz-muted viz-small">mandible</text>
+      <text x="120" y="200" text-anchor="middle" class="viz-muted viz-small">cheek</text>
+      <text x="360" y="200" text-anchor="middle" class="viz-muted viz-small">cheek</text>
       <text id="fb-l-tongue" x="240" y="212" text-anchor="middle"></text>
       <text id="fb-l-bar-l" x="160" y="186" text-anchor="end"></text>
       <text id="fb-l-bar-r" x="320" y="186" text-anchor="start"></text>
       <text id="fb-l-lip-l" x="12" y="300" text-anchor="start" class="viz-small"></text>
       <text id="fb-l-lip-r" x="468" y="300" text-anchor="end" class="viz-small"></text>
       <text id="fb-l-palate" x="300" y="46" text-anchor="start" class="viz-small"></text>
+      <text id="fb-l-jaw" x="240" y="278" text-anchor="middle" class="viz-small"></text>
+      <text id="fb-l-cheek" x="12" y="232" text-anchor="start" class="viz-small"></text>
       <text id="fb-l-scale" x="12" y="322" class="viz-muted viz-small"></text>
       <text id="fb-l-fit" x="468" y="322" text-anchor="end" class="viz-muted viz-small"></text>
     </svg>
@@ -226,9 +348,15 @@
       <li data-say="plate-tilt" data-tone="warn">The flat plate stays kind only while it lies flat. Fixed cheeks held by keepers, or a rotated shank, tilt the plate so that its edge digs into the tongue: this is how a French link turns into a Dr. Bristol in the mouth.</li>
       <li data-say="unjointed">Unjointed: the bar cannot fold, so the load is divided between the tongue (which it compresses) and the two bars (where it bridges onto thin mucosa over bone). Horses with unjointed bits show more bar lesions than horses with jointed bits in the Finnish trotter data.</li>
       <li data-say="port" data-tone="warn">The port relieves the tongue and sends that load to the bars. When the cheek rotates (curb action) the port swings upward; a medium or high port reaches the palate at <span data-field="rho"></span>° of rotation (risk index <span data-field="palate"></span>).</li>
+      <li data-say="palate-design" data-tone="bad">This mouthpiece is built to touch the palate: the spoon or U-piece stands <span data-field="port-height"></span> tall and meets the roof of the mouth as soon as the cheek rotates or the head is pushed against it. Palate contact is the mechanism, not a side effect.</li>
       <li data-say="textured" data-tone="bad">Textured surface: only <span data-field="contact-pct"></span> of the surface touches tissue and the ridges concentrate the load (edge factor <span data-field="edge"></span>). Thin mouthpieces also indent deeper before the bone stops them, so the contact strip on the bars is narrower.</li>
       <li data-say="multilink">Many links: the mouthpiece drapes over the tongue and cannot be leaned on, but each link is a small contact and the gaps between links can trap tongue or lip tissue.</li>
+      <li data-say="two-strands" data-tone="bad">Two strands with offset joints: the tongue is caught between four half-cannons that fold independently, and the load is carried on two thin lines instead of one.</li>
+      <li data-say="scissor" data-tone="bad">The two halves cross and slide past each other: a one-sided rein draws one cannon across the tongue against the other. Pinching the tongue is the design.</li>
+      <li data-say="tongue-plate">A plate under the joint spreads the centre load over the tongue and stops the joint pinching it; the extended version also holds the tongue down, which is a restraint of the airway's main mover, not a comfort.</li>
       <li data-say="keys">Keys hang from the bar and invite chewing. The bar itself is a straight bar; the keys add movement, not pressure relief.</li>
+      <li data-say="soft-mouth" data-tone="good">A soft or covered mouthpiece conforms to the tongue and spreads the load; it is also thick, wears, and is chewed through, so it must be inspected for an exposed core.</li>
+      <li data-say="free-pivot" data-tone="bad">The mouthpiece turns freely on its ring: pulled from below it presents its edge to the tongue and bars (edge factor raised to <span data-field="edge"></span>), which is why a lead attached only to the ring is warned against.</li>
     </ul>
   </section>
 
@@ -236,23 +364,24 @@
   <section class="bits-figure" aria-labelledby="fig-c">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure C</span></div>
     <h2 id="fig-c">Pressure on each tissue against pain thresholds</h2>
-    <p class="bits-figure__lede">Modelled contact pressure at the current settings. The two reference lines are the upper end of rein pressures found pain-free when compared with human thresholds (~100&nbsp;kPa) and the human facial pressure-pain threshold (232&nbsp;kPa). Bone-backed tissue (bars, chin groove) is the most sensitive; the lips are the most tolerant but also the least protected from tearing.</p>
-    <svg viewBox="0 0 640 270" role="img" aria-labelledby="fig-c-title">
-      <title id="fig-c-title">Pressure on tongue, bars, lips, chin and poll compared with pain thresholds</title>
+    <p class="bits-figure__lede">Modelled contact pressure at the current settings. The two reference lines are the upper end of rein pressures found pain-free when compared with human thresholds (~100&nbsp;kPa) and the human facial pressure-pain threshold (232&nbsp;kPa). Bone-backed tissue (bars, chin groove, the jaw under a ring, the nasal bone) is the most sensitive; the lips are the most tolerant but also the least protected from tearing.</p>
+    <svg viewBox="0 0 640 390" role="img" aria-labelledby="fig-c-title">
+      <title id="fig-c-title">Pressure on each tissue compared with pain thresholds</title>
       <g id="fc-grid"></g>
-      <line x1="200" y1="20" x2="200" y2="222" class="viz-axis"/>
-      <line id="fc-th-free" x1="0" y1="20" x2="0" y2="222" class="viz-threshold"/>
-      <line id="fc-th-face" x1="0" y1="20" x2="0" y2="222" class="viz-threshold"/>
-      <text id="fc-th-free-l" x="0" y="14" text-anchor="middle" class="viz-small viz-muted">pain-free ≈ 100</text>
-      <text id="fc-th-face-l" x="0" y="14" text-anchor="middle" class="viz-small viz-muted">face threshold 232</text>
-      <g data-row="bars"><text x="190" y="46" text-anchor="end">Bars (gums over bone)</text><rect data-bar="bars" x="200" y="32" width="0" height="20" rx="0" class="viz-bar"/><text data-val="bars" x="0" y="46"></text></g>
-      <g data-row="tongue"><text x="190" y="86" text-anchor="end">Tongue</text><rect data-bar="tongue" x="200" y="72" width="0" height="20" class="viz-bar"/><text data-val="tongue" x="0" y="86"></text></g>
-      <g data-row="lips"><text x="190" y="126" text-anchor="end">Corners of the mouth</text><rect data-bar="lips" x="200" y="112" width="0" height="20" class="viz-bar"/><text data-val="lips" x="0" y="126"></text></g>
-      <g data-row="chin"><text x="190" y="166" text-anchor="end">Chin groove</text><rect data-bar="chin" x="200" y="152" width="0" height="20" class="viz-bar"/><text data-val="chin" x="0" y="166"></text></g>
-      <g data-row="poll"><text x="190" y="206" text-anchor="end">Poll</text><rect data-bar="poll" x="200" y="192" width="0" height="20" class="viz-bar"/><text data-val="poll" x="0" y="206"></text></g>
-      <g id="fc-axis-labels"></g>
-      <text x="200" y="250" class="viz-muted viz-small">0 kPa</text>
-      <text id="fc-axis-max" x="600" y="250" text-anchor="end" class="viz-muted viz-small"></text>
+      <line x1="200" y1="20" x2="200" y2="342" class="viz-axis"/>
+      <line id="fc-th-free" x1="0" y1="20" x2="0" y2="342" class="viz-threshold"/>
+      <line id="fc-th-face" x1="0" y1="20" x2="0" y2="342" class="viz-threshold"/>
+      <text id="fc-th-free-l" x="0" y="14" text-anchor="end" class="viz-small viz-muted">pain-free ≈ 100</text>
+      <text id="fc-th-face-l" x="0" y="14" text-anchor="start" class="viz-small viz-muted">face threshold 232</text>
+      <g data-row="bars"><text x="190" y="44" text-anchor="end">Bars (gums over bone)</text><rect data-bar="bars" x="200" y="30" width="0" height="20" class="viz-bar"/><text data-val="bars" x="0" y="44"></text></g>
+      <g data-row="tongue"><text x="190" y="84" text-anchor="end">Tongue</text><rect data-bar="tongue" x="200" y="70" width="0" height="20" class="viz-bar"/><text data-val="tongue" x="0" y="84"></text></g>
+      <g data-row="lips"><text x="190" y="124" text-anchor="end">Corners of the mouth</text><rect data-bar="lips" x="200" y="110" width="0" height="20" class="viz-bar"/><text data-val="lips" x="0" y="124"></text></g>
+      <g data-row="chin"><text x="190" y="164" text-anchor="end">Chin groove</text><rect data-bar="chin" x="200" y="150" width="0" height="20" class="viz-bar"/><text data-val="chin" x="0" y="164"></text></g>
+      <g data-row="jaw"><text x="190" y="204" text-anchor="end">Jaw under ring or plates</text><rect data-bar="jaw" x="200" y="190" width="0" height="20" class="viz-bar"/><text data-val="jaw" x="0" y="204"></text></g>
+      <g data-row="cheek"><text x="190" y="244" text-anchor="end">Cheek against the teeth</text><rect data-bar="cheek" x="200" y="230" width="0" height="20" class="viz-bar"/><text data-val="cheek" x="0" y="244"></text></g>
+      <g data-row="nose"><text x="190" y="284" text-anchor="end">Nasal bone</text><rect data-bar="nose" x="200" y="270" width="0" height="20" class="viz-bar"/><text data-val="nose" x="0" y="284"></text></g>
+      <g data-row="poll"><text x="190" y="324" text-anchor="end">Poll</text><rect data-bar="poll" x="200" y="310" width="0" height="20" class="viz-bar"/><text data-val="poll" x="0" y="324"></text></g>
+      <text x="200" y="372" class="viz-muted viz-small">0 kPa</text>
     </svg>
     <table class="bits-table">
       <thead><tr><th scope="col">Tissue</th><th scope="col">Load</th><th scope="col">Contact area</th><th scope="col">Pressure</th><th scope="col">Reading</th></tr></thead>
@@ -261,11 +390,15 @@
         <tr data-tissue="tongue"><td>Tongue</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="lips"><td>Corner of the mouth, each side</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="chin"><td>Chin groove</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="jaw"><td>Jaw under ring, cage, side bars or spoons</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="cheek"><td>Cheek pressed against the teeth, each side</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="nose"><td>Nasal bone under the nose strap</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="poll"><td>Poll</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
       </tbody>
     </table>
     <ul class="bits-statements">
       <li data-say="tension-context">Context for <span data-field="F"></span> per rein: ridden horses are measured at mean maxima of about 17&nbsp;N (walk), 23&nbsp;N (trot) and 36&nbsp;N (canter), with recorded peaks of 43, 51 and 104&nbsp;N; unridden horses choose 6–10&nbsp;N and learn to avoid more. Drag the rein slider to the peaks to see what a moment of resistance costs.</li>
+      <li data-say="lead-context" data-tone="warn">This is a leading bit: the force is a handler's arm, not a rider's rein, and in the moment it is designed for (a horse rearing or pulling away) it is the handler's whole weight, several hundred newtons, on the bottom ring.</li>
       <li data-say="sustained" data-tone="warn">Any of these pressures is far above the ~4&nbsp;kPa at which capillaries close. Held for minutes rather than moments, the tissue under the mouthpiece is ischaemic regardless of which bit it is.</li>
     </ul>
   </section>
@@ -274,7 +407,7 @@
   <section class="bits-figure" aria-labelledby="fig-d">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure D</span></div>
     <h2 id="fig-d">Is there a stop, or does it keep going?</h2>
-    <p class="bits-figure__lede">Two different questions. Does anything mechanical limit how far the bit moves in the mouth as the rider pulls harder, and does anything limit the force? A chain stops a shank rotating but not the force it transmits; a fixed cheek stops the mouthpiece riding up; a loose ring or a sliding gag has no stop at all before the corners of the mouth and the first cheek teeth.</p>
+    <p class="bits-figure__lede">Two different questions. Does anything mechanical limit how far the bit moves in the mouth as the rider pulls harder, and does anything limit the force? A chain stops a shank rotating but not the force it transmits; a fixed cheek stops the mouthpiece riding up; a loose ring or a sliding gag has no stop at all before the corners of the mouth and the first cheek teeth; a ring around the jaw stops on bone.</p>
     <svg viewBox="0 0 640 262" role="img" aria-labelledby="fig-d-title">
       <title id="fig-d-title">How far the mouthpiece can travel up the mouth and what stops it</title>
       <text x="20" y="30" class="viz-muted">Rise of the mouthpiece towards the cheek teeth</text>
@@ -298,12 +431,17 @@
     <ul class="bits-statements">
       <li data-say="stop-suspension" data-tone="good">The mouthpiece hangs from a fixed cheek, so it cannot ride up into the corners of the mouth: the bridle takes that component. Force itself is not limited; the rider can still apply any pressure to tongue and bars.</li>
       <li data-say="stop-tissue" data-tone="warn">Nothing mechanical stops the bit rising. Under upward pull it slides until the corners of the mouth stretch and, with enough force or a wide bit, until the cheek is pressed against the first lower cheek tooth. The lip is the stop.</li>
-      <li data-say="stop-chain">The chain is a hard stop for rotation: past about <span data-field="rho"></span>° the shank stops turning. It is not a stop for force. Beyond that angle every extra newton on the rein becomes <span data-field="amplification"></span> newtons on tongue and bars and a proportional squeeze of the chin.</li>
+      <li data-say="stop-chain">The restraint is a hard stop for rotation: past about <span data-field="rho"></span>° the shank stops turning. It is not a stop for force. Beyond that angle every extra newton on the rein becomes <span data-field="amplification"></span> newtons on tongue and bars and a proportional squeeze of the chin.</li>
+      <li data-say="stop-rigid" data-tone="bad">The restraint is a rigid ring, not a chain: it engages almost at once, on a strip of skin a few millimetres wide, and has no give at all.</li>
       <li data-say="stop-cheekpiece" data-tone="bad">No chain: the only thing that halts the rotation is the cheekpiece going taut, and the mouthpiece travels <span data-field="lift"></span> up the face to get there. There is no mechanical limit before the corners of the mouth; a curb strap would add one.</li>
       <li data-say="stop-none" data-tone="bad">A sliding gag has no stop of any kind unless stops are fitted to the cheekpieces. The bit rises as long as the rider pulls, up to the cheek teeth, with the corners of the mouth taking the whole lift.</li>
+      <li data-say="stop-bone" data-tone="bad">The stop is the horse's own jaw bone: the ring or cage cannot pass it, so every increase in force is taken by the periosteum of the mandible and by whatever the mouthpiece lies on.</li>
+      <li data-say="stop-check" data-tone="bad">There is no stop and no release: the check is adjusted once, and the horse carries it for the whole session.</li>
       <li data-say="stops-fitted">Rubber stops on the cheekpieces limit the slide to about <span data-field="lift"></span>.</li>
       <li data-say="pull-through" data-tone="warn">With a strong one-sided pull the ring can be drawn into the mouth (pull-through guard <span data-field="guard-pct"></span>). The cadaver study found unilateral tension displaces a loose ring snaffle the most.</li>
       <li data-say="lip-pinch" data-tone="warn">The ring passes through the mouthpiece: the fold of the lip at the corner can be caught in the gap and pinched as the ring turns. Rubber bit guards remove this at the cost of thickness.</li>
+      <li data-say="cheek-squeeze" data-tone="bad">The cheek is squeezed from outside against its own teeth whenever a rein is used (<span data-field="cheek-kpa"></span> on the pad). Where the pad carries bristles or prongs, the contact is a few square millimetres and the skin is the limit.</li>
+      <li data-say="held-high" data-tone="warn">The bit is strapped high in the mouth before any rein is taken, so the corners of the mouth carry a standing load and the mouthpiece cannot be dropped or released by the horse.</li>
     </ul>
   </section>
 
@@ -314,10 +452,10 @@
     <p class="bits-figure__lede">The same rein tension, held by a hand that does not yield, at four head carriages. The column is the peak pressure the horse feels at each. A horse moves towards the carriage where it hurts least; that column is the device's own bias, before any training. The geometric escape, moving the mouth towards the hand (curling behind the vertical), slackens any rein and is common to every bit: only the rider's timing of release decides whether it is rewarded.</p>
     <svg viewBox="0 0 640 320" role="img" aria-labelledby="fig-e-title">
       <title id="fig-e-title">Peak pressure at four head carriages</title>
-      <g data-posture="above" transform="translate(80 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(70)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Above the vertical</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">nose out</text></g>
-      <g data-posture="correct" transform="translate(230 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(45)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Poll highest</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">nose a little in front</text></g>
-      <g data-posture="vertical" transform="translate(380 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(20)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">On the vertical</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle"></text></g>
-      <g data-posture="btv" transform="translate(530 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(-5)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-4" cy="-150" rx="7" ry="5" style="fill:var(--viz-ink)"/><path d="M-34 14 L0 0" class="viz-axis" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Behind the vertical</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">curled</text></g>
+      <g data-posture="above" transform="translate(80 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(70)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-30" cy="-192" rx="8" ry="6" style="fill:var(--viz-ink)"/><path d="M-38 16 C-26 10 -12 4 0 0" class="viz-axis" fill="none" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Above the vertical</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">nose out</text></g>
+      <g data-posture="correct" transform="translate(230 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(45)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-30" cy="-192" rx="8" ry="6" style="fill:var(--viz-ink)"/><path d="M-38 16 C-26 10 -12 4 0 0" class="viz-axis" fill="none" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Poll highest</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">nose a little in front</text></g>
+      <g data-posture="vertical" transform="translate(380 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(20)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-30" cy="-192" rx="8" ry="6" style="fill:var(--viz-ink)"/><path d="M-38 16 C-26 10 -12 4 0 0" class="viz-axis" fill="none" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">On the vertical</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle"></text></g>
+      <g data-posture="btv" transform="translate(530 0)"><g class="glyph" transform="translate(0 70) scale(0.22) rotate(-5)"><use href="#fa-silhouette" class="viz-head"/><ellipse cx="-30" cy="-192" rx="8" ry="6" style="fill:var(--viz-ink)"/><path d="M-38 16 C-26 10 -12 4 0 0" class="viz-axis" fill="none" stroke-width="4"/></g><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle">Behind the vertical</text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle">curled</text></g>
       <line x1="40" y1="270" x2="600" y2="270" class="viz-axis"/>
       <text id="fe-bias" x="320" y="24" text-anchor="middle"></text>
     </svg>
@@ -328,21 +466,45 @@
       <li data-say="bias-btv" data-tone="bad">Least pain behind the vertical. The device itself rewards curling: as the horse tucks its nose the loads it carries fall away. A horse that already goes behind the vertical will be pushed further behind it by this combination under a holding hand.</li>
       <li data-say="curb-head" data-tone="warn">Curb action adds two downward instructions, chin back and poll down. Both are relieved by flexing the poll and lowering the head: the mechanical bias of every curb is towards the vertical and then behind it.</li>
       <li data-say="gag-head" data-tone="warn">Gag action lifts the corners of the mouth towards the poll. Lifting is relieved by raising the head and opening the throat, so the bias is above the vertical; the small poll component says the opposite, which is why gags are described as giving the horse two instructions at once.</li>
+      <li data-say="check-head" data-tone="bad">A check rein fixes the lowest position the head may take and punishes every attempt below it; the carriage is not learned but enforced, for as long as the harness is on.</li>
       <li data-say="btv-horse">For a horse that already goes behind the vertical: this combination <span data-field="btv-verdict"></span>. The reliable remedy is the hand, not the metal: release when the nose comes forward, never when it comes back.</li>
     </ul>
   </section>
 
-  <!-- Figure F: index -->
+  <!-- Figure F: injuries -->
   <section class="bits-figure" aria-labelledby="fig-f">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure F</span></div>
-    <h2 id="fig-f">How the burden index is built</h2>
+    <h2 id="fig-f">What is likely to go wrong</h2>
+    <p class="bits-figure__lede">Each line is a lesion or problem documented in horses, read against this combination's own numbers and flags. The level is the model's estimate at the current settings; the source numbers point to the studies at the foot of the page that describe the lesion, its site and its association with bit type.</p>
+    <table class="bits-table" data-injuries>
+      <thead><tr><th scope="col">Issue</th><th scope="col">Level</th><th scope="col">Driver in this combination</th><th scope="col">Sources</th></tr></thead>
+      <tbody>
+        <tr data-risk="commissure"><th scope="row">Tearing, ulcers and scars at the corners of the mouth</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="bars"><th scope="row">Bruising and bone damage of the bars</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="tongue"><th scope="row">Tongue bruising, cuts and lacerations</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="palate"><th scope="row">Palate bruising and ulceration</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="chin"><th scope="row">Chin-groove sores and curb-chain galls</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="cheek_teeth"><th scope="row">Cheek ulcers against the first cheek teeth</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="pinch"><th scope="row">Pinched lip or tongue in a ring hole or link gap</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="jaw"><th scope="row">Bruising of the lower jaw under a ring, cage or plate</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="nose"><th scope="row">Nasal-bone pressure and sores under the nose strap</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="airway"><th scope="row">Tongue restraint and airway interference</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="behaviour"><th scope="row">Pain behaviour: gaping, head tossing, tongue out, conflict</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Figure G: index -->
+  <section class="bits-figure" aria-labelledby="fig-g">
+    <div class="bits-figure__head"><span class="bits-figure__num">Figure G</span></div>
+    <h2 id="fig-g">How the burden index is built</h2>
     <p class="bits-figure__lede">Eight components, each 0–100, weighted and summed. The weights are published in the catalogue and the index is only as good as they are; the components, not the total, are the argument.</p>
-    <svg viewBox="0 0 640 330" role="img" aria-labelledby="fig-f-title">
-      <title id="fig-f-title">Component scores of the burden index</title>
+    <svg viewBox="0 0 640 330" role="img" aria-labelledby="fig-g-title">
+      <title id="fig-g-title">Component scores of the burden index</title>
       <g data-comp="peak_pressure"><text x="250" y="36" text-anchor="end">Peak pressure</text><text class="w viz-small viz-muted" x="256" y="36"></text><rect x="300" y="24" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="36"></text></g>
       <g data-comp="stop"><text x="250" y="72" text-anchor="end">Absence of a stop</text><text class="w viz-small viz-muted" x="256" y="72"></text><rect x="300" y="60" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="72"></text></g>
-      <g data-comp="pinch_edges"><text x="250" y="108" text-anchor="end">Pinching and edges</text><text class="w viz-small viz-muted" x="256" y="108"></text><rect x="300" y="96" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="108"></text></g>
-      <g data-comp="extra_forces"><text x="250" y="144" text-anchor="end">Chin and poll loading</text><text class="w viz-small viz-muted" x="256" y="144"></text><rect x="300" y="132" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="144"></text></g>
+      <g data-comp="pinch_edges"><text x="250" y="108" text-anchor="end">Pinching, edges, prongs</text><text class="w viz-small viz-muted" x="256" y="108"></text><rect x="300" y="96" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="108"></text></g>
+      <g data-comp="extra_forces"><text x="250" y="144" text-anchor="end">Chin, jaw, nose and poll loading</text><text class="w viz-small viz-muted" x="256" y="144"></text><rect x="300" y="132" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="144"></text></g>
       <g data-comp="palate"><text x="250" y="180" text-anchor="end">Palate risk</text><text class="w viz-small viz-muted" x="256" y="180"></text><rect x="300" y="168" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="180"></text></g>
       <g data-comp="signal"><text x="250" y="216" text-anchor="end">Ambiguity of the signal</text><text class="w viz-small viz-muted" x="256" y="216"></text><rect x="300" y="204" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="216"></text></g>
       <g data-comp="bit_space"><text x="250" y="252" text-anchor="end">Crowding of the mouth</text><text class="w viz-small viz-muted" x="256" y="252"></text><rect x="300" y="240" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="252"></text></g>
@@ -392,6 +554,7 @@
       <li data-say="v-rplus">Every bit, this one included, works by negative reinforcement: an aversive pressure is applied and removed when the horse complies. The register measures how aversive, how precisely it can be removed, and whether anything protects the horse when the hand does not remove it.</li>
       <li data-say="v-lift" data-tone="bad">Without a mechanical stop against rising, the only protection for the corners of the mouth is the rider's restraint. In a moment of fright or resistance there is none.</li>
       <li data-say="v-chain" data-tone="warn">The chin groove is skin over bone. A bare chain at this setting gives <span data-field="chin-kpa"></span>; a guard spreads it to roughly a quarter of that.</li>
+      <li data-say="v-banned" data-tone="bad">This combination, or a part of it, is prohibited or restricted by at least one governing body named in the sources. The prohibition is a judgement about the same mechanics this page describes.</li>
     </ul>
   </section>
 
@@ -402,9 +565,9 @@
     <h3>Forces</h3>
     <p>Each shank is treated as a rigid lever pivoting at the mouthpiece. The rein pulls at the lower arm of length <em>s</em> with tension <em>F</em> at an angle <em>θ</em> to the head; the chain (if present) pulls at the upper arm of length <em>p</em>. Moment balance after the shank has rotated by <em>ρ</em>:</p>
     <p class="bits-formula">F · s · sin(θ + ρ) = C · p · cos ρ + T · p · sin ρ</p>
-    <p>With a chain the cheekpiece carries 15&nbsp;% of the moment and the chain the rest, as the direct force measurements of Cross and colleagues indicate. Without a chain the cheekpiece carries all of it, and the shank rotates until the lips stop the mouthpiece rising. For a sliding gag the cheekpiece is a cord over a pulley: the strand to the poll carries <em>F·e<sup>−μπ/2</sup></em>. The tissues receive the vector sum of rein, chain and cheekpiece forces: the component towards the mandible lands on tongue and bars, the component towards the poll on the corners of the mouth (less what a fixed cheek takes).</p>
+    <p>With a chain the cheekpiece carries 15&nbsp;% of the moment and the chain the rest, as the direct force measurements of Cross and colleagues indicate. Without a chain the cheekpiece carries all of it, and the shank rotates until the lips stop the mouthpiece rising. For a sliding gag the cheekpiece is a cord over a pulley: the strand to the poll carries <em>F·e<sup>−μπ/2</sup></em>. A ring around the jaw turns the pull into a clamp on the mandible; a combination bit routes a fixed share of the rein to nose, chin or jaw plates before the mouthpiece; a check rein is modelled as a lift along the face with the horse's own push as the force. The tissues receive the vector sum: the component towards the mandible lands on tongue and bars, the component towards the poll on the corners of the mouth (less what a fixed cheek takes).</p>
     <h3>Pressures</h3>
-    <p>A mouthpiece of radius <em>r</em> pressed into tissue to a depth <em>δ</em> touches a strip of width <em>2√(2rδ − δ²)</em>. Over the bars the depth is limited by the 1.5&nbsp;mm of mucosa over bone; over the tongue 5&nbsp;mm is assumed. Width times contact length times the fraction of surface that actually touches (less than one for twisted, serrated or linked surfaces) is the contact area; the load divided by it, times an edge factor for ridges or tilted plates, is the pressure. Thresholds come from the comparison of equestrian rein pressures with human pressure-pain thresholds.</p>
+    <p>A mouthpiece of radius <em>r</em> pressed into tissue to a depth <em>δ</em> touches a strip of width <em>2√(2rδ − δ²)</em>. Over the bars the depth is limited by the 1.5&nbsp;mm of mucosa over bone; over the tongue 5&nbsp;mm is assumed. Width times contact length times the fraction of surface that actually touches (less than one for twisted, serrated or linked surfaces) is the contact area; the load divided by it, times an edge factor for ridges, tilted plates or a free-pivoting bar, is the pressure. Thresholds come from the comparison of equestrian rein pressures with human pressure-pain thresholds.</p>
     <table class="bits-table" data-params>
       <thead><tr><th scope="col">Parameter</th><th scope="col">Value</th><th scope="col">Basis</th></tr></thead>
       <tbody></tbody>
@@ -415,7 +578,7 @@
 
   <section class="bits-prose bits-sources" data-prose="sources">
     <p class="entry">Sources</p>
-    <h2>Measurements and studies used</h2>
+    <h2>Measurements, studies and rules used</h2>
     <ol data-sources></ol>
   </section>
 
@@ -436,7 +599,6 @@
 <template id="tpl-param-row"><tr><th scope="row"></th><td class="num"></td><td></td></tr></template>
 <template id="tpl-source"><li><span></span> <a target="_blank" rel="noopener"></a></li></template>
 <template id="tpl-interaction"><li></li></template>
-<template id="tpl-axis-tick"><g><line class="viz-grid"/><text class="viz-muted viz-small" text-anchor="middle"></text></g></template>
 
 <script src="../../../assets/theme.js"></script>
 <script src="../../../assets/site.js"></script>

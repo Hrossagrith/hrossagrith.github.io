@@ -22,6 +22,7 @@
   --viz-tissue-2: #d4a58d;
   --viz-bone: #efe6cf;
   --viz-metal: #8d8c86;
+  --viz-soft: #7a5a3c;
   --status-good: #0ca30c;
   --status-warning: #fab219;
   --status-serious: #ec835a;
@@ -47,6 +48,7 @@
   --viz-tissue-2: #7a5648;
   --viz-bone: #3a362c;
   --viz-metal: #a9a79f;
+  --viz-soft: #b08968;
 }
 
 /* ---------- Shared ---------- */
@@ -285,6 +287,65 @@
   margin: 0;
 }
 
+
+.bits-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+
+.bits-filter {
+  font: inherit;
+  font-family: var(--label);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper-2);
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+
+.bits-filter:hover,
+.bits-filter:focus-visible {
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+.bits-filter[aria-pressed="true"] {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--paper);
+}
+
+.bits-choice__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.2rem;
+}
+
+.bits-choice__tags:empty {
+  display: none;
+}
+
+.bits-tag {
+  font-family: var(--label);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--rule-soft);
+  border-radius: 999px;
+  color: var(--ink-faint);
+}
+
+.bits-tag--underground {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
 /* Matrix heat map */
 
 .bits-matrix {
@@ -385,6 +446,24 @@
   border-radius: 2px;
   vertical-align: middle;
   margin-right: 0.3rem;
+}
+
+
+.bits-matrix__group th {
+  padding-top: 0.9rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.bits-extremes--compact {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1rem;
+}
+
+.bits-extremes--compact .bits-extreme h3 {
+  font-size: 1rem;
 }
 
 .bits-extremes {
@@ -730,6 +809,73 @@
   width: 14px;
   height: 14px;
   rx: 3;
+}
+
+
+.bits-figure svg .viz-metal-outline {
+  fill: none;
+  stroke: var(--viz-metal);
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+
+.bits-figure svg .viz-slot {
+  fill: var(--viz-surface);
+  stroke: var(--viz-ink);
+  stroke-width: 1;
+}
+
+.bits-figure svg .viz-burr {
+  fill: url(#pat-burr);
+  stroke: var(--viz-metal);
+  stroke-width: 2;
+}
+
+.bits-figure svg .viz-texture {
+  fill: url(#pat-twist);
+  stroke: none;
+  pointer-events: none;
+}
+
+.bits-figure svg .viz-pattern-line {
+  stroke: var(--viz-ink);
+  stroke-width: 1;
+  opacity: 0.55;
+}
+
+.bits-figure svg .viz-pattern-fill {
+  fill: var(--viz-ink);
+  opacity: 0.55;
+}
+
+.bits-figure svg .viz-soft {
+  fill: var(--viz-soft);
+  stroke: var(--viz-soft);
+}
+
+.bits-figure svg .viz-soft[data-stroke="1"] {
+  fill: none;
+}
+
+.bits-figure svg .viz-dim {
+  stroke: var(--viz-rein);
+  stroke-width: 1;
+  stroke-dasharray: 3 2;
+}
+
+.bits-figure svg [visibility="hidden"] {
+  pointer-events: none;
+}
+
+.bits-table th[scope="row"] {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.bits-table td.num a {
+  color: inherit;
 }
 
 .bits-legend-row {
