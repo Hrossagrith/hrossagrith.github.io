@@ -11,7 +11,6 @@
   var body = document.body;
   var page = body.getAttribute("data-bits-page");
   var lang = body.getAttribute("data-lang") || "en";
-  var alt = lang === "ru" ? "en" : "ru";
   var dataBase = body.getAttribute("data-bits-data") || "";
   var M = window.BitModel;
   var CATALOG = null;
@@ -30,11 +29,6 @@
     if (!obj) { return ""; }
     if (typeof obj === "string") { return obj; }
     return obj[lang] || obj.en || "";
-  }
-
-  function ta(obj) {
-    if (!obj) { return ""; }
-    return obj[alt] || "";
   }
 
   function ui(key, fallback) {
@@ -152,8 +146,9 @@
     return pairs.length ? "?" + pairs.join("&") : "";
   }
 
+  /* Alternative names in the page's own language only. */
   function akaText(entity) {
-    var list = entity.aka ? (entity.aka[lang] || entity.aka.en || []) : [];
+    var list = entity.aka && entity.aka[lang] ? entity.aka[lang] : [];
     return list.join(" · ");
   }
 
@@ -292,7 +287,6 @@
         show(img, true);
       }
       node.querySelector(".bits-choice__name").textContent = t(entity.name);
-      node.querySelector(".bits-choice__alt").textContent = ta(entity.name);
       node.querySelector(".bits-choice__aka").textContent = entity.summary ? t(entity.summary) : akaText(entity);
       node.querySelector(".bits-choice__badge").textContent = badgeText || "";
       var tags = node.querySelector(".bits-choice__tags");
@@ -429,7 +423,6 @@
       var mouth = M.byId(CATALOG.mouthpieces, state.mouth);
       var pair = M.pairing(CATALOG, state.cheek, state.mouth);
       field("selection", t(cheek.name) + " × " + t(mouth.name));
-      field("selection-alt", ta(cheek.name) + " × " + ta(mouth.name));
       var note = ui("validity_" + status, status);
       if (pair) { note += " · " + t(pair.name); }
       var rank = rankOf(state.cheek, state.mouth);
@@ -507,7 +500,6 @@
       var link = node.querySelector("h3 a");
       link.textContent = t(cheek.name) + " × " + t(mouth.name);
       link.setAttribute("href", dossierUrl(dossierBase, cheek.id, mouth.id));
-      node.querySelector(".bits-alt").textContent = ta(cheek.name) + " × " + ta(mouth.name);
       var badge = node.querySelector(".bits-class");
       badge.textContent = ui("class_" + row.harmClass, "");
       badge.setAttribute("data-class", String(row.harmClass));
@@ -835,7 +827,6 @@
     field("group-name", t(group.name));
     field("subgroup-name", t(subgroup.name) + " · " + t(familyOf(mouth.family).name));
     field("title", title);
-    field("title-alt", ta(cheek.name) + " × " + ta(mouth.name));
     var aka = [];
     if (akaText(cheek)) { aka.push(t(cheek.name) + ": " + akaText(cheek)); }
     if (akaText(mouth)) { aka.push(t(mouth.name) + ": " + akaText(mouth)); }
@@ -853,9 +844,7 @@
       show(tBadge, true);
     }
     field("cheek-name", t(cheek.name));
-    field("cheek-name-alt", ta(cheek.name));
     field("mouth-name", t(mouth.name));
-    field("mouth-name-alt", ta(mouth.name));
 
     /* Prose */
     var cheekText = TEXT.cheeks[cheekId] || {};
