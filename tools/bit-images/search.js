@@ -9,7 +9,7 @@ const path = require("path");
 const here = __dirname;
 const API = "https://commons.wikimedia.org/w/api.php";
 const FREE = /^(CC0|CC BY|CC BY-SA|Public domain|PD)/i;
-const REVIEW_WIDTH = 240;
+const REVIEW_WIDTH = Number(process.env.REVIEW_WIDTH || 240);
 const MAX_PER_ITEM = 14;
 const headers = { "User-Agent": "hrossagrith-bit-register/1.0 (https://hrossagrith.github.io; worldbuilding site image research)" };
 

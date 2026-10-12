@@ -1,0 +1,11 @@
+{
+ "categories": ["Category:Equine skull", "Category:Horse skulls", "Category:Skeletons of horses", "Category:Horse anatomy", "Category:Handbuch der Anatomie der Tiere für Künstler", "Category:Ellenberger, Baum, Dittrich", "Category:Equus caballus anatomy", "Category:Cervical vertebrae of horses", "Category:Horse bits"],
+ "cheeks": {
+  "_skull_lateral": ["horse skull lateral", "Pferdeschädel seitlich", "equine skull side view", "Equus caballus skull", "crâne de cheval", "horse skull museum"],
+  "_skeleton_head_neck": ["Ellenberger horse skeleton", "Ellenberger Pferd Skelett", "horse skeleton lateral", "Pferdeskelett", "horse cervical vertebrae", "atlas axis horse", "Handbuch der Anatomie der Tiere für Künstler Pferd"],
+  "_head_muscles": ["Ellenberger horse head muscles", "horse head anatomy lateral", "Muskeln Pferd Kopf", "horse neck anatomy nuchal ligament", "horse skull teeth diastema", "horse mandible"],
+  "_bits_more": ["Scorrier snaffle", "four ring snaffle bit", "Wilson snaffle", "Myler bit", "Myler combination bit", "elevator bit horse", "Pessoa gag", "Dutch gag bit", "wonder bit horse", "Tom Thumb bit", "Argentine snaffle", "walking horse bit", "Icelandic bridle curb", "íslenskur hestur beisli", "stangamél", "Nelson gag", "Cheltenham gag", "bubble bit", "western gag bit", "rope gag bit", "chain gag bit", "Banbury bit", "Wilkie snaffle", "Beval bit", "Springsteen bit", "Norton bridle", "Citation bridle", "Haughton bit", "cage bit horse", "burr bit horse", "pricker pad horse", "Australian cheeker", "Frisco June bit", "horseshoe stallion bit", "show bit stallion in hand"]
+ },
+ "mouthpieces": {},
+ "pairings": {}
+}
