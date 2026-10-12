@@ -1,0 +1,8 @@
+{
+ "source": "George Stubbs, The Anatomy of the Horse (London, 1766), Wellcome Collection, Public Domain Mark, https://wellcomecollection.org/works/yu4etwk6",
+ "width": 4500,
+ "plates": [
+  { "file": "stubbs/stubbs-p58-muscles.jpg", "iiif": "https://iiif.wellcomecollection.org/image/b33544049_0059.jp2/full/4500,/0/default.jpg", "what": "first lateral table of the muscles" },
+  { "file": "stubbs/stubbs-tab1-skeleton.jpg", "iiif": "https://iiif.wellcomecollection.org/image/b33544049_0063.jp2/full/4500,/0/default.jpg", "what": "first table of the skeleton" }
+ ]
+}
