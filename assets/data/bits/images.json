@@ -1,0 +1,981 @@
+{
+ "version": 1,
+ "generated": "2026-10-12T08:42:19.615Z",
+ "cheeks": {
+  "loose-ring": {
+   "file": "cheeks/loose-ring.jpg",
+   "title": "File:Mors-Simple.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Mors-Simple.jpg",
+   "author": "fr:User:LardonCru",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Loose ring snaffle, single joint",
+    "ru": "Трензель с подвижными кольцами, одно сочленение"
+   }
+  },
+  "eggbutt": {
+   "file": "cheeks/eggbutt.jpg",
+   "title": "File:Snafflealpha.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Snafflealpha.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457,
+   "caption": {
+    "en": "Eggbutt snaffle",
+    "ru": "Эггбат"
+   }
+  },
+  "d-ring": {
+   "file": "cheeks/d-ring.jpg",
+   "title": "File:DeeRing.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:DeeRing.jpg",
+   "author": "Montanabw",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 302,
+   "caption": {
+    "en": "D-ring snaffle",
+    "ru": "Трензель с D-кольцами"
+   }
+  },
+  "full-cheek": {
+   "file": "cheeks/full-cheek.jpg",
+   "title": "File:Full cheek steel bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Full_cheek_steel_bit.jpg",
+   "author": "Montanabw",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 419,
+   "caption": {
+    "en": "Full cheek snaffle, stainless steel",
+    "ru": "Трензель с усиками, нержавеющая сталь"
+   }
+  },
+  "fulmer": {
+   "file": "cheeks/fulmer.jpg",
+   "title": "File:Fulmersnaffle.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Fulmersnaffle.JPG",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 471,
+   "caption": {
+    "en": "Fulmer snaffle: full cheeks with loose rings",
+    "ru": "Фулмер: усики с подвижными кольцами"
+   }
+  },
+  "baucher": {
+   "file": "cheeks/baucher.jpg",
+   "title": "File:Baucher-bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Baucher-bit.jpg",
+   "author": "eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 380,
+   "height": 200,
+   "caption": {
+    "en": "Baucher: cheekpiece rings above, bit rings at the mouthpiece",
+    "ru": "Баушер: кольца для нащёчного ремня сверху, кольца повода у грызла"
+   }
+  },
+  "weymouth-fixed": {
+   "file": "cheeks/weymouth-fixed.jpg",
+   "title": "File:Dressurkandare.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Dressurkandare.jpg",
+   "author": "dee.lite",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457,
+   "caption": {
+    "en": "Dressage Weymouth curb",
+    "ru": "Выездковый мундштук (веймаут)"
+   }
+  },
+  "pelham": {
+   "file": "cheeks/pelham.jpg",
+   "title": "File:Pelham bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Pelham_bit.jpg",
+   "author": "Alex brollo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 960,
+   "caption": {
+    "en": "Pelham with a jointed mouth",
+    "ru": "Пелям с сочленённым грызлом"
+   }
+  },
+  "rugby-pelham": {
+   "file": "cheeks/rugby-pelham.png",
+   "title": "File:EB1911 - Saddlery and Harness - Fig. 1.png",
+   "source": "https://commons.wikimedia.org/wiki/File:EB1911_-_Saddlery_and_Harness_-_Fig._1.png",
+   "author": "Encyclopædia Britannica",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 161,
+   "caption": {
+    "en": "Encyclopaedia Britannica 1911: b, Rugby pelham",
+    "ru": "Британская энциклопедия 1911: b — Регби-пелям"
+   }
+  },
+  "kimblewick-uxeter": {
+   "file": "cheeks/kimblewick-uxeter.jpg",
+   "title": "File:Kimblewick bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Kimblewick_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 397,
+   "caption": {
+    "en": "Kimblewick with slots cut for the rein",
+    "ru": "Кимблвик с прорезями для повода"
+   }
+  },
+  "balding-gag": {
+   "file": "cheeks/balding-gag.jpg",
+   "title": "File:Aufziehtrense 2006.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Aufziehtrense_2006.jpg",
+   "author": "Dee.lite at German Wikipedia",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 492,
+   "caption": {
+    "en": "Loose-ring gag: the cheekpiece runs through the ring; rubber bit guards",
+    "ru": "Гаг с подвижными кольцами: нащёчный ремень проходит сквозь кольцо; резиновые накладки"
+   }
+  },
+  "cheltenham-gag": {
+   "file": "cheeks/cheltenham-gag.jpg",
+   "title": "File:Cross country horse.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Cross_country_horse.JPG",
+   "author": "No machine-readable author provided. Eventer~commonswiki assumed (based on copyright claims).",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 301,
+   "height": 313,
+   "caption": {
+    "en": "Gag snaffle on a cross-country horse",
+    "ru": "Гаг-трензель на лошади на кроссе"
+   }
+  },
+  "dutch-gag": {
+   "file": "cheeks/dutch-gag.jpg",
+   "title": "File:Mors quatre anneaux.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Mors_quatre_anneaux.JPG",
+   "author": "Jebulon",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Four-ring (Dutch / Pessoa) gag on a horse",
+    "ru": "Четырёхкольцевой (голландский) гаг на лошади"
+   }
+  },
+  "cheeker-ring": {
+   "file": "cheeks/cheeker-ring.jpg",
+   "title": "File:Cheekers.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Cheekers.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 275,
+   "height": 423,
+   "caption": {
+    "en": "Australian cheeker: the rubber Y-strap that holds the bit high",
+    "ru": "Австралийский чикер: резиновый Y-ремень, держащий удила высоко"
+   }
+  },
+  "western-fixed-curb": {
+   "file": "cheeks/western-fixed-curb.jpg",
+   "title": "File:WesternCurb.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:WesternCurb.jpg",
+   "author": "Montanabw",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 644,
+   "caption": {
+    "en": "Traditional low-port western curb",
+    "ru": "Традиционный вестерн-мундштук с низким портом"
+   }
+  },
+  "western-loose-jaw-curb": {
+   "file": "cheeks/western-loose-jaw-curb.jpg",
+   "title": "File:Curb bits loose jaw shanks.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Curb_bits_loose_jaw_shanks.jpg",
+   "author": "Montanabw",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 853,
+   "caption": {
+    "en": "Two loose-jaw curbs: jointed ported mouth above, solid low port below",
+    "ru": "Два мундштука с подвижными плечами: сверху сочленённый с портом, снизу цельный с низким портом"
+   }
+  },
+  "spade-cheek": {
+   "file": "cheeks/spade-cheek.jpg",
+   "title": "File:Classic Spade bit1.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Classic_Spade_bit1.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 961,
+   "caption": {
+    "en": "Classic full spade bit",
+    "ru": "Классический спейд-бит"
+   }
+  },
+  "walking-horse-curb": {
+   "file": "cheeks/walking-horse-curb.jpg",
+   "title": "File:Tennessee Walking Horse6.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Tennessee_Walking_Horse6.jpg",
+   "author": "Just chaos",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 522,
+   "caption": {
+    "en": "Tennessee Walking Horse in a long-shanked show curb",
+    "ru": "Теннесси-уокер в шоу-мундштуке с длинными плечами"
+   }
+  },
+  "saddleseat-curb": {
+   "file": "cheeks/saddleseat-curb.jpg",
+   "title": "File:DblBridleSdlSeat.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:DblBridleSdlSeat.jpg",
+   "author": "BLW]",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 1094,
+   "caption": {
+    "en": "Double bridle for saddle seat on an Arabian",
+    "ru": "Двойное оголовье для саддлсита на арабской лошади"
+   }
+  },
+  "doma-vaquera-curb": {
+   "file": "cheeks/doma-vaquera-curb.jpg",
+   "title": "File:Curb Bit MET DT11677.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Curb_Bit_MET_DT11677.jpg",
+   "author": "",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 811,
+   "caption": {
+    "en": "Spanish curb bit (Metropolitan Museum of Art)",
+    "ru": "Испанский мундштук (музей Метрополитен)"
+   }
+  },
+  "liverpool": {
+   "file": "cheeks/liverpool.jpg",
+   "title": "File:Liverpoolkandare.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Liverpoolkandare.jpg",
+   "author": "Minoo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 360,
+   "caption": {
+    "en": "Liverpool driving bit: ring, rough cheek and slots",
+    "ru": "Упряжной Ливерпуль: кольцо, щёчка и прорези"
+   }
+  },
+  "buxton": {
+   "file": "cheeks/buxton.jpg",
+   "title": "File:Driving bits (1912).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Driving_bits_(1912).jpg",
+   "author": "Belle Beach",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 540,
+   "height": 340,
+   "caption": {
+    "en": "Driving bits, 1912: coaching, Buxton, Ashleigh, Liverpool",
+    "ru": "Упряжные удила, 1912: coaching, Бакстон, Ashleigh, Ливерпуль"
+   }
+  },
+  "dexter-ring": {
+   "file": "cheeks/dexter-ring.jpg",
+   "title": "File:Gordena Jackson, Ring Bit, c. 1938, NGA 26694.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Gordena_Jackson,_Ring_Bit,_c._1938,_NGA_26694.jpg",
+   "author": "Gordena Jackson",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 804,
+   "caption": {
+    "en": "Ring bit, c. 1938 (National Gallery of Art drawing)",
+    "ru": "Кольцевые удила, ок. 1938 (рисунок, Национальная галерея искусств)"
+   }
+  },
+  "tattersall-ring": {
+   "file": "cheeks/tattersall-ring.jpg",
+   "title": "File:Tattersall bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Tattersall_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 182,
+   "height": 220,
+   "caption": {
+    "en": "Tattersall yearling ring",
+    "ru": "Кольцо Таттерсолла для годовиков"
+   }
+  },
+  "chifney": {
+   "file": "cheeks/chifney.jpg",
+   "title": "File:Anti rear bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Anti_rear_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 300,
+   "height": 235,
+   "caption": {
+    "en": "Chifney anti-rearing bit",
+    "ru": "Чифни против свечения"
+   }
+  },
+  "hackabit": {
+   "file": "cheeks/hackabit.jpg",
+   "title": "File:Hackabit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Hackabit.jpg",
+   "author": "Tsaag Valren",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 676,
+   "caption": {
+    "en": "Hackabit: mechanical hackamore with a mouthpiece",
+    "ru": "Хакабит: механический хакамор с грызлом"
+   }
+  },
+  "overcheck": {
+   "file": "cheeks/overcheck.jpg",
+   "title": "File:Overcheck bearing rein.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Overcheck_bearing_rein.jpg",
+   "author": "Grorp",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 601,
+   "caption": {
+    "en": "Harnessed horse wearing a tight overcheck",
+    "ru": "Упряжная лошадь в туго затянутом чеке"
+   }
+  },
+  "lugging-bit": {
+   "file": "cheeks/lugging-bit.jpg",
+   "title": "File:Butterfly bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Butterfly_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 300,
+   "height": 133,
+   "caption": {
+    "en": "Butterfly anti-lugging bit used on racehorses",
+    "ru": "Бит-«бабочка» против залегания, применяемый на скаковых лошадях"
+   }
+  },
+  "kimblewick": {
+   "file": "cheeks/kimblewick.jpg",
+   "title": "File:Mors espagnol sur un cheval Pure race espagnole 04.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Mors_espagnol_sur_un_cheval_Pure_race_espagnole_04.jpg",
+   "author": "Tsaag Valren",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "D-cheek curb with chain, the Kimblewick pattern, on a PRE",
+    "ru": "Мундштук с D-щёчкой и цепочкой, схема кимблвика, на лошади PRE"
+   }
+  },
+  "nelson-gag": {
+   "file": "cheeks/nelson-gag.jpg",
+   "title": "File:Hackamore gag bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Hackamore_gag_bit.jpg",
+   "author": "Montanabw",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Gag with cheek arms and a hackamore-style nose band",
+    "ru": "Гаг с усиками и носовым ремнём в стиле хакамора"
+   }
+  },
+  "half-cheek": {
+   "file": "cheeks/half-cheek.jpg",
+   "title": "File:Saddlebred Stallion in Harness.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Saddlebred_Stallion_in_Harness.jpg",
+   "author": "Jean",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 425,
+   "caption": {
+    "en": "Half-cheek snaffle on a Saddlebred in harness",
+    "ru": "Трензель с полуусами на седлбреде в упряжи"
+   }
+  }
+ },
+ "mouthpieces": {
+  "single-joint": {
+   "file": "mouths/single-joint.jpg",
+   "title": "File:Snafflealpha.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Snafflealpha.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457,
+   "caption": {
+    "en": "Plain single-jointed snaffle",
+    "ru": "Обычный трензель с одним сочленением"
+   }
+  },
+  "slow-twist": {
+   "file": "mouths/slow-twist.jpg",
+   "title": "File:Fullcheckwithtwistsnafflealpha.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Fullcheckwithtwistsnafflealpha.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457,
+   "caption": {
+    "en": "Full cheek snaffle with a slow twist",
+    "ru": "Трензель с усиками, медленный твист"
+   }
+  },
+  "twisted-wire": {
+   "file": "mouths/twisted-wire.jpg",
+   "title": "File:Twistedwiresnaffle.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Twistedwiresnaffle.JPG",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Twisted wire snaffle",
+    "ru": "Трензель из кручёной проволоки"
+   }
+  },
+  "french-link": {
+   "file": "mouths/french-link.jpg",
+   "title": "File:FrenchLink.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:FrenchLink.jpg",
+   "author": "Montanabw",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 386,
+   "caption": {
+    "en": "French link",
+    "ru": "Французское звено"
+   }
+  },
+  "ball-link": {
+   "file": "mouths/ball-link.jpg",
+   "title": "File:Ball link bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ball_link_bit.jpg",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 479,
+   "caption": {
+    "en": "Ball link",
+    "ru": "Звено-шарик"
+   }
+  },
+  "ported": {
+   "file": "mouths/ported.jpg",
+   "title": "File:SweetIronCurb.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:SweetIronCurb.jpg",
+   "author": "Montanabw",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 703,
+   "caption": {
+    "en": "Medium-port curb mouth, sweet iron",
+    "ru": "Грызло со средним портом, «сладкое железо»"
+   }
+  },
+  "spade": {
+   "file": "mouths/spade.jpg",
+   "title": "File:Classic Spade bit1.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Classic_Spade_bit1.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 961,
+   "caption": {
+    "en": "Spade: spoon, braces and cricket",
+    "ru": "Лопата: ложка, распорки и ролик"
+   }
+  },
+  "half-breed": {
+   "file": "mouths/half-breed.jpg",
+   "title": "File:High port bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:High_port_bit.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 818,
+   "caption": {
+    "en": "Half-breed: hooded high port with a cricket",
+    "ru": "Хаф-брид: высокий порт с крышей и роликом"
+   }
+  },
+  "cathedral": {
+   "file": "mouths/cathedral.jpg",
+   "title": "File:Cathedral bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Cathedral_bit.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 520,
+   "caption": {
+    "en": "Cathedral port on a loose-jaw curb",
+    "ru": "Кафедральный порт на мундштуке с подвижными плечами"
+   }
+  },
+  "ring-arc": {
+   "file": "mouths/ring-arc.jpg",
+   "title": "File:Tattersall bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Tattersall_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 182,
+   "height": 220,
+   "caption": {
+    "en": "The arc of a Tattersall ring",
+    "ru": "Дужка кольца Таттерсолла"
+   }
+  },
+  "keys": {
+   "file": "mouths/keys.jpg",
+   "title": "File:Ethel Dougan, Snaffle Bit, 1938, NGA 26695.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ethel_Dougan,_Snaffle_Bit,_1938,_NGA_26695.jpg",
+   "author": "Ethel Dougan",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 500,
+   "caption": {
+    "en": "Mouthing bit with keys (National Gallery of Art drawing, 1938)",
+    "ru": "Грызло для заездки с подвесками (рисунок, 1938)"
+   }
+  },
+  "straight-bar": {
+   "file": "mouths/straight-bar.jpg",
+   "title": "File:Bit (AM 1938.16-1).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bit_(AM_1938.16-1).jpg",
+   "author": "Unknown authorUnknown author",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 427,
+   "caption": {
+    "en": "Straight bar, Luristan bronze bit, 2nd millennium BC",
+    "ru": "Прямая штанга, луристанские бронзовые удила, II тыс. до н. э."
+   }
+  },
+  "lozenge": {
+   "file": "mouths/lozenge.jpg",
+   "title": "File:Olivekopftrense.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Olivekopftrense.jpg",
+   "author": "Minoo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 360,
+   "caption": {
+    "en": "Eggbutt snaffle with a centre lozenge",
+    "ru": "Эггбат с центральным лозенжем"
+   }
+  },
+  "correction": {
+   "file": "mouths/correction.jpg",
+   "title": "File:Correction bit1.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Correction_bit1.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 559,
+   "caption": {
+    "en": "Correction bit on decorative loose-jaw shanks",
+    "ru": "Коррекшн-бит на декоративных подвижных плечах"
+   }
+  },
+  "mona-lisa": {
+   "file": "mouths/mona-lisa.jpg",
+   "title": "File:Cricket curb.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Cricket_curb.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 737,
+   "caption": {
+    "en": "Show curb with a cricket in a medium port",
+    "ru": "Шоу-мундштук с роликом в среднем порте"
+   }
+  }
+ },
+ "pairings": {
+  "spade-cheek|spade": {
+   "file": "pairs/spade-cheek__spade.jpg",
+   "title": "File:Classic Spade bit1.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Classic_Spade_bit1.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 961
+  },
+  "walking-horse-curb|ported": {
+   "file": "pairs/walking-horse-curb__ported.jpg",
+   "title": "File:Tennessee Walking Horse6.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Tennessee_Walking_Horse6.jpg",
+   "author": "Just chaos",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 522
+  },
+  "chifney|straight-bar": {
+   "file": "pairs/chifney__straight-bar.jpg",
+   "title": "File:Anti rear bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Anti_rear_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 300,
+   "height": 235
+  },
+  "tattersall-ring|ring-arc": {
+   "file": "pairs/tattersall-ring__ring-arc.jpg",
+   "title": "File:Tattersall bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Tattersall_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 182,
+   "height": 220
+  },
+  "overcheck|single-joint": {
+   "file": "pairs/overcheck__single-joint.jpg",
+   "title": "File:Trabrennsport Overcheck.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Trabrennsport_Overcheck.JPG",
+   "author": "dee.lite",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 964,
+   "caption": {
+    "en": "Trotter wearing an overcheck bit",
+    "ru": "Рысак в чек-удилах"
+   }
+  },
+  "maghreb-ring-curb|ported": {
+   "file": "pairs/maghreb-ring-curb__ported.jpg",
+   "title": "File:Ring Bit MET DP-12795-001.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ring_Bit_MET_DP-12795-001.jpg",
+   "author": "",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Mexican ring bit (Metropolitan Museum of Art)",
+    "ru": "Мексиканские кольцевые удила (музей Метрополитен)"
+   }
+  },
+  "pelham|single-joint": {
+   "file": "pairs/pelham__single-joint.jpg",
+   "title": "File:Pelham bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Pelham_bit.jpg",
+   "author": "Alex brollo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 960
+  },
+  "pelham|flexible-mullen": {
+   "file": "pairs/pelham__flexible-mullen.jpg",
+   "title": "File:Twee-paarden.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Twee-paarden.JPG",
+   "author": "Andre Engels",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Pair of ponies: the off horse in a pelham with a rubber mouth",
+    "ru": "Пара пони: правая в пеляме с резиновым грызлом"
+   }
+  },
+  "kimblewick|ported": {
+   "file": "pairs/kimblewick__ported.jpg",
+   "title": "File:Kimblewick bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Kimblewick_bit.jpg",
+   "author": "Cgoodwin",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 397
+  },
+  "liverpool|mullen": {
+   "file": "pairs/liverpool__mullen.jpg",
+   "title": "File:Liverpool bit - Breton horse.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Liverpool_bit_-_Breton_horse.jpg",
+   "author": "Tsaag Valren",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480
+  },
+  "weymouth-fixed|ported": {
+   "file": "pairs/weymouth-fixed__ported.jpg",
+   "title": "File:Dressurkandare.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Dressurkandare.jpg",
+   "author": "dee.lite",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457,
+   "caption": {
+    "en": "Dressage Weymouth with a low port",
+    "ru": "Выездковый веймаут с низким портом"
+   }
+  },
+  "western-fixed-curb|single-joint": {
+   "file": "pairs/western-fixed-curb__single-joint.jpg",
+   "title": "File:Coppermouthedbit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Coppermouthedbit.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 427,
+   "caption": {
+    "en": "Tom Thumb: jointed copper mouth on short shanks",
+    "ru": "Том Тамб: сочленённое медное грызло на коротких плечах"
+   }
+  },
+  "pelham|ported": {
+   "file": "pairs/pelham__ported.jpg",
+   "title": "File:Mors-Pelham.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Mors-Pelham.jpg",
+   "author": "fr:User:LardonCru",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Pelham with a port and a curb chain",
+    "ru": "Пелям с портом и цепочкой"
+   }
+  },
+  "loose-ring|single-joint": {
+   "file": "pairs/loose-ring__single-joint.jpg",
+   "title": "File:Mors-Simple.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Mors-Simple.jpg",
+   "author": "fr:User:LardonCru",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480,
+   "caption": {
+    "en": "Loose ring, single joint",
+    "ru": "Подвижные кольца, одно сочленение"
+   }
+  },
+  "eggbutt|single-joint": {
+   "file": "pairs/eggbutt__single-joint.jpg",
+   "title": "File:Snafflealpha.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Snafflealpha.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457
+  },
+  "full-cheek|single-joint": {
+   "file": "pairs/full-cheek__single-joint.jpg",
+   "title": "File:Knebeltrense gebrochen.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Knebeltrense_gebrochen.jpg",
+   "author": "Dee.lite at German Wikipedia",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 434
+  },
+  "full-cheek|slow-twist": {
+   "file": "pairs/full-cheek__slow-twist.jpg",
+   "title": "File:Fullcheckwithtwistsnafflealpha.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Fullcheckwithtwistsnafflealpha.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 457
+  },
+  "fulmer|single-joint": {
+   "file": "pairs/fulmer__single-joint.jpg",
+   "title": "File:Fulmersnaffle.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Fulmersnaffle.JPG",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 471
+  },
+  "loose-ring|ball-link": {
+   "file": "pairs/loose-ring__ball-link.jpg",
+   "title": "File:Ball link bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ball_link_bit.jpg",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 479
+  },
+  "eggbutt|lozenge": {
+   "file": "pairs/eggbutt__lozenge.jpg",
+   "title": "File:Olivekopftrense.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Olivekopftrense.jpg",
+   "author": "Minoo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 360
+  },
+  "western-fixed-curb|correction": {
+   "file": "pairs/western-fixed-curb__correction.jpg",
+   "title": "File:Correction bit1.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Correction_bit1.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 559
+  },
+  "western-loose-jaw-curb|cathedral": {
+   "file": "pairs/western-loose-jaw-curb__cathedral.jpg",
+   "title": "File:Cathedral bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Cathedral_bit.jpg",
+   "author": "Montanabw",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 520
+  },
+  "loose-ring|twisted-wire": {
+   "file": "pairs/loose-ring__twisted-wire.jpg",
+   "title": "File:Twistedwiresnaffle.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Twistedwiresnaffle.JPG",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 640,
+   "height": 480
+  }
+ }
+}
