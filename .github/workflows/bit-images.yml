@@ -10,7 +10,7 @@ on:
         required: true
         default: search
         type: choice
-        options: [search, search2, search3, search4, openverse, fetch, refs, research]
+        options: [search, search2, search3, search4, openverse, fetch, refs, research, research2]
 
 permissions:
   contents: write
@@ -41,6 +41,14 @@ jobs:
         run: node tools/bit-images/search-openverse.js
       - name: Anatomical plates and carriage photographs from open-access collections
         if: ${{ inputs.stage == 'research' }}
+        run: node tools/bit-images/research.js
+      - name: Targeted research, named atlases only
+        if: ${{ inputs.stage == 'research2' }}
+        env:
+          BOOK_FILTER: "stubbs|leisering|gurlt|landseer|ellenberger|ruini"
+          BOOK_PAGES: "120"
+          WELLCOME_LIMIT: "40"
+          BOOK_LIMIT: "3"
         run: node tools/bit-images/research.js
       - name: Download the chosen photographs
         if: ${{ inputs.stage == 'fetch' }}

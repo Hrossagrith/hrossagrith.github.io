@@ -13,6 +13,10 @@ const Q = JSON.parse(fs.readFileSync(path.join(here, "research-queries.json"), "
 const headers = { "User-Agent": "hrossagrith-bit-register/1.0 (https://hrossagrith.github.io; anatomical reference research)" };
 const REVIEW = 700;
 const PAGE_THUMB = 260;
+const BOOK_FILTER = new RegExp(process.env.BOOK_FILTER || "stubbs|leisering|gurlt|ruini|landseer|ellenberger|horse|cheval|pferd|cavallo", "i");
+const BOOK_PAGES = Number(process.env.BOOK_PAGES || Q.book_page_limit);
+const WELLCOME_LIMIT = Number(process.env.WELLCOME_LIMIT || 60);
+const BOOK_LIMIT = Number(process.env.BOOK_LIMIT || Q.book_limit);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const results = [];
 const seen = new Set();
@@ -169,7 +173,13 @@ function canvasesOf(manifest) {
 async function book(provider, id, meta, manifestUrl) {
   const manifest = await getJson(manifestUrl);
   if (!manifest) { return; }
-  const canvases = canvasesOf(manifest).slice(0, Q.book_page_limit);
+  const all = canvasesOf(manifest);
+  if (all.length <= 2 && all[0] && all[0].service) {
+    /* a single drawing or print: keep it as a single image */
+    add(Object.assign({ provider: provider, id: id, thumb: all[0].service.replace(/\/$/, "") + "/full/" + REVIEW + ",/0/default.jpg", full: all[0].service.replace(/\/$/, "") + "/full/full/0/default.jpg", width: all[0].width, height: all[0].height, service: all[0].service }, meta));
+    return;
+  }
+  const canvases = all.slice(0, BOOK_PAGES);
   console.log("book", provider, id, canvases.length, "pages");
   const pages = [];
   for (let i = 0; i < canvases.length; i++) {
@@ -211,8 +221,8 @@ async function wellcome() {
   const uniq = [];
   const ids = new Set();
   books.forEach((b) => { if (!ids.has(b.id)) { ids.add(b.id); uniq.push(b); } });
-  for (const b of uniq.slice(0, 60)) {
-    if (/stubbs|leisering|gurlt|ruini|landseer|ellenberger|horse|cheval|pferd|cavallo/i.test(b.meta.title + " " + b.meta.creator)) {
+  for (const b of uniq.slice(0, WELLCOME_LIMIT)) {
+    if (BOOK_FILTER.test(b.meta.title + " " + b.meta.creator)) {
       await book("wellcome", b.id, b.meta, b.manifestUrl);
     }
   }
@@ -226,7 +236,8 @@ async function archive() {
     const docs = data && data.response ? data.response.docs : [];
     console.log("archive", term, docs.length);
     for (const d of docs.slice(0, 3)) {
-      if (n >= Q.book_limit) { break; }
+      if (n >= BOOK_LIMIT) { break; }
+      if (!BOOK_FILTER.test(String(d.title) + " " + String(d.creator))) { continue; }
       const meta = { title: String(d.title || ""), creator: String(d.creator || ""), date: String(d.date || ""), license: d.licenseurl || "Internet Archive (public domain if pre-1930)", page: "https://archive.org/details/" + d.identifier, query: term };
       await book("archive", d.identifier, meta, "https://iiif.archive.org/iiif/3/" + d.identifier + "/manifest.json");
       n++;
