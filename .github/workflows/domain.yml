@@ -1,0 +1,31 @@
+# Custom domain hrossagrith.com for the GitHub Pages site: DNS check, Cloudflare
+# records and HTTPS enforcement. Logic in tools/domain/domain.js, records in
+# tools/domain/records.json.
+name: Custom domain
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check (read only), apply (write Cloudflare records), https (enforce HTTPS on Pages)"
+        required: true
+        default: check
+        type: choice
+        options: [check, apply, https]
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  domain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run
+        env:
+          MODE: ${{ inputs.mode }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/domain/domain.js

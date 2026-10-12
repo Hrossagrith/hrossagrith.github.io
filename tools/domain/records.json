@@ -1,0 +1,17 @@
+{
+ "zone": "hrossagrith.com",
+ "pages_host": "hrossagrith.github.io",
+ "proxied": false,
+ "ttl": 1,
+ "records": [
+  { "type": "A", "name": "hrossagrith.com", "content": "185.199.108.153" },
+  { "type": "A", "name": "hrossagrith.com", "content": "185.199.109.153" },
+  { "type": "A", "name": "hrossagrith.com", "content": "185.199.110.153" },
+  { "type": "A", "name": "hrossagrith.com", "content": "185.199.111.153" },
+  { "type": "AAAA", "name": "hrossagrith.com", "content": "2606:50c0:8000::153" },
+  { "type": "AAAA", "name": "hrossagrith.com", "content": "2606:50c0:8001::153" },
+  { "type": "AAAA", "name": "hrossagrith.com", "content": "2606:50c0:8002::153" },
+  { "type": "AAAA", "name": "hrossagrith.com", "content": "2606:50c0:8003::153" },
+  { "type": "CNAME", "name": "www.hrossagrith.com", "content": "hrossagrith.github.io" }
+ ]
+}
