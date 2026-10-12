@@ -1,6 +1,6 @@
 # Hrossagrith — Imperial State Portal
 
-**Live site: <https://hrossagrith.github.io/>**
+**Live site: <https://hrossagrith.com/>**
 
 The state portal of **Hrossagrith** (native spelling *Hrossagrið*), the Empire
 of Hrossagrith — a worldbuilding project published as a government website.
@@ -18,38 +18,38 @@ peace, quarter, safe conduct, sanctuary"). The name began as a Viking-Age
 insult and was reclaimed. The portal documents the Empire's government, its
 law, its history, and the equid-welfare rules the country is built around.
 
-Read more: [the name and its origin](https://hrossagrith.github.io/symbols/) ·
-[government and doctrine](https://hrossagrith.github.io/gov/) ·
-[the imperial legal corpus](https://hrossagrith.github.io/gov/law/) ·
-[horses](https://hrossagrith.github.io/horses/) ·
-[early history](https://hrossagrith.github.io/history/)
+Read more: [the name and its origin](https://hrossagrith.com/symbols/) ·
+[government and doctrine](https://hrossagrith.com/gov/) ·
+[the imperial legal corpus](https://hrossagrith.com/gov/law/) ·
+[horses](https://hrossagrith.com/horses/) ·
+[early history](https://hrossagrith.com/history/)
 
 ## Languages
 
 | | | |
 |---|---|---|
-| [Русский](https://hrossagrith.github.io/ru/) | [English (UK)](https://hrossagrith.github.io/) | [English (US)](https://hrossagrith.github.io/en-us/) |
-| [Deutsch](https://hrossagrith.github.io/de/) | [Français](https://hrossagrith.github.io/fr/) | [Nederlands](https://hrossagrith.github.io/nl/) |
-| [Norsk bokmål](https://hrossagrith.github.io/no/) | [Svenska](https://hrossagrith.github.io/sv/) | [Suomi](https://hrossagrith.github.io/fi/) |
-| [Italiano](https://hrossagrith.github.io/it/) | [中文](https://hrossagrith.github.io/zh/) | [日本語](https://hrossagrith.github.io/ja/) |
-| [한국어](https://hrossagrith.github.io/ko/) | | |
+| [Русский](https://hrossagrith.com/ru/) | [English (UK)](https://hrossagrith.com/) | [English (US)](https://hrossagrith.com/en-us/) |
+| [Deutsch](https://hrossagrith.com/de/) | [Français](https://hrossagrith.com/fr/) | [Nederlands](https://hrossagrith.com/nl/) |
+| [Norsk bokmål](https://hrossagrith.com/no/) | [Svenska](https://hrossagrith.com/sv/) | [Suomi](https://hrossagrith.com/fi/) |
+| [Italiano](https://hrossagrith.com/it/) | [中文](https://hrossagrith.com/zh/) | [日本語](https://hrossagrith.com/ja/) |
+| [한국어](https://hrossagrith.com/ko/) | | |
 
 ## Published instruments
 
 The full text of the Empire's legal corpus is published, not merely summarised:
 
-- [General Imperial Equid Welfare Code](https://hrossagrith.github.io/gov/law/welfare/)
-- [Imperial Tack, Restraint, and Welfare Code](https://hrossagrith.github.io/gov/law/tack/)
-- [Imperial Code for the Welfare of Working Carriage Equids](https://hrossagrith.github.io/gov/law/carriage/)
-- [Imperial Road and Driver Code](https://hrossagrith.github.io/gov/law/road/)
-- [Imperial Equine Climatic Burden Standard](https://hrossagrith.github.io/gov/law/climate/)
-- [Imperial Public-Road Equid Status Marking Standard](https://hrossagrith.github.io/gov/law/marking/)
-- [Imperial Emergency Medical Carriage Technical Standard](https://hrossagrith.github.io/gov/law/ambulance/)
-- [Imperial Carriage Lighting and Signalling Standard](https://hrossagrith.github.io/gov/law/lighting/)
-- [Imperial Tack Measurement Schedule](https://hrossagrith.github.io/gov/law/tack-measurement/)
-- [Imperial Service Equid Selection and Breed Standard](https://hrossagrith.github.io/gov/law/service-equids/)
-- [Imperial Carriage Equid Road and Work Certificate Template](https://hrossagrith.github.io/gov/law/work-certificate/)
-- [Imperial Working Equid Passport Template](https://hrossagrith.github.io/gov/law/passport/)
+- [General Imperial Equid Welfare Code](https://hrossagrith.com/gov/law/welfare/)
+- [Imperial Tack, Restraint, and Welfare Code](https://hrossagrith.com/gov/law/tack/)
+- [Imperial Code for the Welfare of Working Carriage Equids](https://hrossagrith.com/gov/law/carriage/)
+- [Imperial Road and Driver Code](https://hrossagrith.com/gov/law/road/)
+- [Imperial Equine Climatic Burden Standard](https://hrossagrith.com/gov/law/climate/)
+- [Imperial Public-Road Equid Status Marking Standard](https://hrossagrith.com/gov/law/marking/)
+- [Imperial Emergency Medical Carriage Technical Standard](https://hrossagrith.com/gov/law/ambulance/)
+- [Imperial Carriage Lighting and Signalling Standard](https://hrossagrith.com/gov/law/lighting/)
+- [Imperial Tack Measurement Schedule](https://hrossagrith.com/gov/law/tack-measurement/)
+- [Imperial Service Equid Selection and Breed Standard](https://hrossagrith.com/gov/law/service-equids/)
+- [Imperial Carriage Equid Road and Work Certificate Template](https://hrossagrith.com/gov/law/work-certificate/)
+- [Imperial Working Equid Passport Template](https://hrossagrith.com/gov/law/passport/)
 
 ## Structure
 
