@@ -1559,7 +1559,7 @@
       /* The drawing is placed so that its bit anchor sits at the figure origin;
          the mechanical parts are drawn in the head frame derived from it. */
       var drawing = el("fa-drawing");
-      var drawPath = dataBase.replace(/data\/bits\/$/, "") + CATALOG.posture_drawings.path + posture.image;
+      var drawPath = dataBase.replace(/data\/bits\/$/, "") + CATALOG.posture_drawings.path + posture.image + "?v=" + (CATALOG.posture_drawings.version || 1);
       drawing.setAttribute("href", drawPath);
       attrs(drawing, {
         x: ORIGIN_A.x - FRAME.bit.x * DRAWING_SCALE, y: ORIGIN_A.y - FRAME.bit.y * DRAWING_SCALE,
@@ -1874,7 +1874,7 @@
         if (!g) { return; }
         var posture = M.byId(CATALOG.postures, p.id);
         var glyph = g.querySelector("image");
-        if (glyph && posture) { glyph.setAttribute("href", drawBase + posture.image); }
+        if (glyph && posture) { glyph.setAttribute("href", drawBase + posture.image + "?v=" + (CATALOG.posture_drawings.version || 1)); }
         g.querySelector(".lab").textContent = posture ? t(posture.label) : p.id;
         g.querySelector(".lab2").textContent = posture ? t(posture.sub) : "";
         var h = Math.min(135, p.peak * scale);

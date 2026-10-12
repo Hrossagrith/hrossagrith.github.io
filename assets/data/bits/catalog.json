@@ -5531,24 +5531,24 @@
    "image": "not-collected.png",
    "size": [
     900,
-    704
+    671
    ],
    "anchors": {
     "bit": [
-     160,
-     400
+     135,
+     200
     ],
     "poll": [
-     400,
+     540,
      130
     ],
     "chin": [
-     170,
-     455
+     140,
+     255
     ],
     "nose": [
-     170,
-     280
+     230,
+     110
     ]
    }
   },
@@ -5570,24 +5570,24 @@
    "image": "above.png",
    "size": [
     900,
-    671
+    704
    ],
    "anchors": {
     "bit": [
-     135,
-     200
+     160,
+     400
     ],
     "poll": [
-     540,
+     400,
      130
     ],
     "chin": [
-     140,
-     255
+     170,
+     455
     ],
     "nose": [
-     230,
-     110
+     170,
+     280
     ]
    }
   },
@@ -8707,6 +8707,7 @@
    "en": "Head and neck drawings by the site author",
    "ru": "Рисунки головы и шеи — автор сайта"
   },
-  "path": "img/postures/"
+  "path": "img/postures/",
+  "version": 2
  }
 }
