@@ -1,0 +1,419 @@
+{
+  "generated_by": "tools/portal/build.py",
+  "routes": [
+    {
+      "id": "empire",
+      "title": {
+        "en": "The Empire in brief",
+        "ru": "Империя вкратце"
+      },
+      "summary": {
+        "en": "The name, the constitution, the record of the past and the standards of this register.",
+        "ru": "Название, конституция, летопись и правила этого реестра."
+      },
+      "pages": [
+        "symbols/",
+        "gov/",
+        "history/",
+        "about/"
+      ]
+    },
+    {
+      "id": "living",
+      "title": {
+        "en": "Living in Hrossagrið",
+        "ru": "Жизнь в Хроссагриде"
+      },
+      "summary": {
+        "en": "What the state guarantees to the people who live here: health, schooling, roads, justice, work and refuge.",
+        "ru": "Что государство гарантирует живущим здесь: здоровье, образование, дороги, правосудие, труд и убежище."
+      },
+      "pages": [
+        "living/",
+        "living/health/",
+        "living/education/",
+        "living/transport/",
+        "living/justice/",
+        "living/money/",
+        "living/citizenship/"
+      ]
+    },
+    {
+      "id": "horses",
+      "title": {
+        "en": "Horses and the law that protects them",
+        "ru": "Лошади и закон, который их защищает"
+      },
+      "summary": {
+        "en": "The national treasure, the road-status markers, and the four codes every keeper and driver is bound by.",
+        "ru": "Национальное достояние, маркировка дорожного статуса и четыре кодекса, обязательные для каждого владельца и возницы."
+      },
+      "pages": [
+        "horses/",
+        "horses/road-status/",
+        "gov/law/welfare/",
+        "gov/law/tack/",
+        "gov/law/carriage/",
+        "gov/law/road/",
+        "gov/law/climate/"
+      ]
+    },
+    {
+      "id": "standards",
+      "title": {
+        "en": "Technical standards and official forms",
+        "ru": "Технические стандарты и официальные формы"
+      },
+      "summary": {
+        "en": "The legal corpus, the technical standards it relies on, and the templates issued under it.",
+        "ru": "Правовой корпус, технические стандарты, на которые он опирается, и формы, выдаваемые на его основании."
+      },
+      "pages": [
+        "gov/law/",
+        "gov/law/marking/",
+        "gov/law/lighting/",
+        "gov/law/ambulance/",
+        "gov/law/tack-measurement/",
+        "gov/law/service-equids/",
+        "gov/law/passport/",
+        "gov/law/work-certificate/"
+      ]
+    }
+  ],
+  "pages": {
+    "symbols/": {
+      "route": "empire",
+      "title": {
+        "en": "Name, etymology and national symbol",
+        "ru": "Название, этимология и национальный символ"
+      },
+      "minutes": {
+        "en": 8,
+        "ru": 9
+      }
+    },
+    "gov/": {
+      "route": "empire",
+      "title": {
+        "en": "The state and its doctrine",
+        "ru": "Государство и его доктрина"
+      },
+      "minutes": {
+        "en": 9,
+        "ru": 9
+      }
+    },
+    "history/": {
+      "route": "empire",
+      "title": {
+        "en": "Early history",
+        "ru": "Ранняя история"
+      },
+      "minutes": {
+        "en": 11,
+        "ru": 12
+      }
+    },
+    "about/": {
+      "route": "empire",
+      "title": {
+        "en": "About this portal",
+        "ru": "О портале"
+      },
+      "minutes": {
+        "en": 3,
+        "ru": 3
+      }
+    },
+    "living/": {
+      "route": "living",
+      "title": {
+        "en": "Living in Hrossagrið",
+        "ru": "Жизнь в Хроссагриде"
+      },
+      "minutes": {
+        "en": 2,
+        "ru": 2
+      }
+    },
+    "living/health/": {
+      "route": "living",
+      "title": {
+        "en": "Health",
+        "ru": "Здравоохранение"
+      },
+      "minutes": {
+        "en": 2,
+        "ru": 2
+      }
+    },
+    "living/education/": {
+      "route": "living",
+      "title": {
+        "en": "Education and children",
+        "ru": "Образование и дети"
+      },
+      "minutes": {
+        "en": 2,
+        "ru": 2
+      }
+    },
+    "living/transport/": {
+      "route": "living",
+      "title": {
+        "en": "Transport and roads",
+        "ru": "Транспорт и дороги"
+      },
+      "minutes": {
+        "en": 6,
+        "ru": 7
+      }
+    },
+    "living/justice/": {
+      "route": "living",
+      "title": {
+        "en": "Justice and policing",
+        "ru": "Правосудие и полиция"
+      },
+      "minutes": {
+        "en": 3,
+        "ru": 4
+      }
+    },
+    "living/money/": {
+      "route": "living",
+      "title": {
+        "en": "Work and money",
+        "ru": "Труд и деньги"
+      },
+      "minutes": {
+        "en": 1,
+        "ru": 1
+      }
+    },
+    "living/citizenship/": {
+      "route": "living",
+      "title": {
+        "en": "Citizenship and refuge",
+        "ru": "Гражданство и убежище"
+      },
+      "minutes": {
+        "en": 2,
+        "ru": 2
+      }
+    },
+    "horses/": {
+      "route": "horses",
+      "title": {
+        "en": "Horses",
+        "ru": "Лошади"
+      },
+      "minutes": {
+        "en": 5,
+        "ru": 5
+      }
+    },
+    "horses/road-status/": {
+      "route": "horses",
+      "title": {
+        "en": "Public-road equid status marking",
+        "ru": "Маркировка дорожного статуса непарнокопытных"
+      },
+      "minutes": {
+        "en": 6,
+        "ru": 7
+      }
+    },
+    "gov/law/welfare/": {
+      "route": "horses",
+      "title": {
+        "en": "General Imperial Equid Welfare Code",
+        "ru": "Общий имперский кодекс благополучия непарнокопытных"
+      },
+      "minutes": {
+        "en": 63,
+        "ru": 76
+      }
+    },
+    "gov/law/tack/": {
+      "route": "horses",
+      "title": {
+        "en": "Imperial Tack, Restraint, and Welfare Code",
+        "ru": "Имперский кодекс амуниции, средств удержания и благополучия"
+      },
+      "minutes": {
+        "en": 71,
+        "ru": 84
+      }
+    },
+    "gov/law/carriage/": {
+      "route": "horses",
+      "title": {
+        "en": "Imperial Code for the Welfare of Working Carriage Equids",
+        "ru": "Имперский кодекс благополучия рабочих упряжных непарнокопытных"
+      },
+      "minutes": {
+        "en": 73,
+        "ru": 88
+      }
+    },
+    "gov/law/road/": {
+      "route": "horses",
+      "title": {
+        "en": "Imperial Road and Driver Code",
+        "ru": "Имперский кодекс дорог и возниц"
+      },
+      "minutes": {
+        "en": 13,
+        "ru": 15
+      }
+    },
+    "gov/law/climate/": {
+      "route": "horses",
+      "title": {
+        "en": "Imperial Equine Climatic Burden Standard",
+        "ru": "Имперский стандарт климатической нагрузки на лошадей"
+      },
+      "minutes": {
+        "en": 26,
+        "ru": 32
+      }
+    },
+    "gov/law/": {
+      "route": "standards",
+      "title": {
+        "en": "The imperial legal corpus",
+        "ru": "Имперский правовой корпус"
+      },
+      "minutes": {
+        "en": 7,
+        "ru": 7
+      }
+    },
+    "gov/law/marking/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Public-Road Equid Status Marking Standard",
+        "ru": "Имперский стандарт маркировки дорожного статуса непарнокопытных"
+      },
+      "minutes": {
+        "en": 13,
+        "ru": 15
+      }
+    },
+    "gov/law/lighting/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Carriage Lighting and Signalling Standard",
+        "ru": "Имперский стандарт освещения и сигнализации экипажей"
+      },
+      "minutes": {
+        "en": 7,
+        "ru": 8
+      }
+    },
+    "gov/law/ambulance/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Emergency Medical Carriage Technical Standard",
+        "ru": "Имперский технический стандарт санитарной кареты"
+      },
+      "minutes": {
+        "en": 6,
+        "ru": 7
+      }
+    },
+    "gov/law/tack-measurement/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Tack Measurement Schedule",
+        "ru": "Имперский регламент обмеров амуниции"
+      },
+      "minutes": {
+        "en": 9,
+        "ru": 10
+      }
+    },
+    "gov/law/service-equids/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Service Equid Selection and Breed Standard",
+        "ru": "Имперский стандарт отбора и породности служебных непарнокопытных"
+      },
+      "minutes": {
+        "en": 6,
+        "ru": 8
+      }
+    },
+    "gov/law/passport/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Working Equid Passport Template",
+        "ru": "Имперская форма паспорта рабочего непарнокопытного"
+      },
+      "minutes": {
+        "en": 7,
+        "ru": 9
+      }
+    },
+    "gov/law/work-certificate/": {
+      "route": "standards",
+      "title": {
+        "en": "Imperial Carriage Equid Road and Work Certificate Template",
+        "ru": "Имперская форма дорожно-рабочего свидетельства упряжного непарнокопытного"
+      },
+      "minutes": {
+        "en": 8,
+        "ru": 10
+      }
+    }
+  },
+  "strings": {
+    "en": {
+      "contents": "On this page",
+      "contents_close": "Close contents",
+      "section_of": "Section {i} of {n}",
+      "minutes": "{n} min read",
+      "route_part": "Document {i} of {n} in “{route}”",
+      "next": "Next",
+      "previous": "Previous",
+      "next_route": "Next reading list",
+      "route_done": "You have reached the end of “{route}”.",
+      "back_to_top": "Back to top",
+      "progress": "Reading progress",
+      "start_title": "Where to begin",
+      "start_lead": "Four reading lists, each in a recommended order. The portal remembers on this device what you have already read.",
+      "route_meta": "{n} documents · about {m} min",
+      "route_progress": "{r} of {n} read",
+      "route_begin": "Begin",
+      "route_resume": "Continue",
+      "route_review": "Read again",
+      "resume_title": "Continue where you left off",
+      "resume_meta": "{p}% read",
+      "read_mark": "Read"
+    },
+    "ru": {
+      "contents": "На этой странице",
+      "contents_close": "Закрыть содержание",
+      "section_of": "Раздел {i} из {n}",
+      "minutes": "{n} мин чтения",
+      "route_part": "Документ {i} из {n} в подборке «{route}»",
+      "next": "Далее",
+      "previous": "Назад",
+      "next_route": "Следующая подборка",
+      "route_done": "Вы дочитали подборку «{route}».",
+      "back_to_top": "Наверх",
+      "progress": "Прогресс чтения",
+      "start_title": "С чего начать",
+      "start_lead": "Четыре подборки, каждая в рекомендуемом порядке. Портал запоминает на этом устройстве, что вы уже прочли.",
+      "route_meta": "Документов: {n} · около {m} мин",
+      "route_progress": "Прочитано {r} из {n}",
+      "route_begin": "Начать",
+      "route_resume": "Продолжить",
+      "route_review": "Перечитать",
+      "resume_title": "Продолжить с того места, где вы остановились",
+      "resume_meta": "Прочитано {p}%",
+      "read_mark": "Прочитано"
+    }
+  }
+}

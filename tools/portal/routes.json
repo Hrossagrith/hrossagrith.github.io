@@ -1,0 +1,118 @@
+{
+  "notes": "Source for assets/data/portal/portal.json. Paths are relative to a language root ('' for English, 'ru/' for Russian). Run tools/portal/build.py after editing.",
+  "languages": {
+    "en": { "prefix": "", "words_per_minute": 220 },
+    "ru": { "prefix": "ru/", "words_per_minute": 180 }
+  },
+  "routes": [
+    {
+      "id": "empire",
+      "title": { "en": "The Empire in brief", "ru": "Империя вкратце" },
+      "summary": {
+        "en": "The name, the constitution, the record of the past and the standards of this register.",
+        "ru": "Название, конституция, летопись и правила этого реестра."
+      },
+      "pages": ["symbols/", "gov/", "history/", "about/"]
+    },
+    {
+      "id": "living",
+      "title": { "en": "Living in Hrossagrið", "ru": "Жизнь в Хроссагриде" },
+      "summary": {
+        "en": "What the state guarantees to the people who live here: health, schooling, roads, justice, work and refuge.",
+        "ru": "Что государство гарантирует живущим здесь: здоровье, образование, дороги, правосудие, труд и убежище."
+      },
+      "pages": [
+        "living/",
+        "living/health/",
+        "living/education/",
+        "living/transport/",
+        "living/justice/",
+        "living/money/",
+        "living/citizenship/"
+      ]
+    },
+    {
+      "id": "horses",
+      "title": { "en": "Horses and the law that protects them", "ru": "Лошади и закон, который их защищает" },
+      "summary": {
+        "en": "The national treasure, the road-status markers, and the four codes every keeper and driver is bound by.",
+        "ru": "Национальное достояние, маркировка дорожного статуса и четыре кодекса, обязательные для каждого владельца и возницы."
+      },
+      "pages": [
+        "horses/",
+        "horses/road-status/",
+        "gov/law/welfare/",
+        "gov/law/tack/",
+        "gov/law/carriage/",
+        "gov/law/road/",
+        "gov/law/climate/"
+      ]
+    },
+    {
+      "id": "standards",
+      "title": { "en": "Technical standards and official forms", "ru": "Технические стандарты и официальные формы" },
+      "summary": {
+        "en": "The legal corpus, the technical standards it relies on, and the templates issued under it.",
+        "ru": "Правовой корпус, технические стандарты, на которые он опирается, и формы, выдаваемые на его основании."
+      },
+      "pages": [
+        "gov/law/",
+        "gov/law/marking/",
+        "gov/law/lighting/",
+        "gov/law/ambulance/",
+        "gov/law/tack-measurement/",
+        "gov/law/service-equids/",
+        "gov/law/passport/",
+        "gov/law/work-certificate/"
+      ]
+    }
+  ],
+  "strings": {
+    "en": {
+      "contents": "On this page",
+      "contents_close": "Close contents",
+      "section_of": "Section {i} of {n}",
+      "minutes": "{n} min read",
+      "route_part": "Document {i} of {n} in “{route}”",
+      "next": "Next",
+      "previous": "Previous",
+      "next_route": "Next reading list",
+      "route_done": "You have reached the end of “{route}”.",
+      "back_to_top": "Back to top",
+      "progress": "Reading progress",
+      "start_title": "Where to begin",
+      "start_lead": "Four reading lists, each in a recommended order. The portal remembers on this device what you have already read.",
+      "route_meta": "{n} documents · about {m} min",
+      "route_progress": "{r} of {n} read",
+      "route_begin": "Begin",
+      "route_resume": "Continue",
+      "route_review": "Read again",
+      "resume_title": "Continue where you left off",
+      "resume_meta": "{p}% read",
+      "read_mark": "Read"
+    },
+    "ru": {
+      "contents": "На этой странице",
+      "contents_close": "Закрыть содержание",
+      "section_of": "Раздел {i} из {n}",
+      "minutes": "{n} мин чтения",
+      "route_part": "Документ {i} из {n} в подборке «{route}»",
+      "next": "Далее",
+      "previous": "Назад",
+      "next_route": "Следующая подборка",
+      "route_done": "Вы дочитали подборку «{route}».",
+      "back_to_top": "Наверх",
+      "progress": "Прогресс чтения",
+      "start_title": "С чего начать",
+      "start_lead": "Четыре подборки, каждая в рекомендуемом порядке. Портал запоминает на этом устройстве, что вы уже прочли.",
+      "route_meta": "Документов: {n} · около {m} мин",
+      "route_progress": "Прочитано {r} из {n}",
+      "route_begin": "Начать",
+      "route_resume": "Продолжить",
+      "route_review": "Перечитать",
+      "resume_title": "Продолжить с того места, где вы остановились",
+      "resume_meta": "Прочитано {p}%",
+      "read_mark": "Прочитано"
+    }
+  }
+}
