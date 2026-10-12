@@ -1,58 +1,469 @@
 {
  "cheeks": {
-  "loose-ring": {"pageid": 2493029, "caption": {"en": "Loose ring snaffle (ball-link mouth)", "ru": "Трензель с подвижными кольцами (грызло с шариком)"}},
-  "eggbutt": {"pageid": 5750074, "caption": {"en": "Eggbutt snaffle", "ru": "Эггбат"}},
-  "d-ring": {"pageid": 1736409, "caption": {"en": "D-ring snaffle", "ru": "Трензель с D-кольцами"}},
-  "full-cheek": {"pageid": 12874805, "caption": {"en": "Full cheek snaffle, single joint", "ru": "Трензель с усиками, одно сочленение"}},
-  "fulmer": {"pageid": 2692507, "caption": {"en": "Fulmer snaffle: full cheeks with loose rings", "ru": "Фулмер: усики с подвижными кольцами"}},
-  "baucher": {"pageid": 1067428, "caption": {"en": "Baucher: cheekpiece rings above, bit rings at the mouthpiece", "ru": "Баушер: кольца для нащёчного ремня сверху, кольца повода у грызла"}},
-  "weymouth-fixed": {"pageid": 25098070, "caption": {"en": "Dressage Weymouth curb", "ru": "Выездковый мундштук (веймаут)"}},
-  "pelham": {"pageid": 578071, "caption": {"en": "Pelham with a jointed mouth", "ru": "Пелям с сочленённым грызлом"}},
-  "rugby-pelham": {"pageid": 129214969, "caption": {"en": "Encyclopaedia Britannica 1911: b, Rugby pelham", "ru": "Британская энциклопедия 1911: b — Регби-пелям"}},
-  "kimblewick-uxeter": {"pageid": 13317524, "caption": {"en": "Kimblewick with slots cut for the rein", "ru": "Кимблвик с прорезями для повода"}},
-  "balding-gag": {"pageid": 11540545, "caption": {"en": "Gag snaffle with the cheekpiece through the ring, on a polo pony", "ru": "Гаг-трензель с нащёчным ремнём сквозь кольцо, на пони для поло"}},
-  "cheltenham-gag": {"pageid": 12840484, "caption": {"en": "Gag snaffle on a polo pony", "ru": "Гаг-трензель на пони для поло"}},
-  "dutch-gag": {"pageid": 9858675, "caption": {"en": "Four-ring (Dutch / Pessoa) gag", "ru": "Четырёхкольцевой (голландский) гаг"}},
-  "cheeker-ring": {"pageid": 3731502, "caption": {"en": "Australian cheeker: the rubber Y-strap that holds the bit high", "ru": "Австралийский чикер: резиновый Y-ремень, держащий удила высоко"}},
-  "western-fixed-curb": {"pageid": 1639120, "caption": {"en": "Traditional low-port western curb", "ru": "Традиционный вестерн-мундштук с низким портом"}},
-  "western-loose-jaw-curb": {"pageid": 163049667, "caption": {"en": "Two loose-jaw curbs: jointed ported mouth above, solid low port below", "ru": "Два мундштука с подвижными плечами: сверху сочленённый с портом, снизу цельный с низким портом"}},
-  "spade-cheek": {"pageid": 15767772, "caption": {"en": "Classic full spade bit", "ru": "Классический спейд-бит"}},
-  "walking-horse-curb": {"pageid": 5191684, "caption": {"en": "Tennessee Walking Horse in a long-shanked show curb", "ru": "Теннесси-уокер в шоу-мундштуке с длинными плечами"}},
-  "saddleseat-curb": {"pageid": 2167282, "caption": {"en": "Double bridle for saddle seat on an Arabian", "ru": "Двойное оголовье для саддлсита на арабской лошади"}},
-  "doma-vaquera-curb": {"pageid": 58748428, "caption": {"en": "Spanish curb bit (Metropolitan Museum of Art)", "ru": "Испанский мундштук (музей Метрополитен)"}},
-  "maghreb-ring-curb": {"pageid": 65049692, "caption": {"en": "Maghreb ring bit (Metropolitan Museum of Art)", "ru": "Магрибские кольцевые удила (музей Метрополитен)"}},
-  "liverpool": {"pageid": 61522483, "caption": {"en": "Liverpool bit on a Breton harness horse", "ru": "Ливерпуль на бретонской упряжной лошади"}},
-  "buxton": {"pageid": 61469885, "caption": {"en": "Driving bits, 1912: coaching, Buxton, Ashleigh, Liverpool", "ru": "Упряжные удила, 1912: coaching, Бакстон, Ashleigh, Ливерпуль"}},
-  "dexter-ring": {"pageid": 65049660, "caption": {"en": "Ottoman ring bit: the same ring under the jaw (Metropolitan Museum of Art)", "ru": "Османские кольцевые удила: то же кольцо под челюстью (музей Метрополитен)"}},
-  "tattersall-ring": {"pageid": 11294270, "caption": {"en": "Tattersall yearling ring", "ru": "Кольцо Таттерсолла для годовиков"}},
-  "chifney": {"pageid": 3894942, "caption": {"en": "Chifney anti-rearing bit", "ru": "Чифни против свечения"}},
-  "hackabit": {"pageid": 153719259, "caption": {"en": "Hackabit: mechanical hackamore with a mouthpiece", "ru": "Хакабит: механический хакамор с грызлом"}},
-  "overcheck": {"pageid": 7418761, "caption": {"en": "Trotter bridled with an overcheck", "ru": "Рысак, взнузданный с чеком"}}
+  "loose-ring": {
+   "pageid": 3612270,
+   "caption": {
+    "en": "Loose ring snaffle, single joint",
+    "ru": "Трензель с подвижными кольцами, одно сочленение"
+   }
+  },
+  "eggbutt": {
+   "pageid": 2987301,
+   "caption": {
+    "en": "Eggbutt snaffle",
+    "ru": "Эггбат"
+   }
+  },
+  "d-ring": {
+   "pageid": 1736409,
+   "caption": {
+    "en": "D-ring snaffle",
+    "ru": "Трензель с D-кольцами"
+   }
+  },
+  "full-cheek": {
+   "pageid": 14724160,
+   "caption": {
+    "en": "Full cheek snaffle, stainless steel",
+    "ru": "Трензель с усиками, нержавеющая сталь"
+   }
+  },
+  "fulmer": {
+   "pageid": 2692507,
+   "caption": {
+    "en": "Fulmer snaffle: full cheeks with loose rings",
+    "ru": "Фулмер: усики с подвижными кольцами"
+   }
+  },
+  "baucher": {
+   "pageid": 1067428,
+   "caption": {
+    "en": "Baucher: cheekpiece rings above, bit rings at the mouthpiece",
+    "ru": "Баушер: кольца для нащёчного ремня сверху, кольца повода у грызла"
+   }
+  },
+  "weymouth-fixed": {
+   "pageid": 25098070,
+   "caption": {
+    "en": "Dressage Weymouth curb",
+    "ru": "Выездковый мундштук (веймаут)"
+   }
+  },
+  "pelham": {
+   "pageid": 578071,
+   "caption": {
+    "en": "Pelham with a jointed mouth",
+    "ru": "Пелям с сочленённым грызлом"
+   }
+  },
+  "rugby-pelham": {
+   "pageid": 129214969,
+   "caption": {
+    "en": "Encyclopaedia Britannica 1911: b, Rugby pelham",
+    "ru": "Британская энциклопедия 1911: b — Регби-пелям"
+   }
+  },
+  "kimblewick-uxeter": {
+   "pageid": 13317524,
+   "caption": {
+    "en": "Kimblewick with slots cut for the rein",
+    "ru": "Кимблвик с прорезями для повода"
+   }
+  },
+  "balding-gag": {
+   "pageid": 12840484,
+   "caption": {
+    "en": "Loose-ring gag: the cheekpiece runs through the ring; rubber bit guards",
+    "ru": "Гаг с подвижными кольцами: нащёчный ремень проходит сквозь кольцо; резиновые накладки"
+   }
+  },
+  "cheltenham-gag": {
+   "pageid": 1672242,
+   "caption": {
+    "en": "Gag snaffle on a cross-country horse",
+    "ru": "Гаг-трензель на лошади на кроссе"
+   }
+  },
+  "dutch-gag": {
+   "pageid": 9858675,
+   "caption": {
+    "en": "Four-ring (Dutch / Pessoa) gag on a horse",
+    "ru": "Четырёхкольцевой (голландский) гаг на лошади"
+   }
+  },
+  "cheeker-ring": {
+   "pageid": 3731502,
+   "caption": {
+    "en": "Australian cheeker: the rubber Y-strap that holds the bit high",
+    "ru": "Австралийский чикер: резиновый Y-ремень, держащий удила высоко"
+   }
+  },
+  "western-fixed-curb": {
+   "pageid": 1639120,
+   "caption": {
+    "en": "Traditional low-port western curb",
+    "ru": "Традиционный вестерн-мундштук с низким портом"
+   }
+  },
+  "western-loose-jaw-curb": {
+   "pageid": 163049667,
+   "caption": {
+    "en": "Two loose-jaw curbs: jointed ported mouth above, solid low port below",
+    "ru": "Два мундштука с подвижными плечами: сверху сочленённый с портом, снизу цельный с низким портом"
+   }
+  },
+  "spade-cheek": {
+   "pageid": 15767772,
+   "caption": {
+    "en": "Classic full spade bit",
+    "ru": "Классический спейд-бит"
+   }
+  },
+  "walking-horse-curb": {
+   "pageid": 5191684,
+   "caption": {
+    "en": "Tennessee Walking Horse in a long-shanked show curb",
+    "ru": "Теннесси-уокер в шоу-мундштуке с длинными плечами"
+   }
+  },
+  "saddleseat-curb": {
+   "pageid": 2167282,
+   "caption": {
+    "en": "Double bridle for saddle seat on an Arabian",
+    "ru": "Двойное оголовье для саддлсита на арабской лошади"
+   }
+  },
+  "doma-vaquera-curb": {
+   "pageid": 58748428,
+   "caption": {
+    "en": "Spanish curb bit (Metropolitan Museum of Art)",
+    "ru": "Испанский мундштук (музей Метрополитен)"
+   }
+  },
+  "maghreb-ring-curb": {
+   "pageid": 65049692,
+   "caption": {
+    "en": "Maghreb ring bit (Metropolitan Museum of Art)",
+    "ru": "Магрибские кольцевые удила (музей Метрополитен)"
+   }
+  },
+  "liverpool": {
+   "pageid": 130861015,
+   "caption": {
+    "en": "Liverpool driving bit: ring, rough cheek and slots",
+    "ru": "Упряжной Ливерпуль: кольцо, щёчка и прорези"
+   }
+  },
+  "buxton": {
+   "pageid": 61469885,
+   "caption": {
+    "en": "Driving bits, 1912: coaching, Buxton, Ashleigh, Liverpool",
+    "ru": "Упряжные удила, 1912: coaching, Бакстон, Ashleigh, Ливерпуль"
+   }
+  },
+  "dexter-ring": {
+   "pageid": 82163343,
+   "caption": {
+    "en": "Ring bit, c. 1938 (National Gallery of Art drawing)",
+    "ru": "Кольцевые удила, ок. 1938 (рисунок, Национальная галерея искусств)"
+   }
+  },
+  "tattersall-ring": {
+   "pageid": 11294270,
+   "caption": {
+    "en": "Tattersall yearling ring",
+    "ru": "Кольцо Таттерсолла для годовиков"
+   }
+  },
+  "chifney": {
+   "pageid": 3894942,
+   "caption": {
+    "en": "Chifney anti-rearing bit",
+    "ru": "Чифни против свечения"
+   }
+  },
+  "hackabit": {
+   "pageid": 153719259,
+   "caption": {
+    "en": "Hackabit: mechanical hackamore with a mouthpiece",
+    "ru": "Хакабит: механический хакамор с грызлом"
+   }
+  },
+  "overcheck": {
+   "pageid": 160777986,
+   "caption": {
+    "en": "Harnessed horse wearing a tight overcheck",
+    "ru": "Упряжная лошадь в туго затянутом чеке"
+   }
+  },
+  "lugging-bit": {
+   "pageid": 14819368,
+   "caption": {
+    "en": "Butterfly anti-lugging bit used on racehorses",
+    "ru": "Бит-«бабочка» против залегания, применяемый на скаковых лошадях"
+   }
+  },
+  "butterfly-driving": {
+   "pageid": 13189334,
+   "caption": {
+    "en": "Butterfly cheek (as a riding pelham) with a double-link chain",
+    "ru": "Щёчка-«бабочка» (как пелям) с двухзвенной цепочкой"
+   }
+  },
+  "kimblewick": {
+   "pageid": 120437589,
+   "caption": {
+    "en": "D-cheek curb with chain, the Kimblewick pattern, on a PRE",
+    "ru": "Мундштук с D-щёчкой и цепочкой, схема кимблвика, на лошади PRE"
+   }
+  },
+  "weymouth-sliding": {
+   "pageid": 3612344,
+   "caption": {
+    "en": "Saumur curb à pompe: the mouthpiece slides on the cheek",
+    "ru": "Мундштук Сомюр «à pompe»: грызло скользит по щёчке"
+   }
+  },
+  "rockwell": {
+   "pageid": 3731526,
+   "caption": {
+    "en": "Ring-head noseband bridle, the Rockwell pattern (drawing)",
+    "ru": "Кольцевой носовой ремень, схема Рокуэлла (рисунок)"
+   }
+  },
+  "nelson-gag": {
+   "pageid": 163049666,
+   "caption": {
+    "en": "Gag with cheek arms and a hackamore-style nose band",
+    "ru": "Гаг с усиками и носовым ремнём в стиле хакамора"
+   }
+  },
+  "half-cheek": {
+   "pageid": 12122430,
+   "caption": {
+    "en": "Half-cheek snaffle on a Saddlebred in harness",
+    "ru": "Трензель с полуусами на седлбреде в упряжи"
+   }
+  },
+  "frisco-june": {
+   "pageid": 23352878,
+   "caption": {
+    "en": "Harness pony in a half-cheek snaffle with a chin strap",
+    "ru": "Упряжной пони в трензеле с полуусами и подбородочным ремешком"
+   }
+  }
  },
  "mouthpieces": {
-  "single-joint": {"pageid": 2987301, "caption": {"en": "Plain single-jointed snaffle", "ru": "Обычный трензель с одним сочленением"}},
-  "slow-twist": {"pageid": 2987271, "caption": {"en": "Slow twist on a full cheek", "ru": "Медленный твист на усиках"}},
-  "twisted-wire": {"pageid": 2689793, "caption": {"en": "Twisted wire snaffle", "ru": "Трензель из кручёной проволоки"}},
-  "french-link": {"pageid": 1736488, "caption": {"en": "French link", "ru": "Французское звено"}},
-  "ball-link": {"pageid": 2493029, "caption": {"en": "Ball link", "ru": "Звено-шарик"}},
-  "flexible-mullen": {"pageid": 1736466, "caption": {"en": "Synthetic mullen over a flexible core", "ru": "Синтетический мюлен на гибком сердечнике"}},
-  "ported": {"pageid": 1639172, "caption": {"en": "Medium-port curb mouth, sweet iron", "ru": "Грызло со средним портом, «сладкое железо»"}},
-  "spade": {"pageid": 15767772, "caption": {"en": "Spade: spoon, braces and cricket", "ru": "Лопата: ложка, распорки и ролик"}},
-  "half-breed": {"pageid": 15767911, "caption": {"en": "Half-breed: hooded high port with a cricket", "ru": "Хаф-брид: высокий порт с крышей и роликом"}},
-  "cathedral": {"pageid": 15767771, "caption": {"en": "Cathedral port on a loose-jaw curb", "ru": "Кафедральный порт на мундштуке с подвижными плечами"}},
-  "ring-arc": {"pageid": 11294270, "caption": {"en": "The arc of a Tattersall ring", "ru": "Дужка кольца Таттерсолла"}}
+  "single-joint": {
+   "pageid": 2987301,
+   "caption": {
+    "en": "Plain single-jointed snaffle",
+    "ru": "Обычный трензель с одним сочленением"
+   }
+  },
+  "slow-twist": {
+   "pageid": 2987271,
+   "caption": {
+    "en": "Full cheek snaffle with a slow twist",
+    "ru": "Трензель с усиками, медленный твист"
+   }
+  },
+  "twisted-wire": {
+   "pageid": 2689793,
+   "caption": {
+    "en": "Twisted wire snaffle",
+    "ru": "Трензель из кручёной проволоки"
+   }
+  },
+  "french-link": {
+   "pageid": 1736488,
+   "caption": {
+    "en": "French link",
+    "ru": "Французское звено"
+   }
+  },
+  "ball-link": {
+   "pageid": 2493029,
+   "caption": {
+    "en": "Ball link",
+    "ru": "Звено-шарик"
+   }
+  },
+  "flexible-mullen": {
+   "pageid": 13189334,
+   "caption": {
+    "en": "Flexible synthetic mullen on a butterfly pelham",
+    "ru": "Гибкий синтетический мюлен на пеляме-«бабочке»"
+   }
+  },
+  "ported": {
+   "pageid": 1639172,
+   "caption": {
+    "en": "Medium-port curb mouth, sweet iron",
+    "ru": "Грызло со средним портом, «сладкое железо»"
+   }
+  },
+  "spade": {
+   "pageid": 15767772,
+   "caption": {
+    "en": "Spade: spoon, braces and cricket",
+    "ru": "Лопата: ложка, распорки и ролик"
+   }
+  },
+  "half-breed": {
+   "pageid": 15767911,
+   "caption": {
+    "en": "Half-breed: hooded high port with a cricket",
+    "ru": "Хаф-брид: высокий порт с крышей и роликом"
+   }
+  },
+  "cathedral": {
+   "pageid": 15767771,
+   "caption": {
+    "en": "Cathedral port on a loose-jaw curb",
+    "ru": "Кафедральный порт на мундштуке с подвижными плечами"
+   }
+  },
+  "ring-arc": {
+   "pageid": 11294270,
+   "caption": {
+    "en": "The arc of a Tattersall ring",
+    "ru": "Дужка кольца Таттерсолла"
+   }
+  },
+  "keys": {
+   "pageid": 82162265,
+   "caption": {
+    "en": "Mouthing bit with keys (National Gallery of Art drawing, 1938)",
+    "ru": "Грызло для заездки с подвесками (рисунок, 1938)"
+   }
+  },
+  "straight-bar": {
+   "pageid": 65769186,
+   "caption": {
+    "en": "Straight bar, Luristan bronze bit, 2nd millennium BC",
+    "ru": "Прямая штанга, луристанские бронзовые удила, II тыс. до н. э."
+   }
+  },
+  "lozenge": {
+   "pageid": 130861016,
+   "caption": {
+    "en": "Eggbutt snaffle with a centre lozenge",
+    "ru": "Эггбат с центральным лозенжем"
+   }
+  },
+  "correction": {
+   "pageid": 15767770,
+   "caption": {
+    "en": "Correction bit on decorative loose-jaw shanks",
+    "ru": "Коррекшн-бит на декоративных подвижных плечах"
+   }
+  },
+  "mona-lisa": {
+   "pageid": 15768162,
+   "caption": {
+    "en": "Show curb with a cricket in a medium port",
+    "ru": "Шоу-мундштук с роликом в среднем порте"
+   }
+  }
  },
  "pairings": {
-  "spade-cheek|spade": {"pageid": 15767772},
-  "walking-horse-curb|ported": {"pageid": 5191684},
-  "chifney|straight-bar": {"pageid": 3894942},
-  "tattersall-ring|ring-arc": {"pageid": 11294270},
-  "overcheck|single-joint": {"pageid": 7418761},
-  "maghreb-ring-curb|ported": {"pageid": 58751417, "caption": {"en": "Mexican ring bit (Metropolitan Museum of Art)", "ru": "Мексиканские кольцевые удила (музей Метрополитен)"}},
-  "pelham|single-joint": {"pageid": 578071},
-  "pelham|flexible-mullen": {"pageid": 21271, "caption": {"en": "Pair of ponies: the off horse in a pelham with a rubber mouth", "ru": "Пара пони: правая в пеляме с резиновым грызлом"}},
-  "kimblewick|ported": {"pageid": 13317524},
-  "liverpool|mullen": {"pageid": 61522483},
-  "weymouth-fixed|ported": {"pageid": 25098070}
+  "spade-cheek|spade": {
+   "pageid": 15767772
+  },
+  "walking-horse-curb|ported": {
+   "pageid": 5191684
+  },
+  "chifney|straight-bar": {
+   "pageid": 3894942
+  },
+  "tattersall-ring|ring-arc": {
+   "pageid": 11294270
+  },
+  "overcheck|single-joint": {
+   "pageid": 7391257,
+   "caption": {
+    "en": "Trotter wearing an overcheck bit",
+    "ru": "Рысак в чек-удилах"
+   }
+  },
+  "maghreb-ring-curb|ported": {
+   "pageid": 58751417,
+   "caption": {
+    "en": "Mexican ring bit (Metropolitan Museum of Art)",
+    "ru": "Мексиканские кольцевые удила (музей Метрополитен)"
+   }
+  },
+  "pelham|single-joint": {
+   "pageid": 578071
+  },
+  "pelham|flexible-mullen": {
+   "pageid": 21271,
+   "caption": {
+    "en": "Pair of ponies: the off horse in a pelham with a rubber mouth",
+    "ru": "Пара пони: правая в пеляме с резиновым грызлом"
+   }
+  },
+  "kimblewick|ported": {
+   "pageid": 13317524
+  },
+  "liverpool|mullen": {
+   "pageid": 61522483
+  },
+  "weymouth-fixed|ported": {
+   "pageid": 25098070,
+   "caption": {
+    "en": "Dressage Weymouth with a low port",
+    "ru": "Выездковый веймаут с низким портом"
+   }
+  },
+  "western-fixed-curb|single-joint": {
+   "pageid": 2749183,
+   "caption": {
+    "en": "Tom Thumb: jointed copper mouth on short shanks",
+    "ru": "Том Тамб: сочленённое медное грызло на коротких плечах"
+   }
+  },
+  "pelham|ported": {
+   "pageid": 3612355,
+   "caption": {
+    "en": "Pelham with a port and a curb chain",
+    "ru": "Пелям с портом и цепочкой"
+   }
+  },
+  "loose-ring|single-joint": {
+   "pageid": 3612270,
+   "caption": {
+    "en": "Loose ring, single joint",
+    "ru": "Подвижные кольца, одно сочленение"
+   }
+  },
+  "eggbutt|single-joint": {
+   "pageid": 2987301
+  },
+  "full-cheek|single-joint": {
+   "pageid": 12874805
+  },
+  "full-cheek|slow-twist": {
+   "pageid": 2987271
+  },
+  "fulmer|single-joint": {
+   "pageid": 2692507
+  },
+  "loose-ring|ball-link": {
+   "pageid": 2493029
+  },
+  "eggbutt|lozenge": {
+   "pageid": 130861016
+  },
+  "western-fixed-curb|correction": {
+   "pageid": 15767770
+  },
+  "western-loose-jaw-curb|cathedral": {
+   "pageid": 15767771
+  },
+  "loose-ring|twisted-wire": {
+   "pageid": 2689793
+  }
  }
 }

@@ -8,16 +8,21 @@ const path = require("path");
 
 const here = __dirname;
 const root = path.join(here, "..", "..");
-const candidates = JSON.parse(fs.readFileSync(path.join(here, "candidates.json"), "utf8"));
 const picks = JSON.parse(fs.readFileSync(path.join(here, "picks.json"), "utf8"));
+/* Every candidate file from every search round, including category crawls. */
+const candidateFiles = fs.readdirSync(here).filter((f) => /^candidates\d*\.json$/.test(f));
 const WIDTH = 640;
 const headers = { "User-Agent": "hrossagrith-bit-register/1.0 (https://hrossagrith.github.io; worldbuilding site image research)" };
 const dirs = { cheeks: "cheeks", mouthpieces: "mouths", pairings: "pairs" };
 
 const pool = [];
-for (const kind of Object.keys(candidates)) {
-  if (typeof candidates[kind] !== "object") { continue; }
-  for (const list of Object.values(candidates[kind])) { for (const c of list) { pool.push(c); } }
+for (const file of candidateFiles) {
+  const candidates = JSON.parse(fs.readFileSync(path.join(here, file), "utf8"));
+  for (const kind of Object.keys(candidates)) {
+    if (Array.isArray(candidates[kind])) { for (const c of candidates[kind]) { pool.push(c); } continue; }
+    if (typeof candidates[kind] !== "object") { continue; }
+    for (const list of Object.values(candidates[kind])) { for (const c of list) { pool.push(c); } }
+  }
 }
 
 function byPageId(pageid) {
