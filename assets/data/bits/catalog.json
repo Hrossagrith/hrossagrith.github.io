@@ -5530,25 +5530,25 @@
    },
    "image": "not-collected.png",
    "size": [
-    1038,
-    759
+    975,
+    835
    ],
    "anchors": {
     "bit": [
      110,
-     410
+     227
     ],
     "poll": [
-     509,
-     140
+     624,
+     98
     ],
     "chin": [
-     109,
-     451
+     66,
+     253
     ],
     "nose": [
-     161,
-     308
+     204,
+     78
     ]
    }
   },
@@ -5569,25 +5569,25 @@
    },
    "image": "above.png",
    "size": [
-    962,
-    756
+    984,
+    664
    ],
    "anchors": {
     "bit": [
-     108,
-     500
+     112,
+     449
     ],
     "poll": [
-     430,
-     141
+     466,
+     56
     ],
     "chin": [
-     117,
-     540
+     90,
+     496
     ],
     "nose": [
-     133,
-     389
+     107,
+     274
     ]
    }
   },
@@ -5608,25 +5608,25 @@
    },
    "image": "correct.png",
    "size": [
-    785,
-    692
+    805,
+    695
    ],
    "anchors": {
     "bit": [
-     110,
-     592
+     127,
+     596
     ],
     "poll": [
-     177,
-     113
+     219,
+     75
     ],
     "chin": [
-     141,
-     619
+     134,
+     648
     ],
     "nose": [
-     69,
-     485
+     30,
+     450
     ]
    }
   },
@@ -5647,25 +5647,25 @@
    },
    "image": "vertical.png",
    "size": [
-    738,
-    684
+    762,
+    711
    ],
    "anchors": {
     "bit": [
-     145,
-     576
+     134,
+     608
     ],
     "poll": [
-     110,
-     95
+     153,
+     78
     ],
     "chin": [
-     180,
-     597
+     148,
+     658
     ],
     "nose": [
-     82,
-     481
+     17,
+     476
     ]
    }
   },
@@ -5686,25 +5686,25 @@
    },
    "image": "btv.png",
    "size": [
-    786,
-    633
+    730,
+    685
    ],
    "anchors": {
     "bit": [
-     330,
-     522
+     280,
+     572
     ],
     "poll": [
-     133,
-     82
+     81,
+     81
     ],
     "chin": [
-     370,
-     530
+     312,
+     612
     ],
     "nose": [
-     239,
-     454
+     119,
+     500
     ]
    }
   },
@@ -5725,25 +5725,25 @@
    },
    "image": "rollkur.png",
    "size": [
-    820,
-    638
+    672,
+    760
    ],
    "anchors": {
     "bit": [
-     515,
-     530
+     449,
+     648
     ],
     "poll": [
-     140,
-     226
+     55,
+     294
     ],
     "chin": [
-     555,
-     518
+     496,
+     670
     ],
     "nose": [
-     403,
-     510
+     273,
+     653
     ]
    }
   }
@@ -8704,25 +8704,27 @@
  },
  "posture_drawings": {
   "credit": {
-   "en": "Head after Ellenberger, Baum and Dittrich, Handbuch der Anatomie der Tiere für Künstler (1898); skull and cervical column after Blainville, Ostéographie (1839–1864); both public domain, via Wikimedia Commons. The six carriages follow the site author's sketches.",
-   "ru": "Голова — по Элленбергеру, Бауму и Дитриху, Handbuch der Anatomie der Tiere für Künstler (1898); череп и шейные позвонки — по Бленвилю, Ostéographie (1839–1864); оба источника в общественном достоянии, Wikimedia Commons. Шесть положений — по наброскам автора сайта."
+   "en": "Head and neck after George Stubbs, The Anatomy of the Horse (London, 1766): the first lateral table of the muscles, with the skull and cervical vertebrae of the first skeleton table laid inside; public domain, scan by the Wellcome Collection. The six carriages follow the site author's sketches.",
+   "ru": "Голова и шея — по Джорджу Стаббсу, «Анатомия лошади» (Лондон, 1766): первая боковая таблица мышц, внутри — череп и шейные позвонки с первой таблицы скелета; общественное достояние, скан Wellcome Collection. Шесть положений — по наброскам автора сайта."
   },
   "sources": [
    {
-    "id": "ellenberger-head",
-    "title": "Horse anatomy head.jpg",
-    "artist": "Wilhelm Ellenberger, Hermann Baum; Hermann Dittrich (illustrator)",
-    "work": "Handbuch der Anatomie der Tiere für Künstler, Leipzig 1898, Tafel 6, Fig. 30",
-    "license": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Horse_anatomy_head.jpg"
+    "id": "stubbs-muscles-1",
+    "title": "The first anatomical table of the muscles, fascias, ligaments, nerves, arteries, veins, glands and cartilages of a horse",
+    "artist": "George Stubbs",
+    "work": "The Anatomy of the Horse, London 1766",
+    "license": "Public Domain Mark (Wellcome Collection)",
+    "page": "https://wellcomecollection.org/works/yu4etwk6",
+    "image": "https://iiif.wellcomecollection.org/image/b33544049_0059.jp2"
    },
    {
-    "id": "blainville-skeleton",
-    "title": "Description iconographique comparée du squelette et du système dentaire des mammifères récents et fossiles (Equus ferus caballus).jpg",
-    "artist": "Henri-Marie Ducrotay de Blainville",
-    "work": "Ostéographie, Paris 1839–1864",
-    "license": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Description_iconographique_compar%C3%A9e_du_squelette_et_du_syst%C3%A8me_dentaire_des_mammif%C3%A8res_r%C3%A9cents_et_fossiles_(Equus_ferus_caballus).jpg"
+    "id": "stubbs-skeleton-1",
+    "title": "The first anatomical table of the skeleton of a horse",
+    "artist": "George Stubbs",
+    "work": "The Anatomy of the Horse, London 1766",
+    "license": "Public Domain Mark (Wellcome Collection)",
+    "page": "https://wellcomecollection.org/works/yu4etwk6",
+    "image": "https://iiif.wellcomecollection.org/image/b33544049_0063.jp2"
    },
    {
     "id": "author-sketches",
@@ -8734,6 +8736,6 @@
   ],
   "path": "img/postures/",
   "author_sketches_path": "img/postures/author/",
-  "version": 3
+  "version": 4
  }
 }
