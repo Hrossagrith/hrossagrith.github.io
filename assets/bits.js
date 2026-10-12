@@ -114,7 +114,7 @@
 
   function levelOf(kpa) {
     var th = CATALOG.thresholds_kpa;
-    if (kpa < th.pain_free_upper) { return "good"; }
+    if (kpa < th.lowest_reported) { return "good"; }
     if (kpa < th.face_ppt) { return "warning"; }
     if (kpa < th.hand_ppt) { return "serious"; }
     return "critical";
@@ -1772,7 +1772,7 @@
         grid.appendChild(tickText);
       }
       ["free", "face"].forEach(function (name) {
-        var value = name === "free" ? th.pain_free_upper : th.face_ppt;
+        var value = name === "free" ? th.lowest_reported : th.face_ppt;
         attrs(el("fc-th-" + name), { x1: x(value), x2: x(value), y1: 20, y2: bottom });
         attrs(el("fc-th-" + name + "-l"), { x: x(value) + (name === "free" ? -4 : 4) });
       });
@@ -1892,7 +1892,9 @@
         site.textContent = ui("tissue_" + p.site, p.site);
       });
       var bias = M.byId(CATALOG.postures, land.bias);
-      el("fe-bias").textContent = mech === "check" ? ui("bias_check", "A check rein does not vary with carriage: it fixes the carriage") : fill(ui("bias_line", "Least pain under a holding hand: {posture}"), { posture: t(bias.name) });
+      el("fe-bias").textContent = mech === "check"
+        ? ui("bias_check", "")
+        : (bias ? fill(ui("bias_line", ""), { posture: t(bias.name) }) : ui("bias_none", ""));
     }
 
     /* ---------- Figure F: likely injuries ---------- */
@@ -2044,7 +2046,8 @@
       say("gag-head", mech === "gag-slide" || mech === "gag-curb" || (mech === "gag-lever" && leverNoChain));
       say("check-head", mech === "check");
       say("btv-horse", mech !== "check");
-      field("btv-verdict", ui("btv_" + String(land.bias).replace(/-/g, "_"), ""));
+      say("bias-none", mech !== "check" && !land.bias);
+      field("btv-verdict", ui("btv_" + (land.bias ? land.bias.replace(/-/g, "_") : "none"), ""));
 
       say("v-reference", true);
       field("ref-peak", kPa(ref.result.pressures.peak));

@@ -93,28 +93,28 @@
    "ru": "затылок"
   },
   "peak_good": {
-   "en": "That is below the band found pain-free in the human comparison.",
-   "ru": "Это ниже полосы, которую в сравнении с человеком сочли безболезненной."
+   "en": "That is below the lowest pressure reported in the literature (about 100 kPa).",
+   "ru": "Это ниже самого низкого давления, описанного в литературе (около 100 кПа)."
   },
   "peak_warning": {
-   "en": "That is above the pain-free band and below the human facial pain threshold: discomfort, not yet acute pain.",
-   "ru": "Это выше безболезненной полосы, но ниже болевого порога лица человека: дискомфорт, ещё не острая боль."
+   "en": "That is above the lowest reported pressure and below the human facial pressure-pain threshold.",
+   "ru": "Это выше самого низкого описанного давления и ниже порога болевой чувствительности кожи лица человека."
   },
   "peak_serious": {
-   "en": "That exceeds the human facial pressure-pain threshold.",
-   "ru": "Это превышает болевой порог давления на лицо человека."
+   "en": "That exceeds the human facial pressure-pain threshold; by analogy, likely to be felt as pain.",
+   "ru": "Это превышает порог болевой чувствительности кожи лица человека; по аналогии — вероятно, ощущается как боль."
   },
   "peak_critical": {
-   "en": "That exceeds the human pressure-pain threshold of the hand as well: acute pain by any mammalian standard.",
-   "ru": "Это превышает и болевой порог кисти человека: острая боль по любой меркe для млекопитающих."
+   "en": "That exceeds the human pressure-pain threshold of the hand as well; by analogy with human data, likely painful. No thresholds have been measured for the horse’s mouth.",
+   "ru": "Это превышает и порог болевой чувствительности кисти человека; по аналогии с данными о человеке — вероятно, болезненно. Пороги для рта лошади не измерены."
   },
   "level_good": {
-   "en": "below pain-free bound",
-   "ru": "ниже безболезненной границы"
+   "en": "below lowest reported",
+   "ru": "ниже минимума из литературы"
   },
   "level_warning": {
-   "en": "discomfort",
-   "ru": "дискомфорт"
+   "en": "moderate",
+   "ru": "умеренно"
   },
   "level_serious": {
    "en": "above facial threshold",
@@ -229,8 +229,8 @@
    "ru": "при одностороннем поводе кольцо протягивается в рот"
   },
   "bias_line": {
-   "en": "Least pain under a holding hand: {posture}",
-   "ru": "Меньше всего боли при неуступающей руке: {posture}"
+   "en": "Lowest modelled peak at the same rein tension: {posture}",
+   "ru": "Наименьший расчётный пик при том же натяжении: {posture}"
   },
   "btv_above": {
    "en": "pushes the other way, by making the high, hollow carriage the cheapest place to carry the load; that is not a correction, it is a different fault",
@@ -245,24 +245,24 @@
    "ru": "близко к нейтральному и будет следовать за рукой"
   },
   "btv_btv": {
-   "en": "will push it further behind the vertical",
-   "ru": "загонит её ещё дальше за вертикаль"
+   "en": "shows its lowest modelled peak behind the vertical at constant tension; under a holding hand that can encourage the horse to go further behind it",
+   "ru": "показывает наименьший расчётный пик за вертикалью при постоянном натяжении; под неуступающей рукой это может подталкивать лошадь уходить за вертикаль ещё дальше"
   },
   "ref_good": {
-   "en": "below the pain-free band.",
-   "ru": "ниже безболезненной полосы."
+   "en": "below the lowest pressure reported in the literature.",
+   "ru": "ниже самого низкого давления, описанного в литературе."
   },
   "ref_warning": {
-   "en": "above the pain-free band, below the facial pain threshold.",
-   "ru": "выше безболезненной полосы, ниже болевого порога лица."
+   "en": "above the lowest reported pressure, below the human facial threshold.",
+   "ru": "выше самого низкого описанного давления, ниже порога лица человека."
   },
   "ref_serious": {
-   "en": "above the human facial pain threshold.",
-   "ru": "выше болевого порога лица человека."
+   "en": "above the human facial pressure-pain threshold.",
+   "ru": "выше порога болевой чувствительности лица человека."
   },
   "ref_critical": {
-   "en": "above the human hand pain threshold.",
-   "ru": "выше болевого порога кисти человека."
+   "en": "above the human hand pressure-pain threshold.",
+   "ru": "выше порога болевой чувствительности кисти человека."
   },
   "lips_short": {
    "en": "lips",
@@ -481,8 +481,8 @@
    "ru": "{kpa} на 1–2 мм слизистой над костью; ниже лицевого болевого порога при этих настройках."
   },
   "risk_why_bars_high": {
-   "en": "{kpa} on a strip of mucosa over bone; textured or thin surfaces (contact {contact}, edge {edge}) narrow the strip further. Bar lesions are the lesion most associated with unjointed and thin mouthpieces.",
-   "ru": "{kpa} на полоске слизистой над костью; рельефные или тонкие поверхности (контакт {contact}, кромка {edge}) сужают полоску ещё сильнее. Поражения дёсен чаще всего связаны с несочленёнными и тонкими грызлами."
+   "en": "{kpa} on a strip of mucosa over bone; textured or thin surfaces (contact {contact}, edge {edge}) narrow the strip further. Finnish studies associate bar lesions with mouthpiece type and thickness.",
+   "ru": "{kpa} на полоске слизистой над костью; рельефные или тонкие поверхности (контакт {contact}, кромка {edge}) сужают полоску ещё больше. Финские исследования связывают поражения дёсен с типом и толщиной грызла."
   },
   "risk_why_tongue_low": {
    "en": "{kpa} spread over the tongue; smooth, conforming surface.",
@@ -557,60 +557,60 @@
    "ru": "Пик {peak} — ткань: {site}, либо поднимающий или противоречивый сигнал: открывание рта, мотание головой, язык поверх удил и тряска головой — задокументированные ответы."
   },
   "class_0": {
-   "en": "Pressure without pain",
-   "ru": "Давление без боли"
+   "en": "Low load",
+   "ru": "Низкая нагрузка"
   },
   "class_1": {
-   "en": "Discomfort",
-   "ru": "Дискомфорт"
+   "en": "Moderate load",
+   "ru": "Умеренная нагрузка"
   },
   "class_2": {
-   "en": "Pain at ordinary tension",
-   "ru": "Боль при обычном натяжении"
+   "en": "Elevated risk",
+   "ru": "Повышенный риск"
   },
   "class_3": {
-   "en": "Injury expected",
-   "ru": "Ожидаемая травма"
+   "en": "High risk of injury",
+   "ru": "Высокий риск травмы"
   },
   "class_4": {
-   "en": "Pain is the mechanism",
-   "ru": "Боль — сам механизм"
+   "en": "High risk by design",
+   "ru": "Высокий риск по конструкции"
   },
   "class_def_0": {
-   "en": "Every tissue below the 100 kPa pain-free bound and no lesion more than possible.",
-   "ru": "Каждая ткань ниже безболезненной границы 100 кПа, и ни одно поражение не более чем возможно."
+   "en": "At the reference tension every tissue stays below the lowest pressure reported in the literature (about 100 kPa), and no lesion is more than possible.",
+   "ru": "При опорном натяжении каждая ткань остаётся ниже самого низкого описанного в литературе давления (около 100 кПа), и ни одно поражение не более чем возможно."
   },
   "class_def_1": {
-   "en": "Peak between the pain-free bound and the facial pain threshold, or a lesion possible.",
-   "ru": "Пик между безболезненной границей и лицевым болевым порогом, либо поражение возможно."
+   "en": "Peak between the lowest reported pressure and the human facial pressure-pain threshold, or a lesion possible.",
+   "ru": "Пик между самым низким описанным давлением и порогом болевой чувствительности лица человека, либо поражение возможно."
   },
   "class_def_2": {
-   "en": "Peak above the facial pain threshold (232 kPa), or a serious lesion likely.",
-   "ru": "Пик выше лицевого болевого порога (232 кПа), либо серьёзное поражение вероятно."
+   "en": "Peak above the human facial pressure-pain threshold (232 kPa) at the reference tension, or a design feature associated with lesions.",
+   "ru": "Пик выше порога болевой чувствительности лица человека (232 кПа) при опорном натяжении, либо особенность конструкции, связанная с поражениями."
   },
   "class_def_3": {
-   "en": "Peak above the hand pain threshold (445 kPa), or a lesion expected at this setting.",
-   "ru": "Пик выше порога боли кисти (445 кПа), либо поражение ожидаемо при этих настройках."
+   "en": "Peak above the human hand pressure-pain threshold (445 kPa) at the reference tension, or a lesion likely by the risk table.",
+   "ru": "Пик выше порога болевой чувствительности кисти человека (445 кПа) при опорном натяжении, либо поражение вероятно по таблице рисков."
   },
   "class_def_4": {
-   "en": "The device works by hurting: a palate spoon, prongs, a cutting surface or a scissor mouth.",
-   "ru": "Устройство работает болью: нёбная лопатка, шипы, режущая поверхность или «ножницы»."
+   "en": "The design concentrates load on a very small area or contacts the palate, cheek or tongue by construction: a palate spoon, prongs, a cutting surface or a scissor mouth. High risk at any appreciable rein tension.",
+   "ru": "Конструкция сосредоточивает нагрузку на очень малой площади или касается нёба, щеки или языка по самому устройству: нёбная лопатка, шипы, режущая поверхность или «ножницы». Высокий риск при любом заметном натяжении."
   },
   "class_why_pain_0": {
-   "en": "Peak {peak} on the {site}: below the pain-free bound.",
-   "ru": "Пик {peak} — ткань: {site}; ниже безболезненной границы."
+   "en": "Peak {peak} on the {site}: below the lowest reported pressure.",
+   "ru": "Пик {peak} — ткань: {site}; ниже самого низкого описанного давления."
   },
   "class_why_pain_1": {
-   "en": "Peak {peak} on the {site}: above the pain-free bound, below the facial threshold.",
-   "ru": "Пик {peak} — ткань: {site}; выше безболезненной границы, ниже лицевого порога."
+   "en": "Peak {peak} on the {site}: above the lowest reported pressure, below the human facial threshold.",
+   "ru": "Пик {peak} — ткань: {site}; выше самого низкого описанного давления, ниже порога лица человека."
   },
   "class_why_pain_2": {
-   "en": "Peak {peak} on the {site}: above the human facial pain threshold.",
-   "ru": "Пик {peak} — ткань: {site}; выше лицевого болевого порога человека."
+   "en": "Peak {peak} on the {site}: above the human facial pressure-pain threshold.",
+   "ru": "Пик {peak} — ткань: {site}; выше порога болевой чувствительности лица человека."
   },
   "class_why_pain_3": {
-   "en": "Peak {peak} on the {site}: above the pain threshold of the human hand.",
-   "ru": "Пик {peak} — ткань: {site}; выше болевого порога кисти человека."
+   "en": "Peak {peak} on the {site}: above the human hand pressure-pain threshold.",
+   "ru": "Пик {peak} — ткань: {site}; выше порога болевой чувствительности кисти человека."
   },
   "class_why_injury_0": {
    "en": "No lesion is likely at this setting.",
@@ -625,12 +625,12 @@
    "ru": "Худший риск поражения: {risk}, {level}; поражение серьёзное, поэтому оно задаёт класс."
   },
   "class_why_injury_3": {
-   "en": "Worst lesion risk: {risk}, {level}; one expected lesion is enough for the red class.",
-   "ru": "Худший риск поражения: {risk}, {level}; одного ожидаемого поражения достаточно для красного класса."
+   "en": "Worst lesion risk: {risk}, {level}; one likely lesion is enough for this class.",
+   "ru": "Худший риск поражения: {risk}, {level}; одного вероятного поражения достаточно для этого класса."
   },
   "class_why_design_palate": {
-   "en": "Design: the mouthpiece is built to press the palate.",
-   "ru": "Конструкция: грызло создано давить на нёбо."
+   "en": "Design: the mouthpiece contacts the palate by construction.",
+   "ru": "Конструкция: грызло касается нёба по самому устройству."
   },
   "class_why_design_prongs": {
    "en": "Design: bristles or prongs against the cheek.",
@@ -649,8 +649,8 @@
    "ru": "разрывы углов губ"
   },
   "risk_name_bars": {
-   "en": "bruising and bone damage of the bars",
-   "ru": "ушибы и повреждение кости дёсен"
+   "en": "bruising and lesions of the bars",
+   "ru": "ушибы и поражения дёсен"
   },
   "risk_name_tongue": {
    "en": "tongue lacerations",
@@ -685,8 +685,8 @@
    "ru": "ограничение языка и помеха дыханию"
   },
   "risk_name_behaviour": {
-   "en": "pain behaviour",
-   "ru": "болевое поведение"
+   "en": "conflict behaviour",
+   "ru": "конфликтное поведение"
   },
   "control_sub": {
    "en": "stop {stop} · release {release} · signal {signal}",
@@ -701,12 +701,20 @@
    "ru": "толкает в другую сторону лишь в том смысле, что тише всего, когда ничего не просят: при длинной шее и носе вперёд его нагрузки наименьшие, и это не учит никакому поставу"
   },
   "btv_rollkur": {
-   "en": "drives it further: the loads fall away as the nose comes to the chest, so under a holding hand the horse is paid for hyperflexion",
-   "ru": "загоняет ещё глубже: нагрузки спадают по мере того, как нос идёт к груди, и под удерживающей рукой лошадь получает награду за гиперфлексию"
+   "en": "shows its lowest modelled peak in hyperflexion, but only because this static model holds rein tension constant; in practice hyperflexion is usually held with substantial tension, and its welfare costs are documented",
+   "ru": "показывает наименьший расчётный пик в гиперфлексии, но лишь потому, что статическая модель держит натяжение постоянным; на практике гиперфлексию обычно удерживают значительным натяжением, а её вред для благополучия задокументирован"
   },
   "posture_credit": {
    "en": "Drawings: head and neck after George Stubbs, The Anatomy of the Horse (1766), the first table of the muscles with the skull and cervical vertebrae of the skeleton table drawn inside, public domain (scan: Wellcome Collection); the six carriages follow the site author's sketches. The neck muscles and the vertebrae bend together; the head turns at the poll.",
    "ru": "Рисунки: голова и шея — по «Анатомии лошади» Джорджа Стаббса (1766), первая таблица мышц, внутри — череп и шейные позвонки с таблицы скелета; общественное достояние (скан: Wellcome Collection). Шесть положений — по наброскам автора сайта. Мышцы шеи и позвонки изгибаются вместе, голова поворачивается в затылочном суставе."
+  },
+  "bias_none": {
+   "en": "No clear mechanical preference: the peaks differ by less than the model’s margin",
+   "ru": "Явного механического предпочтения нет: пики различаются меньше погрешности модели"
+  },
+  "btv_none": {
+   "en": "shows no clear mechanical preference in this model, so the outcome depends on the hand",
+   "ru": "не даёт в этой модели явного механического предпочтения, поэтому результат зависит от руки"
   }
  },
  "model_params": [
@@ -920,18 +928,18 @@
   },
   {
    "group": "thresholds",
-   "key": "pain_free_upper",
+   "key": "lowest_reported",
    "label": {
-    "en": "Upper bound of pressures found pain-free",
-    "ru": "Верхняя граница безболезненных давлений"
+    "en": "Lowest pressure reported in the literature",
+    "ru": "Наименьшее давление, описанное в литературе"
    },
    "unit": {
     "en": "kPa",
     "ru": "кПа"
    },
    "basis": {
-    "en": "The lowest reported rein pressures (91–108 kPa) were the only ones judged likely pain-free against human thresholds (Musial & Weiss 2025).",
-    "ru": "Лишь самые низкие опубликованные давления повода (91–108 кПа) сочли вероятно безболезненными по человеческим порогам (Musial & Weiss 2025)."
+    "en": "The lowest published bit pressures (91–108 kPa, Musial & Weiss 2025, a commentary). A reference point, not a measured pain-free bound: no pressure-pain thresholds exist for the horse’s oral mucosa.",
+    "ru": "Самые низкие опубликованные давления удил (91–108 кПа, Musial & Weiss 2025, комментарий). Это ориентир, а не измеренная граница безболезненности: порогов болевой чувствительности для слизистой рта лошади нет."
    }
   },
   {
@@ -946,8 +954,8 @@
     "ru": "кПа"
    },
    "basis": {
-    "en": "Musial & Weiss 2025.",
-    "ru": "Musial & Weiss 2025."
+    "en": "Musial & Weiss 2025. Human skin values, used by analogy.",
+    "ru": "Musial & Weiss 2025. Значения для кожи человека, применяются по аналогии."
    }
   },
   {
@@ -962,8 +970,8 @@
     "ru": "кПа"
    },
    "basis": {
-    "en": "Musial & Weiss 2025.",
-    "ru": "Musial & Weiss 2025."
+    "en": "Musial & Weiss 2025. Human skin values, used by analogy.",
+    "ru": "Musial & Weiss 2025. Значения для кожи человека, применяются по аналогии."
    }
   },
   {
@@ -978,8 +986,8 @@
     "ru": "кПа"
    },
    "basis": {
-    "en": "Classic value of about 32 mmHg (Landis 1930); sustained pressure above it makes tissue ischaemic.",
-    "ru": "Классическое значение около 32 мм рт. ст. (Landis 1930); длительное давление выше него делает ткань ишемичной."
+    "en": "Classic capillary pressure of about 32 mmHg in human nailfold skin (Landis 1930). Sustained pressure above it can impede local blood flow; whether tissue is damaged depends on magnitude, duration and intermittency.",
+    "ru": "Классическое капиллярное давление около 32 мм рт. ст. в коже ногтевого валика человека (Landis 1930). Длительное давление выше него может нарушать местный кровоток; повредится ли ткань, зависит от величины, длительности и прерывистости нагрузки."
    }
   },
   {
@@ -994,8 +1002,8 @@
     "ru": "Н"
    },
    "basis": {
-    "en": "Between the ridden walk mean maximum (16.5 N) and trot (23.2 N) of Egenvall et al. 2019.",
-    "ru": "Между средними максимумами под всадником на шагу (16,5 Н) и рыси (23,2 Н) по Egenvall et al. 2019."
+    "en": "Between the ridden walk mean maximum (16.5 N) and trot (23.2 N) reported by Piccolo & Kienapfel 2019.",
+    "ru": "Между средними максимумами под всадником на шагу (16,5 Н) и рыси (23,2 Н) по Piccolo & Kienapfel 2019."
    }
   },
   {
@@ -1014,6 +1022,56 @@
     "en": "Riders hold the curb rein lighter than the snaffle or bradoon rein; measurements in a double bridle found the curb force below the bradoon force.",
     "ru": "Мундштучный повод держат легче трензельного; измерения в двойном оголовье показали силу на мундштуке ниже, чем на бридоне."
    }
+  },
+  {
+   "group": "mouth",
+   "key": "lift_full_tension",
+   "label": {
+    "en": "Rein tension for full lift",
+    "ru": "Натяжение для полного подъёма"
+   },
+   "unit": {
+    "en": "N",
+    "ru": "Н"
+   },
+   "basis": {
+    "en": "Modelling assumption: a gag or loose cheek is taken to reach its full travel up the mouth at the reference contact, and proportionally less below it, because the lips resist the rise.",
+    "ru": "Допущение модели: гаг или подвижная щёчка достигает полного хода вверх по рту при опорном натяжении и пропорционально меньшего ниже него, потому что губы сопротивляются подъёму."
+   }
+  },
+  {
+   "group": "defaults",
+   "key": "cheekpiece_moment_share",
+   "label": {
+    "en": "Share of a curb’s restoring moment taken by the cheekpiece",
+    "ru": "Доля возвращающего момента мундштука на нащёчном ремне"
+   },
+   "unit": {
+    "en": "",
+    "ru": ""
+   },
+   "basis": {
+    "en": "Modelling assumption, not a measured value. Direct force measurement (Cross et al. 2017) shows the chain takes most of the curb’s action and little reaches the poll.",
+    "ru": "Допущение модели, а не измеренное значение. Прямые измерения сил (Cross et al. 2017) показывают, что основную часть действия мундштука берёт цепочка, а до затылка доходит немного."
+   },
+   "digits": 2
+  },
+  {
+   "group": "defaults",
+   "key": "bias_margin",
+   "label": {
+    "en": "Margin for a head-carriage preference",
+    "ru": "Порог для предпочтения постава"
+   },
+   "unit": {
+    "en": "",
+    "ru": ""
+   },
+   "basis": {
+    "en": "A posture is reported as the device’s mechanical preference only when its modelled peak is at least this fraction below the next lowest; smaller differences are inside the model’s precision.",
+    "ru": "Постав называется механическим предпочтением устройства, только если его расчётный пик ниже следующего хотя бы на эту долю; меньшие различия лежат в пределах точности модели."
+   },
+   "digits": 2
   }
  ],
  "sources": [
