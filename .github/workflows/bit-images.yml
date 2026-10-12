@@ -10,7 +10,7 @@ on:
         required: true
         default: search
         type: choice
-        options: [search, search2, search3, fetch]
+        options: [search, search2, search3, openverse, fetch]
 
 permissions:
   contents: write
@@ -18,6 +18,7 @@ permissions:
 jobs:
   images:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - name: Search Wikimedia Commons
@@ -29,6 +30,9 @@ jobs:
       - name: Third round, anatomy references at 640 px
         if: ${{ inputs.stage == 'search3' }}
         run: QUERIES=queries3.json OUT=candidates3.json OUT_DIR=candidates3 REVIEW_WIDTH=640 node tools/bit-images/search.js
+      - name: Openverse search
+        if: ${{ inputs.stage == 'openverse' }}
+        run: node tools/bit-images/search-openverse.js
       - name: Download the chosen photographs
         if: ${{ inputs.stage == 'fetch' }}
         run: node tools/bit-images/fetch.js
