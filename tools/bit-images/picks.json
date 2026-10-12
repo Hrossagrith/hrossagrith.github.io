@@ -141,10 +141,10 @@
    }
   },
   "maghreb-ring-curb": {
-   "pageid": 65049692,
+   "id": "c5d8f955",
    "caption": {
-    "en": "Maghreb ring bit (Metropolitan Museum of Art)",
-    "ru": "Магрибские кольцевые удила (музей Метрополитен)"
+    "en": "Mexican ring bit (Kentucky Horse Park)",
+    "ru": "Мексиканские кольцевые удила (Кентуккийский конный парк)"
    }
   },
   "liverpool": {
@@ -364,6 +364,13 @@
    "caption": {
     "en": "Show curb with a cricket in a medium port",
     "ru": "Шоу-мундштук с роликом в среднем порте"
+   }
+  },
+  "chain": {
+   "id": "1dbb4fbf",
+   "caption": {
+    "en": "Chain-mouth snaffle (Metropolitan Museum of Art)",
+    "ru": "Трензель с цепным грызлом (музей Метрополитен)"
    }
   }
  },

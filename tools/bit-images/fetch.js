@@ -26,6 +26,10 @@ for (const file of candidateFiles) {
 }
 
 function byPageId(pageid) {
+  if (typeof pageid === "string") {
+    /* Openverse candidates carry a UUID; picks may give its first characters. */
+    return pool.find((c) => typeof c.id === "string" && c.id.indexOf(pageid) === 0);
+  }
   return pool.find((c) => c.pageid === pageid);
 }
 
@@ -33,7 +37,7 @@ function byPageId(pageid) {
    by hand fails (HTTP 400) on files whose names need encoding or are
    already smaller than the wanted width. */
 async function fullThumb(c) {
-  if (c.pageid == null) { return c.thumb; }
+  if (c.pageid == null) { return c.url || c.thumb; }
   const params = new URLSearchParams({ action: "query", pageids: String(c.pageid), prop: "imageinfo", iiprop: "url|size", iiurlwidth: String(WIDTH), format: "json" });
   const res = await fetch("https://commons.wikimedia.org/w/api.php?" + params.toString(), { headers });
   if (!res.ok) { throw new Error("API " + res.status); }
@@ -50,7 +54,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   for (const kind of Object.keys(dirs)) {
     for (const id of Object.keys(picks[kind] || {})) {
       const pick = picks[kind][id];
-      const pageid = typeof pick === "number" ? pick : pick.pageid;
+      const pageid = typeof pick === "number" ? pick : (pick.pageid != null ? pick.pageid : pick.id);
       const c = byPageId(pageid);
       if (!c) { console.error("no candidate", kind, id, pageid); continue; }
       const ext = /png/.test(c.mime) ? "png" : "jpg";
@@ -65,6 +69,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       const scale = Math.min(1, WIDTH / c.width);
       images[kind][id] = {
         file: rel, title: c.title, source: c.page, author: c.artist, license: c.license, license_url: c.licenseUrl,
+        provider: c.pageid != null ? "Wikimedia Commons" : (c.provider || c.source || "Openverse"),
         width: Math.round(c.width * scale), height: Math.round(c.height * scale),
         caption: typeof pick === "object" && pick.caption ? pick.caption : undefined
       };
