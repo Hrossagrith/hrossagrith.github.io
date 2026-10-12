@@ -36,3 +36,5 @@ jobs:
             echo "== curl -sI $url"
             curl -sI -m 20 "$url" | grep -i -E "^(HTTP|location|server|content-type)" || echo "curl exit $?"
           done
+          echo "== page-level HTTPS redirect in the served HTML"
+          curl -s -m 20 http://hrossagrith.com/ | grep -c "Serve the site over HTTPS only" || echo "not found"
