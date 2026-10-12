@@ -1490,10 +1490,39 @@
     var SCALE_A = 0.5; /* px per mm inside the head group */
     var ORIGIN_A = { x: 300, y: 280 }; /* where the bit sits in the figure */
     var ZOOM_A = 0.82; /* the head group is scaled so the ears fit */
+    var DRAWING_SCALE = ZOOM_A * SCALE_A; /* figure px per drawing px: the drawings are about 1 px per mm */
 
-    function rot(point, deg) {
-      var a = deg * Math.PI / 180;
-      return { x: point.x * Math.cos(a) - point.y * Math.sin(a), y: point.x * Math.sin(a) + point.y * Math.cos(a) };
+    /* The head frame of the chosen carriage, from the drawing's anchor points:
+       local y runs from the bit towards the poll (negative), local x towards
+       the mandible. Returns the frame as unit vectors in figure coordinates
+       and the anchors in local (mm) coordinates. */
+    var FRAME = null;
+
+    function headFrame(posture) {
+      var a = posture.anchors;
+      var bit = { x: a.bit[0], y: a.bit[1] };
+      var toPoll = { x: a.poll[0] - bit.x, y: a.poll[1] - bit.y };
+      var len = Math.sqrt(toPoll.x * toPoll.x + toPoll.y * toPoll.y) || 1;
+      var up = { x: toPoll.x / len, y: toPoll.y / len };
+      var side = { x: -up.y, y: up.x };
+      var toChin = { x: a.chin[0] - bit.x, y: a.chin[1] - bit.y };
+      if (side.x * toChin.x + side.y * toChin.y < 0) { side = { x: up.y, y: -up.x }; }
+      /* Drawing pixels are about one per millimetre; local units are mm × SCALE_A. */
+      function local(point) {
+        var dx = point[0] - bit.x;
+        var dy = point[1] - bit.y;
+        var k = DRAWING_SCALE / ZOOM_A;
+        return { x: (dx * side.x + dy * side.y) * k, y: -(dx * up.x + dy * up.y) * k };
+      }
+      return { up: up, side: side, bit: bit, poll: local(a.poll), chin: local(a.chin), nose: local(a.nose) };
+    }
+
+    /* Local (head frame) point to figure coordinates. */
+    function toWorld(point) {
+      var k = ZOOM_A;
+      var fx = ORIGIN_A.x + k * (point.x * FRAME.side.x - point.y * FRAME.up.x);
+      var fy = ORIGIN_A.y + k * (point.x * FRAME.side.y - point.y * FRAME.up.y);
+      return { x: fx, y: fy };
     }
 
     function arrow(id, from, dir, length) {
@@ -1517,17 +1546,29 @@
         label.textContent = "";
         return;
       }
-      var world = rot(pointHead, headRotation);
-      attrs(label, { x: ORIGIN_A.x + ZOOM_A * world.x + (dx || 0), y: ORIGIN_A.y + ZOOM_A * world.y + (dy || 0) });
+      var world = toWorld(pointHead);
+      attrs(label, { x: world.x + (dx || 0), y: world.y + (dy || 0) });
       label.textContent = text;
     }
 
     function figureA(res) {
       var f = res.forces;
       var theta = res.inputs.theta;
-      var headRotation = 90 - theta;
+      var posture = M.byId(CATALOG.postures, state.posture);
+      FRAME = headFrame(posture);
+      /* The drawing is placed so that its bit anchor sits at the figure origin;
+         the mechanical parts are drawn in the head frame derived from it. */
+      var drawing = el("fa-drawing");
+      var drawPath = dataBase.replace(/data\/bits\/$/, "") + CATALOG.posture_drawings.path + posture.image;
+      drawing.setAttribute("href", drawPath);
+      attrs(drawing, {
+        x: ORIGIN_A.x - FRAME.bit.x * DRAWING_SCALE, y: ORIGIN_A.y - FRAME.bit.y * DRAWING_SCALE,
+        width: posture.size[0] * DRAWING_SCALE, height: posture.size[1] * DRAWING_SCALE
+      });
+      var up = FRAME.up, side = FRAME.side;
       var head = el("fa-head");
-      head.setAttribute("transform", "rotate(" + headRotation.toFixed(1) + ")");
+      head.setAttribute("transform", "matrix(" + f1(side.x) + " " + f1(side.y) + " " + f1(-up.x) + " " + f1(-up.y) + " 0 0)");
+      var headRotation = 0;
       el("fa-world").setAttribute("transform", "translate(" + ORIGIN_A.x + " " + ORIGIN_A.y + ") scale(" + ZOOM_A + ")");
       var handLine = el("fa-handline");
       attrs(handLine, { x1: ORIGIN_A.x, y1: ORIGIN_A.y, y2: ORIGIN_A.y });
@@ -1541,9 +1582,9 @@
       var hasShank = leverMech && (p > 0 || s > 0);
       var upper = hasShank ? { x: -p * Math.sin(rho), y: -p * Math.cos(rho) } : { x: 0, y: cheekId === "baucher" ? -(ch.purchase || 25) * SCALE_A : 0 };
       var lower = hasShank ? { x: s * Math.sin(rho), y: s * Math.cos(rho) } : { x: 0, y: 0 };
-      var poll = { x: 14, y: -256 };
-      var chin = { x: 36, y: 14 };
-      var nose = { x: -50, y: -70 };
+      var poll = FRAME.poll;
+      var chin = FRAME.chin;
+      var nose = FRAME.nose;
 
       var shank = el("fa-shank");
       shank.setAttribute("d", hasShank ? "M" + f1(upper.x) + " " + f1(upper.y) + " L0 0 L" + f1(lower.x) + " " + f1(lower.y) : (cheekId === "baucher" ? "M0 0 L0 " + f1(upper.y) : ""));
@@ -1572,11 +1613,13 @@
       var nosePath = el("fa-nose");
       nosePath.setAttribute("d", (ch.share_nose || 0) > 0 ? "M" + f1(upper.x) + " " + f1(upper.y) + " Q" + f1((upper.x + nose.x) / 2 - 10) + " " + f1((upper.y + nose.y) / 2) + " " + nose.x + " " + nose.y : "");
       var checkPath = el("fa-check");
-      checkPath.setAttribute("d", mech === "check" ? "M0 0 C-30 -60 -52 -140 -46 -290" : "");
+      checkPath.setAttribute("d", mech === "check" ? "M0 0 Q" + f1(nose.x - 20) + " " + f1(nose.y) + " " + f1(poll.x - 60) + " " + f1(poll.y - 10) : "");
 
       var maxForce = Math.max(f.Fdirect, f.Flever, f.Fpulley, f.chain, f.cheekpiece, f.jawLoad / 2, f.noseLoad / 2, Math.sqrt(f.sumX * f.sumX + f.sumY * f.sumY), 1);
       var k = Math.min(2.5, 150 / maxForce);
-      var reinDir = { x: Math.sin(theta * Math.PI / 180), y: -Math.cos(theta * Math.PI / 180) };
+      /* The rein runs level towards the hand: figure +x expressed in the head frame. */
+      var reinDir = { x: side.x, y: -up.x };
+      if (mech === "check") { reinDir = { x: Math.sin(theta * Math.PI / 180), y: -Math.cos(theta * Math.PI / 180) }; }
 
       var atBit = f.Fdirect + f.Fpulley;
       var reinFrom = hasShank && f.Flever > 0 ? lower : { x: 0, y: 0 };
@@ -1614,7 +1657,6 @@
       labelAt("fa-l-reaction", tipReaction, headRotation, "R", -8, 16);
       el("fa-l-reaction").setAttribute("text-anchor", "end");
 
-      var posture = M.byId(CATALOG.postures, state.posture);
       el("fa-l-posture").textContent = mech === "check" ? ui("posture_check", "Check rein: lift along the face at every carriage") : t(posture.name) + " · θ = " + theta + "°";
       el("fa-l-amp").textContent = fill(ui("amp_line", "Force onto tongue and bars: {press} ({amp}× the rein component in that direction)"), {
         press: N(f.pressTotal), amp: num(f.amplification, 1)
@@ -1824,11 +1866,18 @@
     /* ---------- Figure E: posture landscape ---------- */
 
     function figureE(land) {
-      var scale = 150 / Math.max(120, Math.max.apply(null, land.postures.map(function (p) { return p.peak; })));
-      land.postures.forEach(function (p) {
-        var g = document.querySelector('[data-posture="' + p.id + '"]');
+      var scale = 135 / Math.max(120, Math.max.apply(null, land.postures.map(function (p) { return p.peak; })));
+      var drawBase = dataBase.replace(/data\/bits\/$/, "") + CATALOG.posture_drawings.path;
+      field("posture-credit", ui("posture_credit", ""));
+      land.postures.forEach(function (p, index) {
+        var g = document.querySelector('[data-posture-col="' + index + '"]');
         if (!g) { return; }
-        var h = Math.min(150, p.peak * scale);
+        var posture = M.byId(CATALOG.postures, p.id);
+        var glyph = g.querySelector("image");
+        if (glyph && posture) { glyph.setAttribute("href", drawBase + posture.image); }
+        g.querySelector(".lab").textContent = posture ? t(posture.label) : p.id;
+        g.querySelector(".lab2").textContent = posture ? t(posture.sub) : "";
+        var h = Math.min(135, p.peak * scale);
         var col = g.querySelector(".col");
         attrs(col, { height: h, y: 270 - h, rx: 4 });
         col.setAttribute("class", "col viz-bar" + (p.id === land.bias ? "" : " viz-bar--dim"));
@@ -1987,12 +2036,12 @@
       say("cheek-squeeze", (ch.cheek_squeeze || 0) > 0);
       say("held-high", (ch.held_high || 0) > 0);
 
-      ["above", "correct", "vertical", "btv"].forEach(function (id) { say("bias-" + id, mech !== "check" && land.bias === id); });
+      CATALOG.postures.forEach(function (posture) { say("bias-" + posture.id, mech !== "check" && land.bias === posture.id); });
       say("curb-head", chained);
       say("gag-head", mech === "gag-slide" || mech === "gag-curb" || (mech === "gag-lever" && leverNoChain));
       say("check-head", mech === "check");
       say("btv-horse", mech !== "check");
-      field("btv-verdict", ui("btv_" + land.bias, ""));
+      field("btv-verdict", ui("btv_" + String(land.bias).replace(/-/g, "_"), ""));
 
       say("v-reference", true);
       field("ref-peak", kPa(ref.result.pressures.peak));

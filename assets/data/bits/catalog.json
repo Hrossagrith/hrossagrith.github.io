@@ -5514,11 +5514,81 @@
  ],
  "postures": [
   {
-   "id": "above",
+   "id": "not-collected",
    "theta": 20,
    "name": {
-    "en": "Above the vertical, nose out",
-    "ru": "Выше вертикали, нос вперёд"
+    "en": "Not collected: nose forward, neck long",
+    "ru": "Несобранная: нос вперёд, шея вытянута"
+   },
+   "label": {
+    "en": "Not collected",
+    "ru": "Несобранная"
+   },
+   "sub": {
+    "en": "neck long",
+    "ru": "шея длинная"
+   },
+   "image": "not-collected.png",
+   "size": [
+    900,
+    671
+   ],
+   "anchors": {
+    "bit": [
+     135,
+     200
+    ],
+    "poll": [
+     540,
+     130
+    ],
+    "chin": [
+     140,
+     255
+    ],
+    "nose": [
+     230,
+     110
+    ]
+   }
+  },
+  {
+   "id": "above",
+   "theta": 35,
+   "name": {
+    "en": "Above the bit: head high, nose out, back hollow",
+    "ru": "«Над поводом»: голова высоко, нос вперёд, спина провалена"
+   },
+   "label": {
+    "en": "Above the bit",
+    "ru": "Над поводом"
+   },
+   "sub": {
+    "en": "hollow, nose out",
+    "ru": "спина провалена"
+   },
+   "image": "above.png",
+   "size": [
+    900,
+    704
+   ],
+   "anchors": {
+    "bit": [
+     160,
+     400
+    ],
+    "poll": [
+     400,
+     130
+    ],
+    "chin": [
+     170,
+     455
+    ],
+    "nose": [
+     170,
+     280
+    ]
    }
   },
   {
@@ -5527,6 +5597,37 @@
    "name": {
     "en": "Poll highest, nose slightly in front of the vertical",
     "ru": "Затылок — высшая точка, нос чуть впереди вертикали"
+   },
+   "label": {
+    "en": "Poll highest",
+    "ru": "Затылок выше всего"
+   },
+   "sub": {
+    "en": "nose in front",
+    "ru": "нос впереди"
+   },
+   "image": "correct.png",
+   "size": [
+    900,
+    734
+   ],
+   "anchors": {
+    "bit": [
+     170,
+     505
+    ],
+    "poll": [
+     230,
+     160
+    ],
+    "chin": [
+     215,
+     545
+    ],
+    "nose": [
+     120,
+     330
+    ]
    }
   },
   {
@@ -5535,6 +5636,37 @@
    "name": {
     "en": "On the vertical",
     "ru": "На вертикали"
+   },
+   "label": {
+    "en": "On the vertical",
+    "ru": "На вертикали"
+   },
+   "sub": {
+    "en": "",
+    "ru": ""
+   },
+   "image": "vertical.png",
+   "size": [
+    900,
+    686
+   ],
+   "anchors": {
+    "bit": [
+     150,
+     540
+    ],
+    "poll": [
+     160,
+     150
+    ],
+    "chin": [
+     195,
+     560
+    ],
+    "nose": [
+     70,
+     380
+    ]
    }
   },
   {
@@ -5543,6 +5675,76 @@
    "name": {
     "en": "Behind the vertical",
     "ru": "За вертикалью"
+   },
+   "label": {
+    "en": "Behind the vertical",
+    "ru": "За вертикалью"
+   },
+   "sub": {
+    "en": "curled",
+    "ru": "нос к груди"
+   },
+   "image": "btv.png",
+   "size": [
+    900,
+    694
+   ],
+   "anchors": {
+    "bit": [
+     345,
+     562
+    ],
+    "poll": [
+     160,
+     150
+    ],
+    "chin": [
+     395,
+     575
+    ],
+    "nose": [
+     190,
+     420
+    ]
+   }
+  },
+  {
+   "id": "rollkur",
+   "theta": 115,
+   "name": {
+    "en": "Hyperflexion (rollkur): nose to the chest",
+    "ru": "Гиперфлексия (роллкур): нос к груди"
+   },
+   "label": {
+    "en": "Hyperflexion",
+    "ru": "Гиперфлексия"
+   },
+   "sub": {
+    "en": "rollkur",
+    "ru": "роллкур"
+   },
+   "image": "rollkur.png",
+   "size": [
+    900,
+    684
+   ],
+   "anchors": {
+    "bit": [
+     410,
+     568
+    ],
+    "poll": [
+     150,
+     335
+    ],
+    "chin": [
+     455,
+     585
+    ],
+    "nose": [
+     230,
+     540
+    ]
    }
   }
  ],
@@ -8499,5 +8701,12 @@
    "severity_for_class_2": 0.7,
    "design_edge": 1.9
   }
+ },
+ "posture_drawings": {
+  "credit": {
+   "en": "Head and neck drawings by the site author",
+   "ru": "Рисунки головы и шеи — автор сайта"
+  },
+  "path": "img/postures/"
  }
 }
