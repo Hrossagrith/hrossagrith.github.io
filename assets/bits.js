@@ -794,6 +794,9 @@
     var container = document.querySelector("[data-dossier]");
 
     if (!cheek || !mouth || M.validity(CATALOG, cheekId, mouthId) === "invalid") {
+      var impossible = !!(cheek && mouth);
+      show(missing.querySelector('[data-missing-reason="none"]'), !impossible);
+      show(missing.querySelector('[data-missing-reason="impossible"]'), impossible);
       show(missing, true);
       return;
     }

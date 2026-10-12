@@ -80,7 +80,8 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <p class="bits-print-url" data-print-url></p>
 
   <div class="bits-empty" data-missing hidden>
-    <p>No combination is selected. <a href="../">Return to the register</a> and choose a cheek and a mouthpiece.</p>
+    <p data-missing-reason="none">No combination is selected. <a href="../">Return to the register</a> and choose a cheek and a mouthpiece.</p>
+    <p data-missing-reason="impossible" hidden>This cheek and this mouthpiece cannot be assembled into one bit, so there is no dossier for them. <a href="../">Return to the register</a>: impossible combinations are shown with a dashed outline in the matrix.</p>
   </div>
 
   <div data-dossier hidden>
