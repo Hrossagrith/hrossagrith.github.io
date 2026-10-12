@@ -1,0 +1,24 @@
+{
+ "commons": {
+  "files": [
+   "Stubbs Anatomy of the Horse", "Stubbs anatomical table muscles horse", "Stubbs finished study anatomical table",
+   "George Stubbs anatomy horse muscles", "Stubbs horse skeleton anatomical table", "Anatomy of the Horse 1766 plate",
+   "Leisering Atlas Anatomie Pferd", "Gurlt anatomische Abbildungen Pferd", "Ruini Anatomia del cavallo",
+   "Landseer horse head muscles", "horse head neck muscles lateral", "Pferd Hals Muskeln Tafel", "horse superficial muscles lateral",
+   "cheval écorché planche muscles", "Pferd Muskulatur Tafel", "horse musculature illustration", "equine neck muscles anatomy",
+   "Rollkur", "hyperflexion horse dressage", "horse behind the vertical", "dressage horse on the bit profile",
+   "horse above the bit", "horse head carriage dressage", "dressage horse collected trot profile", "horse long and low",
+   "horse stretching neck forward trot", "horse grazing profile head neck", "Pferd Kopf Hals Haltung", "Rollkur Pferd"
+  ],
+  "categories": [
+   "Stubbs Anatomy Horse", "Anatomy of the Horse (Stubbs)", "Rollkur", "Horse anatomy illustrations", "Equine anatomy drawings", "Leisering"
+  ]
+ },
+ "wellcome": ["Stubbs anatomy of the horse", "horse muscles head", "horse anatomy muscles", "Leisering atlas Pferd", "Gurlt Haus-Säugethiere", "horse ecorche", "Ruini cavallo"],
+ "met": ["Stubbs Anatomy of the Horse", "anatomical table horse", "horse anatomy ecorche", "horse head study"],
+ "aic": ["horse anatomy", "Stubbs horse", "ecorche horse", "horse head study"],
+ "cleveland": ["horse anatomy", "Stubbs", "ecorche horse", "horse head"],
+ "archive": ["Stubbs anatomy horse", "Leisering atlas anatomie pferdes", "Gurlt anatomische abbildungen haus-saugethiere", "Ellenberger handbuch anatomie tiere kunstler", "atlas anatomy horse"],
+ "book_page_limit": 200,
+ "book_limit": 8
+}

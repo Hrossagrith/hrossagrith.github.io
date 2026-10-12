@@ -10,7 +10,7 @@ on:
         required: true
         default: search
         type: choice
-        options: [search, search2, search3, search4, openverse, fetch, refs]
+        options: [search, search2, search3, search4, openverse, fetch, refs, research]
 
 permissions:
   contents: write
@@ -39,6 +39,9 @@ jobs:
       - name: Openverse search
         if: ${{ inputs.stage == 'openverse' }}
         run: node tools/bit-images/search-openverse.js
+      - name: Anatomical plates and carriage photographs from open-access collections
+        if: ${{ inputs.stage == 'research' }}
+        run: node tools/bit-images/research.js
       - name: Download the chosen photographs
         if: ${{ inputs.stage == 'fetch' }}
         run: node tools/bit-images/fetch.js
