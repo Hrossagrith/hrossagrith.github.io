@@ -2,6 +2,13 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Imperial law &mdash; The Empire of Hrossagri&#240;</title>
 <meta name="description" content="The imperial legal corpus of Hrossagrith: codes in force, technical standards, official templates, and law reserved for drafting.">

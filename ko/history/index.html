@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>역사 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="흐로사그리드 사람들의 초기 역사, 기원전 c. 1200-100년: 도하 위기, 비호 협약, 세 경로 협정.">

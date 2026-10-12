@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 말과 동물 복지 일반 법전 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="사람의 보관이나 통제 아래 놓인 모든 말과 동물과 그에 대하여 책임 있는 모든 사람에게 적용되는 제국의 일반 복지 법전.">

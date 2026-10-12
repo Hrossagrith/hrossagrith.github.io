@@ -2,6 +2,13 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>历史 &mdash; 赫罗萨格里德帝国</title>
 <meta name="description" content="赫罗萨格里德人的早期历史，公元前 c. 1200-100 年：渡越危机、庇护公约、三路协定。">

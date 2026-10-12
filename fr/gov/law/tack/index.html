@@ -2,6 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Code impérial du harnachement, de la contention et du bien-être &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
 <meta name="description" content="L’équipement placé sur l’équidé et les limites de la contention : mors, dispositifs sans mors, harnais, éperons, fouets et contrôle de l’application.">

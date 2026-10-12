@@ -2,6 +2,13 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>教育与儿童 &mdash; 赫罗萨格里德帝国</title>
 <meta name="description" content="各级免费教育、免费托育，以及对儿童的保护。">

@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 마차 말과 동물 도로·작업 증명서 서식 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="공도에서의 마차 작업에 대하여 말과 동물의 적법 능력, 제한 및 인증 결정을 적는 공식 백지 증명서 서식.">

@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 마차 조명 및 신호 표준 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="마차 등화, 비상 경고, 조명이 들어오는 도로 통행 상태 마커, 그리고 말과 동물을 위한 지면 유도등에 관한 구속력 있는 표준.">

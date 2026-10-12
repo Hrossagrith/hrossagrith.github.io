@@ -2,6 +2,13 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>帝国公共道路马科动物状态标记标准 &mdash; 赫罗萨格里德帝国</title>
 <meta name="description" content="每一只公共道路马科动物必须显示的面部标记：可更换的状态嵌片及其尺寸、逆反射、发光、优先顺序与防伪管控。">

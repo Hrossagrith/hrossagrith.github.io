@@ -2,6 +2,13 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kaiserlicher Technischer Standard für Notfall-Sanitätskutschen &mdash; Das Kaiserreich Hrossagri&#240;</title>
 <meta name="description" content="Bauart, Prüfung und Zertifizierung von Notfall-Sanitätskutschen, ihrer Gespanne, ihrer Strecken und ihrer Besatzungen.">

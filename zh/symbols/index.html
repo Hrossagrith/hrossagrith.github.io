@@ -2,6 +2,13 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>名称与符号 &mdash; 赫罗萨格里德帝国</title>
 <meta name="description" content="赫罗萨格里德帝国的规范形式、古诺尔斯语词源、正确用法、国旗与国兽。">

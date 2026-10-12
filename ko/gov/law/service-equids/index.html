@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 공무 말과 동물 선발 및 품종 표준 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="공무 말과 동물의 선발, 개체별 인증, 기능적 유형, 결격 사유가 되는 과장, 검토 및 퇴역에 관한 구속력 있는 표준.">

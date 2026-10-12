@@ -2,6 +2,13 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kaiserlicher Standard für die klimatische Belastung von Pferden &mdash; Das Kaiserreich Hrossagri&#240;</title>
 <meta name="description" content="Witterung, Oberfläche, Sicht und Arbeitsbelastung bei Equiden: die fünf Stufen der klimatischen Belastung und die gemessenen Schwellenwerte, die sie zuweisen.">

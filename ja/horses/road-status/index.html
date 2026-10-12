@@ -2,6 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>道路資格マーカー &mdash; フロッサグリーズ帝国</title>
 <meta name="description" content="帝国公道ウマ科動物資格標示規格。地色、縁、記号、寸法、照明、優先順位および罰則。">

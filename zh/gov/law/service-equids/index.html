@@ -2,6 +2,13 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>帝国勤务马科动物选拔与品种标准 &mdash; 赫罗萨格里德帝国</title>
 <meta name="description" content="勤务马科动物如何选拔与个体认证：功能类型、性情测试、构成取消资格的过度特征、复审与退役。">

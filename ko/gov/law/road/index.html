@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 도로·마부 법전 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="공도 위의 말과 동물, 기수, 마부 및 차량에 대한 도로 권한, 면허, 우선순위와 교통상의 행위, 그리고 국가 교통 구조를 정한다.">

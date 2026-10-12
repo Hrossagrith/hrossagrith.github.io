@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 마구 계측 규정 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="제국 마구·구속구·복지 법전에 따라 마구를 측정하는 방법과 허용되는 폭, 지렛대 한계, 해제 시간 및 재료.">
