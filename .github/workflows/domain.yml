@@ -29,3 +29,10 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node tools/domain/domain.js
+      - name: Response headers
+        if: ${{ inputs.mode != 'apply' }}
+        run: |
+          for url in http://hrossagrith.com https://hrossagrith.com http://www.hrossagrith.com https://www.hrossagrith.com https://hrossagrith.github.io; do
+            echo "== curl -sI $url"
+            curl -sI -m 20 "$url" | grep -i -E "^(HTTP|location|server|content-type)" || echo "curl exit $?"
+          done
