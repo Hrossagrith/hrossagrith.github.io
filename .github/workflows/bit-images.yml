@@ -10,7 +10,7 @@ on:
         required: true
         default: search
         type: choice
-        options: [search, fetch]
+        options: [search, search2, fetch]
 
 permissions:
   contents: write
@@ -23,6 +23,9 @@ jobs:
       - name: Search Wikimedia Commons
         if: ${{ inputs.stage == 'search' }}
         run: node tools/bit-images/search.js
+      - name: Second search round and category crawl
+        if: ${{ inputs.stage == 'search2' }}
+        run: QUERIES=queries2.json OUT=candidates2.json OUT_DIR=candidates2 node tools/bit-images/search.js
       - name: Download the chosen photographs
         if: ${{ inputs.stage == 'fetch' }}
         run: node tools/bit-images/fetch.js
