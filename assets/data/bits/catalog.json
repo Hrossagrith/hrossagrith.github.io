@@ -5530,25 +5530,25 @@
    },
    "image": "not-collected.png",
    "size": [
-    900,
-    671
+    1038,
+    759
    ],
    "anchors": {
     "bit": [
-     135,
-     200
+     110,
+     410
     ],
     "poll": [
-     540,
-     130
+     509,
+     140
     ],
     "chin": [
-     140,
-     255
+     109,
+     451
     ],
     "nose": [
-     230,
-     110
+     161,
+     308
     ]
    }
   },
@@ -5569,25 +5569,25 @@
    },
    "image": "above.png",
    "size": [
-    900,
-    704
+    962,
+    756
    ],
    "anchors": {
     "bit": [
-     160,
-     400
+     108,
+     500
     ],
     "poll": [
-     400,
-     130
+     430,
+     141
     ],
     "chin": [
-     170,
-     455
+     117,
+     540
     ],
     "nose": [
-     170,
-     280
+     133,
+     389
     ]
    }
   },
@@ -5608,25 +5608,25 @@
    },
    "image": "correct.png",
    "size": [
-    900,
-    734
+    785,
+    692
    ],
    "anchors": {
     "bit": [
-     170,
-     505
+     110,
+     592
     ],
     "poll": [
-     230,
-     160
+     177,
+     113
     ],
     "chin": [
-     215,
-     545
+     141,
+     619
     ],
     "nose": [
-     120,
-     330
+     69,
+     485
     ]
    }
   },
@@ -5647,25 +5647,25 @@
    },
    "image": "vertical.png",
    "size": [
-    900,
-    686
+    738,
+    684
    ],
    "anchors": {
     "bit": [
-     150,
-     540
+     145,
+     576
     ],
     "poll": [
-     160,
-     150
+     110,
+     95
     ],
     "chin": [
-     195,
-     560
+     180,
+     597
     ],
     "nose": [
-     70,
-     380
+     82,
+     481
     ]
    }
   },
@@ -5686,25 +5686,25 @@
    },
    "image": "btv.png",
    "size": [
-    900,
-    694
+    786,
+    633
    ],
    "anchors": {
     "bit": [
-     345,
-     562
+     330,
+     522
     ],
     "poll": [
-     160,
-     150
+     133,
+     82
     ],
     "chin": [
-     395,
-     575
+     370,
+     530
     ],
     "nose": [
-     190,
-     420
+     239,
+     454
     ]
    }
   },
@@ -5725,25 +5725,25 @@
    },
    "image": "rollkur.png",
    "size": [
-    900,
-    684
+    820,
+    638
    ],
    "anchors": {
     "bit": [
-     410,
-     568
+     515,
+     530
     ],
     "poll": [
-     150,
-     335
+     140,
+     226
     ],
     "chin": [
-     455,
-     585
+     555,
+     518
     ],
     "nose": [
-     230,
-     540
+     403,
+     510
     ]
    }
   }
@@ -8704,10 +8704,36 @@
  },
  "posture_drawings": {
   "credit": {
-   "en": "Head and neck drawings by the site author",
-   "ru": "Рисунки головы и шеи — автор сайта"
+   "en": "Head after Ellenberger, Baum and Dittrich, Handbuch der Anatomie der Tiere für Künstler (1898); skull and cervical column after Blainville, Ostéographie (1839–1864); both public domain, via Wikimedia Commons. The six carriages follow the site author's sketches.",
+   "ru": "Голова — по Элленбергеру, Бауму и Дитриху, Handbuch der Anatomie der Tiere für Künstler (1898); череп и шейные позвонки — по Бленвилю, Ostéographie (1839–1864); оба источника в общественном достоянии, Wikimedia Commons. Шесть положений — по наброскам автора сайта."
   },
+  "sources": [
+   {
+    "id": "ellenberger-head",
+    "title": "Horse anatomy head.jpg",
+    "artist": "Wilhelm Ellenberger, Hermann Baum; Hermann Dittrich (illustrator)",
+    "work": "Handbuch der Anatomie der Tiere für Künstler, Leipzig 1898, Tafel 6, Fig. 30",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Horse_anatomy_head.jpg"
+   },
+   {
+    "id": "blainville-skeleton",
+    "title": "Description iconographique comparée du squelette et du système dentaire des mammifères récents et fossiles (Equus ferus caballus).jpg",
+    "artist": "Henri-Marie Ducrotay de Blainville",
+    "work": "Ostéographie, Paris 1839–1864",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Description_iconographique_compar%C3%A9e_du_squelette_et_du_syst%C3%A8me_dentaire_des_mammif%C3%A8res_r%C3%A9cents_et_fossiles_(Equus_ferus_caballus).jpg"
+   },
+   {
+    "id": "author-sketches",
+    "title": "Six head-carriage sketches",
+    "artist": "site author",
+    "work": "kept in img/postures/author/",
+    "license": "site author"
+   }
+  ],
   "path": "img/postures/",
-  "version": 2
+  "author_sketches_path": "img/postures/author/",
+  "version": 3
  }
 }
