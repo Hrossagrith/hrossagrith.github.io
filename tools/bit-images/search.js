@@ -100,7 +100,7 @@ async function crawl(rootTitle, maxDepth, maxFiles) {
   const outDir = process.env.OUT_DIR || "candidates";
   const out = { generated: new Date().toISOString(), cheeks: {}, mouthpieces: {}, pairings: {}, categories: [] };
   for (const root of (q.categories || [])) {
-    const files = await crawl(root, 3, 1500);
+    const files = await crawl(root, 2, Number(process.env.CATEGORY_LIMIT || 1500));
     console.log("category", root, files.length);
     for (const c of files) {
       const ext = /png/.test(c.mime) ? "png" : "jpg";

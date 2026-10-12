@@ -1,0 +1,11 @@
+{
+ "categories": ["Category:Equine skulls", "Category:Equus caballus skulls", "Category:Horse skeletons", "Category:Skeletons of Equus caballus", "Category:Handbuch der Anatomie der Tiere für Künstler", "Category:Horse anatomy diagrams", "Category:Equine cervical vertebrae"],
+ "cheeks": {
+  "_skull_lateral": ["horse skull lateral view", "Pferdeschädel seitlich", "Equus caballus skull side", "crâne de cheval profil", "horse skull diagram", "equine skull bones labelled"],
+  "_skeleton": ["Ellenberger horse skeleton", "Handbuch der Anatomie der Tiere für Künstler Pferd Skelett", "horse skeleton lateral drawing", "Pferdeskelett Zeichnung", "Stubbs anatomy of the horse skeleton", "cheval squelette planche"],
+  "_neck": ["horse cervical vertebrae lateral", "Halswirbel Pferd", "atlas axis horse skeleton", "nuchal ligament horse", "horse neck anatomy diagram", "equine head neck anatomy drawing"],
+  "_head_muscles": ["Ellenberger horse head muscles", "Pferd Kopf Muskeln Zeichnung", "horse head anatomy plate", "Stubbs horse head"]
+ },
+ "mouthpieces": {},
+ "pairings": {}
+}
