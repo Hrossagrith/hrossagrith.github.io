@@ -24,6 +24,7 @@ async function search(term) {
     if (res.status === 429) {
       const wait = Number(res.headers.get("retry-after")) || 900;
       console.log("429 for", JSON.stringify(term), limitInfo, "waiting", wait, "s");
+      if (wait > 1800) { throw new Error("QUOTA"); }
       await sleep(wait * 1000 + 2000);
       continue;
     }
@@ -58,7 +59,10 @@ async function download(url, target) {
           for (const c of await search(term)) {
             if (!seen.has(c.id) && list.length < 16) { seen.add(c.id); list.push(Object.assign({ term }, c)); }
           }
-        } catch (err) { console.error(kind, id, term, err.message); }
+        } catch (err) {
+          if (err.message === "QUOTA") { console.log("daily quota reached; writing partial results"); fs.writeFileSync(outFile, JSON.stringify(out, null, 1)); process.exit(0); }
+          console.error(kind, id, term, err.message);
+        }
         await sleep(1500);
       }
       for (const c of list) {
