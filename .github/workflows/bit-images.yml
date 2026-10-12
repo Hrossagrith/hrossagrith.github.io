@@ -10,7 +10,7 @@ on:
         required: true
         default: search
         type: choice
-        options: [search, search2, search3, search4, openverse, fetch, refs, research, research2]
+        options: [search, search2, search3, search4, openverse, fetch, refs, research, research2, plates]
 
 permissions:
   contents: write
@@ -50,6 +50,9 @@ jobs:
           WELLCOME_LIMIT: "40"
           BOOK_LIMIT: "3"
         run: node tools/bit-images/research.js
+      - name: Chosen anatomical plates at full size
+        if: ${{ inputs.stage == 'plates' }}
+        run: node tools/bit-images/fetch-plates.js
       - name: Download the chosen photographs
         if: ${{ inputs.stage == 'fetch' }}
         run: node tools/bit-images/fetch.js

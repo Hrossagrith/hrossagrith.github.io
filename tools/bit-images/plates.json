@@ -1,0 +1,12 @@
+{
+ "width": 4500,
+ "source": "George Stubbs, The Anatomy of the Horse (London, 1766), Wellcome Collection b33544049, Public Domain Mark, https://wellcomecollection.org/works/yu4etwk6",
+ "plates": [
+  { "name": "stubbs-p58-muscles", "service": "https://iiif.wellcomecollection.org/image/b33544049_0059.jp2" },
+  { "name": "stubbs-tab1-skeleton", "service": "https://iiif.wellcomecollection.org/image/b33544049_0063.jp2" },
+  { "name": "stubbs-tab4-muscles-1", "service": "https://iiif.wellcomecollection.org/image/b33544049_0069.jp2" },
+  { "name": "stubbs-tab7-muscles-2", "service": "https://iiif.wellcomecollection.org/image/b33544049_0075.jp2" },
+  { "name": "stubbs-tab10-muscles-3", "service": "https://iiif.wellcomecollection.org/image/b33544049_0081.jp2" },
+  { "name": "stubbs-tab13-muscles-4", "service": "https://iiif.wellcomecollection.org/image/b33544049_0085.jp2" }
+ ]
+}
