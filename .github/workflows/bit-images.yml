@@ -10,7 +10,7 @@ on:
         required: true
         default: search
         type: choice
-        options: [search, search2, search3, search4, openverse, fetch]
+        options: [search, search2, search3, search4, openverse, fetch, refs]
 
 permissions:
   contents: write
@@ -33,6 +33,9 @@ jobs:
       - name: Fourth round, narrow anatomy references
         if: ${{ inputs.stage == 'search4' }}
         run: QUERIES=queries4.json OUT=candidates4.json OUT_DIR=candidates4 REVIEW_WIDTH=800 CATEGORY_LIMIT=200 node tools/bit-images/search.js
+      - name: Anatomy reference plates
+        if: ${{ inputs.stage == 'refs' }}
+        run: node tools/bit-images/fetch-refs.js
       - name: Openverse search
         if: ${{ inputs.stage == 'openverse' }}
         run: node tools/bit-images/search-openverse.js
