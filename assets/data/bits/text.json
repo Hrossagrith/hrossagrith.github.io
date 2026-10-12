@@ -938,8 +938,8 @@
     "ru": "кПа"
    },
    "basis": {
-    "en": "The lowest published bit pressures (91–108 kPa, Musial & Weiss 2025, a commentary). A reference point, not a measured pain-free bound: no pressure-pain thresholds exist for the horse’s oral mucosa.",
-    "ru": "Самые низкие опубликованные давления удил (91–108 кПа, Musial & Weiss 2025, комментарий). Это ориентир, а не измеренная граница безболезненности: порогов болевой чувствительности для слизистой рта лошади нет."
+    "en": "The lowest published rein pressures (91.2–107.9 kPa; the highest reach about 4300 kPa), recalculated by Musial & Weiss 2025 (a commentary) from rein tension in newtons using an estimated bit–gum contact area. A reference point, not a measured pain-free bound: no pressure-pain thresholds exist for the horse’s oral mucosa.",
+    "ru": "Самые низкие опубликованные давления повода (91,2–107,9 кПа; самые высокие доходят примерно до 4300 кПа), пересчитанные Musial & Weiss 2025 (комментарий) из натяжения повода в ньютонах через оценочную площадь контакта удил с дёснами. Это ориентир, а не измеренная граница безболезненности: порогов болевой чувствительности для слизистой рта лошади нет."
    }
   },
   {
