@@ -233,8 +233,8 @@
    "ru": "Меньше всего боли при неуступающей руке: {posture}"
   },
   "btv_above": {
-   "en": "pushes the other way, by making the corners of the mouth the cheapest place to carry the load; that is not a correction, it is a different pain",
-   "ru": "толкает в обратную сторону, делая углы губ самым «дешёвым» местом для нагрузки; это не исправление, а другая боль"
+   "en": "pushes the other way, by making the high, hollow carriage the cheapest place to carry the load; that is not a correction, it is a different fault",
+   "ru": "толкает в обратную сторону, делая высокий провалённый постав самым «дешёвым» местом для нагрузки; это не исправление, а другая ошибка"
   },
   "btv_correct": {
    "en": "does not reward curling under a holding hand; it is the least bad option this register has for such a horse",
@@ -695,6 +695,18 @@
   "index_formula": {
    "en": "index = {wp} × pain + {wi} × injury + {wc} × control = {index}",
    "ru": "индекс = {wp} × боль + {wi} × травма + {wc} × контроль = {index}"
+  },
+  "btv_not_collected": {
+   "en": "pushes the other way only in the sense that it is quietest when nothing is asked: with the neck long and the nose forward its loads are smallest, which teaches no frame at all",
+   "ru": "толкает в другую сторону лишь в том смысле, что тише всего, когда ничего не просят: при длинной шее и носе вперёд его нагрузки наименьшие, и это не учит никакому поставу"
+  },
+  "btv_rollkur": {
+   "en": "drives it further: the loads fall away as the nose comes to the chest, so under a holding hand the horse is paid for hyperflexion",
+   "ru": "загоняет ещё глубже: нагрузки спадают по мере того, как нос идёт к груди, и под удерживающей рукой лошадь получает награду за гиперфлексию"
+  },
+  "posture_credit": {
+   "en": "Head and neck drawings by the site author; the skull and the bit are drawn in place.",
+   "ru": "Рисунки головы и шеи — автор сайта; череп и удила нарисованы на своих местах."
   }
  },
  "model_params": [

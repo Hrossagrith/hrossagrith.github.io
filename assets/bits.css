@@ -1047,6 +1047,21 @@
   margin: 0 0 1.2rem;
 }
 
+
+.bits-figure svg .viz-drawing {
+  opacity: 0.92;
+}
+
+:root[data-theme="dark"] .bits-figure svg .viz-drawing {
+  filter: invert(1) brightness(0.95);
+}
+
+@media print {
+  :root[data-theme="dark"] .bits-figure svg .viz-drawing {
+    filter: none;
+  }
+}
+
 .bits-legend-row {
   display: flex;
   flex-wrap: wrap;
