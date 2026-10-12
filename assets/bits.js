@@ -209,7 +209,10 @@
     if (photo.width && photo.height) { img.setAttribute("width", photo.width); img.setAttribute("height", photo.height); }
     setText("[data-photo-caption]", photo.caption ? t(photo.caption) : "", figure);
     var source = figure.querySelector("[data-photo-source]");
-    if (source) { source.setAttribute("href", photo.source || "#"); }
+    if (source) {
+      source.setAttribute("href", photo.source || "#");
+      if (photo.provider) { source.textContent = photo.provider; }
+    }
     setText("[data-photo-author]", photo.author || "", figure);
     var license = figure.querySelector("[data-photo-license]");
     if (license) {
