@@ -2,6 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>フロッサグリーズ帝国 (Hrossagrith) &mdash; 帝国国家ポータル</title>
 <meta name="description" content="フロッサグリーズ帝国の公式ポータル。馬、保健医療、教育、交通、司法、政府、法、歴史および象徴。ワールドビルディングの企画。">

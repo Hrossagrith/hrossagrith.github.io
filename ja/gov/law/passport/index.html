@@ -2,6 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>帝国使役ウマ科動物パスポート書式 &mdash; フロッサグリーズ帝国</title>
 <meta name="description" content="すべての使役ウマ科動物について保管される、身元、福祉、健康、就業および制限に関する個体ごとの永続の記録の公式の用紙。">

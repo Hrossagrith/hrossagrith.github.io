@@ -2,6 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>帝国馬具・拘束具・福祉法典 &mdash; フロッサグリーズ帝国</title>
 <meta name="description" content="帝国内のウマ科動物に用いられるすべての馬具、拘束具および装備、ならびにこれを装着し、使用し、販売し、製造する者を規律する法典。">

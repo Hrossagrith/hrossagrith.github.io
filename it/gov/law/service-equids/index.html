@@ -2,6 +2,13 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Standard imperiale di selezione e di razza degli equidi di servizio &mdash; L&rsquo;Impero di Hrossagri&#240;</title>
 <meta name="description" content="Come gli equidi sono selezionati, certificati individualmente, riesaminati e ritirati dal lavoro di servizio imperiale.">

@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>말 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="흐로사그리드의 국가적 보물: 말과 동물의 복지, 재갈 없는 제어, 도로 통행 상태 마커, 공무 말과 동물.">

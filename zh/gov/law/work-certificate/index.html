@@ -2,6 +2,13 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>帝国车驾马科动物道路与作业证书范本 &mdash; 赫罗萨格里德帝国</title>
 <meta name="description" content="据以许可、限制、中止或拒绝某一马科动物从事公共道路车驾作业的官方空白证书表格。">

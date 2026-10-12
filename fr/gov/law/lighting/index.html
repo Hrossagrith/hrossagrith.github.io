@@ -2,6 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Norme impériale d’éclairage et de signalisation des voitures hippomobiles &mdash; L&rsquo;Empire de Hrossagri&#240;</title>
 <meta name="description" content="Les lanternes de voiture, la signalisation, les marqueurs de statut routier éclairés et les lampes de guidage au sol des équidés.">

@@ -2,6 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>제국 공도 말과 동물 통행 상태 표시 표준 &mdash; 흐로사그리드 제국</title>
 <meta name="description" content="공도에 나서는 모든 말과 동물의 안면 마커와 교체 가능한 상태 표시판에 관한 치수, 조명, 우선순위 및 통제를 정하는 보편 표준.">

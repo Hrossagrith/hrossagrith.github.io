@@ -2,6 +2,13 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Het Keizerrijk Hrossagri&#240; (Hrossagrith) &mdash; Keizerlijk Staatsportaal</title>
 <meta name="description" content="Officieel portaal van Het Keizerrijk Hrossagrith: paarden, gezondheidszorg, onderwijs, vervoer, justitie, regering, recht, geschiedenis en symbolen. Een worldbuildingproject.">

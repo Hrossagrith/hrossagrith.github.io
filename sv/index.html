@@ -2,6 +2,13 @@
 <html lang="sv">
 <head>
 <meta charset="utf-8">
+<script>
+/* Serve the site over HTTPS only: a plain-HTTP visit to the public domain moves
+   to the same address over HTTPS before anything else loads. */
+if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hostname)) {
+  location.replace("https:" + location.href.slice(5));
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kejsardömet Hrossagri&#240; (Hrossagrith) &mdash; Kejserliga statsportalen</title>
 <meta name="description" content="Officiell portal för Kejsardömet Hrossagrith: hästar, hälso- och sjukvård, utbildning, transport, rättsväsende, statsstyre, rätt, historia och symboler. Ett worldbuildingprojekt.">
