@@ -29,9 +29,18 @@ function byPageId(pageid) {
   return pool.find((c) => c.pageid === pageid);
 }
 
-function fullThumb(c) {
-  /* Commons thumbnail URLs carry the width as a prefix of the file name. */
-  return c.thumb.replace(/\/\d+px-/, "/" + WIDTH + "px-");
+/* Ask the API for a thumbnail at the wanted width: rewriting the thumbnail URL
+   by hand fails (HTTP 400) on files whose names need encoding or are
+   already smaller than the wanted width. */
+async function fullThumb(c) {
+  if (c.pageid == null) { return c.thumb; }
+  const params = new URLSearchParams({ action: "query", pageids: String(c.pageid), prop: "imageinfo", iiprop: "url|size", iiurlwidth: String(WIDTH), format: "json" });
+  const res = await fetch("https://commons.wikimedia.org/w/api.php?" + params.toString(), { headers });
+  if (!res.ok) { throw new Error("API " + res.status); }
+  const data = await res.json();
+  const page = Object.values(data.query.pages)[0];
+  const ii = (page.imageinfo || [])[0];
+  return ii && ii.thumburl ? ii.thumburl : c.thumb;
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -47,8 +56,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
       const ext = /png/.test(c.mime) ? "png" : "jpg";
       const rel = dirs[kind] + "/" + id.replace("|", "__") + "." + ext;
       const target = path.join(root, "assets", "img", "bits", rel);
-      const res = await fetch(fullThumb(c), { headers });
-      if (!res.ok) { console.error("download failed", id, res.status); continue; }
+      let url;
+      try { url = await fullThumb(c); } catch (err) { console.error("thumb url failed", id, err.message); continue; }
+      const res = await fetch(url, { headers });
+      if (!res.ok) { console.error("download failed", id, res.status, url); continue; }
       fs.mkdirSync(path.dirname(target), { recursive: true });
       fs.writeFileSync(target, Buffer.from(await res.arrayBuffer()));
       const scale = Math.min(1, WIDTH / c.width);
