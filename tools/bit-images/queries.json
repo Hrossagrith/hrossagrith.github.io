@@ -1,0 +1,607 @@
+{
+ "cheeks": {
+  "loose-ring": [
+   "loose ring snaffle bit",
+   "Wassertrense",
+   "Ringtrense Pferd",
+   "snaffle bit ring"
+  ],
+  "eggbutt": [
+   "eggbutt snaffle",
+   "Olivenkopftrense",
+   "egg butt snaffle bit"
+  ],
+  "d-ring": [
+   "D-ring snaffle",
+   "D-Ring Trense",
+   "dee ring snaffle bit"
+  ],
+  "full-cheek": [
+   "full cheek snaffle",
+   "Trense mit Schenkeln",
+   "full cheek bit horse"
+  ],
+  "half-cheek": [
+   "half cheek snaffle",
+   "half spoon snaffle",
+   "driving snaffle half cheek"
+  ],
+  "fulmer": [
+   "Fulmer snaffle",
+   "Fulmer bit loose ring full cheek"
+  ],
+  "baucher": [
+   "Baucher bit",
+   "hanging cheek snaffle",
+   "Baucher Trense",
+   "Fillis snaffle"
+  ],
+  "scorrier": [
+   "Scorrier snaffle",
+   "Cornish snaffle bit",
+   "four ring snaffle"
+  ],
+  "weymouth-fixed": [
+   "Weymouth bit",
+   "Kandare Dressur",
+   "curb bit dressage double bridle"
+  ],
+  "weymouth-sliding": [
+   "sliding cheek Weymouth",
+   "Kandare mit beweglichem Anzug"
+  ],
+  "banbury": [
+   "Banbury bit",
+   "Banbury curb mouthpiece"
+  ],
+  "pelham": [
+   "Pelham bit",
+   "Pelham Gebiss",
+   "pelham bridle"
+  ],
+  "rugby-pelham": [
+   "Rugby pelham",
+   "pelham loose snaffle ring"
+  ],
+  "scamperdale-pelham": [
+   "Scamperdale pelham"
+  ],
+  "kimblewick": [
+   "Kimblewick bit",
+   "Kimberwick bit",
+   "Kimblewick Gebiss"
+  ],
+  "kimblewick-uxeter": [
+   "Uxeter Kimblewick",
+   "slotted Kimblewick"
+  ],
+  "balding-gag": [
+   "Balding gag bit",
+   "gag snaffle loose ring",
+   "Gag Trense"
+  ],
+  "cheltenham-gag": [
+   "Cheltenham gag",
+   "eggbutt gag bit"
+  ],
+  "nelson-gag": [
+   "Nelson gag",
+   "full cheek gag bit"
+  ],
+  "dutch-gag": [
+   "Dutch gag",
+   "three ring gag",
+   "3-Ring Trense",
+   "bubble bit",
+   "continental gag"
+  ],
+  "american-gag": [
+   "American gag bit",
+   "elevator bit horse",
+   "sliding shank gag"
+  ],
+  "wilkie": [
+   "Wilkie snaffle",
+   "Beval bit",
+   "Wilkie bit"
+  ],
+  "horseshoe-stallion": [
+   "stallion bit horseshoe",
+   "horseshoe stallion bit in-hand",
+   "show bit stallion"
+  ],
+  "frisco-june": [
+   "Frisco June bit",
+   "colt bit harness leather mouth"
+  ],
+  "pee-wee": [
+   "Pee Wee bit",
+   "PeeWee bit horse"
+  ],
+  "cheeker-ring": [
+   "Australian cheeker",
+   "cheeker racehorse",
+   "rubber cheeker bit"
+  ],
+  "burr-ring": [
+   "burr bit horse",
+   "pricker pad bit",
+   "bristle bit racing"
+  ],
+  "lugging-bit": [
+   "lugging bit",
+   "lugging bit racing",
+   "anti lug bit"
+  ],
+  "wilson-snaffle": [
+   "Wilson snaffle",
+   "Wilson bit driving",
+   "four ring driving bit"
+  ],
+  "western-fixed-curb": [
+   "grazing bit western",
+   "western curb bit",
+   "Westernkandare",
+   "grazing curb"
+  ],
+  "western-loose-jaw-curb": [
+   "Argentine snaffle bit",
+   "loose jaw curb western",
+   "swivel shank western bit"
+  ],
+  "spade-cheek": [
+   "spade bit",
+   "spade bit vaquero",
+   "bridle horse spade bit"
+  ],
+  "western-draw-gag": [
+   "draw gag bit western",
+   "barrel racing gag bit",
+   "sliding gag western"
+  ],
+  "wonder-bit": [
+   "wonder bit horse",
+   "wonder gag bit"
+  ],
+  "loomis-gag": [
+   "Loomis gag bit",
+   "western gag bit cord"
+  ],
+  "polo-gag-pelham": [
+   "polo gag pelham",
+   "polo bit gag",
+   "gag pelham"
+  ],
+  "walking-horse-curb": [
+   "walking horse bit",
+   "Tennessee walking horse bit",
+   "long shank show bit"
+  ],
+  "saddleseat-curb": [
+   "Saddlebred curb bit",
+   "saddle seat double bridle",
+   "show curb bit long shank"
+  ],
+  "doma-vaquera-curb": [
+   "bocado vaquero",
+   "doma vaquera bit",
+   "freno vaquero",
+   "Spanish curb bit"
+  ],
+  "icelandic-curb": [
+   "Icelandic curb bit",
+   "Icelandic horse bit",
+   "íslensk stangamél",
+   "Stangenkandare Islandpferd"
+  ],
+  "maghreb-ring-curb": [
+   "ring bit Mexican",
+   "freno de argolla",
+   "Moroccan bit ring",
+   "Maghreb bit"
+  ],
+  "liverpool": [
+   "Liverpool bit",
+   "Liverpool driving bit",
+   "Liverpool Kandare"
+  ],
+  "buxton": [
+   "Buxton bit",
+   "Buxton driving bit"
+  ],
+  "butterfly-driving": [
+   "butterfly bit driving",
+   "Butterfly Kandare"
+  ],
+  "elbow-military": [
+   "elbow bit driving",
+   "military elbow bit",
+   "Ellenbogenkandare"
+  ],
+  "dexter-ring": [
+   "Dexter ring bit",
+   "ring bit racing",
+   "Dexter bit"
+  ],
+  "haughton-cage": [
+   "Haughton bit",
+   "cage bit racing",
+   "Houghton gag"
+  ],
+  "tattersall-ring": [
+   "Tattersall ring bit",
+   "yearling bit ring",
+   "Tattersall yearling"
+  ],
+  "chifney": [
+   "Chifney bit",
+   "Chifney anti-rearing bit",
+   "anti rearing bit"
+  ],
+  "rockwell": [
+   "Rockwell bridle",
+   "Rockwell bit racing"
+  ],
+  "norton": [
+   "Norton bridle bit",
+   "Citation bridle",
+   "Citation bit racing"
+  ],
+  "springsteen": [
+   "Springsteen bit",
+   "Springsteen snaffle"
+  ],
+  "myler-combination": [
+   "Myler combination bit",
+   "Myler combo bit",
+   "3 ring combination bit"
+  ],
+  "hackabit": [
+   "hackabit",
+   "hackamore bit combination",
+   "mechanical hackamore with bit"
+  ],
+  "overcheck": [
+   "overcheck bit",
+   "check bit harness racing",
+   "overcheck harness"
+  ]
+ },
+ "mouthpieces": {
+  "mullen": [
+   "mullen mouth bit",
+   "mullen mouth snaffle",
+   "gebogenes Gebiss Trense"
+  ],
+  "straight-bar": [
+   "straight bar snaffle",
+   "straight bar bit horse"
+  ],
+  "ported": [
+   "ported curb bit",
+   "low port curb",
+   "Kandare mit Zungenfreiheit"
+  ],
+  "ported-barrel": [
+   "Myler ported barrel",
+   "ported barrel mouthpiece"
+  ],
+  "flexible-mullen": [
+   "rubber mullen snaffle",
+   "Nathe bit",
+   "flexible rubber bit horse",
+   "Gummigebiss Trense"
+  ],
+  "single-joint": [
+   "single jointed snaffle",
+   "einfach gebrochene Trense",
+   "jointed snaffle bit"
+  ],
+  "slow-twist": [
+   "slow twist snaffle",
+   "slow twist bit"
+  ],
+  "corkscrew": [
+   "corkscrew bit horse",
+   "corkscrew snaffle"
+  ],
+  "twisted-wire": [
+   "twisted wire snaffle",
+   "twisted wire bit"
+  ],
+  "double-twisted-wire": [
+   "double twisted wire bit",
+   "double twisted wire snaffle"
+  ],
+  "serrated": [
+   "serrated mouthpiece bit",
+   "Scorrier serrated bit"
+  ],
+  "roller-jointed": [
+   "cherry roller snaffle",
+   "Magenis bit",
+   "roller snaffle bit"
+  ],
+  "ported-jointed": [
+   "Fillis snaffle",
+   "ported jointed snaffle",
+   "arched single joint bit"
+  ],
+  "french-link": [
+   "French link snaffle",
+   "doppelt gebrochene Trense",
+   "french link bit"
+  ],
+  "dr-bristol": [
+   "Dr Bristol bit",
+   "Dr. Bristol snaffle"
+  ],
+  "lozenge": [
+   "lozenge snaffle",
+   "KK Ultra bit",
+   "double jointed lozenge bit",
+   "dogbone bit"
+  ],
+  "angled-lozenge": [
+   "Sprenger KK Ultra",
+   "angled lozenge snaffle",
+   "anatomically curved snaffle"
+  ],
+  "ball-link": [
+   "ball link snaffle",
+   "lifesaver bit",
+   "ball joint snaffle"
+  ],
+  "barrel": [
+   "barrel snaffle",
+   "Myler comfort snaffle",
+   "Billy Allen bit"
+  ],
+  "waterford": [
+   "Waterford bit",
+   "Waterford snaffle"
+  ],
+  "chain": [
+   "chain mouth bit",
+   "chain snaffle bit",
+   "bicycle chain bit"
+  ],
+  "keys": [
+   "mouthing bit keys",
+   "key bit horse",
+   "Spielertrense"
+  ],
+  "spade": [
+   "spade bit mouthpiece",
+   "spade bit spoon",
+   "vaquero spade bit"
+  ],
+  "half-breed": [
+   "half breed bit",
+   "halfbreed bit western"
+  ],
+  "cathedral": [
+   "cathedral bit",
+   "cathedral port western bit"
+  ],
+  "salinas": [
+   "Salinas bit",
+   "Salinas port bit"
+  ],
+  "mona-lisa": [
+   "Mona Lisa bit",
+   "Mona Lisa port bit western"
+  ],
+  "correction": [
+   "correction bit western",
+   "correction bit port"
+  ],
+  "w-mouth": [
+   "W mouth bit",
+   "double twisted mouth bit",
+   "w-mouth snaffle"
+  ],
+  "mule-scissor": [
+   "scissor bit mule",
+   "mule bit scissors"
+  ],
+  "square-twist": [
+   "square twist bit",
+   "square twisted snaffle"
+  ],
+  "twisted-chain": [
+   "twisted chain bit",
+   "twisted chain mouthpiece"
+  ],
+  "saw-chain": [
+   "chainsaw chain bit",
+   "saw chain bit horse"
+  ],
+  "rope-mouth": [
+   "rope bit horse",
+   "rope mouthpiece bit",
+   "rope snaffle"
+  ],
+  "leather-covered": [
+   "leather covered bit",
+   "leather snaffle bit",
+   "Ledergebiss"
+  ],
+  "tongue-plate": [
+   "winning tongue plate",
+   "WTP bit",
+   "tongue plate bit"
+  ],
+  "palate-spoon": [
+   "Crit Davis overcheck",
+   "Burch overcheck bit",
+   "overcheck bit spoon"
+  ],
+  "ring-arc": [
+   "Tattersall ring bit",
+   "yearling ring"
+  ],
+  "pee-wee-bar": [
+   "Pee Wee bit",
+   "PeeWee bit"
+  ]
+ },
+ "pairings": {
+  "western-fixed-curb|single-joint": [
+   "Tom Thumb bit",
+   "Tom Thumb snaffle western"
+  ],
+  "western-loose-jaw-curb|single-joint": [
+   "Argentine snaffle bit"
+  ],
+  "western-loose-jaw-curb|lozenge": [
+   "junior cowhorse bit",
+   "Jr Cowhorse bit"
+  ],
+  "western-fixed-curb|correction": [
+   "correction bit western"
+  ],
+  "western-fixed-curb|ported": [
+   "grazing bit western curb"
+  ],
+  "spade-cheek|spade": [
+   "spade bit vaquero",
+   "California spade bit"
+  ],
+  "spade-cheek|half-breed": [
+   "half breed bit western"
+  ],
+  "walking-horse-curb|ported": [
+   "Tennessee walking horse bit",
+   "walking horse show bit"
+  ],
+  "liverpool|mullen": [
+   "Liverpool bit driving mullen"
+  ],
+  "wilson-snaffle|single-joint": [
+   "Wilson snaffle driving"
+  ],
+  "dexter-ring|single-joint": [
+   "Dexter ring bit"
+  ],
+  "chifney|straight-bar": [
+   "Chifney bit"
+  ],
+  "tattersall-ring|ring-arc": [
+   "Tattersall ring bit yearling"
+  ],
+  "norton|single-joint": [
+   "Citation bridle racing",
+   "Norton bridle"
+  ],
+  "overcheck|palate-spoon": [
+   "Crit Davis overcheck",
+   "Burch overcheck bit"
+  ],
+  "overcheck|single-joint": [
+   "overcheck bit harness"
+  ],
+  "pee-wee|pee-wee-bar": [
+   "Pee Wee bit"
+  ],
+  "myler-combination|ported-barrel": [
+   "Myler combination bit"
+  ],
+  "icelandic-curb|single-joint": [
+   "Icelandic curb bit",
+   "íslensk stangamél"
+  ],
+  "doma-vaquera-curb|ported": [
+   "bocado vaquero",
+   "doma vaquera bocado"
+  ],
+  "maghreb-ring-curb|ported": [
+   "ring bit Mexican",
+   "freno de argolla"
+  ],
+  "polo-gag-pelham|single-joint": [
+   "polo gag pelham bit"
+  ],
+  "western-draw-gag|single-joint": [
+   "draw gag bit barrel racing"
+  ],
+  "loomis-gag|single-joint": [
+   "Loomis gag bit"
+  ],
+  "burr-ring|single-joint": [
+   "burr bit racing"
+  ],
+  "pelham|ported": [
+   "Hartwell pelham",
+   "Cambridge pelham"
+  ],
+  "pelham|mullen": [
+   "mullen mouth pelham"
+  ],
+  "pelham|flexible-mullen": [
+   "rubber pelham bit"
+  ],
+  "pelham|single-joint": [
+   "jointed pelham bit"
+  ],
+  "d-ring|ported": [
+   "Hanoverian pelham",
+   "ported D ring bit"
+  ],
+  "scorrier|serrated": [
+   "Scorrier snaffle"
+  ],
+  "loose-ring|roller-jointed": [
+   "Magenis snaffle",
+   "cherry roller loose ring"
+  ],
+  "kimblewick|ported": [
+   "Kimblewick bit"
+  ],
+  "weymouth-fixed|ported": [
+   "Weymouth curb bit dressage"
+  ],
+  "banbury|mullen": [
+   "Banbury bit"
+  ],
+  "balding-gag|roller-jointed": [
+   "cherry roller gag"
+  ],
+  "balding-gag|waterford": [
+   "Waterford gag bit"
+  ],
+  "dutch-gag|flexible-mullen": [
+   "rubber Dutch gag"
+  ],
+  "dutch-gag|waterford": [
+   "Waterford Dutch gag"
+  ],
+  "full-cheek|french-link": [
+   "full cheek French link"
+  ],
+  "full-cheek|keys": [
+   "mouthing bit full cheek keys"
+  ],
+  "eggbutt|angled-lozenge": [
+   "KK Ultra eggbutt"
+  ],
+  "loose-ring|angled-lozenge": [
+   "KK Ultra loose ring"
+  ],
+  "loose-ring|twisted-wire": [
+   "twisted wire loose ring snaffle"
+  ],
+  "baucher|ported-jointed": [
+   "Fillis snaffle"
+  ],
+  "frisco-june|leather-covered": [
+   "Frisco June bit"
+  ],
+  "walking-horse-curb|twisted-wire": [
+   "walking horse bit twisted wire"
+  ],
+  "loose-ring|saw-chain": [
+   "chainsaw chain bit"
+  ]
+ }
+}

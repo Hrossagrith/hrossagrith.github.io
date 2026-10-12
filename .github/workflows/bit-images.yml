@@ -1,0 +1,36 @@
+# Research tool for the bit register: GitHub's runners can reach Wikimedia
+# Commons, so the search and the downloads run here and land on a branch.
+name: Bit register images
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "search (collect candidates) or fetch (download picks)"
+        required: true
+        default: search
+        type: choice
+        options: [search, fetch]
+
+permissions:
+  contents: write
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Search Wikimedia Commons
+        if: ${{ inputs.stage == 'search' }}
+        run: node tools/bit-images/search.js
+      - name: Download the chosen photographs
+        if: ${{ inputs.stage == 'fetch' }}
+        run: node tools/bit-images/fetch.js
+      - name: Push results to a branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "bit-images-${{ inputs.stage }}"
+          git add -A tools/bit-images assets/img/bits assets/data/bits/images.json 2>/dev/null || git add -A tools/bit-images
+          git commit -m "Bit register images: ${{ inputs.stage }} results" || echo "nothing to commit"
+          git push -f origin "bit-images-${{ inputs.stage }}"
