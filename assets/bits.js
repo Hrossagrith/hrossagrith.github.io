@@ -50,7 +50,15 @@
   }
 
   function N(x) { return num(x, x < 10 ? 1 : 0) + " " + ui("unit_N", "N"); }
-  function kPa(x) { return num(x, 0) + " " + ui("unit_kPa", "kPa"); }
+  /* Pressures beyond the ceiling of human pain testing are shown as "> limit":
+     the model is not precise enough for larger figures to carry meaning. */
+  function kPa(x) {
+    var limit = CATALOG && CATALOG.thresholds_kpa.human_test_limit;
+    if (limit && x > limit) {
+      return fill(ui("kpa_over", "> {limit}"), { limit: num(limit, 0) }) + " " + ui("unit_kPa", "kPa");
+    }
+    return num(x, 0) + " " + ui("unit_kPa", "kPa");
+  }
   function mm(x, digits) { return num(x, digits == null ? 0 : digits) + " " + ui("unit_mm", "mm"); }
   function pct(x) { return num(x * 100, 0) + " %"; }
 

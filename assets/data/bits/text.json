@@ -625,8 +625,8 @@
    "ru": "Худший риск поражения: {risk}, {level}; поражение серьёзное, поэтому оно задаёт класс."
   },
   "class_why_injury_3": {
-   "en": "Worst lesion risk: {risk}, {level}; one likely lesion is enough for this class.",
-   "ru": "Худший риск поражения: {risk}, {level}; одного вероятного поражения достаточно для этого класса."
+   "en": "Worst lesion risk: {risk}, {level}; one lesion at this level is enough for this class.",
+   "ru": "Худший риск поражения: {risk}, {level}; одного поражения такого уровня достаточно для этого класса."
   },
   "class_why_design_palate": {
    "en": "Design: the mouthpiece contacts the palate by construction.",
@@ -715,6 +715,10 @@
   "btv_none": {
    "en": "shows no clear mechanical preference in this model, so the outcome depends on the hand",
    "ru": "не даёт в этой модели явного механического предпочтения, поэтому результат зависит от руки"
+  },
+  "kpa_over": {
+   "en": "> {limit}",
+   "ru": "> {limit}"
   }
  },
  "model_params": [
@@ -954,8 +958,8 @@
     "ru": "кПа"
    },
    "basis": {
-    "en": "Musial & Weiss 2025. Human skin values, used by analogy.",
-    "ru": "Musial & Weiss 2025. Значения для кожи человека, применяются по аналогии."
+    "en": "Musial & Weiss 2025. Human skin values, used by analogy. The analogy is strongest for skin sites (chin groove, nose): equine epidermis is as thick and as richly innervated as human (Tong et al. 2020). For the oral mucosa no equine values exist, and human oral thresholds vary several-fold by site (Ogawa et al. 2003).",
+    "ru": "Musial & Weiss 2025. Значения для кожи человека, применяются по аналогии. Аналогия сильнее всего для кожных участков (подбородочная ямка, нос): эпидермис лошади так же толст и так же богато иннервирован, как человеческий (Tong et al. 2020). Для слизистой рта значений у лошадей нет, а у человека пороги во рту различаются в разы в зависимости от участка (Ogawa et al. 2003)."
    }
   },
   {
@@ -972,6 +976,22 @@
    "basis": {
     "en": "Musial & Weiss 2025. Human skin values, used by analogy.",
     "ru": "Musial & Weiss 2025. Значения для кожи человека, применяются по аналогии."
+   }
+  },
+  {
+   "group": "thresholds",
+   "key": "human_test_limit",
+   "label": {
+    "en": "Display limit: pressure ceiling of human pain testing",
+    "ru": "Предел отображения: потолок давления в испытаниях боли на людях"
+   },
+   "unit": {
+    "en": "kPa",
+    "ru": "кПа"
+   },
+   "basis": {
+    "en": "The ceiling enforced in human pressure-pain testing to avoid tissue damage, cited by Musial & Weiss 2025. Modelled pressures above it are shown as “> 1500 kPa”: the model’s contact areas and edge factors are not accurate enough for larger figures to mean more than “beyond the range where tissue damage is expected in humans”. Classes still use the computed value.",
+    "ru": "Потолок, соблюдаемый в испытаниях болевой чувствительности на людях, чтобы не повредить ткани; приводится у Musial & Weiss 2025. Расчётные давления выше него показываются как «> 1500 кПа»: площади контакта и коэффициенты кромки в модели недостаточно точны, чтобы большие числа значили больше, чем «за пределом, где у человека ожидается повреждение ткани». Классы по-прежнему считаются по расчётному значению."
    }
   },
   {
@@ -1256,6 +1276,21 @@
    "id": "catalogues",
    "text": "Manufacturer catalogues (Sprenger, Neue Schule, Myler, Bombers, Trust, Zilco, Reinsman, Professional's Choice, Dy'on) for naming, dimensions and construction of cheeks and mouthpieces.",
    "url": "https://en.wikipedia.org/wiki/Bit_ring"
+  },
+  {
+   "id": "tong2020",
+   "text": "Tong L. et al. (2020). A comparative neuro-histological assessment of gluteal skin thickness and cutaneous nociceptor distribution in horses and humans. Animals 10:2094. Post-mortem skin from 20 horses and 10 humans: the pain-detecting epidermis of the horse is as richly innervated and as thick as the human; the thicker equine dermis is not considered protective against cutaneous pain. Skin of the rump only, not oral mucosa.",
+   "url": "https://doi.org/10.3390/ani10112094"
+  },
+  {
+   "id": "ogawa2003",
+   "text": "Ogawa T. et al. (2003). Pressure–pain threshold of oral mucosa and its region-specific modulation by pre-loading. Journal of Oral Rehabilitation 30. Human oral mucosa: pressure-pain thresholds differ several-fold by site (palatal about 4.9 times labial), so no single skin value describes the mouth.",
+   "url": "https://doi.org/10.1046/j.1365-2842.2003.01183.x"
+  },
+  {
+   "id": "veresnyeki2021",
+   "text": "Veres-Nyéki K. O. et al. (2021). Quantitative sensory testing of the equine face. Equine Veterinary Journal. Mechanical nociceptive thresholds of the equine face in 34 Warmblood horses: measurable, site-dependent, rising with age by about 0.25 N per year. Skin of the face, not the inside of the mouth.",
+   "url": "https://doi.org/10.1111/evj.13270"
   }
  ],
  "pairings": {

@@ -5772,7 +5772,8 @@
   "lowest_reported": 100,
   "face_ppt": 232,
   "hand_ppt": 445,
-  "capillary_closure": 4.3
+  "capillary_closure": 4.3,
+  "human_test_limit": 1500
  },
  "defaults": {
   "rein_tension": 20,
