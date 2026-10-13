@@ -39,6 +39,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/flag-mark.png">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/portal.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CreativeWork","name":"Империя Хроссагрид (Hrossagrith)","description":"Официальный портал Империи Хроссагрид: лошади, здравоохранение, образование, транспорт, правосудие, государство, право, история и символы. Проект по конструированию мира.","url":"https://hrossagrith.com/ru/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"Империя Хроссагрид","url":"https://hrossagrith.com/"},"isAccessibleForFree":true,"genre":"worldbuilding"}]}</script>
 <script>
 /* Resolve the theme before first paint: stored choice first, system preference
@@ -218,6 +219,8 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   </div>
 </div>
 
+<section class="shell portal-start" data-portal-start hidden aria-labelledby="portal-start-title"></section>
+
 <main id="main" class="shell wrap">
   <div class="two">
     <div class="col">
@@ -245,70 +248,70 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 
   <ul class="services">
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-horse"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-horse"></use></svg>
       <p class="service__no">Раздел I</p>
       <h3><a href="horses/">Лошади</a></h3>
       <p>Национальное достояние и причина, по которой Империя устроена именно так. Благополучие, амуниция без трензеля, дорожный статус, служебные животные.</p>
       <ul class="service__links"><li><a href="horses/road-status/">Дорожные маркеры</a></li><li><a href="horses/#welfare">Благополучие и управление без трензеля</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-health"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-health"></use></svg>
       <p class="service__no">Раздел II</p>
       <h3><a href="living/health/">Здравоохранение</a></h3>
       <p>Бесплатно в момент обращения, щедро финансируется и построено против очередей, нехватки персонала и регионального неравенства.</p>
       <ul class="service__links"><li><a href="living/health/">Что гарантирует Империя</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-education"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-education"></use></svg>
       <p class="service__no">Раздел III</p>
       <h3><a href="living/education/">Образование и дети</a></h3>
       <p>Бесплатное образование на всех ступенях, бесплатные ясли независимо от занятости родителей и исключительно сильная защита детей.</p>
       <ul class="service__links"><li><a href="living/education/#childcare">Уход за детьми</a></li><li><a href="living/education/#protection">Защита детей</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-transport"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-transport"></use></svg>
       <p class="service__no">Раздел IV</p>
       <h3><a href="living/transport/">Транспорт и дороги</a></h3>
       <p>Страна, построенная вокруг гужевого транспорта и железных дорог, с единственным узким исключением для грузовых автомобилей.</p>
       <ul class="service__links"><li><a href="living/transport/#hrossaway">Хроссавей</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-justice"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-justice"></use></svg>
       <p class="service__no">Раздел V</p>
       <h3><a href="living/justice/">Правосудие и полиция</a></h3>
       <p>Отбор и подготовка полиции по авиационной модели, деэскалация по умолчанию и абсолютный запрет смертной казни.</p>
       <ul class="service__links"><li><a href="living/justice/#privacy">Приватность и киберпреступность</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-money"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-money"></use></svg>
       <p class="service__no">Раздел VI</p>
       <h3><a href="living/money/">Труд и деньги</a></h3>
       <p>Прогрессивное налогообложение доходов, состояний, прироста капитала и крупных наследств.</p>
       <ul class="service__links"><li><a href="living/money/">Налогообложение</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-citizenship"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-citizenship"></use></svg>
       <p class="service__no">Раздел VII</p>
       <h3><a href="living/citizenship/">Гражданство и убежище</a></h3>
       <p>Многообразная человеческая нация, происходящая от множества народов, интегрированных за века через миграцию и убежище.</p>
       <ul class="service__links"><li><a href="living/citizenship/">Убежище и интеграция</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-government"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-government"></use></svg>
       <p class="service__no">Раздел VIII</p>
       <h3><a href="gov/">Государство</a></h3>
       <p>Эвдемонократия и две равные Короны, правящие в рамках одной конституции.</p>
       <ul class="service__links"><li><a href="gov/#diarchy">Имперская диархия</a></li><li><a href="gov/law/">Правовой корпус</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-history"></use></svg>
       <p class="service__no">Раздел IX</p>
       <h3><a href="history/">История</a></h3>
       <p>От Кризиса переправы около 1050 г. до н. э. до споров о конных гарантиях третьего века.</p>
       <ul class="service__links"><li><a href="history/">Ранняя история, ок. 1200–100 гг. до н. э.</a></li></ul>
     </li>
     <li class="service">
-      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-symbols"></use></svg>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-symbols"></use></svg>
       <p class="service__no">Раздел X</p>
       <h3><a href="symbols/">Название и символы</a></h3>
       <p>Канонические формы, древнескандинавская этимология, флаг и национальное животное.</p>
@@ -389,5 +392,6 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 
 <script src="../assets/theme.js"></script>
 <script src="../assets/site.js"></script>
+<script src="../assets/portal.js"></script>
 </body>
 </html>
