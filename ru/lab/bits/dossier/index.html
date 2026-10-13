@@ -15,7 +15,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 <meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="icon" href="../../../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../../../assets/style.css">
-<link rel="stylesheet" href="../../../../assets/bits.css?v=3">
+<link rel="stylesheet" href="../../../../assets/bits.css?v=4">
 <script>
 /* Resolve the theme before first paint: stored choice first, system preference
    otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
@@ -89,11 +89,11 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-hero" aria-labelledby="hero-label">
     <div>
       <p class="bits-hero__label" id="hero-label">Индекс вреда при текущих настройках</p>
-      <p class="bits-hero__value"><span data-field="index">–</span><span class="bits-hero__unit">/ 100 · меньше — мягче</span></p>
+      <p class="bits-hero__value"><span data-field="index">–</span><span class="bits-hero__unit">/ 100 · меньше — ниже расчётный вред</span></p>
       <p class="bits-hero__class"><span class="bits-class" data-field="class-badge"></span></p>
       <p class="bits-hero__def" data-field="class-def"></p>
     </div>
-    <p class="bits-hero__text">При опорных условиях (20 Н на каждый повод, голова на вертикали) это сочетание относится к классу <span class="bits-class" data-field="class-ref"></span> и занимает место <strong data-field="rank">–</strong> из <strong data-field="rank-total">–</strong> выпускаемых сочетаний, от самого мягкого. Пиковое расчётное давление сейчас: <strong data-field="peak">–</strong> — ткань: <strong data-field="peak-site">–</strong>. <span data-field="peak-verdict"></span></p>
+    <p class="bits-hero__text">При опорных условиях (20&nbsp;Н на каждый повод, голова на вертикали) это сочетание относится к классу <span class="bits-class" data-field="class-ref"></span> и занимает место <strong data-field="rank">–</strong> из <strong data-field="rank-total">–</strong> выпускаемых сочетаний по индексу вреда, от наименьшего. Пиковое расчётное давление сейчас: <strong data-field="peak">–</strong> — ткань: <strong data-field="peak-site">–</strong>; расчётный болевой порог этой ткани <strong data-field="peak-threshold">–</strong>, то есть давление составляет <strong data-field="peak-ratio">–</strong> порога. <span data-field="peak-verdict"></span></p>
     <div class="bits-meter" aria-hidden="true"><div class="bits-meter__fill" data-meter></div></div>
   </section>
 
@@ -233,7 +233,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <ul class="bits-statements">
       <li data-say="draw-direct">Повод и оголовье крепятся на уровне грызла: плеча рычага нет, и на чертеже нечего размечать — ни верхней части, ни плеча.</li>
       <li data-say="draw-curb">Верхняя часть <span data-field="dim-p"></span> над грызлом, нижнее плечо <span data-field="dim-s"></span> под ним: отношение <span data-field="lever-ratio"></span>. Упор под челюстью — <span data-field="restraint-kind"></span>.</li>
-      <li data-say="draw-gag-lever">Нижнее плечо <span data-field="dim-s"></span> под грызлом и ничего под челюстью: стопка или плечо может вращаться, пока её не остановит нащёчный ремень.</li>
+      <li data-say="draw-gag-lever">Нижнее плечо <span data-field="dim-s"></span> под грызлом и ничего под челюстью: стопка колец или бранша может вращаться, пока её не остановит нащёчный ремень.</li>
       <li data-say="draw-gag-slide">Нащёчный ремень нарисован проходящим через кольцо к поводу: кольцо — блок, а грызло скользит по шнуру.</li>
       <li data-say="draw-jaw-ring">Кольцо или клетка под грызлом проходит через рот и вокруг нижней челюсти.</li>
       <li data-say="draw-combination">Ремни или пластины рядом со щёчкой уносят часть силы повода на нос или на бока челюсти.</li>
@@ -245,7 +245,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-a">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура A</span></div>
     <h2 id="fig-a">Куда уходит сила повода</h2>
-    <p class="bits-figure__lede">Диаграмма сил одной стороны удил поверх головы в выбранном поставе, с черепом и удилами на своих местах. Повод тянет к руке; цепочка, нащёчный ремень и рот давят в ответ, пока силы не уравновесятся. Длина стрелки пропорциональна силе; повод всегда идёт горизонтально к всаднику.</p>
+    <p class="bits-figure__lede">Диаграмма сил одной стороны удил поверх головы в выбранном поставе, с черепом и удилами на своих местах. Повод тянет к руке; цепочка, нащёчный ремень и рот отвечают противодействием, пока силы не уравновесятся. Длина стрелки пропорциональна силе; повод всегда идёт горизонтально к всаднику.</p>
     <svg viewBox="0 0 640 440" role="img" aria-labelledby="fig-a-title">
       <title id="fig-a-title">Силовая схема удил при выбранном поставе головы</title>
       <defs>
@@ -284,16 +284,16 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     </svg>
     <p class="bits-legend-row"><span><i class="is-rein"></i>F, натяжение повода на сторону <span data-field="legend-F"></span></span><span><i class="is-chain"></i>C, цепочка, ремешок или кольцо <span data-field="legend-C"></span></span><span><i class="is-poll"></i>T, нащёчный ремень к затылку <span data-field="legend-T"></span></span><span><i class="is-reaction"></i>R, ответ рта <span data-field="legend-R"></span></span></p>
     <ul class="bits-statements">
-      <li data-say="direct-sum">У щёчки нет рычага. Два повода вместе передают <span data-field="press-total"></span> на язык и дёсны и <span data-field="lip-total"></span> вверх, в углы губ; ничто не умножается, только перераспределяется.</li>
-      <li data-say="curb-sum" data-tone="warn">Нижнее плечо длиннее верхнего в <span data-field="lever-ratio"></span> раза длиннее верхней. Когда упор срабатывает при <span data-field="rho"></span>°, он несёт <span data-field="chain-force"></span> на сторону, поэтому рот получает <span data-field="press-total"></span> вниз и назад: <span data-field="amplification"></span>× того, что дал бы повод сам по себе. Подбородок зажат с силой <span data-field="chin-force"></span>.</li>
-      <li data-say="gag-lever-sum" data-tone="warn">Цепочки нет, поэтому вращение не останавливает ничто, кроме нащёчного ремня. Стопка колец поворачивается примерно до <span data-field="rho"></span>°, и грызло протаскивается на <span data-field="lift"></span> вверх по лицу, прежде чем его остановят губы. Затем нащёчный ремень тянет с силой <span data-field="cheek-force"></span> на сторону, и всё это приходится на углы губ: <span data-field="lip-total"></span> всего.</li>
-      <li data-say="gag-slide-sum" data-tone="warn">Нащёчный ремень проходит через кольцо, как верёвка через блок. Верхняя ветвь тянет к затылку с силой <span data-field="cheek-force"></span> на сторону (остальное съедает трение о кольцо); вместе с поводом это поднимает удила с силой <span data-field="lip-total"></span> в углы губ.</li>
-      <li data-say="gag-curb-sum" data-tone="bad">Два механизма на одном грызле. Гаговый повод поднимает удила шнуром с силой <span data-field="lip-total"></span> в углы губ; мундштучный повод вращает плечо до срабатывания цепочки и давит с силой <span data-field="press-total"></span> на язык и дёсны. Лошадь получает подъём и зажим одновременно.</li>
-      <li data-say="jaw-ring-sum" data-tone="bad">Поводья (или чомбур) действуют у грызла, как у трензеля: <span data-field="press-total"></span> на язык и дёсны, а кольцо вокруг челюсти превращает это натяжение в зажим: <span data-field="jaw-force"></span> на кость нижней челюсти без иного упора, кроме кости.</li>
-      <li data-say="combination-sum">Из <span data-field="F"></span>каждого повода лишь <span data-field="mouth-share"></span> доходит до грызла; остальное уходит на нос (<span data-field="nose-force"></span>), подбородочный ремешок и бока челюсти. Рот получает <span data-field="press-total"></span> всего.</li>
-      <li data-say="check-sum" data-tone="bad">Поводьев нет. Чек держит удила вверх по морде с той силой, которую лошадь прикладывает, пытаясь опустить голову, здесь <span data-field="F"></span> с каждой стороны, и эта сила не отпускается, пока лошадь в упряжи. <span data-field="lip-total"></span> лежит на углах губ.</li>
-      <li data-say="second-bar" data-tone="bad">Вторая тонкая штанга (<span data-field="second-d"></span>) делит рот: она берёт <span data-field="second-share"></span> нагрузки на полоске в несколько миллиметров, и давление на дёсны в модели — давление этой штанги.</li>
-      <li data-say="weight">Собственная масса удил (<span data-field="bit-mass"></span>) лежит на языке до всякого повода: <span data-field="rest-weight"></span> постоянной нагрузки.</li>
+      <li data-say="direct-sum">У щёчки нет рычага. Два повода вместе передают <span data-field="press-total"></span> на язык и беззубые края и <span data-field="lip-total"></span> вверх, в углы рта; ничто не умножается, только перераспределяется.</li>
+      <li data-say="curb-sum" data-tone="warn">Нижнее плечо в <span data-field="lever-ratio"></span> раза длиннее верхнего. Когда упор срабатывает при <span data-field="rho"></span>°, он несёт <span data-field="chain-force"></span> на сторону, поэтому рот получает <span data-field="press-total"></span> вниз и назад: <span data-field="amplification"></span>× того, что дал бы повод сам по себе. Подбородок зажат с силой <span data-field="chin-force"></span>.</li>
+      <li data-say="gag-lever-sum" data-tone="warn">Цепочки нет, поэтому вращение не останавливает ничто, кроме нащёчного ремня. Стопка колец поворачивается примерно до <span data-field="rho"></span>°, и грызло протаскивается на <span data-field="lift"></span> вверх по морде, прежде чем его остановят губы. Затем нащёчный ремень тянет с силой <span data-field="cheek-force"></span> на сторону, и всё это приходится на углы рта: <span data-field="lip-total"></span> всего.</li>
+      <li data-say="gag-slide-sum" data-tone="warn">Нащёчный ремень проходит через кольцо, как верёвка через блок. Верхняя ветвь тянет к затылку с силой <span data-field="cheek-force"></span> на сторону (остальное съедает трение о кольцо); вместе с поводом это поднимает удила с силой <span data-field="lip-total"></span> в углы рта.</li>
+      <li data-say="gag-curb-sum" data-tone="bad">Два механизма на одном грызле. Гаговый повод поднимает удила шнуром с силой <span data-field="lip-total"></span> в углы рта; мундштучный повод вращает браншу до срабатывания цепочки и давит с силой <span data-field="press-total"></span> на язык и беззубые края. Лошадь получает подъём и зажим одновременно.</li>
+      <li data-say="jaw-ring-sum" data-tone="bad">Поводья (или чомбур) действуют на грызло полностью, как у трензеля: <span data-field="press-total"></span> на язык и беззубые края, а кольцо вокруг челюсти добавляет зажим: <span data-field="jaw-force"></span> на кость нижней челюсти без иного упора, кроме кости. Допущение модели: сила зажима зависит от того, как сидит кольцо.</li>
+      <li data-say="combination-sum">Из <span data-field="F"></span> каждого повода лишь <span data-field="mouth-share"></span> доходит до грызла; остальное уходит на нос (<span data-field="nose-force"></span>), подбородочный ремешок и бока челюсти. Рот получает <span data-field="press-total"></span> всего.</li>
+      <li data-say="check-sum" data-tone="bad">Поводьев нет. Чек держит удила вверх по морде с той силой, которую лошадь прикладывает, пытаясь опустить голову, здесь <span data-field="F"></span> с каждой стороны, и эта сила не отпускается, пока лошадь в упряжи. <span data-field="lip-total"></span> лежит на углах рта.</li>
+      <li data-say="second-bar" data-tone="bad">Вторая тонкая штанга (<span data-field="second-d"></span>) делит рот: она берёт <span data-field="second-share"></span> нагрузки на полоске в несколько миллиметров, и давление на беззубый край в модели — давление этой штанги.</li>
+      <li data-say="weight">Собственная масса удил (<span data-field="bit-mass"></span>) нагружает рот до всякого повода: <span data-field="rest-weight"></span> постоянной нагрузки при этом поставе.</li>
       <li data-say="poll">Затылок получает <span data-field="poll-force"></span> вниз (<span data-field="poll-kpa"></span> на затылочный ремень). <span data-field="poll-note"></span></li>
     </ul>
   </section>
@@ -302,7 +302,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-b">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура B</span></div>
     <h2 id="fig-b">Куда это ложится во рту</h2>
-    <p class="bits-figure__lede">Поперечное сечение рта в беззубом крае, в масштабе по хельсинкским измерениям (средняя ширина рта 131 мм, 28,9 мм от нёба до дёсен, язык толщиной 16 мм, 1–2 мм слизистой над костью дёсен). Грызло нарисовано в заданной толщине. Заливка показывает расчётное давление на каждую ткань; числа — кПа.</p>
+    <p class="bits-figure__lede">Поперечное сечение рта в области беззубого края, в масштабе по хельсинкским измерениям рта (Anttila et al. 2022: средняя ширина рта 131&nbsp;мм, 28,9&nbsp;мм от нёба до беззубого края), с языком толщиной 16&nbsp;мм и 1–2&nbsp;мм слизистой над костью беззубого края. Грызло нарисовано в заданной толщине. Заливка показывает расчётное давление на каждую ткань; числа — кПа.</p>
     <svg viewBox="0 0 480 330" role="img" aria-labelledby="fig-b-title">
       <title id="fig-b-title">Сечение рта с грызлом в масштабе</title>
       <path id="fb-cheeks" d="M60 200 C60 60 160 40 240 40 C320 40 420 60 420 200 C420 280 330 310 240 310 C150 310 60 280 60 200 Z" class="viz-tissue"/>
@@ -361,42 +361,42 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
       <text id="fb-l-fit" x="468" y="322" text-anchor="end" class="viz-muted viz-small"></text>
     </svg>
     <ul class="bits-statements">
-      <li data-say="fit-tight" data-tone="warn">Проверка толщины: <span data-field="total-thickness"></span> металла в пространстве, измеренном в <span data-field="bit-space"></span>. Язык сжат ещё до набора повода; модель добавляет <span data-field="fit-pct"></span> к нагрузке на язык за это.</li>
-      <li data-say="fit-ok" data-tone="good">Проверка толщины: <span data-field="total-thickness"></span> в пространстве <span data-field="bit-space"></span> . Грызло помещается, не стесняя язык в покое.</li>
-      <li data-say="nutcracker" data-tone="warn">Одно сочленение: под натяжением два плеча складываются буквой V. Шарнир уходит в язык (рентген при 25 Н показывает вдавливание языка, а не удар в нёбо), язык стискивается между плечами, а концы плечей ложатся на дёсны под углом. Контакт с нёбом становится вероятным при высокой руке или слишком широких удилах (индекс риска <span data-field="palate"></span>).</li>
-      <li data-say="double-joint">Два сочленения: центральное звено лежит на языке, а плечи следуют его бокам; всё грызло опускается на язык, а не поднимается к нёбу. Давление распределяется, но не исчезает.</li>
-      <li data-say="plate-tilt" data-tone="warn">Плоская пластина мягка, только пока лежит плоско. Фиксированные щёчки в держателях или повёрнутая щёчка наклоняют пластину так, что в язык врезается её ребро: так французское звено во рту превращается в «Доктора Бристоля».</li>
-      <li data-say="unjointed">Цельное: штанга не складывается, поэтому нагрузка делится между языком (который она сжимает) и двумя краями дёсен (где она ложится на тонкую слизистую над костью). По финским данным по рысакам у лошадей с цельными удилами больше повреждений дёсен, чем с сочленёнными.</li>
-      <li data-say="port" data-tone="warn">Порт разгружает язык и отдаёт эту нагрузку дёснам. При повороте щёчки (мундштучное действие) порт качается вверх; средний или высокий порт достигает нёба при <span data-field="rho"></span>° поворота (индекс риска <span data-field="palate"></span>).</li>
-      <li data-say="palate-design" data-tone="bad">Это грызло создано касаться нёба: лопата или U-образная деталь высотой <span data-field="port-height"></span> встречает нёбо, как только щёчка поворачивается или голова упирается в неё. Контакт с нёбом — механизм, а не побочный эффект.</li>
-      <li data-say="textured" data-tone="bad">Рельефная поверхность: лишь <span data-field="contact-pct"></span> поверхности касается ткани, а рёбра концентрируют нагрузку (фактор ребра <span data-field="edge"></span>). Тонкое грызло к тому же вдавливается глубже, прежде чем его остановит кость, поэтому полоска контакта на дёснах у́же.</li>
-      <li data-say="multilink">Много звеньев: грызло обвисает по языку, и на него нельзя опереться, но каждое звено — маленький контакт, а зазоры между звеньями могут захватить ткань языка или губы.</li>
-      <li data-say="two-strands" data-tone="bad">Две нити со смещёнными сочленениями: язык зажат между четырьмя полуплечами, складывающимися независимо, а нагрузка несётся двумя тонкими линиями вместо одной.</li>
-      <li data-say="scissor" data-tone="bad">Две половины перекрещиваются и скользят друг мимо друга: односторонний повод тянет одно плечо грызла по языку навстречу другому. Защемление языка — сама конструкция.</li>
-      <li data-say="tongue-plate">Пластина под сочленением распределяет центральную нагрузку по языку и не даёт сочленению его защемлять; удлинённая версия ещё и прижимает язык, а это ограничение главного двигателя дыхательных путей, а не удобство.</li>
-      <li data-say="keys">Ключики свисают со штанги и побуждают жевать. Сама штанга прямая; ключики добавляют движение, а не снимают давление.</li>
+      <li data-say="fit-tight" data-tone="warn">Проверка толщины: <span data-field="total-thickness"></span> металла в пространстве, измеренном в <span data-field="bit-space"></span>. Грызло вдавливает язык на <span data-field="fit-pct"></span> ещё до набора повода, и модель добавляет сопротивление языка к постоянной нагрузке.</li>
+      <li data-say="fit-ok" data-tone="good">Проверка толщины: <span data-field="total-thickness"></span> в пространстве <span data-field="bit-space"></span>. Грызло помещается, не стесняя язык в покое.</li>
+      <li data-say="nutcracker" data-tone="warn">Одно сочленение: под натяжением две половины грызла складываются буквой V. Измерено: под натяжением ломаные трензеля правильного размера отходят от нёба и уходят в язык (Engelke &amp; Gasse 2002, кадавры; Manfredi et al. 2005, рентген). Следует из статики: язык стискивается между половинами, а их концы ложатся на беззубые края под углом. Для контакта с нёбом нужны слишком широкие удила или шарнир, поднятый при слабом натяжении (индекс нёба <span data-field="palate"></span>).</li>
+      <li data-say="double-joint">Два сочленения: центральное звено лежит на языке, а половины грызла следуют его бокам. Допущение модели: грызло ложится на язык, а не поднимается к нёбу. Давление распределяется, но не исчезает.</li>
+      <li data-say="plate-tilt" data-tone="warn">Допущение модели: плоская пластина равномерно нагружает язык, только пока лежит плоско. Щёчка, сопротивляющаяся повороту, или повёрнутая бранша могут наклонить пластину так, что на язык ляжет её ребро; тогда французское звено во рту работает скорее как «Доктор Бристоль».</li>
+      <li data-say="unjointed">Цельное: штанга не складывается. Вдавив расслабленный язык, она передаёт большую часть дальнейшей нагрузки на оба беззубых края, где лежит на тонкой слизистой над костью; напряжённый язык берёт больше. Измерено: у финских рысаков с цельными удилами поражения беззубого края встречались чаще (Tuomola et al. 2021).</li>
+      <li data-say="port" data-tone="warn">Порт даёт языку место и отдаёт ещё большую часть нагрузки беззубым краям. При повороте бранши (мундштучное действие) порт качается вверх. Допущение модели: средний или высокий порт достигает нёба при <span data-field="rho"></span>° поворота (индекс нёба <span data-field="palate"></span>).</li>
+      <li data-say="palate-design" data-tone="bad">По своей конструкции это грызло касается нёба: лопата или U-образная деталь высотой <span data-field="port-height"></span> встречает нёбо, как только бранша поворачивается или голова прижимается к ней. Контакт с нёбом — часть принципа действия, а не побочный эффект.</li>
+      <li data-say="textured" data-tone="bad">Рельефная поверхность: лишь <span data-field="contact-pct"></span> поверхности касается ткани, а рёбра концентрируют нагрузку (коэффициент кромки <span data-field="edge"></span>). Более тонкое грызло к тому же даёт более узкую полоску контакта на беззубом крае. Допущение модели: коэффициенты кромки и доли контакта — оценки, а не измерения.</li>
+      <li data-say="multilink">Много звеньев: грызло обвисает по языку, и на него нельзя опереться, но каждое звено — маленький контакт. Не изучено: захватывают ли зазоры между звеньями ткань языка или губы.</li>
+      <li data-say="two-strands" data-tone="bad">Две нити со смещёнными сочленениями: язык зажат между четырьмя половинками, складывающимися независимо, а нагрузка несётся двумя тонкими линиями вместо одной.</li>
+      <li data-say="scissor" data-tone="bad">Две половины перекрещиваются и скользят друг мимо друга: односторонний повод тянет одну половину грызла по языку навстречу другой, поэтому по самой конструкции язык может защемляться.</li>
+      <li data-say="tongue-plate">Пластина под сочленением распределяет центральную нагрузку по языку и не даёт сочленению его защемлять; удлинённая версия ещё и прижимает язык, то есть ограничивает его, а не облегчает его положение.</li>
+      <li data-say="keys">Ключики свисают со штанги. Сама штанга прямая; ключики добавляют движение, а не снимают давление. Не изучено: меняют ли ключики жевание или принятие удил.</li>
       <li data-say="soft-mouth" data-tone="good">Мягкое или покрытое грызло прилегает к языку и распределяет нагрузку; оно же толстое, изнашивается и прогрызается, поэтому его нужно осматривать на оголённый сердечник.</li>
-      <li data-say="free-pivot" data-tone="bad">Грызло свободно вращается на кольце: при натяжении снизу оно подставляет ребро языку и дёснам (коэффициент кромки поднят до <span data-field="edge"></span>), поэтому от чомбура, пристёгнутого только к кольцу, предостерегают.</li>
+      <li data-say="free-pivot" data-tone="bad">Грызло свободно вращается на кольце: при натяжении снизу оно подставляет ребро языку и беззубым краям (коэффициент кромки поднят до <span data-field="edge"></span>).</li>
     </ul>
   </section>
 
   <!-- Figure C: pressures -->
   <section class="bits-figure" aria-labelledby="fig-c">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура C</span></div>
-    <h2 id="fig-c">Давление на каждую ткань против опорных порогов</h2>
-    <p class="bits-figure__lede">Расчётное контактное давление при текущих настройках. Две опорные линии — самое низкое давление удил, описанное в литературе (~100 кПа), и порог болевой чувствительности лица человека (232 кПа) — значение для кожи человека, применяемое по аналогии: для рта лошади пороги не измерены. Ткани над костью (дёсны, подбородочная ямка, челюсть под кольцом, носовая кость) чувствительнее всего; губы терпимее всех, но и меньше всего защищены от разрывов.</p>
+    <h2 id="fig-c">Давление на каждую ткань против её расчётного болевого порога</h2>
+    <p class="bits-figure__lede">Расчётное среднее контактное давление при текущих настройках; риска в каждой строке — расчётный болевой порог этой ткани. Не изучено: во рту лошади болевой порог давления не измерялся ни разу. Пороги выведены из измерений у человека: прикреплённая десна для полости рта (Baad-Hansen et al. 2013) и кожа лица для подбородка, носа, челюсти и затылка (Magerl et al. 2010), с пересчётом на размер каждого контакта. Тот же пересчёт воспроизводит пороги, измеренные на коже морды живых лошадей (Käfer-Karrer et al. 2026; Khatib et al. 2026); для рта он не проверен. Узкий контакт выдерживает большее давление, но достигает порога при меньшей силе.</p>
     <svg viewBox="0 0 640 390" role="img" aria-labelledby="fig-c-title">
-      <title id="fig-c-title">Давление на каждую ткань в сравнении с опорными порогами</title>
+      <title id="fig-c-title">Давление на каждую ткань в сравнении с её расчётным болевым порогом</title>
       <g id="fc-grid"></g>
       <line x1="200" y1="20" x2="200" y2="342" class="viz-axis"/>
       <line id="fc-th-free" x1="0" y1="20" x2="0" y2="342" class="viz-threshold"/>
       <line id="fc-th-face" x1="0" y1="20" x2="0" y2="342" class="viz-threshold"/>
-      <text id="fc-th-free-l" x="0" y="14" text-anchor="end" class="viz-small viz-muted">минимум из литературы ≈ 100</text>
-      <text id="fc-th-face-l" x="0" y="14" text-anchor="start" class="viz-small viz-muted">порог лица 232</text>
-      <g data-row="bars"><text x="190" y="44" text-anchor="end">Дёсны (на кости)</text><rect data-bar="bars" x="200" y="30" width="0" height="20" class="viz-bar"/><text data-val="bars" x="0" y="44"></text></g>
+      <text id="fc-th-free-l" x="0" y="14" text-anchor="end" class="viz-small viz-muted">расчётный порог</text>
+      <text id="fc-th-face-l" x="0" y="14" text-anchor="start" class="viz-small viz-muted">для каждой ткани</text>
+      <g data-row="bars"><text x="190" y="44" text-anchor="end">Беззубый край (на кости)</text><rect data-bar="bars" x="200" y="30" width="0" height="20" class="viz-bar"/><text data-val="bars" x="0" y="44"></text></g>
       <g data-row="tongue"><text x="190" y="84" text-anchor="end">Язык</text><rect data-bar="tongue" x="200" y="70" width="0" height="20" class="viz-bar"/><text data-val="tongue" x="0" y="84"></text></g>
-      <g data-row="lips"><text x="190" y="124" text-anchor="end">Углы губ</text><rect data-bar="lips" x="200" y="110" width="0" height="20" class="viz-bar"/><text data-val="lips" x="0" y="124"></text></g>
-      <g data-row="chin"><text x="190" y="164" text-anchor="end">Подбородная ямка</text><rect data-bar="chin" x="200" y="150" width="0" height="20" class="viz-bar"/><text data-val="chin" x="0" y="164"></text></g>
+      <g data-row="lips"><text x="190" y="124" text-anchor="end">Углы рта</text><rect data-bar="lips" x="200" y="110" width="0" height="20" class="viz-bar"/><text data-val="lips" x="0" y="124"></text></g>
+      <g data-row="chin"><text x="190" y="164" text-anchor="end">Подбородочная ямка</text><rect data-bar="chin" x="200" y="150" width="0" height="20" class="viz-bar"/><text data-val="chin" x="0" y="164"></text></g>
       <g data-row="jaw"><text x="190" y="204" text-anchor="end">Челюсть под кольцом или пластинами</text><rect data-bar="jaw" x="200" y="190" width="0" height="20" class="viz-bar"/><text data-val="jaw" x="0" y="204"></text></g>
       <g data-row="cheek"><text x="190" y="244" text-anchor="end">Щека о зубы</text><rect data-bar="cheek" x="200" y="230" width="0" height="20" class="viz-bar"/><text data-val="cheek" x="0" y="244"></text></g>
       <g data-row="nose"><text x="190" y="284" text-anchor="end">Носовая кость</text><rect data-bar="nose" x="200" y="270" width="0" height="20" class="viz-bar"/><text data-val="nose" x="0" y="284"></text></g>
@@ -406,10 +406,10 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <table class="bits-table">
       <thead><tr><th scope="col">Ткань</th><th scope="col">Нагрузка</th><th scope="col">Площадь контакта</th><th scope="col">Давление</th><th scope="col">Оценка</th></tr></thead>
       <tbody data-pressure-table>
-        <tr data-tissue="bars"><td>Дёсны, каждая сторона</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="bars"><td>Беззубый край, каждая сторона</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="tongue"><td>Язык</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
-        <tr data-tissue="lips"><td>Угол губ, каждая сторона</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
-        <tr data-tissue="chin"><td>Подбородная ямка</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="lips"><td>Угол рта, каждая сторона</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
+        <tr data-tissue="chin"><td>Подбородочная ямка</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="jaw"><td>Челюсть под кольцом, клеткой, планками или лопатками</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="cheek"><td>Щека, прижатая к зубам, с каждой стороны</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
         <tr data-tissue="nose"><td>Носовая кость под носовым ремнём</td><td class="num" data-cell="load"></td><td class="num" data-cell="area"></td><td class="num" data-cell="kpa"></td><td><span class="bits-status" data-cell="status"></span></td></tr>
@@ -417,9 +417,9 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
       </tbody>
     </table>
     <ul class="bits-statements">
-      <li data-say="tension-context">Контекст для <span data-field="F"></span> на повод: у лошадей под всадником измерены средние максимумы около 17 Н (шаг), 23 Н (рысь) и 36 Н (галоп), с зарегистрированными пиками 43, 51 и 104 Н; лошади без всадника выбирают 6–10 Н и учатся избегать большего. Сдвиньте ползунок повода к пикам, чтобы увидеть, чего стоит миг сопротивления.</li>
-      <li data-say="lead-context" data-tone="warn">Это удила для работы в руках: сила — рука человека, а не повод всадника, и в тот момент, для которого они созданы (лошадь встаёт на дыбы или вырывается), это весь вес человека, несколько сотен ньютонов, на нижнем кольце.</li>
-      <li data-say="sustained" data-tone="warn">Любое из этих давлений выше капиллярного давления ~4&nbsp;кПа, измеренного в коже человека. Давление, удерживаемое выше него, может нарушать местный кровоток; повредится ли ткань, зависит от величины давления, его длительности и от того, отпускается ли оно между темпами.</li>
+      <li data-say="tension-context">Контекст для <span data-field="F"></span> на повод. Измерено: у лошадей под всадником средние пиковые натяжения составили около 16,5&nbsp;Н на шагу, 23,2&nbsp;Н на рыси и 35,9&nbsp;Н на галопе (Piccolo &amp; Kienapfel 2019), а отдельные пики 43, 51 и 104&nbsp;Н были зарегистрированы на одном поводе (Clayton et al. 2005). Без всадника лошади выбирали до 9,4&nbsp;Н (Piccolo &amp; Kienapfel 2019); молодые лошади в добровольном тесте снизили принимаемое натяжение до 5,7&nbsp;Н и, по-видимому, научились его избегать (Christensen et al. 2011). Сдвиньте ползунок повода к пикам, чтобы увидеть, чего стоит миг сопротивления.</li>
+      <li data-say="lead-context" data-tone="warn">Это удила для работы в руках: сила — рука человека, а не повод всадника. Не изучено: усилие на таких удилах не измерялось; когда лошадь встаёт на дыбы или вырывается, оно может намного превышать обычный контакт повода.</li>
+      <li data-say="sustained" data-tone="warn">Для масштаба: давление крови в капиллярах кожи человека — около 4&nbsp;кПа (Landis 1930). Это не порог пережатия сосудов и не порог повреждения. Повредится ли ткань, зависит от величины давления, его длительности и от того, отпускается ли оно между темпами. Не изучено: какое давление и какая длительность вызывают поражения во рту лошади.</li>
     </ul>
   </section>
 
@@ -427,15 +427,15 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-d">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура D</span></div>
     <h2 id="fig-d">Есть ли стоп, или оно едет дальше?</h2>
-    <p class="bits-figure__lede">Два разных вопроса. Ограничивает ли что-нибудь механически, насколько далеко удила сдвигаются во рту, когда всадник тянет сильнее, и ограничивает ли что-нибудь силу? Цепочка останавливает вращение плеча, но не силу, которую оно передаёт; фиксированная щёчка не даёт грызлу подняться; подвижное кольцо или скользящий гаг не имеют никакого стопа до углов губ и первых коренных зубов; кольцо вокруг челюсти останавливается о кость.</p>
+    <p class="bits-figure__lede">Два разных вопроса. Ограничивает ли что-нибудь механически, насколько далеко удила сдвигаются во рту, когда всадник тянет сильнее, и ограничивает ли что-нибудь силу? Цепочка останавливает вращение бранши, но не силу, которую та передаёт. Нащёчный ремень может только тянуть, поэтому ни одна щёчка — подвижное кольцо, фиксированная, полная, D-образная или подвесная — не мешает грызлу уйти в углы рта, когда у повода есть составляющая к затылку; под натяжением подвесная щёчка смещалась к щёчным зубам так же, как ломаный трензель с подвижными кольцами (Manfredi et al. 2005). Скользящий гаг не имеет никакого стопа до углов рта и первых щёчных зубов; кольцо вокруг челюсти останавливается о кость.</p>
     <svg viewBox="0 0 640 262" role="img" aria-labelledby="fig-d-title">
       <title id="fig-d-title">Как далеко грызло может подняться во рту и что его останавливает</title>
-      <text x="20" y="30" class="viz-muted">Подъём грызла к коренным зубам</text>
+      <text x="20" y="30" class="viz-muted">Подъём грызла к щёчным зубам</text>
       <line x1="60" y1="90" x2="560" y2="90" class="viz-axis" stroke-width="2"/>
       <line x1="60" y1="80" x2="60" y2="100" class="viz-axis"/>
       <text x="60" y="118" text-anchor="start" class="viz-small viz-muted">покой в углу рта</text>
       <line x1="560" y1="80" x2="560" y2="100" class="viz-axis"/>
-      <text x="560" y="118" text-anchor="end" class="viz-small viz-muted">первый коренной зуб · ~25 мм</text>
+      <text x="560" y="118" text-anchor="end" class="viz-small viz-muted">первый щёчный зуб · ~25 мм</text>
       <rect id="fd-travel" x="60" y="86" width="0" height="8" rx="4" class="viz-bar"/>
       <circle id="fd-bit" cx="60" cy="90" r="11" class="viz-metal"/>
       <line id="fd-stop" x1="60" y1="66" x2="60" y2="114" class="viz-threshold" stroke-width="3"/>
@@ -449,19 +449,18 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
       <text id="fd-guard-label" x="230" y="246" class="viz-small"></text>
     </svg>
     <ul class="bits-statements">
-      <li data-say="stop-suspension" data-tone="good">Грызло висит на фиксированной щёчке, поэтому не может подняться в углы губ: эту составляющую берёт оголовье. Сама сила не ограничена; всадник по-прежнему может приложить к языку и дёснам любое давление.</li>
-      <li data-say="stop-tissue" data-tone="warn">Ничто механически не мешает удилам подниматься. При тяге вверх они скользят, пока не растянутся углы губ, а при достаточной силе или широких удилах — пока щека не будет прижата к первому нижнему коренному зубу. Стоп — это губа.</li>
-      <li data-say="stop-chain">Упор — жёсткий стоп вращения: после примерно <span data-field="rho"></span>° щёчка перестаёт поворачиваться. Для силы это не стоп. После этого угла каждый лишний ньютон на поводе превращается в <span data-field="amplification"></span> ньютона на язык и дёсны и пропорциональное сжатие подбородка.</li>
+      <li data-say="stop-tissue" data-tone="warn">Ничто механически не мешает удилам подниматься. При тяге вверх они скользят, пока не растянутся углы рта, а при достаточной силе или слишком широких удилах — пока щека не будет прижата к первому нижнему щёчному зубу (Pollaris et al. 2025, кадавры). Стоп — это губа.</li>
+      <li data-say="stop-chain">Упор — жёсткий стоп вращения: после примерно <span data-field="rho"></span>° бранша перестаёт поворачиваться. Для силы это не стоп. После этого угла каждый лишний ньютон на поводе превращается в <span data-field="amplification"></span> ньютона на язык и беззубые края и пропорциональное сжатие подбородка.</li>
       <li data-say="stop-rigid" data-tone="bad">Упор — жёсткое кольцо, а не цепочка: оно срабатывает почти сразу, на полоске кожи в несколько миллиметров, и не имеет никакой податливости.</li>
-      <li data-say="stop-cheekpiece" data-tone="bad">Цепочки нет: вращение останавливает только натяжение нащёчного ремня, и грызло проходит <span data-field="lift"></span> вверх по лицу, чтобы туда добраться. Механического предела до углов губ нет; подбородный ремешок его добавил бы.</li>
-      <li data-say="stop-none" data-tone="bad">У скользящего гага нет никакого стопа, если на нащёчные ремни не надеты стопоры. Удила поднимаются, пока всадник тянет, вплоть до коренных зубов, и весь подъём принимают углы губ.</li>
+      <li data-say="stop-cheekpiece" data-tone="bad">Цепочки нет: вращение останавливает только натяжение нащёчного ремня, и грызло проходит <span data-field="lift"></span> вверх по морде, чтобы туда добраться. Механического предела до углов рта нет; подбородочный ремешок его добавил бы.</li>
+      <li data-say="stop-none" data-tone="bad">У скользящего гага нет никакого стопа, если на нащёчные ремни не надеты стопоры. Удила поднимаются, пока всадник тянет, вплоть до щёчных зубов, и весь подъём принимают углы рта.</li>
       <li data-say="stop-bone" data-tone="bad">Стоп — собственная кость челюсти лошади: кольцо или клетка не могут её пройти, поэтому каждое увеличение силы принимают надкостница нижней челюсти и то, на чём лежит грызло.</li>
       <li data-say="stop-check" data-tone="bad">Ни стопа, ни отпускания: чек регулируется один раз, и лошадь несёт его всю работу.</li>
       <li data-say="stops-fitted">Резиновые стопоры на ремнях ограничивают скольжение примерно до <span data-field="lift"></span>.</li>
-      <li data-say="pull-through" data-tone="warn">При сильном одностороннем поводе кольцо может быть втянуто в рот (защита от протягивания <span data-field="guard-pct"></span>). Исследование на кадаврах показало, что одностороннее натяжение сильнее всего смещает трензель с подвижными кольцами.</li>
-      <li data-say="lip-pinch" data-tone="warn">Кольцо проходит через грызло: складка губы в углу рта может попасть в зазор и защемиться при повороте кольца. Резиновые накладки убирают это ценой толщины.</li>
+      <li data-say="pull-through" data-tone="warn">При сильном одностороннем поводе кольцо может быть втянуто в рот (защита от протягивания <span data-field="guard-pct"></span>). Измерено: в исследовании на кадаврах одностороннее натяжение смещало трензеля вбок, сильнее при слишком широком грызле (Pollaris et al. 2025).</li>
+      <li data-say="lip-pinch" data-tone="warn">Кольцо проходит через грызло. Не изучено: попадает ли складка губы в углу рта в зазор и защемляется ли при повороте кольца. Резиновые накладки закрывают зазор ценой толщины.</li>
       <li data-say="cheek-squeeze" data-tone="bad">Щека сдавливается снаружи о собственные зубы всякий раз, когда работает повод (<span data-field="cheek-kpa"></span> на накладке). Там, где накладка несёт щетину или шипы, контакт — несколько квадратных миллиметров, и предел — кожа.</li>
-      <li data-say="held-high" data-tone="warn">Удила подтянуты высоко во рту до всякого повода, поэтому углы губ несут постоянную нагрузку, и лошадь не может опустить или отпустить грызло.</li>
+      <li data-say="held-high" data-tone="warn">Удила подтянуты высоко во рту до всякого повода, поэтому углы рта несут постоянную нагрузку, и лошадь не может опустить или отпустить грызло.</li>
     </ul>
   </section>
 
@@ -469,7 +468,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-e">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура E</span></div>
     <h2 id="fig-e">Постав головы и куда уходит нагрузка</h2>
-    <p class="bits-figure__lede">Одно и то же натяжение повода, удерживаемое неуступающей рукой, при шести поставах головы: несобранная, «над поводом», затылок — высшая точка, на вертикали, за вертикалью и гиперфлексия. Столбец — расчётное пиковое давление в каждом. Если один постав явно ниже остальных, это механическое предпочтение устройства; если столбцы близки, предпочтения нет. Модель статическая и держит натяжение постоянным, а в езде натяжение меняется вместе с поставом. Геометрическое бегство — движение рта к руке — ослабляет любой повод и свойственно всем удилам: только своевременность отпускания решает, будет ли оно вознаграждено.</p>
+    <p class="bits-figure__lede">Одно и то же натяжение повода, удерживаемое неуступающей рукой, при шести поставах головы: несобранная, «над поводом», затылок — высшая точка, на вертикали, за вертикалью и гиперфлексия. Столбец — расчётное пиковое давление в каждом. Если один постав явно ниже остальных, это механическое предпочтение устройства в этой модели; если столбцы близки, предпочтения нет. Модель статическая и держит натяжение одинаковым во всех поставах, а в езде натяжение меняется вместе с поставом, поэтому наименьший расчётный пик — свойство модели, а не рекомендация. Геометрическое бегство — движение рта к руке — ослабляет любой повод и свойственно всем удилам: только своевременность отпускания решает, будет ли оно вознаграждено.</p>
     <svg viewBox="0 0 640 320" role="img" aria-labelledby="fig-e-title">
       <title id="fig-e-title">Пиковое давление при шести поставах головы</title>
       <g data-posture-col="0" transform="translate(60 0)"><image class="viz-drawing glyph" href="" x="-46" y="30" width="92" height="64" preserveAspectRatio="xMidYMax meet"/><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle"></text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle"></text></g>
@@ -484,14 +483,14 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <p class="bits-legend-row"><span data-field="posture-credit"></span></p>
     <ul class="bits-statements">
       <li data-say="bias-not-collected">Наименьший расчётный пик при длинной шее и носе вперёд. Устройство тише всего, когда от лошади ничего не просят; оно не несёт указаний о поставе, и какой постав последует, зависит от руки всадника, а не от удил.</li>
-      <li data-say="bias-above" data-tone="warn">Наименьший расчётный пик при высокой голове и носе вперёд. Под удерживающей рукой это сочетание может подталкивать лошадь уходить «над повод»: по мере подъёма головы нагрузка уходит с дёсен и языка на углы рта. Правильному поставу это не учит.</li>
+      <li data-say="bias-above" data-tone="warn">Наименьший расчётный пик при высокой голове и носе вперёд при постоянном натяжении: по мере подъёма головы нагрузка уходит с беззубых краёв и языка на углы рта. Не изучено: подталкивает ли это лошадь уходить «над повод» под удерживающей рукой. Правильному поставу это не учит.</li>
       <li data-say="bias-correct" data-tone="good">Наименьший расчётный пик при высоком затылке и носе чуть впереди вертикали. Это устройство не работает против постава, который всадники называют правильным; научить ему оно всё равно не может: это делает только своевременное отпускание.</li>
       <li data-say="bias-vertical">Наименьший расчётный пик при голове на вертикали. Устройство близко к нейтральному; окажется ли лошадь правильной или закрученной, зависит от того, когда уступит рука.</li>
-      <li data-say="bias-btv" data-tone="bad">Наименьший расчётный пик за вертикалью при постоянном натяжении. Под удерживающей рукой это может подталкивать к закручиванию; лошадь, уже идущую за вертикалью, это сочетание может увести ещё дальше.</li>
-      <li data-say="bias-rollkur" data-tone="bad">Наименьший расчётный пик в гиперфлексии, но лишь при допущении модели о постоянном натяжении. На практике гиперфлексию обычно удерживают значительным натяжением (Christensen et al. 2014), а её вред для благополучия задокументирован (König von Borstel et al. 2024): суженные дыхательные пути, ограниченный обзор, нагрузка на связки шеи. Ничто в металле этого не предотвращает; может только рука.</li>
-      <li data-say="bias-none">Явного механического предпочтения нет: расчётные пики при шести поставах различаются меньше погрешности модели, поэтому постав лошади зависит от руки, а не от металла.</li>
-      <li data-say="curb-head" data-tone="warn">Мундштучное действие добавляет два указания вниз: подбородок назад и затылок вниз. Оба снимаются сдачей в затылке, поэтому мундштук без отпускания склоняет к вертикали; насколько дальше уйдёт лошадь, зависит от руки.</li>
-      <li data-say="gag-head" data-tone="warn">Действие гага поднимает углы губ к затылку. Подъём снимается поднятием головы и раскрытием горла, поэтому уклон — выше вертикали; малая затылочная составляющая говорит обратное, потому гаги и описывают как дающие лошади два указания сразу.</li>
+      <li data-say="bias-btv" data-tone="bad">Наименьший расчётный пик за вертикалью при постоянном натяжении. Не изучено: влияет ли это на постав под удерживающей рукой и уводит ли лошадь, уже идущую за вертикалью, ещё дальше.</li>
+      <li data-say="bias-rollkur" data-tone="bad">Наименьший расчётный пик в гиперфлексии, но лишь при допущении модели об одинаковом натяжении. Измерено: езда за вертикалью регистрировалась с натяжением повода не ниже, чем в соревновательной рамке (Christensen et al. 2014; König von Borstel et al. 2024), а гиперфлексия сужает дыхательные пути, ограничивает обзор вперёд и растягивает выйную связку (König von Borstel et al. 2024). Ничто в металле этого не предотвращает; может только рука.</li>
+      <li data-say="bias-none">Предпочтительный постав не называется. Таблица показывает расчётный пик при каждом поставе для одного и того же натяжения и горизонтального повода. Измерено: за вертикалью натяжение повода такое же или выше (Christensen et al. 2014; König von Borstel et al. 2024), а повод не горизонтален, когда рот намного ниже руки; по поставам ни то ни другое не моделируется, поэтому наименьшее значение в таблице — не рекомендация.</li>
+      <li data-say="curb-head" data-tone="warn">Мундштучное действие добавляет две тяги вниз: подбородок назад и затылок вниз. Следует из статики: в этой модели обе снимаются сдачей в затылке, поэтому мундштук без отпускания склоняет к вертикали; насколько дальше уйдёт лошадь, зависит от руки.</li>
+      <li data-say="gag-head" data-tone="warn">Действие гага поднимает углы рта к затылку. Следует из статики: подъём снимается поднятием головы, поэтому уклон — выше вертикали, а малая затылочная составляющая направлена в другую сторону; два сигнала противоречат друг другу.</li>
       <li data-say="check-head" data-tone="bad">Чек фиксирует нижнее положение, которое может занять голова, и сопротивляется каждой попытке опустить её ниже; постав не выучен, а навязан, пока надета упряжь.</li>
       <li data-say="btv-horse">Для лошади, уже идущей за вертикалью: это сочетание <span data-field="btv-verdict"></span>. Надёжное средство — рука, а не металл: отпускать, когда нос идёт вперёд, и никогда — когда назад.</li>
     </ul>
@@ -501,16 +500,16 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-f">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура F</span></div>
     <h2 id="fig-f">Что, вероятно, пойдёт не так</h2>
-    <p class="bits-figure__lede">Каждая строка — задокументированное у лошадей поражение или проблема, прочитанные по собственным числам и флагам этого сочетания. Уровень — оценка модели при текущих настройках; номера источников указывают на исследования внизу страницы, описывающие поражение, его место и связь с типом удил.</p>
+    <p class="bits-figure__lede">Каждая строка — задокументированное у лошадей поражение или проблема, прочитанные по собственным числам и флагам этого сочетания. Уровень — оценка модели при текущих настройках, а не откалиброванная вероятность; риски поражений приведены рядом с классом и на него не влияют. Номера источников указывают на исследования внизу страницы, описывающие поражение, его место и связь с типом удил.</p>
     <table class="bits-table" data-injuries>
       <thead><tr><th scope="col">Проблема</th><th scope="col">Уровень</th><th scope="col">Что вызывает в этом сочетании</th><th scope="col">Источники</th></tr></thead>
       <tbody>
-        <tr data-risk="commissure"><th scope="row">Разрывы, язвы и рубцы в углах губ</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
-        <tr data-risk="bars"><th scope="row">Ушибы и поражения дёсен</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="commissure"><th scope="row">Разрывы, язвы и рубцы в углах рта</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="bars"><th scope="row">Ушибы и поражения беззубого края</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="tongue"><th scope="row">Ушибы, порезы и разрывы языка</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="palate"><th scope="row">Ушибы и изъязвление нёба</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="chin"><th scope="row">Потёртости подбородочной ямки от цепочки</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
-        <tr data-risk="cheek_teeth"><th scope="row">Язвы щеки о первые коренные зубы</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="cheek_teeth"><th scope="row">Язвы щеки о первые щёчные зубы</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="pinch"><th scope="row">Защемление губы или языка в отверстии кольца или зазоре звена</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="jaw"><th scope="row">Ушибы нижней челюсти под кольцом, клеткой или пластиной</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="nose"><th scope="row">Давление на носовую кость и потёртости под носовым ремнём</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
@@ -524,7 +523,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-g">
     <div class="bits-figure__head"><span class="bits-figure__num">Фигура G</span></div>
     <h2 id="fig-g">Как построены индекс вреда и класс</h2>
-    <p class="bits-figure__lede">Три части, каждая 0–100. Оценка давления: насколько расчётные давления стоят относительно опорных порогов — на худшей ткани и в среднем по всем нагруженным тканям. Ожидаемая травма: вероятные поражения из фигуры F, каждое взвешенное по тяжести (разорванный угол рта или поражение дёсен весят больше, чем потёртость подбородка). Потеря контроля: нет механического стопа, нет отпускания, двусмысленный сигнал. Веса опубликованы в каталоге. Класс — не среднее: это худшее из оценки давления, худшего риска поражения и конструкции, поэтому одно вероятное поражение переводит сочетание в высокий класс, что бы ни говорило остальное.</p>
+    <p class="bits-figure__lede">Три части, каждая 0–100. Оценка давления: отношение каждого расчётного давления к расчётному болевому порогу той же ткани — на худшей ткани и в среднем по всем нагруженным тканям. Ожидаемая травма: вероятные поражения из фигуры F, каждое взвешенное по тяжести. Потеря контроля: нет механического стопа, нет отпускания, двусмысленный сигнал. Веса — суждения и опубликованы в каталоге. Класс читается отдельно: это натяжение повода на сторону, при котором самая нагруженная ткань впервые достигает расчётного болевого порога, сопоставленное с натяжениями, измеренными у лошадей (классы 0–3), либо класс 4 для конструкции, построенной на точечной нагрузке. Риски поражений приведены рядом с классом и на него не влияют.</p>
     <svg viewBox="0 0 640 230" role="img" aria-labelledby="fig-g-title">
       <title id="fig-g-title">Три части индекса вреда</title>
       <g data-part="pain"><text x="250" y="40" text-anchor="end">Оценка давления</text><text class="w viz-small viz-muted" x="256" y="40"></text><rect x="300" y="28" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="40"></text></g>
@@ -538,7 +537,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <ul class="bits-statements">
       <li data-say="class-why"><span class="bits-class" data-field="class-name"></span> <span data-field="class-why"></span></li>
     </ul>
-    <p class="bits-legend-row bits-legend-row--classes"><span><i class="is-c0"></i>Низкая нагрузка</span><span><i class="is-c1"></i>Умеренная нагрузка</span><span><i class="is-c2"></i>Повышенный риск</span><span><i class="is-c3"></i>Высокий риск травмы</span><span><i class="is-c4"></i>Высокий риск по конструкции</span></p>
+    <p class="bits-legend-row bits-legend-row--classes"><span><i class="is-c0"></i>Ниже порога при рабочем контакте</span><span><i class="is-c1"></i>Порог в пределах рабочего контакта</span><span><i class="is-c2"></i>Порог при самостоятельно выбранном контакте</span><span><i class="is-c3"></i>Порог при самом лёгком контакте</span><span><i class="is-c4"></i>Точечная нагрузка по конструкции</span></p>
   </section>
 
   <!-- Prose from the content file -->
@@ -572,37 +571,36 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <h2>Что это значит для лошади</h2>
     <ul class="bits-statements">
       <li data-say="v-reference">При опорных условиях (20 Н на каждый повод, голова на вертикали) пиковое давление — <span data-field="ref-peak"></span> — ткань: <span data-field="ref-site"></span>; <span data-field="ref-verdict"></span></li>
-      <li data-say="v-kind" data-tone="good">В этом реестре оно среди устройств с меньшим риском. Оно всё равно работает давлением и его отпусканием: лошадь просят найти положение, в котором давление прекращается, и рот — та структура, которая несёт эту просьбу.</li>
-      <li data-say="v-mid" data-tone="warn">В этом реестре оно посередине: хотя бы один механизм (перечислен выше) концентрирует нагрузку или убирает стоп, поэтому риск растёт с натяжением быстрее, чем у устройств с меньшим риском.</li>
-      <li data-say="v-harsh" data-tone="bad">В этом реестре оно среди устройств с высоким риском. Причину называет фигура G: расчётный пик при опорном натяжении, вероятное поражение или конструкция, которая концентрирует нагрузку либо касается нёба, щеки или языка по самому устройству.</li>
-      <li data-say="v-rplus">Любые удила, включая эти, работают отрицательным подкреплением: прикладывается неприятное давление и снимается, когда лошадь подчиняется. Реестр измеряет, насколько оно неприятно, насколько точно его можно снять и защищает ли что-нибудь лошадь, когда рука его не снимает.</li>
-      <li data-say="v-lift" data-tone="bad">Без механического стопа против подъёма единственная защита углов губ — сдержанность всадника. В миг испуга или сопротивления её нет.</li>
-      <li data-say="v-chain" data-tone="warn">Подбородная ямка — кожа на кости. Голая цепочка при этой настройке даёт <span data-field="chin-kpa"></span>; накладка распределяет это примерно до четверти.</li>
-      <li data-say="v-banned" data-tone="bad">Это сочетание или его часть запрещены или ограничены по меньшей мере одним руководящим органом из числа названных в источниках. Запрет — суждение о той же механике, которую описывает эта страница.</li>
+      <li data-say="v-kind" data-tone="good">В этом реестре оно в одном из нижних классов: расчётный болевой порог достигается только в пределах обычного рабочего контакта или выше него. Оно всё равно работает давлением и его отпусканием: лошадь просят найти положение, в котором давление прекращается, и рот — та структура, которая несёт эту просьбу.</li>
+      <li data-say="v-mid" data-tone="warn">В этом реестре оно в среднем классе: расчётный болевой порог достигается при натяжении, которое лошади выбирают сами без всадника, намного ниже обычного рабочего контакта.</li>
+      <li data-say="v-harsh" data-tone="bad">В этом реестре оно в одном из верхних классов: расчётный болевой порог достигается ниже самого лёгкого натяжения, которое лошади принимали в добровольном тесте, либо конструкция построена на точечной нагрузке. Что именно, называет фигура G.</li>
+      <li data-say="v-rplus">Удила обычно работают через негативное подкрепление: давление прикладывается и снимается, когда лошадь подчиняется. Реестр оценивает, насколько сильно это давление, насколько точно его можно снять и защищает ли что-нибудь лошадь, когда рука его не снимает.</li>
+      <li data-say="v-lift" data-tone="bad">Без механического стопа против подъёма единственная защита углов рта — сдержанность всадника. В момент испуга или сопротивления её может не быть.</li>
+      <li data-say="v-chain" data-tone="warn">Подбородочная ямка — кожа на кости. Голая цепочка при этой настройке даёт <span data-field="chin-kpa"></span>. Следует из статики: давление падает с шириной ленты, поэтому накладка снижает его примерно до трети.</li>
     </ul>
   </section>
 
   <section class="bits-prose" data-prose="model">
     <p class="entry">Модель</p>
     <h2>Что принято и откуда это взято</h2>
-    <p>Всё выше следует из статического равновесия и простой контактной модели. Вывод и каждый параметр опубликованы, чтобы любое число можно было проверить или изменить.</p>
+    <p>Всё выше следует из статического равновесия, контактной модели слизистой на кости и болевых порогов, выведенных из измерений у человека. Вывод и каждый параметр опубликованы, чтобы любое число можно было проверить или изменить.</p>
     <h3>Силы</h3>
-    <p>Каждая щёчка рассматривается как жёсткий рычаг с осью в грызле. Повод тянет за нижнее плечо длиной <em>s</em> с натяжением <em>F</em> под углом <em>θ</em> к голове; цепочка (если есть) тянет за верхнее плечо длиной <em>p</em>. Баланс моментов после поворота щёчки на <em>ρ</em>:</p>
-    <p class="bits-formula">F · s · sin(θ + ρ) = C · p · cos ρ + T · p · sin ρ</p>
-    <p>При цепочке нащёчный ремень несёт 15 % момента, а цепочка — остальное, как показывают прямые измерения сил Кросса и соавторов. Без цепочки ремень несёт всё, и щёчка поворачивается, пока губы не остановят подъём грызла. У скользящего гага ремень — шнур через блок: ветвь к затылку несёт <em>F·e<sup>−μπ/2</sup></em>. Кольцо вокруг челюсти превращает натяжение в зажим нижней челюсти; комбинированные удила уводят фиксированную долю повода на нос, подбородок или пластины у челюсти до грызла; чек моделируется как подъём вдоль морды с собственным нажимом лошади в качестве силы. Ткани получают векторную сумму: составляющая к нижней челюсти ложится на язык и дёсны, составляющая к затылку — на углы губ (за вычетом того, что берёт фиксированная щёчка).</p>
+    <p>Каждая бранша рассматривается как жёсткий рычаг с осью в грызле. <em>F</em> — всё натяжение, которое рука прикладывает с одной стороны; при двух поводьях (пелям или двойное оголовье) оно делится между трензельным поводом или бридоном и мундштучным поводом в измеренной пропорции (MacKechnie-Guire et al. 2025), которую можно изменить ползунком выше. Повод тянет за нижнее плечо длиной <em>s</em> под углом <em>θ</em> к голове; после поворота бранши на <em>ρ</em> её удерживают цепочка (натяжение <em>C</em>) и нащёчный ремень (натяжение <em>T</em>):</p>
+    <p class="bits-formula">F · s · sin(θ + ρ) = C · c + T · t</p>
+    <p>где c и t — перпендикулярные плечи цепочки и нащёчного ремня относительно грызла; цепочка идёт от верхнего ушка бранши к подбородочной ямке. Восстанавливающий момент делится между цепочкой и ремнём пропорционально жёсткости, умноженной на квадрат плеча. Допущение модели: жёсткость ремня подобрана так, чтобы он брал небольшую долю, в согласии с малыми нагрузками на затылок, измеренными Cross et al. (2017). У простого кимблвика кольцо повода скользит по D и встаёт там, где линия повода проходит через центр дуги. Без цепочки ремень несёт весь момент, и бранша поворачивается, пока губы не остановят подъём грызла. У гага-блока ветвь к затылку несёт <em>F·e<sup>−μ(π−θ)</sup></em> — трение при обхвате π − θ. Кольцо вокруг челюсти составляет с грызлом одно тело: повод действует на грызло полностью, а кольцо добавляет зажим нижней челюсти, сила которого зависит от посадки (допущение модели). Комбинированные удила уводят фиксированную долю повода на нос, подбородок или пластины у челюсти; чек моделируется как подъём вдоль морды с собственным нажимом лошади в качестве силы; вес удил проецируется на ось головы в выбранном поставе. Следует из статики: ремни только тянут. Составляющая равнодействующей к нижней челюсти ложится на язык и беззубые края. Составляющая к затылку загоняет грызло в углы рта при любой щёчке, поскольку фиксированные, полные, D-образные и подвесные щёчки этому не мешают (Manfredi et al. 2005); только составляющую к передней части рта удерживают нащёчные ремни, и она уходит на затылок.</p>
     <h3>Давления</h3>
-    <p>Грызло радиуса <em>r</em> , вдавленное в ткань на глубину <em>δ</em> , касается полоски шириной <em>2√(2rδ − δ²)</em>. Над дёснами глубина ограничена 1,5 мм слизистой над костью; над языком принято 5 мм. Ширина, умноженная на длину контакта и на долю поверхности, которая действительно касается (меньше единицы для кручёных, зубчатых или звеньевых поверхностей), — площадь контакта; нагрузка, делённая на неё и умноженная на коэффициент кромки для рёбер, наклонённых пластин или свободно вращающейся штанги, — давление. Пороги взяты из сравнения давлений повода с болевыми порогами человека.</p>
+    <p>Над беззубым краем грызло лежит на 1–2&nbsp;мм слизистой, сращённой с костью; она моделируется как упругое основание жёсткостью <em>k = α·E/h</em>, где α подобран по плоским конечно-элементным расчётам. Для нагрузки <em>q</em> на единицу длины и грызла радиуса <em>R</em> полуширина контакта <em>a = (3qR/2k)<sup>1/3</sup></em>, а среднее давление <em>q/2a</em>, так что полоска расширяется с ростом нагрузки. Допущение модели: модуль слизистой взят из исследований на людях (Sawada 2011; Chen 2015); во всём их диапазоне отношение давления к порогу почти не меняется, потому что более мягкий слой и распределяет нагрузку, и снижает порог. Язык очень мягок (модуль сдвига около 3&nbsp;кПа у живого человека по данным МР-эластографии; Cheng 2011): вдавив расслабленный язык на несколько миллиметров (допущение модели), грызло передаёт большую часть дальнейшей нагрузки на беззубые края. Порты и арки дают языку место и отдают беззубым краям ещё больше. Острая или рельефная поверхность моделируется меньшим радиусом, а рельефная касается лишь частью длины; подбородочная цепочка и затылочный ремень давят как лента, <em>p = C/(R·w)</em>. Не изучено: во рту лошади болевой порог давления не измерялся ни разу. Порог каждой ткани выведен из данных о прикреплённой десне человека, 152&nbsp;±&nbsp;62&nbsp;кПа при щупе 4,8&nbsp;мм (Baad-Hansen et al. 2013), для беззубого края, углов рта и языка (для языка порог не измерен ни у одного вида — допущение модели), со слизистой щеки в 1,2 раза и нёбом в 4,3 раза выше (Ogawa et al. 2003; Ogimoto et al. 2002); и из данных о коже лица человека, 232&nbsp;кПа при щупе 1&nbsp;см² (Magerl et al. 2010), для подбородка, носа, челюсти и затылка. Порог пересчитывается на размер контакта: <em>P* = P<sub>ref</sub>·(d/d<sub>ref</sub>)<sup>n−2</sup></em>, n = 0,7 по данным для лошадей (Taylor 2016; Pongratz &amp; Licka 2017). Кожа лошади и человека имеет одинаковую толщину эпидермиса и плотность нервных волокон (Tong et al. 2020); пересчитанный на щупы 2–3&nbsp;мм порог кожи лица человека даёт 1,3–2,6&nbsp;МПа, а на морде живых лошадей измерено 1,0–3,8&nbsp;МПа (Käfer-Karrer et al. 2026; Khatib et al. 2026). Оценки: ниже 0,5 порога — намного ниже; от 0,5 до 1 — близко к порогу; от 1 до 2 — выше порога; 2 и более — больше двух порогов.</p>
     <table class="bits-table" data-params>
       <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th><th scope="col">Основание</th></tr></thead>
       <tbody></tbody>
     </table>
     <h3>Границы</h3>
-    <p>Статика, две координаты, одна лошадь средних размеров. Динамические пики, несимметричный повод, движение языка, слюна и собственное напряжение лошади не моделируются. Веса индекса — суждения и показаны как таковые. Модель ранжирует механизмы друг относительно друга; травму конкретной лошади она не предсказывает. Затяжка капсюля — главный фактор риска поражений углов рта в датском обследовании (Uldahl &amp; Clayton 2019) — не моделируется. Площади контакта фиксированы, поэтому давление линейно по силе: при большом натяжении модель завышает давление, при слабом занижает. Коэффициенты кромки рельефных грызел — оценки, а не измерения. Пороги болевой чувствительности — значения для кожи человека; для рта лошади они не измерены.</p>
+    <p>Статика, две координаты, одна лошадь средних размеров. Динамические пики, несимметричный повод, движение языка, слюна и собственное мышечное напряжение лошади не моделируются. Веса индекса — суждения и показаны как таковые. Модель сравнивает механизмы между собой; боль или травму конкретной лошади она не предсказывает. Затяжка капсюля оказалась фактором риска поражений углов рта, а тип удил — нет (Uldahl &amp; Clayton 2019); капсюль не моделируется. Давления выше 1500&nbsp;кПа показаны как «&gt; 1500&nbsp;кПа»: дальше деформации выходят за пределы линейной контактной модели. Коэффициенты кромки рельефных грызел — оценки, а не измерения. Болевые пороги выведены из данных о человеке и проверены на лошадях только для кожи морды.</p>
   </section>
 
   <section class="bits-prose bits-sources" data-prose="sources">
     <p class="entry">Источники</p>
-    <h2>Использованные измерения, исследования и правила</h2>
+    <h2>Использованные измерения и исследования</h2>
     <ol data-sources></ol>
   </section>
 
@@ -626,7 +624,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 
 <script src="../../../../assets/theme.js"></script>
 <script src="../../../../assets/site.js"></script>
-<script src="../../../../assets/bits-model.js?v=3"></script>
-<script src="../../../../assets/bits.js?v=3"></script>
+<script src="../../../../assets/bits-model.js?v=4"></script>
+<script src="../../../../assets/bits.js?v=4"></script>
 </body>
 </html>
