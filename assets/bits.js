@@ -53,7 +53,7 @@
   /* Pressures beyond the ceiling of human pain testing are shown as "> limit":
      the model is not precise enough for larger figures to carry meaning. */
   function kPa(x) {
-    var limit = CATALOG && CATALOG.thresholds_kpa.human_test_limit;
+    var limit = CATALOG && CATALOG.thresholds.display_limit_kpa;
     if (limit && x > limit) {
       return fill(ui("kpa_over", "> {limit}"), { limit: num(limit, 0) }) + " " + ui("unit_kPa", "kPa");
     }
@@ -120,11 +120,12 @@
 
   function f1(x) { return Number(x).toFixed(1); }
 
-  function levelOf(kpa) {
-    var th = CATALOG.thresholds_kpa;
-    if (kpa < th.lowest_reported) { return "good"; }
-    if (kpa < th.face_ppt) { return "warning"; }
-    if (kpa < th.hand_ppt) { return "serious"; }
+  /* Level of a pressure against the derived pain threshold of its tissue. */
+  function levelOf(ratio) {
+    var breaks = CATALOG.thresholds.ratio_breaks;
+    if (ratio < breaks[0]) { return "good"; }
+    if (ratio < breaks[1]) { return "warning"; }
+    if (ratio < breaks[2]) { return "serious"; }
     return "critical";
   }
 
@@ -1041,7 +1042,9 @@
       field("rank-total", String(rank.total));
       field("peak", kPa(res.pressures.peak));
       field("peak-site", ui("tissue_" + res.pressures.peakSite, res.pressures.peakSite));
-      field("peak-verdict", ui("peak_" + levelOf(res.pressures.peak), ""));
+      field("peak-verdict", ui("peak_" + levelOf(res.pressures.peakRatio), ""));
+      field("peak-threshold", kPa(res.thresholds[res.pressures.peakSite] || 0));
+      field("peak-ratio", num(res.pressures.peakRatio, 1));
       var cls = sc.harm.cls;
       var badge = document.querySelector('[data-field="class-badge"]');
       badge.textContent = ui("class_" + cls, "");
@@ -1085,11 +1088,11 @@
       field("poll-kpa", kPa(res.pressures.poll));
       field("total-thickness", mm(res.totalThickness));
       field("bit-space", mm(res.inputs.bitSpace));
-      field("fit-pct", pct(res.fit - 1));
+      field("fit-pct", mm(res.crowding, 0));
       field("palate", num(res.palate, 2));
       field("port-height", mm(mp.port_height || 0));
       field("contact-pct", pct(mp.contact_fraction || 1));
-      var edge = (mp.edge || 1) * (ch.free_pivot ? 1 + 0.6 * (ch.pivot_factor != null ? ch.pivot_factor : 1) : 1);
+      var edge = res.contact.edge;
       field("edge", num(edge, 2));
       field("guard-pct", pct(ch.pull_through_guard || 0));
       field("chin-kpa", kPa(res.pressures.chin));
@@ -1701,7 +1704,7 @@
       if (mp.joints === 1 && !mp.port_height) { lift = res.palate * 16; }
       if (mp.joints === 2 && !mp.two_strands && !mp.port_height) { lift = -4; }
       var plateTilt = 0;
-      if (mp.plate && mp.plate_tilt_sensitive && ((ch.ride_up_guard || 0) >= 0.6 || mech === "curb")) { plateTilt = 18; }
+      if (mp.plate && mp.plate_tilt_sensitive && ((ch.rotation_guard || 0) >= 0.6 || mech === "curb")) { plateTilt = 18; }
       drawMouth("fb", { cx: 240, cy: bitMid, width: width, h: h, scale: SCALE_B, plateTilt: plateTilt }, mouth.draw || {}, mp, lift, 76);
 
       var pr = res.pressures;
@@ -1742,11 +1745,10 @@
     function figureC(res) {
       var pr = res.pressures;
       var f = res.forces;
-      var th = CATALOG.thresholds_kpa;
-      var mainFraction = 1 - (res.ch.second_bar_share || 0);
+      var thr = res.thresholds;
       var loads = {
-        bars: { load: f.pressTotal * mainFraction * res.mp.share.bars / 2, area: res.areas.bar, always: true },
-        tongue: { load: f.pressTotal * mainFraction * res.mp.share.tongue * res.fit, area: res.areas.tongue, always: true },
+        bars: { load: f.barLoadPerSide, area: res.areas.bar / 2, always: true },
+        tongue: { load: f.tongueLoad, area: res.areas.tongue, always: true },
         lips: { load: f.lipPerSide, area: res.areas.lip, always: true },
         chin: { load: f.chinLoad, area: res.areas.chin },
         jaw: { load: f.jawLoad, area: res.areas.jaw },
@@ -1782,10 +1784,10 @@
         tickText.textContent = String(v);
         grid.appendChild(tickText);
       }
+      /* Each tissue has its own derived threshold, drawn as a tick on its row. */
       ["free", "face"].forEach(function (name) {
-        var value = name === "free" ? th.lowest_reported : th.face_ppt;
-        attrs(el("fc-th-" + name), { x1: x(value), x2: x(value), y1: 20, y2: bottom });
-        attrs(el("fc-th-" + name + "-l"), { x: x(value) + (name === "free" ? -4 : 4) });
+        el("fc-th-" + name).setAttribute("visibility", "hidden");
+        el("fc-th-" + name + "-l").setAttribute("visibility", "hidden");
       });
       var axisLine = svg.querySelector("line.viz-axis");
       attrs(axisLine, { y2: bottom });
@@ -1815,13 +1817,20 @@
         var val = g.querySelector("[data-val]");
         attrs(val, { x: x0 + w + 6, y: y + 14 });
         val.textContent = (value > axisMax ? "▸ " : "") + kPa(value);
+        var tick = g.querySelector("line.viz-threshold");
+        if (!tick) {
+          tick = document.createElementNS(SVG_NS, "line");
+          tick.setAttribute("class", "viz-threshold");
+          g.appendChild(tick);
+        }
+        attrs(tick, { x1: x(thr[tissue] || 0), x2: x(thr[tissue] || 0), y1: y - 4, y2: y + 24 });
         row.querySelector('[data-cell="load"]').textContent = N(loads[tissue].load);
         row.querySelector('[data-cell="area"]').textContent = num(loads[tissue].area, 0) + " " + ui("unit_mm2", "mm²");
         row.querySelector('[data-cell="kpa"]').textContent = kPa(value);
         var status = row.querySelector('[data-cell="status"]');
-        var level = levelOf(value);
+        var level = levelOf(res.ratios[tissue] || 0);
         status.setAttribute("data-level", level);
-        status.textContent = ui("level_" + level, level);
+        status.textContent = fill(ui("level_line", "{level} · threshold {thr}"), { level: ui("level_" + level, level), thr: kPa(thr[tissue] || 0) });
       });
     }
 
@@ -1835,8 +1844,7 @@
       var lift = Math.min(travelMax, f.liftMm);
       var stopMm;
       var stopLabel;
-      if (ch.stop === "suspension") { stopMm = 3; stopLabel = ui("stop_suspension", "fixed cheek holds it here"); }
-      else if (ch.stop === "chain") { stopMm = 2; stopLabel = fill(ui(ch.rigid_ring ? "stop_rigid" : "stop_chain", "shank stops at {rho}°; mouthpiece does not rise"), { rho: num(f.rho, 0) }); }
+      if (ch.stop === "chain") { stopMm = 2; stopLabel = fill(ui(ch.rigid_ring ? "stop_rigid" : "stop_chain", "shank stops at {rho}°; mouthpiece does not rise"), { rho: num(f.rho, 0) }); }
       else if (ch.stop === "cheekpiece") { stopMm = Math.min(travelMax, f.liftMm); stopLabel = fill(ui("stop_cheekpiece", "cheekpiece taut after {mm}"), { mm: mm(f.liftMm) }); }
       else if (ch.stop === "bone") { stopMm = 4; stopLabel = ui("stop_bone", "the jaw bone is the stop"); }
       else if (ch.stop === "none") {
@@ -1846,7 +1854,7 @@
       } else { stopMm = 18; stopLabel = ui("stop_tissue", "lip stretch · the only stop"); }
 
       if (mech === "direct" || mech === "jaw-ring" || (mech === "combination" && !f.liftMm)) {
-        lift = (ch.ride_up_guard || 0) >= 0.6 ? 2 : Math.min(18, f.lipPerSide / 2);
+        lift = Math.min(18, f.lipPerSide / 2);
       }
       var bitX = 60 + lift * pxPerMm;
       attrs(el("fd-bit"), { cx: bitX });
@@ -1972,11 +1980,10 @@
       });
       var harm = sc.harm;
       var reasons = [];
-      reasons.push(fill(ui("class_why_pain_" + harm.painIdx, ""), { peak: kPa(harm.peak), site: ui("tissue_" + res.pressures.peakSite, res.pressures.peakSite) }));
-      if (harm.worstRisk) {
-        reasons.push(fill(ui("class_why_injury_" + harm.injuryIdx, ""), { risk: ui("risk_name_" + harm.worstRisk.id, harm.worstRisk.id), level: ui("risk_level_" + harm.worstRisk.level, String(harm.worstRisk.level)) }));
-      } else {
-        reasons.push(ui("class_why_injury_0", ""));
+      var fStar = isFinite(harm.fStar) ? N(harm.fStar) : ui("f_star_none", "never within the modelled range");
+      reasons.push(fill(ui("class_why_pain_" + harm.painIdx, ""), { f: fStar, site: ui("tissue_" + res.pressures.peakSite, res.pressures.peakSite) }));
+      if (harm.worstRisk && harm.worstRisk.level > 0) {
+        reasons.push(fill(ui("class_why_risk", ""), { risk: ui("risk_name_" + harm.worstRisk.id, harm.worstRisk.id), level: ui("risk_level_" + harm.worstRisk.level, String(harm.worstRisk.level)) }));
       }
       if (harm.design) {
         reasons.push(ui("class_why_design_" + harm.design, ""));
@@ -2017,11 +2024,11 @@
       say("weight", (ch.bit_mass_kg || 0) > 0.3);
       say("poll", true);
 
-      say("fit-tight", res.fit > 1.02);
-      say("fit-ok", res.fit <= 1.02);
+      say("fit-tight", res.crowding > 0);
+      say("fit-ok", res.crowding <= 0);
       say("nutcracker", mp.joints === 1 && !mp.scissor);
       say("double-joint", mp.joints === 2 && !mp.two_strands && !mp.port_height);
-      say("plate-tilt", !!mp.plate && !mp.plate_under && (mp.edge > 1.2 || ch.ride_up_guard >= 0.6 || mech === "curb" || mech === "gag-lever"));
+      say("plate-tilt", !!mp.plate && !mp.plate_under && (mp.edge > 1.2 || ch.rotation_guard >= 0.6 || mech === "curb" || mech === "gag-lever"));
       say("unjointed", mp.joints === 0 && !mp.keys && !mp.port_height);
       say("port", !!mp.port_height && !mp.palate_by_design);
       say("palate-design", !!mp.palate_by_design);
@@ -2038,7 +2045,7 @@
       say("lead-context", mech === "jaw-ring" && (cheek.tags || []).indexOf("in-hand") !== -1);
       say("sustained", true);
 
-      say("stop-suspension", ch.stop === "suspension");
+      say("stop-suspension", false);
       say("stop-tissue", ch.stop === "tissue");
       say("stop-chain", ch.stop === "chain" && !ch.rigid_ring);
       say("stop-rigid", ch.stop === "chain" && !!ch.rigid_ring);
@@ -2063,7 +2070,7 @@
       say("v-reference", true);
       field("ref-peak", kPa(ref.result.pressures.peak));
       field("ref-site", ui("tissue_" + ref.result.pressures.peakSite, ref.result.pressures.peakSite));
-      field("ref-verdict", ui("ref_" + levelOf(ref.result.pressures.peak), ""));
+      field("ref-verdict", ui("ref_" + levelOf(ref.result.pressures.peakRatio), ""));
       say("v-kind", ref.harm.cls <= 1);
       say("v-mid", ref.harm.cls === 2);
       say("v-harsh", ref.harm.cls >= 3);
@@ -2103,7 +2110,7 @@
       if (when.palate_by_design != null && !!mpModel.palate_by_design !== when.palate_by_design) { return false; }
       if (when.textured != null && (((mpModel.contact_fraction || 1) < 0.9) !== when.textured)) { return false; }
       if (when.ring_through != null && !!chModel.ring_through_mouthpiece !== when.ring_through) { return false; }
-      if (when.suspended != null && ((chModel.ride_up_guard || 0) >= 0.6) !== when.suspended) { return false; }
+      if (when.suspended != null && ((chModel.rotation_guard || 0) >= 0.6) !== when.suspended) { return false; }
       if (when.min_shank != null && (chModel.shank || 0) < when.min_shank) { return false; }
       if (when.slide != null && ((chModel.mouthpiece_slide || 0) > 0) !== when.slide) { return false; }
       if (when.not_cheeks && when.not_cheeks.indexOf(cheekId) !== -1) { return false; }
@@ -2142,7 +2149,7 @@
       clear(tbody);
       (TEXT.model_params || []).forEach(function (param) {
         var row = clone("tpl-param-row");
-        var value = param.group === "thresholds" ? CATALOG.thresholds_kpa[param.key] : (param.group === "defaults" ? CATALOG.defaults[param.key] : CATALOG.mouth[param.key]);
+        var value = param.path.split(".").reduce(function (node, key) { return node == null ? null : node[key]; }, CATALOG);
         row.querySelector("th").textContent = t(param.label);
         row.querySelector("td.num").textContent = Array.isArray(value) ? value.join("–") + " " + t(param.unit) : num(value, param.digits || 0) + " " + t(param.unit);
         row.querySelectorAll("td")[1].textContent = t(param.basis);

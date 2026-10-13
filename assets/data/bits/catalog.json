@@ -1,5 +1,5 @@
 {
- "version": 3,
+ "version": 4,
  "notes": {
   "en": "Structural catalogue for the bit-mechanics register. Every number under `model` is a modelling parameter with its justification in text.json (section `model_params`). Lengths in millimetres, forces in newtons.",
   "ru": "Структурный каталог реестра механики удил. Каждое число в `model` — параметр модели; обоснование в text.json (раздел `model_params`). Длины в миллиметрах, силы в ньютонах."
@@ -225,13 +225,13 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.6,
     "pull_through_guard": 0.3,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.2,
     "poll_transfer": 0.1,
     "mobility": 1,
     "stop": "tissue",
     "signal_clarity": 0.9,
-    "ring_diameter": 70
+    "ring_diameter": 70,
+    "rotation_guard": 0
    },
    "tags": [
     "dressage",
@@ -267,13 +267,13 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.6,
-    "ride_up_guard": 0.15,
     "lateral_guidance": 0.4,
     "poll_transfer": 0.05,
     "mobility": 0.4,
     "stop": "tissue",
     "signal_clarity": 0.9,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0.15
    },
    "tags": [
     "dressage",
@@ -305,13 +305,13 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0.15,
     "lateral_guidance": 0.6,
     "poll_transfer": 0.05,
     "mobility": 0.35,
     "stop": "tissue",
     "signal_clarity": 0.9,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0.15
    },
    "tags": [
     "dressage",
@@ -356,8 +356,8 @@
         "en": "With keepers",
         "ru": "С держателями"
        },
-       "ride_up_guard": 0.7,
-       "poll_transfer": 0.05
+       "poll_transfer": 0.05,
+       "rotation_guard": 0.7
       },
       {
        "id": "without",
@@ -365,8 +365,8 @@
         "en": "Without keepers",
         "ru": "Без держателей"
        },
-       "ride_up_guard": 0.2,
-       "poll_transfer": 0.03
+       "poll_transfer": 0.03,
+       "rotation_guard": 0.2
       }
      ],
      "default": "with"
@@ -376,14 +376,14 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.7,
     "lateral_guidance": 0.9,
     "poll_transfer": 0.05,
     "mobility": 0.2,
-    "stop": "suspension",
+    "stop": "tissue",
     "signal_clarity": 0.9,
     "cheek_length": 150,
-    "snag_hazard": 0.5
+    "snag_hazard": 0.5,
+    "rotation_guard": 0.7
    },
    "tags": [
     "dressage",
@@ -416,14 +416,14 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0.1,
     "lateral_guidance": 0.6,
     "poll_transfer": 0.04,
     "mobility": 0.3,
     "stop": "tissue",
     "signal_clarity": 0.9,
     "cheek_length": 75,
-    "snag_hazard": 0.2
+    "snag_hazard": 0.2,
+    "rotation_guard": 0.1
    },
    "tags": [
     "driving",
@@ -465,7 +465,7 @@
         "en": "With keepers",
         "ru": "С держателями"
        },
-       "ride_up_guard": 0.6
+       "rotation_guard": 0.6
       },
       {
        "id": "without",
@@ -473,7 +473,7 @@
         "en": "Without keepers",
         "ru": "Без держателей"
        },
-       "ride_up_guard": 0.15
+       "rotation_guard": 0.15
       }
      ],
      "default": "with"
@@ -483,14 +483,14 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.4,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.6,
     "lateral_guidance": 0.9,
     "poll_transfer": 0.06,
     "mobility": 0.8,
-    "stop": "suspension",
+    "stop": "tissue",
     "signal_clarity": 0.85,
     "cheek_length": 150,
-    "snag_hazard": 0.5
+    "snag_hazard": 0.5,
+    "rotation_guard": 0.6
    },
    "tags": [
     "dressage",
@@ -526,13 +526,13 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0.85,
     "lateral_guidance": 0.5,
     "poll_transfer": 0,
     "mobility": 0.15,
-    "stop": "suspension",
+    "stop": "tissue",
     "signal_clarity": 0.95,
-    "purchase": 25
+    "purchase": 25,
+    "rotation_guard": 0.85
    },
    "tags": [
     "dressage"
@@ -564,13 +564,13 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.7,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.3,
     "lateral_guidance": 1,
     "cheek_squeeze": 0.8,
     "poll_transfer": 0.08,
     "mobility": 0.6,
     "stop": "tissue",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.3
    },
    "tags": [
     "jumping",
@@ -679,11 +679,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.9
    },
    "tags": [
     "dressage",
@@ -790,11 +790,11 @@
     "mouthpiece_slide": 10,
     "lip_pinch": 0.15,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.3,
     "mobility": 0.3,
     "stop": "chain",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.8
    },
    "tags": [
     "dressage"
@@ -868,11 +868,11 @@
     "mouthpiece_slide": 8,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.5,
     "mobility": 0.4,
     "stop": "chain",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.8
    },
    "tags": [
     "dressage"
@@ -979,11 +979,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.2,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.6,
     "lateral_guidance": 0.5,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.75
+    "signal_clarity": 0.75,
+    "rotation_guard": 0.6
    },
    "tags": [
     "jumping",
@@ -1050,11 +1050,11 @@
     "independent_snaffle_ring": true,
     "lip_pinch": 0.25,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.6,
     "lateral_guidance": 0.5,
     "mobility": 0.3,
     "stop": "chain",
-    "signal_clarity": 0.85
+    "signal_clarity": 0.85,
+    "rotation_guard": 0.6
    },
    "tags": [
     "jumping"
@@ -1128,11 +1128,11 @@
     "shanks_set_back": true,
     "lip_pinch": 0.05,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.6,
     "lateral_guidance": 0.4,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.75
+    "signal_clarity": 0.75,
+    "rotation_guard": 0.6
    },
    "tags": [
     "jumping"
@@ -1165,18 +1165,18 @@
    "model": {
     "purchase": 25,
     "shank": 25,
-    "shank_floating": true,
     "chain": true,
     "chain_engage_deg": 45,
     "rein_mode": "curb",
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.05,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0.5,
     "lateral_guidance": 0.6,
     "mobility": 0.3,
     "stop": "chain",
-    "signal_clarity": 0.6
+    "signal_clarity": 0.6,
+    "rotation_guard": 0.5,
+    "d_arc_offset": 12
    },
    "tags": [
     "jumping",
@@ -1240,11 +1240,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.05,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0.5,
     "lateral_guidance": 0.6,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.75
+    "signal_clarity": 0.75,
+    "rotation_guard": 0.5
    },
    "tags": [
     "jumping"
@@ -1304,14 +1304,14 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.6,
     "pull_through_guard": 0.3,
-    "ride_up_guard": 0,
     "slide_limit": 0,
     "cord_friction": 0.4,
     "lateral_guidance": 0.2,
     "mobility": 1,
     "stop": "none",
     "signal_clarity": 0.6,
-    "ring_diameter": 70
+    "ring_diameter": 70,
+    "rotation_guard": 0
    },
    "tags": [
     "jumping",
@@ -1372,14 +1372,14 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.6,
-    "ride_up_guard": 0,
     "slide_limit": 0,
     "cord_friction": 0.4,
     "lateral_guidance": 0.4,
     "mobility": 0.6,
     "stop": "none",
     "signal_clarity": 0.65,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0
    },
    "tags": [
     "jumping",
@@ -1438,7 +1438,6 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 1,
-    "ride_up_guard": 0,
     "slide_limit": 0,
     "cord_friction": 0.4,
     "lateral_guidance": 0.9,
@@ -1446,7 +1445,8 @@
     "stop": "none",
     "signal_clarity": 0.65,
     "cheek_length": 150,
-    "snag_hazard": 0.5
+    "snag_hazard": 0.5,
+    "rotation_guard": 0
    },
    "tags": [
     "jumping"
@@ -1558,11 +1558,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.5,
     "mobility": 0.3,
     "stop": "cheekpiece",
-    "signal_clarity": 0.6
+    "signal_clarity": 0.6,
+    "rotation_guard": 0
    },
    "tags": [
     "jumping"
@@ -1599,12 +1599,12 @@
     "mouthpiece_rotates_with_shank": false,
     "lip_pinch": 0.15,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.4,
     "mobility": 0.5,
     "stop": "cheekpiece",
     "signal_clarity": 0.5,
-    "rho_max": 70
+    "rho_max": 70,
+    "rotation_guard": 0
    },
    "tags": [
     "jumping",
@@ -1642,11 +1642,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.05,
     "pull_through_guard": 0.7,
-    "ride_up_guard": 0.2,
     "lateral_guidance": 0.5,
     "mobility": 0.3,
     "stop": "cheekpiece",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.2
    },
    "tags": [
     "jumping",
@@ -1684,12 +1684,12 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.3,
     "lateral_guidance": 0.7,
     "poll_transfer": 0.04,
     "mobility": 0.2,
     "stop": "tissue",
-    "signal_clarity": 0.9
+    "signal_clarity": 0.9,
+    "rotation_guard": 0.3
    }
   },
   {
@@ -1721,12 +1721,12 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0.5,
     "lateral_guidance": 0.6,
     "poll_transfer": 0.04,
     "mobility": 0.3,
-    "stop": "suspension",
-    "signal_clarity": 0.9
+    "stop": "tissue",
+    "signal_clarity": 0.9,
+    "rotation_guard": 0.5
    }
   },
   {
@@ -1758,14 +1758,15 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.2,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.3,
     "lateral_guidance": 0.8,
     "cheek_squeeze": 0.5,
     "jaw_plates": true,
     "poll_transfer": 0.05,
     "mobility": 0.7,
     "stop": "tissue",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.3,
+    "jaw_plate_share": 0.5
    }
   },
   {
@@ -1797,14 +1798,14 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 0.6,
-    "ride_up_guard": 0,
     "held_high": 0.6,
     "lateral_guidance": 0.2,
     "poll_transfer": 0.15,
     "mobility": 0.6,
     "stop": "tissue",
     "signal_clarity": 0.85,
-    "ring_diameter": 70
+    "ring_diameter": 70,
+    "rotation_guard": 0
    }
   },
   {
@@ -1840,7 +1841,6 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.4,
     "pull_through_guard": 0.6,
-    "ride_up_guard": 0,
     "lateral_guidance": 1,
     "cheek_squeeze": 0.9,
     "cheek_prongs": true,
@@ -1848,7 +1848,8 @@
     "mobility": 0.8,
     "stop": "tissue",
     "signal_clarity": 0.6,
-    "ring_diameter": 70
+    "ring_diameter": 70,
+    "rotation_guard": 0
    }
   },
   {
@@ -1882,14 +1883,14 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.4,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0,
     "lateral_guidance": 1,
     "cheek_squeeze": 0.6,
     "poll_transfer": 0.1,
     "mobility": 0.6,
     "stop": "tissue",
     "signal_clarity": 0.7,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0
    }
   },
   {
@@ -1949,13 +1950,13 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.6,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.2,
     "lateral_guidance": 1,
     "cheek_squeeze": 0.8,
     "poll_transfer": 0.08,
     "mobility": 0.6,
     "stop": "tissue",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.2
    }
   },
   {
@@ -2077,11 +2078,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.9
    }
   },
   {
@@ -2187,11 +2188,11 @@
     "independent_sides": true,
     "lip_pinch": 0.2,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.5,
     "mobility": 0.4,
     "stop": "chain",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.8
    }
   },
   {
@@ -2262,11 +2263,11 @@
     "bit_mass_kg": 0.9,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.85
+    "signal_clarity": 0.85,
+    "rotation_guard": 0.9
    }
   },
   {
@@ -2336,11 +2337,11 @@
     "mouthpiece_rotates_with_shank": false,
     "lip_pinch": 0.2,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.5,
     "mobility": 0.6,
     "stop": "cheekpiece",
-    "signal_clarity": 0.5
+    "signal_clarity": 0.5,
+    "rotation_guard": 0
    }
   },
   {
@@ -2407,11 +2408,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.2,
     "pull_through_guard": 0.8,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.4,
     "mobility": 0.5,
     "stop": "cheekpiece",
-    "signal_clarity": 0.5
+    "signal_clarity": 0.5,
+    "rotation_guard": 0
    }
   },
   {
@@ -2441,14 +2442,14 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.6,
-    "ride_up_guard": 0,
     "slide_limit": 0,
     "cord_friction": 0.3,
     "lateral_guidance": 0.4,
     "mobility": 0.6,
     "stop": "none",
     "signal_clarity": 0.65,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0
    }
   },
   {
@@ -2489,11 +2490,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.3,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.4,
     "mobility": 0.6,
     "stop": "none",
-    "signal_clarity": 0.5
+    "signal_clarity": 0.5,
+    "rotation_guard": 0
    }
   },
   {
@@ -2595,11 +2596,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.2,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.9
    }
   },
   {
@@ -2672,11 +2673,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.9
    }
   },
   {
@@ -2713,11 +2714,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.9
    }
   },
   {
@@ -2755,11 +2756,11 @@
     "mouthpiece_rotates_with_shank": false,
     "lip_pinch": 0.3,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0.6,
     "lateral_guidance": 0.3,
     "mobility": 0.6,
     "stop": "chain",
-    "signal_clarity": 0.6
+    "signal_clarity": 0.6,
+    "rotation_guard": 0.6
    }
   },
   {
@@ -2801,11 +2802,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.2,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.9,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.9
    }
   },
   {
@@ -2912,11 +2913,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.3,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.8
    }
   },
   {
@@ -2989,11 +2990,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.05,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.3,
     "mobility": 0.1,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.8
    }
   },
   {
@@ -3059,11 +3060,11 @@
     "mouthpiece_rotates_with_shank": true,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.7,
     "lateral_guidance": 0.3,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.7
    }
   },
   {
@@ -3139,11 +3140,11 @@
     "shanks_set_back": true,
     "lip_pinch": 0.02,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.3,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.8
+    "signal_clarity": 0.8,
+    "rotation_guard": 0.8
    }
   },
   {
@@ -3174,14 +3175,14 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.4,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.2,
     "lateral_guidance": 1,
     "jaw_clamp": 0.7,
     "jaw_area": 160,
     "poll_transfer": 0.05,
     "mobility": 0.6,
     "stop": "bone",
-    "signal_clarity": 0.7
+    "signal_clarity": 0.7,
+    "rotation_guard": 0.2
    }
   },
   {
@@ -3215,14 +3216,14 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.3,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.3,
     "lateral_guidance": 1,
     "jaw_clamp": 0.6,
     "jaw_area": 200,
     "poll_transfer": 0.05,
     "mobility": 0.4,
     "stop": "bone",
-    "signal_clarity": 0.75
+    "signal_clarity": 0.75,
+    "rotation_guard": 0.3
    }
   },
   {
@@ -3253,7 +3254,6 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0.2,
     "pull_through_guard": 1,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.8,
     "jaw_clamp": 0.8,
     "jaw_area": 100,
@@ -3261,7 +3261,8 @@
     "poll_transfer": 0,
     "mobility": 0.8,
     "stop": "bone",
-    "signal_clarity": 0.6
+    "signal_clarity": 0.6,
+    "rotation_guard": 0
    }
   },
   {
@@ -3323,7 +3324,6 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.6,
     "jaw_clamp": 0.6,
     "jaw_area": 120,
@@ -3332,7 +3332,8 @@
     "poll_transfer": 0,
     "mobility": 0.9,
     "stop": "bone",
-    "signal_clarity": 0.5
+    "signal_clarity": 0.5,
+    "rotation_guard": 0
    }
   },
   {
@@ -3364,7 +3365,6 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.3,
     "pull_through_guard": 0.7,
-    "ride_up_guard": 0,
     "held_high": 0.5,
     "lateral_guidance": 0.3,
     "share_nose": 0.35,
@@ -3374,7 +3374,8 @@
     "mobility": 0.5,
     "stop": "tissue",
     "signal_clarity": 0.7,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0
    }
   },
   {
@@ -3408,7 +3409,6 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.5,
     "pull_through_guard": 0.6,
-    "ride_up_guard": 0,
     "lateral_guidance": 0.5,
     "share_nose": 0.25,
     "share_chin": 0,
@@ -3419,7 +3419,10 @@
     "mobility": 0.7,
     "stop": "tissue",
     "signal_clarity": 0.4,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0,
+    "second_bar_edge": 1.6,
+    "second_bar_contact": 0.5
    }
   },
   {
@@ -3452,7 +3455,6 @@
     "ring_through_mouthpiece": true,
     "lip_pinch": 0.3,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.1,
     "lateral_guidance": 1,
     "share_nose": 0,
     "share_jaw": 0.55,
@@ -3461,7 +3463,8 @@
     "mobility": 0.5,
     "stop": "bone",
     "signal_clarity": 0.6,
-    "ring_diameter": 65
+    "ring_diameter": 65,
+    "rotation_guard": 0.1
    }
   },
   {
@@ -3543,11 +3546,11 @@
     "nose_area": 900,
     "lip_pinch": 0.1,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0.3,
     "lateral_guidance": 0.4,
     "mobility": 0.4,
     "stop": "chain",
-    "signal_clarity": 0.6
+    "signal_clarity": 0.6,
+    "rotation_guard": 0.3
    }
   },
   {
@@ -3591,11 +3594,11 @@
     "nose_area": 700,
     "lip_pinch": 0.1,
     "pull_through_guard": 1,
-    "ride_up_guard": 0.8,
     "lateral_guidance": 0.4,
     "mobility": 0.2,
     "stop": "chain",
-    "signal_clarity": 0.5
+    "signal_clarity": 0.5,
+    "rotation_guard": 0.8
    }
   },
   {
@@ -3665,13 +3668,13 @@
     "ring_through_mouthpiece": false,
     "lip_pinch": 0,
     "pull_through_guard": 0.9,
-    "ride_up_guard": 0,
     "check_load": 30,
     "lateral_guidance": 0.2,
     "poll_transfer": 0,
     "mobility": 0.2,
     "stop": "none",
-    "signal_clarity": 0.3
+    "signal_clarity": 0.3,
+    "rotation_guard": 0
    }
   }
  ],
@@ -3736,18 +3739,15 @@
     ],
     "joints": 0,
     "contact_fraction": 1,
-    "edge": 0.9,
+    "edge": 1.0,
     "conform": 0.8,
-    "share": {
-     "tongue": 0.65,
-     "bars": 0.35
-    },
     "palate": 0.05,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "mullen"
@@ -3778,16 +3778,13 @@
     "contact_fraction": 1,
     "edge": 1,
     "conform": 0.3,
-    "share": {
-     "tongue": 0.45,
-     "bars": 0.55
-    },
     "palate": 0.05,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "bar"
@@ -3825,11 +3822,8 @@
         "ru": "Низкий (≤ 20 мм)"
        },
        "port_height": 15,
-       "share": {
-        "tongue": 0.4,
-        "bars": 0.6
-       },
-       "palate": 0.1
+       "palate": 0.1,
+       "tongue_engagement": 0.62
       },
       {
        "id": "medium",
@@ -3838,11 +3832,8 @@
         "ru": "Средний (20–35 мм)"
        },
        "port_height": 28,
-       "share": {
-        "tongue": 0.3,
-        "bars": 0.7
-       },
-       "palate": 0.3
+       "palate": 0.3,
+       "tongue_engagement": 0.3
       },
       {
        "id": "high",
@@ -3851,11 +3842,8 @@
         "ru": "Высокий (> 35 мм)"
        },
        "port_height": 40,
-       "share": {
-        "tongue": 0.15,
-        "bars": 0.85
-       },
-       "palate": 0.6
+       "palate": 0.6,
+       "tongue_engagement": 0.2
       }
      ],
      "default": "low"
@@ -3872,16 +3860,13 @@
     "edge": 1.1,
     "conform": 0.4,
     "port_height": 15,
-    "share": {
-     "tongue": 0.4,
-     "bars": 0.6
-    },
     "palate": 0.1,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.62
    },
    "draw": {
     "mouth": "port"
@@ -3911,20 +3896,17 @@
     ],
     "joints": 0,
     "contact_fraction": 1,
-    "edge": 0.95,
+    "edge": 1.0,
     "conform": 0.6,
     "port_height": 10,
     "independent_sides": true,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
     "palate": 0.08,
     "tongue_pinch": 0.1,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.75
    },
    "draw": {
     "mouth": "port",
@@ -3958,17 +3940,14 @@
     "contact_fraction": 1,
     "edge": 0.75,
     "conform": 1,
-    "share": {
-     "tongue": 0.75,
-     "bars": 0.25
-    },
     "palate": 0.03,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.4,
     "flex": 1,
-    "chew_damage": 0.6
+    "chew_damage": 0.6,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "mullen",
@@ -4001,16 +3980,13 @@
     "contact_fraction": 1,
     "edge": 1,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
-    "palate": 0.35,
+    "palate": 0.15,
     "tongue_pinch": 0.6,
     "link_pinch": 0.1,
     "concentration": 0.6,
     "mouthing": 0.5,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "single"
@@ -4041,16 +4017,13 @@
     "contact_fraction": 0.7,
     "edge": 1.4,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
-    "palate": 0.35,
+    "palate": 0.15,
     "tongue_pinch": 0.65,
     "link_pinch": 0.1,
     "concentration": 0.6,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "single",
@@ -4082,16 +4055,13 @@
     "contact_fraction": 0.55,
     "edge": 1.7,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
-    "palate": 0.35,
+    "palate": 0.15,
     "tongue_pinch": 0.7,
     "link_pinch": 0.1,
     "concentration": 0.6,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "single",
@@ -4123,16 +4093,13 @@
     "contact_fraction": 0.45,
     "edge": 2,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
-    "palate": 0.35,
+    "palate": 0.15,
     "tongue_pinch": 0.8,
     "link_pinch": 0.2,
     "concentration": 0.6,
     "mouthing": 0.1,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "single",
@@ -4165,16 +4132,13 @@
     "contact_fraction": 0.5,
     "edge": 2.3,
     "conform": 0.6,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
     "palate": 0.3,
     "tongue_pinch": 0.9,
     "link_pinch": 0.3,
     "concentration": 0.6,
     "mouthing": 0.1,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double-strand",
@@ -4206,16 +4170,13 @@
     "contact_fraction": 0.5,
     "edge": 1.6,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
-    "palate": 0.35,
+    "palate": 0.15,
     "tongue_pinch": 0.65,
     "link_pinch": 0.1,
     "concentration": 0.6,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "single",
@@ -4251,16 +4212,13 @@
     "contact_fraction": 0.8,
     "edge": 1.15,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
-    "palate": 0.3,
+    "palate": 0.13,
     "tongue_pinch": 0.55,
     "link_pinch": 0.2,
     "concentration": 0.6,
     "mouthing": 0.9,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "single",
@@ -4294,16 +4252,13 @@
     "edge": 1,
     "conform": 0.5,
     "port_height": 15,
-    "share": {
-     "tongue": 0.4,
-     "bars": 0.6
-    },
     "palate": 0.3,
     "tongue_pinch": 0.4,
     "link_pinch": 0.1,
     "concentration": 0.7,
     "mouthing": 0.4,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.62
    },
    "draw": {
     "mouth": "single",
@@ -4334,20 +4289,17 @@
     ],
     "joints": 2,
     "contact_fraction": 1,
-    "edge": 0.85,
+    "edge": 1.0,
     "conform": 0.8,
     "plate": true,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.08,
     "tongue_pinch": 0.3,
     "link_pinch": 0.15,
     "concentration": 0.95,
     "mouthing": 0.5,
     "flex": 0,
-    "plate_tilt_sensitive": true
+    "plate_tilt_sensitive": true,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double",
@@ -4380,16 +4332,13 @@
     "edge": 1.5,
     "conform": 0.7,
     "plate": true,
-    "share": {
-     "tongue": 0.65,
-     "bars": 0.35
-    },
     "palate": 0.08,
     "tongue_pinch": 0.5,
     "link_pinch": 0.15,
     "concentration": 0.6,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double",
@@ -4423,18 +4372,15 @@
     ],
     "joints": 2,
     "contact_fraction": 1,
-    "edge": 0.9,
+    "edge": 1.0,
     "conform": 0.8,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.08,
     "tongue_pinch": 0.25,
     "link_pinch": 0.15,
     "concentration": 0.9,
     "mouthing": 0.55,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double",
@@ -4466,18 +4412,15 @@
     ],
     "joints": 2,
     "contact_fraction": 1,
-    "edge": 0.85,
+    "edge": 1.0,
     "conform": 0.9,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.05,
     "tongue_pinch": 0.2,
     "link_pinch": 0.1,
     "concentration": 0.95,
     "mouthing": 0.55,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double",
@@ -4511,16 +4454,13 @@
     "contact_fraction": 1,
     "edge": 1,
     "conform": 0.75,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.08,
     "tongue_pinch": 0.3,
     "link_pinch": 0.15,
     "concentration": 0.75,
     "mouthing": 0.55,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double",
@@ -4553,19 +4493,16 @@
     ],
     "joints": 2,
     "contact_fraction": 1,
-    "edge": 0.9,
+    "edge": 1.0,
     "conform": 0.7,
     "independent_sides": true,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
     "palate": 0.05,
     "tongue_pinch": 0.1,
     "link_pinch": 0.05,
     "concentration": 0.95,
     "mouthing": 0.5,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "double",
@@ -4597,16 +4534,13 @@
     "contact_fraction": 0.6,
     "edge": 1,
     "conform": 0.9,
-    "share": {
-     "tongue": 0.65,
-     "bars": 0.35
-    },
     "palate": 0.1,
     "tongue_pinch": 0.2,
     "link_pinch": 0.35,
     "concentration": 0.8,
     "mouthing": 0.9,
-    "flex": 0.5
+    "flex": 0.5,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "balls"
@@ -4637,16 +4571,13 @@
     "contact_fraction": 0.35,
     "edge": 1.5,
     "conform": 1,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.1,
     "tongue_pinch": 0.6,
     "link_pinch": 0.6,
     "concentration": 0.8,
     "mouthing": 0.3,
-    "flex": 0.8
+    "flex": 0.8,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "chain"
@@ -4680,16 +4611,13 @@
     "edge": 1,
     "conform": 0.3,
     "keys": true,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
     "palate": 0.05,
     "tongue_pinch": 0,
     "link_pinch": 0.1,
     "concentration": 1,
     "mouthing": 1,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "draw": {
     "mouth": "bar",
@@ -4727,16 +4655,13 @@
     "conform": 0.6,
     "port_height": 80,
     "palate_by_design": true,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
     "palate": 1,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1.5,
     "mouthing": 0.6,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.2
    }
   },
   {
@@ -4771,16 +4696,13 @@
     "edge": 1.05,
     "conform": 0.5,
     "port_height": 45,
-    "share": {
-     "tongue": 0.3,
-     "bars": 0.7
-    },
     "palate": 0.6,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.6,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.2
    }
   },
   {
@@ -4813,16 +4735,13 @@
     "edge": 1.15,
     "conform": 0.4,
     "port_height": 65,
-    "share": {
-     "tongue": 0.2,
-     "bars": 0.8
-    },
     "palate": 0.85,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.2
    }
   },
   {
@@ -4856,16 +4775,13 @@
     "edge": 1,
     "conform": 0.5,
     "port_height": 25,
-    "share": {
-     "tongue": 0.35,
-     "bars": 0.65
-    },
     "palate": 0.25,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.7,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.38
    }
   },
   {
@@ -4898,16 +4814,13 @@
     "edge": 1.05,
     "conform": 0.5,
     "port_height": 38,
-    "share": {
-     "tongue": 0.3,
-     "bars": 0.7
-    },
     "palate": 0.45,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.7,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.2
    }
   },
   {
@@ -4940,16 +4853,13 @@
     "edge": 1.3,
     "conform": 0.4,
     "port_height": 50,
-    "share": {
-     "tongue": 0.25,
-     "bars": 0.75
-    },
     "palate": 0.7,
     "tongue_pinch": 0.7,
     "link_pinch": 0.3,
     "concentration": 0.6,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.2
    }
   },
   {
@@ -4982,16 +4892,13 @@
     "contact_fraction": 1,
     "edge": 1.1,
     "conform": 0.6,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
     "palate": 0.3,
     "tongue_pinch": 0.9,
     "link_pinch": 0.3,
     "concentration": 0.6,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    }
   },
   {
@@ -5024,16 +4931,13 @@
     "contact_fraction": 0.9,
     "edge": 1.2,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.2,
     "tongue_pinch": 1,
     "link_pinch": 0.5,
     "concentration": 0.5,
     "mouthing": 0.1,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    },
    "restricted": true
   },
@@ -5066,16 +4970,13 @@
     "contact_fraction": 0.6,
     "edge": 1.6,
     "conform": 0.5,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
-    "palate": 0.35,
+    "palate": 0.15,
     "tongue_pinch": 0.7,
     "link_pinch": 0.1,
     "concentration": 0.6,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    }
   },
   {
@@ -5108,16 +5009,13 @@
     "contact_fraction": 0.3,
     "edge": 1.9,
     "conform": 1,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.1,
     "tongue_pinch": 0.7,
     "link_pinch": 0.7,
     "concentration": 0.8,
     "mouthing": 0.3,
-    "flex": 0.8
+    "flex": 0.8,
+    "tongue_engagement": 1.0
    },
    "restricted": true
   },
@@ -5150,16 +5048,13 @@
     "contact_fraction": 0.2,
     "edge": 3,
     "conform": 1,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.1,
     "tongue_pinch": 0.8,
     "link_pinch": 0.8,
     "concentration": 0.8,
     "mouthing": 0.1,
-    "flex": 0.8
+    "flex": 0.8,
+    "tongue_engagement": 1.0
    },
    "restricted": true
   },
@@ -5193,17 +5088,14 @@
     "contact_fraction": 1,
     "edge": 0.7,
     "conform": 1,
-    "share": {
-     "tongue": 0.7,
-     "bars": 0.3
-    },
     "palate": 0.02,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.3,
     "flex": 1,
-    "chew_damage": 0.4
+    "chew_damage": 0.4,
+    "tongue_engagement": 1.0
    }
   },
   {
@@ -5235,17 +5127,14 @@
     "contact_fraction": 1,
     "edge": 0.8,
     "conform": 0.7,
-    "share": {
-     "tongue": 0.55,
-     "bars": 0.45
-    },
-    "palate": 0.3,
+    "palate": 0.13,
     "tongue_pinch": 0.5,
     "link_pinch": 0.1,
     "concentration": 0.7,
     "mouthing": 0.5,
     "flex": 0.2,
-    "chew_damage": 0.5
+    "chew_damage": 0.5,
+    "tongue_engagement": 1.0
    }
   },
   {
@@ -5304,21 +5193,18 @@
     ],
     "joints": 1,
     "contact_fraction": 1,
-    "edge": 0.9,
+    "edge": 1.0,
     "conform": 0.6,
     "plate": true,
     "plate_under": true,
     "tongue_restraint": 0.4,
-    "share": {
-     "tongue": 0.6,
-     "bars": 0.4
-    },
     "palate": 0.1,
     "tongue_pinch": 0.2,
     "link_pinch": 0.1,
     "concentration": 1.2,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    }
   },
   {
@@ -5353,16 +5239,13 @@
     "conform": 0.3,
     "port_height": 40,
     "palate_by_design": true,
-    "share": {
-     "tongue": 0.4,
-     "bars": 0.6
-    },
     "palate": 1,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.2,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 0.2
    }
   },
   {
@@ -5395,16 +5278,13 @@
     "edge": 1,
     "conform": 0.4,
     "keys": true,
-    "share": {
-     "tongue": 0.5,
-     "bars": 0.5
-    },
     "palate": 0.05,
     "tongue_pinch": 0,
     "link_pinch": 0.1,
     "concentration": 1,
     "mouthing": 1,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    }
   },
   {
@@ -5437,16 +5317,13 @@
     "edge": 1.1,
     "conform": 0.3,
     "floating": true,
-    "share": {
-     "tongue": 0.3,
-     "bars": 0.7
-    },
     "palate": 0.02,
     "tongue_pinch": 0,
     "link_pinch": 0,
     "concentration": 1,
     "mouthing": 0.3,
-    "flex": 0
+    "flex": 0,
+    "tongue_engagement": 1.0
    }
   }
  ],
@@ -5515,7 +5392,7 @@
  "postures": [
   {
    "id": "not-collected",
-   "theta": 20,
+   "theta": 14,
    "name": {
     "en": "Not collected: nose forward, neck long",
     "ru": "Несобранная: нос вперёд, шея вытянута"
@@ -5550,11 +5427,12 @@
      204,
      78
     ]
-   }
+   },
+   "head_axis_deg": 14.1
   },
   {
    "id": "above",
-   "theta": 35,
+   "theta": 48,
    "name": {
     "en": "Above the bit: head high, nose out, back hollow",
     "ru": "«Над поводом»: голова высоко, нос вперёд, спина провалена"
@@ -5589,11 +5467,12 @@
      107,
      274
     ]
-   }
+   },
+   "head_axis_deg": 48.0
   },
   {
    "id": "correct",
-   "theta": 45,
+   "theta": 80,
    "name": {
     "en": "Poll highest, nose slightly in front of the vertical",
     "ru": "Затылок — высшая точка, нос чуть впереди вертикали"
@@ -5628,11 +5507,12 @@
      30,
      450
     ]
-   }
+   },
+   "head_axis_deg": 80.0
   },
   {
    "id": "vertical",
-   "theta": 70,
+   "theta": 88,
    "name": {
     "en": "On the vertical",
     "ru": "На вертикали"
@@ -5667,11 +5547,12 @@
      17,
      476
     ]
-   }
+   },
+   "head_axis_deg": 87.9
   },
   {
    "id": "btv",
-   "theta": 95,
+   "theta": 112,
    "name": {
     "en": "Behind the vertical",
     "ru": "За вертикалью"
@@ -5706,11 +5587,12 @@
      119,
      500
     ]
-   }
+   },
+   "head_axis_deg": 112.1
   },
   {
    "id": "rollkur",
-   "theta": 115,
+   "theta": 138,
    "name": {
     "en": "Hyperflexion (rollkur): nose to the chest",
     "ru": "Гиперфлексия (роллкур): нос к груди"
@@ -5745,7 +5627,8 @@
      273,
      653
     ]
-   }
+   },
+   "head_axis_deg": 138.1
   }
  ],
  "mouth": {
@@ -5758,22 +5641,47 @@
   "tongue_contact_width": 30,
   "bar_width": 12,
   "bar_mucosa": 1.5,
-  "tongue_indent": 5,
   "lip_contact_length": 15,
   "lip_indent": 3,
-  "chin_area_chain": 240,
-  "chin_area_guarded": 900,
-  "poll_area": 2400,
   "mouth_width": 131,
   "commissure_to_premolar": 25,
-  "lift_full_tension": 20
- },
- "thresholds_kpa": {
-  "lowest_reported": 100,
-  "face_ppt": 232,
-  "hand_ppt": 445,
-  "capillary_closure": 4.3,
-  "human_test_limit": 1500
+  "lift_full_tension": 20,
+  "mucosa_modulus_kpa": 300,
+  "mucosa_modulus_range": [
+   80,
+   1000
+  ],
+  "winkler_alpha": 2.5,
+  "bottom_out": 0.9,
+  "peak_to_mean": 1.4,
+  "tongue_modulus_kpa": 9,
+  "tongue_modulus_range": [
+   8,
+   42
+  ],
+  "tongue_above_bars": 5,
+  "tongue_above_bars_range": [
+   2,
+   10
+  ],
+  "chin_groove_point": [
+   0,
+   60
+  ],
+  "chin_groove_radius": 30,
+  "chin_wrap_rad": 1.0,
+  "chain_width": 8,
+  "chain_guard_width": 25,
+  "poll_radius": 40,
+  "headpiece_width": 40,
+  "nose_area": 800,
+  "jaw_area": 200,
+  "cheek_area_prongs": 40,
+  "cheek_area_flat": 300,
+  "bit_width_allowance": 5,
+  "plate_area": 120,
+  "plate_area_edged": 48,
+  "plate_under_area": 400
  },
  "defaults": {
   "rein_tension": 20,
@@ -5781,12 +5689,33 @@
    5,
    150
   ],
-  "curb_rein_share": 0.5,
+  "curb_rein_share": 0.35,
   "posture": "vertical",
   "material": "stainless",
   "chin_guard": false,
-  "cheekpiece_moment_share": 0.15,
-  "bias_margin": 0.1
+  "bias_margin": 0.1,
+  "cheekpiece_stiffness_ratio": 0.081,
+  "roundings_direct_share": 0.5,
+  "bradoon_d": 12,
+  "bit_weight_on_mouth": 0.5,
+  "held_high_preload": 6,
+  "conform_base": 0.6,
+  "free_pivot_edge_gain": 0.6,
+  "check": {
+   "theta": 15,
+   "lift_base": 6,
+   "lift_per_newton": 0.25
+  },
+  "gag": {
+   "rho_min": 5,
+   "align_margin": 5,
+   "rho_max": 80,
+   "lift_extra": 5,
+   "cord_friction": 0.4
+  },
+  "chain_engage_deg": 45,
+  "jaw_clamp": 0.6,
+  "jaw_plate_share": 0.5
  },
  "validity": {
   "default": "exists",
@@ -8643,34 +8572,12 @@
   }
  ],
  "harm": {
-  "note": "Harm index = weights.pain * pain + weights.injury * injury + weights.control * control, each part 0-100. The class is the worst of the pain, injury and design readings, never an average.",
+  "note": "Harm index = weights.pain * pain + weights.injury * injury + weights.control * control, each part 0-100. Pain readings are ratios of the modelled mean pressure to the derived pain threshold of the same tissue. The class is set by the rein tension at which the most loaded tissue reaches its derived pain threshold, compared with measured rein tensions; devices built around a point load are class 4.",
   "weights": {
    "pain": 0.4,
    "injury": 0.4,
    "control": 0.2
   },
-  "pain_curve": [
-   [
-    0,
-    0
-   ],
-   [
-    100,
-    0.25
-   ],
-   [
-    232,
-    0.55
-   ],
-   [
-    445,
-    0.85
-   ],
-   [
-    890,
-    1
-   ]
-  ],
   "pain_mix": {
    "peak": 0.7,
    "average": 0.3
@@ -8703,7 +8610,102 @@
     "behaviour"
    ],
    "severity_for_class_2": 0.7,
-   "design_edge": 1.9
+   "design_edge": 1.9,
+   "tension_breaks": [
+    23.2,
+    9.4,
+    5.7
+   ],
+   "tension_search": [
+    0.5,
+    300,
+    24
+   ]
+  },
+  "pain_curve": [
+   [
+    0,
+    0
+   ],
+   [
+    0.5,
+    0.25
+   ],
+   [
+    1.0,
+    0.55
+   ],
+   [
+    2.0,
+    0.85
+   ],
+   [
+    4.0,
+    1.0
+   ]
+  ],
+  "risk_rules": {
+   "lift_mark": 15,
+   "lift_severe": 20,
+   "partial_contact": 0.9,
+   "sharp_edge": 1.3,
+   "tongue_pinch": 0.8,
+   "palate_levels": [
+    0.2,
+    0.4,
+    0.7
+   ],
+   "link_pinch_levels": [
+    0.25,
+    0.5
+   ],
+   "lip_pinch_min": 0.4,
+   "pivot_full": 0.8,
+   "tongue_restraint": 0.5,
+   "default_severity": 0.5,
+   "injury_ratio_breaks": [
+    2,
+    4,
+    8
+   ]
+  },
+  "control": {
+   "stop": {
+    "none": 100,
+    "bone": 95,
+    "cheekpiece": 85,
+    "tissue": 70,
+    "chain": 20
+   },
+   "stop_default": 70,
+   "stop_none_limited": 75,
+   "weak_guard": 0.5,
+   "weak_guard_add": 10,
+   "rigid_ring_add": 25,
+   "conflicting": {
+    "gag": 0.25,
+    "check": 0.5
+   },
+   "signal_default": 0.8,
+   "release": {
+    "direct": 0.95,
+    "curb": 0.7,
+    "gag-slide": 0.8,
+    "gag-lever": 0.75,
+    "gag-curb": 0.65,
+    "jaw-ring": 0.6,
+    "combination": 0.7,
+    "check": 0.0
+   },
+   "release_default": 0.8,
+   "release_quick_chain_deg": 35,
+   "release_quick_chain": 0.2,
+   "release_roundings": 0.15,
+   "release_keys": 0.1,
+   "release_held_high": 0.3,
+   "release_heavy_kg": 0.4,
+   "release_heavy": 0.1,
+   "loaded_kpa": 0.5
   }
  },
  "posture_drawings": {
@@ -8741,5 +8743,91 @@
   "path": "img/postures/",
   "author_sketches_path": "img/postures/author/",
   "version": 4
+ },
+ "thresholds": {
+  "size_exponent": 0.7,
+  "size_exponent_range": [
+   0.61,
+   1.0
+  ],
+  "references": {
+   "mucosa": {
+    "kpa": 152.0,
+    "sd": 62.4,
+    "probe_d": 4.8,
+    "source": "baadhansen2013"
+   },
+   "skin": {
+    "kpa": 232.4,
+    "probe_d": 11.28,
+    "source": "magerl2010"
+   }
+  },
+  "tissues": {
+   "bars": {
+    "ref": "mucosa",
+    "factor": 1.0,
+    "status": "derived"
+   },
+   "lips": {
+    "ref": "mucosa",
+    "factor": 1.0,
+    "status": "derived"
+   },
+   "tongue": {
+    "ref": "mucosa",
+    "factor": 1.0,
+    "status": "assumption"
+   },
+   "cheek": {
+    "ref": "mucosa",
+    "factor": 1.2,
+    "status": "derived"
+   },
+   "palate": {
+    "ref": "mucosa",
+    "factor": 4.3,
+    "status": "derived"
+   },
+   "chin": {
+    "ref": "skin",
+    "factor": 1.0,
+    "status": "derived"
+   },
+   "nose": {
+    "ref": "skin",
+    "factor": 1.0,
+    "status": "derived"
+   },
+   "jaw": {
+    "ref": "skin",
+    "factor": 1.0,
+    "status": "derived"
+   },
+   "poll": {
+    "ref": "skin",
+    "factor": 1.0,
+    "status": "assumption"
+   }
+  },
+  "ratio_breaks": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "display_limit_kpa": 1500,
+  "capillary_blood_pressure": 4.3
+ },
+ "palate_index": {
+  "rotation_exponent": 1.5,
+  "rotation_reference_deg": 45,
+  "rotation_floor_deg": 10,
+  "rotation_cap": 1.6,
+  "high_hand_theta": 45,
+  "high_hand_factor": 1.5,
+  "oversize_scale": 20,
+  "push_scale": 4,
+  "by_design": 0.9,
+  "by_design_check": 1.0
  }
 }
