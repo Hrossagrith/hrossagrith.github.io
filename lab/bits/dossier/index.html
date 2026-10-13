@@ -80,7 +80,8 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <p class="bits-print-url" data-print-url></p>
 
   <div class="bits-empty" data-missing hidden>
-    <p>No combination is selected. <a href="../">Return to the register</a> and choose a cheek and a mouthpiece.</p>
+    <p data-missing-reason="none">No combination is selected. <a href="../">Return to the register</a> and choose a cheek and a mouthpiece.</p>
+    <p data-missing-reason="impossible" hidden>This cheek and this mouthpiece cannot be assembled into one bit, so there is no dossier for them. <a href="../">Return to the register</a>: impossible combinations are shown with a dashed outline in the matrix.</p>
   </div>
 
   <div data-dossier hidden>
@@ -382,15 +383,15 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <!-- Figure C: pressures -->
   <section class="bits-figure" aria-labelledby="fig-c">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure C</span></div>
-    <h2 id="fig-c">Pressure on each tissue against pain thresholds</h2>
-    <p class="bits-figure__lede">Modelled contact pressure at the current settings. The two reference lines are the upper end of rein pressures found pain-free when compared with human thresholds (~100&nbsp;kPa) and the human facial pressure-pain threshold (232&nbsp;kPa). Bone-backed tissue (bars, chin groove, the jaw under a ring, the nasal bone) is the most sensitive; the lips are the most tolerant but also the least protected from tearing.</p>
+    <h2 id="fig-c">Pressure on each tissue against reference thresholds</h2>
+    <p class="bits-figure__lede">Modelled contact pressure at the current settings. The two reference lines are the lowest bit pressure reported in the literature (~100&nbsp;kPa) and the human facial pressure-pain threshold (232&nbsp;kPa), a human skin value used by analogy: no thresholds have been measured for the horse’s mouth. Bone-backed tissue (bars, chin groove, the jaw under a ring, the nasal bone) is the most sensitive; the lips are the most tolerant but also the least protected from tearing.</p>
     <svg viewBox="0 0 640 390" role="img" aria-labelledby="fig-c-title">
-      <title id="fig-c-title">Pressure on each tissue compared with pain thresholds</title>
+      <title id="fig-c-title">Pressure on each tissue compared with reference thresholds</title>
       <g id="fc-grid"></g>
       <line x1="200" y1="20" x2="200" y2="342" class="viz-axis"/>
       <line id="fc-th-free" x1="0" y1="20" x2="0" y2="342" class="viz-threshold"/>
       <line id="fc-th-face" x1="0" y1="20" x2="0" y2="342" class="viz-threshold"/>
-      <text id="fc-th-free-l" x="0" y="14" text-anchor="end" class="viz-small viz-muted">pain-free ≈ 100</text>
+      <text id="fc-th-free-l" x="0" y="14" text-anchor="end" class="viz-small viz-muted">lowest reported ≈ 100</text>
       <text id="fc-th-face-l" x="0" y="14" text-anchor="start" class="viz-small viz-muted">face threshold 232</text>
       <g data-row="bars"><text x="190" y="44" text-anchor="end">Bars (gums over bone)</text><rect data-bar="bars" x="200" y="30" width="0" height="20" class="viz-bar"/><text data-val="bars" x="0" y="44"></text></g>
       <g data-row="tongue"><text x="190" y="84" text-anchor="end">Tongue</text><rect data-bar="tongue" x="200" y="70" width="0" height="20" class="viz-bar"/><text data-val="tongue" x="0" y="84"></text></g>
@@ -418,7 +419,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <ul class="bits-statements">
       <li data-say="tension-context">Context for <span data-field="F"></span> per rein: ridden horses are measured at mean maxima of about 17&nbsp;N (walk), 23&nbsp;N (trot) and 36&nbsp;N (canter), with recorded peaks of 43, 51 and 104&nbsp;N; unridden horses choose 6–10&nbsp;N and learn to avoid more. Drag the rein slider to the peaks to see what a moment of resistance costs.</li>
       <li data-say="lead-context" data-tone="warn">This is a leading bit: the force is a handler's arm, not a rider's rein, and in the moment it is designed for (a horse rearing or pulling away) it is the handler's whole weight, several hundred newtons, on the bottom ring.</li>
-      <li data-say="sustained" data-tone="warn">Any of these pressures is far above the ~4&nbsp;kPa at which capillaries close. Held for minutes rather than moments, the tissue under the mouthpiece is ischaemic regardless of which bit it is.</li>
+      <li data-say="sustained" data-tone="warn">Any of these pressures is above the ~4&nbsp;kPa capillary pressure measured in human skin. Pressure sustained above it can impede local blood flow; whether tissue is damaged depends on how high the pressure is, how long it is held and whether it is released between strides.</li>
     </ul>
   </section>
 
@@ -467,8 +468,8 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <!-- Figure E: head carriage -->
   <section class="bits-figure" aria-labelledby="fig-e">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure E</span></div>
-    <h2 id="fig-e">What the horse learns about its head</h2>
-    <p class="bits-figure__lede">The same rein tension, held by a hand that does not yield, at six head carriages: not collected, above the bit, poll highest, on the vertical, behind the vertical, and hyperflexion. The column is the peak pressure the horse feels at each. A horse moves towards the carriage where it hurts least; that column is the device's own bias, before any training. The geometric escape, moving the mouth towards the hand (curling behind the vertical and on into hyperflexion), slackens any rein and is common to every bit: only the rider's timing of release decides whether it is rewarded.</p>
+    <h2 id="fig-e">Head carriage and where the load goes</h2>
+    <p class="bits-figure__lede">The same rein tension, held by a hand that does not yield, at six head carriages: not collected, above the bit, poll highest, on the vertical, behind the vertical, and hyperflexion. The column is the modelled peak pressure at each. Where one carriage is clearly lowest, that is the device’s mechanical preference; where the columns are close, there is none. The model is static and holds tension constant, while in riding the tension changes with the carriage. The geometric escape, moving the mouth towards the hand, slackens any rein and is common to every bit: only the rider’s timing of release decides whether it is rewarded.</p>
     <svg viewBox="0 0 640 320" role="img" aria-labelledby="fig-e-title">
       <title id="fig-e-title">Peak pressure at six head carriages</title>
       <g data-posture-col="0" transform="translate(60 0)"><image class="viz-drawing glyph" href="" x="-46" y="30" width="92" height="64" preserveAspectRatio="xMidYMax meet"/><rect class="col viz-bar" x="-22" y="270" width="44" height="0"/><text class="val" x="0" y="0" text-anchor="middle"></text><text class="site viz-small viz-muted" x="0" y="0" text-anchor="middle"></text><text class="lab viz-small" x="0" y="292" text-anchor="middle"></text><text class="lab2 viz-small viz-muted" x="0" y="308" text-anchor="middle"></text></g>
@@ -482,15 +483,16 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     </svg>
     <p class="bits-legend-row"><span data-field="posture-credit"></span></p>
     <ul class="bits-statements">
-      <li data-say="bias-not-collected">Least pain with the neck long and the nose forward. The device is quietest when nothing is asked of the horse; it carries no instruction about a frame, and whatever carriage follows comes from the rider's hand, not from the bit.</li>
-      <li data-say="bias-above" data-tone="warn">Least pain with the head high and the nose out. Under a holding hand this combination teaches the horse to come above the bit: as the head rises the load leaves the bars and tongue and moves to the corners of the mouth, which hurt less. It does not teach a correct carriage; it teaches escape upward, with a hollow back behind it.</li>
-      <li data-say="bias-correct" data-tone="good">Least pain with the poll up and the nose a little in front of the vertical. Of the four carriages, this device hurts least at the one riders call correct, so it does not actively fight a correct frame. It still cannot teach it: only release does that.</li>
-      <li data-say="bias-vertical">Least pain with the head on the vertical. The device is close to neutral; whether the horse ends up correct or curled depends entirely on when the hand yields.</li>
-      <li data-say="bias-btv" data-tone="bad">Least pain behind the vertical. The device itself rewards curling: as the horse tucks its nose the loads it carries fall away. A horse that already goes behind the vertical will be pushed further behind it by this combination under a holding hand.</li>
-      <li data-say="bias-rollkur" data-tone="bad">Least pain in hyperflexion. The loads keep falling as the nose approaches the chest, so under a holding hand the device pays the horse for rollkur: the carriage that narrows the airway, blinds the horse to what is in front of it and loads the neck ligaments. Nothing in the metal stops it; only the hand can.</li>
-      <li data-say="curb-head" data-tone="warn">Curb action adds two downward instructions, chin back and poll down. Both are relieved by flexing the poll and lowering the head: the mechanical bias of every curb is towards the vertical and then behind it.</li>
+      <li data-say="bias-not-collected">Lowest modelled peak with the neck long and the nose forward. The device is quietest when nothing is asked of the horse; it carries no instruction about a frame, and whatever carriage follows comes from the rider’s hand, not from the bit.</li>
+      <li data-say="bias-above" data-tone="warn">Lowest modelled peak with the head high and the nose out. Under a holding hand this arrangement can encourage the horse to come above the bit: as the head rises the load leaves the bars and tongue and moves to the corners of the mouth. It does not teach a correct carriage.</li>
+      <li data-say="bias-correct" data-tone="good">Lowest modelled peak with the poll up and the nose a little in front of the vertical. This device does not work against the carriage riders call correct; it still cannot teach it: only timely release does that.</li>
+      <li data-say="bias-vertical">Lowest modelled peak with the head on the vertical. The device is close to neutral; whether the horse ends up correct or curled depends on when the hand yields.</li>
+      <li data-say="bias-btv" data-tone="bad">Lowest modelled peak behind the vertical, at constant rein tension. Under a holding hand this can encourage curling; a horse that already goes behind the vertical may be pushed further behind it.</li>
+      <li data-say="bias-rollkur" data-tone="bad">Lowest modelled peak in hyperflexion, but only under this model’s assumption of constant rein tension. In practice hyperflexion is usually held with substantial tension (Christensen et al. 2014), and its welfare costs are documented (König von Borstel et al. 2024): narrowed airway, restricted vision, load on the neck ligaments. Nothing in the metal prevents it; only the hand can.</li>
+      <li data-say="bias-none">No clear mechanical preference: the modelled peaks at the six carriages differ by less than the model’s margin, so the carriage the horse adopts depends on the hand, not on the metal.</li>
+      <li data-say="curb-head" data-tone="warn">Curb action adds two downward instructions, chin back and poll down. Both are relieved by flexing at the poll, so a curb held without release tends to favour the vertical; how far beyond it the horse goes depends on the hand.</li>
       <li data-say="gag-head" data-tone="warn">Gag action lifts the corners of the mouth towards the poll. Lifting is relieved by raising the head and opening the throat, so the bias is above the vertical; the small poll component says the opposite, which is why gags are described as giving the horse two instructions at once.</li>
-      <li data-say="check-head" data-tone="bad">A check rein fixes the lowest position the head may take and punishes every attempt below it; the carriage is not learned but enforced, for as long as the harness is on.</li>
+      <li data-say="check-head" data-tone="bad">A check rein fixes the lowest position the head may take and resists every attempt below it; the carriage is not learned but enforced, for as long as the harness is on.</li>
       <li data-say="btv-horse">For a horse that already goes behind the vertical: this combination <span data-field="btv-verdict"></span>. The reliable remedy is the hand, not the metal: release when the nose comes forward, never when it comes back.</li>
     </ul>
   </section>
@@ -504,7 +506,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
       <thead><tr><th scope="col">Issue</th><th scope="col">Level</th><th scope="col">Driver in this combination</th><th scope="col">Sources</th></tr></thead>
       <tbody>
         <tr data-risk="commissure"><th scope="row">Tearing, ulcers and scars at the corners of the mouth</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
-        <tr data-risk="bars"><th scope="row">Bruising and bone damage of the bars</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="bars"><th scope="row">Bruising and lesions of the bars</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="tongue"><th scope="row">Tongue bruising, cuts and lacerations</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="palate"><th scope="row">Palate bruising and ulceration</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="chin"><th scope="row">Chin-groove sores and curb-chain galls</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
@@ -513,7 +515,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
         <tr data-risk="jaw"><th scope="row">Bruising of the lower jaw under a ring, cage or plate</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="nose"><th scope="row">Nasal-bone pressure and sores under the nose strap</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
         <tr data-risk="airway"><th scope="row">Tongue restraint and airway interference</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
-        <tr data-risk="behaviour"><th scope="row">Pain behaviour: gaping, head tossing, tongue out, conflict</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
+        <tr data-risk="behaviour"><th scope="row">Conflict behaviour: gaping, head tossing, tongue out</th><td><span class="bits-status" data-cell="level"></span></td><td data-cell="why"></td><td class="num" data-cell="sources"></td></tr>
       </tbody>
     </table>
   </section>
@@ -522,10 +524,10 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
   <section class="bits-figure" aria-labelledby="fig-g">
     <div class="bits-figure__head"><span class="bits-figure__num">Figure G</span></div>
     <h2 id="fig-g">How the harm index and the class are built</h2>
-    <p class="bits-figure__lede">Three parts, each 0–100. Pain now: how far the modelled pressures stand above the pain thresholds, on the worst tissue and on average over every loaded tissue. Injury expected: the likely lesions of Figure F, each weighted by how serious it is (a torn commissure or bone damage of the bars counts for more than a chin gall). Loss of control: no mechanical stop, no release, an ambiguous signal. The weights are published in the catalogue. The class is not an average: it is the worst of the pain reading, the worst lesion risk and the design, so one expected injury puts a combination in the red whatever the rest says.</p>
+    <p class="bits-figure__lede">Three parts, each 0–100. Pressure reading: how far the modelled pressures stand against the reference thresholds, on the worst tissue and on average over every loaded tissue. Injury expected: the likely lesions of Figure F, each weighted by how serious it is (a torn commissure or a bar lesion counts for more than a chin gall). Loss of control: no mechanical stop, no release, an ambiguous signal. The weights are published in the catalogue. The class is not an average: it is the worst of the pressure reading, the worst lesion risk and the design, so one likely lesion puts a combination in a high class whatever the rest says.</p>
     <svg viewBox="0 0 640 230" role="img" aria-labelledby="fig-g-title">
       <title id="fig-g-title">The three parts of the harm index</title>
-      <g data-part="pain"><text x="250" y="40" text-anchor="end">Pain now</text><text class="w viz-small viz-muted" x="256" y="40"></text><rect x="300" y="28" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="40"></text></g>
+      <g data-part="pain"><text x="250" y="40" text-anchor="end">Pressure reading</text><text class="w viz-small viz-muted" x="256" y="40"></text><rect x="300" y="28" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="40"></text></g>
       <g data-part="injury"><text x="250" y="90" text-anchor="end">Injury expected</text><text class="w viz-small viz-muted" x="256" y="90"></text><rect x="300" y="78" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="90"></text></g>
       <g data-part="control"><text x="250" y="140" text-anchor="end">Loss of control</text><text class="w viz-small viz-muted" x="256" y="140"></text><rect x="300" y="128" width="0" height="18" class="viz-bar"/><text class="v" x="0" y="140"></text><text class="sub viz-small viz-muted" x="300" y="164"></text></g>
       <line x1="300" y1="20" x2="300" y2="172" class="viz-axis"/>
@@ -536,7 +538,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <ul class="bits-statements">
       <li data-say="class-why"><span class="bits-class" data-field="class-name"></span> <span data-field="class-why"></span></li>
     </ul>
-    <p class="bits-legend-row bits-legend-row--classes"><span><i class="is-c0"></i>Pressure without pain</span><span><i class="is-c1"></i>Discomfort</span><span><i class="is-c2"></i>Pain at ordinary tension</span><span><i class="is-c3"></i>Injury expected</span><span><i class="is-c4"></i>Pain is the mechanism</span></p>
+    <p class="bits-legend-row bits-legend-row--classes"><span><i class="is-c0"></i>Low load</span><span><i class="is-c1"></i>Moderate load</span><span><i class="is-c2"></i>Elevated risk</span><span><i class="is-c3"></i>High risk of injury</span><span><i class="is-c4"></i>High risk by design</span></p>
   </section>
 
   <!-- Prose from the content file -->
@@ -570,9 +572,9 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
     <h2>Reading for the horse</h2>
     <ul class="bits-statements">
       <li data-say="v-reference">At the reference condition (20&nbsp;N each rein, head on the vertical) the peak pressure is <span data-field="ref-peak"></span> on the <span data-field="ref-site"></span>; <span data-field="ref-verdict"></span></li>
-      <li data-say="v-kind" data-tone="good">Within this register it is among the kindest arrangements. It still works by pressure and its release: the horse is asked to find the position where the discomfort stops, and the mouth is the structure that carries the asking.</li>
-      <li data-say="v-mid" data-tone="warn">Within this register it sits in the middle: not built to hurt, but with at least one mechanism (listed above) that concentrates load or removes a stop.</li>
-      <li data-say="v-harsh" data-tone="bad">Within this register it is among the harshest arrangements. Its design relies on pain or the credible threat of it, and at measured riding tensions it exceeds the human facial pain threshold on at least one tissue.</li>
+      <li data-say="v-kind" data-tone="good">Within this register it is among the lower-risk arrangements. It still works by pressure and its release: the horse is asked to find the position where the pressure stops, and the mouth is the structure that carries the asking.</li>
+      <li data-say="v-mid" data-tone="warn">Within this register it sits in the middle: at least one mechanism (listed above) concentrates load or removes a stop, so the risk rises faster with rein tension than for the lower-risk arrangements.</li>
+      <li data-say="v-harsh" data-tone="bad">Within this register it is among the higher-risk arrangements. Figure G names the reason: the modelled peak at the reference tension, a likely lesion, or a design that concentrates load or contacts the palate, cheek or tongue by construction.</li>
       <li data-say="v-rplus">Every bit, this one included, works by negative reinforcement: an aversive pressure is applied and removed when the horse complies. The register measures how aversive, how precisely it can be removed, and whether anything protects the horse when the hand does not remove it.</li>
       <li data-say="v-lift" data-tone="bad">Without a mechanical stop against rising, the only protection for the corners of the mouth is the rider's restraint. In a moment of fright or resistance there is none.</li>
       <li data-say="v-chain" data-tone="warn">The chin groove is skin over bone. A bare chain at this setting gives <span data-field="chin-kpa"></span>; a guard spreads it to roughly a quarter of that.</li>
@@ -595,7 +597,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
       <tbody></tbody>
     </table>
     <h3>Limits</h3>
-    <p>Static, two-dimensional, one horse of mean dimensions. Dynamic peaks, asymmetric reins, tongue movement, saliva, and the horse's own tension are not modelled. The index weights are judgements and are shown as such. The model ranks mechanisms against each other; it does not predict an individual horse's injury.</p>
+    <p>Static, two-dimensional, one horse of mean dimensions. Dynamic peaks, asymmetric reins, tongue movement, saliva, and the horse's own tension are not modelled. The index weights are judgements and are shown as such. The model ranks mechanisms against each other; it does not predict an individual horse's injury. Noseband tightness, the main risk factor for lesions at the corners of the mouth in the Danish survey (Uldahl &amp; Clayton 2019), is not modelled. Contact areas are fixed, so pressure is linear in force: the model overstates pressure at high tension and understates it at light tension. The edge factors of textured mouthpieces are estimates, not measurements. Pressure-pain thresholds are human skin values; none have been measured for the horse’s mouth.</p>
   </section>
 
   <section class="bits-prose bits-sources" data-prose="sources">

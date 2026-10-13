@@ -5765,13 +5765,15 @@
   "chin_area_guarded": 900,
   "poll_area": 2400,
   "mouth_width": 131,
-  "commissure_to_premolar": 25
+  "commissure_to_premolar": 25,
+  "lift_full_tension": 20
  },
  "thresholds_kpa": {
-  "pain_free_upper": 100,
+  "lowest_reported": 100,
   "face_ppt": 232,
   "hand_ppt": 445,
-  "capillary_closure": 4.3
+  "capillary_closure": 4.3,
+  "human_test_limit": 1500
  },
  "defaults": {
   "rein_tension": 20,
@@ -5782,7 +5784,9 @@
   "curb_rein_share": 0.5,
   "posture": "vertical",
   "material": "stainless",
-  "chin_guard": false
+  "chin_guard": false,
+  "cheekpiece_moment_share": 0.15,
+  "bias_margin": 0.1
  },
  "validity": {
   "default": "exists",

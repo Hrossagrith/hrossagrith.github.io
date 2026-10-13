@@ -226,7 +226,9 @@
       }
       leverRatio = s / p;
       rho = ch.chain_engage_deg || 45;
-      var lambda = 0.15;
+      /* Share of the restoring moment taken by the cheekpiece: a modelling
+         assumption (direct measurement shows the chain takes most of it). */
+      var lambda = defaults.cheekpiece_moment_share != null ? defaults.cheekpiece_moment_share : 0.15;
       var bal = shankBalance(Flever, theta, s, p, rho, lambda, Math.cos(rho * DEG));
       C = bal.C;
       T += bal.T;
@@ -273,6 +275,10 @@
 
     if (mechanism === "check") {
       liftMm = Math.min(mouth.commissure_to_premolar, 6 + F / 4);
+    } else if (liftMm > 0 && mouth.lift_full_tension > 0) {
+      /* The lips resist the rise: the full travel is taken to be reached at
+         the reference contact and proportionally less below it. */
+      liftMm = liftMm * Math.min(1, F / mouth.lift_full_tension);
     }
 
     /* Amplification: force onto tongue and bars compared with the rein's own
@@ -281,10 +287,12 @@
     var amplification = reinPress > 0 ? Math.max(0, sumY) / reinPress : 1;
 
     /* Suspension by a fixed cheek takes part of the upward component before
-       the lips do. */
+       the lips do. Behind the vertical the rein draws the bit towards the
+       front of the mouth (sumX < 0): the cheekpieces hold it, so that
+       component goes to the bridle and the poll instead of vanishing. */
     var guard = ch.ride_up_guard || 0;
     var lipPerSide = Math.max(0, sumX) * (1 - guard) + (ch.held_high || 0) * 6;
-    var bridlePerSide = Math.max(0, sumX) * guard + (ch.poll_transfer || 0) * F;
+    var bridlePerSide = Math.max(0, sumX) * guard + Math.max(0, -sumX) + (ch.poll_transfer || 0) * F;
     var restingWeight = 0.5 * (ch.bit_mass_kg || 0) * G;
     var pressTotal = 2 * Math.max(0, sumY) + restingWeight;
     var pressTowardPalate = 2 * Math.max(0, -sumY);
@@ -441,12 +449,15 @@
     return posture ? posture.theta : 70;
   }
 
-  /* Peak pressure under a fixed hand at every catalogued posture. The posture
-     with the lowest peak is where the horse finds the least pain if the rider
-     does not yield: the device's intrinsic bias. */
+  /* Peak pressure at every catalogued posture for the same rein tension (a
+     static model: in practice tension changes with carriage). The posture with
+     the lowest peak is the device's mechanical bias only when it is clearly
+     lower than the next one; differences inside the model's margin are
+     reported as no bias (null). */
   function landscape(catalog, cheekId, mouthId, settings) {
     var out = [];
     var best = null;
+    var margin = catalog.defaults.bias_margin != null ? catalog.defaults.bias_margin : 0;
     for (var i = 0; i < catalog.postures.length; i++) {
       var posture = catalog.postures[i];
       var local = clone(settings || {});
@@ -463,7 +474,14 @@
         best = entry;
       }
     }
-    return { postures: out, bias: best ? best.id : null };
+    var runnerUp = null;
+    for (var k = 0; k < out.length; k++) {
+      if (best && out[k].id !== best.id && (!runnerUp || out[k].peak < runnerUp.peak)) {
+        runnerUp = out[k];
+      }
+    }
+    var clear = best && runnerUp && runnerUp.peak > 0 && (runnerUp.peak - best.peak) / runnerUp.peak >= margin;
+    return { postures: out, bias: clear ? best.id : null, lowest: best ? best.id : null };
   }
 
   /* ---------- Injury risks ---------- */
@@ -471,7 +489,7 @@
   function levelFor(kpa, th) {
     if (kpa >= th.hand_ppt) { return 3; }
     if (kpa >= th.face_ppt) { return 2; }
-    if (kpa >= th.pain_free_upper) { return 1; }
+    if (kpa >= th.lowest_reported) { return 1; }
     return 0;
   }
 
@@ -494,18 +512,20 @@
     var noStop = ch.stop === "none" || ch.stop === "cheekpiece" || ch.stop === "tissue";
     var lipLevel = levelFor(p.lips, th);
     if (noStop && f.liftMm >= 15) { lipLevel = Math.max(lipLevel, 2); }
-    if (ch.stop === "none" && f.liftMm >= 20 && p.lips >= th.pain_free_upper) { lipLevel = 3; }
+    if (ch.stop === "none" && f.liftMm >= 20 && p.lips >= th.lowest_reported) { lipLevel = 3; }
     add("commissure", lipLevel, ["tuomola2019", "uldahl2019", "tuomola2021event"], p.lips);
 
     var barLevel = levelFor(p.bars, th);
     if ((mp.contact_fraction || 1) < 0.9 && barLevel < 3) { barLevel += 1; }
-    if (mp.joints === 0 && !mp.port_height && barLevel < 3 && p.bars >= th.pain_free_upper) { barLevel += 0.5; }
+    if (mp.joints === 0 && !mp.port_height && barLevel < 3 && p.bars >= th.lowest_reported) { barLevel += 0.5; }
     add("bars", barLevel, ["tuomola2021", "bjornsdottir2014", "mellor2020"], p.bars);
 
     var tongueLevel = levelFor(p.tongue, th);
     var sharp = (mp.edge || 1) >= 1.3 || mp.two_strands || mp.scissor;
-    if (sharp) { tongueLevel = Math.max(tongueLevel, p.tongue >= th.pain_free_upper ? 2 : 1); }
+    if (sharp) { tongueLevel = Math.max(tongueLevel, p.tongue >= th.lowest_reported ? 2 : 1); }
     if (mp.tongue_pinch >= 0.8 && tongueLevel < 3) { tongueLevel += 0.5; }
+    /* A design flag alone marks a risk; "likely" needs the pressure as well. */
+    if (p.tongue < th.face_ppt) { tongueLevel = Math.min(tongueLevel, 2); }
     add("tongue", tongueLevel, ["tuomola2019", "manfredi2005", "chifney_hh"], p.tongue);
 
     var palateLevel = res.palate >= 0.7 ? 3 : res.palate >= 0.4 ? 2 : res.palate >= 0.2 ? 1 : 0;
@@ -528,7 +548,9 @@
 
     if (mech === "jaw-ring" || p.jaw > 0) {
       var jawLevel = Math.max(levelFor(p.jaw, th), mech === "jaw-ring" ? 2 : 1);
-      if (ch.free_pivot && (ch.pivot_factor == null || ch.pivot_factor >= 0.8)) { jawLevel = 3; }
+      if (ch.free_pivot && (ch.pivot_factor == null || ch.pivot_factor >= 0.8)) {
+        jawLevel = p.jaw >= th.face_ppt ? 3 : Math.max(jawLevel, 2);
+      }
       add("jaw", jawLevel, ["chifney_hh", "houghton_forum", "dexter_wiki"], p.jaw);
     }
 
@@ -578,7 +600,7 @@
     var th = catalog.thresholds_kpa;
     var rules = catalog.harm.class_rules;
     var peak = res.pressures.peak;
-    var painIdx = peak < th.pain_free_upper ? 0 : peak < th.face_ppt ? 1 : peak < th.hand_ppt ? 2 : 3;
+    var painIdx = peak < th.lowest_reported ? 0 : peak < th.face_ppt ? 1 : peak < th.hand_ppt ? 2 : 3;
     var injuryIdx = 0;
     var worst = null;
     for (var i = 0; i < risks.length; i++) {

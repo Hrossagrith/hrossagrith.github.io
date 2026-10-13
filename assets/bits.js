@@ -50,7 +50,15 @@
   }
 
   function N(x) { return num(x, x < 10 ? 1 : 0) + " " + ui("unit_N", "N"); }
-  function kPa(x) { return num(x, 0) + " " + ui("unit_kPa", "kPa"); }
+  /* Pressures beyond the ceiling of human pain testing are shown as "> limit":
+     the model is not precise enough for larger figures to carry meaning. */
+  function kPa(x) {
+    var limit = CATALOG && CATALOG.thresholds_kpa.human_test_limit;
+    if (limit && x > limit) {
+      return fill(ui("kpa_over", "> {limit}"), { limit: num(limit, 0) }) + " " + ui("unit_kPa", "kPa");
+    }
+    return num(x, 0) + " " + ui("unit_kPa", "kPa");
+  }
   function mm(x, digits) { return num(x, digits == null ? 0 : digits) + " " + ui("unit_mm", "mm"); }
   function pct(x) { return num(x * 100, 0) + " %"; }
 
@@ -114,7 +122,7 @@
 
   function levelOf(kpa) {
     var th = CATALOG.thresholds_kpa;
-    if (kpa < th.pain_free_upper) { return "good"; }
+    if (kpa < th.lowest_reported) { return "good"; }
     if (kpa < th.face_ppt) { return "warning"; }
     if (kpa < th.hand_ppt) { return "serious"; }
     return "critical";
@@ -794,6 +802,9 @@
     var container = document.querySelector("[data-dossier]");
 
     if (!cheek || !mouth || M.validity(CATALOG, cheekId, mouthId) === "invalid") {
+      var impossible = !!(cheek && mouth);
+      show(missing.querySelector('[data-missing-reason="none"]'), !impossible);
+      show(missing.querySelector('[data-missing-reason="impossible"]'), impossible);
       show(missing, true);
       return;
     }
@@ -1772,7 +1783,7 @@
         grid.appendChild(tickText);
       }
       ["free", "face"].forEach(function (name) {
-        var value = name === "free" ? th.pain_free_upper : th.face_ppt;
+        var value = name === "free" ? th.lowest_reported : th.face_ppt;
         attrs(el("fc-th-" + name), { x1: x(value), x2: x(value), y1: 20, y2: bottom });
         attrs(el("fc-th-" + name + "-l"), { x: x(value) + (name === "free" ? -4 : 4) });
       });
@@ -1892,7 +1903,9 @@
         site.textContent = ui("tissue_" + p.site, p.site);
       });
       var bias = M.byId(CATALOG.postures, land.bias);
-      el("fe-bias").textContent = mech === "check" ? ui("bias_check", "A check rein does not vary with carriage: it fixes the carriage") : fill(ui("bias_line", "Least pain under a holding hand: {posture}"), { posture: t(bias.name) });
+      el("fe-bias").textContent = mech === "check"
+        ? ui("bias_check", "")
+        : (bias ? fill(ui("bias_line", ""), { posture: t(bias.name) }) : ui("bias_none", ""));
     }
 
     /* ---------- Figure F: likely injuries ---------- */
@@ -2044,7 +2057,8 @@
       say("gag-head", mech === "gag-slide" || mech === "gag-curb" || (mech === "gag-lever" && leverNoChain));
       say("check-head", mech === "check");
       say("btv-horse", mech !== "check");
-      field("btv-verdict", ui("btv_" + String(land.bias).replace(/-/g, "_"), ""));
+      say("bias-none", mech !== "check" && !land.bias);
+      field("btv-verdict", ui("btv_" + (land.bias ? land.bias.replace(/-/g, "_") : "none"), ""));
 
       say("v-reference", true);
       field("ref-peak", kPa(ref.result.pressures.peak));
