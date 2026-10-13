@@ -3463,43 +3463,43 @@
   "mullen": {
    "mechanics": {
     "en": "One unjointed bar with a gentle forward curve. It cannot fold, so nothing hinges or pinches inside the mouth; the rein force is shared between the tongue under the curve and the two bars under its ends. From statics: the relaxed tongue is very soft, so once it has been pressed down most further load goes to the bars; a horse that braces its tongue carries more on it.",
-    "ru": "Одна цельная штанга с мягким изгибом вперёд. Она не складывается, поэтому во рту ничто не шарнирит и не защемляет; сила повода делится между языком под изгибом и дёснами под его концами. Следует из статики: расслабленный язык очень мягкий, и после того как грызло его прижало, бо́льшая часть дальнейшей нагрузки уходит на дёсны; если лошадь напрягает язык, он принимает больше."
+    "ru": "Одна цельная штанга с мягким изгибом вперёд. Она не складывается, поэтому во рту ничто не шарнирит и не защемляет; сила повода делится между языком под изгибом и беззубыми краями под его концами. Следует из статики: расслабленный язык очень мягкий, и после того как грызло его прижало, бо́льшая часть дальнейшей нагрузки уходит на беззубые края; если лошадь напрягает язык, он принимает больше."
    },
    "tissue": {
     "en": "Tongue: a broad load across its width, with no joint to press into it. Bars: the ends of the curve bear on a narrow strip of thin mucosa over bone; a thicker bar gives a wider strip. Lips: only as the bit rides up into the corners. Palate: not reached when the thickness suits the mouth; a thick bar in a mouth with little room can touch it even without rein tension (Engelke & Gasse 2002).",
-    "ru": "Язык: широкая нагрузка по всей ширине, шарнира, который вдавливался бы в него, нет. Дёсны: концы изгиба ложатся узкой полоской на тонкую слизистую над костью; чем толще штанга, тем шире полоска. Губы: только когда удила поднимаются в углы рта. Нёбо: не затрагивается, если толщина соответствует рту; толстая штанга в тесном рту может касаться нёба и без натяжения повода (Engelke & Gasse 2002)."
+    "ru": "Язык: широкая нагрузка по всей ширине, шарнира, который вдавливался бы в него, нет. Беззубые края: концы изгиба давят узкой полоской на тонкую слизистую над костью; чем толще штанга, тем шире полоска. Губы: только когда удила поднимаются в углы рта. Нёбо: не затрагивается, если толщина соответствует рту; толстая штанга в тесном рту может касаться нёба и без натяжения повода (Engelke & Gasse 2002)."
    },
    "welfare": {
     "en": "An even contact with no joint to pinch. Measured: unjointed bits, a leather-covered mullen regulator among them, were associated with bar lesions in Finnish trotters (Tuomola et al. 2021). Not studied: whether horses lean on it; on a treadmill, rein tension was lower on a mullen than on a double-jointed bit (Kau et al. 2020).",
-    "ru": "Ровный контакт без шарнира, который мог бы защемлять. Измерено: у финских рысаков цельные удила, в том числе обшитое кожей грызло-регулятор, были связаны с поражениями дёсен (Tuomola et al. 2021). Не изучено: «ложатся» ли на него лошади; на тредбане натяжение повода на цельном грызле было ниже, чем на двойном трензеле (Kau et al. 2020)."
+    "ru": "Ровный контакт без шарнира, который мог бы защемлять. Измерено: у финских рысаков цельные удила, в том числе обшитое кожей грызло-регулятор, были связаны с поражениями беззубого края (Tuomola et al. 2021). Не изучено: «ложатся» ли на него лошади; на тредбане натяжение повода на цельном грызле было ниже, чем на двойном трензеле (Kau et al. 2020)."
    }
   },
   "straight-bar": {
    "mechanics": {
     "en": "An unjointed bar with no curve. From statics: it meets the tongue first at its highest, middle part; once the soft tongue has been pressed down, most further load passes to the bars.",
-    "ru": "Цельная штанга без изгиба. Следует из статики: сначала она встречает язык в его самой высокой, средней части; когда мягкий язык прижат, бо́льшая часть дальнейшей нагрузки переходит на дёсны."
+    "ru": "Цельная штанга без изгиба. Следует из статики: сначала она встречает язык в его самой высокой, средней части; когда мягкий язык прижат, бо́льшая часть дальнейшей нагрузки переходит на беззубые края."
    },
    "tissue": {
     "en": "Tongue: pressed down in the middle. Bars: a narrow strip of thin mucosa over bone; the model gives them a larger share than under a mullen. Lips: as any unjointed bar. Palate: not reached when the thickness suits the mouth.",
-    "ru": "Язык: прижат посередине. Дёсны: узкая полоска тонкой слизистой над костью; модель отдаёт им бо́льшую долю, чем у изогнутого цельного грызла. Губы: как у любой цельной штанги. Нёбо: не затрагивается, если толщина соответствует рту."
+    "ru": "Язык: прижат посередине. Беззубые края: узкая полоска тонкой слизистой над костью; модель отдаёт им бо́льшую долю, чем у изогнутого цельного грызла. Губы: как у любой цельной штанги. Нёбо: не затрагивается, если толщина соответствует рту."
    },
    "welfare": {
     "en": "A mullen without the curve. Measured: bar lesions were more frequent with unjointed bits in Finnish trotters (Tuomola et al. 2021) and in eventers (Tuomola et al. 2021, eventing).",
-    "ru": "Цельное грызло без изгиба. Измерено: поражения дёсен чаще встречались при цельных удилах у финских рысаков (Tuomola et al. 2021) и у лошадей троеборья (Tuomola et al. 2021, eventing)."
+    "ru": "Цельное грызло без изгиба. Измерено: поражения беззубого края чаще встречались при цельных удилах у финских рысаков (Tuomola et al. 2021) и у лошадей троеборья (Tuomola et al. 2021, eventing)."
    }
   },
   "ported": {
    "mechanics": {
     "en": "An unjointed bar with an arch in the middle for the tongue. From statics: the arch gives the tongue room and sends more of the load to the bars; the higher the port, the larger the transfer. On a direct cheek the port stays where it is set; on a rotating cheek it tilts towards the palate as the shank turns. Not studied: the port height at which palate contact begins. A common curb mouthpiece.",
-    "ru": "Цельная штанга с аркой посередине для языка. Следует из статики: арка даёт языку место и переносит бо́льшую часть нагрузки на дёсны; чем выше порт, тем полнее перенос. На прямой щёчке порт остаётся там, где его установили; на поворачивающейся щёчке он наклоняется к нёбу вместе с поворотом рычага. Не изучено: при какой высоте порта начинается контакт с нёбом. Распространённое грызло мундштуков."
+    "ru": "Цельная штанга с аркой посередине для языка. Следует из статики: арка даёт языку место и переносит бо́льшую часть нагрузки на беззубые края; чем выше порт, тем полнее перенос. На прямой щёчке порт остаётся там, где его установили; на поворачивающейся щёчке он наклоняется к нёбу вместе с поворотом бранши. Не изучено: при какой высоте порта начинается контакт с нёбом. Распространённое грызло мундштуков."
    },
    "tissue": {
     "en": "Tongue: given room in proportion to the port height. Bars: carry most of the load on thin mucosa over bone, with the port's shoulders adding an edge. Palate: clear with a low port that does not rotate; within reach of a taller port on a rotating cheek.",
-    "ru": "Язык: получает место соразмерно высоте порта. Дёсны: несут бо́льшую часть нагрузки на тонкой слизистой над костью, плечи порта добавляют кромку. Нёбо: свободно при низком порте, который не поворачивается; досягаемо для более высокого порта на поворачивающейся щёчке."
+    "ru": "Язык: получает место соразмерно высоте порта. Беззубые края: несут бо́льшую часть нагрузки на тонкой слизистой над костью, плечи порта добавляют кромку. Нёбо: свободно при низком порте, который не поворачивается; досягаемо для более высокого порта на поворачивающейся щёчке."
    },
    "welfare": {
     "en": "Trades tongue room for bar loading. Measured: in Icelandic horses bar lesions were strongly associated with ported curb bits (Björnsdóttir et al. 2014). Periostitis (bone spurs) of the bars is a recognised bit injury, and surgical removal improves comfort when ridden with a bit (Johnson 2002). Not studied: whether horses prefer a port.",
-    "ru": "Место для языка в обмен на нагрузку на дёсны. Измерено: у исландских лошадей поражения дёсен были тесно связаны с мундштуками с портом (Björnsdóttir et al. 2014). Периостит беззубого края (костные шпоры) — признанная травма от удил; его хирургическое удаление повышает комфорт при езде на удилах (Johnson 2002). Не изучено: предпочитают ли лошади грызло с портом."
+    "ru": "Место для языка в обмен на нагрузку на беззубые края. Измерено: у исландских лошадей поражения беззубого края были тесно связаны с мундштуками с портом (Björnsdóttir et al. 2014). Периостит беззубого края (костные шпоры) — признанная травма от удил; его хирургическое удаление повышает комфорт при езде на удилах (Johnson 2002). Не изучено: предпочитают ли лошади грызло с портом."
    }
   },
   "ported-barrel": {
@@ -3509,7 +3509,7 @@
    },
    "tissue": {
     "en": "Model assumption: tongue and bars share the load about equally, and a one-sided rein loads one bar rather than folding the mouthpiece. Palate: the port is low. Lips: a rotating cannon end near the corner of the mouth.",
-    "ru": "Допущение модели: язык и дёсны делят нагрузку примерно поровну, а односторонний повод нагружает одну сторону дёсен, не складывая грызло. Нёбо: порт низкий. Губы: вращающийся конец плеча у угла рта."
+    "ru": "Допущение модели: язык и беззубые края делят нагрузку примерно поровну, а односторонний повод нагружает беззубый край одной стороны, не складывая грызло. Нёбо: порт низкий. Губы: вращающийся конец плеча у угла рта."
    },
    "welfare": {
     "en": "The stability of an unjointed bar with independent sides. Its usual 14 mm lies in the 14-17 mm range that had the lowest lesion odds in eventers (Tuomola et al. 2021, eventing). Not studied: lesion rates for this design.",
@@ -3523,25 +3523,25 @@
    },
    "tissue": {
     "en": "Tongue: the broadest contact in the model. Bars: the model gives them a small share, which field data do not support (see welfare). Palate: not reached unless the bar is too thick for the mouth. Thickness: measured horses had room on average for a 14 mm bit without compressing the tongue (Anttila et al. 2022), so a thick synthetic bar presses the tongue at rest in many mouths.",
-    "ru": "Язык: самый широкий контакт в модели. Дёсны: модель отдаёт им малую долю, но полевые данные этого не подтверждают (см. оценку). Нёбо: не затрагивается, если штанга не слишком толста для рта. Толщина: у обследованных лошадей в среднем хватало места для грызла 14 мм без сдавления языка (Anttila et al. 2022), поэтому толстая синтетическая штанга у многих лошадей давит на язык и в покое."
+    "ru": "Язык: самый широкий контакт в модели. Беззубые края: модель отдаёт им малую долю, но полевые данные этого не подтверждают (см. оценку). Нёбо: не затрагивается, если штанга не слишком толста для рта. Толщина: у обследованных лошадей в среднем хватало места для грызла 14 мм без сдавления языка (Anttila et al. 2022), поэтому толстая синтетическая штанга у многих лошадей давит на язык и в покое."
    },
    "welfare": {
     "en": "The softest surface, not shown to be the gentlest. Measured: in Finnish trotters, straight plastic bits had bar lesions in 12 of 14 horses, the highest proportion of any bit type, and the highest odds of moderate to severe lesions (Tuomola et al. 2021); the sample was small and those bits were straight, not curved. In eventers, thick bits (18-22 mm) had higher lesion odds than 14-17 mm ones (Tuomola et al. 2021, eventing). A chewed bar can expose its core; check the surface.",
-    "ru": "Самая мягкая поверхность, но не доказано, что самая щадящая. Измерено: у финских рысаков при прямых пластиковых удилах поражения дёсен были у 12 из 14 лошадей — самая высокая доля среди всех типов удил — и самые высокие шансы умеренных и тяжёлых поражений (Tuomola et al. 2021); выборка мала, и удила были прямыми, а не изогнутыми. У лошадей троеборья толстые удила (18–22 мм) давали более высокие шансы поражений, чем 14–17 мм (Tuomola et al. 2021, eventing). Прогрызенная штанга может обнажить сердечник; проверяйте поверхность."
+    "ru": "Самая мягкая поверхность, но не доказано, что самая щадящая. Измерено: у финских рысаков при прямых пластиковых удилах поражения беззубого края были у 12 из 14 лошадей — самая высокая доля среди всех типов удил — и самые высокие шансы умеренных и тяжёлых поражений (Tuomola et al. 2021); выборка мала, и удила были прямыми, а не изогнутыми. У лошадей троеборья толстые удила (18–22 мм) давали более высокие шансы поражений, чем 14–17 мм (Tuomola et al. 2021, eventing). Прогрызенная штанга может обнажить сердечник; проверяйте поверхность."
    }
   },
   "single-joint": {
    "mechanics": {
     "en": "Two cannons hinged in the middle. Pulled from both ends they fold into a V: the hinge is pressed into the tongue and the cannon ends bear on the bars at an angle. Measured: in cadaver heads with simulated rein tension, correctly sized snaffles moved back, pressed into the tongue and away from the hard palate; only a bit 20 mm too wide lifted its joint against the palate (Engelke & Gasse 2002). In radiographs of live horses at about 25 N, single-jointed snaffles moved back towards the premolars (Manfredi et al. 2005). Model assumption: the fold concentrates the tongue load onto a smaller area than an unjointed bar's.",
-    "ru": "Два плеча на шарнире посередине. При тяге с обоих концов они складываются буквой V: шарнир вдавливается в язык, а концы плеч ложатся на дёсны под углом. Измерено: на анатомических препаратах голов при имитации натяжения повода трензеля подходящего размера смещались назад, вдавливались в язык и удалялись от твёрдого нёба; лишь грызло, на 20 мм шире нужного, поднимало шарнир к нёбу (Engelke & Gasse 2002). На рентгенограммах живых лошадей при натяжении около 25 Н одинарные трензеля смещались назад, к премолярам (Manfredi et al. 2005). Допущение модели: складывание сосредоточивает нагрузку на языке на меньшей площади, чем у цельной штанги."
+    "ru": "Два плеча на шарнире посередине. При тяге с обоих концов они складываются буквой V: шарнир вдавливается в язык, а концы плеч ложатся на беззубые края под углом. Измерено: на анатомических препаратах голов при имитации натяжения повода трензеля подходящего размера смещались назад, вдавливались в язык и удалялись от твёрдого нёба; лишь грызло, на 20 мм шире нужного, поднимало шарнир к нёбу (Engelke & Gasse 2002). На рентгенограммах живых лошадей при натяжении около 25 Н одинарные трензеля смещались назад, к щёчным зубам (премолярам) (Manfredi et al. 2005). Допущение модели: складывание сосредоточивает нагрузку на языке на меньшей площади, чем у цельной штанги."
    },
    "tissue": {
     "en": "Tongue: the hinge pressed into it, with the load concentrated at the centre. Bars: angled contact from the cannon ends. Lips: at the corners as the bit rides up; corner lesions were not associated with bit type (Uldahl & Clayton 2019; Tuomola et al. 2021). Palate: not reached by a correctly sized bit under tension; at risk with a bit that is too wide.",
-    "ru": "Язык: в него вдавлен шарнир, нагрузка сосредоточена в центре. Дёсны: наклонный контакт концов плеч. Губы: в углах рта, когда удила поднимаются; поражения углов рта с типом удил связаны не были (Uldahl & Clayton 2019; Tuomola et al. 2021). Нёбо: не затрагивается грызлом подходящего размера под натяжением; под угрозой, если грызло слишком широкое."
+    "ru": "Язык: в него вдавлен шарнир, нагрузка сосредоточена в центре. Беззубые края: наклонный контакт концов плеч. Губы: в углах рта, когда удила поднимаются; поражения углов рта с типом удил связаны не были (Uldahl & Clayton 2019; Tuomola et al. 2021). Нёбо: не затрагивается грызлом подходящего размера под натяжением; под угрозой, если грызло слишком широкое."
    },
    "welfare": {
     "en": "One of the commonest mouthpieces. Not studied: whether the cannons squeeze the tongue from the sides (the nutcracker). Measured: in Finnish trotters it had fewer bar lesions than unjointed bits; it served as the reference category there, not as a bit shown to carry the lowest risk (Tuomola et al. 2021). In eventers, overall lesion status did not differ by bit type, and 14-17 mm bits had lower lesion odds than thinner or thicker ones (Tuomola et al. 2021, eventing). Fit the width correctly.",
-    "ru": "Одно из самых распространённых грызл. Не изучено: сдавливают ли плечи язык с боков («щипцы для орехов»). Измерено: у финских рысаков поражений дёсен при нём было меньше, чем при цельных удилах; в этом исследовании оно служило референсной категорией, а не удилами с доказанно наименьшим риском (Tuomola et al. 2021). У лошадей троеборья общий статус поражений от типа удил не зависел, а при толщине 14–17 мм шансы поражений были ниже, чем у более тонких и более толстых удил (Tuomola et al. 2021, eventing). Подбирайте ширину точно."
+    "ru": "Одно из самых распространённых грызл. Не изучено: сдавливают ли плечи язык с боков («щипцы для орехов»). Измерено: у финских рысаков поражений беззубого края при нём было меньше, чем при цельных удилах; в этом исследовании оно служило референсной категорией, а не удилами с доказанно наименьшим риском (Tuomola et al. 2021). У лошадей троеборья общий статус поражений от типа удил не зависел, а при толщине 14–17 мм шансы поражений были ниже, чем у более тонких и более толстых удил (Tuomola et al. 2021, eventing). Подбирайте ширину точно."
    }
   },
   "slow-twist": {
@@ -3551,11 +3551,11 @@
    },
    "tissue": {
     "en": "Tongue and bars: the single joint's distribution with ridges pressed into it; on the bars the ridges bear on thin mucosa over bone. Lips: ridges turning in the corner of the mouth as the bit moves.",
-    "ru": "Язык и дёсны: распределение одинарного трензеля с вдавленными гребнями; на дёснах гребни давят на тонкую слизистую над костью. Губы: гребни проворачиваются в углу рта при движении удил."
+    "ru": "Язык и беззубые края: распределение одинарного трензеля с вдавленными гребнями; на беззубых краях гребни давят на тонкую слизистую над костью. Губы: гребни проворачиваются в углу рта при движении удил."
    },
    "welfare": {
     "en": "Expected to raise local pressure on tongue and bars compared with a smooth joint of the same thickness, so the same rein gives higher local loads. Not studied: no lesion data exist for twisted mouthpieces.",
-    "ru": "Ожидаемо повышает местное давление на язык и дёсны по сравнению с гладким трензелем той же толщины: тот же повод даёт более высокие местные нагрузки. Не изучено: данных о поражениях от витых грызл нет."
+    "ru": "Ожидаемо повышает местное давление на язык и беззубые края по сравнению с гладким трензелем той же толщины: тот же повод даёт более высокие местные нагрузки. Не изучено: данных о поражениях от витых грызл нет."
    }
   },
   "corkscrew": {
@@ -3565,7 +3565,7 @@
    },
    "tissue": {
     "en": "As the slow twist, with fewer and narrower contacts. Tongue, bars and lips all meet ridges.",
-    "ru": "Как у пологой скрутки, но контакты меньше и уже. Язык, дёсны и губы встречают гребни."
+    "ru": "Как у пологой скрутки, но контакты меньше и уже. Язык, беззубые края и губы встречают гребни."
    },
    "welfare": {
     "en": "Thin and ridged, so the model gives it higher local pressures than smooth bits at the same rein tension. Measured: thin bits (10-13 mm) had higher lesion odds than 14-17 mm ones in eventers (Tuomola et al. 2021, eventing). Not studied: no lesion data exist for twisted mouthpieces.",
@@ -3575,11 +3575,11 @@
   "twisted-wire": {
    "mechanics": {
     "en": "A single-jointed mouthpiece made of thin wire twisted into a spiral. From statics: a thin section presses through the thin mucosa to the bone of the bars along a narrow strip, and the ridges reduce the contact further. In the model, bar pressure lies far above the derived pain threshold at ordinary rein tension.",
-    "ru": "Одночленное грызло из тонкой проволоки, скрученной в спираль. Следует из статики: тонкое сечение продавливает тонкую слизистую до кости беззубого края узкой полоской, а гребни ещё уменьшают контакт. В модели давление на дёсны при обычном натяжении повода намного превышает выведенный болевой порог."
+    "ru": "Одночленное грызло из тонкой проволоки, скрученной в спираль. Следует из статики: тонкое сечение продавливает тонкую слизистую до кости беззубого края узкой полоской, а гребни ещё уменьшают контакт. В модели давление на беззубые края при обычном натяжении повода намного превышает выведенный болевой порог."
    },
    "tissue": {
     "en": "Bars: a thin ridged edge on thin mucosa over bone. Tongue: a wire pressed into it along a line, with the hinge in the middle. Lips: the wire at the corners.",
-    "ru": "Дёсны: тонкая рёбристая кромка на тонкой слизистой над костью. Язык: проволока, вдавленная линией, с шарниром посередине. Губы: проволока в углах рта."
+    "ru": "Беззубые края: тонкая рёбристая кромка на тонкой слизистой над костью. Язык: проволока, вдавленная линией, с шарниром посередине. Губы: проволока в углах рта."
    },
    "welfare": {
     "en": "One of the thinnest mouthpieces in the register. Not studied: there are no lesion data for wire bits; the thinnest bits studied, 10-13 mm, already had higher lesion odds than 14-17 mm ones in eventers (Tuomola et al. 2021, eventing), and a wire is much thinner.",
@@ -3593,7 +3593,7 @@
    },
    "tissue": {
     "en": "Bars: two thin wires on thin mucosa over bone. Tongue: pressed in two places. Lips: two wires and two hinges at the corners.",
-    "ru": "Дёсны: две тонкие проволоки на тонкой слизистой над костью. Язык: прижат в двух местах. Губы: две проволоки и два шарнира в углах рта."
+    "ru": "Беззубые края: две тонкие проволоки на тонкой слизистой над костью. Язык: прижат в двух местах. Губы: две проволоки и два шарнира в углах рта."
    },
    "welfare": {
     "en": "Combines the thinness and ridges of a twisted wire with a second strand; the model gives it some of the highest local pressures in the register. Not studied: no lesion data exist.",
@@ -3607,7 +3607,7 @@
    },
    "tissue": {
     "en": "Bars and tongue: square-edged ridges pressed in along the length of each cannon. Lips: the same at the corners.",
-    "ru": "Дёсны и язык: прямоугольные гребни, вдавленные по длине каждого плеча. Губы: то же в углах рта."
+    "ru": "Беззубые края и язык: прямоугольные гребни, вдавленные по длине каждого плеча. Губы: то же в углах рта."
    },
    "welfare": {
     "en": "A driving bit by origin, also used under saddle. From statics: square edges on a reduced contact raise local pressure with any cheek. Not studied: no lesion data exist.",
@@ -3621,7 +3621,7 @@
    },
    "tissue": {
     "en": "Tongue: rollers turning under it. Bars: roller crowns, or squared edges on the Magenis. Lips: rollers turning at the corner.",
-    "ru": "Язык: под ним вращаются ролики. Дёсны: вершины роликов или квадратные кромки у Magenis. Губы: ролики вращаются в углу рта."
+    "ru": "Язык: под ним вращаются ролики. Беззубые края: вершины роликов или квадратные кромки у Magenis. Губы: ролики вращаются в углу рта."
    },
    "welfare": {
     "en": "Rollers are intended to keep the tongue moving and stop a horse setting its jaw. Not studied: whether this helps or harms. Measured: in fluoroscopy, bit type did not predict oral behaviour under rein tension among the bits tested, which did not include rollers (Manfredi et al. 2009).",
@@ -3631,25 +3631,25 @@
   "ported-jointed": {
    "mechanics": {
     "en": "A single joint whose cannons rise in an arch over the tongue before meeting at the hinge. From statics: the arch gives the tongue room, so more of the load goes to the bars, and the hinge sits higher in the mouth than a plain joint's.",
-    "ru": "Одинарный трензель, плечи которого поднимаются аркой над языком и сходятся в шарнире. Следует из статики: арка даёт языку место, поэтому бо́льшая часть нагрузки уходит на дёсны, а шарнир стоит во рту выше, чем у простого трензеля."
+    "ru": "Одинарный трензель, плечи которого поднимаются аркой над языком и сходятся в шарнире. Следует из статики: арка даёт языку место, поэтому бо́льшая часть нагрузки уходит на беззубые края, а шарнир стоит во рту выше, чем у простого трензеля."
    },
    "tissue": {
     "en": "Tongue: given room. Bars: loaded more than under a plain joint. Palate: model assumption: the raised hinge needs less lift to reach it. Lips: as a single joint.",
-    "ru": "Язык: получает место. Дёсны: нагружены сильнее, чем при простом трензеле. Нёбо: допущение модели — поднятому шарниру нужно меньше подъёма, чтобы до него дойти. Губы: как у одинарного трензеля."
+    "ru": "Язык: получает место. Беззубые края: нагружены сильнее, чем при простом трензеле. Нёбо: допущение модели — поднятому шарниру нужно меньше подъёма, чтобы до него дойти. Губы: как у одинарного трензеля."
    },
    "welfare": {
     "en": "From statics: like a port, it moves load from the tongue to the bars, and ported curbs were associated with bar lesions in Icelandic horses (Björnsdóttir et al. 2014). Not studied: no imaging or lesion data exist for this mouthpiece.",
-    "ru": "Следует из статики: как и порт, арка переносит нагрузку с языка на дёсны, а мундштуки с портом у исландских лошадей были связаны с поражениями дёсен (Björnsdóttir et al. 2014). Не изучено: снимков и данных о поражениях для этого грызла нет."
+    "ru": "Следует из статики: как и порт, арка переносит нагрузку с языка на беззубые края, а мундштуки с портом у исландских лошадей были связаны с поражениями беззубого края (Björnsdóttir et al. 2014). Не изучено: снимков и данных о поражениях для этого грызла нет."
    }
   },
   "french-link": {
    "mechanics": {
     "en": "Two cannons joined by a short flat plate. Measured: in cadaver heads with simulated rein tension, correctly sized single- and double-jointed snaffles alike were pressed into the tongue and moved away from the palate (Engelke & Gasse 2002); a French link was not among the bits tested there or in the radiographic study (Manfredi et al. 2005). From statics: the plate spreads the centre load while it lies flat; a cheek that fixes the mouthpiece's angle, or rotation of a shank, can tilt it so that its edge presses the tongue.",
-    "ru": "Два плеча, соединённые короткой плоской пластиной. Измерено: на анатомических препаратах голов при имитации натяжения повода одинарные и двойные трензеля подходящего размера одинаково вдавливались в язык и удалялись от нёба (Engelke & Gasse 2002); французского звена не было ни среди удил этого исследования, ни среди рентгенологически изученных (Manfredi et al. 2005). Следует из статики: пластина распределяет центральную нагрузку, пока лежит плашмя; щёчка, фиксирующая угол грызла, или поворот рычага может наклонить её так, что в язык упрётся ребро."
+    "ru": "Два плеча, соединённые короткой плоской пластиной. Измерено: на анатомических препаратах голов при имитации натяжения повода одинарные и двойные трензеля подходящего размера одинаково вдавливались в язык и удалялись от нёба (Engelke & Gasse 2002); французского звена не было ни среди удил этого исследования, ни среди рентгенологически изученных (Manfredi et al. 2005). Следует из статики: пластина распределяет центральную нагрузку, пока лежит плашмя; щёчка, фиксирующая угол грызла, или поворот бранши может наклонить её так, что в язык упрётся ребро."
    },
    "tissue": {
     "en": "Tongue: the plate's face and the cannons along its sides while it lies flat; the plate's edge when it tilts. Bars: the cannon ends. Palate: not reached by a correctly sized bit under tension. Lips: two small joints near the corners.",
-    "ru": "Язык: плоскость пластины и плечи вдоль его боков, пока пластина лежит плашмя; её ребро, когда она наклонена. Дёсны: концы плеч. Нёбо: не затрагивается грызлом подходящего размера под натяжением. Губы: два небольших сочленения у углов рта."
+    "ru": "Язык: плоскость пластины и плечи вдоль его боков, пока пластина лежит плашмя; её ребро, когда она наклонена. Беззубые края: концы плеч. Нёбо: не затрагивается грызлом подходящего размера под натяжением. Губы: два небольших сочленения у углов рта."
    },
    "welfare": {
     "en": "Not studied: no imaging or lesion data exist for the French link itself, and whether the plate lies flat on a given cheek cannot be seen from outside. On loose rings it is free to settle; on fixed cheeks the plate angle is set by the fitting.",
@@ -3663,11 +3663,11 @@
    },
    "tissue": {
     "en": "Tongue: a long edge pressed across it; the model treats this with the single joint's concentration and a raised edge factor. Bars: as a French link. Palate: not reached by a correctly sized bit.",
-    "ru": "Язык: длинное ребро, прижатое поперёк; модель описывает это концентрацией одинарного трензеля и повышенным коэффициентом кромки. Дёсны: как у французского звена. Нёбо: не затрагивается грызлом подходящего размера."
+    "ru": "Язык: длинное ребро, прижатое поперёк; модель описывает это концентрацией одинарного трензеля и повышенным коэффициентом кромки. Беззубые края: как у французского звена. Нёбо: не затрагивается грызлом подходящего размера."
    },
    "welfare": {
     "en": "From statics: an edge concentrates the tongue load on a narrow line instead of spreading it over the plate's face. Measured: in Finnish trotters the Dr. Bristol had bar lesions in 2 of 10 horses and higher, but not statistically significant, odds of moderate to severe lesions than the jointed reference (Tuomola et al. 2021).",
-    "ru": "Следует из статики: ребро сосредоточивает нагрузку на языке на узкой линии, а не распределяет её по плоскости пластины. Измерено: у финских рысаков при Dr. Bristol поражения дёсен были у 2 из 10 лошадей, а шансы умеренных и тяжёлых поражений были выше, чем у одинарного референса, но статистически незначимо (Tuomola et al. 2021)."
+    "ru": "Следует из статики: ребро сосредоточивает нагрузку на языке на узкой линии, а не распределяет её по плоскости пластины. Измерено: у финских рысаков при Dr. Bristol поражения беззубого края были у 2 из 10 лошадей, а шансы умеренных и тяжёлых поражений были выше, чем у одинарного референса, но статистически незначимо (Tuomola et al. 2021)."
    }
   },
   "lozenge": {
@@ -3677,11 +3677,11 @@
    },
    "tissue": {
     "en": "Tongue: the link's rounded underside and the cannons along its sides. Bars: the cannon ends; a centre link close to the width of the lower jaw may press the bars (Anttila et al. 2022). Palate: not reached by a correctly sized bit. Lips: two small joints near the corners.",
-    "ru": "Язык: скруглённая нижняя сторона звена и плечи вдоль его боков. Дёсны: концы плеч; центральное звено длиной почти с ширину нижней челюсти может давить на дёсны (Anttila et al. 2022). Нёбо: не затрагивается грызлом подходящего размера. Губы: два небольших сочленения у углов рта."
+    "ru": "Язык: скруглённая нижняя сторона звена и плечи вдоль его боков. Беззубые края: концы плеч; центральное звено длиной почти с ширину нижней челюсти может давить на беззубые края (Anttila et al. 2022). Нёбо: не затрагивается грызлом подходящего размера. Губы: два небольших сочленения у углов рта."
    },
    "welfare": {
     "en": "No plate edge and a smaller fold than a single joint, but not shown to be gentler: in eventers lesion status did not differ by bit type (Tuomola et al. 2021, eventing). It still passes the whole rein force to tongue and bars.",
-    "ru": "Нет ребра пластины, складывание меньше, чем у одинарного трензеля, но то, что оно щадящее, не доказано: у лошадей троеборья статус поражений от типа удил не зависел (Tuomola et al. 2021, eventing). Вся сила повода по-прежнему приходится на язык и дёсны."
+    "ru": "Нет ребра пластины, складывание меньше, чем у одинарного трензеля, но то, что оно щадящее, не доказано: у лошадей троеборья статус поражений от типа удил не зависел (Tuomola et al. 2021, eventing). Вся сила повода по-прежнему приходится на язык и беззубые края."
    }
   },
   "angled-lozenge": {
@@ -3691,7 +3691,7 @@
    },
    "tissue": {
     "en": "Tongue: a broad contact, the link lying along rather than across it. Bars: curved cannons lying along them. Palate: not reached by a correctly sized bit. Lips: as a lozenge.",
-    "ru": "Язык: широкий контакт, звено лежит вдоль, а не поперёк. Дёсны: изогнутые плечи ложатся вдоль них. Нёбо: не затрагивается грызлом подходящего размера. Губы: как у двойного трензеля с овальным звеном."
+    "ru": "Язык: широкий контакт, звено лежит вдоль, а не поперёк. Беззубые края: изогнутые плечи ложатся вдоль них. Нёбо: не затрагивается грызлом подходящего размера. Губы: как у двойного трензеля с овальным звеном."
    },
    "welfare": {
     "en": "Designed for the broadest contact a jointed bit can give. Measured: in fluoroscopy, oral behaviour under rein tension did not differ between the KK Ultra, a plain single joint and a Myler bit (Manfredi et al. 2009). Not studied: lesion rates for this shape.",
@@ -3705,7 +3705,7 @@
    },
    "tissue": {
     "en": "Tongue: a small patch at the centre. Bars and lips: as a lozenge. Palate: not reached by a correctly sized bit.",
-    "ru": "Язык: небольшой участок в центре. Дёсны и губы: как у овального звена. Нёбо: не затрагивается грызлом подходящего размера."
+    "ru": "Язык: небольшой участок в центре. Беззубые края и губы: как у овального звена. Нёбо: не затрагивается грызлом подходящего размера."
    },
    "welfare": {
     "en": "No edge, but a smaller centre contact than a lozenge. Not studied: no imaging or lesion data exist for this link.",
@@ -3719,7 +3719,7 @@
    },
    "tissue": {
     "en": "Tongue: the barrel's rounded underside. Bars: the cannon ends, more on the side of a one-sided rein. Palate: not reached by a correctly sized bit.",
-    "ru": "Язык: скруглённая нижняя сторона бочонка. Дёсны: концы плеч, сильнее на стороне одностороннего повода. Нёбо: не затрагивается грызлом подходящего размера."
+    "ru": "Язык: скруглённая нижняя сторона бочонка. Беззубые края: концы плеч, сильнее на стороне одностороннего повода. Нёбо: не затрагивается грызлом подходящего размера."
    },
    "welfare": {
     "en": "Removes the fold of a single joint while keeping independent sides; otherwise a smooth mouthpiece of ordinary thickness. Not studied: whether this reduces lesions.",
@@ -3733,7 +3733,7 @@
    },
    "tissue": {
     "en": "Tongue: many small contacts at light tension, a row of pressure points at higher tension. Bars: whichever balls lie on them. Lips: links at the corners, with gaps. Palate: not reached by a correctly sized bit.",
-    "ru": "Язык: много мелких контактов при лёгком натяжении, ряд точек давления при сильном. Дёсны: те шары, что на них легли. Губы: звенья с промежутками в углах рта. Нёбо: не затрагивается грызлом подходящего размера."
+    "ru": "Язык: много мелких контактов при лёгком натяжении, ряд точек давления при сильном. Беззубые края: те шары, что на них легли. Губы: звенья с промежутками в углах рта. Нёбо: не затрагивается грызлом подходящего размера."
    },
    "welfare": {
     "en": "Its usual thickness of about 18 mm is more than many mouths have room for: measured horses had room on average for a 14 mm bit without compressing the tongue (Anttila et al. 2022), and 18-22 mm bits had higher lesion odds in eventers (Tuomola et al. 2021, eventing). Not studied: lesion data for this mouthpiece.",
@@ -3747,7 +3747,7 @@
    },
    "tissue": {
     "en": "Tongue, bars and lips: narrow lines of link edges, with the gaps between links able to pinch.",
-    "ru": "Язык, дёсны и губы: узкие линии кромок звеньев, промежутки между которыми могут защемлять."
+    "ru": "Язык, беззубые края и губы: узкие линии кромок звеньев, промежутки между которыми могут защемлять."
    },
    "welfare": {
     "en": "Thin, edged and gapped, so the model gives it high local pressures and a pinch risk. Not studied: no lesion data exist for chain mouthpieces.",
@@ -3761,7 +3761,7 @@
    },
    "tissue": {
     "en": "Tongue: the bar and the moving keys. Bars: as a straight bar. Lips: nothing special. Palate: not reached by a correctly sized bit.",
-    "ru": "Язык: штанга и подвижные подвески. Дёсны: как у прямой штанги. Губы: ничего особенного. Нёбо: не затрагивается грызлом подходящего размера."
+    "ru": "Язык: штанга и подвижные подвески. Беззубые края: как у прямой штанги. Губы: ничего особенного. Нёбо: не затрагивается грызлом подходящего размера."
    },
    "welfare": {
     "en": "Intended to encourage chewing and acceptance of the bit. Not studied: whether keys do so, and whether they cause harm on cheeks that rotate or lift.",
@@ -3771,15 +3771,15 @@
   "spade": {
    "mechanics": {
     "en": "A spoon rising from the centre of an unjointed bar, with braces from the spoon to the cannons and a cricket (roller) in the port. The spoon lies near the palate and the braces on the tongue; the bit is heavy and balanced to hang still. From statics: rotation of the shank turns the spoon towards the roof of the mouth. Not studied: no imaging shows when contact begins.",
-    "ru": "Ложка, поднимающаяся из центра цельной штанги, с распорками от ложки к плечам и роликом (cricket) в порте. Ложка находится у нёба, распорки лежат на языке; удила тяжёлые и сбалансированы так, чтобы висеть неподвижно. Следует из статики: поворот рычага разворачивает ложку к своду рта. Не изучено: снимков, показывающих, когда начинается контакт, нет."
+    "ru": "Ложка, поднимающаяся из центра цельной штанги, с распорками от ложки к плечам и роликом (cricket) в порте. Ложка находится у нёба, распорки лежат на языке; удила тяжёлые и сбалансированы так, чтобы висеть неподвижно. Следует из статики: поворот бранши разворачивает ложку к своду рта. Не изучено: снимков, показывающих, когда начинается контакт, нет."
    },
    "tissue": {
     "en": "Palate: model assumption: within reach of the spoon whenever the shank rotates. Tongue: the braces and the bit's weight over a wide contact. Bars: the thin cannons. Corners of the mouth: little, since the cheek is a curb.",
-    "ru": "Нёбо: допущение модели — в досягаемости ложки при любом повороте рычага. Язык: распорки и вес удил на широком контакте. Дёсны: тонкие плечи. Углы рта: мало, поскольку щёчка мундштучная."
+    "ru": "Нёбо: допущение модели — в досягаемости ложки при любом повороте бранши. Язык: распорки и вес удил на широком контакте. Беззубые края: тонкие плечи. Углы рта: мало, поскольку щёчка мундштучная."
    },
    "welfare": {
     "en": "In the vaquero tradition it is a signal bit for a finished horse ridden on a slack rein. From statics: once the rein is taken and the shank rotates, the spoon turns towards the palate, so the model assesses it by what happens under tension. Not studied: palate lesions from spade bits.",
-    "ru": "В традиции вакеро это сигнальные удила для полностью подготовленной лошади на отпущенном поводе. Следует из статики: как только повод набран и рычаг поворачивается, ложка разворачивается к нёбу, поэтому модель оценивает удила по тому, что происходит под натяжением. Не изучено: поражения нёба от удил со spade-грызлом."
+    "ru": "В традиции вакеро это сигнальные удила для полностью подготовленной лошади на отпущенном поводе. Следует из статики: как только повод набран и бранша поворачивается, ложка разворачивается к нёбу, поэтому модель оценивает удила по тому, что происходит под натяжением. Не изучено: поражения нёба от удил со spade-грызлом."
    }
   },
   "half-breed": {
@@ -3789,25 +3789,25 @@
    },
    "tissue": {
     "en": "Palate: model assumption: reached at a larger shank rotation than with a spade. Bars: take most of the load because the port takes the tongue out of it. Tongue: the cricket gives it something to roll; its effect on salivation has not been studied.",
-    "ru": "Нёбо: допущение модели — достигается при большем повороте рычага, чем у spade. Дёсны: несут бо́льшую часть нагрузки, потому что порт выводит из неё язык. Язык: ролик даёт ему что катать; влияние на слюноотделение не изучено."
+    "ru": "Нёбо: допущение модели — достигается при большем повороте бранши, чем у spade. Беззубые края: несут бо́льшую часть нагрузки, потому что порт выводит из неё язык. Язык: ролик даёт ему что катать; влияние на слюноотделение не изучено."
    },
    "welfare": {
     "en": "A bar-pressure bit with palate reach; the outcome depends on the shank length and the hand. On a long shank it is a strong curb, on a short one a moderate one. Measured: ported curbs were associated with bar lesions in Icelandic horses (Björnsdóttir et al. 2014).",
-    "ru": "Удила давления на дёсны с досягаемостью нёба; результат зависит от длины рычага и руки. На длинном рычаге это сильный мундштук, на коротком — умеренный. Измерено: у исландских лошадей мундштуки с портом были связаны с поражениями дёсен (Björnsdóttir et al. 2014)."
+    "ru": "Удила давления на беззубый край с досягаемостью нёба; результат зависит от длины бранш и руки. На длинных браншах это сильный мундштук, на коротких — умеренный. Измерено: у исландских лошадей мундштуки с портом были связаны с поражениями беззубого края (Björnsdóttir et al. 2014)."
    }
   },
   "cathedral": {
    "mechanics": {
     "en": "A narrow, tall port on an unjointed bar. From statics: the tongue passes almost entirely under the port, so the load goes to the bars, and a tall port reaches the palate at a smaller rotation. A spade without the spoon's width or braces.",
-    "ru": "Узкий высокий порт на цельной штанге. Следует из статики: язык почти целиком проходит под портом, поэтому нагрузка уходит на дёсны, а высокий порт достигает нёба при меньшем повороте. Это spade без ширины ложки и без распорок."
+    "ru": "Узкий высокий порт на цельной штанге. Следует из статики: язык почти целиком проходит под портом, поэтому нагрузка уходит на беззубые края, а высокий порт достигает нёба при меньшем повороте. Это spade без ширины ложки и без распорок."
    },
    "tissue": {
     "en": "Bars: most of the load (model assumption). Palate: within reach at modest rotation. Tongue: the narrow port's edges can bear on its sides when the bit tilts.",
-    "ru": "Дёсны: бо́льшая часть нагрузки (допущение модели). Нёбо: досягаемо при умеренном повороте. Язык: кромки узкого порта могут давить на его бока, когда удила наклоняются."
+    "ru": "Беззубые края: бо́льшая часть нагрузки (допущение модели). Нёбо: досягаемо при умеренном повороте. Язык: кромки узкого порта могут давить на его бока, когда удила наклоняются."
    },
    "welfare": {
     "en": "It takes the tongue out of the load and gives the bars and palate what the tongue would have carried. Measured: ported curbs were associated with bar lesions in Icelandic horses (Björnsdóttir et al. 2014). Not studied: this port itself.",
-    "ru": "Порт выводит язык из нагрузки и отдаёт дёснам и нёбу то, что нёс бы язык. Измерено: у исландских лошадей мундштуки с портом были связаны с поражениями дёсен (Björnsdóttir et al. 2014). Не изучено: сам этот порт."
+    "ru": "Порт выводит язык из нагрузки и отдаёт беззубым краям и нёбу то, что нёс бы язык. Измерено: у исландских лошадей мундштуки с портом были связаны с поражениями беззубого края (Björnsdóttir et al. 2014). Не изучено: сам этот порт."
    }
   },
   "salinas": {
@@ -3817,11 +3817,11 @@
    },
    "tissue": {
     "en": "Load shared between the bars and the sides of the tongue; the palate is reached only at large rotation (model assumption).",
-    "ru": "Нагрузка делится между дёснами и боками языка; нёбо достигается только при большом повороте (допущение модели)."
+    "ru": "Нагрузка делится между беззубыми краями и боками языка; нёбо достигается только при большом повороте (допущение модели)."
    },
    "welfare": {
     "en": "Tongue room without a palate device; on a long shank it is still a curb, and the lever sets the force. Not studied: no imaging or lesion data exist for vaquero ports.",
-    "ru": "Место для языка без устройства, давящего на нёбо; на длинном рычаге это всё равно мундштук, и силу задаёт рычаг. Не изучено: снимков и данных о поражениях для портов вакеро нет."
+    "ru": "Место для языка без устройства, давящего на нёбо; на длинных браншах это всё равно мундштук, и силу задаёт рычаг. Не изучено: снимков и данных о поражениях для портов вакеро нет."
    }
   },
   "mona-lisa": {
@@ -3831,7 +3831,7 @@
    },
    "tissue": {
     "en": "Bars: most of the load. Palate: reached at a larger rotation than the half-breed's (model assumption).",
-    "ru": "Дёсны: бо́льшая часть нагрузки. Нёбо: достигается при большем повороте, чем у half-breed (допущение модели)."
+    "ru": "Беззубые края: бо́льшая часть нагрузки. Нёбо: достигается при большем повороте, чем у half-breed (допущение модели)."
    },
    "welfare": {
     "en": "A moderate port whose effect is set by the cheek it is on; on its traditional spade cheek the lever decides. Not studied: no imaging or lesion data exist.",
@@ -3841,15 +3841,15 @@
   "correction": {
    "mechanics": {
     "en": "A tall port hinged to the cannons at both shoulders. Model assumption: the hinges let the port rotate before the cannons move, so the first rein on a shank lifts the port towards the palate while the cannons stay on the bars; further rein folds the cannons onto the bars and the curb chain engages. Not studied: no imaging of this sequence exists.",
-    "ru": "Высокий порт, соединённый с плечами шарнирами у обоих оснований. Допущение модели: шарниры позволяют порту повернуться раньше, чем сдвинутся плечи, поэтому первый набор повода на рычаге поднимает порт к нёбу, пока плечи лежат на дёснах; дальнейший набор складывает плечи на дёсны, и включается подбородочная цепочка. Не изучено: снимков этой последовательности нет."
+    "ru": "Высокий порт, соединённый с плечами шарнирами у обоих оснований. Допущение модели: шарниры позволяют порту повернуться раньше, чем сдвинутся плечи, поэтому первый набор повода на браншах поднимает порт к нёбу, пока плечи лежат на беззубых краях; дальнейший набор складывает плечи на беззубые края, и включается подбородочная цепочка. Не изучено: снимков этой последовательности нет."
    },
    "tissue": {
     "en": "Palate: by the port. Bars: by the hinged cannons, with an edge at each hinge; most of the mouth load in the model. Tongue: can be pinched at the hinges.",
-    "ru": "Нёбо: портом. Дёсны: шарнирными плечами с кромкой у каждого шарнира; в модели — бо́льшая часть нагрузки на рот. Язык: может защемляться в шарнирах."
+    "ru": "Нёбо: портом. Беззубые края: шарнирными плечами с кромкой у каждого шарнира; в модели — бо́льшая часть нагрузки на рот. Язык: может защемляться в шарнирах."
    },
    "welfare": {
     "en": "Combines palate reach, bar loading and a pinch at the hinges; on a long shank, in the model, the port reaches the palate by the time the chain engages. Not studied: no lesion data exist.",
-    "ru": "Сочетает досягаемость нёба, нагрузку на дёсны и защемление в шарнирах; на длинном рычаге, по модели, порт доходит до нёба к моменту включения цепочки. Не изучено: данных о поражениях нет."
+    "ru": "Сочетает досягаемость нёба, нагрузку на беззубые края и защемление в шарнирах; на длинных браншах, по модели, порт доходит до нёба к моменту включения цепочки. Не изучено: данных о поражениях нет."
    }
   },
   "w-mouth": {
@@ -3859,7 +3859,7 @@
    },
    "tissue": {
     "en": "Tongue: between the strands, with a pinch the model treats as high. Bars: two narrow strips. Palate: the joints can rise if the bit is too wide.",
-    "ru": "Язык: между нитями, защемление модель считает высоким. Дёсны: две узкие полоски. Нёбо: шарниры могут подниматься, если грызло слишком широкое."
+    "ru": "Язык: между нитями, защемление модель считает высоким. Беззубые края: по узкой полоске на каждом. Нёбо: шарниры могут подниматься, если грызло слишком широкое."
    },
    "welfare": {
     "en": "Smooth, but thin and doubled. From statics: two thin strands give narrow contacts, and the offset joints can close on the tongue. A double twisted wire has the same layout with a ridged surface.",
@@ -3873,7 +3873,7 @@
    },
    "tissue": {
     "en": "Model assumption: the tongue is pinched where the cannons cross, the bars are loaded as by a single joint, and the crossing can catch a fold of lip.",
-    "ru": "Допущение модели: язык защемляется в месте перекрещивания плеч, дёсны нагружаются как при одинарном трензеле, а перекрестье может захватить складку губы."
+    "ru": "Допущение модели: язык защемляется в месте перекрещивания плеч, беззубые края нагружаются как при одинарном трензеле, а перекрестье может захватить складку губы."
    },
    "welfare": {
     "en": "Included as a modelled geometry, not a documented bit: no description of it was found in the literature, so its use and effects are unknown. In the model the crossing pinches the tongue by construction.",
@@ -3887,7 +3887,7 @@
    },
    "tissue": {
     "en": "Bars and tongue: the corners concentrate the load. Corners of the mouth: the twist can rub the lip fold on a loose ring (model assumption).",
-    "ru": "Дёсны и язык: рёбра сосредоточивают нагрузку. Углы рта: скрутка может натирать складку губы на подвижном кольце (допущение модели)."
+    "ru": "Беззубые края и язык: рёбра сосредоточивают нагрузку. Углы рта: скрутка может натирать складку губы на подвижном кольце (допущение модели)."
    },
    "welfare": {
     "en": "From statics: sharp corners on a reduced contact raise local pressure compared with a smooth bit of the same thickness. Not studied: no lesion data exist for twisted mouthpieces.",
@@ -3901,7 +3901,7 @@
    },
    "tissue": {
     "en": "Tongue and bars: link edges in narrow lines; the gaps between links can trap tissue; under a lever the chain is drawn against the lower jaw.",
-    "ru": "Язык и дёсны: кромки звеньев узкими линиями; промежутки между звеньями могут захватывать ткани; на рычаге цепь притягивается к нижней челюсти."
+    "ru": "Язык и беззубые края: кромки звеньев узкими линиями; промежутки между звеньями могут захватывать ткани; на рычаге цепь притягивается к нижней челюсти."
    },
    "welfare": {
     "en": "Edged and gapped; the model gives it some of the highest local pressures in the register. Not studied: no lesion data exist.",
@@ -3929,7 +3929,7 @@
    },
    "tissue": {
     "en": "Model assumption: the tongue takes most of the load on a wide, soft contact and the bars little. Lips: frayed fibres leave a rough surface; check it.",
-    "ru": "Допущение модели: язык принимает бо́льшую часть нагрузки на широком мягком контакте, дёсны — немного. Губы: размочаленные волокна делают поверхность шероховатой; проверяйте её."
+    "ru": "Допущение модели: язык принимает бо́льшую часть нагрузки на широком мягком контакте, беззубые края — немного. Губы: размочаленные волокна делают поверхность шероховатой; проверяйте её."
    },
    "welfare": {
     "en": "The softest surface in the register on a direct cheek; on a lever it is still a lever. Not studied: no lesion data exist. Replace a rope that is frayed or has gone hard.",
@@ -3943,7 +3943,7 @@
    },
    "tissue": {
     "en": "Tongue: still pressed by the hinge, under a softer surface. Bars: as a single joint. The leather wears through to the metal and must be checked.",
-    "ru": "Язык: шарнир по-прежнему вдавливается в него, но через более мягкую поверхность. Дёсны: как у одинарного трензеля. Кожа протирается до металла, её нужно проверять."
+    "ru": "Язык: шарнир по-прежнему вдавливается в него, но через более мягкую поверхность. Беззубые края: как у одинарного трензеля. Кожа протирается до металла, её нужно проверять."
    },
    "welfare": {
     "en": "Softer to the touch; no study shows fewer lesions. Measured: in Finnish trotters a leather-covered mullen regulator had higher odds of moderate to severe lesions than the jointed reference; its cheeks may contribute (Tuomola et al. 2021).",
@@ -3957,7 +3957,7 @@
    },
    "tissue": {
     "en": "Tongue: a wide plate instead of the hinge; sellers claim lower pressure, which has not been measured. With the extended plate, the tongue's movement is restrained. Bars: as a single joint. Palate: the plate keeps the joint down.",
-    "ru": "Язык: широкая пластина вместо шарнира; продавцы заявляют о меньшем давлении, но это не измерялось. Удлинённая пластина ограничивает движения языка. Дёсны: как у одинарного трензеля. Нёбо: пластина удерживает шарнир внизу."
+    "ru": "Язык: широкая пластина вместо шарнира; продавцы заявляют о меньшем давлении, но это не измерялось. Удлинённая пластина ограничивает движения языка. Беззубые края: как у одинарного трензеля. Нёбо: пластина удерживает шарнир внизу."
    },
    "welfare": {
     "en": "Normal plate: a single joint with a wider centre contact in the model. Extended plate: a tongue restraint. Not studied: its effect on breathing; that holding the tongue down affects the soft palate is a hypothesis that has not been tested for this bit.",
@@ -3985,7 +3985,7 @@
    },
    "tissue": {
     "en": "Tongue and bars under a thin arc. Model assumption: the arc turns edge-on when the lead is pulled from below. Keys, if fitted, move on the tongue.",
-    "ru": "Язык и дёсны под тонкой дугой. Допущение модели: при натяжении повода снизу дуга поворачивается ребром. Подвески, если есть, двигаются по языку."
+    "ru": "Язык и беззубые края под тонкой дугой. Допущение модели: при натяжении повода снизу дуга поворачивается ребром. Подвески, если есть, двигаются по языку."
    },
    "welfare": {
     "en": "Little load at rest; under a pull from below the model gives an edge on the tongue. Its effect is set by the ring and the handler. Not studied: no imaging or lesion data exist.",
@@ -3995,15 +3995,15 @@
   "pee-wee-bar": {
    "mechanics": {
     "en": "The Pee Wee's own mouthpiece: a thin unjointed sweet-iron bar that floats on its rings and is held level by the cheek's side bars. Model assumption: it lies low on the bars rather than on the tongue.",
-    "ru": "Собственное грызло Pee Wee: тонкая цельная штанга из сладкого железа, свободно ходящая на кольцах и удерживаемая в горизонтальном положении боковыми перемычками щёчки. Допущение модели: она лежит низко на дёснах, а не на языке."
+    "ru": "Собственное грызло Pee Wee: тонкая цельная штанга из сладкого железа, свободно ходящая на кольцах и удерживаемая в горизонтальном положении боковыми перемычками щёчки. Допущение модели: она лежит низко на беззубых краях, а не на языке."
    },
    "tissue": {
     "en": "Model assumption: the bars take most of the load on a narrow strip and the tongue little. Without the side bars the bar can rotate and present its edge.",
-    "ru": "Допущение модели: дёсны принимают бо́льшую часть нагрузки узкой полоской, язык — немного. Без боковых перемычек штанга может повернуться и встать кромкой."
+    "ru": "Допущение модели: беззубые края принимают бо́льшую часть нагрузки узкой полоской, язык — немного. Без боковых перемычек штанга может повернуться и встать кромкой."
    },
    "welfare": {
     "en": "Thin and unjointed by design. Measured: thin bits (10-13 mm) had higher lesion odds than 14-17 mm ones in eventers (Tuomola et al. 2021, eventing), and unjointed bits were associated with bar lesions in trotters (Tuomola et al. 2021). Not studied: this mouthpiece itself.",
-    "ru": "Тонкое и цельное по замыслу. Измерено: у лошадей троеборья тонкие удила (10–13 мм) давали более высокие шансы поражений, чем 14–17 мм (Tuomola et al. 2021, eventing), а у рысаков цельные удила были связаны с поражениями дёсен (Tuomola et al. 2021). Не изучено: само это грызло."
+    "ru": "Тонкое и цельное по замыслу. Измерено: у лошадей троеборья тонкие удила (10–13 мм) давали более высокие шансы поражений, чем 14–17 мм (Tuomola et al. 2021, eventing), а у рысаков цельные удила были связаны с поражениями беззубого края (Tuomola et al. 2021). Не изучено: само это грызло."
    }
   }
  }
