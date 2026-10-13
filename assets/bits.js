@@ -1821,7 +1821,7 @@
         if (!tick) {
           tick = document.createElementNS(SVG_NS, "line");
           tick.setAttribute("class", "viz-threshold");
-          g.appendChild(tick);
+          g.insertBefore(tick, val);
         }
         attrs(tick, { x1: x(thr[tissue] || 0), x2: x(thr[tissue] || 0), y1: y - 4, y2: y + 24 });
         row.querySelector('[data-cell="load"]').textContent = N(loads[tissue].load);

@@ -712,7 +712,11 @@
       }
     }
     var clear = best && runnerUp && runnerUp.ratio > 0 && (runnerUp.ratio - best.ratio) / runnerUp.ratio >= margin;
-    return { postures: out, bias: clear ? best.id : null, lowest: best ? best.id : null };
+    /* Rein tension and the rein's angle both change with carriage, and neither
+       is measured per carriage, so a preference is reported only when the
+       catalogue allows it. */
+    var report = !!catalog.defaults.report_posture_bias;
+    return { postures: out, bias: report && clear ? best.id : null, lowest: best ? best.id : null };
   }
 
   /* ---------- Injury risks ---------- */

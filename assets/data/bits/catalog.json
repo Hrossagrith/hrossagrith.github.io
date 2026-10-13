@@ -5715,7 +5715,8 @@
   },
   "chain_engage_deg": 45,
   "jaw_clamp": 0.6,
-  "jaw_plate_share": 0.5
+  "jaw_plate_share": 0.5,
+  "report_posture_bias": false
  },
  "validity": {
   "default": "exists",

@@ -41,8 +41,8 @@
    "ru": "Невозможно"
   },
   "rank_line": {
-   "en": "Rank {rank} of {total} manufactured combinations, kindest first",
-   "ru": "Место {rank} из {total} выпускаемых сочетаний, от самого мягкого"
+   "en": "Rank {rank} of {total} manufactured combinations by harm index, lowest first",
+   "ru": "Место {rank} из {total} выпускаемых сочетаний по индексу вреда, от наименьшего"
   },
   "index_short": {
    "en": "harm index",
@@ -53,20 +53,20 @@
    "ru": "место {rank}"
   },
   "kindest_made": {
-   "en": "Kindest of everything that is made",
-   "ru": "Самое мягкое из всего, что выпускается"
+   "en": "Lowest harm index of everything that is made",
+   "ru": "Наименьший индекс вреда из всего, что выпускается"
   },
   "kindest_common": {
-   "en": "Kindest of the common bits",
-   "ru": "Самое мягкое из распространённых"
+   "en": "Lowest harm index among the common bits",
+   "ru": "Наименьший индекс вреда среди распространённых"
   },
   "harshest_common": {
-   "en": "Harshest of the common bits",
-   "ru": "Самое жёсткое из распространённых"
+   "en": "Highest harm index among the common bits",
+   "ru": "Наибольший индекс вреда среди распространённых"
   },
   "harshest_made": {
-   "en": "Harshest of everything that is made",
-   "ru": "Самое жёсткое из всего, что выпускается"
+   "en": "Highest harm index of everything that is made",
+   "ru": "Наибольший индекс вреда из всего, что выпускается"
   },
   "extreme_meta": {
    "en": "Index {index} · rank {rank} of {total} · peak {peak} on the {site}",
@@ -74,7 +74,7 @@
   },
   "tissue_bars": {
    "en": "bars",
-   "ru": "дёсны (беззубый край)"
+   "ru": "беззубый край"
   },
   "tissue_tongue": {
    "en": "tongue",
@@ -82,55 +82,55 @@
   },
   "tissue_lips": {
    "en": "corners of the mouth",
-   "ru": "углы губ"
+   "ru": "углы рта"
   },
   "tissue_chin": {
    "en": "chin groove",
-   "ru": "подбородная ямка"
+   "ru": "подбородочная ямка"
   },
   "tissue_poll": {
    "en": "poll",
    "ru": "затылок"
   },
   "peak_good": {
-   "en": "That is below the lowest pressure reported in the literature (about 100 kPa).",
-   "ru": "Это ниже самого низкого давления, описанного в литературе (около 100 кПа)."
+   "en": "That is well below the derived pain threshold of this tissue.",
+   "ru": "Это намного ниже расчётного болевого порога этой ткани."
   },
   "peak_warning": {
-   "en": "That is above the lowest reported pressure and below the human facial pressure-pain threshold.",
-   "ru": "Это выше самого низкого описанного давления и ниже порога болевой чувствительности кожи лица человека."
+   "en": "That is approaching the derived pain threshold of this tissue.",
+   "ru": "Это близко к расчётному болевому порогу этой ткани."
   },
   "peak_serious": {
-   "en": "That exceeds the human facial pressure-pain threshold; by analogy, likely to be felt as pain.",
-   "ru": "Это превышает порог болевой чувствительности кожи лица человека; по аналогии — вероятно, ощущается как боль."
+   "en": "That is above the derived pain threshold of this tissue. The threshold is derived from human measurements; none has been measured in a horse's mouth.",
+   "ru": "Это выше расчётного болевого порога этой ткани. Порог выведен из измерений у человека; во рту лошади пороги не измерены."
   },
   "peak_critical": {
-   "en": "That exceeds the human pressure-pain threshold of the hand as well; by analogy with human data, likely painful. No thresholds have been measured for the horse’s mouth.",
-   "ru": "Это превышает и порог болевой чувствительности кисти человека; по аналогии с данными о человеке — вероятно, болезненно. Пороги для рта лошади не измерены."
+   "en": "That is more than twice the derived pain threshold of this tissue. The threshold is derived from human measurements; none has been measured in a horse's mouth.",
+   "ru": "Это больше двух расчётных болевых порогов этой ткани. Порог выведен из измерений у человека; во рту лошади пороги не измерены."
   },
   "level_good": {
-   "en": "below lowest reported",
-   "ru": "ниже минимума из литературы"
+   "en": "well below threshold",
+   "ru": "намного ниже порога"
   },
   "level_warning": {
-   "en": "moderate",
-   "ru": "умеренно"
+   "en": "approaching threshold",
+   "ru": "близко к порогу"
   },
   "level_serious": {
-   "en": "above facial threshold",
-   "ru": "выше порога лица"
+   "en": "above threshold",
+   "ru": "выше порога"
   },
   "level_critical": {
-   "en": "above hand threshold",
-   "ru": "выше порога кисти"
+   "en": "more than twice the threshold",
+   "ru": "больше двух порогов"
   },
   "poll_note_baucher": {
-   "en": "Measured with sensors on rein and cheekpiece, the hanging cheek lowers cheekpiece tension at 0–30 N of rein rather than raising it: there is no lever, so there is no poll pressure to speak of.",
-   "ru": "По измерениям датчиками на поводе и нащёчном ремне подвесная щёчка при 0–30 Н на поводе снижает натяжение ремня, а не повышает: рычага нет, значит нет и заметного давления на затылок."
+   "en": "Measured with sensors on rein and cheekpiece in a study published by a bit maker (Benoist & Cross 2016, Neue Schule), the hanging cheek lowered cheekpiece tension at 0–30 N of rein rather than raising it. A strap only pulls, so the cheekpiece carries no lever load to the poll.",
+   "ru": "По измерениям датчиками на поводе и нащёчном ремне в работе, опубликованной производителем удил (Benoist & Cross 2016, Neue Schule), подвесная щёчка при 0–30 Н на поводе снижала натяжение ремня, а не повышала. Ремень только тянет, поэтому рычажной нагрузки на затылок нет."
   },
   "poll_note_loose": {
    "en": "A loose ring passes a little rein tension to the cheekpiece because the ring turns like a small pulley; the measured transfer is modest.",
-   "ru": "Подвижное кольцо передаёт немного натяжения на нащёчный ремень, поворачиваясь как маленький шкив; измеренная передача невелика."
+   "ru": "Подвижное кольцо передаёт немного натяжения на нащёчный ремень, поворачиваясь как маленький блок; измеренная передача невелика."
   },
   "poll_note_direct": {
    "en": "A fixed-ring snaffle passes almost nothing to the poll.",
@@ -141,12 +141,12 @@
    "ru": "При цепочке восстанавливающий момент уходит на подбородок; прямые измерения показывают, что затылку достаётся лишь малая доля."
   },
   "poll_note_gag_slide": {
-   "en": "The cord to the poll carries the rein tension less friction; this is one of the few designs where the poll load is real.",
-   "ru": "Шнур к затылку несёт натяжение повода за вычетом трения; это одна из немногих конструкций, где нагрузка на затылок реальна."
+   "en": "The cord routes part of the rein tension to the poll; the measured transfer is much smaller than an ideal pulley would give (Cross et al. 2017).",
+   "ru": "Шнур передаёт часть натяжения повода на затылок; измеренная передача гораздо меньше, чем дал бы идеальный блок (Cross et al. 2017)."
   },
   "poll_note_gag_lever": {
-   "en": "Without a chain the cheekpiece is the only thing resisting rotation, so it tightens until the mouthpiece has risen as far as the lips allow.",
-   "ru": "Без цепочки вращению сопротивляется только нащёчный ремень, поэтому он натягивается до тех пор, пока грызло не поднимется настолько, насколько позволят губы."
+   "en": "Without a chain the cheekpiece is the only thing resisting rotation; in the model it tightens until the mouthpiece has risen as far as the lips allow. Measured poll loads of lever gags are small (Cross et al. 2017).",
+   "ru": "Без цепочки вращению сопротивляется только нащёчный ремень; в модели он натягивается, пока грызло не поднимется настолько, насколько позволят губы. Измеренные нагрузки на затылок у рычажных гагов малы (Cross et al. 2017)."
   },
   "snaffle_rein": {
    "en": "snaffle rein",
@@ -154,11 +154,11 @@
   },
   "amp_line": {
    "en": "Onto tongue and bars: {press} total, {amp}× the rein component in that direction",
-   "ru": "На язык и дёсны: {press} всего, {amp}× составляющей повода в этом направлении"
+   "ru": "На язык и беззубые края: {press} всего, {amp}× составляющей повода в этом направлении"
   },
   "rho_line": {
    "en": "shank rotation ρ = {rho}°",
-   "ru": "поворот щёчки ρ = {rho}°"
+   "ru": "поворот бранши ρ = {rho}°"
   },
   "palate_risk": {
    "en": "palate risk {r}",
@@ -172,13 +172,9 @@
    "en": "tongue left {mm} of its {full}",
    "ru": "языку осталось {mm} из {full}"
   },
-  "stop_suspension": {
-   "en": "fixed cheek holds it here",
-   "ru": "фиксированная щёчка держит здесь"
-  },
   "stop_chain": {
    "en": "shank stops at {rho}°; mouthpiece does not rise",
-   "ru": "щёчка останавливается при {rho}°; грызло не поднимается"
+   "ru": "бранша останавливается при {rho}°; грызло не поднимается"
   },
   "stop_cheekpiece": {
    "en": "cheekpiece taut after {mm}",
@@ -190,7 +186,7 @@
   },
   "stop_none": {
    "en": "no stop before the cheek teeth",
-   "ru": "до коренных зубов стопора нет"
+   "ru": "до щёчных зубов стопора нет"
   },
   "stop_tissue": {
    "en": "stretch of the lip · the only stop",
@@ -210,7 +206,7 @@
   },
   "rot_pulley": {
    "en": "not applicable: the ring is a pulley, the bit slides",
-   "ru": "не применимо: кольцо — шкив, удила скользят"
+   "ru": "не применимо: кольцо — блок, удила скользят"
   },
   "rot_direct": {
    "en": "not applicable: no lever",
@@ -245,24 +241,24 @@
    "ru": "близко к нейтральному и будет следовать за рукой"
   },
   "btv_btv": {
-   "en": "shows its lowest modelled peak behind the vertical at constant tension; under a holding hand that can encourage the horse to go further behind it",
-   "ru": "показывает наименьший расчётный пик за вертикалью при постоянном натяжении; под неуступающей рукой это может подталкивать лошадь уходить за вертикаль ещё дальше"
+   "en": "shows its lowest modelled peak behind the vertical at constant tension; whether this shapes carriage under a holding hand has not been studied",
+   "ru": "показывает наименьший расчётный пик за вертикалью при постоянном натяжении; влияет ли это на постав под удерживающей рукой, не изучено"
   },
   "ref_good": {
-   "en": "below the lowest pressure reported in the literature.",
-   "ru": "ниже самого низкого давления, описанного в литературе."
+   "en": "well below the derived pain threshold of that tissue.",
+   "ru": "это намного ниже расчётного болевого порога этой ткани."
   },
   "ref_warning": {
-   "en": "above the lowest reported pressure, below the human facial threshold.",
-   "ru": "выше самого низкого описанного давления, ниже порога лица человека."
+   "en": "approaching the derived pain threshold of that tissue.",
+   "ru": "это близко к расчётному болевому порогу этой ткани."
   },
   "ref_serious": {
-   "en": "above the human facial pressure-pain threshold.",
-   "ru": "выше порога болевой чувствительности лица человека."
+   "en": "above the derived pain threshold of that tissue.",
+   "ru": "это выше расчётного болевого порога этой ткани."
   },
   "ref_critical": {
-   "en": "above the human hand pressure-pain threshold.",
-   "ru": "выше порога болевой чувствительности кисти человека."
+   "en": "more than twice the derived pain threshold of that tissue.",
+   "ru": "это больше двух расчётных болевых порогов этой ткани."
   },
   "lips_short": {
    "en": "lips",
@@ -465,24 +461,24 @@
    "ru": "2 · вероятно"
   },
   "risk_level_3": {
-   "en": "3 · expected",
-   "ru": "3 · ожидаемо"
+   "en": "3 · highest",
+   "ru": "3 · наивысший"
   },
   "risk_why_commissure_low": {
-   "en": "{kpa} on the corners; the mouthpiece is held from rising or the lift is small.",
-   "ru": "{kpa} на углах губ; грызлу не дают подниматься или подъём мал."
+   "en": "{kpa} on the corners; the modelled rise of the mouthpiece is small.",
+   "ru": "{kpa} на углах рта; расчётный подъём грызла мал."
   },
   "risk_why_commissure_high": {
    "en": "{kpa} on the corners with a rise of {lift} and no mechanical stop: the lip is stretched over the first cheek teeth.",
-   "ru": "{kpa} на углах губ при подъёме {lift} и без механического стопа: губа растягивается о первые коренные зубы."
+   "ru": "{kpa} на углах рта при подъёме {lift} и без механического стопа: губа растягивается о первые щёчные зубы."
   },
   "risk_why_bars_low": {
-   "en": "{kpa} over 1–2 mm of mucosa on bone; below the facial pain threshold at this setting.",
-   "ru": "{kpa} на 1–2 мм слизистой над костью; ниже лицевого болевого порога при этих настройках."
+   "en": "{kpa} over 1–2 mm of mucosa on bone; the model flags no lesion at this setting.",
+   "ru": "{kpa} на 1–2 мм слизистой над костью; при этой настройке модель не отмечает поражения."
   },
   "risk_why_bars_high": {
    "en": "{kpa} on a strip of mucosa over bone; textured or thin surfaces (contact {contact}, edge {edge}) narrow the strip further. Finnish studies associate bar lesions with mouthpiece type and thickness.",
-   "ru": "{kpa} на полоске слизистой над костью; рельефные или тонкие поверхности (контакт {contact}, кромка {edge}) сужают полоску ещё больше. Финские исследования связывают поражения дёсен с типом и толщиной грызла."
+   "ru": "{kpa} на полоске слизистой над костью; рельефные или тонкие поверхности (контакт {contact}, кромка {edge}) сужают полоску ещё больше. Финские исследования связывают поражения беззубого края с типом и толщиной грызла."
   },
   "risk_why_tongue_low": {
    "en": "{kpa} spread over the tongue; smooth, conforming surface.",
@@ -490,7 +486,7 @@
   },
   "risk_why_tongue_high": {
    "en": "{kpa} with an edge factor of {edge}: ridges, folding joints or crossing cannons cut rather than press.",
-   "ru": "{kpa} при коэффициенте кромки {edge}: рёбра, складывающиеся сочленения или перекрещивающиеся плечи режут, а не давят."
+   "ru": "{kpa} при коэффициенте кромки {edge}: рёбра, складывающиеся сочленения или перекрещивающиеся половины грызла режут, а не давят."
   },
   "risk_why_palate_low": {
    "en": "Palate index {value}: a low port or a mouthpiece that drops onto the tongue.",
@@ -514,15 +510,15 @@
   },
   "risk_why_cheek_teeth_high": {
    "en": "The cheek is pressed against the first cheek teeth by a rising bit, a pad, prongs or a ring that can be pulled through ({kpa} on the outside of the cheek).",
-   "ru": "Щёку прижимают к первым коренным зубам поднимающееся грызло, накладка, шипы или кольцо, которое можно протащить ({kpa} снаружи щеки)."
+   "ru": "Щёку прижимают к первым щёчным зубам поднимающееся грызло, накладка, шипы или кольцо, которое можно протащить ({kpa} снаружи щеки)."
   },
   "risk_why_pinch_low": {
    "en": "No free ring through the mouthpiece and no link gaps wide enough to trap tissue.",
    "ru": "Нет свободного кольца сквозь грызло и нет зазоров звеньев, в которые попадает ткань."
   },
   "risk_why_pinch_high": {
-   "en": "A ring turning in the mouthpiece hole or gaps between links catch the fold of the lip or the tongue.",
-   "ru": "Кольцо, вращающееся в отверстии грызла, или зазоры между звеньями захватывают складку губы или язык."
+   "en": "A ring turning in the mouthpiece hole or gaps between links may catch the fold of the lip or the tongue; this has not been studied.",
+   "ru": "Кольцо, вращающееся в отверстии грызла, или зазоры между звеньями могут захватывать складку губы или язык; это не изучено."
   },
   "risk_why_jaw_low": {
    "en": "{kpa} under the ring or plate; the load is small or spread.",
@@ -545,88 +541,72 @@
    "ru": "Язык свободно двигается и глотает."
   },
   "risk_why_airway_high": {
-   "en": "The tongue is held down or the head is held up by the device; the tongue is the main mover of the soft palate and the horse breathes through its nose only.",
-   "ru": "Язык прижат или голова удерживается вверх устройством; язык — главный двигатель мягкого нёба, а лошадь дышит только носом."
+   "en": "The tongue is held down or the head is held up by the device; the tongue has been proposed to influence the position of the soft palate (Cook 1999), and the horse breathes through its nose only.",
+   "ru": "Устройство прижимает язык или удерживает голову вверх; высказано предположение, что язык влияет на положение мягкого нёба (Cook 1999), а лошадь дышит только носом."
   },
   "risk_why_behaviour_low": {
-   "en": "Peak {peak} on the {site}: conflict behaviour is expected only with poor hands.",
-   "ru": "Пик {peak} — ткань: {site}; конфликтное поведение ожидается лишь при плохой руке."
+   "en": "Peak {peak} on the {site}, with no lifting or conflicting signal.",
+   "ru": "Пик {peak} — ткань: {site}; поднимающего или противоречивого сигнала нет."
   },
   "risk_why_behaviour_high": {
-   "en": "Peak {peak} on the {site}, or a lifting or conflicting signal: gaping, head tossing, tongue over the bit and head shaking are the documented responses.",
-   "ru": "Пик {peak} — ткань: {site}, либо поднимающий или противоречивый сигнал: открывание рта, мотание головой, язык поверх удил и тряска головой — задокументированные ответы."
+   "en": "Peak {peak} on the {site}, or a lifting or conflicting signal: gaping, head tossing, tongue over the bit and head shaking are behaviours documented in ridden horses in discomfort (Dyson et al. 2018).",
+   "ru": "Пик {peak} — ткань: {site}, либо поднимающий или противоречивый сигнал: открывание рта, мотание и тряска головой, язык поверх удил описаны как признаки дискомфорта у лошадей под всадником (Dyson et al. 2018)."
   },
   "class_0": {
-   "en": "Low load",
-   "ru": "Низкая нагрузка"
+   "en": "Below threshold at ridden contact",
+   "ru": "Ниже порога при рабочем контакте"
   },
   "class_1": {
-   "en": "Moderate load",
-   "ru": "Умеренная нагрузка"
+   "en": "Threshold within ridden contact",
+   "ru": "Порог в пределах рабочего контакта"
   },
   "class_2": {
-   "en": "Elevated risk",
-   "ru": "Повышенный риск"
+   "en": "Threshold at self-chosen contact",
+   "ru": "Порог при самостоятельно выбранном контакте"
   },
   "class_3": {
-   "en": "High risk of injury",
-   "ru": "Высокий риск травмы"
+   "en": "Threshold at the lightest contact",
+   "ru": "Порог при самом лёгком контакте"
   },
   "class_4": {
-   "en": "High risk by design",
-   "ru": "Высокий риск по конструкции"
+   "en": "Point load by design",
+   "ru": "Точечная нагрузка по конструкции"
   },
   "class_def_0": {
-   "en": "At the reference tension every tissue stays below the lowest pressure reported in the literature (about 100 kPa), and no lesion is more than possible.",
-   "ru": "При опорном натяжении каждая ткань остаётся ниже самого низкого описанного в литературе давления (около 100 кПа), и ни одно поражение не более чем возможно."
+   "en": "The most loaded tissue does not reach its derived pain threshold even at 23.2 N per rein, the mean peak tension measured in ridden horses at trot (Piccolo & Kienapfel 2019).",
+   "ru": "Самая нагруженная ткань не достигает расчётного болевого порога даже при 23,2 Н на повод — среднем пиковом натяжении, измеренном у лошадей под всадником на рыси (Piccolo & Kienapfel 2019)."
   },
   "class_def_1": {
-   "en": "Peak between the lowest reported pressure and the human facial pressure-pain threshold, or a lesion possible.",
-   "ru": "Пик между самым низким описанным давлением и порогом болевой чувствительности лица человека, либо поражение возможно."
+   "en": "The most loaded tissue reaches its derived pain threshold between 9.4 and 23.2 N per rein: within ordinary ridden contact, but above the tension horses choose for themselves without a rider (Piccolo & Kienapfel 2019).",
+   "ru": "Самая нагруженная ткань достигает расчётного болевого порога при 9,4–23,2 Н на повод: в пределах обычного рабочего контакта, но выше натяжения, которое лошади выбирают сами без всадника (Piccolo & Kienapfel 2019)."
   },
   "class_def_2": {
-   "en": "Peak above the human facial pressure-pain threshold (232 kPa) at the reference tension, or a design feature associated with lesions.",
-   "ru": "Пик выше порога болевой чувствительности лица человека (232 кПа) при опорном натяжении, либо особенность конструкции, связанная с поражениями."
+   "en": "The most loaded tissue reaches its derived pain threshold between 5.7 and 9.4 N per rein, the range of tension horses choose for themselves without a rider (Piccolo & Kienapfel 2019).",
+   "ru": "Самая нагруженная ткань достигает расчётного болевого порога при 5,7–9,4 Н на повод — в диапазоне натяжения, которое лошади выбирают сами без всадника (Piccolo & Kienapfel 2019)."
   },
   "class_def_3": {
-   "en": "Peak above the human hand pressure-pain threshold (445 kPa) at the reference tension, or a lesion likely by the risk table.",
-   "ru": "Пик выше порога болевой чувствительности кисти человека (445 кПа) при опорном натяжении, либо поражение вероятно по таблице рисков."
+   "en": "The most loaded tissue reaches its derived pain threshold below 5.7 N per rein, the lightest tension horses accepted in a voluntary test (Christensen et al. 2011).",
+   "ru": "Самая нагруженная ткань достигает расчётного болевого порога ниже 5,7 Н на повод — самого лёгкого натяжения, которое лошади принимали в добровольном тесте (Christensen et al. 2011)."
   },
   "class_def_4": {
-   "en": "The design concentrates load on a very small area or contacts the palate, cheek or tongue by construction: a palate spoon, prongs, a cutting surface or a scissor mouth. High risk at any appreciable rein tension.",
-   "ru": "Конструкция сосредоточивает нагрузку на очень малой площади или касается нёба, щеки или языка по самому устройству: нёбная лопатка, шипы, режущая поверхность или «ножницы». Высокий риск при любом заметном натяжении."
+   "en": "The design is built around a point load: a palate spoon, prongs, a cutting surface or a scissor mouth. The design sets the class, whatever the tension at which the threshold is reached.",
+   "ru": "Конструкция построена на точечной нагрузке: нёбная лопатка, шипы, режущая поверхность или «ножницы». Класс задаёт конструкция, при каком бы натяжении ни достигался порог."
   },
   "class_why_pain_0": {
-   "en": "Peak {peak} on the {site}: below the lowest reported pressure.",
-   "ru": "Пик {peak} — ткань: {site}; ниже самого низкого описанного давления."
+   "en": "Rein tension per side at which the derived pain threshold is first reached, on the {site}: {f}. That is above ordinary ridden contact (mean peak tension at trot 23.2 N; Piccolo & Kienapfel 2019).",
+   "ru": "Натяжение повода на сторону, при котором впервые достигается расчётный болевой порог (ткань: {site}): {f}. Это выше обычного рабочего контакта (среднее пиковое натяжение на рыси 23,2 Н; Piccolo & Kienapfel 2019)."
   },
   "class_why_pain_1": {
-   "en": "Peak {peak} on the {site}: above the lowest reported pressure, below the human facial threshold.",
-   "ru": "Пик {peak} — ткань: {site}; выше самого низкого описанного давления, ниже порога лица человека."
+   "en": "Rein tension per side at which the derived pain threshold is first reached, on the {site}: {f}. That is within ordinary ridden contact, but above the tension horses choose for themselves without a rider (Piccolo & Kienapfel 2019).",
+   "ru": "Натяжение повода на сторону, при котором впервые достигается расчётный болевой порог (ткань: {site}): {f}. Это в пределах обычного рабочего контакта, но выше натяжения, которое лошади выбирают сами без всадника (Piccolo & Kienapfel 2019)."
   },
   "class_why_pain_2": {
-   "en": "Peak {peak} on the {site}: above the human facial pressure-pain threshold.",
-   "ru": "Пик {peak} — ткань: {site}; выше порога болевой чувствительности лица человека."
+   "en": "Rein tension per side at which the derived pain threshold is first reached, on the {site}: {f}. That is within the tension horses choose for themselves without a rider (Piccolo & Kienapfel 2019).",
+   "ru": "Натяжение повода на сторону, при котором впервые достигается расчётный болевой порог (ткань: {site}): {f}. Это в пределах натяжения, которое лошади выбирают сами без всадника (Piccolo & Kienapfel 2019)."
   },
   "class_why_pain_3": {
-   "en": "Peak {peak} on the {site}: above the human hand pressure-pain threshold.",
-   "ru": "Пик {peak} — ткань: {site}; выше порога болевой чувствительности кисти человека."
-  },
-  "class_why_injury_0": {
-   "en": "No lesion is likely at this setting.",
-   "ru": "Ни одно поражение не вероятно при этих настройках."
-  },
-  "class_why_injury_1": {
-   "en": "Worst lesion risk: {risk}, {level}.",
-   "ru": "Худший риск поражения: {risk}, {level}."
-  },
-  "class_why_injury_2": {
-   "en": "Worst lesion risk: {risk}, {level}; a serious lesion, so it sets the class.",
-   "ru": "Худший риск поражения: {risk}, {level}; поражение серьёзное, поэтому оно задаёт класс."
-  },
-  "class_why_injury_3": {
-   "en": "Worst lesion risk: {risk}, {level}; one lesion at this level is enough for this class.",
-   "ru": "Худший риск поражения: {risk}, {level}; одного поражения такого уровня достаточно для этого класса."
+   "en": "Rein tension per side at which the derived pain threshold is first reached, on the {site}: {f}. That is below the lightest tension horses accepted in a voluntary test (Christensen et al. 2011).",
+   "ru": "Натяжение повода на сторону, при котором впервые достигается расчётный болевой порог (ткань: {site}): {f}. Это ниже самого лёгкого натяжения, которое лошади принимали в добровольном тесте (Christensen et al. 2011)."
   },
   "class_why_design_palate": {
    "en": "Design: the mouthpiece contacts the palate by construction.",
@@ -637,8 +617,8 @@
    "ru": "Конструкция: щетина или шипы у щеки."
   },
   "class_why_design_scissor": {
-   "en": "Design: the cannons cross and pinch the tongue.",
-   "ru": "Конструкция: плечи грызла перекрещиваются и защемляют язык."
+   "en": "Design: the two halves cross and can pinch the tongue.",
+   "ru": "Конструкция: половины грызла перекрещиваются и могут защемлять язык."
   },
   "class_why_design_edge": {
    "en": "Design: a cutting surface (edge factor at or above the catalogue's limit).",
@@ -646,11 +626,11 @@
   },
   "risk_name_commissure": {
    "en": "tearing of the corners of the mouth",
-   "ru": "разрывы углов губ"
+   "ru": "разрывы углов рта"
   },
   "risk_name_bars": {
    "en": "bruising and lesions of the bars",
-   "ru": "ушибы и поражения дёсен"
+   "ru": "ушибы и поражения беззубого края"
   },
   "risk_name_tongue": {
    "en": "tongue lacerations",
@@ -701,8 +681,8 @@
    "ru": "толкает в другую сторону лишь в том смысле, что тише всего, когда ничего не просят: при длинной шее и носе вперёд его нагрузки наименьшие, и это не учит никакому поставу"
   },
   "btv_rollkur": {
-   "en": "shows its lowest modelled peak in hyperflexion, but only because this static model holds rein tension constant; in practice hyperflexion is usually held with substantial tension, and its welfare costs are documented",
-   "ru": "показывает наименьший расчётный пик в гиперфлексии, но лишь потому, что статическая модель держит натяжение постоянным; на практике гиперфлексию обычно удерживают значительным натяжением, а её вред для благополучия задокументирован"
+   "en": "shows its lowest modelled peak in hyperflexion, but only because this static model holds rein tension equal across carriages; riding behind the vertical has been measured with rein tension as high as or higher than in the competition frame (Christensen et al. 2014; König von Borstel et al. 2024)",
+   "ru": "показывает наименьший расчётный пик в гиперфлексии, но лишь потому, что статическая модель держит натяжение одинаковым во всех поставах; езда за вертикалью измерялась с натяжением повода не ниже, чем в соревновательной рамке (Christensen et al. 2014; König von Borstel et al. 2024)"
   },
   "posture_credit": {
    "en": "Drawings: head and neck after George Stubbs, The Anatomy of the Horse (1766), the first table of the muscles with the skull and cervical vertebrae of the skeleton table drawn inside, public domain (scan: Wellcome Collection); the six carriages follow the site author's sketches. The neck muscles and the vertebrae bend together; the head turns at the poll.",
@@ -713,12 +693,24 @@
    "ru": "Явного механического предпочтения нет: пики различаются меньше погрешности модели"
   },
   "btv_none": {
-   "en": "shows no clear mechanical preference in this model, so the outcome depends on the hand",
-   "ru": "не даёт в этой модели явного механического предпочтения, поэтому результат зависит от руки"
+   "en": "cannot be ranked by carriage in this model: rein tension and the rein's angle both change with carriage, and neither has been measured per carriage, so the outcome depends on the hand",
+   "ru": "не может быть оценено по поставам в этой модели: натяжение повода и его угол меняются вместе с поставом, а по поставам ни то ни другое не измерено, поэтому результат зависит от руки"
   },
   "kpa_over": {
    "en": "> {limit}",
    "ru": "> {limit}"
+  },
+  "class_why_risk": {
+   "en": "Worst lesion risk: {risk}, {level}. It is listed beside the class and does not set it.",
+   "ru": "Наибольший риск поражения: {risk}, {level}. Он приведён рядом с классом и на класс не влияет."
+  },
+  "f_star_none": {
+   "en": "not reached anywhere in the modelled range of rein tension",
+   "ru": "не достигается во всём моделируемом диапазоне натяжения"
+  },
+  "level_line": {
+   "en": "{level} · derived threshold {thr}",
+   "ru": "{level} · расчётный порог {thr}"
   }
  },
  "model_params": [
@@ -877,8 +869,8 @@
     "ru": ""
    },
    "basis": {
-    "en": "From mechanics: k = α·E/h for a cylinder on a thin layer bonded to bone (elastic foundation, Johnson 1985). α fitted to plane-strain finite-element runs of this register: 2.1–2.8 for Poisson ratios 0.40–0.47 at every modulus, thickness and load tried; peak pressure 1.3–1.5 times the mean.",
-    "ru": "Из механики: k = α·E/h для цилиндра на тонком слое, сращенном с костью (упругое основание, Johnson 1985). α подобран по плоским конечно-элементным расчётам этого реестра: 2,1–2,8 при коэффициенте Пуассона 0,40–0,47 при всех испытанных модулях, толщинах и нагрузках; пиковое давление в 1,3–1,5 раза выше среднего."
+    "en": "From mechanics: k = α·E/h for a cylinder on a thin layer bonded to bone (elastic foundation, Johnson 1985). α fitted to 193 plane-strain finite-element runs of this register (mouthpieces 10–22 mm, mucosa 1–2 mm, modulus 0.1–1 MPa): medians 2.1, 2.5 and 2.8 for Poisson ratios 0.40, 0.45 and 0.47, independent of mouthpiece diameter; peak pressure 1.3–1.5 times the mean. The script is published in tools/bits/.",
+    "ru": "Из механики: k = α·E/h для цилиндра на тонком слое, сращенном с костью (упругое основание, Johnson 1985). α подобран по 193 плоским конечно-элементным расчётам этого реестра (грызла 10–22 мм, слизистая 1–2 мм, модуль 0,1–1 МПа): медианы 2,1, 2,5 и 2,8 при коэффициенте Пуассона 0,40, 0,45 и 0,47, независимо от диаметра грызла; пиковое давление в 1,3–1,5 раза выше среднего. Скрипт опубликован в tools/bits/."
    },
    "digits": 1
   },
@@ -1149,8 +1141,8 @@
     "ru": ""
    },
    "basis": {
-    "en": "A carriage is reported as the device's mechanical preference only when its modelled peak ratio is at least this fraction below the next lowest; smaller differences are inside the model's precision.",
-    "ru": "Постав называется механическим предпочтением устройства, только если его расчётное пиковое отношение ниже следующего хотя бы на эту долю; меньшие различия лежат в пределах точности модели."
+    "en": "Not applied: the register does not name a carriage the device favours. In the static model, at equal rein tension and a level rein, behind-the-vertical carriages send part of the rein force to the cheekpieces and so show lower mouth pressure; but measured rein tension is as high or higher behind the vertical (Christensen et al. 2014; König von Borstel et al. 2024) and the rein is not level when the mouth is far below the hand.",
+    "ru": "Не применяется: реестр не называет постав, которому устройство «благоприятствует». В статической модели при одинаковом натяжении и горизонтальном поводе поставы за вертикалью уводят часть силы повода в нащёчные ремни и поэтому дают меньшее давление во рту; но измеренное натяжение за вертикалью такое же или выше (Christensen et al. 2014; König von Borstel et al. 2024), а повод не горизонтален, когда рот намного ниже руки."
    },
    "digits": 2
   },

@@ -15,7 +15,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 <meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="icon" href="../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../assets/style.css">
-<link rel="stylesheet" href="../../assets/bits.css?v=3">
+<link rel="stylesheet" href="../../assets/bits.css?v=4">
 <script>
 /* Resolve the theme before first paint: stored choice first, system preference
    otherwise. Setting the attribute here keeps the stylesheet to one dark block. */
@@ -70,9 +70,9 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 <main id="main" class="shell wrap bits">
   <p class="entry">Horses &middot; Reference register</p>
   <h1 class="page-title">Bit mechanics register</h1>
-  <p class="page-standfirst">Every cheek with every mouthpiece, from every discipline: dressage, jumping, racing, harness, western, vaquero, saddle seat, leading in hand, and the bits that are banned or sold quietly. Pick a mechanism, a cheek and a mouthpiece; the register opens a dossier on that exact combination: the forces, where they land in the mouth, whether anything stops them, what is likely to be injured, and what the horse learns from them.</p>
+  <p class="page-standfirst">Every cheek with every mouthpiece, from every discipline: dressage, jumping, racing, harness, western, vaquero, saddle seat, leading in hand, and specialist bits that are seldom seen. Pick a mechanism, a cheek and a mouthpiece; the register opens a dossier on that exact combination: the forces, where they land in the mouth, whether anything stops them, what is likely to be injured, and what the horse learns from them.</p>
 
-  <p class="bits-note">The dossiers are built from one mechanical model whose every parameter is published on the dossier page and can be changed there. Pressures are modelled estimates, compared with measured rein tensions and with human pressure-pain thresholds. Bits are classified by what their parts do, never by what they are called: a jointed mouthpiece on shanks is a curb whatever the shop calls it. Nothing here is a recommendation to use a bit: in Hrossagri&#240; ordinary bits are prohibited, and the register exists to show why the mechanics matter.</p>
+  <p class="bits-note">The dossiers are built from one mechanical model whose every parameter is published on the dossier page and can be changed there. Pressures are modelled estimates, compared with measured rein tensions and with pain thresholds derived from human measurements: no pressure-pain threshold has been measured in a horse&rsquo;s mouth. Bits are classified by what their parts do, never by what they are called: a jointed mouthpiece on shanks is a curb whatever the shop calls it. Nothing here is a recommendation to use a bit: in Hrossagri&#240; ordinary bits are prohibited, and the register exists to show why the mechanics matter.</p>
 
   <section class="bits-step" data-step="group">
     <h2 class="bits-step__title"><span class="bits-step__num">1</span> Choose the mechanism</h2>
@@ -103,7 +103,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 
   <section class="bits-matrix">
     <h2>The whole matrix at a glance</h2>
-    <p class="page-standfirst">Every cheek (rows, grouped by mechanism) against every mouthpiece (columns), at the reference condition: 20&nbsp;N on each rein, head on the vertical, catalogue diameters. The colour is the harm class, which is the worst of three readings: where the peak pressure stands against the pain thresholds, the most serious lesion the model expects, and whether the design itself concentrates load. The number is the harm index, 0–100, which also weighs the expected injuries by their severity. Click a cell to open its dossier.</p>
+    <p class="page-standfirst">Every cheek (rows, grouped by mechanism) against every mouthpiece (columns), at the reference condition: 20&nbsp;N on each rein, head on the vertical, catalogue diameters. The colour is the class: the rein tension per side at which the most loaded tissue first reaches its derived pain threshold, read against rein tensions measured in horses; designs built around a point load are class 4. Lesion risks are listed in each dossier beside the class and do not set it. The number is the harm index, 0–100, which also weighs the expected lesions by their severity and the loss of control. Click a cell to open its dossier.</p>
     <div class="bits-matrix__scroll">
       <table class="bits-matrix__table" data-matrix>
         <caption class="visually-hidden">Harm class and harm index for every cheek and mouthpiece combination</caption>
@@ -111,14 +111,14 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
         <tbody></tbody>
       </table>
     </div>
-    <p class="bits-matrix__legend"><span><i class="is-c0"></i>Low load: every tissue below the lowest reported pressure (about 100&nbsp;kPa), no lesion likely</span><span><i class="is-c1"></i>Moderate load: below the human facial threshold, or a lesion possible</span><span><i class="is-c2"></i>Elevated risk: above the human facial threshold at 20&nbsp;N, or a design feature associated with lesions</span><span><i class="is-c3"></i>High risk of injury: above the human hand threshold, or a lesion likely</span><span><i class="is-c4"></i>High risk by design: palate spoons, prongs, cutting surfaces, scissor mouths</span><span><i style="border:1px dashed var(--rule)"></i>impossible</span><span><i class="is-c2" style="opacity:.45"></i>theoretical only</span></p>
+    <p class="bits-matrix__legend"><span><i class="is-c0"></i>Below threshold at ridden contact: not reached even at 23.2&nbsp;N per rein, the mean peak tension measured at trot</span><span><i class="is-c1"></i>Threshold within ridden contact: reached between 9.4 and 23.2&nbsp;N</span><span><i class="is-c2"></i>Threshold at self-chosen contact: reached between 5.7 and 9.4&nbsp;N, the tension horses choose without a rider</span><span><i class="is-c3"></i>Threshold at the lightest contact: reached below 5.7&nbsp;N, the lightest tension horses accepted in a voluntary test</span><span><i class="is-c4"></i>Point load by design: palate spoons, prongs, cutting surfaces, scissor mouths</span><span><i style="border:1px dashed var(--rule)"></i>impossible</span><span><i class="is-c2" style="opacity:.45"></i>theoretical only</span></p>
   </section>
 
   <section>
     <h2>The two ends of the register</h2>
-    <p class="page-standfirst">Computed from the same model, at the reference condition, over every combination that is actually made. The first pair answers the question the register was built for: which arrangement loads the mouth least while not working against a correct carriage, and which loads it most.</p>
+    <p class="page-standfirst">Computed from the same model, at the reference condition, over every combination that is actually made: the arrangements with the lowest and the highest harm index. The index is a weighted model reading, not a measurement of pain or injury.</p>
     <div class="bits-extremes" data-extremes></div>
-    <h3 class="bits-subhead">Harshest by mechanism</h3>
+    <h3 class="bits-subhead">Highest harm index by mechanism</h3>
     <div class="bits-extremes bits-extremes--compact" data-extremes-groups></div>
   </section>
 
@@ -160,7 +160,7 @@ if (location.protocol === "http:" && /(^|\.)hrossagrith\.com$/.test(location.hos
 
 <script src="../../assets/theme.js"></script>
 <script src="../../assets/site.js"></script>
-<script src="../../assets/bits-model.js?v=3"></script>
-<script src="../../assets/bits.js?v=3"></script>
+<script src="../../assets/bits-model.js?v=4"></script>
+<script src="../../assets/bits.js?v=4"></script>
 </body>
 </html>
