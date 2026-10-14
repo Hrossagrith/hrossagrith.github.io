@@ -8,12 +8,10 @@
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f5f5f7">
 <link rel="canonical" href="https://hrossagrith.com/{{self_path}}">
-<link rel="alternate" hreflang="{{html_lang}}" href="https://hrossagrith.com/{{self_path}}">
-<link rel="alternate" hreflang="{{other_html_lang}}" href="https://hrossagrith.com/{{other_path}}">
 <link rel="icon" href="{{root}}assets/flag-mark.png">
 <link rel="stylesheet" href="{{root}}assets/market.css">
 </head>
-<body class="mk" data-page="{{page}}" data-dept="{{dept}}" data-lang="{{lang}}" data-root="{{root}}" data-mroot="{{mroot}}">
+<body class="mk" data-page="{{page}}" data-lang="{{lang}}" data-root="{{root}}" data-mroot="{{mroot}}">
 <a class="mk-skip" href="#main">{{t.skip}}</a>
 
 <div class="mk-gov">
@@ -32,22 +30,23 @@
     </a>
     <ul class="mk-nav__links" id="mk-menu">
       <li><a href="{{mroot}}horses/">{{t.nav_horses}}</a></li>
-      <li><a href="{{mroot}}horses/?category=ponies">{{t.nav_ponies}}</a></li>
-      <li><a href="{{mroot}}horses/?category=driving">{{t.nav_driving}}</a></li>
+      <li><a href="{{mroot}}horses/?loan=1">{{t.nav_loan}}</a></li>
+      <li><a href="{{mroot}}horses/?cat=ponies">{{t.nav_ponies}}</a></li>
       <li><a href="{{mroot}}tack/">{{t.nav_tack}}</a></li>
-      <li><a href="{{mroot}}tack/?category=bridles">{{t.nav_bridles}}</a></li>
-      <li><a href="{{mroot}}tack/?category=saddles">{{t.nav_saddles}}</a></li>
       <li><a href="{{mroot}}sellers/">{{t.nav_sellers}}</a></li>
-      <li><a href="{{mroot}}#help">{{t.nav_help}}</a></li>
-      <li class="mk-nav__lang"><a href="{{other_href}}" hreflang="{{other_lang}}" data-keep-query>{{t.lang_other}}</a></li>
+      <li><a href="{{mroot}}sell/">{{t.nav_sell}}</a></li>
     </ul>
     <div class="mk-nav__tools">
       <button class="mk-icon" type="button" data-search-open aria-label="{{t.search_label}}" aria-expanded="false" aria-controls="mk-search">
         <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
       </button>
-      <a class="mk-icon mk-bagicon" href="{{mroot}}bag/" aria-label="{{t.bag_label}}">
+      <a class="mk-icon" href="{{mroot}}my/" aria-label="{{t.my_label}}">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16.5s-6-3.6-6-8A3.3 3.3 0 0 1 10 6.3 3.3 3.3 0 0 1 16 8.5c0 4.4-6 8-6 8Z"/></svg>
+        <span class="mk-icon__count" data-my-count hidden></span>
+      </a>
+      <a class="mk-icon" href="{{mroot}}bag/" aria-label="{{t.bag_label}}">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7h12l-1 10H5L4 7Z"/><path d="M7.5 7V5.5a2.5 2.5 0 0 1 5 0V7"/></svg>
-        <span class="mk-bagicon__count" data-bag-count hidden></span>
+        <span class="mk-icon__count" data-bag-count hidden></span>
       </a>
       <button class="mk-icon mk-nav__toggle" type="button" data-menu aria-label="{{t.menu_label}}" aria-expanded="false" aria-controls="mk-menu">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h14M3 13h14"/></svg>
@@ -55,20 +54,13 @@
     </div>
   </nav>
   <div class="mk-search" id="mk-search" data-search hidden>
-    <form class="mk-wrap mk-search__form" action="{{mroot}}search/" method="get" role="search">
-      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
-      <input type="search" name="q" placeholder="{{t.search_placeholder}}" aria-label="{{t.search_label}}" autocomplete="off" maxlength="80" data-search-input>
-    </form>
-    <div class="mk-wrap mk-search__body">
-      <p class="mk-search__head" data-search-head>{{t.search_quick}}</p>
-      <ul class="mk-search__list" data-search-quick>
-        <li><a href="{{mroot}}horses/?discipline=leisure">{{t.quick_leisure}}</a></li>
-        <li><a href="{{mroot}}horses/?category=ponies">{{t.quick_ponies}}</a></li>
-        <li><a href="{{mroot}}horses/?discipline=driving">{{t.quick_driving}}</a></li>
-        <li><a href="{{mroot}}tack/?category=bridles">{{t.quick_bridles}}</a></li>
-        <li><a href="{{mroot}}seller/?id=rehoming">{{t.quick_rehoming}}</a></li>
-      </ul>
-      <ul class="mk-search__list" data-search-results hidden></ul>
+    <div class="mk-wrap">
+      <form class="mk-search__form" action="{{mroot}}horses/" method="get" role="search" data-search-form>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+        <input type="search" name="q" placeholder="{{t.search_placeholder}}" aria-label="{{t.search_label}}" autocomplete="off" maxlength="120" data-search-input>
+      </form>
+      <p class="mk-search__head" data-search-head>{{t.search_try}}</p>
+      <ul class="mk-suggest" data-suggest></ul>
     </div>
   </div>
 </header>
@@ -81,30 +73,34 @@
 <footer class="mk-foot">
   <div class="mk-wrap">
     <p class="mk-foot__roleplay"><strong>{{t.roleplay_title}}</strong> {{t.roleplay_text}}</p>
-    <p class="mk-foot__fine">{{t.currency_note}}</p>
-    <p class="mk-foot__fine">{{t.law_note}}</p>
+    <p>{{t.currency_note}}</p>
+    <p>{{t.law_note}}</p>
     <div class="mk-foot__cols">
       <section>
-        <h2>{{t.foot_shop}}</h2>
+        <h2>{{t.foot_buy}}</h2>
         <ul>
           <li><a href="{{mroot}}horses/">{{t.nav_horses}}</a></li>
+          <li><a href="{{mroot}}horses/?loan=1">{{t.nav_loan}}</a></li>
           <li><a href="{{mroot}}tack/">{{t.nav_tack}}</a></li>
           <li><a href="{{mroot}}sellers/">{{t.nav_sellers}}</a></li>
-          <li><a href="{{mroot}}bag/">{{t.bag_label}}</a></li>
         </ul>
       </section>
       <section>
-        <h2>{{t.foot_disciplines}}</h2>
-        <ul data-foot-disciplines></ul>
+        <h2>{{t.foot_yours}}</h2>
+        <ul>
+          <li><a href="{{mroot}}my/">{{t.my_label}}</a></li>
+          <li><a href="{{mroot}}bag/">{{t.bag_label}}</a></li>
+          <li><a href="{{mroot}}sell/">{{t.nav_sell}}</a></li>
+        </ul>
       </section>
       <section>
         <h2>{{t.foot_law}}</h2>
         <ul>
-          <li><a href="{{portal_href}}gov/law/welfare/#art-91">{{t.foot_art91}}</a></li>
-          <li><a href="{{portal_href}}gov/law/welfare/#art-92">{{t.foot_art92}}</a></li>
-          <li><a href="{{portal_href}}gov/law/welfare/#art-93">{{t.foot_art93}}</a></li>
-          <li><a href="{{portal_href}}gov/law/tack-measurement/">{{t.foot_schedule}}</a></li>
-          <li><a href="{{portal_href}}gov/law/passport/">{{t.foot_passport}}</a></li>
+          <li><a href="{{portal_href}}gov/law/welfare/#art-91">{{t.law_art91}}</a></li>
+          <li><a href="{{portal_href}}gov/law/welfare/#art-92">{{t.law_art92}}</a></li>
+          <li><a href="{{portal_href}}gov/law/welfare/#art-93">{{t.law_art93}}</a></li>
+          <li><a href="{{portal_href}}gov/law/welfare/#art-39">{{t.law_art39}}</a></li>
+          <li><a href="{{portal_href}}gov/law/tack-measurement/">{{t.law_schedule}}</a></li>
         </ul>
       </section>
       <section>
@@ -112,14 +108,11 @@
         <ul>
           <li><a href="{{portal_href}}">{{t.gov_portal}}</a></li>
           <li><a href="{{portal_href}}horses/">{{t.foot_horses}}</a></li>
-          <li><a href="{{mroot}}seller/?id=rehoming">{{t.quick_rehoming}}</a></li>
+          <li><a href="{{mroot}}seller/?id=rehoming">{{t.foot_rehoming}}</a></li>
         </ul>
       </section>
     </div>
-    <div class="mk-foot__bottom">
-      <span>{{t.copyright}}</span>
-      <a href="{{other_href}}" hreflang="{{other_lang}}" data-keep-query>{{t.lang_other}}</a>
-    </div>
+    <p class="mk-foot__bottom">{{t.copyright}}</p>
   </div>
 </footer>
 

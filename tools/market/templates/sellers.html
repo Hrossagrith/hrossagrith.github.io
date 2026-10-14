@@ -1,4 +1,8 @@
 <section class="mk-store-head mk-wrap">
   <h1 class="mk-h1"><span>{{t.sellers_title}}</span> <span class="mk-muted">{{t.sellers_sub}}</span></h1>
+  <form class="mk-inline-search" role="search" data-sellers-form>
+    <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+    <input type="search" name="q" placeholder="{{t.sellers_placeholder}}" aria-label="{{t.sellers_placeholder}}" autocomplete="off" maxlength="80" data-sellers-q>
+  </form>
 </section>
 <div class="mk-wrap" data-seller-groups></div>

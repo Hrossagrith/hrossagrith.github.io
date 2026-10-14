@@ -1,0 +1,15 @@
+<section class="mk-wrap mk-results-head">
+  <h1 class="mk-h1"><span data-headline>{{t.title_tack}}</span> <span class="mk-muted" data-count></span></h1>
+  <form class="mk-inline-search" role="search" data-results-form>
+    <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+    <input type="search" name="q" placeholder="{{t.tack_placeholder}}" aria-label="{{t.search_label}}" autocomplete="off" maxlength="120" data-results-q>
+  </form>
+  <ul class="mk-refine__list mk-refine__list--wide" data-tack-cats></ul>
+</section>
+<div class="mk-wrap">
+  <ul class="mk-grid" data-grid></ul>
+  <div class="mk-empty" data-empty hidden>
+    <h2>{{t.empty_title}}</h2>
+    <p>{{t.empty_text}}</p>
+  </div>
+</div>

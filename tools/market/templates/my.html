@@ -1,0 +1,42 @@
+<section class="mk-wrap mk-store-head">
+  <h1 class="mk-h1"><span>{{t.my_title}}</span> <span class="mk-muted" data-my-sub></span></h1>
+</section>
+
+<section class="mk-wrap mk-shelf">
+  <div class="mk-steps" data-path></div>
+</section>
+
+<section class="mk-wrap mk-shelf">
+  <h2 class="mk-h2"><span>{{t.my_viewings}}</span> <span class="mk-muted">{{t.my_viewings_sub}}</span></h2>
+  <ol class="mk-rows" data-my-viewings></ol>
+  <p class="mk-small" data-my-viewings-empty hidden>{{t.my_viewings_empty}}</p>
+</section>
+
+<section class="mk-wrap mk-shelf">
+  <h2 class="mk-h2"><span>{{t.my_shortlist}}</span> <span class="mk-muted">{{t.my_shortlist_sub}}</span></h2>
+  <ol class="mk-rows" data-my-shortlist></ol>
+  <p class="mk-small" data-my-shortlist-empty hidden>{{t.my_shortlist_empty}}</p>
+</section>
+
+<section class="mk-wrap mk-shelf">
+  <h2 class="mk-h2"><span>{{t.my_searches}}</span></h2>
+  <ul class="mk-queries" data-my-searches></ul>
+  <p class="mk-small" data-my-searches-empty hidden>{{t.my_searches_empty}}</p>
+</section>
+
+<section class="mk-wrap mk-shelf">
+  <div class="mk-two">
+    <article class="mk-panel">
+      <p class="mk-eyebrow">{{t.card_name}}</p>
+      <h2 class="mk-h3" data-card-title></h2>
+      <ol class="mk-stamps" data-stamps></ol>
+      <p class="mk-small" data-card-line></p>
+    </article>
+    <article class="mk-panel" data-my-ads-panel>
+      <p class="mk-eyebrow">{{t.my_ads}}</p>
+      <ul class="mk-plainlist" data-my-ads></ul>
+      <p class="mk-small" data-my-ads-empty hidden>{{t.my_ads_empty}}</p>
+      <p><a class="mk-link" href="{{mroot}}sell/">{{t.nav_sell}}</a></p>
+    </article>
+  </div>
+</section>

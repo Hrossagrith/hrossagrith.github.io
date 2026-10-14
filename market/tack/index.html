@@ -4,16 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tack · Imperial Market</title>
-<meta name="description" content="The official horse and tack marketplace of the Empire of Hrossagrith: licensed sellers, full disclosure, Passport transfer in 72 hours. A roleplay market: nothing is real or for sale.">
+<meta name="description" content="The official horse and tack marketplace of the Empire of Hrossagrith: thousands of horses for sale and on loan from licensed studs, dealers and owners. A roleplay market: nothing is real or for sale.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f5f5f7">
 <link rel="canonical" href="https://hrossagrith.com/market/tack/">
-<link rel="alternate" hreflang="en-GB" href="https://hrossagrith.com/market/tack/">
-<link rel="alternate" hreflang="ru" href="https://hrossagrith.com/ru/market/tack/">
 <link rel="icon" href="../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../assets/market.css">
 </head>
-<body class="mk" data-page="browse" data-dept="tack" data-lang="en" data-root="../../" data-mroot="../">
+<body class="mk" data-page="tack" data-lang="en" data-root="../../" data-mroot="../">
 <a class="mk-skip" href="#main">Skip to content</a>
 
 <div class="mk-gov">
@@ -32,22 +30,23 @@
     </a>
     <ul class="mk-nav__links" id="mk-menu">
       <li><a href="../horses/">Horses</a></li>
-      <li><a href="../horses/?category=ponies">Ponies</a></li>
-      <li><a href="../horses/?category=driving">Driving</a></li>
+      <li><a href="../horses/?loan=1">On loan</a></li>
+      <li><a href="../horses/?cat=ponies">Ponies</a></li>
       <li><a href="../tack/">Tack</a></li>
-      <li><a href="../tack/?category=bridles">Bridles</a></li>
-      <li><a href="../tack/?category=saddles">Saddles</a></li>
       <li><a href="../sellers/">Sellers</a></li>
-      <li><a href="../#help">Help</a></li>
-      <li class="mk-nav__lang"><a href="../../ru/market/tack/" hreflang="ru" data-keep-query>Русский</a></li>
+      <li><a href="../sell/">Sell a horse</a></li>
     </ul>
     <div class="mk-nav__tools">
       <button class="mk-icon" type="button" data-search-open aria-label="Search the Market" aria-expanded="false" aria-controls="mk-search">
         <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
       </button>
-      <a class="mk-icon mk-bagicon" href="../bag/" aria-label="Bag">
+      <a class="mk-icon" href="../my/" aria-label="My search">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16.5s-6-3.6-6-8A3.3 3.3 0 0 1 10 6.3 3.3 3.3 0 0 1 16 8.5c0 4.4-6 8-6 8Z"/></svg>
+        <span class="mk-icon__count" data-my-count hidden></span>
+      </a>
+      <a class="mk-icon" href="../bag/" aria-label="Bag">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7h12l-1 10H5L4 7Z"/><path d="M7.5 7V5.5a2.5 2.5 0 0 1 5 0V7"/></svg>
-        <span class="mk-bagicon__count" data-bag-count hidden></span>
+        <span class="mk-icon__count" data-bag-count hidden></span>
       </a>
       <button class="mk-icon mk-nav__toggle" type="button" data-menu aria-label="Menu" aria-expanded="false" aria-controls="mk-menu">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h14M3 13h14"/></svg>
@@ -55,88 +54,59 @@
     </div>
   </nav>
   <div class="mk-search" id="mk-search" data-search hidden>
-    <form class="mk-wrap mk-search__form" action="../search/" method="get" role="search">
-      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
-      <input type="search" name="q" placeholder="Search horses, breeds, tack and sellers" aria-label="Search the Market" autocomplete="off" maxlength="80" data-search-input>
-    </form>
-    <div class="mk-wrap mk-search__body">
-      <p class="mk-search__head" data-search-head>Quick links</p>
-      <ul class="mk-search__list" data-search-quick>
-        <li><a href="../horses/?discipline=leisure">Horses for leisure riding</a></li>
-        <li><a href="../horses/?category=ponies">Ponies</a></li>
-        <li><a href="../horses/?discipline=driving">Driving horses</a></li>
-        <li><a href="../tack/?category=bridles">Bitless bridles</a></li>
-        <li><a href="../seller/?id=rehoming">Imperial Equid Rehoming Office</a></li>
-      </ul>
-      <ul class="mk-search__list" data-search-results hidden></ul>
+    <div class="mk-wrap">
+      <form class="mk-search__form" action="../horses/" method="get" role="search" data-search-form>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+        <input type="search" name="q" placeholder="Try: calm cob for hacking under 5,000 cr" aria-label="Search the Market" autocomplete="off" maxlength="120" data-search-input>
+      </form>
+      <p class="mk-search__head" data-search-head>Popular searches</p>
+      <ul class="mk-suggest" data-suggest></ul>
     </div>
   </div>
 </header>
 <div class="mk-scrim" data-scrim hidden></div>
 
 <main id="main" class="mk-main">
-<section class="mk-browse-head mk-wrap">
-  <h1 class="mk-h1"><span data-browse-title>Tack</span> <span class="mk-muted" data-browse-count></span></h1>
-  <form class="mk-browse-search" role="search" data-browse-form>
+<section class="mk-wrap mk-results-head">
+  <h1 class="mk-h1"><span data-headline>Tack</span> <span class="mk-muted" data-count></span></h1>
+  <form class="mk-inline-search" role="search" data-results-form>
     <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
-    <input type="search" name="q" placeholder="Search this department" aria-label="Search the Market" autocomplete="off" maxlength="80" data-browse-q>
+    <input type="search" name="q" placeholder="Search tack" aria-label="Search the Market" autocomplete="off" maxlength="120" data-results-q>
   </form>
+  <ul class="mk-refine__list mk-refine__list--wide" data-tack-cats></ul>
 </section>
-
-<div class="mk-wrap mk-browse">
-  <aside class="mk-filters" id="mk-filters" data-filters aria-label="Filters">
-    <div class="mk-filters__head">
-      <h2>Filters</h2>
-      <button type="button" class="mk-textbtn" data-filters-reset>Clear all</button>
-      <button type="button" class="mk-textbtn mk-filters__done" data-filters-close>Done</button>
-    </div>
-    <div class="mk-filters__body" data-filter-groups></div>
-  </aside>
-
-  <section class="mk-results" aria-label="Results">
-    <div class="mk-toolbar">
-      <button type="button" class="mk-pill mk-toolbar__filters" data-filters-open aria-controls="mk-filters">Filters <span data-filter-count></span></button>
-      <ul class="mk-chips" data-chips></ul>
-      <label class="mk-sort">
-        <span>Sort by</span>
-        <select data-sort>
-          <option value="relevant">Most relevant</option>
-          <option value="new">Newest</option>
-          <option value="price-asc">Price: low to high</option>
-          <option value="price-desc">Price: high to low</option>
-        </select>
-      </label>
-    </div>
-    <ul class="mk-grid" data-results></ul>
-    <div class="mk-empty" data-empty hidden>
-      <h2>No matches.</h2>
-      <p>Try fewer filters or a broader search.</p>
-      <button type="button" class="mk-btn mk-btn--ghost" data-filters-reset>Clear all</button>
-    </div>
-    <div class="mk-more"><button type="button" class="mk-btn mk-btn--ghost" data-more hidden>Show more</button></div>
-  </section>
+<div class="mk-wrap">
+  <ul class="mk-grid" data-grid></ul>
+  <div class="mk-empty" data-empty hidden>
+    <h2>No horses match every part of this search.</h2>
+    <p>Remove one part and see what is close:</p>
+  </div>
 </div>
 
 </main>
 
 <footer class="mk-foot">
   <div class="mk-wrap">
-    <p class="mk-foot__roleplay"><strong>A roleplay market.</strong> Hrossagrith is a fictional state and this is a game. No real horse, pony, donkey or mule is sold, reserved or delivered here, no money is taken, and every seller, brand, listing and price is invented.</p>
-    <p class="mk-foot__fine">Prices are in crowns (cr), a provisional unit until the Empire’s currency is defined.</p>
-    <p class="mk-foot__fine">Every listing follows the Equid Welfare Code: disclosure (Art. 91), suitability (Art. 92) and record continuity (Art. 93). Tack is listed only if it meets the Imperial Tack Measurement Schedule.</p>
+    <p class="mk-foot__roleplay"><strong>A roleplay market.</strong> Hrossagrith is a fictional state and this is a game. No real horse, pony, donkey or mule is sold, loaned, reserved or delivered here, no money is taken, and every seller, brand, listing and price is invented.</p>
+    <p>Prices are in crowns (cr), a provisional unit until the Empire’s currency is defined.</p>
+    <p>Every listing follows the Equid Welfare Code: disclosure (Art. 91), suitability (Art. 92), record continuity (Art. 93) and companionship (Art. 39). Tack is listed only if it meets the Imperial Tack Measurement Schedule.</p>
     <div class="mk-foot__cols">
       <section>
-        <h2>Shop</h2>
+        <h2>Buy</h2>
         <ul>
           <li><a href="../horses/">Horses</a></li>
+          <li><a href="../horses/?loan=1">On loan</a></li>
           <li><a href="../tack/">Tack</a></li>
           <li><a href="../sellers/">Sellers</a></li>
-          <li><a href="../bag/">Bag</a></li>
         </ul>
       </section>
       <section>
-        <h2>Disciplines</h2>
-        <ul data-foot-disciplines></ul>
+        <h2>Yours</h2>
+        <ul>
+          <li><a href="../my/">My search</a></li>
+          <li><a href="../bag/">Bag</a></li>
+          <li><a href="../sell/">Sell a horse</a></li>
+        </ul>
       </section>
       <section>
         <h2>Rules of sale</h2>
@@ -144,8 +114,8 @@
           <li><a href="../../gov/law/welfare/#art-91">Disclosure, Art. 91</a></li>
           <li><a href="../../gov/law/welfare/#art-92">Suitability, Art. 92</a></li>
           <li><a href="../../gov/law/welfare/#art-93">Record continuity, Art. 93</a></li>
+          <li><a href="../../gov/law/welfare/#art-39">Companionship, Art. 39</a></li>
           <li><a href="../../gov/law/tack-measurement/">Tack Measurement Schedule</a></li>
-          <li><a href="../../gov/law/passport/">Equid Passport</a></li>
         </ul>
       </section>
       <section>
@@ -157,10 +127,7 @@
         </ul>
       </section>
     </div>
-    <div class="mk-foot__bottom">
-      <span>Empire of Hrossagrith · Imperial Market. A worldbuilding project.</span>
-      <a href="../../ru/market/tack/" hreflang="ru" data-keep-query>Русский</a>
-    </div>
+    <p class="mk-foot__bottom">Empire of Hrossagrith · Imperial Market. A worldbuilding project.</p>
   </div>
 </footer>
 
@@ -181,6 +148,71 @@
   </li>
 </template>
 
+<template id="tpl-row">
+  <li class="mk-row">
+    <a class="mk-row__media" data-href tabindex="-1" aria-hidden="true">
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    </a>
+    <div class="mk-row__main">
+      <h3 class="mk-row__title"><a data-href data-f="title"></a></h3>
+      <p class="mk-row__facts" data-f="facts"></p>
+      <p class="mk-row__scene" data-f="scene"></p>
+      <ul class="mk-row__match" data-match></ul>
+      <p class="mk-row__meta" data-f="meta"></p>
+    </div>
+    <div class="mk-row__side">
+      <p class="mk-row__price" data-f="price"></p>
+      <p class="mk-row__note" data-f="note"></p>
+      <div class="mk-row__actions" data-actions></div>
+    </div>
+  </li>
+</template>
+
+<template id="tpl-top">
+  <article class="mk-topcard">
+    <a class="mk-topcard__media" data-href tabindex="-1" aria-hidden="true">
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    </a>
+    <div class="mk-topcard__body">
+      <p class="mk-eyebrow mk-eyebrow--accent" data-f="badge"></p>
+      <h2 class="mk-topcard__title"><a data-href data-f="title"></a></h2>
+      <p class="mk-topcard__scene" data-f="scene"></p>
+      <p class="mk-row__facts" data-f="facts"></p>
+      <ul class="mk-row__match" data-match></ul>
+      <p class="mk-topcard__price"><strong data-f="price"></strong> <span class="mk-muted" data-f="note"></span></p>
+      <p class="mk-row__meta" data-f="meta"></p>
+      <a class="mk-btn mk-btn--sm" data-viewing-link>Book a viewing</a>
+    </div>
+  </article>
+</template>
+
+<template id="tpl-matchchip">
+  <li></li>
+</template>
+
+<template id="tpl-action">
+  <button type="button" class="mk-textbtn"></button>
+</template>
+
+<template id="tpl-refine-chip">
+  <li><a class="mk-chip mk-chip--link" data-href><span data-f="name"></span> <span class="mk-chip__count" data-f="count"></span></a></li>
+</template>
+
+<template id="tpl-query">
+  <li><a class="mk-query" data-href>
+    <span class="mk-query__text" data-f="text"></span>
+    <span class="mk-query__meta" data-f="meta"></span>
+  </a></li>
+</template>
+
+<template id="tpl-suggest">
+  <li><a class="mk-suggest__item" data-href>
+    <span class="mk-suggest__kind" data-f="kind"></span>
+    <span class="mk-suggest__text" data-f="text"></span>
+    <span class="mk-suggest__count" data-f="count"></span>
+  </a></li>
+</template>
+
 <template id="tpl-tile">
   <li class="mk-tiles__item">
     <a class="mk-tile" data-href>
@@ -192,14 +224,35 @@
 </template>
 
 <template id="tpl-feature">
-  <li class="mk-slot">
+  <li class="mk-slot mk-slot--maker">
     <a class="mk-feature" data-href>
       <span class="mk-eyebrow" data-f="eyebrow"></span>
       <span class="mk-feature__title" data-f="name"></span>
       <span class="mk-feature__line" data-f="line"></span>
-      <span class="mk-feature__ph" data-ph></span>
+      <span class="mk-feature__mark" data-f="mark"></span>
     </a>
   </li>
+</template>
+
+<template id="tpl-step">
+  <li class="mk-step">
+    <span class="mk-step__num" data-f="num"></span>
+    <span class="mk-step__label" data-f="label"></span>
+    <span class="mk-step__count" data-f="count"></span>
+    <span class="mk-step__hint" data-f="hint"></span>
+  </li>
+</template>
+
+<template id="tpl-steps">
+  <div class="mk-path">
+    <div class="mk-path__bar"><span class="mk-path__fill" data-fill></span></div>
+    <ol class="mk-path__steps" data-body></ol>
+    <p class="mk-path__next"><a class="mk-link" data-href data-f="next"></a></p>
+  </div>
+</template>
+
+<template id="tpl-stamp">
+  <li class="mk-stamp"></li>
 </template>
 
 <template id="tpl-fgroup">
@@ -224,12 +277,12 @@
   <li><button type="button" class="mk-chip"><span data-f="name"></span><span class="mk-chip__x" aria-hidden="true">×</span></button></li>
 </template>
 
-<template id="tpl-search-result">
-  <li><a class="mk-search__hit" data-href><span data-f="name"></span><span class="mk-muted" data-f="meta"></span></a></li>
+<template id="tpl-pagelink">
+  <a class="mk-pager__link"></a>
 </template>
 
-<template id="tpl-highlight">
-  <li><strong data-f="value"></strong><span data-f="label"></span></li>
+<template id="tpl-para">
+  <p></p>
 </template>
 
 <template id="tpl-bar">
@@ -263,7 +316,7 @@
     <h3 data-f="name"></h3>
     <p class="mk-compare__price" data-f="price"></p>
     <dl class="mk-compare__rows" data-rows></dl>
-    <a class="mk-link" data-href>Learn more</a>
+    <a class="mk-link" data-href></a>
   </div>
 </template>
 
@@ -274,6 +327,10 @@
     <span class="mk-opt__line" data-f="line"></span>
     <span class="mk-opt__price" data-f="price"></span>
   </label>
+</template>
+
+<template id="tpl-daychip">
+  <label class="mk-daychip"><input type="radio"><span data-f="top"></span><strong data-f="main"></strong></label>
 </template>
 
 <template id="tpl-option-group">
@@ -291,19 +348,21 @@
   <button type="button" class="mk-seg__btn" role="tab" aria-selected="false"></button>
 </template>
 
-<template id="tpl-sellercard">
-  <div class="mk-sellercard__in">
-    <p class="mk-eyebrow" data-f="kind"></p>
-    <h2 class="mk-h2"><span data-f="name"></span> <span class="mk-muted" data-f="line"></span></h2>
-    <dl class="mk-facts mk-facts--row" data-facts></dl>
-    <a class="mk-link" data-href>All listings from this seller</a>
+<template id="tpl-provenance">
+  <div>
+    <p class="mk-eyebrow" data-f="eyebrow"></p>
+    <h3 data-f="name"></h3>
+    <p data-f="line"></p>
+    <dl class="mk-facts" data-facts></dl>
+    <a class="mk-link" data-href>Everything from this maker</a>
   </div>
 </template>
 
 <template id="tpl-seller-group">
   <section class="mk-sgroup">
-    <h2 class="mk-h2"><span data-f="name"></span></h2>
+    <h2 class="mk-h2"><span data-f="name"></span> <span class="mk-muted" data-f="count"></span></h2>
     <ul class="mk-sgrid" data-body></ul>
+    <div class="mk-more"><button type="button" class="mk-btn mk-btn--ghost" data-more hidden>Show more</button></div>
   </section>
 </template>
 
@@ -328,7 +387,7 @@
   </li>
 </template>
 
-<template id="tpl-row">
+<template id="tpl-kv">
   <div><dt data-f="k"></dt><dd data-f="v"></dd></div>
 </template>
 

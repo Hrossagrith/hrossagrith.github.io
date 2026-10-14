@@ -10,10 +10,19 @@
   <div class="mk-bag__body" data-bag-body hidden>
     <ul class="mk-bag__list" data-bag-list></ul>
 
-    <div class="mk-bag__points mk-card-plain">
-      <p class="mk-eyebrow">{{t.points_name}}</p>
-      <p data-points-line></p>
-      <div class="mk-meter"><span class="mk-meter__fill" data-points-fill></span></div>
+    <div class="mk-two mk-bag__retain">
+      <article class="mk-panel">
+        <p class="mk-eyebrow">{{t.card_name}}</p>
+        <h2 class="mk-h3" data-card-title></h2>
+        <ol class="mk-stamps" data-stamps></ol>
+        <p class="mk-small" data-card-line></p>
+      </article>
+      <article class="mk-panel mk-panel--dark" data-plus-panel>
+        <p class="mk-eyebrow">{{t.plus_eyebrow}}</p>
+        <h2 class="mk-h3" data-plus-title></h2>
+        <ul class="mk-ticks" data-plus-benefits></ul>
+        <p><button type="button" class="mk-btn mk-btn--light" data-plus-add>{{t.plus_add}}</button></p>
+      </article>
     </div>
 
     <section class="mk-bag__recs" data-recs-wrap hidden>
@@ -49,7 +58,7 @@
           <label class="mk-check__box"><input type="checkbox" name="farrier" required> <span>{{t.suit_care_farrier}}</span></label>
           <label class="mk-check__box"><input type="checkbox" name="disqualified" required> <span>{{t.suit_care_disq}}</span></label>
         </fieldset>
-        <p class="mk-small"><a href="{{portal_href}}gov/law/welfare/#art-92">{{t.foot_art92}}</a></p>
+        <p class="mk-small"><a href="{{portal_href}}gov/law/welfare/#art-92">{{t.law_art92}}</a></p>
       </section>
 
       <section class="mk-check__step">

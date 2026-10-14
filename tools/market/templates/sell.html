@@ -1,0 +1,44 @@
+<section class="mk-wrap mk-store-head">
+  <h1 class="mk-h1"><span>{{t.sell_title}}</span> <span class="mk-muted">{{t.sell_sub}}</span></h1>
+</section>
+
+<form class="mk-wrap mk-sell" data-sell-form novalidate>
+  <section class="mk-check__step">
+    <h2 class="mk-h2"><span>{{t.sell_horse}}</span></h2>
+    <div class="mk-fields">
+      <label class="mk-field"><span>{{t.sell_name}}</span><input type="text" name="name" required minlength="2" maxlength="40"></label>
+      <label class="mk-field"><span>{{t.f_breed}}</span><select name="breed" required data-sell-select="breeds"><option value="">{{t.choose}}</option></select></label>
+      <label class="mk-field"><span>{{t.f_sex}}</span><select name="sex" required data-sell-select="sexes"><option value="">{{t.choose}}</option></select></label>
+      <label class="mk-field"><span>{{t.sell_age}}</span><input type="number" name="age" required min="1" max="35" inputmode="numeric"></label>
+      <label class="mk-field"><span>{{t.sell_height}}</span><input type="number" name="cm" required min="80" max="190" inputmode="numeric"></label>
+      <label class="mk-field"><span>{{t.f_discipline}}</span><select name="disc" required data-sell-select="disciplines"><option value="">{{t.choose}}</option></select></label>
+      <label class="mk-field"><span>{{t.f_region}}</span><select name="region" required data-sell-select="regions"><option value="">{{t.choose}}</option></select></label>
+      <label class="mk-field"><span>{{t.sell_price}}</span><input type="number" name="price" required min="100" max="100000" inputmode="numeric" data-sell-price></label>
+    </div>
+    <p class="mk-small" data-sell-ref></p>
+    <label class="mk-field"><span>{{t.sell_scene}}</span><input type="text" name="scene" required minlength="8" maxlength="90" placeholder="{{t.sell_scene_ph}}"></label>
+    <label class="mk-field"><span>{{t.sell_disclose}}</span><textarea name="disclose" required minlength="10" maxlength="600" rows="4"></textarea></label>
+    <p class="mk-small"><a href="{{portal_href}}gov/law/welfare/#art-91">{{t.law_art91}}</a></p>
+  </section>
+
+  <section class="mk-check__step">
+    <fieldset class="mk-choice">
+      <legend>{{t.sell_package}} <span class="mk-muted">{{t.sell_package_hint}}</span></legend>
+      <div class="mk-choice__list" data-packages></div>
+    </fieldset>
+  </section>
+
+  <div class="mk-summary">
+    <p class="mk-summary__total"><span>{{t.total}}</span> <strong data-sell-total></strong></p>
+    <p class="mk-small">{{t.roleplay_checkout}}</p>
+    <button class="mk-btn mk-btn--block" type="submit">{{t.sell_publish}}</button>
+    <ul class="mk-form-errors" data-sell-errors hidden></ul>
+  </div>
+</form>
+
+<section class="mk-wrap mk-done" data-sell-done hidden tabindex="-1">
+  <p class="mk-eyebrow">{{t.sell_done_eyebrow}}</p>
+  <h1 class="mk-h1"><span>{{t.sell_done_title}}</span></h1>
+  <p class="mk-lead">{{t.sell_done_text}}</p>
+  <p><a class="mk-btn" href="{{mroot}}my/">{{t.my_label}}</a></p>
+</section>

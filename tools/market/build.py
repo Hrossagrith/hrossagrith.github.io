@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Build the Imperial Market pages for the English and Russian editions.
+"""Build the Imperial Market pages.
 
 Each page in tools/market/templates is wrapped in _layout.html, its {{t.key}}
 placeholders filled from assets/data/market/text.json for one language, and
-written to market/<page>/index.html (English) and ru/market/<page>/index.html
-(Russian). Listings are rendered in the browser by assets/market.js from
-assets/data/market/catalog.json, using the <template> elements in
+written to market/<page>/index.html. Listings are rendered in the browser by assets/market.js from
+assets/data/market/catalog.json and horses.json, using the <template> elements in
 _templates.html.
 
 Usage: python3 tools/market/build.py
@@ -20,20 +19,21 @@ ROOT = Path(__file__).resolve().parents[2]
 TEMPLATES = ROOT / "tools" / "market" / "templates"
 TEXT = json.loads((ROOT / "assets" / "data" / "market" / "text.json").read_text(encoding="utf-8"))
 
+# English only for now; add a language here once its strings exist in text.json.
 LANGS = {
     "en": {"prefix": "", "html_lang": "en-GB", "portal": ""},
-    "ru": {"prefix": "ru/", "html_lang": "ru", "portal": "ru/"},
 }
-# (template, output sub-path, title key, department passed to the page)
+# (template, output sub-path, title key)
 PAGES = [
-    ("index", "", "title_home", ""),
-    ("browse", "horses/", "title_horses", "horses"),
-    ("browse", "tack/", "title_tack", "tack"),
-    ("browse", "search/", "title_search", "all"),
-    ("item", "item/", "title_item", ""),
-    ("sellers", "sellers/", "title_sellers", ""),
-    ("seller", "seller/", "title_seller", ""),
-    ("bag", "bag/", "title_bag", ""),
+    ("index", "", "title_home"),
+    ("horses", "horses/", "title_horses"),
+    ("tack", "tack/", "title_tack"),
+    ("item", "item/", "title_item"),
+    ("sellers", "sellers/", "title_sellers"),
+    ("seller", "seller/", "title_seller"),
+    ("my", "my/", "title_my"),
+    ("sell", "sell/", "title_sell"),
+    ("bag", "bag/", "title_bag"),
 ]
 TOKEN = re.compile(r"\{\{\s*([\w.]+)\s*\}\}")
 
@@ -65,24 +65,16 @@ def main():
     templates = (TEMPLATES / "_templates.html").read_text(encoding="utf-8")
     written = 0
     for lang, spec in LANGS.items():
-        other = "ru" if lang == "en" else "en"
-        for name, sub, title_key, dept in PAGES:
+        for name, sub, title_key in PAGES:
             rel = spec["prefix"] + "market/" + sub
             root = "../" * rel.count("/")
-            mroot = "../" * sub.count("/") if sub else "./"
-            other_rel = LANGS[other]["prefix"] + "market/" + sub
             values = {
                 "lang": lang,
-                "other_lang": other,
                 "html_lang": spec["html_lang"],
-                "other_html_lang": LANGS[other]["html_lang"],
                 "root": root,
-                "mroot": mroot,
+                "mroot": "../" * sub.count("/") if sub else "./",
                 "page": name,
-                "dept": dept,
                 "self_path": rel,
-                "other_path": other_rel,
-                "other_href": root + other_rel,
                 "portal_href": root + spec["portal"],
                 "page_title": html.escape(TEXT[title_key][lang]),
             }

@@ -1,1202 +1,1196 @@
 {
  "market_name": {
-  "en": "Imperial Market",
-  "ru": "Имперский рынок"
+  "en": "Imperial Market"
  },
  "market_short": {
-  "en": "Market",
-  "ru": "Рынок"
+  "en": "Market"
  },
  "meta_description": {
-  "en": "The official horse and tack marketplace of the Empire of Hrossagrith: licensed sellers, full disclosure, Passport transfer in 72 hours. A roleplay market: nothing is real or for sale.",
-  "ru": "Официальная площадка лошадей и амуниции Империи Хроссагрид: лицензированные продавцы, полное раскрытие сведений, переоформление Паспорта за 72 часа. Ролевой рынок: ничего настоящего не продаётся."
+  "en": "The official horse and tack marketplace of the Empire of Hrossagrith: thousands of horses for sale and on loan from licensed studs, dealers and owners. A roleplay market: nothing is real or for sale."
  },
  "title_home": {
-  "en": "Market",
-  "ru": "Рынок"
+  "en": "Horses for sale and on loan"
  },
  "title_horses": {
-  "en": "Horses",
-  "ru": "Лошади"
+  "en": "Horses"
  },
  "title_tack": {
-  "en": "Tack",
-  "ru": "Амуниция"
- },
- "title_search": {
-  "en": "Search",
-  "ru": "Поиск"
+  "en": "Tack"
  },
  "title_item": {
-  "en": "Listing",
-  "ru": "Объявление"
+  "en": "Listing"
  },
  "title_sellers": {
-  "en": "Sellers",
-  "ru": "Продавцы"
+  "en": "Sellers"
  },
  "title_seller": {
-  "en": "Seller",
-  "ru": "Продавец"
+  "en": "Seller"
+ },
+ "title_my": {
+  "en": "My search"
+ },
+ "title_sell": {
+  "en": "Sell a horse"
  },
  "title_bag": {
-  "en": "Bag",
-  "ru": "Корзина"
+  "en": "Bag"
  },
  "skip": {
-  "en": "Skip to content",
-  "ru": "Перейти к содержанию"
+  "en": "Skip to content"
  },
  "gov_strip": {
-  "en": "An official marketplace of the Empire of Hrossagrith",
-  "ru": "Официальная торговая площадка Империи Хроссагрид"
+  "en": "An official marketplace of the Empire of Hrossagrith"
  },
  "gov_portal": {
-  "en": "State portal",
-  "ru": "Государственный портал"
+  "en": "State portal"
  },
  "nav_label": {
-  "en": "Market",
-  "ru": "Рынок"
+  "en": "Market"
  },
  "nav_horses": {
-  "en": "Horses",
-  "ru": "Лошади"
+  "en": "Horses"
+ },
+ "nav_loan": {
+  "en": "On loan"
  },
  "nav_ponies": {
-  "en": "Ponies",
-  "ru": "Пони"
- },
- "nav_driving": {
-  "en": "Driving",
-  "ru": "Упряжные"
+  "en": "Ponies"
  },
  "nav_tack": {
-  "en": "Tack",
-  "ru": "Амуниция"
- },
- "nav_bridles": {
-  "en": "Bridles",
-  "ru": "Оголовья"
- },
- "nav_saddles": {
-  "en": "Saddles",
-  "ru": "Сёдла"
+  "en": "Tack"
  },
  "nav_sellers": {
-  "en": "Sellers",
-  "ru": "Продавцы"
+  "en": "Sellers"
  },
- "nav_help": {
-  "en": "Help",
-  "ru": "Помощь"
+ "nav_sell": {
+  "en": "Sell a horse"
  },
- "lang_other": {
-  "en": "Русский",
-  "ru": "English"
- },
- "search_label": {
-  "en": "Search the Market",
-  "ru": "Поиск по рынку"
- },
- "search_placeholder": {
-  "en": "Search horses, breeds, tack and sellers",
-  "ru": "Лошади, породы, амуниция и продавцы"
- },
- "search_quick": {
-  "en": "Quick links",
-  "ru": "Быстрые ссылки"
- },
- "search_suggested": {
-  "en": "Suggested",
-  "ru": "Подходящее"
- },
- "search_none": {
-  "en": "Nothing matches yet. Try a breed, a name or a kind of tack.",
-  "ru": "Пока ничего не найдено. Попробуйте породу, кличку или вид амуниции."
- },
- "quick_leisure": {
-  "en": "Horses for leisure riding",
-  "ru": "Лошади для прогулочной езды"
- },
- "quick_ponies": {
-  "en": "Ponies",
-  "ru": "Пони"
- },
- "quick_driving": {
-  "en": "Driving horses",
-  "ru": "Упряжные лошади"
- },
- "quick_bridles": {
-  "en": "Bitless bridles",
-  "ru": "Безудильные оголовья"
- },
- "quick_rehoming": {
-  "en": "Imperial Equid Rehoming Office",
-  "ru": "Имперская служба пристройства непарнокопытных"
+ "my_label": {
+  "en": "My search"
  },
  "bag_label": {
-  "en": "Bag",
-  "ru": "Корзина"
+  "en": "Bag"
  },
  "menu_label": {
-  "en": "Menu",
-  "ru": "Меню"
+  "en": "Menu"
  },
  "prev": {
-  "en": "Previous",
-  "ru": "Назад"
+  "en": "Previous"
  },
  "next": {
-  "en": "Next",
-  "ru": "Вперёд"
+  "en": "Next"
+ },
+ "pages": {
+  "en": "Pages"
+ },
+ "search_label": {
+  "en": "Search the Market"
+ },
+ "search_placeholder": {
+  "en": "Try: calm cob for hacking under 5,000 cr"
+ },
+ "search_go": {
+  "en": "Search"
+ },
+ "search_try": {
+  "en": "Popular searches"
+ },
+ "search_suggested": {
+  "en": "Suggestions"
+ },
+ "suggest_search": {
+  "en": "Search"
+ },
+ "suggest_narrow": {
+  "en": "Narrower"
+ },
+ "suggest_seller": {
+  "en": "Seller"
+ },
+ "suggest_tack": {
+  "en": "Tack"
+ },
+ "suggest_popular": {
+  "en": "Popular"
  },
  "load_error": {
-  "en": "The Market could not load its listings. Please reload the page.",
-  "ru": "Не удалось загрузить объявления. Перезагрузите страницу."
+  "en": "The Market could not load its listings. Please reload the page."
  },
  "roleplay_title": {
-  "en": "A roleplay market.",
-  "ru": "Ролевой рынок."
+  "en": "A roleplay market."
  },
  "roleplay_text": {
-  "en": "Hrossagrith is a fictional state and this is a game. No real horse, pony, donkey or mule is sold, reserved or delivered here, no money is taken, and every seller, brand, listing and price is invented.",
-  "ru": "Хроссагрид — вымышленное государство, а это игра. Здесь не продаются, не бронируются и не доставляются настоящие лошади, пони, ослы или мулы, деньги не принимаются, а все продавцы, бренды, объявления и цены придуманы."
+  "en": "Hrossagrith is a fictional state and this is a game. No real horse, pony, donkey or mule is sold, loaned, reserved or delivered here, no money is taken, and every seller, brand, listing and price is invented."
  },
  "currency_note": {
-  "en": "Prices are in crowns (cr), a provisional unit until the Empire’s currency is defined.",
-  "ru": "Цены указаны в кронах (кр) — это временная единица, пока валюта Империи не определена."
+  "en": "Prices are in crowns (cr), a provisional unit until the Empire’s currency is defined."
  },
  "law_note": {
-  "en": "Every listing follows the Equid Welfare Code: disclosure (Art. 91), suitability (Art. 92) and record continuity (Art. 93). Tack is listed only if it meets the Imperial Tack Measurement Schedule.",
-  "ru": "Каждое объявление следует Кодексу благополучия непарнокопытных: раскрытие сведений (ст. 91), пригодность покупателя (ст. 92) и непрерывность записей (ст. 93). Амуниция допускается, только если соответствует Имперскому регламенту обмеров амуниции."
+  "en": "Every listing follows the Equid Welfare Code: disclosure (Art. 91), suitability (Art. 92), record continuity (Art. 93) and companionship (Art. 39). Tack is listed only if it meets the Imperial Tack Measurement Schedule."
  },
- "foot_shop": {
-  "en": "Shop",
-  "ru": "Покупки"
+ "foot_buy": {
+  "en": "Buy"
  },
- "foot_disciplines": {
-  "en": "Disciplines",
-  "ru": "Дисциплины"
+ "foot_yours": {
+  "en": "Yours"
  },
  "foot_law": {
-  "en": "Rules of sale",
-  "ru": "Правила продажи"
+  "en": "Rules of sale"
  },
  "foot_state": {
-  "en": "The Empire",
-  "ru": "Империя"
- },
- "foot_art91": {
-  "en": "Disclosure, Art. 91",
-  "ru": "Раскрытие сведений, ст. 91"
- },
- "foot_art92": {
-  "en": "Suitability, Art. 92",
-  "ru": "Пригодность покупателя, ст. 92"
- },
- "foot_art93": {
-  "en": "Record continuity, Art. 93",
-  "ru": "Непрерывность записей, ст. 93"
- },
- "foot_schedule": {
-  "en": "Tack Measurement Schedule",
-  "ru": "Регламент обмеров амуниции"
- },
- "foot_passport": {
-  "en": "Equid Passport",
-  "ru": "Паспорт непарнокопытного"
+  "en": "The Empire"
  },
  "foot_horses": {
-  "en": "Horses in the Empire",
-  "ru": "Лошади в Империи"
+  "en": "Horses in the Empire"
+ },
+ "foot_rehoming": {
+  "en": "Imperial Equid Rehoming Office"
+ },
+ "law_art91": {
+  "en": "Disclosure, Art. 91"
+ },
+ "law_art92": {
+  "en": "Suitability, Art. 92"
+ },
+ "law_art93": {
+  "en": "Record continuity, Art. 93"
  },
  "law_art39": {
-  "en": "Companionship, Art. 39",
-  "ru": "Компаньон, ст. 39"
+  "en": "Companionship, Art. 39"
+ },
+ "law_schedule": {
+  "en": "Tack Measurement Schedule"
  },
  "copyright": {
-  "en": "Empire of Hrossagrith · Imperial Market. A worldbuilding project.",
-  "ru": "Империя Хроссагрид · Имперский рынок. Проект по построению мира."
+  "en": "Empire of Hrossagrith · Imperial Market. A worldbuilding project."
  },
  "home_title": {
-  "en": "Market.",
-  "ru": "Рынок."
+  "en": "Find your horse."
  },
  "home_sub": {
-  "en": "The best place to find a horse for life, and everything it will wear.",
-  "ru": "Лучшее место, чтобы найти лошадь на всю жизнь и всё, что ей понадобится."
+  "en": "{n} horses from {s} licensed studs, dealers and owners."
  },
- "home_help_link": {
-  "en": "Need help choosing? Book a suitability visit",
-  "ru": "Нужна помощь с выбором? Запишитесь на визит"
+ "home_popular": {
+  "en": "Popular searches."
  },
- "home_sellers_link": {
-  "en": "Meet the licensed sellers",
-  "ru": "Лицензированные продавцы"
+ "home_popular_sub": {
+  "en": "What buyers are looking for this week."
  },
  "home_categories": {
-  "en": "Departments",
-  "ru": "Разделы"
+  "en": "Departments"
  },
  "home_latest": {
-  "en": "The latest.",
-  "ru": "Новое."
+  "en": "Listed today."
  },
  "home_latest_sub": {
-  "en": "Listed this week by licensed sellers.",
-  "ru": "Выставлено на этой неделе."
+  "en": "Fresh from the yard."
  },
- "home_disciplines": {
-  "en": "By discipline.",
-  "ru": "По дисциплинам."
+ "home_viewing": {
+  "en": "Your search."
  },
- "home_disciplines_sub": {
-  "en": "Choose what you will do together.",
-  "ru": "Выберите, чем будете заниматься вместе."
- },
- "home_help": {
-  "en": "Help is here.",
-  "ru": "Помощь рядом."
- },
- "home_help_sub": {
-  "en": "From the first visit to the Passport.",
-  "ru": "От первого визита до Паспорта."
+ "home_viewing_sub": {
+  "en": "From the shortlist to the stable door."
  },
  "home_tack": {
-  "en": "Tack, to Imperial standard.",
-  "ru": "Амуниция по имперскому стандарту."
+  "en": "Tack, to Imperial standard."
  },
  "home_tack_sub": {
-  "en": "Every item measured against the Schedule.",
-  "ru": "Каждая вещь проверена по Регламенту."
+  "en": "Every item measured against the Schedule."
  },
- "home_makers": {
-  "en": "The makers.",
-  "ru": "Мастерские."
+ "home_houses": {
+  "en": "The houses."
  },
- "home_makers_sub": {
-  "en": "Houses that set the standard.",
-  "ru": "Дома, задающие стандарт."
+ "home_houses_sub": {
+  "en": "Makers since the nineteenth century."
  },
- "home_difference": {
-  "en": "The Market difference.",
-  "ru": "Чем отличается Рынок."
+ "plus_eyebrow": {
+  "en": "Membership"
  },
- "home_difference_sub": {
-  "en": "More reasons to buy here.",
-  "ru": "Ещё причины покупать здесь."
+ "plus_add": {
+  "en": "Add to Bag"
  },
- "help_visit_eyebrow": {
-  "en": "Suitability visit",
-  "ru": "Визит пригодности"
+ "plus_title": {
+  "en": "{name}. {p} a year."
  },
- "help_visit_title": {
-  "en": "Meet the horse before the horse meets you.",
-  "ru": "Познакомьтесь с лошадью до покупки."
+ "plus_have": {
+  "en": "You are a {name} member."
  },
- "help_visit_text": {
-  "en": "The seller confirms your premises, plans and experience, as the law requires before any sale.",
-  "ru": "Продавец проверяет условия, планы и опыт покупателя — закон требует этого до любой продажи."
+ "plus_period": {
+  "en": "Twelve months"
  },
- "help_disclose_eyebrow": {
-  "en": "Full disclosure",
-  "ru": "Полное раскрытие"
+ "plus_free_hint": {
+  "en": "Included with {name}."
  },
- "help_disclose_title": {
-  "en": "Everything the seller knows. In writing.",
-  "ru": "Всё, что знает продавец. Письменно."
+ "card_name": {
+  "en": "Stable card"
  },
- "help_disclose_text": {
-  "en": "Health, behaviour, medication and restrictions are listed on every horse. Nothing is hidden for the sale.",
-  "ru": "Здоровье, поведение, лекарства и ограничения указаны у каждой лошади. Ничего не скрывается ради продажи."
+ "card_title": {
+  "en": "{n} stamps to a free visit."
  },
- "help_passport_eyebrow": {
-  "en": "Passport",
-  "ru": "Паспорт"
+ "card_full": {
+  "en": "Your card is full."
  },
- "help_passport_title": {
-  "en": "Yours on record within 72 hours.",
-  "ru": "В реестре на ваше имя за 72 часа."
+ "card_line": {
+  "en": "A stamp for every viewing and every order. Ten stamps: {reward}."
  },
- "help_passport_text": {
-  "en": "The Passport, records and medication travel with the horse, and the transfer enters the central record.",
-  "ru": "Паспорт, записи и лекарства передаются вместе с лошадью, а переход вносится в центральный реестр."
+ "stamps_earn": {
+  "en": "+{n} stamp"
  },
- "help_settle_eyebrow": {
-  "en": "Settling-in",
-  "ru": "Привыкание"
+ "sell_eyebrow": {
+  "en": "Selling"
  },
- "help_settle_title": {
-  "en": "Fourteen days with the seller on call.",
-  "ru": "Четырнадцать дней продавец на связи."
+ "sell_home_title": {
+  "en": "Sell or loan your horse here."
  },
- "help_settle_text": {
-  "en": "Every horse comes with settling-in support. Add a vet, saddle-fit or farrier visit in one step.",
-  "ru": "К каждой лошади прилагается поддержка в период привыкания. Визит ветеринара, седельщика или кузнеца добавляется в один шаг."
+ "sell_home_text": {
+  "en": "Reach buyers across the Empire, with suitability checks done for you."
  },
- "help_company_eyebrow": {
-  "en": "Company",
-  "ru": "Компаньон"
+ "listing_type": {
+  "en": "Listing type"
  },
- "help_company_title": {
-  "en": "No horse goes home alone.",
-  "ru": "Ни одна лошадь не уезжает в одиночество."
+ "type_sale": {
+  "en": "For sale"
  },
- "help_company_text": {
-  "en": "Every equid needs a compatible companion at least twelve hours a day. Companions and retirees are listed too.",
-  "ru": "Каждому непарнокопытному нужен совместимый компаньон не меньше двенадцати часов в сутки. Компаньоны и пенсионеры тоже есть на рынке."
+ "type_loan": {
+  "en": "On loan"
  },
- "points_name": {
-  "en": "Grith Points",
-  "ru": "Grith Points"
- },
- "diff_points_title": {
-  "en": "Every crown counts toward care.",
-  "ru": "Каждая крона идёт в зачёт ухода."
- },
- "diff_points_text": {
-  "en": "A point for every 10 cr, and fifty to welcome you. Climb from Silver to Gold to Imperial.",
-  "ru": "Балл за каждые 10 кр и пятьдесят в подарок для начала. Поднимайтесь от Silver к Gold и Imperial."
- },
- "diff_compare_eyebrow": {
-  "en": "Compare",
-  "ru": "Сравнение"
- },
- "diff_compare_title": {
-  "en": "Side by side, on every listing.",
-  "ru": "Рядом, в каждом объявлении."
- },
- "diff_compare_text": {
-  "en": "Each horse and each item is shown next to its two closest alternatives.",
-  "ru": "Каждая лошадь и каждая вещь показаны рядом с двумя ближайшими альтернативами."
- },
- "diff_fit_eyebrow": {
-  "en": "Fit",
-  "ru": "Размер"
- },
- "diff_fit_title": {
-  "en": "Tack sized to your horse.",
-  "ru": "Амуниция по размеру вашей лошади."
- },
- "diff_fit_text": {
-  "en": "Reserve a horse and the bag suggests the bridle, halter, pad and rug in the right size.",
-  "ru": "Забронируйте лошадь — и корзина предложит оголовье, недоуздок, вальтрап и попону нужного размера."
- },
- "diff_licence_eyebrow": {
-  "en": "Licensed",
-  "ru": "Лицензия"
- },
- "diff_licence_title": {
-  "en": "Every seller verified by the State.",
-  "ru": "Каждый продавец проверен государством."
- },
- "diff_licence_text": {
-  "en": "Studs, dealers and makers carry an Imperial licence. Private sellers are identity-verified.",
-  "ru": "У заводов, торговцев и мастерских есть имперская лицензия. Личность частных продавцов подтверждена."
- },
- "tier_0": {
-  "en": "Silver",
-  "ru": "Silver"
- },
- "tier_1": {
-  "en": "Gold",
-  "ru": "Gold"
- },
- "tier_2": {
-  "en": "Imperial",
-  "ru": "Imperial"
- },
- "points_line": {
-  "en": "You have {p} points. {left} more to {tier}.",
-  "ru": "У вас {p} баллов. До уровня {tier} осталось {left}."
- },
- "points_line_pending": {
-  "en": "You have {p} points and this bag adds {add}. Then {left} more to {tier}.",
-  "ru": "У вас {p} баллов, эта корзина добавит {add}. Затем до уровня {tier} останется {left}."
- },
- "points_top": {
-  "en": "You have {p} points: Imperial level.",
-  "ru": "У вас {p} баллов: уровень Imperial."
- },
- "points_earn": {
-  "en": "Earns {p} Grith Points",
-  "ru": "Начислится {p} Grith Points"
- },
- "count_listings": {
-  "en": "{n} listings",
-  "ru": "Объявлений: {n}"
+ "count_horses": {
+  "en": "{n} horses"
  },
  "count_items": {
-  "en": "{n} items",
-  "ru": "Товаров: {n}"
+  "en": "{n} items"
  },
  "price_from": {
-  "en": "From {p}",
-  "ru": "От {p}"
+  "en": "From {p}"
+ },
+ "per_month": {
+  "en": "{p} a month"
+ },
+ "loan_note": {
+  "en": "Loan, six months minimum"
  },
  "since": {
-  "en": "Since {y}",
-  "ru": "С {y} года"
+  "en": "Since {y}"
  },
  "age_years": {
-  "en": "{n} yrs",
-  "ru": "{n} лет"
+  "en": "{n} yrs"
  },
  "height_short": {
-  "en": "{hh} hh ({cm} cm)",
-  "ru": "{cm} см"
- },
- "rating_line": {
-  "en": "{r} out of 5 · {n} reviews",
-  "ru": "{r} из 5 · отзывов: {n}"
- },
- "rating": {
-  "en": "Rating",
-  "ru": "Оценка"
+  "en": "{hh} hh ({cm} cm)"
  },
  "listed_days": {
-  "en": "{n} days ago",
-  "ru": "{n} дн. назад"
+  "en": "listed {n} days ago"
  },
- "browse_placeholder": {
-  "en": "Search this department",
-  "ru": "Поиск в разделе"
+ "title_pattern": {
+  "en": "{word} {hh} hh {breed} {sex}, {age}"
+ },
+ "noun_horses": {
+  "en": "horses"
+ },
+ "and": {
+  "en": " and "
+ },
+ "or": {
+  "en": " or "
+ },
+ "for_x": {
+  "en": "for {x}"
+ },
+ "in_x": {
+  "en": "in {x}"
+ },
+ "from_x": {
+  "en": "from {x}s"
+ },
+ "matching_x": {
+  "en": "matching “{x}”"
+ },
+ "range_price_under": {
+  "en": "under {v}"
+ },
+ "range_price_over": {
+  "en": "over {v}"
+ },
+ "range_price_between": {
+  "en": "{a} to {b}"
+ },
+ "range_age_under": {
+  "en": "up to {v}"
+ },
+ "range_age_over": {
+  "en": "{v} and older"
+ },
+ "range_age_between": {
+  "en": "aged {a} to {b}"
+ },
+ "range_cm_under": {
+  "en": "up to {v}"
+ },
+ "range_cm_over": {
+  "en": "{v} and taller"
+ },
+ "range_cm_between": {
+  "en": "{a} to {b}"
+ },
+ "without_x": {
+  "en": "Without {x}"
+ },
+ "typical_search": {
+  "en": "Typical asking price for this search: {lo} to {hi}."
+ },
+ "typical_loan": {
+  "en": "Typical loan fee for this search: {lo} to {hi} a month."
+ },
+ "typical_range": {
+  "en": "typically {lo} to {hi}"
+ },
+ "typical_item": {
+  "en": "Comparable {plural} around {age} for {disc} ask {lo} to {hi}."
+ },
+ "typical_item_loan": {
+  "en": "Comparable {plural} on loan go for {lo} to {hi} a month."
+ },
+ "refine_disc": {
+  "en": "Narrow by discipline"
+ },
+ "refine_breed": {
+  "en": "Narrow by breed"
+ },
+ "refine_region": {
+  "en": "Narrow by region"
+ },
+ "refine_sex": {
+  "en": "Narrow by sex"
+ },
+ "refine_cm": {
+  "en": "Narrow by height"
+ },
+ "refine_age": {
+  "en": "Narrow by age"
+ },
+ "refine_price": {
+  "en": "Narrow by price"
+ },
+ "badge_best": {
+  "en": "Best match"
+ },
+ "badge_close": {
+  "en": "Also a close match"
+ },
+ "entry_loan_label": {
+  "en": "Not ready to buy?"
+ },
+ "entry_loan_text": {
+  "en": "{name}, a {breed} in {town}, is on loan for {p}. {n} horses like this are on loan."
+ },
+ "entry_sale_label": {
+  "en": "Ready to buy?"
+ },
+ "entry_sale_text": {
+  "en": "{n} horses for sale match this search."
  },
  "filters": {
-  "en": "Filters",
-  "ru": "Фильтры"
+  "en": "Filters"
  },
  "filters_reset": {
-  "en": "Clear all",
-  "ru": "Сбросить"
+  "en": "Clear all"
  },
  "done": {
-  "en": "Done",
-  "ru": "Готово"
+  "en": "Done"
  },
  "results": {
-  "en": "Results",
-  "ru": "Результаты"
+  "en": "Results"
+ },
+ "save_search": {
+  "en": "Save search"
+ },
+ "search_saved": {
+  "en": "Search saved to My search."
  },
  "sort": {
-  "en": "Sort by",
-  "ru": "Сортировка"
+  "en": "Sort by"
  },
- "sort_relevant": {
-  "en": "Most relevant",
-  "ru": "По соответствию"
+ "sort_best": {
+  "en": "Best match"
  },
  "sort_new": {
-  "en": "Newest",
-  "ru": "Сначала новые"
+  "en": "Newest"
  },
  "sort_price_asc": {
-  "en": "Price: low to high",
-  "ru": "Цена: по возрастанию"
+  "en": "Price: low to high"
  },
  "sort_price_desc": {
-  "en": "Price: high to low",
-  "ru": "Цена: по убыванию"
- },
- "show_more": {
-  "en": "Show more",
-  "ru": "Показать ещё"
+  "en": "Price: high to low"
  },
  "empty_title": {
-  "en": "No matches.",
-  "ru": "Ничего не найдено."
+  "en": "No horses match every part of this search."
  },
  "empty_text": {
-  "en": "Try fewer filters or a broader search.",
-  "ru": "Уберите часть фильтров или расширьте запрос."
+  "en": "Remove one part and see what is close:"
  },
  "range_from": {
-  "en": "From",
-  "ru": "От"
+  "en": "From"
  },
  "range_to": {
-  "en": "To",
-  "ru": "До"
- },
- "f_category": {
-  "en": "Department",
-  "ru": "Раздел"
- },
- "f_discipline": {
-  "en": "Discipline",
-  "ru": "Дисциплина"
+  "en": "To"
  },
  "f_breed": {
-  "en": "Breed",
-  "ru": "Порода"
+  "en": "Breed"
+ },
+ "f_cat": {
+  "en": "Type"
+ },
+ "f_disc": {
+  "en": "Discipline"
+ },
+ "f_discipline": {
+  "en": "Discipline"
  },
  "f_sex": {
-  "en": "Sex",
-  "ru": "Пол"
+  "en": "Sex"
  },
  "f_region": {
-  "en": "Region",
-  "ru": "Регион"
+  "en": "Region"
  },
  "f_seller": {
-  "en": "Seller",
-  "ru": "Продавец"
+  "en": "Seller"
  },
  "f_cert": {
-  "en": "Work certificate",
-  "ru": "Рабочее свидетельство"
+  "en": "Work certificate"
+ },
+ "f_trait": {
+  "en": "Character"
  },
  "f_price": {
-  "en": "Price, cr",
-  "ru": "Цена, кр"
+  "en": "Price, cr"
+ },
+ "f_price_loan": {
+  "en": "Monthly fee, cr"
  },
  "f_age": {
-  "en": "Age, years",
-  "ru": "Возраст, лет"
+  "en": "Age, years"
  },
- "f_height": {
-  "en": "Height, cm",
-  "ru": "Рост, см"
+ "f_cm": {
+  "en": "Height, cm"
  },
- "f_brand": {
-  "en": "Maker",
-  "ru": "Мастерская"
- },
- "f_kind": {
-  "en": "Department",
-  "ru": "Раздел"
+ "f_category": {
+  "en": "Department"
  },
  "cert_A": {
-  "en": "Class A",
-  "ru": "Класс A"
+  "en": "Class A certificate"
  },
  "cert_B": {
-  "en": "Class B",
-  "ru": "Класс B"
+  "en": "Class B certificate"
  },
  "cert_C": {
-  "en": "Class C",
-  "ru": "Класс C"
- },
- "crumbs_label": {
-  "en": "Breadcrumbs",
-  "ru": "Навигационная цепочка"
- },
- "item_overview": {
-  "en": "Overview",
-  "ru": "Обзор"
- },
- "item_character": {
-  "en": "Character",
-  "ru": "Характер"
- },
- "item_record": {
-  "en": "Record",
-  "ru": "Записи"
- },
- "item_specs": {
-  "en": "Specs",
-  "ru": "Характеристики"
- },
- "item_compare": {
-  "en": "Compare",
-  "ru": "Сравнение"
- },
- "item_compare_link": {
-  "en": "Compare",
-  "ru": "Сравнить"
- },
- "item_highlights": {
-  "en": "Highlights",
-  "ru": "Главное"
- },
- "sold_by": {
-  "en": "Sold by",
-  "ru": "Продавец:"
- },
- "reserve": {
-  "en": "Reserve",
-  "ru": "Забронировать"
- },
- "buy": {
-  "en": "Buy",
-  "ru": "Купить"
- },
- "viewer_title": {
-  "en": "Take a closer look.",
-  "ru": "Рассмотрите поближе."
- },
- "viewer_role": {
-  "en": "turntable",
-  "ru": "поворотный просмотр"
- },
- "viewer_rotate": {
-  "en": "Turn",
-  "ru": "Повернуть"
- },
- "viewer_drag": {
-  "en": "Drag to turn",
-  "ru": "Потяните, чтобы повернуть"
- },
- "photo_pending": {
-  "en": "Photograph to come",
-  "ru": "Фотография скоро появится"
- },
- "mode_exterior": {
-  "en": "Exterior",
-  "ru": "Экстерьер"
- },
- "mode_detail": {
-  "en": "Close-up",
-  "ru": "Детали"
- },
- "mode_interior": {
-  "en": "Interior",
-  "ru": "Изнанка"
- },
- "view_left": {
-  "en": "Left side",
-  "ru": "Левый бок"
- },
- "view_front_left": {
-  "en": "Front left",
-  "ru": "Спереди слева"
- },
- "view_front": {
-  "en": "Front",
-  "ru": "Спереди"
- },
- "view_front_right": {
-  "en": "Front right",
-  "ru": "Спереди справа"
- },
- "view_right": {
-  "en": "Right side",
-  "ru": "Правый бок"
- },
- "view_rear_right": {
-  "en": "Rear right",
-  "ru": "Сзади справа"
- },
- "view_rear": {
-  "en": "Rear",
-  "ru": "Сзади"
- },
- "view_rear_left": {
-  "en": "Rear left",
-  "ru": "Сзади слева"
- },
- "view_head": {
-  "en": "Head",
-  "ru": "Голова"
- },
- "view_back": {
-  "en": "Back",
-  "ru": "Спина"
- },
- "view_legs": {
-  "en": "Legs",
-  "ru": "Ноги"
- },
- "view_hooves": {
-  "en": "Hooves",
-  "ru": "Копыта"
- },
- "view_underside": {
-  "en": "Underside",
-  "ru": "Нижняя сторона"
- },
- "view_lining": {
-  "en": "Lining",
-  "ru": "Подкладка"
- },
- "view_fittings": {
-  "en": "Fittings",
-  "ru": "Фурнитура"
- },
- "view_stitching": {
-  "en": "Stitching",
-  "ru": "Строчка"
- },
- "hl_age": {
-  "en": "years old",
-  "ru": "лет"
- },
- "hl_height": {
-  "en": "hands high · {cm} cm",
-  "ru": "в ладонях · {cm} см"
- },
- "hl_cert": {
-  "en": "work certificate",
-  "ru": "рабочее свидетельство"
- },
- "hl_region": {
-  "en": "region",
-  "ru": "регион"
- },
- "hl_rating": {
-  "en": "out of 5 · {n} reviews",
-  "ru": "из 5 · отзывов: {n}"
- },
- "character_title": {
-  "en": "Character.",
-  "ru": "Характер."
- },
- "character_sub": {
-  "en": "As the seller and the stable know it.",
-  "ru": "Каким его знают продавец и конюшня."
+  "en": "Class C certificate"
  },
  "trait_calm": {
-  "en": "Calm",
-  "ru": "Спокойствие"
+  "en": "Calm"
  },
- "trait_curiosity": {
-  "en": "Curiosity",
-  "ru": "Любопытство"
+ "trait_curious": {
+  "en": "Bold"
  },
- "trait_sensitivity": {
-  "en": "Sensitivity",
-  "ru": "Чувствительность"
+ "trait_sensitive": {
+  "en": "Sensitive"
  },
  "trait_energy": {
-  "en": "Energy",
-  "ru": "Энергия"
+  "en": "Forward"
  },
  "scale_1": {
-  "en": "Very low",
-  "ru": "Очень низко"
+  "en": "Very low"
  },
  "scale_2": {
-  "en": "Low",
-  "ru": "Низко"
+  "en": "Low"
  },
  "scale_3": {
-  "en": "Moderate",
-  "ru": "Умеренно"
+  "en": "Moderate"
  },
  "scale_4": {
-  "en": "High",
-  "ru": "Высоко"
+  "en": "High"
  },
  "scale_5": {
-  "en": "Very high",
-  "ru": "Очень высоко"
+  "en": "Very high"
+ },
+ "shortlist": {
+  "en": "Shortlist"
+ },
+ "shortlisted": {
+  "en": "Shortlisted"
+ },
+ "shortlist_added": {
+  "en": "{name} is on your shortlist."
+ },
+ "step_shortlist": {
+  "en": "Shortlist"
+ },
+ "step_viewing": {
+  "en": "Book a viewing"
+ },
+ "step_viewed": {
+  "en": "Visit"
+ },
+ "step_reserved": {
+  "en": "Reserve"
+ },
+ "step_count": {
+  "en": "{n}"
+ },
+ "step_hint_shortlist": {
+  "en": "Save the horses you like."
+ },
+ "step_hint_viewing": {
+  "en": "Pick a day with the seller."
+ },
+ "step_hint_viewed": {
+  "en": "Meet the horse in person."
+ },
+ "step_hint_reserved": {
+  "en": "Settling-in and the Passport."
+ },
+ "next_search": {
+  "en": "Start with a search"
+ },
+ "next_viewing": {
+  "en": "Book a viewing for {name}"
+ },
+ "next_visit": {
+  "en": "Your viewing of {name}: {date}"
+ },
+ "next_reserve": {
+  "en": "Reserve {name}"
+ },
+ "crumbs_label": {
+  "en": "Breadcrumbs"
+ },
+ "item_about": {
+  "en": "About"
+ },
+ "item_record": {
+  "en": "Record"
+ },
+ "item_specs": {
+  "en": "Specs"
+ },
+ "item_consider": {
+  "en": "Compare"
+ },
+ "book_viewing": {
+  "en": "Book a viewing"
+ },
+ "reserve": {
+  "en": "Reserve"
+ },
+ "reserve_loan": {
+  "en": "Arrange the loan"
+ },
+ "buy": {
+  "en": "Buy"
+ },
+ "see_listing": {
+  "en": "See this listing"
+ },
+ "viewer_role": {
+  "en": "turntable"
+ },
+ "viewer_modes": {
+  "en": "Views"
+ },
+ "viewer_rotate": {
+  "en": "Turn"
+ },
+ "viewer_drag": {
+  "en": "Drag to turn"
+ },
+ "photo_pending": {
+  "en": "Photograph to come"
+ },
+ "mode_exterior": {
+  "en": "Exterior"
+ },
+ "mode_detail": {
+  "en": "Close-up"
+ },
+ "mode_interior": {
+  "en": "Interior"
+ },
+ "view_left": {
+  "en": "Left side"
+ },
+ "view_front_left": {
+  "en": "Front left"
+ },
+ "view_front": {
+  "en": "Front"
+ },
+ "view_front_right": {
+  "en": "Front right"
+ },
+ "view_right": {
+  "en": "Right side"
+ },
+ "view_rear_right": {
+  "en": "Rear right"
+ },
+ "view_rear": {
+  "en": "Rear"
+ },
+ "view_rear_left": {
+  "en": "Rear left"
+ },
+ "view_head": {
+  "en": "Head"
+ },
+ "view_back": {
+  "en": "Back"
+ },
+ "view_legs": {
+  "en": "Legs"
+ },
+ "view_hooves": {
+  "en": "Hooves"
+ },
+ "view_underside": {
+  "en": "Underside"
+ },
+ "view_lining": {
+  "en": "Lining"
+ },
+ "view_fittings": {
+  "en": "Fittings"
+ },
+ "view_stitching": {
+  "en": "Stitching"
+ },
+ "k_coat": {
+  "en": "Coat"
+ },
+ "k_location": {
+  "en": "Location"
+ },
+ "k_maker": {
+  "en": "Maker"
+ },
+ "k_quality": {
+  "en": "Quality"
+ },
+ "k_value": {
+  "en": "Value for money"
+ },
+ "k_owners": {
+  "en": "Owners rating"
+ },
+ "k_workshop": {
+  "en": "Workshop"
+ },
+ "k_reply": {
+  "en": "Replies"
+ },
+ "at_viewing": {
+  "en": "At the viewing:"
+ },
+ "seller_reply": {
+  "en": "Usually replies within {h} h"
+ },
+ "viewing_title": {
+  "en": "See the horse."
+ },
+ "viewing_sub": {
+  "en": "In person, on a day that suits you."
+ },
+ "viewing_offer": {
+  "en": "{seller} offers: {offer}."
+ },
+ "viewing_note": {
+  "en": "Viewings are free. Bring boots and a hat; the seller has the Passport and records ready."
+ },
+ "viewing_day": {
+  "en": "Day"
+ },
+ "viewing_time": {
+  "en": "Time"
+ },
+ "viewing_choose": {
+  "en": "Choose a day and a time."
+ },
+ "viewing_confirm": {
+  "en": "Book this viewing"
+ },
+ "viewing_change": {
+  "en": "Change the viewing"
+ },
+ "viewing_stamp": {
+  "en": "Booking a viewing adds {n} stamp to your Stable card."
+ },
+ "viewing_booked": {
+  "en": "Booked: {name} with {seller}, {date} at {time}."
+ },
+ "viewing_toast": {
+  "en": "Viewing booked for {name}."
+ },
+ "about_horse": {
+  "en": "About {name}."
  },
  "training_title": {
-  "en": "Training",
-  "ru": "Подготовка"
+  "en": "Training"
  },
  "fits_title": {
-  "en": "Best with",
-  "ru": "Лучше всего для"
+  "en": "Best with"
  },
  "not_for_title": {
-  "en": "Not for",
-  "ru": "Не подходит для"
+  "en": "Not for"
  },
  "record_title": {
-  "en": "Record.",
-  "ru": "Записи."
+  "en": "Record."
  },
  "record_sub": {
-  "en": "Disclosed in full.",
-  "ru": "Раскрыты полностью."
+  "en": "Disclosed in full."
  },
  "record_disclosure": {
-  "en": "The seller has declared every known health, behaviour, medication and welfare restriction. Concealing anything to make a sale is prohibited.",
-  "ru": "Продавец указал все известные ограничения по здоровью, поведению, лекарствам и благополучию. Скрывать что-либо ради продажи запрещено."
+  "en": "The seller has declared every known health, behaviour, medication and welfare restriction. Concealing anything to make a sale is prohibited."
  },
  "rec_passport": {
-  "en": "Passport",
-  "ru": "Паспорт"
- },
- "rec_cert": {
-  "en": "Work certificate",
-  "ru": "Рабочее свидетельство"
- },
- "rec_coat": {
-  "en": "Coat and markings",
-  "ru": "Масть и отметины"
+  "en": "Passport"
  },
  "rec_health": {
-  "en": "Health",
-  "ru": "Здоровье"
+  "en": "Health"
+ },
+ "rec_none": {
+  "en": "Nothing to declare"
  },
  "rec_transfer": {
-  "en": "Transfer",
-  "ru": "Переоформление"
+  "en": "Transfer"
  },
  "rec_transfer_v": {
-  "en": "Entered in the central record within 72 hours",
-  "ru": "Вносится в центральный реестр в течение 72 часов"
+  "en": "Entered in the central record within 72 hours"
  },
  "rec_listed": {
-  "en": "Listed",
-  "ru": "Выставлено"
+  "en": "Listed"
  },
  "specs_title": {
-  "en": "Specifications.",
-  "ru": "Характеристики."
+  "en": "Specifications."
  },
  "specs_sub": {
-  "en": "Measured against the Schedule.",
-  "ru": "Сверено с Регламентом."
+  "en": "Measured against the Schedule."
  },
  "spec_k": {
-  "en": "Feature",
-  "ru": "Параметр"
+  "en": "Feature"
  },
  "spec_v": {
-  "en": "This item",
-  "ru": "Этот товар"
+  "en": "This item"
  },
  "spec_rule": {
-  "en": "Imperial requirement",
-  "ru": "Имперское требование"
+  "en": "Imperial requirement"
  },
  "certificate": {
-  "en": "Certificate",
-  "ru": "Сертификат"
+  "en": "Certificate"
  },
- "compare_title": {
-  "en": "Compare.",
-  "ru": "Сравните."
+ "certificate_line": {
+  "en": "Certificate {c}."
  },
- "compare_sub": {
-  "en": "The two closest alternatives.",
-  "ru": "Две ближайшие альтернативы."
+ "offers_n": {
+  "en": "from {n} sellers"
  },
- "compare_this": {
-  "en": "This listing",
-  "ru": "Это объявление"
+ "house_eyebrow": {
+  "en": "House since {y}"
  },
- "learn_more": {
-  "en": "Learn more",
-  "ru": "Подробнее"
+ "everyday_eyebrow": {
+  "en": "Everyday tack"
+ },
+ "house_line": {
+  "en": "Since {y} · {place}"
+ },
+ "maker_all": {
+  "en": "Everything from this maker"
+ },
+ "rating_line": {
+  "en": "Quality {q} · Value {v} · {n} owners"
+ },
+ "out_of_5": {
+  "en": "{v} out of 5"
+ },
+ "consider_title": {
+  "en": "Compare."
+ },
+ "consider_sub": {
+  "en": "The closest alternative."
+ },
+ "consider_this": {
+  "en": "This listing"
+ },
+ "consider_alt": {
+  "en": "Also consider"
  },
  "buy_title_horse": {
-  "en": "Reserve {name}.",
-  "ru": "Забронировать: {name}."
+  "en": "Reserve {name}."
+ },
+ "buy_title_loan": {
+  "en": "Arrange the loan of {name}."
  },
  "buy_title_tack": {
-  "en": "Buy {name}.",
-  "ru": "Купить {name}."
+  "en": "Buy {name}."
  },
  "buy_plan": {
-  "en": "Settling-in.",
-  "ru": "Привыкание."
+  "en": "Settling-in."
  },
  "buy_plan_hint": {
-  "en": "Which support do you want?",
-  "ru": "Какая поддержка нужна?"
+  "en": "Which support do you want?"
  },
  "buy_delivery": {
-  "en": "Getting home.",
-  "ru": "Дорога домой."
+  "en": "Getting home."
  },
  "buy_delivery_hint": {
-  "en": "How will the horse travel?",
-  "ru": "Как лошадь доберётся?"
+  "en": "How will the horse travel?"
  },
  "buy_offer": {
-  "en": "Seller.",
-  "ru": "Продавец."
+  "en": "Seller."
  },
  "buy_offer_hint": {
-  "en": "Who would you like to buy from?",
-  "ru": "У кого купить?"
+  "en": "Who would you like to buy from?"
  },
  "buy_horse_note": {
-  "en": "A reservation holds the horse while the seller confirms suitability. Nothing is paid until the visit.",
-  "ru": "Бронь удерживает лошадь, пока продавец проверяет пригодность. До визита ничего не оплачивается."
+  "en": "A reservation holds the horse while the seller confirms suitability. Nothing is paid before the viewing."
  },
  "buy_choose_all": {
-  "en": "Choose an option in each group.",
-  "ru": "Выберите вариант в каждой группе."
+  "en": "Choose an option in each group."
  },
  "best_value": {
-  "en": "Best value",
-  "ru": "Выгоднее всего"
+  "en": "Best value"
  },
  "included": {
-  "en": "Included",
-  "ru": "Включено"
- },
- "delivery_collect_line": {
-  "en": "Arrange a time with the seller.",
-  "ru": "Время согласуется с продавцом."
- },
- "delivery_transport_line": {
-  "en": "Licensed transporter with an hour’s recovery on arrival.",
-  "ru": "Лицензированный перевозчик и час отдыха по прибытии."
+  "en": "Included"
  },
  "dispatch_days": {
-  "en": "Dispatched in {n} days",
-  "ru": "Отправка через {n} дн."
+  "en": "Dispatched in {n} days"
  },
  "lowest_price": {
-  "en": "Lowest price",
-  "ru": "Самая низкая цена"
+  "en": "Lowest price"
  },
  "total": {
-  "en": "Total",
-  "ru": "Итого"
+  "en": "Total"
  },
  "add_to_bag": {
-  "en": "Add to Bag",
-  "ru": "Добавить в корзину"
+  "en": "Add to Bag"
  },
  "added": {
-  "en": "{name} is in your Bag.",
-  "ru": "{name} — в корзине."
+  "en": "{name} is in your Bag."
  },
  "related_title": {
-  "en": "You may also like.",
-  "ru": "Может понравиться."
- },
- "seller_all": {
-  "en": "All listings from this seller",
-  "ru": "Все объявления продавца"
- },
- "seller_licence": {
-  "en": "Licence",
-  "ru": "Лицензия"
- },
- "seller_since": {
-  "en": "Since",
-  "ru": "С года"
- },
- "seller_listings": {
-  "en": "Listings",
-  "ru": "Объявлений"
- },
- "seller_meta": {
-  "en": "Since {y} · {r} · {n} listings",
-  "ru": "С {y} года · {r} · объявлений: {n}"
- },
- "sellers_title": {
-  "en": "Sellers.",
-  "ru": "Продавцы."
- },
- "sellers_sub": {
-  "en": "Every one licensed or verified by the State.",
-  "ru": "Каждый лицензирован или проверен государством."
+  "en": "More like this."
  },
  "notfound_title": {
-  "en": "Not found.",
-  "ru": "Не найдено."
+  "en": "Not found."
  },
  "notfound_text": {
-  "en": "This listing may have been reserved or withdrawn.",
-  "ru": "Возможно, объявление забронировано или снято."
+  "en": "This listing may have been reserved or withdrawn."
+ },
+ "notfound_seller": {
+  "en": "This seller is not on the Market."
+ },
+ "sellers_title": {
+  "en": "Sellers."
+ },
+ "sellers_sub": {
+  "en": "Every one licensed or verified by the State."
+ },
+ "sellers_placeholder": {
+  "en": "Find a seller"
+ },
+ "seller_licence": {
+  "en": "Licence"
+ },
+ "seller_since": {
+  "en": "Since"
+ },
+ "seller_listings": {
+  "en": "Listings"
+ },
+ "seller_meta": {
+  "en": "Since {y} · {r} · {n} listings"
+ },
+ "all_tack": {
+  "en": "All tack"
+ },
+ "tack_placeholder": {
+  "en": "Search tack"
+ },
+ "my_title": {
+  "en": "My search."
+ },
+ "my_sub": {
+  "en": "{s} shortlisted · {v} viewings"
+ },
+ "my_viewings": {
+  "en": "Viewings."
+ },
+ "my_viewings_sub": {
+  "en": "Your days at the yard."
+ },
+ "my_viewings_empty": {
+  "en": "No viewings booked yet."
+ },
+ "my_shortlist": {
+  "en": "Shortlist."
+ },
+ "my_shortlist_sub": {
+  "en": "Horses you saved."
+ },
+ "my_shortlist_empty": {
+  "en": "Nothing shortlisted yet."
+ },
+ "my_searches": {
+  "en": "Saved searches."
+ },
+ "my_searches_empty": {
+  "en": "Save a search from the results to come back to it."
+ },
+ "my_ads": {
+  "en": "Your ads"
+ },
+ "my_ads_empty": {
+  "en": "You have no ads on the Market."
+ },
+ "my_ad_line": {
+  "en": "{name} · {breed} · {p} · {pkg}"
+ },
+ "viewing_on": {
+  "en": "Viewing {date}, {time}"
+ },
+ "viewed_on": {
+  "en": "Viewed {date}"
+ },
+ "mark_viewed": {
+  "en": "I have seen this horse"
+ },
+ "cancel_viewing": {
+  "en": "Cancel"
+ },
+ "sell_title": {
+  "en": "Sell a horse."
+ },
+ "sell_sub": {
+  "en": "Your ad, checked against the Welfare Code before it goes live."
+ },
+ "sell_horse": {
+  "en": "The horse."
+ },
+ "sell_name": {
+  "en": "Name"
+ },
+ "sell_age": {
+  "en": "Age, years"
+ },
+ "sell_height": {
+  "en": "Height, cm"
+ },
+ "sell_price": {
+  "en": "Asking price, cr"
+ },
+ "sell_scene": {
+  "en": "One line about life with this horse"
+ },
+ "sell_scene_ph": {
+  "en": "Saturday mornings along the lake, on a buckle-end rein."
+ },
+ "sell_disclose": {
+  "en": "Health, behaviour and medication you know of"
+ },
+ "sell_package": {
+  "en": "Your ad."
+ },
+ "sell_package_hint": {
+  "en": "How long and how much to show?"
+ },
+ "sell_publish": {
+  "en": "Publish the ad"
+ },
+ "sell_ref": {
+  "en": "Comparable horses ask {lo} to {hi} ({n} listings)."
+ },
+ "sell_done_eyebrow": {
+  "en": "Ad received"
+ },
+ "sell_done_title": {
+  "en": "Thank you."
+ },
+ "sell_done_text": {
+  "en": "Your ad is waiting in My search. In the game it goes live after the welfare check."
+ },
+ "err_field": {
+  "en": "Check: {field}."
+ },
+ "err_package": {
+  "en": "Choose how to show your ad."
  },
  "bag_title": {
-  "en": "Your Bag is empty.",
-  "ru": "Корзина пуста."
+  "en": "Your Bag is empty."
  },
  "bag_title_total": {
-  "en": "Your Bag total is {p}.",
-  "ru": "В корзине на {p}."
+  "en": "Your Bag total is {p}."
  },
  "bag_sub": {
-  "en": "Reservations are free. Horses are confirmed after the suitability visit.",
-  "ru": "Бронирование бесплатно. Лошадь подтверждается после визита пригодности."
+  "en": "Reservations are free. A horse is confirmed after the suitability visit."
  },
  "bag_empty": {
-  "en": "Start with a horse, or with what your horse needs.",
-  "ru": "Начните с лошади или с того, что нужно вашей лошади."
+  "en": "Start with a horse, or with what your horse needs."
  },
  "remove": {
-  "en": "Remove",
-  "ru": "Удалить"
+  "en": "Remove"
  },
  "subtotal": {
-  "en": "Subtotal",
-  "ru": "Сумма"
+  "en": "Subtotal"
+ },
+ "sold_by_x": {
+  "en": "Sold by {x}"
+ },
+ "loan_first_month": {
+  "en": "first month"
  },
  "recs_title": {
-  "en": "Pairs well.",
-  "ru": "Хорошо дополнит."
+  "en": "Pairs well."
  },
  "recs_title_horse": {
-  "en": "Made to fit {name}.",
-  "ru": "По размеру для: {name}."
+  "en": "Made to fit {name}: {size} size."
  },
  "recs_sub": {
-  "en": "Suggested sizes are a starting point; the fitter confirms on the visit.",
-  "ru": "Размеры — ориентир; мастер уточнит на визите."
+  "en": "Sizes are a starting point; the fitter confirms on the visit."
  },
  "size_pony": {
-  "en": "Pony",
-  "ru": "Пони"
+  "en": "pony"
  },
  "size_cob": {
-  "en": "Cob",
-  "ru": "Коб"
+  "en": "cob"
  },
  "size_full": {
-  "en": "Full",
-  "ru": "Полный"
+  "en": "full"
  },
  "suit_title": {
-  "en": "Suitability.",
-  "ru": "Пригодность."
+  "en": "Suitability."
  },
  "suit_sub": {
-  "en": "The seller must check this before any horse leaves.",
-  "ru": "Продавец обязан проверить это до передачи лошади."
+  "en": "The seller must check this before any horse leaves."
  },
  "suit_company": {
-  "en": "Will the horse live with a compatible equid companion?",
-  "ru": "Будет ли у лошади совместимый компаньон-непарнокопытное?"
+  "en": "Will the horse live with a compatible equid companion?"
  },
  "suit_company_yes": {
-  "en": "Yes, there is a companion already",
-  "ru": "Да, компаньон уже есть"
+  "en": "Yes, there is a companion already"
  },
  "suit_company_arranging": {
-  "en": "Yes, a companion is in this bag or arranged",
-  "ru": "Да, компаньон в этой корзине или договорён"
+  "en": "Yes, a companion is in this bag or arranged"
  },
  "suit_company_no": {
-  "en": "No",
-  "ru": "Нет"
+  "en": "No"
  },
  "suit_premises": {
-  "en": "Where will the horse live?",
-  "ru": "Где будет жить лошадь?"
+  "en": "Where will the horse live?"
  },
  "suit_premises_own": {
-  "en": "My own land with shelter and turnout",
-  "ru": "На моей земле с укрытием и выгулом"
+  "en": "My own land with shelter and turnout"
  },
  "suit_premises_livery": {
-  "en": "A licensed livery yard",
-  "ru": "В лицензированной конюшне на постое"
+  "en": "A licensed livery yard"
  },
  "suit_premises_none": {
-  "en": "Not decided yet",
-  "ru": "Пока не решено"
+  "en": "Not decided yet"
  },
  "suit_experience": {
-  "en": "Your experience with equids",
-  "ru": "Ваш опыт с непарнокопытными"
+  "en": "Your experience with equids"
  },
  "suit_experience_new": {
-  "en": "First horse, with a mentor",
-  "ru": "Первая лошадь, есть наставник"
+  "en": "First horse, with a mentor"
  },
  "suit_experience_some": {
-  "en": "A few years",
-  "ru": "Несколько лет"
+  "en": "A few years"
  },
  "suit_experience_long": {
-  "en": "Many years",
-  "ru": "Много лет"
+  "en": "Many years"
  },
  "suit_care": {
-  "en": "Care in place",
-  "ru": "Уход обеспечен"
+  "en": "Care in place"
  },
  "suit_care_vet": {
-  "en": "I am registered with an equine vet",
-  "ru": "У меня есть ветеринар по лошадям"
+  "en": "I am registered with an equine vet"
  },
  "suit_care_farrier": {
-  "en": "I have a farrier or hoof-care practitioner",
-  "ru": "У меня есть кузнец или специалист по копытам"
+  "en": "I have a farrier or hoof-care practitioner"
  },
  "suit_care_disq": {
-  "en": "I am not prohibited from keeping equids",
-  "ru": "Мне не запрещено содержать непарнокопытных"
+  "en": "I am not prohibited from keeping equids"
  },
  "contact_title": {
-  "en": "Your details.",
-  "ru": "Ваши данные."
+  "en": "Your details."
  },
  "contact_name": {
-  "en": "Full name",
-  "ru": "Имя и фамилия"
+  "en": "Full name"
  },
  "contact_email": {
-  "en": "Email",
-  "ru": "Электронная почта"
+  "en": "Email"
  },
  "contact_region": {
-  "en": "Region",
-  "ru": "Регион"
+  "en": "Region"
  },
  "choose": {
-  "en": "Choose",
-  "ru": "Выберите"
+  "en": "Choose"
  },
  "checkout": {
-  "en": "Place reservation",
-  "ru": "Оформить бронь"
+  "en": "Place reservation"
  },
  "roleplay_checkout": {
-  "en": "Roleplay: nothing is charged and no real animal or item changes hands.",
-  "ru": "Ролевая игра: деньги не списываются, настоящие животные и вещи не передаются."
+  "en": "Roleplay: nothing is charged and no real animal or item changes hands."
  },
  "err_company_missing": {
-  "en": "Tell us about the horse’s companion.",
-  "ru": "Укажите, будет ли у лошади компаньон."
+  "en": "Tell us about the horse’s companion."
  },
  "err_company_no": {
-  "en": "A horse cannot go to a home without a compatible equid companion (Art. 39). Add a companion to the bag or arrange one first.",
-  "ru": "Лошадь не может уехать туда, где нет совместимого компаньона (ст. 39). Добавьте компаньона в корзину или сначала договоритесь о нём."
+  "en": "A horse cannot go to a home without a compatible equid companion (Art. 39). Add a companion to the bag or arrange one first."
  },
  "err_premises_missing": {
-  "en": "Tell us where the horse will live.",
-  "ru": "Укажите, где будет жить лошадь."
+  "en": "Tell us where the horse will live."
  },
  "err_premises_none": {
-  "en": "The seller needs to know where the horse will live before reserving.",
-  "ru": "До брони продавцу нужно знать, где будет жить лошадь."
+  "en": "The seller needs to know where the horse will live before reserving."
  },
  "err_experience": {
-  "en": "Tell us about your experience.",
-  "ru": "Укажите ваш опыт."
+  "en": "Tell us about your experience."
  },
  "err_care": {
-  "en": "Confirm the vet, the hoof care and that you are not prohibited from keeping equids.",
-  "ru": "Подтвердите ветеринара, уход за копытами и отсутствие запрета на содержание."
+  "en": "Confirm the vet, the hoof care and that you are not prohibited from keeping equids."
  },
  "err_name": {
-  "en": "Enter your full name.",
-  "ru": "Введите имя и фамилию."
+  "en": "Enter your full name."
  },
  "err_email": {
-  "en": "Enter a valid email address.",
-  "ru": "Введите корректный адрес почты."
+  "en": "Enter a valid email address."
  },
  "err_region": {
-  "en": "Choose your region.",
-  "ru": "Выберите регион."
+  "en": "Choose your region."
  },
  "done_eyebrow": {
-  "en": "Reservation placed",
-  "ru": "Бронь оформлена"
+  "en": "Reservation placed"
  },
  "done_title": {
-  "en": "Thank you.",
-  "ru": "Спасибо."
+  "en": "Thank you."
  },
  "done_ref": {
-  "en": "Reference {ref}.",
-  "ru": "Номер {ref}."
+  "en": "Reference {ref}."
  },
  "done_text": {
-  "en": "The seller will contact you to arrange the suitability visit. Your Grith Points have been added.",
-  "ru": "Продавец свяжется с вами, чтобы назначить визит пригодности. Grith Points начислены."
+  "en": "The seller will contact you to arrange the suitability visit. Your stamp has been added to your Stable card."
  },
  "done_back": {
-  "en": "Back to the Market",
-  "ru": "Вернуться на рынок"
+  "en": "Back to the Market"
  },
- "hl_sellers": {
-  "en": "licensed sellers",
-  "ru": "лицензированных продавцов"
+ "show_more": {
+  "en": "Show more"
+ },
+ "on_loan": {
+  "en": "on loan"
+ },
+ "listed_today": {
+  "en": "listed today"
+ },
+ "listed_yesterday": {
+  "en": "listed yesterday"
  }
 }

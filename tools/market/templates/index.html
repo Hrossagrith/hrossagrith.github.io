@@ -1,9 +1,18 @@
-<section class="mk-store-head mk-wrap">
-  <h1 class="mk-h1"><span>{{t.home_title}}</span> <span class="mk-muted">{{t.home_sub}}</span></h1>
-  <div class="mk-store-head__aside">
-    <p><a class="mk-link" href="#help">{{t.home_help_link}}</a></p>
-    <p><a class="mk-link" href="sellers/">{{t.home_sellers_link}}</a></p>
+<section class="mk-home-hero">
+  <div class="mk-wrap">
+    <h1 class="mk-h1"><span>{{t.home_title}}</span> <span class="mk-muted" data-home-sub></span></h1>
+    <form class="mk-bigsearch" action="horses/" method="get" role="search" data-home-search>
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+      <input type="search" name="q" placeholder="{{t.search_placeholder}}" aria-label="{{t.search_label}}" autocomplete="off" maxlength="120" data-home-input>
+      <button class="mk-btn" type="submit">{{t.search_go}}</button>
+    </form>
+    <ul class="mk-suggest mk-suggest--home" data-home-suggest hidden></ul>
   </div>
+</section>
+
+<section class="mk-shelf">
+  <h2 class="mk-h2 mk-wrap"><span>{{t.home_popular}}</span> <span class="mk-muted">{{t.home_popular_sub}}</span></h2>
+  <ul class="mk-wrap mk-queries" data-popular></ul>
 </section>
 
 <section class="mk-shelf" aria-label="{{t.home_categories}}">
@@ -21,49 +30,8 @@
 </section>
 
 <section class="mk-shelf">
-  <h2 class="mk-h2 mk-wrap"><span>{{t.home_disciplines}}</span> <span class="mk-muted">{{t.home_disciplines_sub}}</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-disciplines></ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
-  </div>
-</section>
-
-<section class="mk-shelf" id="help">
-  <h2 class="mk-h2 mk-wrap"><span>{{t.home_help}}</span> <span class="mk-muted">{{t.home_help_sub}}</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track">
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.help_visit_eyebrow}}</p>
-        <h3>{{t.help_visit_title}}</h3>
-        <p>{{t.help_visit_text}}</p>
-        <a class="mk-link" href="{{portal_href}}gov/law/welfare/#art-92">{{t.foot_art92}}</a>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.help_disclose_eyebrow}}</p>
-        <h3>{{t.help_disclose_title}}</h3>
-        <p>{{t.help_disclose_text}}</p>
-        <a class="mk-link" href="{{portal_href}}gov/law/welfare/#art-91">{{t.foot_art91}}</a>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.help_passport_eyebrow}}</p>
-        <h3>{{t.help_passport_title}}</h3>
-        <p>{{t.help_passport_text}}</p>
-        <a class="mk-link" href="{{portal_href}}gov/law/welfare/#art-93">{{t.foot_art93}}</a>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.help_settle_eyebrow}}</p>
-        <h3>{{t.help_settle_title}}</h3>
-        <p>{{t.help_settle_text}}</p>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.help_company_eyebrow}}</p>
-        <h3>{{t.help_company_title}}</h3>
-        <p>{{t.help_company_text}}</p>
-        <a class="mk-link" href="{{portal_href}}gov/law/welfare/#art-39">{{t.law_art39}}</a>
-      </article></li>
-    </ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
-  </div>
+  <h2 class="mk-h2 mk-wrap"><span>{{t.home_viewing}}</span> <span class="mk-muted">{{t.home_viewing_sub}}</span></h2>
+  <div class="mk-wrap mk-steps" data-path></div>
 </section>
 
 <section class="mk-shelf">
@@ -75,40 +43,38 @@
 </section>
 
 <section class="mk-shelf">
-  <h2 class="mk-h2 mk-wrap"><span>{{t.home_makers}}</span> <span class="mk-muted">{{t.home_makers_sub}}</span></h2>
+  <h2 class="mk-h2 mk-wrap"><span>{{t.home_houses}}</span> <span class="mk-muted">{{t.home_houses_sub}}</span></h2>
   <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-makers></ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
+    <ul class="mk-scroller__track" data-home-houses></ul>
   </div>
 </section>
 
 <section class="mk-shelf">
-  <h2 class="mk-h2 mk-wrap"><span>{{t.home_difference}}</span> <span class="mk-muted">{{t.home_difference_sub}}</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track">
-      <li class="mk-slot"><article class="mk-info mk-info--points">
-        <p class="mk-eyebrow">{{t.points_name}}</p>
-        <h3>{{t.diff_points_title}}</h3>
-        <p>{{t.diff_points_text}}</p>
-        <div class="mk-meter" data-points-meter><span class="mk-meter__fill" data-points-fill></span></div>
-        <p class="mk-small" data-points-line></p>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.diff_compare_eyebrow}}</p>
-        <h3>{{t.diff_compare_title}}</h3>
-        <p>{{t.diff_compare_text}}</p>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.diff_fit_eyebrow}}</p>
-        <h3>{{t.diff_fit_title}}</h3>
-        <p>{{t.diff_fit_text}}</p>
-      </article></li>
-      <li class="mk-slot"><article class="mk-info">
-        <p class="mk-eyebrow">{{t.diff_licence_eyebrow}}</p>
-        <h3>{{t.diff_licence_title}}</h3>
-        <p>{{t.diff_licence_text}}</p>
-      </article></li>
-    </ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
+  <div class="mk-wrap mk-two">
+    <article class="mk-panel" data-card-panel>
+      <p class="mk-eyebrow">{{t.card_name}}</p>
+      <h2 class="mk-h3" data-card-title></h2>
+      <ol class="mk-stamps" data-stamps></ol>
+      <p class="mk-small" data-card-line></p>
+    </article>
+    <article class="mk-panel mk-panel--dark">
+      <p class="mk-eyebrow">{{t.plus_eyebrow}}</p>
+      <h2 class="mk-h3" data-plus-title></h2>
+      <ul class="mk-ticks" data-plus-benefits></ul>
+      <p><a class="mk-btn mk-btn--light" href="bag/?add=plus" data-plus-add>{{t.plus_add}}</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="mk-shelf">
+  <div class="mk-wrap">
+    <article class="mk-panel mk-panel--wide">
+      <div>
+        <p class="mk-eyebrow">{{t.sell_eyebrow}}</p>
+        <h2 class="mk-h3">{{t.sell_home_title}}</h2>
+        <p>{{t.sell_home_text}}</p>
+      </div>
+      <a class="mk-btn" href="sell/">{{t.nav_sell}}</a>
+    </article>
   </div>
 </section>

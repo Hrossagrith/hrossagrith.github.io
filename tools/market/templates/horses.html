@@ -1,0 +1,58 @@
+<section class="mk-wrap mk-results-head">
+  <div class="mk-tabs" role="tablist" aria-label="{{t.listing_type}}">
+    <a class="mk-tabs__tab" role="tab" data-type-tab="0">{{t.type_sale}}</a>
+    <a class="mk-tabs__tab" role="tab" data-type-tab="1">{{t.type_loan}}</a>
+  </div>
+  <h1 class="mk-h1 mk-h1--results"><span data-headline></span> <span class="mk-muted" data-count></span></h1>
+  <p class="mk-refprice" data-refprice hidden></p>
+  <form class="mk-inline-search" role="search" data-results-form>
+    <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+    <input type="search" name="q" placeholder="{{t.search_placeholder}}" aria-label="{{t.search_label}}" autocomplete="off" maxlength="120" data-results-q>
+  </form>
+  <div class="mk-refine" data-refine hidden>
+    <span class="mk-refine__label" data-refine-label></span>
+    <ul class="mk-refine__list" data-refine-list></ul>
+  </div>
+</section>
+
+<div class="mk-wrap mk-browse">
+  <aside class="mk-filters" id="mk-filters" data-filters aria-label="{{t.filters}}">
+    <div class="mk-filters__head">
+      <h2>{{t.filters}}</h2>
+      <button type="button" class="mk-textbtn" data-filters-reset>{{t.filters_reset}}</button>
+      <button type="button" class="mk-textbtn mk-filters__done" data-filters-close>{{t.done}}</button>
+    </div>
+    <div data-filter-groups></div>
+  </aside>
+
+  <section class="mk-results" aria-label="{{t.results}}">
+    <div class="mk-toolbar">
+      <button type="button" class="mk-pill mk-toolbar__filters" data-filters-open aria-controls="mk-filters">{{t.filters}} <span data-filter-count></span></button>
+      <ul class="mk-chips" data-chips></ul>
+      <button type="button" class="mk-textbtn" data-save-search>{{t.save_search}}</button>
+      <label class="mk-sort">
+        <span>{{t.sort}}</span>
+        <select data-sort>
+          <option value="best">{{t.sort_best}}</option>
+          <option value="new">{{t.sort_new}}</option>
+          <option value="price-asc">{{t.sort_price_asc}}</option>
+          <option value="price-desc">{{t.sort_price_desc}}</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="mk-top" data-top></div>
+    <a class="mk-entry" data-entry hidden>
+      <span class="mk-entry__label" data-f="label"></span>
+      <span class="mk-entry__text" data-f="text"></span>
+    </a>
+    <ol class="mk-rows" data-rows></ol>
+
+    <div class="mk-empty" data-empty hidden>
+      <h2>{{t.empty_title}}</h2>
+      <p>{{t.empty_text}}</p>
+      <ul class="mk-refine__list" data-empty-relax></ul>
+    </div>
+    <nav class="mk-pager" aria-label="{{t.pages}}" data-pager></nav>
+  </section>
+</div>
