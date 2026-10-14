@@ -1,22 +1,7 @@
 {
- "version": 1,
- "generated": "2026-10-12T08:42:19.615Z",
+ "version": 2,
+ "generated": "2026-10-14T15:01:04.574Z",
  "cheeks": {
-  "loose-ring": {
-   "file": "cheeks/loose-ring.jpg",
-   "title": "File:Mors-Simple.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Mors-Simple.jpg",
-   "author": "fr:User:LardonCru",
-   "license": "CC BY-SA 2.5",
-   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 480,
-   "caption": {
-    "en": "Loose ring snaffle, single joint",
-    "ru": "Трензель с подвижными кольцами, одно сочленение"
-   }
-  },
   "eggbutt": {
    "file": "cheeks/eggbutt.jpg",
    "title": "File:Snafflealpha.jpg",
@@ -122,21 +107,6 @@
     "ru": "Пелям с сочленённым грызлом"
    }
   },
-  "rugby-pelham": {
-   "file": "cheeks/rugby-pelham.png",
-   "title": "File:EB1911 - Saddlery and Harness - Fig. 1.png",
-   "source": "https://commons.wikimedia.org/wiki/File:EB1911_-_Saddlery_and_Harness_-_Fig._1.png",
-   "author": "Encyclopædia Britannica",
-   "license": "Public domain",
-   "license_url": "",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 161,
-   "caption": {
-    "en": "Encyclopaedia Britannica 1911: b, Rugby pelham",
-    "ru": "Британская энциклопедия 1911: b — Регби-пелям"
-   }
-  },
   "kimblewick-uxeter": {
    "file": "cheeks/kimblewick-uxeter.jpg",
    "title": "File:Kimblewick bit.jpg",
@@ -165,21 +135,6 @@
    "caption": {
     "en": "Loose-ring gag: the cheekpiece runs through the ring; rubber bit guards",
     "ru": "Гаг с подвижными кольцами: нащёчный ремень проходит сквозь кольцо; резиновые накладки"
-   }
-  },
-  "cheltenham-gag": {
-   "file": "cheeks/cheltenham-gag.jpg",
-   "title": "File:Cross country horse.JPG",
-   "source": "https://commons.wikimedia.org/wiki/File:Cross_country_horse.JPG",
-   "author": "No machine-readable author provided. Eventer~commonswiki assumed (based on copyright claims).",
-   "license": "Public domain",
-   "license_url": "",
-   "provider": "Wikimedia Commons",
-   "width": 301,
-   "height": 313,
-   "caption": {
-    "en": "Gag snaffle on a cross-country horse",
-    "ru": "Гаг-трензель на лошади на кроссе"
    }
   },
   "dutch-gag": {
@@ -317,51 +272,6 @@
     "ru": "Упряжной Ливерпуль: кольцо, щёчка и прорези"
    }
   },
-  "buxton": {
-   "file": "cheeks/buxton.jpg",
-   "title": "File:Driving bits (1912).jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Driving_bits_(1912).jpg",
-   "author": "Belle Beach",
-   "license": "Public domain",
-   "license_url": "",
-   "provider": "Wikimedia Commons",
-   "width": 540,
-   "height": 340,
-   "caption": {
-    "en": "Driving bits, 1912: coaching, Buxton, Ashleigh, Liverpool",
-    "ru": "Упряжные удила, 1912: coaching, Бакстон, Ashleigh, Ливерпуль"
-   }
-  },
-  "dexter-ring": {
-   "file": "cheeks/dexter-ring.jpg",
-   "title": "File:Gordena Jackson, Ring Bit, c. 1938, NGA 26694.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Gordena_Jackson,_Ring_Bit,_c._1938,_NGA_26694.jpg",
-   "author": "Gordena Jackson",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 804,
-   "caption": {
-    "en": "Ring bit, c. 1938 (National Gallery of Art drawing)",
-    "ru": "Кольцевые удила, ок. 1938 (рисунок, Национальная галерея искусств)"
-   }
-  },
-  "tattersall-ring": {
-   "file": "cheeks/tattersall-ring.jpg",
-   "title": "File:Tattersall bit.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Tattersall_bit.jpg",
-   "author": "Cgoodwin",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "provider": "Wikimedia Commons",
-   "width": 182,
-   "height": 220,
-   "caption": {
-    "en": "Tattersall yearling ring",
-    "ru": "Кольцо Таттерсолла для годовиков"
-   }
-  },
   "chifney": {
    "file": "cheeks/chifney.jpg",
    "title": "File:Anti rear bit.jpg",
@@ -452,21 +362,6 @@
     "ru": "Гаг с усиками и носовым ремнём в стиле хакамора"
    }
   },
-  "half-cheek": {
-   "file": "cheeks/half-cheek.jpg",
-   "title": "File:Saddlebred Stallion in Harness.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Saddlebred_Stallion_in_Harness.jpg",
-   "author": "Jean",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 425,
-   "caption": {
-    "en": "Half-cheek snaffle on a Saddlebred in harness",
-    "ru": "Трензель с полуусами на седлбреде в упряжи"
-   }
-  },
   "maghreb-ring-curb": {
    "file": "cheeks/maghreb-ring-curb.jpg",
    "title": "File:Ring Bit MET LC-42 50 508-007.jpg",
@@ -494,6 +389,81 @@
     "en": "Butterfly cheek (as a riding pelham) with a double-link chain",
     "ru": "Щёчка-«бабочка» (как пелям) с двухзвенной цепочкой"
    }
+  },
+  "elbow-military": {
+   "file": "cheeks/elbow-military.jpg",
+   "title": "File:Palimino2.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Palimino2.JPG",
+   "author": "Badgerlover101",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 922,
+   "height": 960,
+   "caption": {
+    "en": "Elbow driving bit on a draught horse: shank bent back, two rein slots, curb chain",
+    "ru": "Локтевой упряжной мундштук на тяжеловозе: отогнутое назад плечо, две прорези для вожжей, цепочка"
+   }
+  },
+  "buxton": {
+   "file": "cheeks/buxton.jpg",
+   "title": "Bit (GK 19898), Buxton paardenbit, 1850–1860",
+   "source": "https://www.europeana.eu/item/2021648/resource_document_collectiegelderland_IF5O5WJROUILFF4X5EK4KN5H3PCOJRN5OM5AI3NBLJH6A2OWHY3Q",
+   "author": "Anoniem (maker); Geldersch Landschap & Kasteelen",
+   "license": "Public Domain Mark 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "provider": "Europeana (Geldersch Landschap & Kasteelen)",
+   "width": 960,
+   "height": 720,
+   "caption": {
+    "en": "Buxton driving bit with scrolled shanks joined by a bottom bar, curb chain (1850–1860)",
+    "ru": "Упряжной мундштук Бакстон с завитыми плечами, соединёнными нижней перекладиной, и цепочкой (1850–1860)"
+   }
+  },
+  "loose-ring": {
+   "file": "cheeks/loose-ring.jpg",
+   "title": "File:Ball link bit.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ball_link_bit.jpg",
+   "author": "Eventer",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 960,
+   "height": 719,
+   "caption": {
+    "en": "Loose ring snaffle with a double-jointed mouthpiece (ball link)",
+    "ru": "Трензель с подвижными кольцами и двойным сочленением (шарик в центре)"
+   }
+  },
+  "cheltenham-gag": {
+   "file": "cheeks/cheltenham-gag.jpg",
+   "title": "File:Aufziehtrense.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Aufziehtrense.jpg",
+   "author": "dee.lite (de.wikipedia)",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 960,
+   "height": 922,
+   "caption": {
+    "en": "Round-ring gag on a polo pony: the gag cord runs through the top and bottom of the ring",
+    "ru": "Гаг с круглыми кольцами на пони для поло: шнур гага проходит через верх и низ кольца"
+   }
+  },
+  "half-cheek": {
+   "file": "cheeks/half-cheek.jpg",
+   "title": "File:Tête trotteur français bai.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:T%C3%AAte_trotteur_fran%C3%A7ais_bai.jpg",
+   "author": "Amélie Tsaag Valren",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 960,
+   "height": 948,
+   "caption": {
+    "en": "Half-cheek driving snaffle (lower cheek only) on a French Trotter, with an overcheck bit",
+    "ru": "Упряжной трензель с полуусиками (только нижний усик) на французском рысаке, с оверчек-удилами"
+   }
   }
  },
  "mouthpieces": {
@@ -510,21 +480,6 @@
    "caption": {
     "en": "Plain single-jointed snaffle",
     "ru": "Обычный трензель с одним сочленением"
-   }
-  },
-  "slow-twist": {
-   "file": "mouths/slow-twist.jpg",
-   "title": "File:Fullcheckwithtwistsnafflealpha.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Fullcheckwithtwistsnafflealpha.jpg",
-   "author": "Ealdgyth",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 457,
-   "caption": {
-    "en": "Full cheek snaffle with a slow twist",
-    "ru": "Трензель с усиками, медленный твист"
    }
   },
   "twisted-wire": {
@@ -632,36 +587,6 @@
     "ru": "Кафедральный порт на мундштуке с подвижными плечами"
    }
   },
-  "ring-arc": {
-   "file": "mouths/ring-arc.jpg",
-   "title": "File:Tattersall bit.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Tattersall_bit.jpg",
-   "author": "Cgoodwin",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "provider": "Wikimedia Commons",
-   "width": 182,
-   "height": 220,
-   "caption": {
-    "en": "The arc of a Tattersall ring",
-    "ru": "Дужка кольца Таттерсолла"
-   }
-  },
-  "keys": {
-   "file": "mouths/keys.jpg",
-   "title": "File:Ethel Dougan, Snaffle Bit, 1938, NGA 26695.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Ethel_Dougan,_Snaffle_Bit,_1938,_NGA_26695.jpg",
-   "author": "Ethel Dougan",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 500,
-   "caption": {
-    "en": "Mouthing bit with keys (National Gallery of Art drawing, 1938)",
-    "ru": "Грызло для заездки с подвесками (рисунок, 1938)"
-   }
-  },
   "straight-bar": {
    "file": "mouths/straight-bar.jpg",
    "title": "File:Bit (AM 1938.16-1).jpg",
@@ -735,6 +660,21 @@
     "en": "Flexible synthetic mullen on a butterfly pelham",
     "ru": "Гибкий синтетический мюлен на пеляме-«бабочке»"
    }
+  },
+  "slow-twist": {
+   "file": "mouths/slow-twist.jpg",
+   "title": "File:Snafflefulltwistalpha.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Snafflefulltwistalpha.jpg",
+   "author": "Ealdgyth",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "provider": "Wikimedia Commons",
+   "width": 960,
+   "height": 640,
+   "caption": {
+    "en": "Eggbutt snaffle with a single-jointed slow-twist mouthpiece",
+    "ru": "Трензель с оливковыми кольцами и витым грызлом с одним сочленением (слоу-твист)"
+   }
   }
  },
  "pairings": {
@@ -749,17 +689,6 @@
    "width": 640,
    "height": 961
   },
-  "walking-horse-curb|ported": {
-   "file": "pairs/walking-horse-curb__ported.jpg",
-   "title": "File:Tennessee Walking Horse6.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Tennessee_Walking_Horse6.jpg",
-   "author": "Just chaos",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 522
-  },
   "chifney|straight-bar": {
    "file": "pairs/chifney__straight-bar.jpg",
    "title": "File:Anti rear bit.jpg",
@@ -770,32 +699,6 @@
    "provider": "Wikimedia Commons",
    "width": 300,
    "height": 235
-  },
-  "tattersall-ring|ring-arc": {
-   "file": "pairs/tattersall-ring__ring-arc.jpg",
-   "title": "File:Tattersall bit.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Tattersall_bit.jpg",
-   "author": "Cgoodwin",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "provider": "Wikimedia Commons",
-   "width": 182,
-   "height": 220
-  },
-  "overcheck|single-joint": {
-   "file": "pairs/overcheck__single-joint.jpg",
-   "title": "File:Trabrennsport Overcheck.JPG",
-   "source": "https://commons.wikimedia.org/wiki/File:Trabrennsport_Overcheck.JPG",
-   "author": "dee.lite",
-   "license": "Public domain",
-   "license_url": "",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 964,
-   "caption": {
-    "en": "Trotter wearing an overcheck bit",
-    "ru": "Рысак в чек-удилах"
-   }
   },
   "maghreb-ring-curb|ported": {
    "file": "pairs/maghreb-ring-curb__ported.jpg",
@@ -823,21 +726,6 @@
    "width": 640,
    "height": 960
   },
-  "pelham|flexible-mullen": {
-   "file": "pairs/pelham__flexible-mullen.jpg",
-   "title": "File:Twee-paarden.JPG",
-   "source": "https://commons.wikimedia.org/wiki/File:Twee-paarden.JPG",
-   "author": "Andre Engels",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 480,
-   "caption": {
-    "en": "Pair of ponies: the off horse in a pelham with a rubber mouth",
-    "ru": "Пара пони: правая в пеляме с резиновым грызлом"
-   }
-  },
   "kimblewick|ported": {
    "file": "pairs/kimblewick__ported.jpg",
    "title": "File:Kimblewick bit.jpg",
@@ -848,17 +736,6 @@
    "provider": "Wikimedia Commons",
    "width": 640,
    "height": 397
-  },
-  "liverpool|mullen": {
-   "file": "pairs/liverpool__mullen.jpg",
-   "title": "File:Liverpool bit - Breton horse.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Liverpool_bit_-_Breton_horse.jpg",
-   "author": "Tsaag Valren",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 480
   },
   "weymouth-fixed|ported": {
    "file": "pairs/weymouth-fixed__ported.jpg",
@@ -890,36 +767,6 @@
     "ru": "Том Тамб: сочленённое медное грызло на коротких плечах"
    }
   },
-  "pelham|ported": {
-   "file": "pairs/pelham__ported.jpg",
-   "title": "File:Mors-Pelham.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Mors-Pelham.jpg",
-   "author": "fr:User:LardonCru",
-   "license": "CC BY-SA 2.5",
-   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 480,
-   "caption": {
-    "en": "Pelham with a port and a curb chain",
-    "ru": "Пелям с портом и цепочкой"
-   }
-  },
-  "loose-ring|single-joint": {
-   "file": "pairs/loose-ring__single-joint.jpg",
-   "title": "File:Mors-Simple.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Mors-Simple.jpg",
-   "author": "fr:User:LardonCru",
-   "license": "CC BY-SA 2.5",
-   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 480,
-   "caption": {
-    "en": "Loose ring, single joint",
-    "ru": "Подвижные кольца, одно сочленение"
-   }
-  },
   "eggbutt|single-joint": {
    "file": "pairs/eggbutt__single-joint.jpg",
    "title": "File:Snafflealpha.jpg",
@@ -941,17 +788,6 @@
    "provider": "Wikimedia Commons",
    "width": 640,
    "height": 434
-  },
-  "full-cheek|slow-twist": {
-   "file": "pairs/full-cheek__slow-twist.jpg",
-   "title": "File:Fullcheckwithtwistsnafflealpha.jpg",
-   "source": "https://commons.wikimedia.org/wiki/File:Fullcheckwithtwistsnafflealpha.jpg",
-   "author": "Ealdgyth",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "provider": "Wikimedia Commons",
-   "width": 640,
-   "height": 457
   },
   "fulmer|single-joint": {
    "file": "pairs/fulmer__single-joint.jpg",
@@ -1018,6 +854,66 @@
    "provider": "Wikimedia Commons",
    "width": 640,
    "height": 480
+  },
+  "wilson-snaffle|single-joint": {
+   "file": "pairs/wilson-snaffle__single-joint.jpg",
+   "title": "Trens (GK 20007) — Twin-bit trens met een gebroken stang",
+   "source": "https://www.europeana.eu/item/2021648/resource_document_collectiegelderland_KAUR2D4DGVNUFI2GZCPBZEGUCDNGN62AD3UENV7M3DFLRLZNRL6Q",
+   "author": "Geldersch Landschap & Kasteelen (maker of object: Anoniem)",
+   "license": "Public Domain Mark 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+   "provider": "Europeana / Geldersch Landschap & Kasteelen",
+   "width": 960,
+   "height": 720,
+   "caption": {
+    "en": "Wilson (twin-ring) snaffle with a single-jointed mouthpiece, c. 1850–1860",
+    "ru": "Трензель Уилсона с двумя парами колец и одним сочленением, ок. 1850–1860 гг."
+   }
+  },
+  "pelham|mullen": {
+   "file": "pairs/pelham__mullen.jpg",
+   "title": "Bit (GK 19997) — Pelham paardenbit met scharen met drie ogen en met een gebogen stang en kinketting",
+   "source": "https://www.europeana.eu/item/2021648/resource_document_collectiegelderland_ZV7XHSFJMJHAP2EZHD6GILT4ZHW54YJL6PGZH4BXGJWHLVXMSM2Q",
+   "author": "Geldersch Landschap & Kasteelen (maker of object: Anoniem)",
+   "license": "Public Domain Mark 1.0",
+   "license_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+   "provider": "Europeana / Geldersch Landschap & Kasteelen",
+   "width": 960,
+   "height": 720,
+   "caption": {
+    "en": "Pelham with a curved mullen mouthpiece and curb chain, c. 1850–1860",
+    "ru": "Пелям с цельным изогнутым грызлом и цепочкой, ок. 1850–1860 гг."
+   }
+  },
+  "full-cheek|keys": {
+   "file": "pairs/full-cheek__keys.jpg",
+   "title": "File:Bit, mouthing (AM 66679-1).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bit,_mouthing_(AM_66679-1).jpg",
+   "author": "Auckland Museum",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "provider": "Wikimedia Commons",
+   "width": 960,
+   "height": 720,
+   "caption": {
+    "en": "Full-cheek mouthing bit with a cluster of keys on the centre ring (Auckland Museum)",
+    "ru": "Трензель для заездки с усиками и «ключиками» на центральном кольце (Оклендский музей)"
+   }
+  },
+  "western-fixed-curb|ported": {
+   "file": "pairs/western-fixed-curb__ported.jpg",
+   "title": "File:WesternCurb.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:WesternCurb.jpg",
+   "author": "Montanabw",
+   "license": "Public domain",
+   "license_url": "",
+   "provider": "Wikimedia Commons",
+   "width": 954,
+   "height": 960,
+   "caption": {
+    "en": "Western curb with fixed swept-back shanks and a low port",
+    "ru": "Вестерн-мундштук с неподвижными изогнутыми плечами и низким портом"
+   }
   }
  }
 }
