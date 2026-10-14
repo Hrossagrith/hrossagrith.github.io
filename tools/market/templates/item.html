@@ -1,0 +1,61 @@
+<section class="mk-item">
+  <div class="mk-wrap mk-item__grid">
+    <div class="mk-viewer" data-viewer>
+      <div class="mk-media mk-media--hero" data-stage><div class="mk-media__ph" aria-hidden="true"></div></div>
+      <p class="mk-viewer__hint" data-hint>{{t.photo_soon}}</p>
+    </div>
+    <div class="mk-item__head">
+      <p class="mk-kicker" data-kicker></p>
+      <h1 class="mk-item__name" data-name></h1>
+      <p class="mk-item__tag" data-tag></p>
+      <p class="mk-item__price" data-price></p>
+      <div data-options></div>
+      <button class="mk-btn mk-btn--primary mk-btn--wide" type="button" data-reserve>{{t.reserve}}</button>
+      <p class="mk-small">{{t.reserve_sub}}</p>
+      <p class="mk-item__story" data-story></p>
+    </div>
+  </div>
+</section>
+<section class="mk-section mk-section--panel">
+  <div class="mk-wrap">
+    <div class="mk-tabs" role="tablist" data-tabs>
+      <button class="mk-tab" role="tab" type="button" data-tab="a" aria-selected="true"></button>
+      <button class="mk-tab" role="tab" type="button" data-tab="b" aria-selected="false"></button>
+    </div>
+    <div class="mk-panel" data-panel="a"></div>
+    <div class="mk-panel" data-panel="b" hidden></div>
+  </div>
+</section>
+<section class="mk-section">
+  <div class="mk-wrap mk-fit">
+    <div><h2 class="mk-h3">{{t.fits}}</h2><ul class="mk-list mk-list--yes" data-fits></ul></div>
+    <div data-notfor-wrap><h2 class="mk-h3">{{t.not_for}}</h2><ul class="mk-list mk-list--no" data-notfor></ul></div>
+    <div><h2 class="mk-h3">{{t.seller}}</h2><p class="mk-seller" data-seller></p></div>
+  </div>
+</section>
+<section class="mk-section mk-section--panel">
+  <div class="mk-wrap">
+    <h2 class="mk-h2">{{t.alternatives}}</h2>
+    <div class="mk-grid mk-grid--two" data-alts></div>
+  </div>
+</section>
+<div class="mk-buybar" data-buybar>
+  <div class="mk-wrap mk-buybar__in"><span class="mk-buybar__name" data-bar-name></span><span class="mk-buybar__price" data-bar-price></span><button class="mk-btn mk-btn--primary" type="button" data-reserve>{{t.reserve}}</button></div>
+</div>
+<dialog class="mk-sheet" data-sheet>
+  <div class="mk-sheet__head"><h2 class="mk-h3" data-sheet-title></h2><button class="mk-x" type="button" data-close aria-label="{{t.close}}"></button></div>
+  <div data-step="check">
+    <p class="mk-lede" data-check-lede>{{t.check_lede}}</p>
+    <fieldset class="mk-q"><legend>{{t.check_home}}</legend><div class="mk-chips" data-c="home"><button class="mk-chip" type="button" data-v="own" aria-pressed="false">{{t.check_home_a}}</button><button class="mk-chip" type="button" data-v="livery" aria-pressed="false">{{t.check_home_b}}</button><button class="mk-chip" type="button" data-v="none" aria-pressed="false">{{t.check_home_c}}</button></div></fieldset>
+    <fieldset class="mk-q"><legend>{{t.check_company}}</legend><div class="mk-chips" data-c="company"><button class="mk-chip" type="button" data-v="yes" aria-pressed="false">{{t.check_yes}}</button><button class="mk-chip" type="button" data-v="no" aria-pressed="false">{{t.check_no}}</button></div></fieldset>
+    <fieldset class="mk-q"><legend>{{t.check_use}}</legend><div class="mk-chips" data-c="use"><button class="mk-chip" type="button" data-v="yes" aria-pressed="false">{{t.check_yes}}</button><button class="mk-chip" type="button" data-v="no" aria-pressed="false">{{t.check_no}}</button></div></fieldset>
+    <p class="mk-note" data-check-msg hidden></p>
+    <button class="mk-btn mk-btn--primary mk-btn--wide" type="button" data-confirm disabled>{{t.confirm}}</button>
+  </div>
+  <div data-step="done" hidden>
+    <p class="mk-done__title">{{t.done_title}}</p>
+    <p class="mk-lede" data-done-body></p>
+    <h3 class="mk-h3">{{t.done_add}}</h3>
+    <div class="mk-grid mk-grid--two" data-upsell></div>
+  </div>
+</dialog>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{html_lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{page_title}} · {{t.market_name}}</title>
+<meta name="description" content="{{t.market_sub}}">
+<meta name="robots" content="index,follow">
+<link rel="alternate" hreflang="{{lang}}" href="https://hrossagrith.com/{{self_path}}">
+<link rel="alternate" hreflang="{{other_lang}}" href="https://hrossagrith.com/{{other_path}}">
+<link rel="icon" href="{{root}}assets/flag-mark.png">
+<link rel="stylesheet" href="{{root}}assets/market.css">
+</head>
+<body class="mk" data-page="{{page}}" data-lang="{{lang}}" data-root="{{root}}" data-mroot="{{mroot}}">
+<a class="mk-skip" href="#main">{{t.skip}}</a>
+<header class="mk-bar">
+  <div class="mk-wrap mk-bar__in">
+    <a class="mk-brand" href="{{mroot}}"><span class="mk-brand__mark" aria-hidden="true"></span>{{t.market_name}}</a>
+    <nav class="mk-nav" aria-label="{{t.market_name}}">
+      <a href="{{mroot}}catalogue/?d=horses">{{t.nav_horses}}</a>
+      <a href="{{mroot}}catalogue/?d=tack">{{t.nav_tack}}</a>
+      <a href="{{mroot}}#match">{{t.nav_match}}</a>
+    </nav>
+    <a class="mk-lang" href="{{other_href}}" hreflang="{{other_lang}}">{{t.lang_other}}</a>
+    <a class="mk-portal" href="{{portal_href}}">{{t.nav_portal}}</a>
+  </div>
+</header>
+<main id="main">
+{{content}}
+</main>
+<footer class="mk-foot">
+  <div class="mk-wrap">
+    <p class="mk-foot__disclaimer">{{t.disclaimer}}</p>
+    <p class="mk-foot__note">{{t.currency_note}}</p>
+    <p class="mk-foot__meta">{{t.market_name}} · {{t.market_sub}} · <a href="{{portal_href}}">hrossagrith.com</a></p>
+  </div>
+</footer>
+<p class="mk-error" data-load-error hidden>{{t.load_error}}</p>
+{{templates}}
+<script src="{{root}}assets/market.js"></script>
+</body>
+</html>

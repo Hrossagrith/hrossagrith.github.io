@@ -1,0 +1,64 @@
+<section class="mk-hero">
+  <div class="mk-wrap">
+    <p class="mk-kicker">{{t.hero_kicker}}</p>
+    <h1 class="mk-hero__title">{{t.hero_title_a}} <span class="mk-accent">{{t.hero_title_b}}</span></h1>
+    <p class="mk-hero__lede">{{t.hero_lede}}</p>
+    <div class="mk-actions"><a class="mk-btn mk-btn--primary" href="#match">{{t.cta_match}}</a><a class="mk-btn" href="{{mroot}}catalogue/?d=horses">{{t.cta_browse}}</a></div>
+    <dl class="mk-stats">
+      <div class="mk-stat"><dt>{{t.stat_passport_v}}</dt><dd>{{t.stat_passport_k}}</dd></div>
+      <div class="mk-stat"><dt>{{t.stat_days_v}}</dt><dd>{{t.stat_days_k}}</dd></div>
+      <div class="mk-stat"><dt>{{t.stat_record_v}}</dt><dd>{{t.stat_record_k}}</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="mk-section" aria-labelledby="disc-title">
+  <div class="mk-wrap">
+    <h2 class="mk-h2" id="disc-title">{{t.disc_title}}</h2>
+    <p class="mk-lede">{{t.disc_lede}}</p>
+    <div class="mk-tiles" data-tiles></div>
+  </div>
+</section>
+
+<section class="mk-section mk-section--panel" id="match" aria-labelledby="match-title">
+  <div class="mk-wrap">
+    <h2 class="mk-h2" id="match-title">{{t.match_title}}</h2>
+    <p class="mk-lede">{{t.match_lede}}</p>
+    <form class="mk-finder" data-finder>
+      <fieldset class="mk-q"><legend><span class="mk-q__n">01</span>{{t.q_use}}</legend><div class="mk-chips" data-q="use"></div></fieldset>
+      <fieldset class="mk-q"><legend><span class="mk-q__n">02</span>{{t.q_exp}}</legend><div class="mk-chips" data-q="exp">
+        <button class="mk-chip" type="button" data-v="new" aria-pressed="false">{{t.q_exp_new}}</button><button class="mk-chip" type="button" data-v="some" aria-pressed="false">{{t.q_exp_some}}</button><button class="mk-chip" type="button" data-v="lots" aria-pressed="false">{{t.q_exp_lots}}</button></div></fieldset>
+      <fieldset class="mk-q"><legend><span class="mk-q__n">03</span>{{t.q_pace}}</legend><div class="mk-chips" data-q="pace">
+        <button class="mk-chip" type="button" data-v="calm" aria-pressed="false">{{t.q_pace_calm}}</button><button class="mk-chip" type="button" data-v="mid" aria-pressed="false">{{t.q_pace_mid}}</button><button class="mk-chip" type="button" data-v="keen" aria-pressed="false">{{t.q_pace_keen}}</button></div></fieldset>
+    </form>
+    <div class="mk-result" data-result hidden>
+      <h3 class="mk-h3">{{t.match_result}}</h3>
+      <div class="mk-grid mk-grid--two" data-result-cards></div>
+    </div>
+  </div>
+</section>
+
+<section class="mk-section" aria-labelledby="tack-title">
+  <div class="mk-wrap">
+    <h2 class="mk-h2" id="tack-title">{{t.tack_title}}</h2>
+    <p class="mk-lede">{{t.tack_lede}}</p>
+    <div class="mk-grid mk-grid--four" data-featured-tack></div>
+    <h3 class="mk-h3 mk-h3--spaced">{{t.brands_title}}</h3>
+    <ul class="mk-brands" data-brands></ul>
+  </div>
+</section>
+
+<section class="mk-section mk-section--panel" aria-labelledby="trust-title">
+  <div class="mk-wrap">
+    <h2 class="mk-h2" id="trust-title">{{t.trust_title}}</h2>
+    <ol class="mk-trust">
+      <li><span class="mk-trust__n">01</span><strong>{{t.trust_1_t}}</strong><span>{{t.trust_1_d}}</span></li>
+      <li><span class="mk-trust__n">02</span><strong>{{t.trust_2_t}}</strong><span>{{t.trust_2_d}}</span></li>
+      <li><span class="mk-trust__n">03</span><strong>{{t.trust_3_t}}</strong><span>{{t.trust_3_d}}</span></li>
+    </ol>
+    <div class="mk-points">
+      <div><h3 class="mk-h3">{{t.points_title}}</h3><p class="mk-lede">{{t.points_lede}}</p></div>
+      <div class="mk-points__meter"><span class="mk-points__track"><span class="mk-points__fill" data-points-fill></span></span><span class="mk-points__label" data-points-label></span></div>
+    </div>
+  </div>
+</section>

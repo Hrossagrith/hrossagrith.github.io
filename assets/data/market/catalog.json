@@ -1,0 +1,1772 @@
+{
+ "notes": {
+  "en": "Catalogue of the Imperial Market. Every horse, brand and price is fictional: this is a roleplay market. Tack specifications follow the Imperial Tack Measurement Schedule published on the portal.",
+  "ru": "Каталог Имперского рынка. Все лошади, бренды и цены вымышлены: это ролевой рынок. Характеристики амуниции следуют Имперскому регламенту обмеров амуниции, опубликованному на портале."
+ },
+ "currency": {
+  "code": "CRN",
+  "provisional": true,
+  "name": {
+   "en": "crowns",
+   "ru": "крон"
+  },
+  "short": {
+   "en": "cr",
+   "ru": "кр"
+  }
+ },
+ "departments": [
+  {
+   "id": "horses",
+   "name": {
+    "en": "Horses",
+    "ru": "Лошади"
+   },
+   "lede": {
+    "en": "Every horse with a full passport and an honest record.",
+    "ru": "Каждая лошадь с полным паспортом и честной историей."
+   }
+  },
+  {
+   "id": "tack",
+   "name": {
+    "en": "Tack",
+    "ru": "Амуниция"
+   },
+   "lede": {
+    "en": "Made and certified to the Imperial Tack Standard.",
+    "ru": "Сделано и сертифицировано по Имперскому стандарту амуниции."
+   }
+  }
+ ],
+ "disciplines": [
+  {
+   "id": "leisure",
+   "name": {
+    "en": "Leisure riding",
+    "ru": "Прогулочная езда"
+   },
+   "lede": {
+    "en": "Quiet hacks, lanes and long weekends.",
+    "ru": "Спокойные прогулки, просёлки и долгие выходные."
+   }
+  },
+  {
+   "id": "driving",
+   "name": {
+    "en": "Carriage and driving",
+    "ru": "Упряжь и экипаж"
+   },
+   "lede": {
+    "en": "Steady partners for the road and the cart.",
+    "ru": "Надёжные партнёры для дороги и повозки."
+   }
+  },
+  {
+   "id": "dressage",
+   "name": {
+    "en": "Bitless dressage",
+    "ru": "Выездка без удил"
+   },
+   "lede": {
+    "en": "Balance and lightness, without metal in the mouth.",
+    "ru": "Баланс и лёгкость без металла во рту."
+   }
+  },
+  {
+   "id": "endurance",
+   "name": {
+    "en": "Endurance and trail",
+    "ru": "Пробеги и тропы"
+   },
+   "lede": {
+    "en": "Sound feet, steady hearts, long miles.",
+    "ru": "Крепкие копыта, ровное сердце, долгие вёрсты."
+   }
+  },
+  {
+   "id": "service",
+   "name": {
+    "en": "Service and therapy",
+    "ru": "Служба и терапия"
+   },
+   "lede": {
+    "en": "Calm minds for patients, children and public work.",
+    "ru": "Спокойный нрав для пациентов, детей и общественной службы."
+   }
+  },
+  {
+   "id": "companion",
+   "name": {
+    "en": "Companions and retirees",
+    "ru": "Компаньоны и пенсионеры"
+   },
+   "lede": {
+    "en": "A friend in the field. Some work is finished; friendship is not.",
+    "ru": "Друг на пастбище. Работа закончилась, дружба нет."
+   }
+  }
+ ],
+ "tack_categories": [
+  {
+   "id": "bridles",
+   "name": {
+    "en": "Bitless bridles",
+    "ru": "Безудильные оголовья"
+   }
+  },
+  {
+   "id": "saddlery",
+   "name": {
+    "en": "Saddles and pads",
+    "ru": "Сёдла и вальтрапы"
+   }
+  },
+  {
+   "id": "harness",
+   "name": {
+    "en": "Driving harness",
+    "ru": "Упряжь"
+   }
+  },
+  {
+   "id": "care",
+   "name": {
+    "en": "Rugs, hooves and care",
+    "ru": "Попоны, копыта и уход"
+   }
+  },
+  {
+   "id": "road",
+   "name": {
+    "en": "Road equipment",
+    "ru": "Дорожное снаряжение"
+   }
+  }
+ ],
+ "brands": [
+  {
+   "id": "hrafnsey",
+   "name": "Hrafnsey Saddlery",
+   "since": 1891,
+   "line": {
+    "en": "Saddles shaped to the back, not the catalogue.",
+    "ru": "Сёдла по спине, а не по каталогу."
+   }
+  },
+  {
+   "id": "loughree",
+   "name": "Lough Ree Bridleworks",
+   "since": 1903,
+   "line": {
+    "en": "Broad, soft, and released the instant you let go.",
+    "ru": "Широко, мягко и отпускает, как только отпускаете вы."
+   }
+  },
+  {
+   "id": "storvegur",
+   "name": "Stórvegur Harness Works",
+   "since": 1889,
+   "line": {
+    "en": "Harness for the long road since the Tack Inspection Reform.",
+    "ru": "Упряжь для долгой дороги со времён Реформы досмотра амуниции."
+   }
+  },
+  {
+   "id": "merrow",
+   "name": "Merrow & Thane",
+   "since": 1932,
+   "line": {
+    "en": "Rugs and care for a wet, windy country.",
+    "ru": "Попоны и уход для мокрой и ветреной страны."
+   }
+  },
+  {
+   "id": "ashlake",
+   "name": "Ashlake Hoofcraft",
+   "since": 1978,
+   "line": {
+    "en": "For feet that carry everything.",
+    "ru": "Для копыт, которые несут всё."
+   }
+  },
+  {
+   "id": "vellmark",
+   "name": "Vellmark Stud",
+   "since": 1921,
+   "line": {
+    "en": "Driving horses bred for patience.",
+    "ru": "Упряжные лошади, выведенные ради терпения."
+   }
+  },
+  {
+   "id": "hollin",
+   "name": "Hollin Stud",
+   "since": 1958,
+   "line": {
+    "en": "Light riding horses from the lake country.",
+    "ru": "Лёгкие верховые лошади из озёрного края."
+   }
+  },
+  {
+   "id": "sennory",
+   "name": "Sennory Stud",
+   "since": 1986,
+   "line": {
+    "en": "Endurance lines, measured in miles and in years.",
+    "ru": "Линии для пробегов, измеренные вёрстами и годами."
+   }
+  },
+  {
+   "id": "rehoming",
+   "name": "Imperial Equid Rehoming Office",
+   "since": 1889,
+   "line": {
+    "en": "The state finds a home for every horse it is given.",
+    "ru": "Государство находит дом каждой лошади, которую ему доверили."
+   }
+  }
+ ],
+ "horses": [
+  {
+   "id": "ailbhe",
+   "name": "Ailbhe",
+   "discipline": "leisure",
+   "sex": {
+    "en": "mare",
+    "ru": "кобыла"
+   },
+   "age": 9,
+   "height_cm": 152,
+   "breed": {
+    "en": "Shannon Cob",
+    "ru": "Шаннонский коб"
+   },
+   "coat": {
+    "en": "bay, white blaze",
+    "ru": "гнедая, проточина"
+   },
+   "price": 3400,
+   "seller": "hollin",
+   "passport": "HG-HOL-21400",
+   "work_certificate": "B",
+   "temperament": {
+    "calm": 5,
+    "curiosity": 3,
+    "sensitivity": 2,
+    "energy": 2
+   },
+   "fits": [
+    {
+     "en": "A first horse of your own",
+     "ru": "Ваша первая собственная лошадь"
+    },
+    {
+     "en": "Lanes, beaches and long walks",
+     "ru": "Просёлки, пляжи и долгие шаги"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Fast competitive work",
+     "ru": "Быстрая соревновательная работа"
+    }
+   ],
+   "tagline": {
+    "en": "The one who waits for you at the gate.",
+    "ru": "Та, кто ждёт вас у калитки."
+   },
+   "story": {
+    "en": "Ailbhe has carried two families' children on lake roads and has never once been in a hurry. She stands for the farrier, loads first time and likes company more than grass.",
+    "ru": "Альве возила детей двух семей по озёрным дорогам и ни разу никуда не спешила. Спокойно стоит у кузнеца, заходит в коневоз с первого раза и любит компанию больше, чем траву."
+   },
+   "training": [
+    {
+     "en": "Ridden in a sidepull, walk–trot–canter",
+     "ru": "Под седлом в сайдпулле: шаг, рысь, галоп"
+    },
+    {
+     "en": "Traffic-steady on lanes",
+     "ru": "Спокойна на дорогах"
+    }
+   ],
+   "health": [
+    {
+     "en": "Teeth checked this spring",
+     "ru": "Зубы проверены этой весной"
+    },
+    {
+     "en": "Barefoot, sound",
+     "ru": "Без подков, здорова"
+    }
+   ],
+   "images": [],
+   "tone": "#6B3A22"
+  },
+  {
+   "id": "tadhg",
+   "name": "Tadhg",
+   "discipline": "leisure",
+   "sex": {
+    "en": "gelding",
+    "ru": "мерин"
+   },
+   "age": 12,
+   "height_cm": 158,
+   "breed": {
+    "en": "Shannon Cob",
+    "ru": "Шаннонский коб"
+   },
+   "coat": {
+    "en": "piebald",
+    "ru": "пегий"
+   },
+   "price": 2900,
+   "seller": "rehoming",
+   "passport": "HG-REH-21573",
+   "work_certificate": "B",
+   "temperament": {
+    "calm": 4,
+    "curiosity": 4,
+    "sensitivity": 3,
+    "energy": 3
+   },
+   "fits": [
+    {
+     "en": "Riders returning after a break",
+     "ru": "Всадников, возвращающихся после перерыва"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "A rider who wants a project",
+     "ru": "Того, кому нужен «проект»"
+    }
+   ],
+   "tagline": {
+    "en": "Twelve years of good manners, ready for a thirteenth.",
+    "ru": "Двенадцать лет хороших манер, готов к тринадцатому."
+   },
+   "story": {
+    "en": "Tadhg came to the Rehoming Office when his owner moved abroad. He knows the lanes, likes a routine and will tell you, politely, when he would rather walk.",
+    "ru": "Тадг попал в Офис пристройства, когда его хозяйка уехала за границу. Знает дороги, любит распорядок и вежливо даёт понять, когда предпочёл бы шаг."
+   },
+   "training": [
+    {
+     "en": "Ridden bitless for eight years",
+     "ru": "Восемь лет под безудильным оголовьем"
+    }
+   ],
+   "health": [
+    {
+     "en": "Mild sweet itch, managed with a fly rug",
+     "ru": "Лёгкий летний дерматит, решается сеткой от мошки"
+    }
+   ],
+   "images": [],
+   "tone": "#3B3B3B"
+  },
+  {
+   "id": "brannagh",
+   "name": "Brannagh",
+   "discipline": "driving",
+   "sex": {
+    "en": "mare",
+    "ru": "кобыла"
+   },
+   "age": 8,
+   "height_cm": 168,
+   "breed": {
+    "en": "Midland Draught",
+    "ru": "Мидлендский тяжеловоз"
+   },
+   "coat": {
+    "en": "dark bay",
+    "ru": "тёмно-гнедая"
+   },
+   "price": 5200,
+   "seller": "vellmark",
+   "passport": "HG-VEL-21746",
+   "work_certificate": "A",
+   "temperament": {
+    "calm": 5,
+    "curiosity": 2,
+    "sensitivity": 2,
+    "energy": 3
+   },
+   "fits": [
+    {
+     "en": "Single driving on public roads",
+     "ru": "Одиночную езду в упряжи по дорогам общего пользования"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "A small paddock without a companion",
+     "ru": "Маленькую леваду без компании"
+    }
+   ],
+   "tagline": {
+    "en": "Steady at the shaft, kind in the stable.",
+    "ru": "Ровная в оглоблях, добрая в конюшне."
+   },
+   "story": {
+    "en": "Bred at Vellmark for patience. Brannagh holds a class A road and work certificate and is happy in town traffic, at crossings and beside the post carriages.",
+    "ru": "Выведена в Велмарке ради терпения. У Браннах дорожно-рабочее свидетельство класса А, она спокойна в городском движении, на переездах и рядом с почтовыми каретами."
+   },
+   "training": [
+    {
+     "en": "Single and pair driving",
+     "ru": "Одиночная и парная упряжь"
+    },
+    {
+     "en": "Road-status marked: ordinary",
+     "ru": "Дорожный статус: обычная"
+    }
+   ],
+   "health": [
+    {
+     "en": "Shod in front for road work",
+     "ru": "Подкована спереди для дорожной работы"
+    }
+   ],
+   "images": [],
+   "tone": "#3A2116"
+  },
+  {
+   "id": "cormac",
+   "name": "Cormac",
+   "discipline": "driving",
+   "sex": {
+    "en": "gelding",
+    "ru": "мерин"
+   },
+   "age": 11,
+   "height_cm": 172,
+   "breed": {
+    "en": "Midland Draught",
+    "ru": "Мидлендский тяжеловоз"
+   },
+   "coat": {
+    "en": "grey",
+    "ru": "серый"
+   },
+   "price": 4800,
+   "seller": "vellmark",
+   "passport": "HG-VEL-21919",
+   "work_certificate": "A",
+   "temperament": {
+    "calm": 4,
+    "curiosity": 3,
+    "sensitivity": 2,
+    "energy": 3
+   },
+   "fits": [
+    {
+     "en": "Market carts and family carriages",
+     "ru": "Рыночные повозки и семейные экипажи"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Riders looking for speed",
+     "ru": "Тех, кто ищет скорость"
+    }
+   ],
+   "tagline": {
+    "en": "Big, grey, unflappable.",
+    "ru": "Большой, серый, невозмутимый."
+   },
+   "story": {
+    "en": "Cormac drove a baker's cart for six years, which means he has seen every umbrella, dog and bicycle the town owns.",
+    "ru": "Кормак шесть лет возил хлебную повозку, а значит, видел каждый зонтик, собаку и велосипед в городе."
+   },
+   "training": [
+    {
+     "en": "Single driving, light farm work",
+     "ru": "Одиночная упряжь, лёгкие хозяйственные работы"
+    }
+   ],
+   "health": [
+    {
+     "en": "Clean vetting, early arthritis watch",
+     "ru": "Чистая ветпроверка, наблюдение за ранним артритом"
+    }
+   ],
+   "images": [],
+   "tone": "#8E9196"
+  },
+  {
+   "id": "saoirse",
+   "name": "Saoirse",
+   "discipline": "dressage",
+   "sex": {
+    "en": "mare",
+    "ru": "кобыла"
+   },
+   "age": 7,
+   "height_cm": 166,
+   "breed": {
+    "en": "Hrossagrith Warmblood",
+    "ru": "Хроссагридская тёплокровная"
+   },
+   "coat": {
+    "en": "chestnut",
+    "ru": "рыжая"
+   },
+   "price": 7900,
+   "seller": "hollin",
+   "passport": "HG-HOL-22092",
+   "work_certificate": "B",
+   "temperament": {
+    "calm": 3,
+    "curiosity": 5,
+    "sensitivity": 4,
+    "energy": 4
+   },
+   "fits": [
+    {
+     "en": "A rider who enjoys fine aids",
+     "ru": "Всадника, которому нравятся тонкие средства управления"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Heavy hands",
+     "ru": "Тяжёлые руки"
+    }
+   ],
+   "tagline": {
+    "en": "Light as a thought.",
+    "ru": "Лёгкая, как мысль."
+   },
+   "story": {
+    "en": "Started bitless from the beginning, Saoirse has never worn metal in her mouth. She moves from the back, listens to the seat and dislikes being rushed.",
+    "ru": "Сирша с самого начала заезжена без удил и ни разу не знала металла во рту. Двигается от спины, слушает посадку и не любит, когда её торопят."
+   },
+   "training": [
+    {
+     "en": "Elementary bitless dressage",
+     "ru": "Начальная выездка без удил"
+    },
+    {
+     "en": "Lateral work begun",
+     "ru": "Начаты боковые движения"
+    }
+   ],
+   "health": [
+    {
+     "en": "Sound, barefoot behind",
+     "ru": "Здорова, сзади без подков"
+    }
+   ],
+   "images": [],
+   "tone": "#9A4B22"
+  },
+  {
+   "id": "fionn",
+   "name": "Fionn",
+   "discipline": "dressage",
+   "sex": {
+    "en": "gelding",
+    "ru": "мерин"
+   },
+   "age": 10,
+   "height_cm": 170,
+   "breed": {
+    "en": "Hrossagrith Warmblood",
+    "ru": "Хроссагридская тёплокровная"
+   },
+   "coat": {
+    "en": "black",
+    "ru": "вороной"
+   },
+   "price": 6900,
+   "seller": "hollin",
+   "passport": "HG-HOL-22265",
+   "work_certificate": "B",
+   "temperament": {
+    "calm": 4,
+    "curiosity": 4,
+    "sensitivity": 3,
+    "energy": 3
+   },
+   "fits": [
+    {
+     "en": "Learning collection without force",
+     "ru": "Учиться сбору без силы"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Riders who want quick results",
+     "ru": "Тех, кому нужен быстрый результат"
+    }
+   ],
+   "tagline": {
+    "en": "A teacher in a black coat.",
+    "ru": "Учитель в вороной шубе."
+   },
+   "story": {
+    "en": "Fionn has taught three riders their first shoulder-in. He waits for the rider to find balance, and he says so when they lose it.",
+    "ru": "Финн научил трёх всадников первому плечу внутрь. Ждёт, пока всадник найдёт баланс, и даёт знать, когда тот его теряет."
+   },
+   "training": [
+    {
+     "en": "Medium-level bitless dressage",
+     "ru": "Средний уровень выездки без удил"
+    }
+   ],
+   "health": [
+    {
+     "en": "Saddle-fit checked twice a year",
+     "ru": "Подгонка седла дважды в год"
+    }
+   ],
+   "images": [],
+   "tone": "#1C1C1E"
+  },
+  {
+   "id": "niamh",
+   "name": "Niamh",
+   "discipline": "endurance",
+   "sex": {
+    "en": "mare",
+    "ru": "кобыла"
+   },
+   "age": 9,
+   "height_cm": 152,
+   "breed": {
+    "en": "Sennory Arab cross",
+    "ru": "Сеннорийская помесь араба"
+   },
+   "coat": {
+    "en": "flea-bitten grey",
+    "ru": "серая в гречку"
+   },
+   "price": 5600,
+   "seller": "sennory",
+   "passport": "HG-SEN-22438",
+   "work_certificate": "B",
+   "temperament": {
+    "calm": 3,
+    "curiosity": 5,
+    "sensitivity": 4,
+    "energy": 5
+   },
+   "fits": [
+    {
+     "en": "Long distance and trail riding",
+     "ru": "Дистанционные пробеги и тропы"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Short arena sessions",
+     "ru": "Короткие занятия в манеже"
+    }
+   ],
+   "tagline": {
+    "en": "Forty kilometres and still curious.",
+    "ru": "Сорок километров и всё ещё любопытно."
+   },
+   "story": {
+    "en": "Niamh comes from Sennory's distance line. Her heart rate drops fast after work, which is what an endurance vet wants to see.",
+    "ru": "Нив из дистанционной линии Сеннори. Пульс после нагрузки падает быстро, а именно это хочет видеть ветеринар на пробеге."
+   },
+   "training": [
+    {
+     "en": "Completed four 40 km rides",
+     "ru": "Четыре пробега по 40 км"
+    }
+   ],
+   "health": [
+    {
+     "en": "Excellent recovery heart rate",
+     "ru": "Отличное восстановление пульса"
+    }
+   ],
+   "images": [],
+   "tone": "#A7A39B"
+  },
+  {
+   "id": "oisin",
+   "name": "Oisín",
+   "discipline": "endurance",
+   "sex": {
+    "en": "gelding",
+    "ru": "мерин"
+   },
+   "age": 13,
+   "height_cm": 150,
+   "breed": {
+    "en": "Sennory Arab cross",
+    "ru": "Сеннорийская помесь араба"
+   },
+   "coat": {
+    "en": "bay roan",
+    "ru": "гнедо-чалый"
+   },
+   "price": 4200,
+   "seller": "sennory",
+   "passport": "HG-SEN-22611",
+   "work_certificate": "B",
+   "temperament": {
+    "calm": 4,
+    "curiosity": 4,
+    "sensitivity": 3,
+    "energy": 4
+   },
+   "fits": [
+    {
+     "en": "Trail riding on rough ground",
+     "ru": "Езду по тропам на пересечённой местности"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "A rider under 16 alone",
+     "ru": "Всадника младше 16 без сопровождения"
+    }
+   ],
+   "tagline": {
+    "en": "Sure-footed where the map runs out.",
+    "ru": "Уверенная нога там, где кончается карта."
+   },
+   "story": {
+    "en": "Oisín has crossed every bog road in the midlands. He reads ground better than most riders read maps.",
+    "ru": "Ойшин прошёл все болотные дороги Мидлендса. Читает землю лучше, чем многие всадники читают карты."
+   },
+   "training": [
+    {
+     "en": "Trail and endurance",
+     "ru": "Тропы и пробеги"
+    }
+   ],
+   "health": [
+    {
+     "en": "Hoof boots for stony routes",
+     "ru": "Копытные ботинки для каменистых маршрутов"
+    }
+   ],
+   "images": [],
+   "tone": "#6E4B3A"
+  },
+  {
+   "id": "muireann",
+   "name": "Muireann",
+   "discipline": "service",
+   "sex": {
+    "en": "mare",
+    "ru": "кобыла"
+   },
+   "age": 14,
+   "height_cm": 140,
+   "breed": {
+    "en": "Lough Ree Pony",
+    "ru": "Пони Лох-Ри"
+   },
+   "coat": {
+    "en": "dun",
+    "ru": "буланая"
+   },
+   "price": 3100,
+   "seller": "rehoming",
+   "passport": "HG-REH-22784",
+   "work_certificate": "C",
+   "temperament": {
+    "calm": 5,
+    "curiosity": 3,
+    "sensitivity": 2,
+    "energy": 1
+   },
+   "fits": [
+    {
+     "en": "Riding for disabled riders",
+     "ru": "Иппотерапию и езду для всадников с инвалидностью"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Hard work or long hours",
+     "ru": "Тяжёлую работу и долгие часы"
+    }
+   ],
+   "tagline": {
+    "en": "Patience you can lean on.",
+    "ru": "Терпение, на которое можно опереться."
+   },
+   "story": {
+    "en": "Muireann worked five years in a therapy programme. Wheelchairs, hoists and shouting children are ordinary to her; she stands still until you are ready.",
+    "ru": "Мюррен пять лет работала в программе иппотерапии. Коляски, подъёмники и шумные дети для неё обычное дело; она стоит, пока вы не будете готовы."
+   },
+   "training": [
+    {
+     "en": "Service equid standard: therapy",
+     "ru": "Стандарт служебных непарнокопытных: терапия"
+    }
+   ],
+   "health": [
+    {
+     "en": "Annual dental and lameness checks",
+     "ru": "Ежегодные проверки зубов и хромоты"
+    }
+   ],
+   "images": [],
+   "tone": "#B08D57"
+  },
+  {
+   "id": "cian",
+   "name": "Cian",
+   "discipline": "service",
+   "sex": {
+    "en": "gelding",
+    "ru": "мерин"
+   },
+   "age": 10,
+   "height_cm": 164,
+   "breed": {
+    "en": "Shannon Cob",
+    "ru": "Шаннонский коб"
+   },
+   "coat": {
+    "en": "bay",
+    "ru": "гнедой"
+   },
+   "price": 4400,
+   "seller": "vellmark",
+   "passport": "HG-VEL-22957",
+   "work_certificate": "A",
+   "temperament": {
+    "calm": 5,
+    "curiosity": 3,
+    "sensitivity": 2,
+    "energy": 3
+   },
+   "fits": [
+    {
+     "en": "Public service work and parades",
+     "ru": "Общественную службу и шествия"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Isolation from other horses",
+     "ru": "Жизнь без других лошадей"
+    }
+   ],
+   "tagline": {
+    "en": "Calm in a crowd.",
+    "ru": "Спокоен в толпе."
+   },
+   "story": {
+    "en": "Cian passed the service equid selection on the first attempt: noise, crowds, flags and drums leave him curious rather than afraid.",
+    "ru": "Киан прошёл отбор служебных непарнокопытных с первой попытки: шум, толпа, флаги и барабаны вызывают у него любопытство, а не страх."
+   },
+   "training": [
+    {
+     "en": "Mounted service basic course",
+     "ru": "Базовый курс конной службы"
+    }
+   ],
+   "health": [
+    {
+     "en": "Full vetting, clean",
+     "ru": "Полная ветпроверка, чисто"
+    }
+   ],
+   "images": [],
+   "tone": "#5C3220"
+  },
+  {
+   "id": "aoife",
+   "name": "Aoife",
+   "discipline": "companion",
+   "sex": {
+    "en": "jenny",
+    "ru": "ослица"
+   },
+   "age": 16,
+   "height_cm": 118,
+   "breed": {
+    "en": "Midland Donkey",
+    "ru": "Мидлендский осёл"
+   },
+   "coat": {
+    "en": "grey-dun",
+    "ru": "серо-буланая"
+   },
+   "price": 900,
+   "seller": "rehoming",
+   "passport": "HG-REH-23130",
+   "work_certificate": "C",
+   "temperament": {
+    "calm": 5,
+    "curiosity": 5,
+    "sensitivity": 2,
+    "energy": 2
+   },
+   "fits": [
+    {
+     "en": "A companion for a single horse",
+     "ru": "Компаньона для одинокой лошади"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Lush grass without a track system",
+     "ru": "Сочную траву без системы троп"
+    }
+   ],
+   "tagline": {
+    "en": "Every horse should have one friend.",
+    "ru": "У каждой лошади должен быть друг."
+   },
+   "story": {
+    "en": "Aoife lived twelve years beside a retired driving horse. She is the reason he never fretted at the gate.",
+    "ru": "Ифа двенадцать лет жила рядом с упряжным пенсионером. Это из-за неё он никогда не нервничал у калитки."
+   },
+   "training": [
+    {
+     "en": "Leads and ties quietly",
+     "ru": "Спокойно водится и стоит на привязи"
+    }
+   ],
+   "health": [
+    {
+     "en": "Laminitis-prone: restricted grazing",
+     "ru": "Склонна к ламиниту: ограниченный выпас"
+    }
+   ],
+   "images": [],
+   "tone": "#8A8277"
+  },
+  {
+   "id": "ruadhan",
+   "name": "Ruadhán",
+   "discipline": "companion",
+   "sex": {
+    "en": "gelding",
+    "ru": "мерин"
+   },
+   "age": 22,
+   "height_cm": 162,
+   "breed": {
+    "en": "Shannon Cob",
+    "ru": "Шаннонский коб"
+   },
+   "coat": {
+    "en": "chestnut, white socks",
+    "ru": "рыжий, белые носки"
+   },
+   "price": 400,
+   "seller": "rehoming",
+   "passport": "HG-REH-23303",
+   "work_certificate": "C",
+   "temperament": {
+    "calm": 5,
+    "curiosity": 3,
+    "sensitivity": 2,
+    "energy": 1
+   },
+   "fits": [
+    {
+     "en": "A quiet field and light grooming",
+     "ru": "Тихое пастбище и лёгкую чистку"
+    }
+   ],
+   "not_for": [
+    {
+     "en": "Ridden work",
+     "ru": "Работу под седлом"
+    }
+   ],
+   "tagline": {
+    "en": "Retired with honours. Still excellent company.",
+    "ru": "На пенсии с почестями. По-прежнему отличная компания."
+   },
+   "story": {
+    "en": "Ruadhán drove the mail for fourteen years. He is retired from work, not from being loved.",
+    "ru": "Руадан четырнадцать лет возил почту. Он ушёл на пенсию с работы, а не из любви."
+   },
+   "training": [
+    {
+     "en": "Retired: no ridden or driven work",
+     "ru": "На пенсии: без работы под седлом и в упряжи"
+    }
+   ],
+   "health": [
+    {
+     "en": "Managed arthritis, twice-yearly vet review",
+     "ru": "Артрит под контролем, осмотр дважды в год"
+    }
+   ],
+   "images": [],
+   "tone": "#A35A2C"
+  }
+ ],
+ "tack": [
+  {
+   "id": "calla",
+   "name": "Calla Sidepull",
+   "brand": "loughree",
+   "category": "bridles",
+   "price": 240,
+   "tagline": {
+    "en": "Thirty-eight millimetres of padded leather. Nothing in the mouth.",
+    "ru": "Тридцать восемь миллиметров мягкой кожи. Ничего во рту."
+   },
+   "story": {
+    "en": "Calla puts a broad, padded noseband on the nasal bone and lets go the moment you do. The reins ring at the side, so the signal is lateral and clear.",
+    "ru": "Калла кладёт широкий мягкий носовой ремень на носовую кость и отпускает, как только отпускаете вы. Кольца для повода по бокам: сигнал боковой и ясный."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Noseband width",
+      "ru": "Ширина носового ремня"
+     },
+     "v": "38 mm",
+     "rule": {
+      "en": "min. 32 mm (Schedule, Art. 5)",
+      "ru": "мин. 32 мм (Регламент, ст. 5)"
+     }
+    },
+    {
+     "k": {
+      "en": "Release",
+      "ru": "Отпускание"
+     },
+     "v": {
+      "en": "immediate, no leverage",
+      "ru": "немедленное, без рычага"
+     },
+     "rule": {
+      "en": "Tack Code, Art. 28",
+      "ru": "Кодекс амуниции, ст. 28"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "size",
+     "name": {
+      "en": "Size",
+      "ru": "Размер"
+     },
+     "values": [
+      {
+       "id": "pony",
+       "name": {
+        "en": "Pony",
+        "ru": "Пони"
+       },
+       "delta": 0
+      },
+      {
+       "id": "cob",
+       "name": {
+        "en": "Cob",
+        "ru": "Коб"
+       },
+       "delta": 0
+      },
+      {
+       "id": "full",
+       "name": {
+        "en": "Full",
+        "ru": "Полный"
+       },
+       "delta": 10
+      }
+     ]
+    },
+    {
+     "id": "colour",
+     "name": {
+      "en": "Finish",
+      "ru": "Отделка"
+     },
+     "values": [
+      {
+       "id": "havana",
+       "name": {
+        "en": "Havana",
+        "ru": "Гавана"
+       },
+       "delta": 0
+      },
+      {
+       "id": "black",
+       "name": {
+        "en": "Black",
+        "ru": "Чёрная"
+       },
+       "delta": 0
+      },
+      {
+       "id": "oak",
+       "name": {
+        "en": "Oakbark",
+        "ru": "Дубовая кора"
+       },
+       "delta": 15
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-B-2207",
+   "fits": [
+    {
+     "en": "Riding, leisure and dressage",
+     "ru": "Езда, прогулки и выездка"
+    }
+   ],
+   "images": [],
+   "tone": "#5A3A26"
+  },
+  {
+   "id": "eske",
+   "name": "Eske Soft Bosal",
+   "brand": "loughree",
+   "category": "bridles",
+   "price": 280,
+   "tagline": {
+    "en": "The bosal, rebuilt without rawhide.",
+    "ru": "Босал, пересобранный без сыромятной кожи."
+   },
+   "story": {
+    "en": "A flexible, padded nosepiece with no rigid core, certified for non-driving use under the Measurement Schedule.",
+    "ru": "Гибкий мягкий носовой ремень без жёсткого сердечника, сертифицирован для верховой езды по Регламенту обмеров."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Nosepiece",
+      "ru": "Носовая часть"
+     },
+     "v": {
+      "en": "flexible, padded, 40 mm",
+      "ru": "гибкая, мягкая, 40 мм"
+     },
+     "rule": {
+      "en": "rawhide prohibited (Schedule)",
+      "ru": "сыромятная кожа запрещена (Регламент)"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "size",
+     "name": {
+      "en": "Size",
+      "ru": "Размер"
+     },
+     "values": [
+      {
+       "id": "pony",
+       "name": {
+        "en": "Pony",
+        "ru": "Пони"
+       },
+       "delta": 0
+      },
+      {
+       "id": "cob",
+       "name": {
+        "en": "Cob",
+        "ru": "Коб"
+       },
+       "delta": 0
+      },
+      {
+       "id": "full",
+       "name": {
+        "en": "Full",
+        "ru": "Полный"
+       },
+       "delta": 10
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-B-2311",
+   "fits": [
+    {
+     "en": "Western and trail riding",
+     "ru": "Вестерн и езда по тропам"
+    }
+   ],
+   "images": [],
+   "tone": "#5A3A26"
+  },
+  {
+   "id": "rein-cordeo",
+   "name": "Ashlake Cordeo",
+   "brand": "ashlake",
+   "category": "bridles",
+   "price": 60,
+   "tagline": {
+    "en": "A ring around the neck. Trust around the rest.",
+    "ru": "Кольцо на шее. Доверие во всём остальном."
+   },
+   "story": {
+    "en": "A broad, soft neck ring for bridleless riding by trained pairs. Sold with a fitting guide and the Code's conditions of use.",
+    "ru": "Широкое мягкое шейное кольцо для езды без оголовья обученными парами. Продаётся с инструкцией по подгонке и условиями применения по Кодексу."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Contact",
+      "ru": "Контакт"
+     },
+     "v": {
+      "en": "broad rope, 22 mm, padded sleeve",
+      "ru": "широкий шнур 22 мм, мягкий чехол"
+     },
+     "rule": {
+      "en": "Tack Code, Art. 32",
+      "ru": "Кодекс амуниции, ст. 32"
+     }
+    }
+   ],
+   "options": [],
+   "standard": "ITS-C-1904",
+   "fits": [
+    {
+     "en": "Trained bridleless riding",
+     "ru": "Езду без оголовья обученных пар"
+    }
+   ],
+   "images": [],
+   "tone": "#5A3A26"
+  },
+  {
+   "id": "liffey-saddle",
+   "name": "Liffey Treeless Endurance",
+   "brand": "hrafnsey",
+   "category": "saddlery",
+   "price": 1450,
+   "tagline": {
+    "en": "Shaped to the back you actually have.",
+    "ru": "По форме спины, которая у вас на самом деле."
+   },
+   "story": {
+    "en": "A flexible-panel endurance saddle that follows the back over long miles. Fitting visit by a certified saddle fitter included.",
+    "ru": "Седло для пробегов с гибкими панелями, повторяющее спину на долгих дистанциях. Выезд сертифицированного седельщика для подгонки включён."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Fitting",
+      "ru": "Подгонка"
+     },
+     "v": {
+      "en": "included, on site",
+      "ru": "включена, на месте"
+     },
+     "rule": {
+      "en": "Tack Code, Art. 5 (duty of correct fit)",
+      "ru": "Кодекс амуниции, ст. 5 (обязанность правильной подгонки)"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "seat",
+     "name": {
+      "en": "Seat",
+      "ru": "Посадка"
+     },
+     "values": [
+      {
+       "id": "16",
+       "name": {
+        "en": "16 in",
+        "ru": "16 дюймов"
+       },
+       "delta": 0
+      },
+      {
+       "id": "17",
+       "name": {
+        "en": "17 in",
+        "ru": "17 дюймов"
+       },
+       "delta": 0
+      },
+      {
+       "id": "18",
+       "name": {
+        "en": "18 in",
+        "ru": "18 дюймов"
+       },
+       "delta": 40
+      }
+     ]
+    },
+    {
+     "id": "colour",
+     "name": {
+      "en": "Finish",
+      "ru": "Отделка"
+     },
+     "values": [
+      {
+       "id": "havana",
+       "name": {
+        "en": "Havana",
+        "ru": "Гавана"
+       },
+       "delta": 0
+      },
+      {
+       "id": "black",
+       "name": {
+        "en": "Black",
+        "ru": "Чёрная"
+       },
+       "delta": 0
+      },
+      {
+       "id": "oak",
+       "name": {
+        "en": "Oakbark",
+        "ru": "Дубовая кора"
+       },
+       "delta": 15
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-S-0815",
+   "fits": [
+    {
+     "en": "Endurance and trail",
+     "ru": "Пробеги и тропы"
+    }
+   ],
+   "images": [],
+   "tone": "#6A4630"
+  },
+  {
+   "id": "hollin-pad",
+   "name": "Hollin Wool Pad",
+   "brand": "hrafnsey",
+   "category": "saddlery",
+   "price": 120,
+   "tagline": {
+    "en": "Wool against the back. As it should be.",
+    "ru": "Шерсть к спине. Как и должно быть."
+   },
+   "story": {
+    "en": "A shaped pure-wool saddle pad that breathes and cushions without lifting the saddle off the back.",
+    "ru": "Анатомический вальтрап из чистой шерсти: дышит и смягчает, не поднимая седло со спины."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Material",
+      "ru": "Материал"
+     },
+     "v": {
+      "en": "100 % wool",
+      "ru": "100 % шерсть"
+     },
+     "rule": {
+      "en": "—",
+      "ru": "—"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "size",
+     "name": {
+      "en": "Size",
+      "ru": "Размер"
+     },
+     "values": [
+      {
+       "id": "pony",
+       "name": {
+        "en": "Pony",
+        "ru": "Пони"
+       },
+       "delta": 0
+      },
+      {
+       "id": "cob",
+       "name": {
+        "en": "Cob",
+        "ru": "Коб"
+       },
+       "delta": 0
+      },
+      {
+       "id": "full",
+       "name": {
+        "en": "Full",
+        "ru": "Полный"
+       },
+       "delta": 10
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-S-1102",
+   "fits": [
+    {
+     "en": "All ridden work",
+     "ru": "Любую работу под седлом"
+    }
+   ],
+   "images": [],
+   "tone": "#6A4630"
+  },
+  {
+   "id": "storvegur-single",
+   "name": "Stórvegur Road Harness",
+   "brand": "storvegur",
+   "category": "harness",
+   "price": 1900,
+   "tagline": {
+    "en": "Built for the long road, measured for one horse.",
+    "ru": "Сделана для долгой дороги, измерена под одну лошадь."
+   },
+   "story": {
+    "en": "A single-horse road harness with a broad padded breastcollar, breeching and a lamp-and-marker mount that meets the Road and Driver Code.",
+    "ru": "Упряжь для одной лошади с широкой мягкой нагрудной шлеей, шлеёй-брюшником и креплением для фонаря и маркера по Кодексу дорог и возниц."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Breastcollar",
+      "ru": "Нагрудная шлея"
+     },
+     "v": "75 mm, padded",
+     "rule": {
+      "en": "broad, smooth, stable (Tack Code, Art. 38)",
+      "ru": "широкая, гладкая, устойчивая (Кодекс амуниции, ст. 38)"
+     }
+    },
+    {
+     "k": {
+      "en": "Curb straps",
+      "ru": "Подбородочные ремни"
+     },
+     "v": {
+      "en": "none",
+      "ru": "нет"
+     },
+     "rule": {
+      "en": "never chain (Schedule, Art. 5)",
+      "ru": "никогда не цепь (Регламент, ст. 5)"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "size",
+     "name": {
+      "en": "Size",
+      "ru": "Размер"
+     },
+     "values": [
+      {
+       "id": "pony",
+       "name": {
+        "en": "Pony",
+        "ru": "Пони"
+       },
+       "delta": 0
+      },
+      {
+       "id": "cob",
+       "name": {
+        "en": "Cob",
+        "ru": "Коб"
+       },
+       "delta": 0
+      },
+      {
+       "id": "full",
+       "name": {
+        "en": "Full",
+        "ru": "Полный"
+       },
+       "delta": 10
+      }
+     ]
+    },
+    {
+     "id": "colour",
+     "name": {
+      "en": "Finish",
+      "ru": "Отделка"
+     },
+     "values": [
+      {
+       "id": "havana",
+       "name": {
+        "en": "Havana",
+        "ru": "Гавана"
+       },
+       "delta": 0
+      },
+      {
+       "id": "black",
+       "name": {
+        "en": "Black",
+        "ru": "Чёрная"
+       },
+       "delta": 0
+      },
+      {
+       "id": "oak",
+       "name": {
+        "en": "Oakbark",
+        "ru": "Дубовая кора"
+       },
+       "delta": 15
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-H-3301",
+   "fits": [
+    {
+     "en": "Single driving on public roads",
+     "ru": "Одиночная упряжь на дорогах"
+    }
+   ],
+   "images": [],
+   "tone": "#2E2420"
+  },
+  {
+   "id": "merrow-rug",
+   "name": "Merrow Turnout Rug",
+   "brand": "merrow",
+   "category": "care",
+   "price": 210,
+   "tagline": {
+    "en": "For a wet, windy country.",
+    "ru": "Для мокрой и ветреной страны."
+   },
+   "story": {
+    "en": "A breathable turnout rug with a shoulder gusset, so the horse can still graze, roll and move freely.",
+    "ru": "Дышащая попона для левады со вставкой на плече: лошадь может пастись, валяться и свободно двигаться."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Fill",
+      "ru": "Наполнитель"
+     },
+     "v": "100 g",
+     "rule": {
+      "en": "—",
+      "ru": "—"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "length",
+     "name": {
+      "en": "Length",
+      "ru": "Длина"
+     },
+     "values": [
+      {
+       "id": "5-9",
+       "name": {
+        "en": "5 ft 9",
+        "ru": "175 см"
+       },
+       "delta": 0
+      },
+      {
+       "id": "6-3",
+       "name": {
+        "en": "6 ft 3",
+        "ru": "190 см"
+       },
+       "delta": 0
+      },
+      {
+       "id": "6-9",
+       "name": {
+        "en": "6 ft 9",
+        "ru": "205 см"
+       },
+       "delta": 20
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-R-0210",
+   "fits": [
+    {
+     "en": "Clipped or older horses in winter",
+     "ru": "Стриженых и пожилых лошадей зимой"
+    }
+   ],
+   "images": [],
+   "tone": "#2F4A44"
+  },
+  {
+   "id": "ashlake-boots",
+   "name": "Ashlake Trail Boots",
+   "brand": "ashlake",
+   "category": "care",
+   "price": 190,
+   "tagline": {
+    "en": "Barefoot where you can. Booted where you must.",
+    "ru": "Без подков, где можно. В ботинках, где нужно."
+   },
+   "story": {
+    "en": "Hoof boots for stony routes, fitted to measured hoof width and length. Sold in pairs.",
+    "ru": "Копытные ботинки для каменистых маршрутов, подбираются по ширине и длине копыта. Продаются парой."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Sizing",
+      "ru": "Размер"
+     },
+     "v": {
+      "en": "by hoof measurement",
+      "ru": "по обмеру копыта"
+     },
+     "rule": {
+      "en": "—",
+      "ru": "—"
+     }
+    }
+   ],
+   "options": [
+    {
+     "id": "size",
+     "name": {
+      "en": "Hoof size",
+      "ru": "Размер копыта"
+     },
+     "values": [
+      {
+       "id": "0",
+       "name": "0",
+       "delta": 0
+      },
+      {
+       "id": "1",
+       "name": "1",
+       "delta": 0
+      },
+      {
+       "id": "2",
+       "name": "2",
+       "delta": 0
+      },
+      {
+       "id": "3",
+       "name": "3",
+       "delta": 0
+      }
+     ]
+    }
+   ],
+   "standard": "ITS-C-0716",
+   "fits": [
+    {
+     "en": "Endurance and rough lanes",
+     "ru": "Пробеги и плохие дороги"
+    }
+   ],
+   "images": [],
+   "tone": "#2F4A44"
+  },
+  {
+   "id": "grith-marker",
+   "name": "Road-status Marker Set",
+   "brand": "storvegur",
+   "category": "road",
+   "price": 95,
+   "tagline": {
+    "en": "Tell the road who you are.",
+    "ru": "Скажите дороге, кто вы."
+   },
+   "story": {
+    "en": "A certified marker holder with ordinary and caution plates, as required by the Public-Road Equid Status Marking Standard.",
+    "ru": "Сертифицированный держатель маркера с табличками «обычная» и «осторожно», как требует Стандарт маркировки дорожного статуса."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Plates",
+      "ru": "Таблички"
+     },
+     "v": {
+      "en": "ordinary + caution",
+      "ru": "обычная + осторожно"
+     },
+     "rule": {
+      "en": "Marking Standard",
+      "ru": "Стандарт маркировки"
+     }
+    }
+   ],
+   "options": [],
+   "standard": "ITS-M-0101",
+   "fits": [
+    {
+     "en": "Any equid on a public road",
+     "ru": "Любое непарнокопытное на дороге общего пользования"
+    }
+   ],
+   "images": [],
+   "tone": "#7A6A2A"
+  },
+  {
+   "id": "ree-groom",
+   "name": "Ree Grooming Box",
+   "brand": "merrow",
+   "category": "care",
+   "price": 70,
+   "tagline": {
+    "en": "Twenty minutes a day, done properly.",
+    "ru": "Двадцать минут в день, как положено."
+   },
+   "story": {
+    "en": "Soft and firm brushes, a rubber curry, hoof pick and a mane comb in a box that survives a wet yard.",
+    "ru": "Мягкая и жёсткая щётки, резиновая скребница, крючок и гребень для гривы в коробке, которая переживёт мокрый двор."
+   },
+   "specs": [
+    {
+     "k": {
+      "en": "Contents",
+      "ru": "Состав"
+     },
+     "v": {
+      "en": "7 pieces",
+      "ru": "7 предметов"
+     },
+     "rule": {
+      "en": "—",
+      "ru": "—"
+     }
+    }
+   ],
+   "options": [],
+   "standard": "—",
+   "fits": [
+    {
+     "en": "Every horse",
+     "ru": "Каждую лошадь"
+    }
+   ],
+   "images": [],
+   "tone": "#2F4A44"
+  }
+ ]
+}

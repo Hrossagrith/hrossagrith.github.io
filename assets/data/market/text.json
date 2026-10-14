@@ -1,0 +1,458 @@
+{
+ "market_name": {
+  "en": "Hrossagrith Market",
+  "ru": "Рынок Хроссагрида"
+ },
+ "market_sub": {
+  "en": "The Imperial market for horses and tack",
+  "ru": "Имперский рынок лошадей и амуниции"
+ },
+ "nav_horses": {
+  "en": "Horses",
+  "ru": "Лошади"
+ },
+ "nav_tack": {
+  "en": "Tack",
+  "ru": "Амуниция"
+ },
+ "nav_match": {
+  "en": "Find a match",
+  "ru": "Подбор"
+ },
+ "nav_portal": {
+  "en": "State portal",
+  "ru": "Госпортал"
+ },
+ "lang_other": {
+  "en": "Русский",
+  "ru": "English"
+ },
+ "hero_kicker": {
+  "en": "Every horse with a passport. Every sale under the Welfare Code.",
+  "ru": "Каждая лошадь с паспортом. Каждая продажа по Кодексу благополучия."
+ },
+ "hero_title_a": {
+  "en": "Find the horse",
+  "ru": "Найдите лошадь,"
+ },
+ "hero_title_b": {
+  "en": "who fits your life.",
+  "ru": "которая подходит вашей жизни."
+ },
+ "hero_lede": {
+  "en": "Tell us three things about your days. We show you two horses who suit them, with their full record, their temperament and an honest list of what they are not for.",
+  "ru": "Расскажите о своих днях три вещи. Мы покажем двух лошадей, которые им подходят: с полной историей, характером и честным списком того, для чего они не годятся."
+ },
+ "cta_match": {
+  "en": "Find my match",
+  "ru": "Подобрать лошадь"
+ },
+ "cta_browse": {
+  "en": "Browse horses",
+  "ru": "Все лошади"
+ },
+ "stat_passport_v": {
+  "en": "100 %",
+  "ru": "100 %"
+ },
+ "stat_passport_k": {
+  "en": "of horses listed with their Passport and full disclosure",
+  "ru": "лошадей с паспортом и полным раскрытием"
+ },
+ "stat_days_v": {
+  "en": "14 days",
+  "ru": "14 дней"
+ },
+ "stat_days_k": {
+  "en": "to settle in, with the seller still answerable",
+  "ru": "на привыкание, продавец остаётся ответственным"
+ },
+ "stat_record_v": {
+  "en": "72 h",
+  "ru": "72 ч"
+ },
+ "stat_record_k": {
+  "en": "to enter the new owner in the central record",
+  "ru": "на запись нового владельца в центральный реестр"
+ },
+ "disc_title": {
+  "en": "What will you do together?",
+  "ru": "Чем вы будете заниматься вместе?"
+ },
+ "disc_lede": {
+  "en": "Six ways to share a life with a horse. Pick one; we keep the choice small.",
+  "ru": "Шесть способов разделить жизнь с лошадью. Выберите один: выбор будет небольшим."
+ },
+ "match_title": {
+  "en": "Two answers, not two hundred.",
+  "ru": "Два ответа, а не двести."
+ },
+ "match_lede": {
+  "en": "Three questions. Then the two horses that suit you best, side by side.",
+  "ru": "Три вопроса. Потом две лучше всего подходящие лошади рядом друг с другом."
+ },
+ "q_use": {
+  "en": "What will you mostly do?",
+  "ru": "Чем вы будете заниматься чаще всего?"
+ },
+ "q_exp": {
+  "en": "How much experience do you have?",
+  "ru": "Какой у вас опыт?"
+ },
+ "q_exp_new": {
+  "en": "New or returning",
+  "ru": "Новичок или возвращаюсь"
+ },
+ "q_exp_some": {
+  "en": "Some years",
+  "ru": "Несколько лет"
+ },
+ "q_exp_lots": {
+  "en": "A lifetime",
+  "ru": "Всю жизнь"
+ },
+ "q_pace": {
+  "en": "What pace suits you?",
+  "ru": "Какой темп вам ближе?"
+ },
+ "q_pace_calm": {
+  "en": "Calm and steady",
+  "ru": "Спокойный и ровный"
+ },
+ "q_pace_mid": {
+  "en": "Willing, not hot",
+  "ru": "Охотный, но не горячий"
+ },
+ "q_pace_keen": {
+  "en": "Keen and forward",
+  "ru": "Энергичный, вперёд"
+ },
+ "match_result": {
+  "en": "Your two matches",
+  "ru": "Ваши два варианта"
+ },
+ "match_again": {
+  "en": "Change answers",
+  "ru": "Изменить ответы"
+ },
+ "tack_title": {
+  "en": "Made to the Imperial Tack Standard.",
+  "ru": "Сделано по Имперскому стандарту амуниции."
+ },
+ "tack_lede": {
+  "en": "Nothing in the mouth. Everything measured. Each item carries its certification number.",
+  "ru": "Ничего во рту. Всё измерено. У каждого предмета свой номер сертификата."
+ },
+ "brands_title": {
+  "en": "Houses of the Empire",
+  "ru": "Дома империи"
+ },
+ "trust_title": {
+  "en": "Bought the way the law says a horse should change hands.",
+  "ru": "Покупка так, как закон велит передавать лошадь."
+ },
+ "trust_1_t": {
+  "en": "Full disclosure",
+  "ru": "Полное раскрытие"
+ },
+ "trust_1_d": {
+  "en": "Every known health, behaviour and work restriction, in plain words. Welfare Code, Art. 91.",
+  "ru": "Каждое известное ограничение по здоровью, поведению и работе простыми словами. Кодекс благополучия, ст. 91."
+ },
+ "trust_2_t": {
+  "en": "A short suitability check",
+  "ru": "Короткая проверка покупателя"
+ },
+ "trust_2_d": {
+  "en": "Three questions about where the horse will live and what you will do. Art. 92.",
+  "ru": "Три вопроса о том, где будет жить лошадь и чем вы будете заниматься. Ст. 92."
+ },
+ "trust_3_t": {
+  "en": "The Passport travels with the horse",
+  "ru": "Паспорт едет вместе с лошадью"
+ },
+ "trust_3_d": {
+  "en": "Records, medication and work history transfer with ownership. Art. 93.",
+  "ru": "История, лекарства и рабочая история переходят вместе с правом собственности. Ст. 93."
+ },
+ "points_title": {
+  "en": "Grith Points",
+  "ru": "Баллы Grið"
+ },
+ "points_lede": {
+  "en": "Every reservation earns points towards a free hoof-care visit. You start with two.",
+  "ru": "Каждое бронирование приносит баллы на бесплатный визит кузнеца. Два у вас уже есть."
+ },
+ "points_of": {
+  "en": "{n} of {m}",
+  "ru": "{n} из {m}"
+ },
+ "dept_horses": {
+  "en": "Horses",
+  "ru": "Лошади"
+ },
+ "dept_tack": {
+  "en": "Tack",
+  "ru": "Амуниция"
+ },
+ "all": {
+  "en": "All",
+  "ru": "Все"
+ },
+ "from": {
+  "en": "from",
+  "ru": "от"
+ },
+ "years": {
+  "en": "{n} years",
+  "ru": "{n} лет"
+ },
+ "hands": {
+  "en": "{cm} cm",
+  "ru": "{cm} см"
+ },
+ "view": {
+  "en": "View",
+  "ru": "Смотреть"
+ },
+ "compare": {
+  "en": "Compare",
+  "ru": "Сравнить"
+ },
+ "compare_pick": {
+  "en": "Pick two to compare",
+  "ru": "Выберите двух для сравнения"
+ },
+ "compare_clear": {
+  "en": "Clear",
+  "ru": "Сбросить"
+ },
+ "tab_exterior": {
+  "en": "Exterior",
+  "ru": "Экстерьер"
+ },
+ "tab_interior": {
+  "en": "Interior",
+  "ru": "Интерьер"
+ },
+ "tab_design": {
+  "en": "Design",
+  "ru": "Дизайн"
+ },
+ "tab_standard": {
+  "en": "Fit and standard",
+  "ru": "Подгонка и стандарт"
+ },
+ "ext_breed": {
+  "en": "Breed",
+  "ru": "Порода"
+ },
+ "ext_sex": {
+  "en": "Sex",
+  "ru": "Пол"
+ },
+ "ext_age": {
+  "en": "Age",
+  "ru": "Возраст"
+ },
+ "ext_height": {
+  "en": "Height",
+  "ru": "Рост в холке"
+ },
+ "ext_coat": {
+  "en": "Coat",
+  "ru": "Масть"
+ },
+ "int_temperament": {
+  "en": "Temperament",
+  "ru": "Характер"
+ },
+ "int_calm": {
+  "en": "Calm",
+  "ru": "Спокойствие"
+ },
+ "int_curiosity": {
+  "en": "Curiosity",
+  "ru": "Любопытство"
+ },
+ "int_sensitivity": {
+  "en": "Sensitivity",
+  "ru": "Чувствительность"
+ },
+ "int_energy": {
+  "en": "Energy",
+  "ru": "Энергия"
+ },
+ "int_training": {
+  "en": "Training",
+  "ru": "Подготовка"
+ },
+ "int_health": {
+  "en": "Health",
+  "ru": "Здоровье"
+ },
+ "passport": {
+  "en": "Passport",
+  "ru": "Паспорт"
+ },
+ "certificate": {
+  "en": "Road and work certificate",
+  "ru": "Дорожно-рабочее свидетельство"
+ },
+ "cert_class": {
+  "en": "class {c}",
+  "ru": "класс {c}"
+ },
+ "fits": {
+  "en": "Suits",
+  "ru": "Подходит для"
+ },
+ "not_for": {
+  "en": "Not for",
+  "ru": "Не подходит для"
+ },
+ "seller": {
+  "en": "Seller",
+  "ru": "Продавец"
+ },
+ "since": {
+  "en": "since {y}",
+  "ru": "с {y}"
+ },
+ "alternatives": {
+  "en": "Two others like this",
+  "ru": "Ещё два похожих"
+ },
+ "reserve": {
+  "en": "Reserve",
+  "ru": "Забронировать"
+ },
+ "reserve_sub": {
+  "en": "No payment now. Free to cancel.",
+  "ru": "Без оплаты сейчас. Отмена бесплатно."
+ },
+ "options": {
+  "en": "Options",
+  "ru": "Варианты"
+ },
+ "certified": {
+  "en": "Certified {n}",
+  "ru": "Сертификат {n}"
+ },
+ "rotate_hint": {
+  "en": "Drag to turn",
+  "ru": "Потяните, чтобы повернуть"
+ },
+ "photo_soon": {
+  "en": "Photographs coming soon",
+  "ru": "Фотографии скоро"
+ },
+ "sheet_title": {
+  "en": "Reserve {name}",
+  "ru": "Забронировать: {name}"
+ },
+ "check_lede": {
+  "en": "The law asks every seller to check where a horse is going. Three quick answers.",
+  "ru": "Закон требует от продавца проверить, куда едет лошадь. Три быстрых ответа."
+ },
+ "check_home": {
+  "en": "Where will the horse live?",
+  "ru": "Где будет жить лошадь?"
+ },
+ "check_home_a": {
+  "en": "Own land with shelter",
+  "ru": "Своя земля с укрытием"
+ },
+ "check_home_b": {
+  "en": "Livery yard",
+  "ru": "Пансион"
+ },
+ "check_home_c": {
+  "en": "Not arranged yet",
+  "ru": "Пока не решено"
+ },
+ "check_company": {
+  "en": "Will the horse have equine company?",
+  "ru": "Будет ли у лошади компания других непарнокопытных?"
+ },
+ "check_yes": {
+  "en": "Yes",
+  "ru": "Да"
+ },
+ "check_no": {
+  "en": "No",
+  "ru": "Нет"
+ },
+ "check_use": {
+  "en": "Intended use matches the listing?",
+  "ru": "Ваши цели совпадают с описанием?"
+ },
+ "check_ok": {
+  "en": "Ready. The seller will contact you to arrange a visit.",
+  "ru": "Готово. Продавец свяжется с вами, чтобы договориться о визите."
+ },
+ "check_hold": {
+  "en": "A horse needs equine company and a place arranged before the sale. The seller will help you plan both.",
+  "ru": "До продажи у лошади должны быть компания сородичей и место. Продавец поможет вам спланировать и то и другое."
+ },
+ "confirm": {
+  "en": "Confirm reservation",
+  "ru": "Подтвердить бронь"
+ },
+ "done_title": {
+  "en": "Reserved.",
+  "ru": "Забронировано."
+ },
+ "done_body": {
+  "en": "{name} is held for you for 7 days. You earned 3 Grith Points.",
+  "ru": "Бронь «{name}» за вами на 7 дней. Вы получили 3 балла Grið."
+ },
+ "done_add": {
+  "en": "Complete the set",
+  "ru": "Дополните комплект"
+ },
+ "close": {
+  "en": "Close",
+  "ru": "Закрыть"
+ },
+ "price_total": {
+  "en": "Total",
+  "ru": "Итого"
+ },
+ "disclaimer": {
+  "en": "This market is part of a worldbuilding project. Nothing here is for sale: the horses, brands, prices and reservations are fictional, no real animal changes hands, and no payment is ever taken. It is a game.",
+  "ru": "Этот рынок — часть проекта вымышленного мира. Здесь ничего не продаётся: лошади, бренды, цены и бронирования вымышлены, ни одно настоящее животное не меняет владельца, и оплата никогда не берётся. Это игра."
+ },
+ "currency_note": {
+  "en": "Prices in crowns, a provisional unit until the Empire's currency is written into the register.",
+  "ru": "Цены в кронах — условной единице, пока валюта империи не внесена в реестр."
+ },
+ "empty": {
+  "en": "Nothing here yet.",
+  "ru": "Здесь пока пусто."
+ },
+ "load_error": {
+  "en": "The market could not be loaded. Please reload the page.",
+  "ru": "Рынок не загрузился. Обновите страницу."
+ },
+ "skip": {
+  "en": "Skip to content",
+  "ru": "Перейти к содержанию"
+ },
+ "title_catalogue": {
+  "en": "Catalogue",
+  "ru": "Каталог"
+ },
+ "title_item": {
+  "en": "Listing",
+  "ru": "Объявление"
+ },
+ "founded": {
+  "en": "Founded",
+  "ru": "Основан"
+ },
+ "count_horses": {
+  "en": "{n} horses",
+  "ru": "Лошадей: {n}"
+ }
+}
