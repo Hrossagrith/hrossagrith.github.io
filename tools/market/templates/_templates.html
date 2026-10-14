@@ -1,10 +1,169 @@
-<template id="tpl-tile"><a class="mk-tile"><span class="mk-tile__glow" aria-hidden="true"></span><span class="mk-tile__name"></span><span class="mk-tile__lede"></span><span class="mk-tile__count"></span></a></template>
-<template id="tpl-card"><article class="mk-card"><a class="mk-card__link"><div class="mk-media"><div class="mk-media__ph" aria-hidden="true"></div></div><div class="mk-card__body"><p class="mk-card__kicker"></p><h3 class="mk-card__name"></h3><p class="mk-card__tag"></p><p class="mk-card__price"></p></div></a><label class="mk-card__compare"><input type="checkbox"><span></span></label></article></template>
-<template id="tpl-chip"><button class="mk-chip" type="button" aria-pressed="false"></button></template>
-<template id="tpl-brand"><li class="mk-brandcard"><span class="mk-brandcard__name"></span><span class="mk-brandcard__since"></span><span class="mk-brandcard__line"></span></li></template>
-<template id="tpl-row"><div class="mk-row"><dt></dt><dd></dd></div></template>
-<template id="tpl-bar"><div class="mk-meter"><span class="mk-meter__k"></span><span class="mk-meter__track"><span class="mk-meter__fill"></span></span></div></template>
-<template id="tpl-li"><li></li></template>
-<template id="tpl-spec"><tr><th scope="row"></th><td class="mk-spec__v"></td><td class="mk-spec__rule"></td></tr></template>
-<template id="tpl-opt"><fieldset class="mk-opt"><legend></legend><div class="mk-chips"></div></fieldset></template>
-<template id="tpl-cmp-col"><div class="mk-cmp__col"><p class="mk-cmp__name"></p><dl class="mk-rows"></dl></div></template>
+<template id="tpl-card">
+  <li class="mk-slot">
+    <a class="mk-card" data-href>
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+      <div class="mk-card__body">
+        <p class="mk-eyebrow" data-f="eyebrow"></p>
+        <h3 class="mk-card__name" data-f="name"></h3>
+        <p class="mk-card__line" data-f="line"></p>
+        <p class="mk-card__meta" data-f="meta"></p>
+        <p class="mk-card__price" data-f="price"></p>
+      </div>
+    </a>
+  </li>
+</template>
+
+<template id="tpl-tile">
+  <li class="mk-tiles__item">
+    <a class="mk-tile" data-href>
+      <span class="mk-tile__img" data-ph></span>
+      <span class="mk-tile__name" data-f="name"></span>
+      <span class="mk-tile__count" data-f="count"></span>
+    </a>
+  </li>
+</template>
+
+<template id="tpl-feature">
+  <li class="mk-slot">
+    <a class="mk-feature" data-href>
+      <span class="mk-eyebrow" data-f="eyebrow"></span>
+      <span class="mk-feature__title" data-f="name"></span>
+      <span class="mk-feature__line" data-f="line"></span>
+      <span class="mk-feature__ph" data-ph></span>
+    </a>
+  </li>
+</template>
+
+<template id="tpl-fgroup">
+  <details class="mk-fgroup" open>
+    <summary data-f="name"></summary>
+    <div class="mk-fgroup__body" data-body></div>
+  </details>
+</template>
+
+<template id="tpl-fcheck">
+  <label class="mk-fcheck"><input type="checkbox"><span data-f="name"></span><span class="mk-fcheck__count" data-f="count"></span></label>
+</template>
+
+<template id="tpl-frange">
+  <div class="mk-frange">
+    <label><span>{{t.range_from}}</span><input type="number" inputmode="numeric" min="0" data-min></label>
+    <label><span>{{t.range_to}}</span><input type="number" inputmode="numeric" min="0" data-max></label>
+  </div>
+</template>
+
+<template id="tpl-chip">
+  <li><button type="button" class="mk-chip"><span data-f="name"></span><span class="mk-chip__x" aria-hidden="true">×</span></button></li>
+</template>
+
+<template id="tpl-search-result">
+  <li><a class="mk-search__hit" data-href><span data-f="name"></span><span class="mk-muted" data-f="meta"></span></a></li>
+</template>
+
+<template id="tpl-highlight">
+  <li><strong data-f="value"></strong><span data-f="label"></span></li>
+</template>
+
+<template id="tpl-bar">
+  <li class="mk-bar">
+    <span class="mk-bar__label" data-f="label"></span>
+    <span class="mk-bar__track"><span class="mk-bar__fill" data-fill></span></span>
+    <span class="mk-bar__word" data-f="word"></span>
+  </li>
+</template>
+
+<template id="tpl-li">
+  <li></li>
+</template>
+
+<template id="tpl-link">
+  <li><a></a></li>
+</template>
+
+<template id="tpl-fact">
+  <div><dt data-f="k"></dt><dd data-f="v"></dd></div>
+</template>
+
+<template id="tpl-spec">
+  <tr><th scope="row" data-f="k"></th><td data-f="v"></td><td class="mk-muted" data-f="rule"></td></tr>
+</template>
+
+<template id="tpl-compare-col">
+  <div class="mk-compare__col">
+    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    <p class="mk-eyebrow" data-f="badge"></p>
+    <h3 data-f="name"></h3>
+    <p class="mk-compare__price" data-f="price"></p>
+    <dl class="mk-compare__rows" data-rows></dl>
+    <a class="mk-link" data-href>{{t.learn_more}}</a>
+  </div>
+</template>
+
+<template id="tpl-choice">
+  <label class="mk-opt">
+    <input type="radio">
+    <span class="mk-opt__name" data-f="name"></span>
+    <span class="mk-opt__line" data-f="line"></span>
+    <span class="mk-opt__price" data-f="price"></span>
+  </label>
+</template>
+
+<template id="tpl-option-group">
+  <fieldset class="mk-choice">
+    <legend data-f="name"></legend>
+    <div class="mk-choice__list" data-body></div>
+  </fieldset>
+</template>
+
+<template id="tpl-swatch">
+  <label class="mk-swatch"><input type="radio"><span class="mk-swatch__dot" data-dot></span><span class="mk-swatch__name" data-f="name"></span></label>
+</template>
+
+<template id="tpl-mode">
+  <button type="button" class="mk-seg__btn" role="tab" aria-selected="false"></button>
+</template>
+
+<template id="tpl-sellercard">
+  <div class="mk-sellercard__in">
+    <p class="mk-eyebrow" data-f="kind"></p>
+    <h2 class="mk-h2"><span data-f="name"></span> <span class="mk-muted" data-f="line"></span></h2>
+    <dl class="mk-facts mk-facts--row" data-facts></dl>
+    <a class="mk-link" data-href>{{t.seller_all}}</a>
+  </div>
+</template>
+
+<template id="tpl-seller-group">
+  <section class="mk-sgroup">
+    <h2 class="mk-h2"><span data-f="name"></span></h2>
+    <ul class="mk-sgrid" data-body></ul>
+  </section>
+</template>
+
+<template id="tpl-seller-tile">
+  <li><a class="mk-stile" data-href>
+    <span class="mk-stile__name" data-f="name"></span>
+    <span class="mk-stile__line" data-f="line"></span>
+    <span class="mk-stile__meta" data-f="meta"></span>
+  </a></li>
+</template>
+
+<template id="tpl-bag-line">
+  <li class="mk-bagline">
+    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    <div class="mk-bagline__info">
+      <h2><a data-href data-f="name"></a></h2>
+      <p class="mk-small" data-f="meta"></p>
+      <p class="mk-small" data-f="extra"></p>
+    </div>
+    <p class="mk-bagline__price" data-f="price"></p>
+    <button type="button" class="mk-textbtn" data-remove>{{t.remove}}</button>
+  </li>
+</template>
+
+<template id="tpl-row">
+  <div><dt data-f="k"></dt><dd data-f="v"></dd></div>
+</template>
+
+<template id="tpl-option">
+  <option></option>
+</template>

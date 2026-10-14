@@ -4,8 +4,9 @@
 Each page in tools/market/templates is wrapped in _layout.html, its {{t.key}}
 placeholders filled from assets/data/market/text.json for one language, and
 written to market/<page>/index.html (English) and ru/market/<page>/index.html
-(Russian). Dynamic content is rendered in the browser by assets/market.js from
-assets/data/market/catalog.json.
+(Russian). Listings are rendered in the browser by assets/market.js from
+assets/data/market/catalog.json, using the <template> elements in
+_templates.html.
 
 Usage: python3 tools/market/build.py
 """
@@ -23,12 +24,25 @@ LANGS = {
     "en": {"prefix": "", "html_lang": "en-GB", "portal": ""},
     "ru": {"prefix": "ru/", "html_lang": "ru", "portal": "ru/"},
 }
+# (template, output sub-path, title key, department passed to the page)
 PAGES = [
-    ("index", "", "market_sub"),
-    ("catalogue", "catalogue/", "title_catalogue"),
-    ("item", "item/", "title_item"),
+    ("index", "", "title_home", ""),
+    ("browse", "horses/", "title_horses", "horses"),
+    ("browse", "tack/", "title_tack", "tack"),
+    ("browse", "search/", "title_search", "all"),
+    ("item", "item/", "title_item", ""),
+    ("sellers", "sellers/", "title_sellers", ""),
+    ("seller", "seller/", "title_seller", ""),
+    ("bag", "bag/", "title_bag", ""),
 ]
 TOKEN = re.compile(r"\{\{\s*([\w.]+)\s*\}\}")
+
+
+def check_text():
+    for key, entry in TEXT.items():
+        missing = [lang for lang in LANGS if not entry.get(lang)]
+        if missing:
+            raise SystemExit("text key " + key + " has no " + ", ".join(missing))
 
 
 def fill(template, values, lang):
@@ -46,37 +60,37 @@ def fill(template, values, lang):
 
 
 def main():
+    check_text()
     layout = (TEMPLATES / "_layout.html").read_text(encoding="utf-8")
     templates = (TEMPLATES / "_templates.html").read_text(encoding="utf-8")
     written = 0
     for lang, spec in LANGS.items():
         other = "ru" if lang == "en" else "en"
-        for name, sub, title_key in PAGES:
+        for name, sub, title_key, dept in PAGES:
             rel = spec["prefix"] + "market/" + sub
-            depth = rel.count("/")
-            root = "../" * depth
+            root = "../" * rel.count("/")
             mroot = "../" * sub.count("/") if sub else "./"
             other_rel = LANGS[other]["prefix"] + "market/" + sub
             values = {
                 "lang": lang,
                 "other_lang": other,
                 "html_lang": spec["html_lang"],
+                "other_html_lang": LANGS[other]["html_lang"],
                 "root": root,
                 "mroot": mroot,
                 "page": name,
+                "dept": dept,
                 "self_path": rel,
                 "other_path": other_rel,
                 "other_href": root + other_rel,
                 "portal_href": root + spec["portal"],
                 "page_title": html.escape(TEXT[title_key][lang]),
             }
-            body = fill((TEMPLATES / (name + ".html")).read_text(encoding="utf-8"), values, lang)
-            values["content"] = body
-            values["templates"] = templates
-            page = fill(layout, values, lang)
+            values["content"] = fill((TEMPLATES / (name + ".html")).read_text(encoding="utf-8"), values, lang)
+            values["templates"] = fill(templates, values, lang)
             out = ROOT / rel / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
-            out.write_text(page, encoding="utf-8")
+            out.write_text(fill(layout, values, lang), encoding="utf-8")
             written += 1
     print("pages written:", written)
 

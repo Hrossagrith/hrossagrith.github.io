@@ -1,0 +1,79 @@
+<section class="mk-wrap mk-bag" data-bag-view>
+  <h1 class="mk-h1"><span data-bag-title></span></h1>
+  <p class="mk-lead" data-bag-sub></p>
+
+  <div class="mk-bag__empty" data-bag-empty hidden>
+    <p>{{t.bag_empty}}</p>
+    <p><a class="mk-btn" href="{{mroot}}horses/">{{t.nav_horses}}</a> <a class="mk-btn mk-btn--ghost" href="{{mroot}}tack/">{{t.nav_tack}}</a></p>
+  </div>
+
+  <div class="mk-bag__body" data-bag-body hidden>
+    <ul class="mk-bag__list" data-bag-list></ul>
+
+    <div class="mk-bag__points mk-card-plain">
+      <p class="mk-eyebrow">{{t.points_name}}</p>
+      <p data-points-line></p>
+      <div class="mk-meter"><span class="mk-meter__fill" data-points-fill></span></div>
+    </div>
+
+    <section class="mk-bag__recs" data-recs-wrap hidden>
+      <h2 class="mk-h2"><span data-recs-title></span> <span class="mk-muted">{{t.recs_sub}}</span></h2>
+      <ul class="mk-grid mk-grid--compact" data-recs></ul>
+    </section>
+
+    <form class="mk-check" data-check novalidate>
+      <section class="mk-check__step" data-suitability hidden>
+        <h2 class="mk-h2"><span>{{t.suit_title}}</span> <span class="mk-muted">{{t.suit_sub}}</span></h2>
+        <fieldset class="mk-q">
+          <legend>{{t.suit_company}}</legend>
+          <label class="mk-radio"><input type="radio" name="company" value="yes" required> <span>{{t.suit_company_yes}}</span></label>
+          <label class="mk-radio"><input type="radio" name="company" value="arranging"> <span>{{t.suit_company_arranging}}</span></label>
+          <label class="mk-radio"><input type="radio" name="company" value="no"> <span>{{t.suit_company_no}}</span></label>
+          <p class="mk-small"><a href="{{portal_href}}gov/law/welfare/#art-39">{{t.law_art39}}</a></p>
+        </fieldset>
+        <fieldset class="mk-q">
+          <legend>{{t.suit_premises}}</legend>
+          <label class="mk-radio"><input type="radio" name="premises" value="own" required> <span>{{t.suit_premises_own}}</span></label>
+          <label class="mk-radio"><input type="radio" name="premises" value="livery"> <span>{{t.suit_premises_livery}}</span></label>
+          <label class="mk-radio"><input type="radio" name="premises" value="none"> <span>{{t.suit_premises_none}}</span></label>
+        </fieldset>
+        <fieldset class="mk-q">
+          <legend>{{t.suit_experience}}</legend>
+          <label class="mk-radio"><input type="radio" name="experience" value="new" required> <span>{{t.suit_experience_new}}</span></label>
+          <label class="mk-radio"><input type="radio" name="experience" value="some"> <span>{{t.suit_experience_some}}</span></label>
+          <label class="mk-radio"><input type="radio" name="experience" value="long"> <span>{{t.suit_experience_long}}</span></label>
+        </fieldset>
+        <fieldset class="mk-q">
+          <legend>{{t.suit_care}}</legend>
+          <label class="mk-check__box"><input type="checkbox" name="vet" required> <span>{{t.suit_care_vet}}</span></label>
+          <label class="mk-check__box"><input type="checkbox" name="farrier" required> <span>{{t.suit_care_farrier}}</span></label>
+          <label class="mk-check__box"><input type="checkbox" name="disqualified" required> <span>{{t.suit_care_disq}}</span></label>
+        </fieldset>
+        <p class="mk-small"><a href="{{portal_href}}gov/law/welfare/#art-92">{{t.foot_art92}}</a></p>
+      </section>
+
+      <section class="mk-check__step">
+        <h2 class="mk-h2"><span>{{t.contact_title}}</span></h2>
+        <label class="mk-field"><span>{{t.contact_name}}</span><input type="text" name="name" required minlength="2" maxlength="80" autocomplete="name"></label>
+        <label class="mk-field"><span>{{t.contact_email}}</span><input type="email" name="email" required maxlength="120" autocomplete="email"></label>
+        <label class="mk-field"><span>{{t.contact_region}}</span><select name="region" required data-region-select><option value="">{{t.choose}}</option></select></label>
+      </section>
+
+      <div class="mk-summary mk-summary--bag">
+        <dl class="mk-summary__rows" data-bag-rows></dl>
+        <p class="mk-summary__total"><span>{{t.total}}</span> <strong data-bag-total></strong></p>
+        <p class="mk-small">{{t.roleplay_checkout}}</p>
+        <button class="mk-btn mk-btn--block" type="submit">{{t.checkout}}</button>
+        <ul class="mk-form-errors" data-check-errors hidden></ul>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="mk-wrap mk-done" data-done hidden tabindex="-1">
+  <p class="mk-eyebrow">{{t.done_eyebrow}}</p>
+  <h1 class="mk-h1"><span>{{t.done_title}}</span> <span class="mk-muted" data-done-ref></span></h1>
+  <p class="mk-lead">{{t.done_text}}</p>
+  <p class="mk-small">{{t.roleplay_checkout}}</p>
+  <p><a class="mk-btn" href="{{mroot}}">{{t.done_back}}</a></p>
+</section>

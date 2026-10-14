@@ -1,61 +1,154 @@
-<section class="mk-item">
-  <div class="mk-wrap mk-item__grid">
-    <div class="mk-viewer" data-viewer>
-      <div class="mk-media mk-media--hero" data-stage><div class="mk-media__ph" aria-hidden="true"></div></div>
-      <p class="mk-viewer__hint" data-hint>{{t.photo_soon}}</p>
-    </div>
-    <div class="mk-item__head">
-      <p class="mk-kicker" data-kicker></p>
-      <h1 class="mk-item__name" data-name></h1>
-      <p class="mk-item__tag" data-tag></p>
-      <p class="mk-item__price" data-price></p>
-      <div data-options></div>
-      <button class="mk-btn mk-btn--primary mk-btn--wide" type="button" data-reserve>{{t.reserve}}</button>
-      <p class="mk-small">{{t.reserve_sub}}</p>
-      <p class="mk-item__story" data-story></p>
+<div class="mk-item" data-item hidden>
+  <div class="mk-localnav" data-localnav>
+    <div class="mk-wrap mk-localnav__in">
+      <p class="mk-localnav__name" data-f="name"></p>
+      <ul class="mk-localnav__links">
+        <li><a href="#overview">{{t.item_overview}}</a></li>
+        <li data-only="horse"><a href="#character">{{t.item_character}}</a></li>
+        <li data-only="horse"><a href="#record">{{t.item_record}}</a></li>
+        <li data-only="tack"><a href="#specs">{{t.item_specs}}</a></li>
+        <li><a href="#compare">{{t.item_compare}}</a></li>
+      </ul>
+      <a class="mk-btn mk-btn--sm" href="#buy" data-buy-label></a>
     </div>
   </div>
-</section>
-<section class="mk-section mk-section--panel">
-  <div class="mk-wrap">
-    <div class="mk-tabs" role="tablist" data-tabs>
-      <button class="mk-tab" role="tab" type="button" data-tab="a" aria-selected="true"></button>
-      <button class="mk-tab" role="tab" type="button" data-tab="b" aria-selected="false"></button>
+
+  <nav class="mk-wrap mk-crumbs" aria-label="{{t.crumbs_label}}">
+    <a href="{{mroot}}">{{t.market_short}}</a>
+    <a data-crumb-dept></a>
+    <a data-crumb-cat></a>
+  </nav>
+
+  <section class="mk-hero mk-wrap" id="overview">
+    <p class="mk-eyebrow" data-f="eyebrow"></p>
+    <h1 class="mk-hero__name" data-f="name"></h1>
+    <p class="mk-hero__line" data-f="line"></p>
+    <p class="mk-hero__price"><span data-f="price-from"></span></p>
+    <p class="mk-hero__seller"><span>{{t.sold_by}}</span> <a data-f="seller-link"></a></p>
+    <div class="mk-hero__cta">
+      <a class="mk-btn" href="#buy" data-buy-label></a>
+      <a class="mk-link" href="#compare">{{t.item_compare_link}}</a>
     </div>
-    <div class="mk-panel" data-panel="a"></div>
-    <div class="mk-panel" data-panel="b" hidden></div>
-  </div>
-</section>
-<section class="mk-section">
-  <div class="mk-wrap mk-fit">
-    <div><h2 class="mk-h3">{{t.fits}}</h2><ul class="mk-list mk-list--yes" data-fits></ul></div>
-    <div data-notfor-wrap><h2 class="mk-h3">{{t.not_for}}</h2><ul class="mk-list mk-list--no" data-notfor></ul></div>
-    <div><h2 class="mk-h3">{{t.seller}}</h2><p class="mk-seller" data-seller></p></div>
-  </div>
-</section>
-<section class="mk-section mk-section--panel">
-  <div class="mk-wrap">
-    <h2 class="mk-h2">{{t.alternatives}}</h2>
-    <div class="mk-grid mk-grid--two" data-alts></div>
-  </div>
-</section>
-<div class="mk-buybar" data-buybar>
-  <div class="mk-wrap mk-buybar__in"><span class="mk-buybar__name" data-bar-name></span><span class="mk-buybar__price" data-bar-price></span><button class="mk-btn mk-btn--primary" type="button" data-reserve>{{t.reserve}}</button></div>
+  </section>
+
+  <section class="mk-viewer" aria-label="{{t.viewer_title}}">
+    <div class="mk-wrap">
+      <h2 class="mk-h2"><span>{{t.viewer_title}}</span></h2>
+      <div class="mk-viewer__stage" data-stage tabindex="0" role="img" aria-roledescription="{{t.viewer_role}}">
+        <img data-stage-img alt="" hidden>
+        <div class="mk-viewer__ph" data-stage-ph>
+          <span class="mk-viewer__view" data-stage-view></span>
+          <span class="mk-viewer__hint">{{t.photo_pending}}</span>
+        </div>
+        <p class="mk-viewer__drag" data-drag-hint>{{t.viewer_drag}}</p>
+      </div>
+      <div class="mk-viewer__controls">
+        <div class="mk-seg" role="tablist" aria-label="{{t.viewer_title}}" data-modes></div>
+        <input class="mk-viewer__dial" type="range" min="0" max="7" step="1" value="0" aria-label="{{t.viewer_rotate}}" data-dial>
+        <div class="mk-swatches" data-viewer-swatches></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-highlights mk-wrap" aria-label="{{t.item_highlights}}">
+    <ul class="mk-highlights__list" data-highlights></ul>
+  </section>
+
+  <section class="mk-band" id="character" data-only="horse">
+    <div class="mk-wrap mk-two">
+      <div>
+        <h2 class="mk-h2"><span>{{t.character_title}}</span> <span class="mk-muted">{{t.character_sub}}</span></h2>
+        <ul class="mk-bars" data-temperament></ul>
+      </div>
+      <div class="mk-card-plain">
+        <h3>{{t.training_title}}</h3>
+        <ul class="mk-ticks" data-list="training"></ul>
+        <h3>{{t.fits_title}}</h3>
+        <ul class="mk-ticks" data-list="fits"></ul>
+        <h3>{{t.not_for_title}}</h3>
+        <ul class="mk-ticks mk-ticks--no" data-list="not_for"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-band mk-band--white" id="record" data-only="horse">
+    <div class="mk-wrap mk-two">
+      <div>
+        <h2 class="mk-h2"><span>{{t.record_title}}</span> <span class="mk-muted">{{t.record_sub}}</span></h2>
+        <p class="mk-lead">{{t.record_disclosure}}</p>
+        <a class="mk-link" href="{{portal_href}}gov/law/welfare/#art-91">{{t.foot_art91}}</a>
+      </div>
+      <dl class="mk-facts" data-record></dl>
+    </div>
+  </section>
+
+  <section class="mk-band mk-band--white" id="specs" data-only="tack">
+    <div class="mk-wrap">
+      <h2 class="mk-h2"><span>{{t.specs_title}}</span> <span class="mk-muted">{{t.specs_sub}}</span></h2>
+      <div class="mk-tablewrap">
+        <table class="mk-table">
+          <thead><tr><th scope="col">{{t.spec_k}}</th><th scope="col">{{t.spec_v}}</th><th scope="col">{{t.spec_rule}}</th></tr></thead>
+          <tbody data-specs></tbody>
+        </table>
+      </div>
+      <p class="mk-small"><span>{{t.certificate}}</span> <strong data-f="certificate"></strong> · <a href="{{portal_href}}gov/law/tack-measurement/">{{t.foot_schedule}}</a></p>
+    </div>
+  </section>
+
+  <section class="mk-band" id="compare">
+    <div class="mk-wrap">
+      <h2 class="mk-h2"><span>{{t.compare_title}}</span> <span class="mk-muted">{{t.compare_sub}}</span></h2>
+      <div class="mk-compare" data-compare></div>
+    </div>
+  </section>
+
+  <section class="mk-buy mk-wrap" id="buy">
+    <h2 class="mk-h1"><span data-buy-title></span></h2>
+    <div class="mk-buy__grid">
+      <div class="mk-buy__media" data-buy-media></div>
+      <form class="mk-buy__form" data-buy-form novalidate>
+        <div data-only="tack">
+          <div data-options></div>
+          <fieldset class="mk-choice">
+            <legend>{{t.buy_offer}} <span class="mk-muted">{{t.buy_offer_hint}}</span></legend>
+            <div class="mk-choice__list" data-offers></div>
+          </fieldset>
+        </div>
+        <div data-only="horse">
+          <fieldset class="mk-choice">
+            <legend>{{t.buy_plan}} <span class="mk-muted">{{t.buy_plan_hint}}</span></legend>
+            <div class="mk-choice__list" data-plans></div>
+          </fieldset>
+          <fieldset class="mk-choice">
+            <legend>{{t.buy_delivery}} <span class="mk-muted">{{t.buy_delivery_hint}}</span></legend>
+            <div class="mk-choice__list" data-delivery></div>
+          </fieldset>
+        </div>
+        <div class="mk-summary">
+          <p class="mk-summary__total"><span>{{t.total}}</span> <strong data-total></strong></p>
+          <p class="mk-small" data-points-earn></p>
+          <p class="mk-small" data-only="horse">{{t.buy_horse_note}}</p>
+          <button class="mk-btn mk-btn--block" type="submit">{{t.add_to_bag}}</button>
+          <p class="mk-small mk-form-error" data-buy-error hidden>{{t.buy_choose_all}}</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="mk-band mk-band--white">
+    <div class="mk-wrap mk-sellercard" data-sellercard></div>
+  </section>
+
+  <section class="mk-shelf">
+    <h2 class="mk-h2 mk-wrap"><span>{{t.related_title}}</span></h2>
+    <div class="mk-scroller" data-scroller>
+      <ul class="mk-scroller__track" data-related></ul>
+      <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
+    </div>
+  </section>
 </div>
-<dialog class="mk-sheet" data-sheet>
-  <div class="mk-sheet__head"><h2 class="mk-h3" data-sheet-title></h2><button class="mk-x" type="button" data-close aria-label="{{t.close}}"></button></div>
-  <div data-step="check">
-    <p class="mk-lede" data-check-lede>{{t.check_lede}}</p>
-    <fieldset class="mk-q"><legend>{{t.check_home}}</legend><div class="mk-chips" data-c="home"><button class="mk-chip" type="button" data-v="own" aria-pressed="false">{{t.check_home_a}}</button><button class="mk-chip" type="button" data-v="livery" aria-pressed="false">{{t.check_home_b}}</button><button class="mk-chip" type="button" data-v="none" aria-pressed="false">{{t.check_home_c}}</button></div></fieldset>
-    <fieldset class="mk-q"><legend>{{t.check_company}}</legend><div class="mk-chips" data-c="company"><button class="mk-chip" type="button" data-v="yes" aria-pressed="false">{{t.check_yes}}</button><button class="mk-chip" type="button" data-v="no" aria-pressed="false">{{t.check_no}}</button></div></fieldset>
-    <fieldset class="mk-q"><legend>{{t.check_use}}</legend><div class="mk-chips" data-c="use"><button class="mk-chip" type="button" data-v="yes" aria-pressed="false">{{t.check_yes}}</button><button class="mk-chip" type="button" data-v="no" aria-pressed="false">{{t.check_no}}</button></div></fieldset>
-    <p class="mk-note" data-check-msg hidden></p>
-    <button class="mk-btn mk-btn--primary mk-btn--wide" type="button" data-confirm disabled>{{t.confirm}}</button>
-  </div>
-  <div data-step="done" hidden>
-    <p class="mk-done__title">{{t.done_title}}</p>
-    <p class="mk-lede" data-done-body></p>
-    <h3 class="mk-h3">{{t.done_add}}</h3>
-    <div class="mk-grid mk-grid--two" data-upsell></div>
-  </div>
-</dialog>
+
+<section class="mk-wrap mk-notfound" data-notfound hidden>
+  <h1 class="mk-h1"><span>{{t.notfound_title}}</span> <span class="mk-muted">{{t.notfound_text}}</span></h1>
+  <p><a class="mk-link" href="{{mroot}}horses/">{{t.nav_horses}}</a> <a class="mk-link" href="{{mroot}}tack/">{{t.nav_tack}}</a></p>
+</section>

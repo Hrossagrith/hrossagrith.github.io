@@ -3,110 +3,451 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Объявление · Рынок Хроссагрида</title>
-<meta name="description" content="Имперский рынок лошадей и амуниции">
+<title>Объявление · Имперский рынок</title>
+<meta name="description" content="Официальная площадка лошадей и амуниции Империи Хроссагрид: лицензированные продавцы, полное раскрытие сведений, переоформление Паспорта за 72 часа. Ролевой рынок: ничего настоящего не продаётся.">
 <meta name="robots" content="index,follow">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="canonical" href="https://hrossagrith.com/ru/market/item/">
 <link rel="alternate" hreflang="ru" href="https://hrossagrith.com/ru/market/item/">
-<link rel="alternate" hreflang="en" href="https://hrossagrith.com/market/item/">
+<link rel="alternate" hreflang="en-GB" href="https://hrossagrith.com/market/item/">
 <link rel="icon" href="../../../assets/flag-mark.png">
 <link rel="stylesheet" href="../../../assets/market.css">
 </head>
-<body class="mk" data-page="item" data-lang="ru" data-root="../../../" data-mroot="../">
+<body class="mk" data-page="item" data-dept="" data-lang="ru" data-root="../../../" data-mroot="../">
 <a class="mk-skip" href="#main">Перейти к содержанию</a>
-<header class="mk-bar">
-  <div class="mk-wrap mk-bar__in">
-    <a class="mk-brand" href="../"><span class="mk-brand__mark" aria-hidden="true"></span>Рынок Хроссагрида</a>
-    <nav class="mk-nav" aria-label="Рынок Хроссагрида">
-      <a href="../catalogue/?d=horses">Лошади</a>
-      <a href="../catalogue/?d=tack">Амуниция</a>
-      <a href="../#match">Подбор</a>
-    </nav>
-    <a class="mk-lang" href="../../../market/item/" hreflang="en">English</a>
-    <a class="mk-portal" href="../../../ru/">Госпортал</a>
+
+<div class="mk-gov">
+  <div class="mk-wrap mk-gov__in">
+    <img class="mk-gov__flag" src="../../../assets/flag-mark.png" alt="" width="20" height="14">
+    <span>Официальная торговая площадка Империи Хроссагрид</span>
+    <a href="../../../ru/">Государственный портал</a>
+  </div>
+</div>
+
+<header class="mk-nav" data-nav>
+  <nav class="mk-wrap mk-nav__in" aria-label="Рынок">
+    <a class="mk-nav__brand" href="../" aria-label="Имперский рынок">
+      <img src="../../../assets/emblem.svg" alt="" width="22" height="22">
+      <span>Рынок</span>
+    </a>
+    <ul class="mk-nav__links" id="mk-menu">
+      <li><a href="../horses/">Лошади</a></li>
+      <li><a href="../horses/?category=ponies">Пони</a></li>
+      <li><a href="../horses/?category=driving">Упряжные</a></li>
+      <li><a href="../tack/">Амуниция</a></li>
+      <li><a href="../tack/?category=bridles">Оголовья</a></li>
+      <li><a href="../tack/?category=saddles">Сёдла</a></li>
+      <li><a href="../sellers/">Продавцы</a></li>
+      <li><a href="../#help">Помощь</a></li>
+      <li class="mk-nav__lang"><a href="../../../market/item/" hreflang="en" data-keep-query>English</a></li>
+    </ul>
+    <div class="mk-nav__tools">
+      <button class="mk-icon" type="button" data-search-open aria-label="Поиск по рынку" aria-expanded="false" aria-controls="mk-search">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+      </button>
+      <a class="mk-icon mk-bagicon" href="../bag/" aria-label="Корзина">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7h12l-1 10H5L4 7Z"/><path d="M7.5 7V5.5a2.5 2.5 0 0 1 5 0V7"/></svg>
+        <span class="mk-bagicon__count" data-bag-count hidden></span>
+      </a>
+      <button class="mk-icon mk-nav__toggle" type="button" data-menu aria-label="Меню" aria-expanded="false" aria-controls="mk-menu">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h14M3 13h14"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mk-search" id="mk-search" data-search hidden>
+    <form class="mk-wrap mk-search__form" action="../search/" method="get" role="search">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6 17 17"/></svg>
+      <input type="search" name="q" placeholder="Лошади, породы, амуниция и продавцы" aria-label="Поиск по рынку" autocomplete="off" maxlength="80" data-search-input>
+    </form>
+    <div class="mk-wrap mk-search__body">
+      <p class="mk-search__head" data-search-head>Быстрые ссылки</p>
+      <ul class="mk-search__list" data-search-quick>
+        <li><a href="../horses/?discipline=leisure">Лошади для прогулочной езды</a></li>
+        <li><a href="../horses/?category=ponies">Пони</a></li>
+        <li><a href="../horses/?discipline=driving">Упряжные лошади</a></li>
+        <li><a href="../tack/?category=bridles">Безудильные оголовья</a></li>
+        <li><a href="../seller/?id=rehoming">Имперская служба пристройства непарнокопытных</a></li>
+      </ul>
+      <ul class="mk-search__list" data-search-results hidden></ul>
+    </div>
   </div>
 </header>
-<main id="main">
-<section class="mk-item">
-  <div class="mk-wrap mk-item__grid">
-    <div class="mk-viewer" data-viewer>
-      <div class="mk-media mk-media--hero" data-stage><div class="mk-media__ph" aria-hidden="true"></div></div>
-      <p class="mk-viewer__hint" data-hint>Фотографии скоро</p>
+<div class="mk-scrim" data-scrim hidden></div>
+
+<main id="main" class="mk-main">
+<div class="mk-item" data-item hidden>
+  <div class="mk-localnav" data-localnav>
+    <div class="mk-wrap mk-localnav__in">
+      <p class="mk-localnav__name" data-f="name"></p>
+      <ul class="mk-localnav__links">
+        <li><a href="#overview">Обзор</a></li>
+        <li data-only="horse"><a href="#character">Характер</a></li>
+        <li data-only="horse"><a href="#record">Записи</a></li>
+        <li data-only="tack"><a href="#specs">Характеристики</a></li>
+        <li><a href="#compare">Сравнение</a></li>
+      </ul>
+      <a class="mk-btn mk-btn--sm" href="#buy" data-buy-label></a>
     </div>
-    <div class="mk-item__head">
-      <p class="mk-kicker" data-kicker></p>
-      <h1 class="mk-item__name" data-name></h1>
-      <p class="mk-item__tag" data-tag></p>
-      <p class="mk-item__price" data-price></p>
-      <div data-options></div>
-      <button class="mk-btn mk-btn--primary mk-btn--wide" type="button" data-reserve>Забронировать</button>
-      <p class="mk-small">Без оплаты сейчас. Отмена бесплатно.</p>
-      <p class="mk-item__story" data-story></p>
+  </div>
+
+  <nav class="mk-wrap mk-crumbs" aria-label="Навигационная цепочка">
+    <a href="../">Рынок</a>
+    <a data-crumb-dept></a>
+    <a data-crumb-cat></a>
+  </nav>
+
+  <section class="mk-hero mk-wrap" id="overview">
+    <p class="mk-eyebrow" data-f="eyebrow"></p>
+    <h1 class="mk-hero__name" data-f="name"></h1>
+    <p class="mk-hero__line" data-f="line"></p>
+    <p class="mk-hero__price"><span data-f="price-from"></span></p>
+    <p class="mk-hero__seller"><span>Продавец:</span> <a data-f="seller-link"></a></p>
+    <div class="mk-hero__cta">
+      <a class="mk-btn" href="#buy" data-buy-label></a>
+      <a class="mk-link" href="#compare">Сравнить</a>
     </div>
-  </div>
-</section>
-<section class="mk-section mk-section--panel">
-  <div class="mk-wrap">
-    <div class="mk-tabs" role="tablist" data-tabs>
-      <button class="mk-tab" role="tab" type="button" data-tab="a" aria-selected="true"></button>
-      <button class="mk-tab" role="tab" type="button" data-tab="b" aria-selected="false"></button>
+  </section>
+
+  <section class="mk-viewer" aria-label="Рассмотрите поближе.">
+    <div class="mk-wrap">
+      <h2 class="mk-h2"><span>Рассмотрите поближе.</span></h2>
+      <div class="mk-viewer__stage" data-stage tabindex="0" role="img" aria-roledescription="поворотный просмотр">
+        <img data-stage-img alt="" hidden>
+        <div class="mk-viewer__ph" data-stage-ph>
+          <span class="mk-viewer__view" data-stage-view></span>
+          <span class="mk-viewer__hint">Фотография скоро появится</span>
+        </div>
+        <p class="mk-viewer__drag" data-drag-hint>Потяните, чтобы повернуть</p>
+      </div>
+      <div class="mk-viewer__controls">
+        <div class="mk-seg" role="tablist" aria-label="Рассмотрите поближе." data-modes></div>
+        <input class="mk-viewer__dial" type="range" min="0" max="7" step="1" value="0" aria-label="Повернуть" data-dial>
+        <div class="mk-swatches" data-viewer-swatches></div>
+      </div>
     </div>
-    <div class="mk-panel" data-panel="a"></div>
-    <div class="mk-panel" data-panel="b" hidden></div>
-  </div>
-</section>
-<section class="mk-section">
-  <div class="mk-wrap mk-fit">
-    <div><h2 class="mk-h3">Подходит для</h2><ul class="mk-list mk-list--yes" data-fits></ul></div>
-    <div data-notfor-wrap><h2 class="mk-h3">Не подходит для</h2><ul class="mk-list mk-list--no" data-notfor></ul></div>
-    <div><h2 class="mk-h3">Продавец</h2><p class="mk-seller" data-seller></p></div>
-  </div>
-</section>
-<section class="mk-section mk-section--panel">
-  <div class="mk-wrap">
-    <h2 class="mk-h2">Ещё два похожих</h2>
-    <div class="mk-grid mk-grid--two" data-alts></div>
-  </div>
-</section>
-<div class="mk-buybar" data-buybar>
-  <div class="mk-wrap mk-buybar__in"><span class="mk-buybar__name" data-bar-name></span><span class="mk-buybar__price" data-bar-price></span><button class="mk-btn mk-btn--primary" type="button" data-reserve>Забронировать</button></div>
+  </section>
+
+  <section class="mk-highlights mk-wrap" aria-label="Главное">
+    <ul class="mk-highlights__list" data-highlights></ul>
+  </section>
+
+  <section class="mk-band" id="character" data-only="horse">
+    <div class="mk-wrap mk-two">
+      <div>
+        <h2 class="mk-h2"><span>Характер.</span> <span class="mk-muted">Каким его знают продавец и конюшня.</span></h2>
+        <ul class="mk-bars" data-temperament></ul>
+      </div>
+      <div class="mk-card-plain">
+        <h3>Подготовка</h3>
+        <ul class="mk-ticks" data-list="training"></ul>
+        <h3>Лучше всего для</h3>
+        <ul class="mk-ticks" data-list="fits"></ul>
+        <h3>Не подходит для</h3>
+        <ul class="mk-ticks mk-ticks--no" data-list="not_for"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-band mk-band--white" id="record" data-only="horse">
+    <div class="mk-wrap mk-two">
+      <div>
+        <h2 class="mk-h2"><span>Записи.</span> <span class="mk-muted">Раскрыты полностью.</span></h2>
+        <p class="mk-lead">Продавец указал все известные ограничения по здоровью, поведению, лекарствам и благополучию. Скрывать что-либо ради продажи запрещено.</p>
+        <a class="mk-link" href="../../../ru/gov/law/welfare/#art-91">Раскрытие сведений, ст. 91</a>
+      </div>
+      <dl class="mk-facts" data-record></dl>
+    </div>
+  </section>
+
+  <section class="mk-band mk-band--white" id="specs" data-only="tack">
+    <div class="mk-wrap">
+      <h2 class="mk-h2"><span>Характеристики.</span> <span class="mk-muted">Сверено с Регламентом.</span></h2>
+      <div class="mk-tablewrap">
+        <table class="mk-table">
+          <thead><tr><th scope="col">Параметр</th><th scope="col">Этот товар</th><th scope="col">Имперское требование</th></tr></thead>
+          <tbody data-specs></tbody>
+        </table>
+      </div>
+      <p class="mk-small"><span>Сертификат</span> <strong data-f="certificate"></strong> · <a href="../../../ru/gov/law/tack-measurement/">Регламент обмеров амуниции</a></p>
+    </div>
+  </section>
+
+  <section class="mk-band" id="compare">
+    <div class="mk-wrap">
+      <h2 class="mk-h2"><span>Сравните.</span> <span class="mk-muted">Две ближайшие альтернативы.</span></h2>
+      <div class="mk-compare" data-compare></div>
+    </div>
+  </section>
+
+  <section class="mk-buy mk-wrap" id="buy">
+    <h2 class="mk-h1"><span data-buy-title></span></h2>
+    <div class="mk-buy__grid">
+      <div class="mk-buy__media" data-buy-media></div>
+      <form class="mk-buy__form" data-buy-form novalidate>
+        <div data-only="tack">
+          <div data-options></div>
+          <fieldset class="mk-choice">
+            <legend>Продавец. <span class="mk-muted">У кого купить?</span></legend>
+            <div class="mk-choice__list" data-offers></div>
+          </fieldset>
+        </div>
+        <div data-only="horse">
+          <fieldset class="mk-choice">
+            <legend>Привыкание. <span class="mk-muted">Какая поддержка нужна?</span></legend>
+            <div class="mk-choice__list" data-plans></div>
+          </fieldset>
+          <fieldset class="mk-choice">
+            <legend>Дорога домой. <span class="mk-muted">Как лошадь доберётся?</span></legend>
+            <div class="mk-choice__list" data-delivery></div>
+          </fieldset>
+        </div>
+        <div class="mk-summary">
+          <p class="mk-summary__total"><span>Итого</span> <strong data-total></strong></p>
+          <p class="mk-small" data-points-earn></p>
+          <p class="mk-small" data-only="horse">Бронь удерживает лошадь, пока продавец проверяет пригодность. До визита ничего не оплачивается.</p>
+          <button class="mk-btn mk-btn--block" type="submit">Добавить в корзину</button>
+          <p class="mk-small mk-form-error" data-buy-error hidden>Выберите вариант в каждой группе.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="mk-band mk-band--white">
+    <div class="mk-wrap mk-sellercard" data-sellercard></div>
+  </section>
+
+  <section class="mk-shelf">
+    <h2 class="mk-h2 mk-wrap"><span>Может понравиться.</span></h2>
+    <div class="mk-scroller" data-scroller>
+      <ul class="mk-scroller__track" data-related></ul>
+      <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="Назад">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="Вперёд">›</button></div>
+    </div>
+  </section>
 </div>
-<dialog class="mk-sheet" data-sheet>
-  <div class="mk-sheet__head"><h2 class="mk-h3" data-sheet-title></h2><button class="mk-x" type="button" data-close aria-label="Закрыть"></button></div>
-  <div data-step="check">
-    <p class="mk-lede" data-check-lede>Закон требует от продавца проверить, куда едет лошадь. Три быстрых ответа.</p>
-    <fieldset class="mk-q"><legend>Где будет жить лошадь?</legend><div class="mk-chips" data-c="home"><button class="mk-chip" type="button" data-v="own" aria-pressed="false">Своя земля с укрытием</button><button class="mk-chip" type="button" data-v="livery" aria-pressed="false">Пансион</button><button class="mk-chip" type="button" data-v="none" aria-pressed="false">Пока не решено</button></div></fieldset>
-    <fieldset class="mk-q"><legend>Будет ли у лошади компания других непарнокопытных?</legend><div class="mk-chips" data-c="company"><button class="mk-chip" type="button" data-v="yes" aria-pressed="false">Да</button><button class="mk-chip" type="button" data-v="no" aria-pressed="false">Нет</button></div></fieldset>
-    <fieldset class="mk-q"><legend>Ваши цели совпадают с описанием?</legend><div class="mk-chips" data-c="use"><button class="mk-chip" type="button" data-v="yes" aria-pressed="false">Да</button><button class="mk-chip" type="button" data-v="no" aria-pressed="false">Нет</button></div></fieldset>
-    <p class="mk-note" data-check-msg hidden></p>
-    <button class="mk-btn mk-btn--primary mk-btn--wide" type="button" data-confirm disabled>Подтвердить бронь</button>
-  </div>
-  <div data-step="done" hidden>
-    <p class="mk-done__title">Забронировано.</p>
-    <p class="mk-lede" data-done-body></p>
-    <h3 class="mk-h3">Дополните комплект</h3>
-    <div class="mk-grid mk-grid--two" data-upsell></div>
-  </div>
-</dialog>
+
+<section class="mk-wrap mk-notfound" data-notfound hidden>
+  <h1 class="mk-h1"><span>Не найдено.</span> <span class="mk-muted">Возможно, объявление забронировано или снято.</span></h1>
+  <p><a class="mk-link" href="../horses/">Лошади</a> <a class="mk-link" href="../tack/">Амуниция</a></p>
+</section>
 
 </main>
+
 <footer class="mk-foot">
   <div class="mk-wrap">
-    <p class="mk-foot__disclaimer">Этот рынок — часть проекта вымышленного мира. Здесь ничего не продаётся: лошади, бренды, цены и бронирования вымышлены, ни одно настоящее животное не меняет владельца, и оплата никогда не берётся. Это игра.</p>
-    <p class="mk-foot__note">Цены в кронах — условной единице, пока валюта империи не внесена в реестр.</p>
-    <p class="mk-foot__meta">Рынок Хроссагрида · Имперский рынок лошадей и амуниции · <a href="../../../ru/">hrossagrith.com</a></p>
+    <p class="mk-foot__roleplay"><strong>Ролевой рынок.</strong> Хроссагрид — вымышленное государство, а это игра. Здесь не продаются, не бронируются и не доставляются настоящие лошади, пони, ослы или мулы, деньги не принимаются, а все продавцы, бренды, объявления и цены придуманы.</p>
+    <p class="mk-foot__fine">Цены указаны в кронах (кр) — это временная единица, пока валюта Империи не определена.</p>
+    <p class="mk-foot__fine">Каждое объявление следует Кодексу благополучия непарнокопытных: раскрытие сведений (ст. 91), пригодность покупателя (ст. 92) и непрерывность записей (ст. 93). Амуниция допускается, только если соответствует Имперскому регламенту обмеров амуниции.</p>
+    <div class="mk-foot__cols">
+      <section>
+        <h2>Покупки</h2>
+        <ul>
+          <li><a href="../horses/">Лошади</a></li>
+          <li><a href="../tack/">Амуниция</a></li>
+          <li><a href="../sellers/">Продавцы</a></li>
+          <li><a href="../bag/">Корзина</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Дисциплины</h2>
+        <ul data-foot-disciplines></ul>
+      </section>
+      <section>
+        <h2>Правила продажи</h2>
+        <ul>
+          <li><a href="../../../ru/gov/law/welfare/#art-91">Раскрытие сведений, ст. 91</a></li>
+          <li><a href="../../../ru/gov/law/welfare/#art-92">Пригодность покупателя, ст. 92</a></li>
+          <li><a href="../../../ru/gov/law/welfare/#art-93">Непрерывность записей, ст. 93</a></li>
+          <li><a href="../../../ru/gov/law/tack-measurement/">Регламент обмеров амуниции</a></li>
+          <li><a href="../../../ru/gov/law/passport/">Паспорт непарнокопытного</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Империя</h2>
+        <ul>
+          <li><a href="../../../ru/">Государственный портал</a></li>
+          <li><a href="../../../ru/horses/">Лошади в Империи</a></li>
+          <li><a href="../seller/?id=rehoming">Имперская служба пристройства непарнокопытных</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="mk-foot__bottom">
+      <span>Империя Хроссагрид · Имперский рынок. Проект по построению мира.</span>
+      <a href="../../../market/item/" hreflang="en" data-keep-query>English</a>
+    </div>
   </div>
 </footer>
-<p class="mk-error" data-load-error hidden>Рынок не загрузился. Обновите страницу.</p>
-<template id="tpl-tile"><a class="mk-tile"><span class="mk-tile__glow" aria-hidden="true"></span><span class="mk-tile__name"></span><span class="mk-tile__lede"></span><span class="mk-tile__count"></span></a></template>
-<template id="tpl-card"><article class="mk-card"><a class="mk-card__link"><div class="mk-media"><div class="mk-media__ph" aria-hidden="true"></div></div><div class="mk-card__body"><p class="mk-card__kicker"></p><h3 class="mk-card__name"></h3><p class="mk-card__tag"></p><p class="mk-card__price"></p></div></a><label class="mk-card__compare"><input type="checkbox"><span></span></label></article></template>
-<template id="tpl-chip"><button class="mk-chip" type="button" aria-pressed="false"></button></template>
-<template id="tpl-brand"><li class="mk-brandcard"><span class="mk-brandcard__name"></span><span class="mk-brandcard__since"></span><span class="mk-brandcard__line"></span></li></template>
-<template id="tpl-row"><div class="mk-row"><dt></dt><dd></dd></div></template>
-<template id="tpl-bar"><div class="mk-meter"><span class="mk-meter__k"></span><span class="mk-meter__track"><span class="mk-meter__fill"></span></span></div></template>
-<template id="tpl-li"><li></li></template>
-<template id="tpl-spec"><tr><th scope="row"></th><td class="mk-spec__v"></td><td class="mk-spec__rule"></td></tr></template>
-<template id="tpl-opt"><fieldset class="mk-opt"><legend></legend><div class="mk-chips"></div></fieldset></template>
-<template id="tpl-cmp-col"><div class="mk-cmp__col"><p class="mk-cmp__name"></p><dl class="mk-rows"></dl></div></template>
+
+<div class="mk-toast" data-toast role="status" aria-live="polite" hidden></div>
+<p class="mk-error" data-load-error hidden>Не удалось загрузить объявления. Перезагрузите страницу.</p>
+<template id="tpl-card">
+  <li class="mk-slot">
+    <a class="mk-card" data-href>
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+      <div class="mk-card__body">
+        <p class="mk-eyebrow" data-f="eyebrow"></p>
+        <h3 class="mk-card__name" data-f="name"></h3>
+        <p class="mk-card__line" data-f="line"></p>
+        <p class="mk-card__meta" data-f="meta"></p>
+        <p class="mk-card__price" data-f="price"></p>
+      </div>
+    </a>
+  </li>
+</template>
+
+<template id="tpl-tile">
+  <li class="mk-tiles__item">
+    <a class="mk-tile" data-href>
+      <span class="mk-tile__img" data-ph></span>
+      <span class="mk-tile__name" data-f="name"></span>
+      <span class="mk-tile__count" data-f="count"></span>
+    </a>
+  </li>
+</template>
+
+<template id="tpl-feature">
+  <li class="mk-slot">
+    <a class="mk-feature" data-href>
+      <span class="mk-eyebrow" data-f="eyebrow"></span>
+      <span class="mk-feature__title" data-f="name"></span>
+      <span class="mk-feature__line" data-f="line"></span>
+      <span class="mk-feature__ph" data-ph></span>
+    </a>
+  </li>
+</template>
+
+<template id="tpl-fgroup">
+  <details class="mk-fgroup" open>
+    <summary data-f="name"></summary>
+    <div class="mk-fgroup__body" data-body></div>
+  </details>
+</template>
+
+<template id="tpl-fcheck">
+  <label class="mk-fcheck"><input type="checkbox"><span data-f="name"></span><span class="mk-fcheck__count" data-f="count"></span></label>
+</template>
+
+<template id="tpl-frange">
+  <div class="mk-frange">
+    <label><span>От</span><input type="number" inputmode="numeric" min="0" data-min></label>
+    <label><span>До</span><input type="number" inputmode="numeric" min="0" data-max></label>
+  </div>
+</template>
+
+<template id="tpl-chip">
+  <li><button type="button" class="mk-chip"><span data-f="name"></span><span class="mk-chip__x" aria-hidden="true">×</span></button></li>
+</template>
+
+<template id="tpl-search-result">
+  <li><a class="mk-search__hit" data-href><span data-f="name"></span><span class="mk-muted" data-f="meta"></span></a></li>
+</template>
+
+<template id="tpl-highlight">
+  <li><strong data-f="value"></strong><span data-f="label"></span></li>
+</template>
+
+<template id="tpl-bar">
+  <li class="mk-bar">
+    <span class="mk-bar__label" data-f="label"></span>
+    <span class="mk-bar__track"><span class="mk-bar__fill" data-fill></span></span>
+    <span class="mk-bar__word" data-f="word"></span>
+  </li>
+</template>
+
+<template id="tpl-li">
+  <li></li>
+</template>
+
+<template id="tpl-link">
+  <li><a></a></li>
+</template>
+
+<template id="tpl-fact">
+  <div><dt data-f="k"></dt><dd data-f="v"></dd></div>
+</template>
+
+<template id="tpl-spec">
+  <tr><th scope="row" data-f="k"></th><td data-f="v"></td><td class="mk-muted" data-f="rule"></td></tr>
+</template>
+
+<template id="tpl-compare-col">
+  <div class="mk-compare__col">
+    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    <p class="mk-eyebrow" data-f="badge"></p>
+    <h3 data-f="name"></h3>
+    <p class="mk-compare__price" data-f="price"></p>
+    <dl class="mk-compare__rows" data-rows></dl>
+    <a class="mk-link" data-href>Подробнее</a>
+  </div>
+</template>
+
+<template id="tpl-choice">
+  <label class="mk-opt">
+    <input type="radio">
+    <span class="mk-opt__name" data-f="name"></span>
+    <span class="mk-opt__line" data-f="line"></span>
+    <span class="mk-opt__price" data-f="price"></span>
+  </label>
+</template>
+
+<template id="tpl-option-group">
+  <fieldset class="mk-choice">
+    <legend data-f="name"></legend>
+    <div class="mk-choice__list" data-body></div>
+  </fieldset>
+</template>
+
+<template id="tpl-swatch">
+  <label class="mk-swatch"><input type="radio"><span class="mk-swatch__dot" data-dot></span><span class="mk-swatch__name" data-f="name"></span></label>
+</template>
+
+<template id="tpl-mode">
+  <button type="button" class="mk-seg__btn" role="tab" aria-selected="false"></button>
+</template>
+
+<template id="tpl-sellercard">
+  <div class="mk-sellercard__in">
+    <p class="mk-eyebrow" data-f="kind"></p>
+    <h2 class="mk-h2"><span data-f="name"></span> <span class="mk-muted" data-f="line"></span></h2>
+    <dl class="mk-facts mk-facts--row" data-facts></dl>
+    <a class="mk-link" data-href>Все объявления продавца</a>
+  </div>
+</template>
+
+<template id="tpl-seller-group">
+  <section class="mk-sgroup">
+    <h2 class="mk-h2"><span data-f="name"></span></h2>
+    <ul class="mk-sgrid" data-body></ul>
+  </section>
+</template>
+
+<template id="tpl-seller-tile">
+  <li><a class="mk-stile" data-href>
+    <span class="mk-stile__name" data-f="name"></span>
+    <span class="mk-stile__line" data-f="line"></span>
+    <span class="mk-stile__meta" data-f="meta"></span>
+  </a></li>
+</template>
+
+<template id="tpl-bag-line">
+  <li class="mk-bagline">
+    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    <div class="mk-bagline__info">
+      <h2><a data-href data-f="name"></a></h2>
+      <p class="mk-small" data-f="meta"></p>
+      <p class="mk-small" data-f="extra"></p>
+    </div>
+    <p class="mk-bagline__price" data-f="price"></p>
+    <button type="button" class="mk-textbtn" data-remove>Удалить</button>
+  </li>
+</template>
+
+<template id="tpl-row">
+  <div><dt data-f="k"></dt><dd data-f="v"></dd></div>
+</template>
+
+<template id="tpl-option">
+  <option></option>
+</template>
 
 <script src="../../../assets/market.js"></script>
 </body>
