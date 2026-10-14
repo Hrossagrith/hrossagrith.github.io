@@ -15,18 +15,10 @@
   <ul class="mk-wrap mk-queries" data-popular></ul>
 </section>
 
-<section class="mk-shelf" aria-label="{{t.home_categories}}">
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track mk-tiles" data-home-tiles></ul>
-  </div>
-</section>
-
 <section class="mk-shelf">
   <h2 class="mk-h2 mk-wrap"><span>{{t.home_latest}}</span> <span class="mk-muted">{{t.home_latest_sub}}</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-latest></ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
-  </div>
+  <div class="mk-wrap" data-home-latest></div>
+  <p class="mk-wrap mk-shelf__more"><a class="mk-link" href="horses/?sort=new">{{t.home_latest_all}}</a></p>
 </section>
 
 <section class="mk-shelf">
@@ -36,17 +28,13 @@
 
 <section class="mk-shelf">
   <h2 class="mk-h2 mk-wrap"><span>{{t.home_tack}}</span> <span class="mk-muted">{{t.home_tack_sub}}</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-tack></ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
-  </div>
+  <div class="mk-wrap" data-home-tack></div>
+  <p class="mk-wrap mk-shelf__more"><a class="mk-link" href="tack/">{{t.home_tack_all}}</a></p>
 </section>
 
 <section class="mk-shelf">
   <h2 class="mk-h2 mk-wrap"><span>{{t.home_houses}}</span> <span class="mk-muted">{{t.home_houses_sub}}</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-houses></ul>
-  </div>
+  <ul class="mk-wrap mk-houses" data-home-houses></ul>
 </section>
 
 <section class="mk-shelf">

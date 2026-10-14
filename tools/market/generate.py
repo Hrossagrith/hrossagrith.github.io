@@ -359,11 +359,15 @@ def main():
         "names": {"female": FEMALE_NAMES, "male": MALE_NAMES},
         "copy": {"scenes": SCENES, "title_words": TITLE_WORDS, "open": DESC_OPEN, "trait_lines": DESC_TRAIT, "close": DESC_CLOSE,
                  "training": TRAINING, "fits": FITS, "not_for": NOT_FOR, "health": HEALTH,
+                 # Health lines from this index on are declared issues; the ones before are checks passed.
+                 "health_issue_from": 4,
                  # Disciplines whose popular searches ask for a calm horse.
                  "calm_disciplines": ["leisure", "service", "driving", "companionship"],
                  # Tack categories suggested in the bag, with and without a horse in it.
                  "recs_with_horse": ["bridles", "halters", "pads", "rugs"],
-                 "recs_without_horse": ["halters", "grooming", "hoof", "rugs"]},
+                 "recs_without_horse": ["halters", "grooming", "hoof", "rugs"],
+                 # Tack category shown as a set of three on the home page.
+                 "home_tack_category": "bridles"},
         "vocabulary": {
             "loan": ["loan", "loans", "lease", "share", "on loan"],
             "sale": ["sale", "for sale", "buy"],

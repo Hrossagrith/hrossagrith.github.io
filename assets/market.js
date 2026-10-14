@@ -103,6 +103,7 @@
       var coat = cat.coats[r[f.coat]];
       var names = r[f.sex] === 0 || r[f.sex] === 2 ? cat.names.female : cat.names.male;
       var health = cat.copy.health.filter(function (line, k) { return r[f.health] & (1 << k); });
+      var issues = cat.copy.health.filter(function (line, k) { return k >= cat.copy.health_issue_from && r[f.health] & (1 << k); });
       var h = {
         id: data.id_prefix + (data.id_base + r[f.n]), n: r[f.n], kind: "horse", loan: r[f.loan] === 1,
         name: names[r[f.name]], breed: cat.breeds[r[f.breed]], cat: cat.horse_categories[r[f.cat]], disc: disc, sex: cat.sexes[r[f.sex]],
@@ -110,7 +111,7 @@
         region: region, town: region.towns[r[f.town]], seller: cat.sellers[r[f.seller]], price: r[f.price],
         cert: ["A", "B", "C"][r[f.cert]],
         temperament: { calm: r[f.calm], curious: r[f.curious], sensitive: r[f.sensitive], energy: r[f.energy] },
-        days: r[f.days], health: health, notfor: cat.copy.not_for[r[f.notfor]], scene: cat.copy.scenes[disc.id][r[f.scene]], titleN: r[f.title]
+        days: r[f.days], health: health, issues: issues, notfor: cat.copy.not_for[r[f.notfor]], scene: cat.copy.scenes[disc.id][r[f.scene]], titleN: r[f.title]
       };
       index.item[h.id] = h;
       return h;
@@ -174,7 +175,8 @@
       img.hidden = false;
       ph.hidden = true;
     } else {
-      ph.textContent = item.name.charAt(0);
+      $("[data-ph-dot]", ph).style.background = item.tone;
+      $("[data-ph-label]", ph).textContent = isHorse(item) ? cap(item.coat.name) : t("photo_pending_short");
     }
   }
 
@@ -752,16 +754,6 @@
     return node;
   }
 
-  function topCard(h, s, badge) {
-    var node = clone("tpl-top");
-    fill(node, { badge: badge, title: h.name + " · " + horseTitle(h), scene: h.scene, facts: horseFacts(h), price: horsePrice(h), note: h.loan ? t("loan_note") : "", meta: rowMeta(h) });
-    setHref(node, itemUrl(h));
-    $("[data-viewing-link]", node).setAttribute("href", itemUrl(h) + "#viewing");
-    paintMedia(node, h);
-    fillMatch(node, matchChips(h, s));
-    return node;
-  }
-
   /* ---------- home ---------- */
 
   function renderHome() {
@@ -770,39 +762,24 @@
     wireSearch($("[data-home-input]"), $("[data-home-search]"), $("[data-home-suggest]"), null);
 
     var pop = $("[data-popular]");
-    popularQueries().slice(0, 6).forEach(function (p) {
+    popularQueries().slice(0, 3).forEach(function (p) {
       var node = clone("tpl-query");
       fill(node, { text: p.text, meta: p.count + (p.meta ? " · " + p.meta : "") });
       setHref(node, p.href);
       pop.appendChild(node);
     });
 
-    var tiles = $("[data-home-tiles]");
-    function tile(name, count, href, tack) {
-      var node = clone("tpl-tile");
-      if (tack) { node.classList.add("mk-tiles__item--tack"); }
-      fill(node, { name: name, count: count });
-      setHref(node, href);
-      tiles.appendChild(node);
-    }
-    cat.horse_categories.forEach(function (c) {
-      tile(c.name, t("count_horses", { n: num.format(horses.filter(function (h) { return h.cat.id === c.id && !h.loan; }).length) }), MROOT + "horses/?cat=" + c.id);
-    });
-    tile(t("type_loan"), t("count_horses", { n: num.format(horses.filter(function (h) { return h.loan; }).length) }), MROOT + "horses/?loan=1");
-    cat.tack_categories.forEach(function (c) {
-      tile(c.name, t("count_items", { n: cat.tack.filter(function (x) { return x.category === c.id; }).length }), MROOT + "tack/?category=" + c.id, true);
-    });
-
-    var latestEl = $("[data-home-latest]");
-    horses.filter(function (h) { return !h.loan && h.days === 0; }).slice(0, 12).forEach(function (h) { latestEl.appendChild(card(h)); });
+    var today = emptyState();
+    var fresh = sortList(horses.filter(function (h) { return !h.loan && h.days === 0; }), today);
+    renderSet($("[data-home-latest]"), takeSet(fresh, function (h) { return h.price; }), today);
 
     renderPath($("[data-path]"));
 
-    var tackEl = $("[data-home-tack]");
-    cat.tack.forEach(function (x) { tackEl.appendChild(card(x)); });
+    var bridles = cat.tack.filter(function (x) { return x.category === cat.copy.home_tack_category; }).sort(function (a, b) { return basePrice(b) - basePrice(a); });
+    renderSet($("[data-home-tack]"), takeSet(bridles, basePrice), null);
 
     var housesEl = $("[data-home-houses]");
-    cat.sellers.filter(function (x) { return x.tier === "house"; }).forEach(function (x) {
+    cat.sellers.filter(function (x) { return x.tier === "house"; }).sort(function (a, b) { return a.since - b.since; }).slice(0, 3).forEach(function (x) {
       var node = clone("tpl-feature");
       fill(node, { eyebrow: t("since", { y: x.since }), name: x.name, line: x.line, mark: x.mark });
       setHref(node, sellerUrl(x.id));
@@ -813,16 +790,113 @@
     renderPlus();
   }
 
+  /* ---------- sets of three: a lower-priced way in, a close neighbour and the best match ---------- */
+
+  var CERT_RANK = { A: 0, B: 1, C: 2 };
+
+  /* d is worse than t on at least two counts and better on none. */
+  function dominatedBy(d, t) {
+    var worse = 0;
+    var better = 0;
+    function cmp(dv, tv) { if (dv < tv) { worse += 1; } else if (dv > tv) { better += 1; } }
+    cmp(d.temperament.calm, t.temperament.calm);
+    cmp(-CERT_RANK[d.cert], -CERT_RANK[t.cert]);
+    cmp(-d.issues.length, -t.issues.length);
+    if (t.cat.id !== "youngstock" && t.cat.id !== "companions") { cmp(-Math.abs(d.age - 9), -Math.abs(t.age - 9)); }
+    return worse >= 2 && better === 0;
+  }
+
+  /* Three real listings: a lower-priced way in, a close neighbour priced just under the
+     best match but weaker on the facts, and the best match itself, shown in price order. */
+  function takeSet(pool, price) {
+    if (!pool.length) { return null; }
+    var target = pool[0];
+    var tp = price(target);
+    var rest = pool.slice(1).filter(function (x) { return price(x) <= tp; });
+    var near = rest.filter(function (x) { var p = price(x); return p >= tp * 0.86; });
+    var weaker = near.filter(function (x) { return isHorse(x) ? dominatedBy(x, target) : true; });
+    var candidates = weaker.length ? weaker : near;
+    var under = candidates.filter(function (x) { return price(x) < tp; });
+    var decoy = (under.length ? under : candidates).sort(function (a, b) { return price(b) - price(a); })[0] || null;
+    var cheaper = rest.filter(function (x) { return x !== decoy && price(x) <= tp * 0.82; });
+    var close = cheaper.filter(function (x) { return price(x) >= tp * 0.55; });
+    var entry = close[0] || cheaper.sort(function (a, b) { return price(b) - price(a); })[0] ||
+      rest.filter(function (x) { return x !== decoy && (!decoy || price(x) < price(decoy)); })[0] || null;
+    var picks = [{ item: target, role: "best" }];
+    if (decoy) { picks.push({ item: decoy, role: "near" }); }
+    if (entry) { picks.push({ item: entry, role: "entry" }); }
+    if (picks.length < 3) {
+      pool.slice(1).filter(function (x) { return x !== entry && x !== decoy; }).slice(0, 3 - picks.length)
+        .forEach(function (x) { picks.push({ item: x, role: "also" }); });
+    }
+    var order = { also: 0, entry: 1, near: 2, best: 3 };
+    picks.sort(function (a, b) { return (price(a.item) - price(b.item)) || (order[a.role] - order[b.role]); });
+    if (picks.length === 3 && picks.some(function (p) { return p.role === "also"; })) {
+      ["entry", "near", "best"].forEach(function (role, i) { picks[i].role = role; });
+    }
+    return picks;
+  }
+
+  function horseRows(h) {
+    return [
+      [t("k_age"), t("age_years", { n: h.age })],
+      [t("k_height"), height(h.cm)],
+      [t("trait_calm"), dots(h.temperament.calm)],
+      [t("k_cert"), t("cert_short_" + h.cert)],
+      [t("k_issues"), h.issues.length ? String(h.issues.length) : t("issues_none")],
+      [t("k_location"), h.town]
+    ];
+  }
+
+  function dots(n) { return "●".repeat(n) + "○".repeat(5 - n); }
+
+  function pickCard(pick, s) {
+    var x = pick.item;
+    var node = clone("tpl-pick");
+    node.classList.add("mk-pick--" + pick.role);
+    var cta = $("[data-cta]", node);
+    if (isHorse(x)) {
+      fill(node, { badge: t("role_" + pick.role), name: x.name, title: horseTitle(x), price: horsePrice(x), note: x.loan ? t("loan_note") : x.scene });
+      addFacts($("[data-rows]", node), horseRows(x), "tpl-kv");
+      cta.textContent = t("book_viewing");
+      cta.setAttribute("href", itemUrl(x) + "#viewing");
+      $("[data-actions]", node).appendChild(shortlistButton(x));
+    } else {
+      fill(node, { badge: t("role_" + pick.role), name: x.name, title: tackEyebrow(x), price: t("price_from", { p: money(basePrice(x)) }), note: x.line });
+      addFacts($("[data-rows]", node), [[t("k_maker"), index.seller[x.brand].name]].concat(x.specs.slice(0, 2).map(function (sp) { return [sp.k, sp.v]; }))
+        .concat([[t("k_sellers"), String(x.offers.length)]]), "tpl-kv");
+      cta.textContent = t("buy");
+      cta.setAttribute("href", itemUrl(x) + "#buy");
+    }
+    setHref(node, itemUrl(x));
+    paintMedia(node, x);
+    return node;
+  }
+
+  function renderSet(host, picks, s) {
+    var set = clone("tpl-set");
+    var grid = $("[data-body]", set);
+    picks.forEach(function (p) { grid.appendChild(pickCard(p, s)); });
+    host.appendChild(set);
+    return set;
+  }
+
   /* ---------- horse results ---------- */
 
   function renderHorses() {
     var s = stateFromUrl(query());
     var groupsEl = $("[data-filter-groups]");
-    var filtersEl = $("[data-filters]");
+    var sheet = $("[data-filters]");
     var qInput = $("[data-results-q]");
-    var sortSel = $("[data-sort]");
     var counters = {};
     var rangeInputs = {};
+    var setsEl = $("[data-sets]");
+    var moreBtn = $("[data-more]");
+    var progress = $("[data-sets-progress]");
+    var pool = [];
+    var shown = 0;
+    var total = 0;
+    var observer = null;
 
     $$("[data-type-tab]").forEach(function (a) {
       var v = Number(a.getAttribute("data-type-tab"));
@@ -850,12 +924,11 @@
           var at = list.indexOf(v.id);
           if (input.checked && at === -1) { list.push(v.id); }
           if (!input.checked && at !== -1) { list.splice(at, 1); }
-          s.page = 1;
           update(true);
         });
         bodyEl.appendChild(row);
       });
-      if (!s.sel[f].length && ["sex", "seller", "cert", "trait", "region"].indexOf(f) !== -1) { group.removeAttribute("open"); }
+      if (!s.sel[f].length && ["breed", "disc"].indexOf(f) === -1) { group.removeAttribute("open"); }
       groupsEl.appendChild(group);
     });
     RANGES.forEach(function (r) {
@@ -869,7 +942,6 @@
         var a = parseInt(lo.value, 10);
         var b = parseInt(hi.value, 10);
         s.range[r] = { min: isNaN(a) || a < 0 ? null : a, max: isNaN(b) || b < 0 ? null : b };
-        s.page = 1;
         update(true);
       }
       lo.addEventListener("change", onRange);
@@ -880,7 +952,6 @@
 
     function syncInputs() {
       qInput.value = s.q;
-      sortSel.value = s.sort;
       RANGES.forEach(function (r) {
         rangeInputs[r].lo.value = s.range[r].min === null ? "" : s.range[r].min;
         rangeInputs[r].hi.value = s.range[r].max === null ? "" : s.range[r].max;
@@ -891,7 +962,7 @@
     function chip(label, onRemove) {
       var node = clone("tpl-chip");
       fill(node, { name: label });
-      $("button", node).addEventListener("click", function () { onRemove(); s.page = 1; update(true); });
+      $("button", node).addEventListener("click", function () { onRemove(); update(true); });
       return node;
     }
 
@@ -911,6 +982,7 @@
         if (label) { chipsEl.appendChild(chip(cap(label), function () { s.range[r] = { min: null, max: null }; })); active += 1; }
       });
       if (s.q) { chipsEl.appendChild(chip("“" + s.q + "”", function () { s.q = ""; })); active += 1; }
+      chipsEl.hidden = active === 0;
       $("[data-filter-count]").textContent = active ? "(" + active + ")" : "";
     }
 
@@ -926,13 +998,12 @@
 
     function renderRefine(list) {
       var wrap = $("[data-refine]");
-      var ref = list.length > cat.page_size ? refineOptions(s, list) : null;
+      var ref = list.length > 3 ? refineOptions(s, list) : null;
       wrap.hidden = !ref;
       if (!ref) { return; }
       $("[data-refine-label]").textContent = ref.label;
       chipLinks($("[data-refine-list]"), ref.options.filter(function (o) { return o.n > 0; }).map(function (o) {
         var narrower = cloneState(s);
-        narrower.page = 1;
         o.apply(narrower);
         return { name: o.name, n: o.n, s: narrower };
       }));
@@ -958,52 +1029,26 @@
         .filter(function (o) { return o.n > 0; }).sort(function (a, b) { return b.n - a.n; }).slice(0, 4));
     }
 
-    function renderEntry(list) {
-      var el = $("[data-entry]");
-      var other = cloneState(s);
-      other.loan = s.loan ? 0 : 1;
-      other.range.price = { min: null, max: null };
-      var alt = run(other);
-      if (!alt.length || !list.length) { el.hidden = true; return; }
-      if (!s.loan) {
-        var pick = sortList(alt, other)[0];
-        fill(el, { label: t("entry_loan_label"), text: t("entry_loan_text", { name: pick.name, breed: pick.breed.name, town: pick.town, p: t("per_month", { p: money(pick.price) }), n: num.format(alt.length) }) });
-      } else {
-        fill(el, { label: t("entry_sale_label"), text: t("entry_sale_text", { n: num.format(alt.length) }) });
-      }
-      el.setAttribute("href", horsesUrl(other));
-      el.hidden = false;
-    }
-
-    function renderPager(total) {
-      var pager = $("[data-pager]");
-      clear(pager);
-      var pages = Math.max(1, Math.ceil(total / cat.page_size));
-      if (pages <= 1) { return; }
-      function link(p, label, current) {
-        var a = clone("tpl-pagelink");
-        a.textContent = label;
-        a.setAttribute("href", horsesUrl(s, p));
-        if (current) { a.setAttribute("aria-current", "page"); }
-        pager.appendChild(a);
-      }
-      if (s.page > 1) { link(s.page - 1, t("prev"), false); }
-      var from = Math.max(1, Math.min(s.page - 2, pages - 4));
-      for (var p = from; p <= Math.min(pages, from + 4); p += 1) { link(p, String(p), p === s.page); }
-      if (s.page < pages) { link(s.page + 1, t("next"), false); }
+    function nextSet() {
+      var picks = takeSet(pool, function (h) { return h.price; });
+      if (!picks) { return; }
+      var used = picks.map(function (p) { return p.item; });
+      pool = pool.filter(function (h) { return used.indexOf(h) === -1; });
+      shown += picks.length;
+      renderSet(setsEl, picks, s);
+      progress.textContent = t("sets_progress", { a: num.format(shown), b: num.format(total) });
+      moreBtn.hidden = pool.length === 0;
     }
 
     function update(push) {
       var list = sortList(run(s), s);
       var line = headline(s);
+      total = list.length;
       $("[data-headline]").textContent = line;
       $("[data-count]").textContent = t("count_horses", { n: num.format(list.length) });
       document.title = line + " · " + t("market_name");
-
       var band = priceBand(list);
-      var ref = $("[data-refprice]");
-      ref.hidden = !band;
-      if (band) { ref.textContent = t(s.loan ? "typical_loan" : "typical_search", { lo: money(band.lo), hi: money(band.hi) }); }
+      $("[data-refprice]").textContent = band ? " · " + t(s.loan ? "typical_loan" : "typical_search", { lo: money(band.lo), hi: money(band.hi) }) : "";
 
       FACETS.forEach(function (f) {
         var base = horses.filter(function (h) { return matches(h, s, f); });
@@ -1014,27 +1059,17 @@
         });
       });
 
-      var top = $("[data-top]");
-      var rows = $("[data-rows]");
-      clear(top);
-      clear(rows);
-      var start = (s.page - 1) * cat.page_size;
-      var pageList = list.slice(start, start + cat.page_size);
-      if (s.page === 1) {
-        pageList.slice(0, 2).forEach(function (h, i) { top.appendChild(topCard(h, s, t(i === 0 ? "badge_best" : "badge_close"))); });
-        pageList = pageList.slice(2);
-      }
-      pageList.forEach(function (h) { rows.appendChild(horseRow(h, s)); });
-      top.hidden = s.page !== 1 || !list.length;
-
+      clear(setsEl);
+      pool = list;
+      shown = 0;
+      nextSet();
+      progress.hidden = list.length === 0;
       $("[data-empty]").hidden = list.length > 0;
-      if (!list.length) { renderRelax(); }
+      if (!list.length) { renderRelax(); moreBtn.hidden = true; }
       renderRefine(list);
-      renderEntry(list);
-      renderPager(list.length);
       renderChips();
       syncInputs();
-      if (push) { history.replaceState(null, "", horsesUrl(s, s.page)); window.scrollTo(0, 0); }
+      if (push) { history.replaceState(null, "", horsesUrl(s)); }
     }
 
     $("[data-results-form]").addEventListener("submit", function (e) {
@@ -1044,12 +1079,24 @@
       next.q = "";
       location.href = horsesUrl(v ? mergeParsed(next, parseQuery(v)) : next);
     });
-    sortSel.addEventListener("change", function () { s.sort = sortSel.value; s.page = 1; update(true); });
+    moreBtn.addEventListener("click", nextSet);
+    if ("IntersectionObserver" in window) {
+      observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting && pool.length && shown) { nextSet(); } });
+      }, { rootMargin: "200px 0px" });
+      observer.observe($("[data-sentinel]"));
+    }
+    function openSheet(open) {
+      sheet.hidden = !open;
+      body.classList.toggle("is-locked", open);
+    }
     $$("[data-filters-reset]").forEach(function (btn) {
       btn.addEventListener("click", function () { var e = emptyState(); e.loan = s.loan; location.href = horsesUrl(e); });
     });
-    $("[data-filters-open]").addEventListener("click", function () { filtersEl.classList.add("is-open"); body.classList.add("is-locked"); });
-    $("[data-filters-close]").addEventListener("click", function () { filtersEl.classList.remove("is-open"); body.classList.remove("is-locked"); });
+    $("[data-filters-open]").addEventListener("click", function () { openSheet(true); });
+    $("[data-filters-close]").addEventListener("click", function () { openSheet(false); window.scrollTo(0, 0); });
+    sheet.addEventListener("click", function (e) { if (e.target === sheet) { openSheet(false); } });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !sheet.hidden) { openSheet(false); } });
     $("[data-save-search]").addEventListener("click", function () {
       var href = horsesUrl(s).slice(MROOT.length);
       if (!store.searches.some(function (x) { return x.href === href; })) {
@@ -1084,8 +1131,19 @@
       if (c.id === current) { $("a", node).setAttribute("aria-current", "true"); }
       cats.appendChild(node);
     });
-    var grid = $("[data-grid]");
-    list.forEach(function (x) { grid.appendChild(card(x)); });
+    var setsEl = $("[data-sets]");
+    cat.tack_categories.forEach(function (c) {
+      var inCat = list.filter(function (x) { return x.category === c.id; }).sort(function (a, b) { return basePrice(b) - basePrice(a); });
+      while (inCat.length) {
+        var picks = takeSet(inCat, basePrice);
+        var used = picks.map(function (p) { return p.item; });
+        inCat = inCat.filter(function (x) { return used.indexOf(x) === -1; });
+        var set = renderSet(setsEl, picks, null);
+        var head = clone("tpl-set-head");
+        fill(head, { name: c.name });
+        set.insertBefore(head, set.firstChild);
+      }
+    });
     $("[data-empty]").hidden = list.length > 0;
     $("[data-results-form]").addEventListener("submit", function (e) {
       e.preventDefault();
@@ -1206,11 +1264,20 @@
     renderConsider(item, root);
     initBuy(item, root);
 
-    var rel = $("[data-related]", root);
-    var pool = isHorse(item)
-      ? horses.filter(function (x) { return x.loan === item.loan && x.breed === item.breed && x.disc === item.disc && x.id !== item.id; }).slice(0, 10)
-      : cat.tack.filter(function (x) { return x.id !== item.id && x.category === item.category; }).concat(cat.tack.filter(function (x) { return x.category !== item.category; }).slice(0, 6));
-    pool.forEach(function (x) { rel.appendChild(card(x)); });
+    var alt = $(".mk-compare__col:not(.is-current) [data-href]", root);
+    var altId = alt ? decodeURIComponent((alt.getAttribute("href").split("id=")[1] || "")) : "";
+    var related;
+    if (isHorse(item)) {
+      var like = emptyState();
+      like.loan = item.loan ? 1 : 0;
+      like.sel.breed = [item.breed.id];
+      like.sel.disc = [item.disc.id];
+      related = takeSet(sortList(run(like).filter(function (x) { return x.id !== item.id && x.id !== altId; }), like), function (h) { return h.price; });
+    } else {
+      related = takeSet(cat.tack.filter(function (x) { return x.id !== item.id && x.id !== altId; })
+        .sort(function (a, b) { return (a.category === item.category ? 0 : 1) - (b.category === item.category ? 0 : 1) || basePrice(b) - basePrice(a); }), basePrice);
+    }
+    if (related) { renderSet($("[data-related]", root), related, null); }
 
     var nav = $("[data-localnav]", root);
     if ("IntersectionObserver" in window) {

@@ -46,10 +46,10 @@
 
       <div class="mk-pdp__cta" data-only="horse">
         <a class="mk-btn mk-btn--block" href="#viewing" data-open-viewing>{{t.book_viewing}}</a>
-        <div class="mk-pdp__cta2">
-          <a class="mk-btn mk-btn--ghost" href="#buy" data-f="reserve-label"></a>
-          <button type="button" class="mk-btn mk-btn--ghost" data-shortlist></button>
-        </div>
+        <p class="mk-pdp__cta2">
+          <a class="mk-link" href="#buy" data-f="reserve-label"></a>
+          <button type="button" data-shortlist></button>
+        </p>
       </div>
       <div class="mk-pdp__cta" data-only="tack">
         <a class="mk-btn mk-btn--block" href="#buy">{{t.buy}}</a>
@@ -171,10 +171,7 @@
 
   <section class="mk-shelf">
     <h2 class="mk-h2 mk-wrap"><span>{{t.related_title}}</span></h2>
-    <div class="mk-scroller" data-scroller>
-      <ul class="mk-scroller__track" data-related></ul>
-      <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="{{t.prev}}">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="{{t.next}}">›</button></div>
-    </div>
+    <div class="mk-wrap" data-related></div>
   </section>
 </div>
 

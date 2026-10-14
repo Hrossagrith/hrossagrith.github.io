@@ -84,18 +84,10 @@
   <ul class="mk-wrap mk-queries" data-popular></ul>
 </section>
 
-<section class="mk-shelf" aria-label="Departments">
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track mk-tiles" data-home-tiles></ul>
-  </div>
-</section>
-
 <section class="mk-shelf">
   <h2 class="mk-h2 mk-wrap"><span>Listed today.</span> <span class="mk-muted">Fresh from the yard.</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-latest></ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="Previous">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="Next">›</button></div>
-  </div>
+  <div class="mk-wrap" data-home-latest></div>
+  <p class="mk-wrap mk-shelf__more"><a class="mk-link" href="horses/?sort=new">All new listings</a></p>
 </section>
 
 <section class="mk-shelf">
@@ -105,17 +97,13 @@
 
 <section class="mk-shelf">
   <h2 class="mk-h2 mk-wrap"><span>Tack, to Imperial standard.</span> <span class="mk-muted">Every item measured against the Schedule.</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-tack></ul>
-    <div class="mk-paddles"><button type="button" class="mk-paddle" data-paddle="-1" aria-label="Previous">‹</button><button type="button" class="mk-paddle" data-paddle="1" aria-label="Next">›</button></div>
-  </div>
+  <div class="mk-wrap" data-home-tack></div>
+  <p class="mk-wrap mk-shelf__more"><a class="mk-link" href="tack/">All tack</a></p>
 </section>
 
 <section class="mk-shelf">
   <h2 class="mk-h2 mk-wrap"><span>The houses.</span> <span class="mk-muted">Makers since the nineteenth century.</span></h2>
-  <div class="mk-scroller" data-scroller>
-    <ul class="mk-scroller__track" data-home-houses></ul>
-  </div>
+  <ul class="mk-wrap mk-houses" data-home-houses></ul>
 </section>
 
 <section class="mk-shelf">
@@ -201,7 +189,7 @@
 <template id="tpl-card">
   <li class="mk-slot">
     <a class="mk-card" data-href>
-      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph><span class="mk-media__dot" data-ph-dot></span><span data-ph-label></span></span></figure>
       <div class="mk-card__body">
         <p class="mk-eyebrow" data-f="eyebrow"></p>
         <h3 class="mk-card__name" data-f="name"></h3>
@@ -213,10 +201,38 @@
   </li>
 </template>
 
+<template id="tpl-set">
+  <section class="mk-set">
+    <div class="mk-set__grid" data-body></div>
+  </section>
+</template>
+
+<template id="tpl-set-head">
+  <h2 class="mk-set__head" data-f="name"></h2>
+</template>
+
+<template id="tpl-pick">
+  <article class="mk-pick">
+    <p class="mk-pick__badge" data-f="badge"></p>
+    <a class="mk-pick__media" data-href tabindex="-1" aria-hidden="true">
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph><span class="mk-media__dot" data-ph-dot></span><span data-ph-label></span></span></figure>
+    </a>
+    <h3 class="mk-pick__name"><a data-href data-f="name"></a></h3>
+    <p class="mk-pick__title" data-f="title"></p>
+    <p class="mk-pick__price" data-f="price"></p>
+    <p class="mk-pick__note" data-f="note"></p>
+    <dl class="mk-pick__rows" data-rows></dl>
+    <div class="mk-pick__cta">
+      <a class="mk-btn mk-btn--sm" data-cta></a>
+      <span data-actions></span>
+    </div>
+  </article>
+</template>
+
 <template id="tpl-row">
   <li class="mk-row">
     <a class="mk-row__media" data-href tabindex="-1" aria-hidden="true">
-      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph><span class="mk-media__dot" data-ph-dot></span><span data-ph-label></span></span></figure>
     </a>
     <div class="mk-row__main">
       <h3 class="mk-row__title"><a data-href data-f="title"></a></h3>
@@ -231,24 +247,6 @@
       <div class="mk-row__actions" data-actions></div>
     </div>
   </li>
-</template>
-
-<template id="tpl-top">
-  <article class="mk-topcard">
-    <a class="mk-topcard__media" data-href tabindex="-1" aria-hidden="true">
-      <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
-    </a>
-    <div class="mk-topcard__body">
-      <p class="mk-eyebrow mk-eyebrow--accent" data-f="badge"></p>
-      <h2 class="mk-topcard__title"><a data-href data-f="title"></a></h2>
-      <p class="mk-topcard__scene" data-f="scene"></p>
-      <p class="mk-row__facts" data-f="facts"></p>
-      <ul class="mk-row__match" data-match></ul>
-      <p class="mk-topcard__price"><strong data-f="price"></strong> <span class="mk-muted" data-f="note"></span></p>
-      <p class="mk-row__meta" data-f="meta"></p>
-      <a class="mk-btn mk-btn--sm" data-viewing-link>Book a viewing</a>
-    </div>
-  </article>
 </template>
 
 <template id="tpl-matchchip">
@@ -376,7 +374,7 @@
 
 <template id="tpl-compare-col">
   <div class="mk-compare__col">
-    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph><span class="mk-media__dot" data-ph-dot></span><span data-ph-label></span></span></figure>
     <p class="mk-eyebrow" data-f="badge"></p>
     <h3 data-f="name"></h3>
     <p class="mk-compare__price" data-f="price"></p>
@@ -441,7 +439,7 @@
 
 <template id="tpl-bag-line">
   <li class="mk-bagline">
-    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph></span></figure>
+    <figure class="mk-media" data-media><img alt="" loading="lazy" hidden><span class="mk-media__ph" data-ph><span class="mk-media__dot" data-ph-dot></span><span data-ph-label></span></span></figure>
     <div class="mk-bagline__info">
       <h2><a data-href data-f="name"></a></h2>
       <p class="mk-small" data-f="meta"></p>

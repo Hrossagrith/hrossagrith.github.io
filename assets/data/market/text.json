@@ -80,9 +80,6 @@
  "next": {
   "en": "Next"
  },
- "pages": {
-  "en": "Pages"
- },
  "search_label": {
   "en": "Search the Market"
  },
@@ -175,9 +172,6 @@
  },
  "home_popular_sub": {
   "en": "What buyers are looking for this week."
- },
- "home_categories": {
-  "en": "Departments"
  },
  "home_latest": {
   "en": "Listed today."
@@ -371,24 +365,6 @@
  "refine_price": {
   "en": "Narrow by price"
  },
- "badge_best": {
-  "en": "Best match"
- },
- "badge_close": {
-  "en": "Also a close match"
- },
- "entry_loan_label": {
-  "en": "Not ready to buy?"
- },
- "entry_loan_text": {
-  "en": "{name}, a {breed} in {town}, is on loan for {p}. {n} horses like this are on loan."
- },
- "entry_sale_label": {
-  "en": "Ready to buy?"
- },
- "entry_sale_text": {
-  "en": "{n} horses for sale match this search."
- },
  "filters": {
   "en": "Filters"
  },
@@ -406,21 +382,6 @@
  },
  "search_saved": {
   "en": "Search saved to My search."
- },
- "sort": {
-  "en": "Sort by"
- },
- "sort_best": {
-  "en": "Best match"
- },
- "sort_new": {
-  "en": "Newest"
- },
- "sort_price_asc": {
-  "en": "Price: low to high"
- },
- "sort_price_desc": {
-  "en": "Price: high to low"
  },
  "empty_title": {
   "en": "No horses match every part of this search."
@@ -1192,5 +1153,71 @@
  },
  "listed_yesterday": {
   "en": "listed yesterday"
+ },
+ "role_entry": {
+  "en": "Lower price"
+ },
+ "role_near": {
+  "en": "Similar price"
+ },
+ "role_best": {
+  "en": "Best match"
+ },
+ "role_also": {
+  "en": "Also matches"
+ },
+ "cert_short_A": {
+  "en": "Class A"
+ },
+ "cert_short_B": {
+  "en": "Class B"
+ },
+ "cert_short_C": {
+  "en": "Class C"
+ },
+ "k_sellers": {
+  "en": "Sellers"
+ },
+ "sets_progress": {
+  "en": "{a} of {b} shown. Scroll for the next three."
+ },
+ "next_three": {
+  "en": "Show the next three"
+ },
+ "filters_show": {
+  "en": "Show horses"
+ },
+ "photo_pending_short": {
+  "en": "Photograph to come"
+ },
+ "home_latest_all": {
+  "en": "All new listings"
+ },
+ "home_tack_all": {
+  "en": "All tack"
+ },
+ "tack_sub": {
+  "en": "every item measured against the Schedule"
+ },
+ "empty_title_tack": {
+  "en": "No tack matches this search."
+ },
+ "empty_text_tack": {
+  "en": "Try another word or a department above."
+ },
+ "k_age": {
+  "en": "Age"
+ },
+ "k_height": {
+  "en": "Height"
+ },
+ "k_cert": {
+  "en": "Certificate"
+ },
+ "k_issues": {
+  "en": "Declared issues"
+ },
+ "issues_none": {
+  "en": "None"
  }
 }
